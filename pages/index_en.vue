@@ -3,6 +3,7 @@
 		<Navigation :lang="lang" :content="content" :direct="direct"/>
 		<Hero :lang="lang" :content="content" :direct="direct"/>
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
+		<Team :lang="lang" :content="content" :direct="direct"/>
 	</section>
 </template>
 
@@ -14,12 +15,14 @@
 	import Navigation from '../components/Navigation.vue';
 	import Hero from '../components/Hero.vue';
 	import MissionStatement from '../components/MissionStatement.vue';
+	import Team from '../components/Team.vue';
 
 	export default {
 		components: {
 			Navigation,
 			Hero,
-			MissionStatement
+			MissionStatement,
+			Team
 		},
 		data() {
 			return {

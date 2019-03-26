@@ -1,7 +1,9 @@
 <template>
     <section class="section">
         <div class="container">
-            <h2 class="title">Das Team</h2>
+            <h2 class="title">
+                {{ content[lang]['team']['title'] }}
+            </h2>
 
             <div class="tile is-ancestor">
                 <div v-for="person in teamArr" class="tile is-parent">
@@ -10,7 +12,6 @@
                             <img :src="`${person.img_url}`">
                         </figure>
                         <p>{{ person.name }}</p>
-                        {{ person.twitter }}
                     </article>
                 </div>
             </div>
@@ -24,7 +25,7 @@
         props: ['content', 'lang', 'direct'],
         computed: {
             teamArr() {
-                return this.content[this.lang]['team']
+                return this.content[this.lang]['team']['member']
             }
         },
         mounted() {

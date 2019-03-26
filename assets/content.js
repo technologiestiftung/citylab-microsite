@@ -19,22 +19,25 @@ export const content = {
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
         },
-        'team': [
-            { 
-                'name': 'Sebastian Meier', 
-                'mail': 'meier@technologiestiftung-berlin.de', 
-                'twitter': 'seb_meier', 
-                'img_url': 'images/sebastian.jpg',
-                'title': 'Lead Data Scientist'
-            },
-            { 
-                'name': 'Benjamin Seibel', 
-                'mail': 'seibel@technologiestiftung-berlin.de', 
-                'twitter': 'seb_meier', 
-                'img_url': 'images/sebastian.jpg',
-                'title': 'Lead Data Scientist'
-            },
-        ]
+        'team': {
+            'title': 'Das Team',
+            'member': [
+                { 
+                    'name': 'Sebastian Meier', 
+                    'mail': 'meier@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/sebastian.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+                { 
+                    'name': 'Benjamin Seibel', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/sebastian.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+            ]
+        }
     },
     'eng': {
         'nav': {
@@ -56,5 +59,24 @@ export const content = {
             'statement3-title': 'Open', 
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
         },
+        'team': {
+            'title': 'The team',
+            'member': [
+                { 
+                    'name': 'Sebastian Meier', 
+                    'mail': 'meier@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/sebastian.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+                { 
+                    'name': 'Benjamin Seibel', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/sebastian.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+            ]
+        }
     }
 }
