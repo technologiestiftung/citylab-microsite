@@ -1,6 +1,4 @@
-# tsb-citylab-microsite-nuxt
-
-> My pioneering Nuxt.js project
+# tsb-citylab-microsite
 
 ## Build Setup
 
