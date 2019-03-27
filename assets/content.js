@@ -1,9 +1,9 @@
 export const content = {
     'de': {
         'nav': {
-            'menu1': 'Menü 1',
-            'menu2': 'Menü 2',
-            'menu3': 'Menü 3'
+            'menu1': 'Mission',
+            'menu2': 'Projekte',
+            'menu3': 'Team'
         },
         'hero': {
             'subtitle': "CityLAB Berlin",
@@ -69,13 +69,17 @@ export const content = {
                     'title': 'Lead Data Scientist'
                 },
             ],
+        },
+        'cta': {
+            'title': 'Meldet euch bei uns!',
+            'subtitle': 'If you want to collaborate with us or reach out, visit us in our office or drop us a line.'
         }
     },
     'en': {
         'nav': {
-            'menu1': 'Menu 1',
-            'menu2': 'Menu 2',
-            'menu3': 'Menu 3'
+            'menu1': 'Mission',
+            'menu2': 'Projects',
+            'menu3': 'Team'
         },
         'hero': {
             'subtitle': "CityLAB Berlin",
@@ -141,6 +145,10 @@ export const content = {
                     'title': 'Lead Data Scientist'
                 },
             ]
+        },
+        'cta': {
+            'title': 'Get in touch!',
+            'subtitle': 'If you want to collaborate with us or reach out, visit us in our office or drop us a line.'
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-    <section class="section">
+    <section id="missionstatement" class="section mission-statement">
         <div class="container">
             <h1 class="title">{{ content[lang]['missionStatement']['title'] }}</h1>
             <h2 class="subtitle">

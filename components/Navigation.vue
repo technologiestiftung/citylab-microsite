@@ -25,19 +25,19 @@
 
             <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
                 <div class="navbar-end">
-                    <a class="navbar-item">
+                    <a href="#missionstatement" class="navbar-item">
                         {{ content[lang]['nav']['menu1'] }}
                     </a>
 
-                    <a class="navbar-item">
+                    <a href="#projects" class="navbar-item">
                         {{ content[lang]['nav']['menu2'] }}
                     </a>
 
-                    <a class="navbar-item">
+                    <a href="#team" class="navbar-item">
                         {{ content[lang]['nav']['menu3'] }}
                     </a>
 
-                    <nuxt-link :to="direct">Language: {{ lang }}</nuxt-link>
+                    <nuxt-link class="navbar-item" :to="direct">Language: {{ lang }}</nuxt-link>
 
                 </div>
             </div> 
@@ -58,8 +58,6 @@
             }
         },
         props: ['lang', 'content', 'direct'],
-        methods: {
-        }
     }
 </script>
 

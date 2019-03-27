@@ -1,5 +1,5 @@
 <template>
-    <section class="section team">
+    <section id="team" class="section team">
         <div class="container">
             <h2 class="title">
                 {{ content[lang]['team']['title'] }}
