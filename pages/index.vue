@@ -5,9 +5,12 @@
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
+		<Cta :lang="lang" :content="content"/>
 		<Footer :lang="lang" :content="content"/>
 
-		<button @click="topFunction()" id="myBtn" class="button is-warning top">Top</button>
+		<button @click="topFunction()" id="myBtn" class="button is-warning top">
+			<font-awesome-icon far icon="arrow-alt-circle-up"/>
+		</button>
 	</div>
 </template>
 
@@ -22,6 +25,7 @@
 	import Team from '../components/Team.vue';
 	import Projects from '../components/Projects.vue';
 	import Footer from '../components/Footer.vue';
+	import Cta from '../components/Cta.vue';
 
 	export default {
 		components: {
@@ -30,7 +34,8 @@
 			MissionStatement,
 			Team,
 			Projects,
-			Footer
+			Cta,
+			Footer,
 		},
 		data() {
 			return {

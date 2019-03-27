@@ -72,8 +72,33 @@ export const content = {
         },
         'cta': {
             'title': 'Meldet euch bei uns!',
-            'subtitle': 'If you want to collaborate with us or reach out, visit us in our office or drop us a line.'
+            'subtitle': 'Wenn Sie mit uns zusammenarbeiten oder uns erreichen möchten, besuchen Sie uns in unserem Büro oder schreiben Sie uns eine Nachricht.'
+        },
+        'footer': {
+            'contact': {
+                'title': 'Kontakt',
+                'mail': 'hello@citylabberlin.de',
+                'address_street': 'Platz der Luftbrücke 12',
+                'address_code': '12101 Berlin',
+            },
+            'more': {
+                'title': 'Mehr',
+                'press': 'Presse',
+                'downloads': 'Downloads',
+                'codeofconduct': 'Code of Conduct'
+            },
+            'funding': {
+                'title': 'Gefördert durch',
+                'text': 'Gefördert von der Senatsverwaltung für Wirtschaft, Energie und Betriebe und der Investitionsbank Berlin aus den Mitteln des Landes Berlin.'
+            }
+        },
+        'press': {
+            'title': 'Presse'
+        },
+        'downloads': {
+            'title': 'Downloads DE'
         }
+
     },
     'en': {
         'nav': {
@@ -149,6 +174,30 @@ export const content = {
         'cta': {
             'title': 'Get in touch!',
             'subtitle': 'If you want to collaborate with us or reach out, visit us in our office or drop us a line.'
+        },
+        'footer': {
+            'contact': {
+                'title': 'Get in touch',
+                'mail': 'hello@citylabberlin.de',
+                'address_street': 'Platz der Luftbrücke 12',
+                'address_code': '12101 Berlin',
+            },
+            'more': {
+                'title': 'More',
+                'press': 'Press',
+                'downloads': 'Downloads',
+                'codeofconduct': 'Code of Conduct'
+            },
+            'funding': {
+                'title': 'Supported by',
+                'text': 'Supported by the Senate Department for Economics, Energy and Enterprises and the Investitionsbank Berlin with funds from the State of Berlin.'
+            }
+        },
+        'press': {
+            'title': 'Press'
+        },
+        'downloads': {
+            'title': 'Downloads EN'
         }
     }
 }

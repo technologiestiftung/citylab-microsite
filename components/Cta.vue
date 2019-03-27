@@ -1,11 +1,13 @@
 <template>
     <section class="section cta">
-        <h2 class="title">
-            {{ content[lang]['cta']['title'] }}
-        </h2>
-        <h2 class="subtitle">
-            {{ content[lang]['cta']['title'] }}
-        </h2>
+        <div class="container">
+            <h2 class="title">
+                {{ content[lang]['cta']['title'] }}
+            </h2>
+            <h2 class="subtitle">
+                {{ content[lang]['cta']['subtitle'] }}
+            </h2>
+        </div>
     </section>
 </template>
 

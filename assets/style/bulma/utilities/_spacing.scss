@@ -2,7 +2,7 @@ $sizeUnit: rem;
 $marginKey: 'm';
 $paddingKey: 'p';
 $separator: '-';
-$sizes: (
+$_sizes: (
     ('none', 0),
     ('xxs', 0.125),
     ('xs', 0.25),
@@ -12,7 +12,7 @@ $sizes: (
     ('xl', 4),
     ('xxl', 8),
 );
-$positions: (
+$pos: (
     ('t', 'top'),
     ('r', 'right'),
     ('b', 'bottom'),
@@ -23,7 +23,7 @@ $positions: (
     @return if($key == 'none', 0, $value + $sizeUnit);
 }
 
-@each $size in $sizes {
+@each $size in $_sizes {
     $sizeKey: nth($size, 1);
     $sizeValue: nth($size, 2);
     .#{$marginKey}#{$separator}#{$sizeKey} {
@@ -32,7 +32,7 @@ $positions: (
     .#{$paddingKey}#{$separator}#{$sizeKey} {
         padding: sizeValue($sizeKey, $sizeValue);
     }
-    @each $position in $positions {
+    @each $position in $pos {
         $posKey: nth($position, 1);
         $posValue: nth($position, 2);
         .#{$marginKey}#{$separator}#{$posKey}#{$separator}#{$sizeKey} {

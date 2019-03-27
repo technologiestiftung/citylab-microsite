@@ -27,6 +27,10 @@
     .hero {
         height: 500px;
         background: $blue;
+        margin-top: 52px;
+        font-family: 'National';
+        font-weight: 800;
+        font-style: bold;
     }
 </style>
 
