@@ -19,6 +19,17 @@ export const content = {
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
         },
+        'projects': {
+            'title': 'Projekte',
+            'opencall': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
+            'projects': [
+                {
+                    'title': 'Projekt titel',
+                    'subtitle': 'Projekt Untertitel',
+                    'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
+                }
+            ]
+        },
         'team': {
             'title': 'Das Team',
             'member': [
@@ -33,10 +44,31 @@ export const content = {
                     'name': 'Benjamin Seibel', 
                     'mail': 'seibel@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
-                    'img_url': 'images/sebastian.jpg',
+                    'img_url': 'images/benjamin.jpg',
+                    'title': 'Awesome Jobtitle'
+                },
+                { 
+                    'name': 'Fabian Dinklage', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/fabian.jpg',
                     'title': 'Lead Data Scientist'
                 },
-            ]
+                { 
+                    'name': 'Victoria Dykes', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/tory.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+                { 
+                    'name': 'Fabian Moron Zirfas', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/fabianm.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+            ],
         }
     },
     'eng': {
@@ -73,7 +105,28 @@ export const content = {
                     'name': 'Benjamin Seibel', 
                     'mail': 'seibel@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
-                    'img_url': 'images/sebastian.jpg',
+                    'img_url': 'images/benjamin.jpg',
+                    'title': 'Awesome Jobtitle'
+                },
+                { 
+                    'name': 'Fabian Dinklage', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/fabian.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+                { 
+                    'name': 'Victoria Dykes', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/tory.jpg',
+                    'title': 'Lead Data Scientist'
+                },
+                { 
+                    'name': 'Fabian Moron Zirfas', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/fabianm.jpg',
                     'title': 'Lead Data Scientist'
                 },
             ]

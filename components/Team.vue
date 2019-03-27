@@ -1,17 +1,20 @@
 <template>
-    <section class="section">
+    <section class="section team">
         <div class="container">
             <h2 class="title">
                 {{ content[lang]['team']['title'] }}
             </h2>
 
-            <div class="tile is-ancestor">
-                <div v-for="person in teamArr" class="tile is-parent">
+            <div class="tile is-ancestor wrap fourPerRow">
+                <div v-for="person in teamArr" class="tile is-parent fourth">
                     <article class="tile is-child box">
                         <figure class="image is 1by1">
                             <img :src="`${person.img_url}`">
                         </figure>
                         <p>{{ person.name }}</p>
+                        <p>{{ person.title }}</p>
+                        <p>{{ person.twitter }}</p>
+                        <p>{{ person.mail }}</p>
                     </article>
                 </div>
             </div>
@@ -34,8 +37,21 @@
     }
 </script>
 
-<style>
+<style lang="scss">
 
+    @import "../assets/style/style.scss";
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .fourth {
+        flex: 0 0 25%;
+
+        @include mobile {
+            flex: 0 0 33%;
+        }
+    }
 </style>
 
 
