@@ -1,5 +1,5 @@
 export const content = {
-    'ger': {
+    'de': {
         'nav': {
             'menu1': 'Menü 1',
             'menu2': 'Menü 2',
@@ -21,7 +21,7 @@ export const content = {
         },
         'projects': {
             'title': 'Projekte',
-            'opencall': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
+            'opencall': 'Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? ',
             'projects': [
                 {
                     'title': 'Projekt titel',
@@ -71,7 +71,7 @@ export const content = {
             ],
         }
     },
-    'eng': {
+    'en': {
         'nav': {
             'menu1': 'Menu 1',
             'menu2': 'Menu 2',
@@ -90,6 +90,17 @@ export const content = {
             'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities to get involved.', 
             'statement3-title': 'Open', 
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
+        },
+        'projects': {
+            'title': 'Projects',
+            'opencall': 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable',
+            'projects': [
+                {
+                    'title': 'Projekt titel',
+                    'subtitle': 'Projekt Untertitel',
+                    'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
+                }
+            ]
         },
         'team': {
             'title': 'The team',

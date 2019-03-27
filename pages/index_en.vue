@@ -1,10 +1,12 @@
 <template>
-	<section class="container">
+	<div>
 		<Navigation :lang="lang" :content="content" :direct="direct"/>
 		<Hero :lang="lang" :content="content" :direct="direct"/>
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
+		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
-	</section>
+		<Footer :lang="lang" :content="content"/>
+	</div>
 </template>
 
 <script>
@@ -16,17 +18,21 @@
 	import Hero from '../components/Hero.vue';
 	import MissionStatement from '../components/MissionStatement.vue';
 	import Team from '../components/Team.vue';
+	import Projects from '../components/Projects.vue';
+	import Footer from '../components/Footer.vue';
 
 	export default {
 		components: {
 			Navigation,
 			Hero,
 			MissionStatement,
-			Team
+			Team,
+			Projects,
+			Footer
 		},
 		data() {
 			return {
-				lang: 'eng',
+				lang: 'en',
 				content: content,
 				direct: '/'
 			}

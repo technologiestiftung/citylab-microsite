@@ -4,9 +4,6 @@
             <h2 class="title">
                 {{ content[lang]['projects']['title'] }}
             </h2>
-            <p class="subtitle">
-                {{ content[lang]['projects']['subtitle'] }}
-            </p>
 
             <div class="opencall box notification is-primary">
                 <h2 class="subtitle">

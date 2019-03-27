@@ -45,11 +45,11 @@
         flex-wrap: wrap;
     }
 
-    .fourth {
-        flex: 0 0 25%;
+    .tile.fourth {
+        flex: 0 0 25% !important;
 
         @include mobile {
-            flex: 0 0 33%;
+            flex: 0 0 33% !important;
         }
     }
 </style>
