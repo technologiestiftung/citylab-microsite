@@ -5,17 +5,9 @@
                 {{ content[lang]['projects']['title'] }}
             </h2>
 
-            <div class="opencall box notification is-primary">
-                <h2 class="subtitle">
-                    Open Call
-                </h2>
+            <p class="intro content">{{ content[lang]['projects']['opencall'] }}</p>
 
-                <p class="content m-b-md">
-                    {{ content[lang]['projects']['opencall'] }}
-                </p>
-
-                <a class="button is-white">Apply now</a>
-            </div>
+            <a class="button is-color-secondary is-normal">{{ content[lang]['projects']['cta'] }}</a>
         </div>
     </section>
 </template>
@@ -29,6 +21,19 @@
 
 <style lang="scss">
     @import "../assets/style/style.scss";
+
+    .title {
+        color: $color-secondary;
+    }
+
+    .intro {
+        font-size: $size-3;
+        line-height: $size-2;
+    }
+
+    .projects {
+        background: $color-tertiary--lightest;
+    }
 
 
 </style>

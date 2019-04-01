@@ -14,14 +14,18 @@ export const content = {
             'subtitle': 'Das ist eine kurzer Text zur Beschreibung des Mission Statements.',
             'statement1-title': 'Agil', 
             'statement1-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um die Zeit von der ersten Idee bis zur Umsetzung zu verkürzen und bedarfsgerechte Lösungen zu finden.', 
+            'statement1-img_url': 'images/01.jpg',
             'statement2-title': 'Partizipativ', 
             'statement2-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten, sich einzubringen.', 
+            'statement2-img_url': 'images/02.jpg', 
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
+            'statement3-img_url': 'images/03.jpg', 
         },
         'projects': {
-            'title': 'Projekte',
-            'opencall': 'Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? ',
+            'title': 'Open Call',
+            'opencall': 'Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können.',
+            'cta': 'Jetzt bewerben',
             'projects': [
                 {
                     'title': 'Projekt titel',
@@ -115,14 +119,18 @@ export const content = {
             'subtitle': 'This is a short text describing the mission statement.',
             'statement1-title': 'Agil', 
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet your needs.', 
+            'statement1-img_url': 'images/01.jpg', 
             'statement2-title': 'Participative', 
             'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities to get involved.', 
+            'statement2-img_url': 'images/02.jpg', 
             'statement3-title': 'Open', 
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
+            'statement3-img_url': 'images/03.jpg', 
         },
         'projects': {
-            'title': 'Projects',
-            'opencall': 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable',
+            'title': 'Open Call',
+            'opencall': 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+            'cta': 'Apply now',
             'projects': [
                 {
                     'title': 'Projekt titel',

@@ -1,5 +1,12 @@
 // Colors
 
+$color-primary: #242582;
+$color-secondary: #F64C72;
+$color-tertiary: #393A60;
+
+$color-tertiary--lightest: rgba(#393A60, 0.05);
+
+
 $black: hsl(0, 0%, 4%) !default;
 $black-bis: hsl(0, 0%, 7%) !default;
 $black-ter: hsl(0, 0%, 14%) !default;
@@ -25,9 +32,14 @@ $red: hsl(348, 100%, 61%) !default;
 
 // Typography
 
-$family-sans-serif: "Calibri", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-sans-serif: "National", "Calibri", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
+
+$spacing-xs: 5px;
+$spacing-s: 10px;
+$spacing-m: 20px;
+$spacing-l: 40px;
 
 $size-1: 3rem !default;
 $size-2: 2.5rem !default;
