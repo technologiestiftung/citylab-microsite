@@ -38,39 +38,39 @@ export const content = {
             'title': 'Das Team',
             'member': [
                 { 
-                    'name': 'Sebastian Meier', 
-                    'mail': 'meier@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/sebastian.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Benjamin Seibel', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/benjamin.jpg',
-                    'title': 'Awesome Jobtitle'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Fabian Dinklage', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/fabian.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Victoria Dykes', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/tory.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Fabian Moron Zirfas', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/fabianm.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName',
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
             ],
         },
@@ -117,7 +117,7 @@ export const content = {
         'missionStatement': {
             'title': 'Mission Statement',
             'subtitle': 'This is a short text describing the mission statement.',
-            'statement1-title': 'Agil', 
+            'statement1-title': 'Agile', 
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet your needs.', 
             'statement1-img_url': 'images/01.jpg', 
             'statement2-title': 'Participative', 
@@ -143,39 +143,39 @@ export const content = {
             'title': 'The team',
             'member': [
                 { 
-                    'name': 'Sebastian Meier', 
-                    'mail': 'meier@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/sebastian.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Benjamin Seibel', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/benjamin.jpg',
-                    'title': 'Awesome Jobtitle'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Fabian Dinklage', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/fabian.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Victoria Dykes', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/tory.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
                 { 
-                    'name': 'Fabian Moron Zirfas', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
-                    'img_url': 'images/fabianm.jpg',
-                    'title': 'Lead Data Scientist'
+                    'name': 'Firstname Lastname', 
+                    'mail': 'name@citylab.berlin', 
+                    'twitter': 'twitterName', 
+                    'img_url': 'images/alexandra_portrait.jpg',
+                    'title': 'Job Title'
                 },
             ]
         },

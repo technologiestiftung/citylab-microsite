@@ -1,5 +1,5 @@
 $section-padding: 4rem 1.5rem !default;
-$section-padding-medium: 9rem 1.5rem !default;
+$section-padding-medium: 4rem 14rem !default;
 $section-padding-large: 18rem 1.5rem !default;
 
 .section {
@@ -16,4 +16,6 @@ $section-padding-large: 18rem 1.5rem !default;
       padding: $section-padding-large;
     }
   }
+
+
 }

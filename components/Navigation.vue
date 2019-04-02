@@ -1,12 +1,10 @@
 <template>
 
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-
-        <div class="container">
+    <nav class="navbar is-fixed-top is-medium" role="navigation" aria-label="main navigation">
 
             <div class="navbar-brand">
                 <a class="navbar-item" :href="directHome">
-                    CityLab Logo
+                    
                 </a>
 
                 <a 
@@ -41,7 +39,6 @@
 
                 </div>
             </div> 
-        </div>
 
     </nav>
 
@@ -71,18 +68,33 @@
     @import "../assets/style/style.scss";
   
     .navbar {
+        padding: 0 4rem;
         background: $white-ter;
         // margin: 0;
+
+        &-brand {
+            margin: 0;
+            align-content: flex-start;
+            .navbar-item {
+                background-image: url('~assets/citylab_logo.svg');
+                background-position: left center;
+                width: 110px;
+                height: 43px;
+            }
+        }
+
+        &-end {
+            .navbar-item {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: bold;
+                font-size: $size-7;
+            }
+        }
 
         .container {
             display: flex;
             justify-content: space-between;
-
-            &-brand {
-                margin: 0;
-                align-content: flex-start;
-    
-            }
         }
 
         &-first, &-second {

@@ -1,5 +1,5 @@
 <template>
-    <section class="section cta">
+    <section class="section is-medium cta">
         <div class="container">
             <h2 class="title">
                 {{ content[lang]['cta']['title'] }}

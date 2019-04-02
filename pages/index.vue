@@ -5,10 +5,10 @@
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
-		<Cta :lang="lang" :content="content"/>
+		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
 
-		<button @click="topFunction()" id="myBtn" class="button is-warning top">
+		<button @click="topFunction()" id="myBtn" class="button is-color-secondary top">
 			<font-awesome-icon far icon="arrow-alt-circle-up"/>
 		</button>
 	</div>
@@ -75,8 +75,10 @@
 
 <style lang="scss">
 	button.top {
+		width: 70px;
+		height: 70px;
 		position: fixed;
-		bottom: 15px;
-		right: 15px;
+		bottom: 40px;
+		right: 40px;
 	}
 </style>

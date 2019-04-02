@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="section projects">
+    <section id="projects" class="section projects is-medium">
         <div class="container">
             <h2 class="title">
                 {{ content[lang]['projects']['title'] }}
@@ -29,7 +29,9 @@
     .intro {
         font-size: $size-3;
         line-height: $size-2;
+        color: $color-tertiary;
     }
+    
 
     .projects {
         background: $color-tertiary--lightest;

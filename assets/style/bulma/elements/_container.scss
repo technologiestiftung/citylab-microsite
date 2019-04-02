@@ -3,8 +3,7 @@
   position: relative;
 
   @include desktop {
-    max-width: $desktop - 2 * $gap;
-    width: $desktop - 2 * $gap;
+    max-width: 1140px;
 
     &.is-fluid {
       margin-left: $gap;
@@ -32,13 +31,11 @@
 
 
   @include widescreen {
-    max-width: $widescreen - 2 * $gap;
-    width: $widescreen - 2 * $gap;
+    max-width: 1140px;
   }
 
 
   @include fullhd {
-    max-width: $fullhd - 2 * $gap;
-    width: $fullhd - 2 * $gap;
+    max-width: 1140px;
   }
 }

@@ -1,15 +1,11 @@
 <template>
-    <section class="hero is-color-primary">
-        <div class="hero-body">
-            <div class="container">
-            <h2 class="subtitle">
-                {{ content[lang]['hero']['subtitle'] }}
-            </h2>
-            <h1 class="title">
-                {{ content[lang]['hero']['claim'] }}
-            </h1>
-            </div>
-        </div>
+    <section class="hero is-color-primary section is-medium">
+        <h2 class="subtitle">
+            {{ content[lang]['hero']['subtitle'] }}
+        </h2>
+        <h1 class="title">
+            {{ content[lang]['hero']['claim'] }}
+        </h1>
     </section>
 </template>
 

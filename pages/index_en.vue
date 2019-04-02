@@ -8,7 +8,9 @@
 		<Cta :lang="lang" :content="content"/>
 		<Footer :lang="lang" :content="content"/>
 
-		<button @click="topFunction()" id="myBtn" class="button is-warning top">Top</button>
+		<button @click="topFunction()" id="myBtn" class="button is-color-tertiary top">
+			<font-awesome-icon far icon="arrow-alt-circle-up" style="font-size: 24px;"/>
+		</button>
 	</div>
 </template>
 
@@ -73,8 +75,10 @@
 
 <style lang="scss">
 	button.top {
+		width: 60px;
+		height: 60px;
 		position: fixed;
-		bottom: 15px;
-		right: 15px;
+		bottom: 40px;
+		right: 40px;
 	}
 </style>

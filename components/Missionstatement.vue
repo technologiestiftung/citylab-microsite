@@ -1,5 +1,5 @@
 <template>
-    <section id="missionstatement" class="section mission-statement">
+    <section id="missionstatement" class="section is-medium mission-statement">
         <div class="container">
             <h1 class="title">{{ content[lang]['missionStatement']['title'] }}</h1>
             <!-- <h2 class="subtitle">
@@ -83,7 +83,7 @@
             margin: 0 auto;
             color: $color-tertiary;
             text-align: center;
-            max-width: 350px;
+            max-width: 300px;
         }
     }
 </style>
