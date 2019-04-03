@@ -38,40 +38,33 @@ export const content = {
             'title': 'Das Team',
             'member': [
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'name': 'Benjamin Seibel', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'bnjmnsbl', 
+                    'img_url': 'images/benjamin_portrait.jpg',
                     'title': 'Job Title'
                 },
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'name': 'Sebasitan Meier', 
+                    'mail': 'meier@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/sebastian_portrait.jpg',
                     'title': 'Job Title'
                 },
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
+                    'name': 'Sara Reichert', 
+                    'mail': 'reichert@technologiestiftung-berlin.de', 
                     'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'img_url': 'images/sara_portrait.jpg',
                     'title': 'Job Title'
                 },
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'name': 'Fabian Dinklage', 
+                    'mail': 'dinklage@technologiestiftung-berlin.de', 
+                    'twitter': 'fdnklg', 
+                    'img_url': 'images/fabian_portrait.jpg',
                     'title': 'Job Title'
-                },
-                { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName',
-                    'img_url': 'images/alexandra_portrait.jpg',
-                    'title': 'Job Title'
-                },
+                }
             ],
         },
         'cta': {
@@ -89,7 +82,8 @@ export const content = {
                 'title': 'Mehr',
                 'press': 'Presse',
                 'downloads': 'Downloads',
-                'codeofconduct': 'Code of Conduct'
+                'codeofconduct': 'Code of Conduct',
+                'imprint': 'Impressum',
             },
             'funding': {
                 'title': 'Gefördert durch',
@@ -101,6 +95,34 @@ export const content = {
         },
         'downloads': {
             'title': 'Downloads DE'
+        },
+        'imprint': {
+            'title': 'Impressum',
+            'info': {
+                'title': 'Angaben zur Technologiestiftung Berlin',
+                'p1': 'Technologiestiftung Berlin </br> Fasanenstraße 85 10623 Berlin <br/>  Tel.: +49 30 46302 500 <br/>',
+                'mail_url': 'info@technologiestiftung-berlin.de',
+                'mail_name': 'info(at)technologiestiftung-berlin.de',
+                'p2': 'Stiftungsverzeichnis Berlin: AZ 3416/464 B3 <br/> USt-Id-Nr.: DE 187 459 128',
+                'p3': 'Die Technologiestiftung Berlin ist eine rechtsfähige und gemeinnützige Stiftung bürgerlichen Rechts. Sie unterliegt nach dem Berliner Stiftungsgesetz in der Fassung vom 11. Dezember 1997 (GVBl. S. 674) der Staatsaufsicht, die von der Senatsverwaltung für Justiz, Salzburger Str. 21-25, 10825 Berlin, geführt wird.'
+            },
+            'boardmembers': {
+                'title': 'Vertretungsberechtigter Vorstand',
+                'p': 'Nicolas Zimmer (Vorsitz), Steffen Döring, Prof. Dr.-Ing. Ina Schieferdecker'
+            },
+            'responsible': {
+                'title': 'Inhaltlich Verantwortliche gemäß §5 TMG',
+                'p': 'Frauke Nippel (Technologiestiftung Berlin)'
+            },
+            'disclaimer': {
+                'title': 'Haftungsausschluss',
+                'p1': 'Es wird von uns keine Garantie dafür übernommen, dass die auf dieser Website bereitgestellten Informationen vollständig, richtig und in jedem Fall aktuell sind.',
+                'p2': 'Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Wir haben keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung der verlinkten Seiten. Wir distanzieren uns hiermit ausdrücklich von allen inhaltlichen Änderungen, die nach der Linksetzung auf den verlinkten Seiten vorgenommen werden. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.',
+                'p3': 'Wir behalten uns das Recht vor, ohne vorherige Ankündigung Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen.',
+                'p4': 'Wir sind bestrebt, in allen Publikationen geltende Urheberrechte zu beachten. Sollte es trotzdem zu einer Urheberrechtsverletzung kommen, werden wir das entsprechende Objekt nach Benachrichtigung aus seiner Publikation entfernen bzw. mit dem Urheberrecht kenntlich machen.',
+                'p5': 'Alle auf den Webseiten genannten und gegebenenfalls durch Dritte geschützte Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer.',
+                'p6': 'Dieser Haftungshinweis ist als Teil des Internetangebotes der Technologiestiftung Berlin und des Fördervereins Technologiestiftung Berlin e. V. zu betrachten. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokuments in ihrem Inhalt und ihrer Gültigkeit hiervon unberührt.'
+            }
         }
 
     },
@@ -143,41 +165,34 @@ export const content = {
             'title': 'The team',
             'member': [
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'name': 'Benjamin Seibel', 
+                    'mail': 'seibel@technologiestiftung-berlin.de', 
+                    'twitter': 'bnjmnsbl', 
+                    'img_url': 'images/benjamin_portrait.jpg',
                     'title': 'Job Title'
                 },
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'name': 'Sebasitan Meier', 
+                    'mail': 'meier@technologiestiftung-berlin.de', 
+                    'twitter': 'seb_meier', 
+                    'img_url': 'images/sebastian_portrait.jpg',
                     'title': 'Job Title'
                 },
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
+                    'name': 'Sara Reichert', 
+                    'mail': 'reichert@technologiestiftung-berlin.de', 
                     'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'img_url': 'images/sara_portrait.jpg',
                     'title': 'Job Title'
                 },
                 { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
+                    'name': 'Fabian Dinklage', 
+                    'mail': 'dinklage@technologiestiftung-berlin.de', 
+                    'twitter': 'fdnklg', 
+                    'img_url': 'images/fabian_portrait.jpg',
                     'title': 'Job Title'
-                },
-                { 
-                    'name': 'Firstname Lastname', 
-                    'mail': 'name@citylab.berlin', 
-                    'twitter': 'twitterName', 
-                    'img_url': 'images/alexandra_portrait.jpg',
-                    'title': 'Job Title'
-                },
-            ]
+                }
+            ],
         },
         'cta': {
             'title': 'Get in touch!',
@@ -194,7 +209,8 @@ export const content = {
                 'title': 'More',
                 'press': 'Press',
                 'downloads': 'Downloads',
-                'codeofconduct': 'Code of Conduct'
+                'codeofconduct': 'Code of Conduct',
+                'imprint': 'Legal note',
             },
             'funding': {
                 'title': 'Supported by',
@@ -206,6 +222,36 @@ export const content = {
         },
         'downloads': {
             'title': 'Downloads EN'
+        },
+        'imprint': {
+            'title': 'Legal note',
+            'info': {
+                'title': 'Information about Technologiestiftung Berlin',
+                'p1': 'Technologiestiftung Berlin </br> Fasanenstraße 85 10623 Berlin <br/>  Tel.: +49 30 46302 500 <br/>',
+                'mail_url': 'info@technologiestiftung-berlin.de',
+                'mail_name': 'info(at)technologiestiftung-berlin.de',
+                'p2': 'Foundation register Berlin: file reference number 3416/464 B3 <br/> VAT No.: DE 187 459 128',
+                'p3': 'Technologiestiftung Berlin is a non-profit foundation with legal capacity under German civil law. Pursuant to the version dated 11 December 1997 of the Berlin Foundation Act (GVBl. p. 674) it is subject to state supervision which is exercised by the Senate Administration for Justice, Salzburger Str. 21-25, 10825 Berlin.'
+            },
+            'boardmembers': {
+                'title': 'Authorised Board members',
+                'p': 'Nicolas Zimmer (Chairperson), Steffen Döring, Prof. Dr.-Ing. Ina Schieferdecker'
+            },
+            'responsible': {
+                'title': 'Person responsible for the contents pursuant to Section 5 Telemedia Act (TMG)',
+                'p': 'Frauke Nippel (Technologiestiftung Berlin)'
+            },
+            'disclaimer': {
+                'title': 'Disclaimer',
+                'p1': 'We do not guarantee that the information provided on this website is complete, accurate or up-to-date.',
+                'p2': 'Although we take great care to check content, we do not assume any liability for the contents of external links. We do not have any influence on the current or future shaping of the linked websites. We expressly distance ourselves from all changes to the contents undertaken after the establishment of links to said websites. The providers of said websites are solely responsible for the contents of the linked websites.',
+                'p3': 'We reserve the right to change or supplement the information made available without prior notice.',
+                'p4': 'We endeavour to comply with all valid copyright laws in all publications. Should there nonetheless be an infringement of copyright law, we shall remove the corresponding item, after being informed, from the relevant publication or render it visible by reference to copyright law.',
+                'p5': 'All trademarks and brand names mentioned on websites that may be protected by third parties shall be covered in an unlimited manner by the respective valid labelling legislation and the ownership rights of the respective registered owners.',
+                'p6': 'This disclaimer shall be deemed to be part of the Internet offering of Technologiestiftung Berlin and the Förderverein Technologiestiftung Berlin e. V. To the extent that parts or individual formulations in this text do not, no longer or do not fully comply with the valid legal situation, this shall not affect the contents and validity of other parts of the document.',
+                'p7': 'Please refer to our German website for our data protection policy.'
+
+            }
         }
     }
 }

@@ -60,16 +60,16 @@
 				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 			}
 		},
-			created () {
-				if (process.browser) { 
-					window.addEventListener('scroll', this.handleScroll);
-				}
-			},
-			destroyed () {
-				if (process.browser) { 
-					window.removeEventListener('scroll', this.handleScroll);
-				}
+		created () {
+			if (process.browser) { 
+				window.addEventListener('scroll', this.handleScroll);
 			}
+		},
+		destroyed () {
+			if (process.browser) { 
+				window.removeEventListener('scroll', this.handleScroll);
+			}
+		}
 		}
 </script>
 

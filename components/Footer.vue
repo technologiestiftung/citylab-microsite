@@ -47,12 +47,21 @@
                         </nuxt-link>
         
 
-                        <nuxt-link class="flex flex-row" :to="directPress">
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directPress">
                             <div class="icon-wrapper">
                                 <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="newspaper"/>
                             </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['press'] }}
+                            </p>
+                        </nuxt-link>
+
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directImprint">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="stamp"/>
+                            </div>
+                            <p class="content">
+                                {{ content[lang]['footer']['more']['imprint'] }}
                             </p>
                         </nuxt-link>
 
@@ -88,15 +97,22 @@
                     de: {
                         downloads: '/downloads',
                         press: '/press',
+                        imprint: '/legalnote',
+                        dataprivacy: '/dataprivacy',
                     },
                     en: {
                         downloads: '/downloads_en',
                         press: '/press_en',
+                        imprint: '/legalnote_en',
+                        dataprivacy: '/dataprivacy_en',
                     }
                 }
             }
         },
         computed: {
+            directImprint() {
+                return this.directs[this.lang].imprint
+            },
             directDownloads() {
                 return this.directs[this.lang].downloads
             },

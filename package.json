@@ -16,7 +16,8 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/bulma": "^1.2.3",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.5.1"
+    "nuxt": "^2.5.1",
+    "three": "^0.103.0"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^0.1.2",

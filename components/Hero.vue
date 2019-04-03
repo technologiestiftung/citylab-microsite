@@ -1,11 +1,10 @@
 <template>
-    <section class="hero is-color-primary section is-medium">
-        <h2 class="subtitle">
-            {{ content[lang]['hero']['subtitle'] }}
-        </h2>
-        <h1 class="title">
-            {{ content[lang]['hero']['claim'] }}
-        </h1>
+    <section :style="{ backgroundImage: `url(${backgroundUrl})`}"  class="hero is-color-primary">
+        <section class="hero-content section is-medium">
+            <h1 class="title">
+                {{ content[lang]['hero']['claim'] }}
+            </h1>
+        </section>
     </section>
 </template>
 
@@ -14,16 +13,54 @@
         name: 'Hero',
         computed: {
         },
-        props: ['lang', 'content']
+        props: ['lang', 'content'],
+        data() {
+            return {
+                backgroundUrl: 'images/hero_img.jpg',
+            }
+        } 
     }
 </script>
 
 <style lang="scss">
     @import "../assets/style/style.scss";
     .hero {
-        height: 500px;
+        height: 600px;
         background: $blue;
-        margin-top: 52px;
+        background-position: center;
+        background-size: cover;
+
+        &::before{
+            background-color: rgba($color-tertiary, 0.5);
+            content: '';
+            display: block;
+            height: 600px;
+            position: absolute;
+            width: 100%;
+        }
+
+        &-content {
+            padding-top: 20rem !important;
+            z-index: 10;
+            
+            h1.title {
+                font-size: $size-1 !important;
+                width: 70%;
+
+                @include mobile {
+                    font-size: $size-3 !important;
+                    width: 100%;
+                }
+
+                @include tablet {
+                    font-size: $size-2 !important;
+                }
+
+                @include desktop {
+                    font-size: $size-2 !important;
+                }
+            }
+        }
     }
 </style>
 

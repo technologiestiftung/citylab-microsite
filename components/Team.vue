@@ -5,7 +5,7 @@
                 {{ content[lang]['team']['title'] }}
             </h2>
 
-            <div class="tile is-ancestor wrap fourPerRow">
+            <div class="tile is-ancestor wrap fourPerRow team-wrapper">
                 <div v-for="person in teamArr" class="tile is-parent fourth">
                     <article class="tile is-child">
                         <figure class="image is 1by1">
@@ -16,7 +16,7 @@
                             <p class="name">{{ person.name }}</p>
                             <p class="title">{{ person.title }}</p>
                             <a class="twitter" target="_blank" :href="`https://twitter.com/${person.twitter}`">@{{person.twitter}}</a>
-                            <a class="mail" :href="`mailto:${person.mail}`">{{ person.mail }}</a>
+                            <a class="mail" :href="`mailto:${person.mail}`">E-Mail</a>
                         </div>
                     </article>
                 </div>
@@ -66,6 +66,10 @@
                 transition: opacity .5s ease;
             }
         }
+    }
+
+    .team-wrapper {
+        display: flex !important;
     }
 
     .wrapper-details {
