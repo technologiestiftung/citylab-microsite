@@ -11,6 +11,7 @@
 		<button @click="topFunction()" id="myBtn" class="button is-color-tertiary top">
 			<font-awesome-icon far icon="arrow-alt-circle-up" style="font-size: 24px;"/>
 		</button>
+		<Matomo/>
 	</div>
 </template>
 
@@ -26,6 +27,7 @@
 	import Projects from '../components/Projects.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
+	import Matomo from '../components/Matomo.vue';
 
 	export default {
 		components: {
@@ -35,6 +37,7 @@
 			Team,
 			Projects,
 			Cta,
+			Matomo,
 			Footer,
 		},
 		data() {

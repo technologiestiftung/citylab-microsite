@@ -65,6 +65,24 @@
                             </p>
                         </nuxt-link>
 
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directDataprivacy">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="user-secret"/>
+                            </div>
+                            <p class="content">
+                                {{ content[lang]['footer']['more']['dataprivacy'] }}
+                            </p>
+                        </nuxt-link>
+
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directCodeofconduct">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="genderless"/>
+                            </div>
+                            <p class="content">
+                                {{ content[lang]['footer']['more']['codeofconduct'] }}
+                            </p>
+                        </nuxt-link>
+
                     </div>
 
                     <div class="column is-4">
@@ -97,21 +115,29 @@
                     de: {
                         downloads: '/downloads',
                         press: '/press',
-                        imprint: '/legalnote',
                         dataprivacy: '/dataprivacy',
+                        code: '/codeofconduct',
+                        imprint: '/legalnote',
                     },
                     en: {
                         downloads: '/downloads_en',
                         press: '/press_en',
                         imprint: '/legalnote_en',
                         dataprivacy: '/dataprivacy_en',
+                        code: '/codeofconduct_en',
                     }
                 }
             }
         },
         computed: {
+            directCodeofconduct() {
+                return this.directs[this.lang].code
+            },
             directImprint() {
                 return this.directs[this.lang].imprint
+            },
+            directDataprivacy() {
+                return this.directs[this.lang].dataprivacy
             },
             directDownloads() {
                 return this.directs[this.lang].downloads

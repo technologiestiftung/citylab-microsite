@@ -1,15 +1,20 @@
 <template>
     <div>
-		<Navigation :lang="lang" :content="content" :direct="direct"/>
-        <section class="section downloads">
+		<Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct"/>
+        <section class="section is-medium">
             <div class="container">
-                <h1 class="title">
-                    {{ content[lang]['downloads']['title'] }}
+                <h1 class="title" style="margin-top: 100px">
+                    {{ content[lang]['codeofconduct']['title'] }}
                 </h1>
+
+				<ol>
+					<li style="margin-bottom: 20px;" v-for="point in pointsArr">{{point}}</li>
+				</ol>
+
+				<Matomo/>
             </div>
         </section>
 		<Footer :lang="lang" :content="content"/>
-		<Matomo/>
 	</div>
 </template>
 
@@ -32,9 +37,14 @@
 			return {
 				lang: 'de',
 				content: content,
-				direct: '/downloads_en'
+				direct: '/codeofconduct_en'
 			}
 		},
+		computed: {
+            pointsArr() {
+                return this.content[this.lang]['codeofconduct']['points']
+            }
+        },
     }
 </script>
 

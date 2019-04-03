@@ -61,6 +61,7 @@
             </div>
         </section>
 		<Footer :lang="lang" :content="content"/>
+		<Matomo/>
 	</div>
 </template>
 
@@ -70,12 +71,14 @@
 	} from '../assets/content.js';
 
     import Navigation from '../components/Navigation.vue';
-    import Footer from '../components/Footer.vue';
+	import Footer from '../components/Footer.vue';
+	import Matomo from '../components/Matomo.vue';
     
     export default {
         components: {
 			Navigation,
 			Footer,
+			Matomo
 		},
 		data() {
 			return {
