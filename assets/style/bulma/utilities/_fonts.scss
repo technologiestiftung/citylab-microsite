@@ -30,3 +30,21 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'National';
+    src: url('~assets/fonts/National-Extrabold.woff2') format('woff2'),
+        url('~assets/fonts/National-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'National';
+    src: url('~assets/fonts/National-ExtraboldItalic.woff2') format('woff2'),
+        url('~assets/fonts/National-ExtraboldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+

@@ -89,12 +89,25 @@
                         <h6 class="title is-5">
                             {{ content[lang]['footer']['funding']['title'] }}
                         </h6>
-                        <a class="flex flex-row m-b-sm" href="https://www.lbb.de/landesbank/de/index.html">
-                            LBB
+
+                        <span> {{ content[lang]['footer']['funding']['text_tsb'] }}</span>
+
+                        <a 
+                        class="flex flex-row m-b-sm logo"
+                        :href="`${content[lang]['footer']['funding']['href_tsb']}`"
+                        >
+                            <img :src="`${content[lang]['footer']['funding']['svg_tsb']}`" alt="">
                         </a>
-                        <a class="flex flex-row m-b-sm" href="#">
-                            SenWEB
+
+                        <span> {{ content[lang]['footer']['funding']['text_sen'] }}</span>
+
+                        <a 
+                        class="flex flex-row m-b-sm logo" 
+                        :href="`${content[lang]['footer']['funding']['href_sen']}`"
+                        >
+                            <img :src="`${content[lang]['footer']['funding']['svg_sen']}`" alt="">
                         </a>
+
                     </div>
                 </div>
                 <p class="text-light">
@@ -178,12 +191,26 @@
     }
 
     .column {
+        span {
+            color: $color-tertiary;
+            opacity: .5;
+        }
+
         a {
             color: $color-tertiary;
             opacity: 0.6;
 
             &:hover {
                 opacity: 0.8;
+            }
+        }
+
+        a.logo {
+            opacity: 1;
+            margin-top: 10px;
+
+            &:first-of-type {
+                margin-bottom: 25px;
             }
         }
     }

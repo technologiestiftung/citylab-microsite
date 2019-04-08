@@ -15,8 +15,8 @@
                         <div class="wrapper-details">
                             <p class="name">{{ person.name }}</p>
                             <p class="title">{{ person.title }}</p>
-                            <a class="twitter" target="_blank" :href="`https://twitter.com/${person.twitter}`">@{{person.twitter}}</a>
-                            <a class="mail" :href="`mailto:${person.mail}`">E-Mail</a>
+                            <a v-if="contentAvailable(person.twitter)" class="twitter" target="_blank" :href="`https://twitter.com/${person.twitter}`">@{{person.twitter}}</a>
+                            <a v-if="contentAvailable(person.mail)" class="mail" :href="`mailto:${person.mail}`">E-Mail</a>
                         </div>
                     </article>
                 </div>
@@ -32,6 +32,15 @@
         computed: {
             teamArr() {
                 return this.content[this.lang]['team']['member']
+            }
+        },
+        methods: {
+            contentAvailable(field) {
+                if (field.length > 0) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
         },
         mounted() {
