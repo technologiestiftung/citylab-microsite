@@ -23,10 +23,10 @@ export const content = {
             'title': 'Mission Statement',
             'subtitle': 'Das ist eine kurzer Text zur Beschreibung des Mission Statements.',
             'statement1-title': 'Agil', 
-            'statement1-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um die Zeit von der ersten Idee bis zur Umsetzung zu verkürzen und bedarfsgerechte Lösungen zu finden.', 
+            'statement1-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.', 
             'statement1-img_url': 'images/01.jpg',
-            'statement2-title': 'Partizipativ', 
-            'statement2-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten, sich einzubringen.', 
+            'statement2-title': 'Inklusiv', 
+            'statement2-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Partizipation und Mitgestaltung.', 
             'statement2-img_url': 'images/02.jpg', 
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
@@ -52,28 +52,42 @@ export const content = {
                     'mail': 'seibel@technologiestiftung-berlin.de', 
                     'twitter': 'bnjmnsbl', 
                     'img_url': 'images/benjamin_portrait.jpg',
-                    'title': 'Job Title'
+                    'title': 'Leitung'
+                },
+                { 
+                    'name': 'Nadine Riede', 
+                    'mail': 'riede@technologiestiftung-berlin.de', 
+                    'twitter': '', 
+                    'img_url': 'images/sebastian_portrait.jpg',
+                    'title': 'Content & Events'
                 },
                 { 
                     'name': 'Sebastian Meier', 
                     'mail': 'meier@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
                     'img_url': 'images/sebastian_portrait.jpg',
-                    'title': 'Job Title'
+                    'title': 'Wissenschaftskooperation'
                 },
                 { 
                     'name': 'Sara Reichert', 
                     'mail': 'reichert@technologiestiftung-berlin.de', 
                     'twitter': 'twitterName', 
                     'img_url': 'images/sara_portrait.jpg',
-                    'title': 'Job Title'
+                    'title': 'Werkstattleitung'
                 },
                 { 
                     'name': 'Fabian Dinklage', 
                     'mail': 'dinklage@technologiestiftung-berlin.de', 
                     'twitter': 'fdnklg', 
                     'img_url': 'images/fabian_portrait.jpg',
-                    'title': 'Job Title'
+                    'title': 'UX & Design'
+                },
+                { 
+                    'name': 'tba', 
+                    'mail': 'tba@technologiestiftung-berlin.de', 
+                    'twitter': 'fdnklg', 
+                    'img_url': 'images/fabian_portrait.jpg',
+                    'title': 'Space Manager'
                 }
             ],
         },
@@ -290,7 +304,7 @@ export const content = {
                     'mail': 'seibel@technologiestiftung-berlin.de', 
                     'twitter': 'bnjmnsbl', 
                     'img_url': 'images/benjamin_portrait.jpg',
-                    'title': 'Job Title'
+                    'title': 'Director'
                 },
                 { 
                     'name': 'Sebastian Meier', 

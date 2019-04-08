@@ -2,9 +2,9 @@
     <section id="missionstatement" class="section is-medium mission-statement">
         <div class="container">
             <h1 class="title">{{ content[lang]['missionStatement']['title'] }}</h1>
-            <!-- <h2 class="subtitle">
+            <h2 class="subtitle">
                 {{ content[lang]['missionStatement']['subtitle'] }}
-            </h2> -->
+            </h2>
             <div class="tile is-ancestor">
 
                     <div class="tile is-parent">
