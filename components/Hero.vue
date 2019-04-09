@@ -64,6 +64,8 @@
             h1.title {
                 font-size: $size-1 !important;
                 width: 70%;
+                max-width: 900px;
+                margin: 0 auto;
 
                 @include mobile {
                     font-size: $size-3 !important;
