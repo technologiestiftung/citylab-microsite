@@ -4,34 +4,6 @@
             <h1 class="title">{{ content[lang]['missionStatement']['title'] }}</h1>
             <h2 class="subtitle" v-html="`${content[lang]['missionStatement']['subtitle']}`"></h2>
             <a class="button is-color-secondary is-normal">{{ content[lang]['missionStatement']['cta'] }}</a>
-
-            <div class="tile is-ancestor m-t-2">
-
-                    <div class="tile is-parent">
-                        <article class="tile is-child statement">
-                            <figure class="image"><img :src="`${content[lang]['missionStatement']['statement1-img_url']}`"></figure>
-                            <p class="subtitle">{{ content[lang]['missionStatement']['statement1-title'] }}</p>
-                            <div class="content">{{ content[lang]['missionStatement']['statement1-text'] }}</div>
-                        </article>
-                    </div>
-                    
-                    <div class="tile is-parent">
-                        <article class="tile is-child statement">
-                            <figure class="image"><img :src="`${content[lang]['missionStatement']['statement2-img_url']}`"></figure>
-                            <p class="subtitle">{{ content[lang]['missionStatement']['statement2-title'] }}</p>
-                            <div class="content">{{ content[lang]['missionStatement']['statement2-text'] }}</div>
-                        </article>
-                    </div>
-
-                    <div class="tile is-parent">
-                        <article class="tile is-child statement">
-                            <figure class="image"><img :src="`${content[lang]['missionStatement']['statement3-img_url']}`"></figure>
-                            <p class="subtitle">{{ content[lang]['missionStatement']['statement3-title'] }}</p>
-                            <div class="content">{{ content[lang]['missionStatement']['statement3-text'] }}</div>
-                        </article>
-                    </div>
-
-            </div>
         </div>
     </section>
 </template>

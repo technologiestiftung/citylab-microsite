@@ -3,6 +3,7 @@
 		<Navigation :lang="lang" :content="content" :direct="direct"/>
 		<Hero :lang="lang" :content="content" :direct="direct"/>
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
+		<Tiles :lang="lang" :content="content" :direct="direct"/>
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
@@ -30,6 +31,7 @@
 	import Cta from '../components/Cta.vue';
 	import Matomo from '../components/Matomo.vue';
 	import Topics from '../components/Topics.vue';
+	import Tiles from '../components/Tiles.vue';
 
 	export default {
 		components: {
@@ -41,7 +43,8 @@
 			Cta,
 			Matomo,
 			Footer,
-			Topics
+			Topics,
+			Tiles,
 		},
 		data() {
 			return {

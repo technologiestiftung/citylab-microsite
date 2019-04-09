@@ -35,29 +35,29 @@ export const content = {
         },
         'topics': [
             {
-                'title': 'Mobilität von morgen',
+                'title': 'Mobilität <br/> von morgen',
                 'text': 'Von Fahrrad bis Flugtaxi, von Hyperloop bis Home Office – Städte sind Experimentierfelder für mobiles Leben. Wie gestalten wir den Verkehr der Zukunft?',
                 'img_url': 'images/topic_01.jpg'
             },
             {
-                'title': 'Innovative Verwaltung',
+                'title': 'Innovative <br/> Verwaltung',
                 'text': 'Geburtsurkunde via Whatsapp und Kindergeld per Kryptowährung – passt das überhaupt zusammen? Wie sehen Verwaltungsservices aus, die von Bürger*innen her gedacht werden?',
                 'img_url': 'images/topic_02.jpg'
             },
             {
-                'title': 'Smart Cities für alle',
+                'title': 'Smart Cities <br/> für alle',
                 'text': 'Brücken bauen über digitale Gräben: Wie können wir die smarte Stadt so öffnen, dass möglichst alle Menschen darin handlungsfähig werden? ',
-                'img_url': 'images/topic_03.jpg'
+                'img_url': 'images/topic_02.jpg'
             },
             {
-                'title': 'Offene Daten, offene Städte',
+                'title': 'Offene Daten, <br/>offene Städte',
                 'text': 'Black Box oder gläserner Bürger? Wie schützen wir persönliche Informationen und schaffen zugleich Transparenz bei öffentlichen Daten und Algorithmen?',
-                'img_url': 'images/topic_04.jpg'
+                'img_url': 'images/topic_02.jpg'
             },
             {
-                'title': 'Energie und Nachhaltigkeit',
+                'title': 'Energie und <br/> Nachhaltigkeit',
                 'text': 'Upcycling, Kreislaufwirtschaft, intelligente Netze – wir erforschen Wege hin zu einem klimaneutralen und gesunden Berlin ' ,
-                'img_url': 'images/topic_05.jpg'
+                'img_url': 'images/topic_02.jpg'
             },
         ],
         'projects': {
