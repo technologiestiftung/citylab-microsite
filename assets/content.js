@@ -21,7 +21,7 @@ export const content = {
         },
         'missionStatement': {
             'title': 'Mission Statement',
-            'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsender Kreis aus Verwaltung, Zivilgesellschaft und Wissenschaft arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
+            'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsender Kreis aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
             'statement1-title': 'Inklusiv', 
             'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.', 
             'statement1-img_url': 'images/02.jpg', 
@@ -127,7 +127,7 @@ export const content = {
             'contact': {
                 'title': 'Kontakt',
                 'mail': 'hello@citylabberlin.de',
-                'address_street': 'Platz der Luftbrücke 12',
+                'address_street': 'Platz der Luftbrücke 4-6',
                 'address_code': '12101 Berlin',
             },
             'more': {
@@ -412,7 +412,7 @@ export const content = {
             'contact': {
                 'title': 'Get in touch',
                 'mail': 'hello@citylabberlin.de',
-                'address_street': 'Platz der Luftbrücke 12',
+                'address_street': 'Platz der Luftbrücke 4-6',
                 'address_code': '12101 Berlin',
             },
             'more': {
