@@ -34,7 +34,7 @@ export const content = {
         },
         'projects': {
             'title': 'Open Call',
-            'opencall': 'Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können.',
+            'opencall': 'Ihr habt Ideen für eine bessere Stadt? Bringt euer Projekt ins CityLAB!',
             'cta': 'Jetzt bewerben',
             'projects': [
                 {
