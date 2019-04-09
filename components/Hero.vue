@@ -1,9 +1,7 @@
 <template>
     <section ref="hero" :style="{ backgroundImage: `url(${backgroundUrl})`}"  class="hero is-color-primary">
         <section class="hero-content section is-medium">
-            <h1 class="title">
-                {{ content[lang]['hero']['claim'] }}
-            </h1>
+            <h1 class="title" v-html="`${content[lang]['hero']['claim']}`"></h1>
         </section>
         <Three :config="config" />
     </section>

@@ -17,17 +17,17 @@ export const content = {
         },
         'hero': {
             'subtitle': "CityLAB Berlin",
-            'claim': "Die digitale Zukunft Berlins gemeinsam gestalten.",
+            'claim': "Die digitale Zukunft Berlins <br/> gemeinsam gestalten.",
         },
         'missionStatement': {
             'title': 'Mission Statement',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsender Kreis aus Verwaltung, Zivilgesellschaft und Wissenschaft arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
-            'statement1-title': 'Agil', 
-            'statement1-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.', 
-            'statement1-img_url': 'images/01.jpg',
-            'statement2-title': 'Inklusiv', 
-            'statement2-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Partizipation und Mitgestaltung.', 
-            'statement2-img_url': 'images/02.jpg', 
+            'statement1-title': 'Inklusiv', 
+            'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.', 
+            'statement1-img_url': 'images/02.jpg', 
+            'statement2-title': 'Agil', 
+            'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.', 
+            'statement2-img_url': 'images/01.jpg',
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
             'statement3-img_url': 'images/03.jpg', 
@@ -59,14 +59,14 @@ export const content = {
                     'mail': 'riede@technologiestiftung-berlin.de', 
                     'twitter': '', 
                     'img_url': 'images/nadine_portrait.jpg',
-                    'title': 'Content & Events'
+                    'title': 'Head of Content & Events'
                 },
                 { 
                     'name': 'Sebastian Meier', 
                     'mail': 'meier@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
                     'img_url': 'images/sebastian_portrait.jpg',
-                    'title': 'Wissenschaftskooperation'
+                    'title': 'Head of Scientific Cooperation'
                 },
                 { 
                     'name': 'Sara Reichert', 
@@ -87,7 +87,7 @@ export const content = {
                     'mail': '', 
                     'twitter': '', 
                     'img_url': 'images/new_portrait.jpg',
-                    'title': 'Space Manager'
+                    'title': 'Koordination'
                 }
             ],
         },
@@ -309,28 +309,28 @@ export const content = {
                     'mail': 'seibel@technologiestiftung-berlin.de', 
                     'twitter': 'bnjmnsbl', 
                     'img_url': 'images/benjamin_portrait.jpg',
-                    'title': 'Leitung'
+                    'title': 'Director'
                 },
                 { 
                     'name': 'Nadine Riede', 
                     'mail': 'riede@technologiestiftung-berlin.de', 
                     'twitter': '', 
                     'img_url': 'images/nadine_portrait.jpg',
-                    'title': 'Content & Events'
+                    'title': 'Head of Content & Events'
                 },
                 { 
                     'name': 'Sebastian Meier', 
                     'mail': 'meier@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
                     'img_url': 'images/sebastian_portrait.jpg',
-                    'title': 'Wissenschaftskooperation'
+                    'title': 'Head of Scientific Cooperation'
                 },
                 { 
                     'name': 'Sara Reichert', 
                     'mail': 'reichert@technologiestiftung-berlin.de', 
                     'twitter': '', 
                     'img_url': 'images/sara_portrait.jpg',
-                    'title': 'Werkstattleitung'
+                    'title': 'Workshop Lead'
                 },
                 { 
                     'name': 'Fabian Dinklage', 
@@ -344,7 +344,7 @@ export const content = {
                     'mail': '', 
                     'twitter': '', 
                     'img_url': 'images/new_portrait.jpg',
-                    'title': 'Space Manager'
+                    'title': 'Coordination'
                 }
             ],
         },
