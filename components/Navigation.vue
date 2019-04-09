@@ -2,37 +2,48 @@
 
     <nav id="nav" :class="`navbar is-fixed-top is-medium ${toggle}`" role="navigation" aria-label="main navigation">
 
+        <div class="container">
+
             <div class="navbar-brand">
-                <a class="navbar-item" :href="directHome">
-                    <svg height="58" width="51" viewBox="0 0 51 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <a style="height: 50px;" class="navbar-item" :href="directHome">
+                    <svg width="27px" height="30px" viewBox="0 0 27 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="03_Website-Copy" transform="translate(-314.000000, -190.000000)">
-                                <g id="Group" transform="translate(315.000000, 191.700000)">
-                                    <polygon id="Fill-7" fill="#FFFFFF" points="1.42108547e-14 39.6329885 9.6690967 45.177519 28.2102139 34.4222268 28.2457681 10.92033 18.8531124 5.51470903 0.173636934 16.26945"></polygon>
-                                    <polygon id="Stroke-8" stroke="#393A60" stroke-width="1.55318757" points="1.42108547e-14 39.6329885 9.6690967 45.177519 28.2102139 34.4222268 28.2457681 10.92033 18.8531124 5.51470903 0.173636934 16.26945"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="9.60602016 45.2866071 28.1471373 34.5313149 28.2457681 10.92033 9.60602016 21.667956"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="0.299907333 39.2765967 9.57046593 45.177519 9.60602016 21.6756221 0.21336448 16.2700012"></polygon>
-                                    <polygon id="Fill-7" fill="#FFFFFF" points="10.0701429 49.7314094 19.7392396 55.2759399 38.2803568 44.5206477 38.315911 21.0187509 28.9232553 15.6131299 10.2437798 26.3678709"></polygon>
-                                    <polygon id="Stroke-8" stroke="#2F2FA2" stroke-width="1.55318757" points="10.0701429 49.7314094 19.7392396 55.2759399 38.2803568 44.5206477 38.315911 21.0187509 28.9232553 15.6131299 10.2437798 26.3678709"></polygon>
-                                    <polygon id="Stroke-8" fill="#2F2FA2" opacity="0.400000006" points="19.6761631 55.385028 38.2172802 44.6297358 38.315911 21.0187509 19.6761631 31.7663769"></polygon>
-                                    <polygon id="Stroke-8" fill="#2F2FA2" opacity="0.100000001" points="10.3700502 49.3750176 19.6406088 55.2759399 19.6761631 31.7740431 10.2835074 26.3684221"></polygon>
-                                    <polygon id="Fill-7" fill="#FFFFFF" points="1.42108547e-14 39.6329885 9.6690967 45.177519 28.2102139 34.4222268 28.2457681 10.92033 18.8531124 5.51470903 0.173636934 16.26945"></polygon>
-                                    <polygon id="contour-last" stroke="#5F6078" stroke-width="1.55318757" points="1.42108547e-14 39.6329885 9.6690967 45.177519 28.2102139 34.4222268 28.2457681 10.92033 18.8531124 5.51470903 0.173636934 16.26945"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="9.60602016 45.2866071 28.1471373 34.5313149 28.2457681 10.92033 9.60602016 21.667956"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="0.299907333 39.2765967 9.57046593 45.177519 9.60602016 21.6756221 0.21336448 16.2700012"></polygon>
-                                    <polygon id="Fill-7" fill="#FFFFFF" points="10.0701429 49.7314094 19.7392396 55.2759399 38.2803568 44.5206477 38.315911 21.0187509 28.9232553 15.6131299 10.2437798 26.3678709"></polygon>
-                                    <polygon id="contour-middle" stroke="#5F6078" stroke-width="1.55318757" points="10.0701429 49.7314094 19.7392396 55.2759399 38.2803568 44.5206477 38.315911 21.0187509 28.9232553 15.6131299 10.2437798 26.3678709"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="19.6761631 55.385028 38.2172802 44.6297358 38.315911 21.0187509 19.6761631 31.7663769"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="10.3700502 49.3750176 19.6406088 55.2759399 19.6761631 31.7740431 10.2835074 26.3684221"></polygon>
-                                    <polygon id="contour-front" fill="#FFFFFF" points="20.1384116 34.1182795 29.8075083 39.66281 48.3486255 28.9075178 48.3841797 5.40562093 38.9915241 0 20.3120485 10.754741"></polygon>
-                                    <polygon id="Stroke-8" stroke="#5F6078" stroke-width="1.55318757" points="20.1384116 34.1182795 29.8075083 39.66281 48.3486255 28.9075178 48.3841797 5.40562093 38.9915241 0 20.3120485 10.754741"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="29.7444318 39.771898 48.285549 29.0166059 48.3841797 5.40562093 29.7444318 16.1532469"></polygon>
-                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="20.4383189 33.7618876 29.7088775 39.66281 29.7444318 16.1609131 20.3517761 10.7552922"></polygon>
+                            <g id="Group-11" transform="translate(1.533974, 1.074335)">
+                                <g id="Group-7-Copy-25" transform="translate(-0.000000, 2.730847)">
+                                    <polygon id="Fill-7" fill="#FFFFFF" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" stroke="#393A60" stroke-width="1.0872313" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="4.7568371 19.6947786 13.9382747 14.3688297 13.987116 2.67682743 4.7568371 7.99898014"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="0.148512111 16.7186615 4.73923089 19.6407589 4.7568371 8.00277637 0.105656667 5.32594895"></polygon>
+                                </g>
+                                <g id="Group-7-Copy-26" transform="translate(4.986668, 7.731518)">
+                                    <polygon id="Fill-7" fill="#FFFFFF" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" stroke="#2F2FA2" stroke-width="1.0872313" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" fill="#2F2FA2" opacity="0.400000006" points="4.7568371 19.6947786 13.9382747 14.3688297 13.987116 2.67682743 4.7568371 7.99898014"></polygon>
+                                    <polygon id="Stroke-8" fill="#2F2FA2" opacity="0.100000001" points="0.148512111 16.7186615 4.73923089 19.6407589 4.7568371 8.00277637 0.105656667 5.32594895"></polygon>
+                                </g>
+                                <g id="Group-7-Copy-27" transform="translate(-0.000000, 2.730847)">
+                                    <polygon id="Fill-7" fill="#FFFFFF" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" stroke="#393A60" stroke-width="1.0872313" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="4.7568371 19.6947786 13.9382747 14.3688297 13.987116 2.67682743 4.7568371 7.99898014"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="0.148512111 16.7186615 4.73923089 19.6407589 4.7568371 8.00277637 0.105656667 5.32594895"></polygon>
+                                </g>
+                                <g id="Group-7-Copy-28" transform="translate(4.986668, 7.731518)">
+                                    <polygon id="Fill-7" fill="#FFFFFF" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" stroke="#393A60" stroke-width="1.0872313" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="4.7568371 19.6947786 13.9382747 14.3688297 13.987116 2.67682743 4.7568371 7.99898014"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="0.148512111 16.7186615 4.73923089 19.6407589 4.7568371 8.00277637 0.105656667 5.32594895"></polygon>
+                                </g>
+                                <g id="Group-7-Copy-29" transform="translate(9.972407, 0.000000)">
+                                    <polygon id="Fill-7" fill="#FFFFFF" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" stroke="#393A60" stroke-width="1.0872313" points="3.55271368e-15 16.8951444 4.78807219 19.6407589 13.9695097 14.31481 13.987116 2.67682743 9.33593552 -1.0658141e-14 0.0859838515 5.32567598"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.400000006" points="4.7568371 19.6947786 13.9382747 14.3688297 13.987116 2.67682743 4.7568371 7.99898014"></polygon>
+                                    <polygon id="Stroke-8" fill="#393A60" opacity="0.100000001" points="0.148512111 16.7186615 4.73923089 19.6407589 4.7568371 8.00277637 0.105656667 5.32594895"></polygon>
                                 </g>
                             </g>
                         </g>
                     </svg>
-                    <span style="margin-left: 10px" class="logo-type">Berlin <br/> CityLAB</span>
+                    <span style="margin-left: 10px" class="logo-type">CityLAB</span>
+                    <span style="margin-left: 5px" class="logo-type-italic">Berlin</span>
                 </a>
 
                 <a 
@@ -66,12 +77,14 @@
                     </div>
 
                     <nuxt-link class="navbar-item" :to="direct">
-                        <font-awesome-icon style="font-size: 24px; margin-right: 10px" far icon="language"/>
+                        <font-awesome-icon style="font-size: 24px; margin-right: 10px" far icon="globe-europe"/>
                         <span>{{ lang }}</span>
                     </nuxt-link>
 
                 </div>
             </div> 
+
+        </div>
 
     </nav>
 
@@ -123,7 +136,10 @@
 			if (process.browser) { 
 				window.addEventListener('scroll', this.handleScroll);
 			}
-		},
+        },
+        mounted() {
+            this.handleScroll();
+        },
 		destroyed () {
 			if (process.browser) { 
 				window.removeEventListener('scroll', this.handleScroll);
@@ -176,6 +192,11 @@
                     transition: color .15s ease;
                 }
 
+                .logo-type-italic {
+                    color: $color-tertiary--medium !important;
+                    transition: color .15s ease;
+                }
+
                 @include tablet {
                     .navbar-burger {
                         color: $color-tertiary !important;
@@ -205,7 +226,7 @@
         @include desktop {
             // Sizes
             &.is-medium {
-            padding: 1.5rem 14rem;
+            padding: .75rem 14rem;
             }
         }
 
@@ -220,9 +241,19 @@
 
             .logo-type {
                 color: $white;
-                font-weight: bold;
+                font-weight: 800;
+                font-style: normal;
                 font-size: 24px;
                 line-height: 90%;
+
+                &-italic {
+                    transform: translateY(-1px);
+                    margin-left: 5px;
+                    color: $white;
+                    font-weight: 800;
+                    font-style: italic;
+                    font-size: 24px;
+                }
             }
 
             @include tablet {

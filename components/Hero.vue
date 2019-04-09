@@ -1,24 +1,44 @@
 <template>
-    <section :style="{ backgroundImage: `url(${backgroundUrl})`}"  class="hero is-color-primary">
+    <section ref="hero" :style="{ backgroundImage: `url(${backgroundUrl})`}"  class="hero is-color-primary">
         <section class="hero-content section is-medium">
             <h1 class="title">
                 {{ content[lang]['hero']['claim'] }}
             </h1>
         </section>
+        <Three :config="config" />
     </section>
 </template>
 
 <script>
+	import Three from '../components/Three.vue';
     export default {
+        components: {
+            Three
+        },
         name: 'Hero',
         computed: {
         },
         props: ['lang', 'content'],
         data() {
             return {
+                config: {},
                 backgroundUrl: 'images/hero_img.jpg',
             }
-        } 
+        },
+        methods: {
+            setDimensions() {
+                this.config.width = this.$refs.hero.clientWidth;
+                this.config.height = this.$refs.hero.clientHeight;
+
+                console.log('updated', this.config);
+            }
+        },
+        mounted() {
+            this.setDimensions()
+        },
+        updated() {
+            this.setDimensions()
+        },
     }
 </script>
 

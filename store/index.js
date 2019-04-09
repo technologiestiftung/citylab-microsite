@@ -1,9 +1,14 @@
 import Vuex from 'vuex'
 
-const createStore = () => {
-  return new Vuex.Store({
-    
-  })
+export const state = () => ({
+  leads: []
+})
+
+export const mutations = {
+  SET_LEADS(state, leads) {
+    state.leads = leads
+  }
 }
 
-export default createStore
+export const actions = {
+}

@@ -58,7 +58,7 @@ export const content = {
                     'name': 'Nadine Riede', 
                     'mail': 'riede@technologiestiftung-berlin.de', 
                     'twitter': '', 
-                    'img_url': 'images/sebastian_portrait.jpg',
+                    'img_url': 'images/nadine_portrait.jpg',
                     'title': 'Content & Events'
                 },
                 { 
@@ -71,7 +71,7 @@ export const content = {
                 { 
                     'name': 'Sara Reichert', 
                     'mail': 'reichert@technologiestiftung-berlin.de', 
-                    'twitter': 'twitterName', 
+                    'twitter': '', 
                     'img_url': 'images/sara_portrait.jpg',
                     'title': 'Werkstattleitung'
                 },
@@ -84,9 +84,9 @@ export const content = {
                 },
                 { 
                     'name': 'tba', 
-                    'mail': 'tba@technologiestiftung-berlin.de', 
-                    'twitter': 'fdnklg', 
-                    'img_url': 'images/fabian_portrait.jpg',
+                    'mail': '', 
+                    'twitter': '', 
+                    'img_url': 'images/new_portrait.jpg',
                     'title': 'Space Manager'
                 }
             ],
@@ -112,7 +112,12 @@ export const content = {
             },
             'funding': {
                 'title': 'Gefördert durch',
-                'text': 'Gefördert von der Senatsverwaltung für Wirtschaft, Energie und Betriebe und der Investitionsbank Berlin aus den Mitteln des Landes Berlin.'
+                'text_tsb': 'Ein Projekt der',
+                'href_tsb': 'https://www.technologiestiftung-berlin.de',
+                'svg_tsb': '/tsb.svg',
+                'text_sen': 'Gefördert aus Mitteln der',
+                'href_sen': 'https://www.technologiestiftung-berlin.de',
+                'svg_sen': '/be-berlin-logo.svg',
             }
         },
         'press': {
@@ -304,28 +309,42 @@ export const content = {
                     'mail': 'seibel@technologiestiftung-berlin.de', 
                     'twitter': 'bnjmnsbl', 
                     'img_url': 'images/benjamin_portrait.jpg',
-                    'title': 'Director'
+                    'title': 'Leitung'
+                },
+                { 
+                    'name': 'Nadine Riede', 
+                    'mail': 'riede@technologiestiftung-berlin.de', 
+                    'twitter': '', 
+                    'img_url': 'images/nadine_portrait.jpg',
+                    'title': 'Content & Events'
                 },
                 { 
                     'name': 'Sebastian Meier', 
                     'mail': 'meier@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
-                    'img_url': 'images/Sebastian_portrait.jpg',
-                    'title': 'Job Title'
+                    'img_url': 'images/sebastian_portrait.jpg',
+                    'title': 'Wissenschaftskooperation'
                 },
                 { 
                     'name': 'Sara Reichert', 
                     'mail': 'reichert@technologiestiftung-berlin.de', 
-                    'twitter': 'twitterName', 
+                    'twitter': '', 
                     'img_url': 'images/sara_portrait.jpg',
-                    'title': 'Job Title'
+                    'title': 'Werkstattleitung'
                 },
                 { 
                     'name': 'Fabian Dinklage', 
                     'mail': 'dinklage@technologiestiftung-berlin.de', 
                     'twitter': 'fdnklg', 
                     'img_url': 'images/fabian_portrait.jpg',
-                    'title': 'Job Title'
+                    'title': 'UX & Design'
+                },
+                { 
+                    'name': 'tba', 
+                    'mail': '', 
+                    'twitter': '', 
+                    'img_url': 'images/new_portrait.jpg',
+                    'title': 'Space Manager'
                 }
             ],
         },
@@ -349,8 +368,13 @@ export const content = {
                 'dataprivacy': 'Data privacy'
             },
             'funding': {
-                'title': 'Supported by',
-                'text': 'Supported by the Senate Department for Economics, Energy and Enterprises and the Investitionsbank Berlin with funds from the State of Berlin.'
+                'title': 'Sponsored by:',
+                'text_tsb': 'A project of the',
+                'href_tsb': 'https://www.technologiestiftung-berlin.de',
+                'svg_tsb': '/tsb.svg',
+                'text_sen': 'Supported by',
+                'href_sen': 'https://www.technologiestiftung-berlin.de',
+                'svg_sen': '/be-berlin-logo.svg',
             }
         },
         'press': {
