@@ -9,8 +9,9 @@
 		<Footer :lang="lang" :content="content"/>
 
 		<button @click="topFunction()" id="myBtn" class="button is-color-tertiary top">
-			<font-awesome-icon far icon="arrow-alt-circle-up" style="font-size: 24px;"/>
+			<font-awesome-icon far icon="arrow-alt-circle-up"/>
 		</button>
+
 		<Matomo/>
 	</div>
 </template>
@@ -78,10 +79,10 @@
 
 <style lang="scss">
 	button.top {
-		width: 60px;
-		height: 60px;
+		width: 50px;
+		height: 50px;
 		position: fixed;
-		bottom: 40px;
-		right: 40px;
+		bottom: 20px;
+		right: 20px;
 	}
 </style>

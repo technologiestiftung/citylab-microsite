@@ -27,8 +27,8 @@
     }
 
     .intro {
-        font-size: $size-3;
-        line-height: $size-2;
+        font-size: $size-4;
+        line-height: $size-3;
         color: $color-tertiary;
     }
     

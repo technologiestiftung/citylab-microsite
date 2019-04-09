@@ -31,6 +31,7 @@ export const content = {
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
             'statement3-img_url': 'images/03.jpg', 
+            'cta': 'Mehr erfahren', 
         },
         'projects': {
             'title': 'Open Call',
@@ -288,6 +289,7 @@ export const content = {
             'statement3-title': 'Open', 
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
             'statement3-img_url': 'images/03.jpg', 
+            'cta': 'Learn more',
         },
         'projects': {
             'title': 'Open Call',

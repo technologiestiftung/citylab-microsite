@@ -6,7 +6,7 @@
             
                 <div class="columns">
                     <div class="column is-4">
-                        <h6 class="title is-5">
+                        <h6 class="title is-4">
                             {{ content[lang]['footer']['contact']['title'] }}
                         </h6>
 
@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="column is-4">
-                        <h6 class="title is-5">
+                        <h6 class="title is-4">
                             {{ content[lang]['footer']['more']['title'] }}
                         </h6>
                         
@@ -86,7 +86,7 @@
                     </div>
 
                     <div class="column is-4">
-                        <h6 class="title is-5">
+                        <h6 class="title is-4">
                             {{ content[lang]['footer']['funding']['title'] }}
                         </h6>
 
