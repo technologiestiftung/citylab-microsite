@@ -21,7 +21,7 @@ export const content = {
         },
         'missionStatement': {
             'title': 'Mission Statement',
-            'subtitle': 'Das ist eine kurzer Text zur Beschreibung des Mission Statements.',
+            'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsender Kreis aus Verwaltung, Zivilgesellschaft und Wissenschaft arbeitet hier gemeinsam an neuen Ideen für ein lebenswerteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungsraum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
             'statement1-title': 'Agil', 
             'statement1-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.', 
             'statement1-img_url': 'images/01.jpg',
