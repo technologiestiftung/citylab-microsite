@@ -34,7 +34,7 @@ export const content = {
         },
         'projects': {
             'title': 'Open Call',
-            'opencall': 'Ihr habt Ideen für eine bessere Stadt? Bringt euer Projekt ins CityLAB!',
+            'opencall': 'Ihr habt Ideen für eine bessere Stadt? Macht mit im CityLAB!',
             'cta': 'Jetzt bewerben',
             'projects': [
                 {
