@@ -33,6 +33,33 @@ export const content = {
             'statement3-img_url': 'images/03.jpg', 
             'cta': 'Mehr erfahren', 
         },
+        'topics': [
+            {
+                'title': 'Dies ist ein Titel 01',
+                'text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
+                'img_url': 'images/topic_01.jpg'
+            },
+            {
+                'title': 'Dies ist ein Titel 02',
+                'text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
+                'img_url': 'images/topic_02.jpg'
+            },
+            {
+                'title': 'Dies ist ein Titel 03',
+                'text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
+                'img_url': 'images/topic_03.jpg'
+            },
+            {
+                'title': 'Dies ist ein Titel 04',
+                'text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
+                'img_url': 'images/topic_04.jpg'
+            },
+            {
+                'title': 'Dies ist ein Titel 05',
+                'text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
+                'img_url': 'images/topic_05.jpg'
+            },
+        ],
         'projects': {
             'title': 'Open Call',
             'opencall': 'Ihr habt Ideen für eine bessere Stadt? Macht mit im CityLAB!',
@@ -291,6 +318,33 @@ export const content = {
             'statement3-img_url': 'images/03.jpg', 
             'cta': 'Learn more',
         },
+        'topics': [
+            {
+                'title': 'This is the title 01',
+                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'img_url': 'images/topic_01.jpg'
+            },
+            {
+                'title': 'This is the title 02',
+                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'img_url': 'images/topic_02.jpg'
+            },
+            {
+                'title': 'This is the title 03',
+                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'img_url': 'images/topic_03.jpg'
+            },
+            {
+                'title': 'This is the title 04',
+                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'img_url': 'images/topic_04.jpg'
+            },
+            {
+                'title': 'This is the title 05',
+                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'img_url': 'images/topic_05.jpg'
+            },
+        ],
         'projects': {
             'title': 'Open Call',
             'opencall': 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
