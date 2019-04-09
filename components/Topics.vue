@@ -10,8 +10,10 @@
                         <div id="overflow">
                         <div class="inner">
                             <article v-for="item in topicsArr" class="slide">
-                                <div class="title">{{item.title}}</div>
-                                <div class="teaser">{{item.text}}</div>
+                                <div class="content-container">
+                                    <h2 class="title" v-html="`${item.title}`"></h2>
+                                    <p class="teaser">{{item.text}}</p>
+                                </div>
                                 <div class="image-container">
                                     <img :src="item.img_url" alt="item.title" />
                                 </div>
@@ -41,48 +43,54 @@
     </script>
 
     <style lang="scss" scoped>
+        @import "../assets/style/style.scss";
+
         .slide {
+
+        display: flex;
         
         .image-container {
             img {
-            width: 100%;
-            height: auto;
+                width: 100%;
+                // height: auto;
             }
             float: left;
-            width: 200px;
+            width: 1000px;
             margin-right: 15px;
         }
         .title {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: $size-2;
+            font-weight: normal;
             text-align: left;
+            color: $color-secondary;
         }
         .teaser {
             text-align: left;
+            color: $color-tertiary;
         }
         
         }
 
         * {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         #slider {
-        max-width: 600px;
-        text-align: center;
-        margin: 0 auto;
+            max-width: 900px;
+            text-align: center;
+            margin: 0 auto;
         }
 
         #overflow {
-        width: 100%;
-        overflow: hidden;
+            width: 100%;
+            overflow: hidden;
         }
 
         #slides .inner {
-        width: 400%;
+            width: 500%;
         }
 
         #slides .inner {
@@ -106,7 +114,7 @@
         }
 
         #slides article {
-            width: 25%;
+            width: 20%;
             float: left;
         }
 
