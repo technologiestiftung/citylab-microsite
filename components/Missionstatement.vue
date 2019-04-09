@@ -2,8 +2,8 @@
     <section id="missionstatement" class="section is-medium mission-statement">
         <div class="container">
             <h1 class="title">{{ content[lang]['missionStatement']['title'] }}</h1>
-            <h2 class="subtitle">
-                {{ content[lang]['missionStatement']['subtitle'] }}
+            <h2 class="subtitle" v-html="`${content[lang]['missionStatement']['subtitle']}`">
+                
             </h2>
             <div class="tile is-ancestor">
 
@@ -50,6 +50,11 @@
         color: $color-secondary;
     }
 
+
+    h2.subtitle {
+        color: $color-tertiary;
+    }
+
     .statement {
         figure {
             margin-bottom: $spacing-s;
@@ -59,6 +64,12 @@
                 margin: 0 auto;
             }
         }
+        .intro {
+            font-size: $size-3;
+            line-height: $size-2;
+            color: $color-tertiary;
+        }
+
         .subtitle {
             font-size: $size-4;
             color: $color-primary;

@@ -193,15 +193,15 @@
     .column {
         span {
             color: $color-tertiary;
-            opacity: .5;
+            opacity: .8;
         }
 
         a {
             color: $color-tertiary;
-            opacity: 0.6;
+            opacity: 0.8;
 
             &:hover {
-                opacity: 0.8;
+                opacity: 1;
             }
         }
 
