@@ -1,5 +1,5 @@
 <template>
-    <section class="section is-medium">
+    <section class="section is-medium tiles">
         <div class="container">
             <div class="tile is-ancestor">
 
@@ -40,7 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    @import "../assets/style/style.scss";
+    .tiles {
+        background: $color-primary--lightest;
+    }
 </style>
 
 

@@ -2,7 +2,7 @@
         <section id="projects" class="section is-medium">
             <div class="container">
                 <div id="slider">
-                    <input checked="" type="radio" name="slider" id="slide" selected="false">
+                    <input checked="" type="radio" name="slider" id="slide1" selected="false">
                     <input type="radio" name="slider" id="slide2" selected="false">
                     <input type="radio" name="slider" id="slide3" selected="false">
                     <input type="radio" name="slider" id="slide4" selected="false">
@@ -45,6 +45,31 @@
                 return this.content[this.lang]['topics'];
             }
         },
+        data() {
+            return {
+                loop: () => { return this.loopSlides()}
+            }
+        },
+        methods: {
+            loopSlides() {
+
+                for (var i=1;i<=5;i++) {
+
+                    ((ind) => {
+                        setTimeout(() => {
+                            document.getElementById(`slide${ind}`).checked = true;
+
+                            if (ind == 5) {
+                                this.loopSlides();
+                            }
+                        }, 7000 * ind);
+                    })(i);
+                }
+            }
+        },
+        mounted() {
+            this.loopSlides();
+        }
     }
     </script>
 
@@ -53,27 +78,42 @@
 
         .slide {
 
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+            
+        @include tablet {
+            flex-direction: row;
+            max-width: 900px;
+
             .content-container {
-                width: 40%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                width: 55%;
             }
 
-        display: flex;
-        justify-content: space-between;
+            .image-container {
+                width: 40%;
+                margin-left: 15px;
+            }
+        }
         
         .image-container {
             img {
                 width: 100%;
                 // height: auto;
             }
-            width: 55%;
+            width: 100%;
             float: left;
-            margin-right: 15px;
         }
         .title {
-            font-size: $size-2;
+            // font-size: $size-2;
             font-weight: normal;
             text-align: left;
             color: $color-secondary;
@@ -81,6 +121,11 @@
         .teaser {
             text-align: left;
             color: $color-tertiary;
+            margin-bottom: 40px;
+
+            @include tablet {
+                margin-bottom: 0px;
+            }
         }
         
         }
@@ -152,7 +197,7 @@
             border-radius: 5px;
         }
 
-        #slide:checked ~ .labels-wrapper > label[for="slide"],
+        #slide1:checked ~ .labels-wrapper > label[for="slide"],
         #slide2:checked ~ .labels-wrapper > label[for="slide2"],
         #slide3:checked ~ .labels-wrapper > label[for="slide3"],
         #slide4:checked ~ .labels-wrapper > label[for="slide4"],
@@ -162,6 +207,11 @@
 
         .labels-wrapper {
             width: 80px;
+            margin: 0 auto;
+
+            @include tablet {
+                margin: 0;
+            }
         }
     </style>
 

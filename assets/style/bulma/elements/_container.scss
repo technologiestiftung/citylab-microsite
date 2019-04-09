@@ -1,9 +1,9 @@
 .container {
   margin: 0 auto;
   position: relative;
+  max-width: 900px;
 
   @include desktop {
-    max-width: 900px;
 
     &.is-fluid {
       margin-left: $gap;

@@ -24,13 +24,13 @@ export const content = {
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsender Kreis aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
             'statement1-title': 'Inklusiv', 
             'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.', 
-            'statement1-img_url': 'images/02.jpg', 
+            'statement1-img_url': 'images/02.png', 
             'statement2-title': 'Agil', 
             'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.', 
-            'statement2-img_url': 'images/01.jpg',
+            'statement2-img_url': 'images/01.png',
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
-            'statement3-img_url': 'images/03.jpg', 
+            'statement3-img_url': 'images/03.png', 
             'cta': 'Mehr erfahren', 
         },
         'topics': [
@@ -47,17 +47,17 @@ export const content = {
             {
                 'title': 'Smart Cities <br/> für alle',
                 'text': 'Brücken bauen über digitale Gräben: Wie können wir die smarte Stadt so öffnen, dass möglichst alle Menschen darin handlungsfähig werden? ',
-                'img_url': 'images/topic_02.jpg'
+                'img_url': 'images/topic_03.jpg'
             },
             {
                 'title': 'Offene Daten, <br/>offene Städte',
                 'text': 'Black Box oder gläserner Bürger? Wie schützen wir persönliche Informationen und schaffen zugleich Transparenz bei öffentlichen Daten und Algorithmen?',
-                'img_url': 'images/topic_02.jpg'
+                'img_url': 'images/topic_04.jpg'
             },
             {
                 'title': 'Energie und <br/> Nachhaltigkeit',
                 'text': 'Upcycling, Kreislaufwirtschaft, intelligente Netze – wir erforschen Wege hin zu einem klimaneutralen und gesunden Berlin ' ,
-                'img_url': 'images/topic_02.jpg'
+                'img_url': 'images/topic_05.jpg'
             },
         ],
         'projects': {
@@ -309,13 +309,13 @@ export const content = {
             'subtitle': 'This is a short text describing the mission statement.',
             'statement1-title': 'Agile', 
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet your needs.', 
-            'statement1-img_url': 'images/01.jpg', 
+            'statement1-img_url': 'images/01.png', 
             'statement2-title': 'Participative', 
             'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities to get involved.', 
-            'statement2-img_url': 'images/02.jpg', 
+            'statement2-img_url': 'images/02.png', 
             'statement3-title': 'Open', 
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
-            'statement3-img_url': 'images/03.jpg', 
+            'statement3-img_url': 'images/03.png', 
             'cta': 'Learn more',
         },
         'topics': [

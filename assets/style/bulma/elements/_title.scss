@@ -41,9 +41,13 @@ $subtitle-negative-margin: -1.25rem !default;
 
 .title {
   color: $title-color;
-  font-size: $title-size;
+  font-size: $size-3;
   font-weight: $title-weight;
   line-height: $title-line-height;
+
+  @include tablet {
+    font-size: $size-2;
+  }
 
   strong {
     color: $title-strong-color;

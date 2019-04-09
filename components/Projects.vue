@@ -34,7 +34,7 @@
     
 
     .projects {
-        background: $color-tertiary--lightest;
+        background: $color-primary--lightest;
     }
 
 
