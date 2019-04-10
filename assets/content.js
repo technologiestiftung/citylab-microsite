@@ -48,7 +48,7 @@ export const content = {
         },
         'topics': [
             {
-                'title': 'Mobilität <br/> von morgen',
+                'title': 'The mobility <br/> von morgen',
                 'text': 'Von Fahrrad bis Flugtaxi, von Hyperloop bis Home Office – Städte sind Experimentierfelder für mobiles Leben. Wie gestalten wir den Verkehr der Zukunft?',
                 'img_url': 'images/topic_01_blue.jpg'
             },
@@ -303,10 +303,10 @@ export const content = {
             'title': 'Code of conduct',
             'points': [
                 'CityLAB is an open place of cooperation, exchange and learning. Here, people should feel comfortable and be able to work together productively regardless of age, gender, appearance, sexual orientation, physical or mental impairments, skin colour, origin or religion.',
-                'We do not tolerate any form of discriminatory behaviour, insult, intimidation, sexism, stalking, etc., either locally or on our online channels. If you are affected by such behaviour, please contact a member of the CityLAB team immediately.',
-                'CityLAB is not a service provider, but lives from the active commitment of all participants. Together we ensure that a pleasant working atmosphere is created. Those who use workplaces, workshop or event rooms must ensure that they are left in good order. Please also bear in mind that our rooms are subject to strict listed building regulations. Accordingly, permanent or irreversible interventions in the premises are strictly prohibited.',
-                'If you are planning public events or project work with larger groups, please contact our coordination in good time beforehand. Please observe the safety and fire regulations. You are responsible for the behaviour of your guests.',
-                'We reserve the right to exclude persons who violate this Code from the use of the rooms.'
+                'We do not tolerate any form of discriminatory behaviour, insult, intimidation, sexism, stalking, etc., either on our premises or on our online channels. If you are affected by such behaviour, please contact a member of the CityLAB team immediately.',
+                'CityLAB is not a service provider, but instead lives from the active commitment of all participants. Together we ensure that a pleasant working atmosphere is created. Those who use workplaces, workshop or event rooms must ensure that they are left in good order. Please also bear in mind that our rooms are subject to strict historic preservation regulations. Accordingly, permanent or irreversible modifications to the premises are strictly prohibited.',
+                'If you are planning public events or project work with larger groups, please provide sufficient notice to our coordination team. Please observe the safety and fire regulations. You are responsible for the behaviour of your guests.',
+                'We reserve the right to exclude persons who violate this code from the use of the rooms.'
             ]
         },
         'nav': [
@@ -333,12 +333,12 @@ export const content = {
         },
         'missionStatement': {
             'title': 'Mission Statement',
-            'subtitle': 'This is a short text describing the mission statement.',
+            'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
             'statement1-title': 'Agile', 
-            'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet your needs.', 
+            'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.', 
             'statement1-img_url': 'images/01.png', 
-            'statement2-title': 'Participative', 
-            'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities to get involved.', 
+            'statement2-title': 'Participatory', 
+            'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.', 
             'statement2-img_url': 'images/02.png', 
             'statement3-title': 'Open', 
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
@@ -347,34 +347,35 @@ export const content = {
         },
         'topics': [
             {
-                'title': 'This is the title 01',
-                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'title': 'The mobility <br/> of tomorrow',
+                'text': 'From bikes to flying taxis and hyperloops to home office – cities provide fertile ground for exploring how we move. How can we help design the mobility of the future?',
                 'img_url': 'images/topic_01_blue.jpg'
             },
             {
-                'title': 'This is the title 02',
-                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'title': 'Innovative <br/> governments',
+                'text': 'Birth certificates via Whatsapp and child-care allowances per cryptocurrencies – is that even thinkable? We explore what government services look like when they put citizen needs first.',
                 'img_url': 'images/topic_02_blue.jpg'
             },
             {
-                'title': 'This is the title 03',
-                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'title': 'Smart Cities <br/> for all',
+                'text': 'Building bridges over digital gulfs: how can we build a city so smart that it empowers all citizens, not just a select few? ',
                 'img_url': 'images/topic_03_blue.jpg'
             },
             {
-                'title': 'This is the title 04',
-                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'title': 'Open data, <br/>open cities',
+                'text': 'Between a black box or citizens laid bare: How can we protect personal information while simultaneously ensuring transparency in government data and algorithms?',
                 'img_url': 'images/topic_04_blue.jpg'
             },
             {
-                'title': 'This is the title 05',
-                'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+                'title': 'Energy and <br/> sustainability',
+                'text': 'Upcycling, the circular economy and intelligent networks – we’re researching paths toward a climate-neutral, healthy Berlin' ,
                 'img_url': 'images/topic_05_blue.jpg'
             },
+
         ],
         'projects': {
             'title': 'Open Call',
-            'opencall': 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+            'opencall': 'You\'ve got an idea for how you\'d design a better city using CityLAB resources? Join in and let us know your ideas!',
             'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
             'cta': 'Apply now',
             'projects': [
@@ -452,8 +453,8 @@ export const content = {
                 'dataprivacy': 'Data privacy'
             },
             'funding': {
-                'title': 'Sponsored by:',
-                'text_tsb': 'A project of the',
+                'title': 'Sponsors:',
+                'text_tsb': 'A project from the',
                 'href_tsb': 'https://www.technologiestiftung-berlin.de',
                 'svg_tsb': '/tsb.svg',
                 'text_sen': 'Supported by',
@@ -492,7 +493,7 @@ export const content = {
                 'p3': 'We reserve the right to change or supplement the information made available without prior notice.',
                 'p4': 'We endeavour to comply with all valid copyright laws in all publications. Should there nonetheless be an infringement of copyright law, we shall remove the corresponding item, after being informed, from the relevant publication or render it visible by reference to copyright law.',
                 'p5': 'All trademarks and brand names mentioned on websites that may be protected by third parties shall be covered in an unlimited manner by the respective valid labelling legislation and the ownership rights of the respective registered owners.',
-                'p6': 'This disclaimer shall be deemed to be part of the Internet offering of Technologiestiftung Berlin and the Förderverein Technologiestiftung Berlin e. V. To the extent that parts or individual formulations in this text do not, no longer or do not fully comply with the valid legal situation, this shall not affect the contents and validity of other parts of the document.',
+                'p6': 'This disclaimer shall be deemed to be part of the internet offering of Technologiestiftung Berlin and the Förderverein Technologiestiftung Berlin e. V. To the extent that parts or individual formulations in this text do not, no longer or do not fully comply with the valid legal situation, this shall not affect the contents and validity of other parts of the document.',
                 'p7': 'Please refer to our German website for our data protection policy.'
 
             }
