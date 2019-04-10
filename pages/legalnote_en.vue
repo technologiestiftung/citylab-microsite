@@ -90,6 +90,10 @@
 </script>
 
 <style lang="scss">
+	@import "../assets/style/style.scss";
+    h1.title, h3.title {
+		color: $color-secondary;
+	}
     
 </style>
 

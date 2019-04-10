@@ -44,6 +44,10 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "../assets/style/style.scss";
+    h1.title, h3.title {
+		color: $color-secondary;
+	}
     ul {
 		padding-left: 40px;
 		list-style: circle;

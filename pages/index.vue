@@ -86,6 +86,7 @@
 
 	@import "../assets/style/style.scss";
 
+
 	button.top {
 		width: 40px;
 		height: 40px;

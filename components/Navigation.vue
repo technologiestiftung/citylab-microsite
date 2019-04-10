@@ -125,6 +125,10 @@
         display: flex;
     }
 
+    .navbar-end {
+        height: 50px;
+    }
+
     .from-tablet {
         display: none !important;
 
@@ -200,7 +204,7 @@
     }
   
     .navbar {
-        padding: 1.5rem 1.5rem;
+        padding: .5rem 1.5rem;
         background: none;
         // margin: 0;
 
@@ -224,6 +228,7 @@
             .navbar-item {
                 background-position: left center;
                 height: 43px;
+                padding: 0px !important;
             }
 
             .logo-type {

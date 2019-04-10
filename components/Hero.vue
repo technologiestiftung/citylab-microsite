@@ -1,17 +1,31 @@
 <template>
     <section ref="hero" :style="{ backgroundImage: `url(${backgroundUrl})`}"  class="hero is-color-primary">
         <section class="hero-content section is-medium">
-            <h1 class="title" v-html="`${content[lang]['hero']['claim']}`"></h1>
+            <!-- v-html="`${content[lang]['hero']['claim']}`" -->
+            <vue-typed-js 
+                :strings="wordsArr" 
+                :loop="true"
+                :typeSpeed="100"
+                :backDelay="4000"
+            >
+                <h1 style="width: 100%" class="title">{{ content[lang]['hero']['claim_01'] }} <span class="typing"></span> {{ content[lang]['hero']['claim_02'] }} </h1>
+            </vue-typed-js>
+            <br/>
+            <h1 style="margin-top: -20px;" class="title">{{ content[lang]['hero']['claim_03'] }}</h1>
         </section>
-        <Three :config="config" />
+        <!-- <Three :config="config" /> -->
     </section>
 </template>
 
 <script>
-	import Three from '../components/Three.vue';
+    import VueTypedJs from 'vue-typed-js';
+    import Vue from 'vue';
+
+    Vue.use(VueTypedJs);
+
     export default {
         components: {
-            Three
+            // Three
         },
         name: 'Hero',
         computed: {
@@ -23,23 +37,31 @@
                 backgroundUrl: 'images/hero_img_blue.jpg',
             }
         },
+        computed: {
+            wordsArr() {
+                const arr = this.content[this.lang]['hero']['words_arr'];
+                return arr;
+            }
+        },
         methods: {
             setDimensions() {
                 this.config.width = this.$refs.hero.clientWidth;
                 this.config.height = this.$refs.hero.clientHeight;
-            }
+            },
         },
         mounted() {
-            this.setDimensions()
+            // this.setDimensions()
         },
         updated() {
-            this.setDimensions()
+            // this.setDimensions()
         },
     }
 </script>
 
 <style lang="scss">
     @import "../assets/style/style.scss";
+    @import "../assets/style/vue-typed-js.scss";
+
     .hero {
         height: 600px;
         background: $blue;
@@ -78,6 +100,10 @@
                 }
             }
         }
+    }
+
+    span.typing {
+        font-style: italic;
     }
 </style>
 

@@ -30,7 +30,10 @@ export const content = {
         ],
         'hero': {
             'subtitle': "CityLAB Berlin",
-            'claim': "Die digitale Zukunft Berlins <br/> gemeinsam gestalten.",
+            'claim_01': "Die",
+            'claim_02': "Zukunft Berlins",
+            'claim_03': "gemeinsam gestalten.",
+            'words_arr': ['nachhaltige', 'innovative', 'aufregende', 'inklusive', 'digitale']
         },
         'missionStatement': {
             'title': 'Mission Statement',
@@ -124,13 +127,6 @@ export const content = {
                     'img_url': 'images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
-                { 
-                    'name': 'tba', 
-                    'mail': '', 
-                    'twitter': '', 
-                    'img_url': 'images/new_portrait.jpg',
-                    'title': 'Koordination'
-                }
             ],
         },
         'cta': {
@@ -329,7 +325,10 @@ export const content = {
         ],
         'hero': {
             'subtitle': "CityLAB Berlin",
-            'claim': "Shaping Berlin's digital future together."
+            'claim_01': "Shaping Berlin's",
+            'claim_02': "",
+            'claim_03': "future together.",
+            'words_arr': ['sustainable', 'changing', 'innovative', 'exciting', 'inclusive', 'digital']
         },
         'missionStatement': {
             'title': 'Mission Statement',
@@ -424,13 +423,6 @@ export const content = {
                     'img_url': 'images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
-                { 
-                    'name': 'tba', 
-                    'mail': '', 
-                    'twitter': '', 
-                    'img_url': 'images/new_portrait.jpg',
-                    'title': 'Coordination'
-                }
             ],
         },
         'cta': {

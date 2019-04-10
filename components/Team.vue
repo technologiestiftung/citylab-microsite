@@ -67,11 +67,11 @@
             top: 0;
             left: 0;
             background: $color-primary;
-            opacity: 0.4;
+            opacity: 0.0;
             transition: opacity .5s ease;
 
             &:hover {
-                opacity: 0.6;
+                opacity: 0.2;
                 transition: opacity .5s ease;
             }
         }
@@ -109,10 +109,18 @@
 
 
     .tile.fourth {
-        flex: 0 0 25% !important;
+        flex: 0 0 100% !important;
 
         @include mobile {
+            flex: 0 0 50% !important;
+        }
+
+        @include tablet {
             flex: 0 0 33% !important;
+        }
+
+        @include desktop {
+            flex: 0 0 25% !important;
         }
     }
 </style>
