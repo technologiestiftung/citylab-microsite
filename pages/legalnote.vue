@@ -1,6 +1,6 @@
 <template>
     <div>
-		<Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct"/>
+		<Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
         <section class="section is-medium">
             <div class="container">
                 <h1 class="title" style="margin-top: 100px">
@@ -90,8 +90,10 @@
     }
 </script>
 
-<style lang="scss">
-    
+<style lang="scss" scoped>
+    .anchor-tags {
+		display: none !important;
+	}
 </style>
 
 

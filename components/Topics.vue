@@ -1,5 +1,5 @@
     <template>
-        <section id="projects" class="section is-medium">
+        <section id="topics" class="section is-medium">
             <div class="container">
                 <div id="slider">
                     <input checked="" type="radio" name="slider" id="slide1" selected="false">
@@ -96,11 +96,11 @@
 
             .content-container {
                 width: 55%;
+                margin-right: 40px;
             }
 
             .image-container {
                 width: 40%;
-                margin-left: 15px;
             }
         }
         

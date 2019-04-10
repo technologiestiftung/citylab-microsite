@@ -7,7 +7,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: 'CityLAB Berlin',
+    titleTemplate: '%s - CityLAB Berlin',
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },

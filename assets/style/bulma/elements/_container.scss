@@ -8,7 +8,7 @@
     &.is-fluid {
       margin-left: $gap;
       margin-right: $gap;
-      max-width: none;
+      max-width: 900px;
       width: auto;
     }
   }
@@ -16,7 +16,7 @@
 
   @include until-widescreen {
     &.is-widescreen {
-      max-width: $widescreen - 2 * $gap;
+      max-width: 900px;
       width: auto;
     }
   }
@@ -24,7 +24,7 @@
 
   @include until-fullhd {
     &.is-fullhd {
-      max-width: $fullhd - 2 * $gap;
+      max-width: 900px;
       width: auto;
     }
   }

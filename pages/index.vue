@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Navigation :lang="lang" :content="content" :direct="direct"/>
+		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
 		<Hero :lang="lang" :content="content" :direct="direct"/>
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
@@ -10,7 +10,7 @@
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
 
-		<button @click="topFunction()" id="myBtn" class="button is-color-tertiary top">
+		<button @click="topFunction()" id="myBtn" class="is-color-tertiary top">
 			<font-awesome-icon far icon="arrow-alt-circle-up"/>
 		</button>
 		<Matomo/>
@@ -83,11 +83,31 @@
 </script>
 
 <style lang="scss">
+
+	@import "../assets/style/style.scss";
+
 	button.top {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		position: fixed;
-		bottom: 20px;
-		right: 20px;
+		bottom: 10px;
+		right: 10px;
+		padding-top: 3px !important;
+		cursor: pointer;
+
+		&:focus {
+			outline: 0;
+		}
+
+		&:hover {
+			color: $color-tertiary--medium;
+		}
+	}
+
+	.is-color-tertiary {
+		background: none;
+		color: $color-tertiary;
+		border: none;
+		font-size: 24px;
 	}
 </style>

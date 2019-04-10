@@ -27,8 +27,6 @@
             setDimensions() {
                 this.config.width = this.$refs.hero.clientWidth;
                 this.config.height = this.$refs.hero.clientHeight;
-
-                console.log('updated', this.config);
             }
         },
         mounted() {
@@ -63,7 +61,6 @@
             
             h1.title {
                 font-size: $size-1 !important;
-                width: 70%;
                 max-width: 900px;
                 margin: 0 auto;
 
@@ -73,11 +70,11 @@
                 }
 
                 @include tablet {
-                    font-size: $size-2 !important;
+                    font-size: $size-1 !important;
                 }
 
                 @include desktop {
-                    font-size: $size-2 !important;
+                    font-size: $size-1 !important;
                 }
             }
         }

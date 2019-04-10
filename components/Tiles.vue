@@ -44,6 +44,11 @@ export default {
     .tiles {
         background: $color-primary--lightest;
     }
+
+    p.subtitle {
+        font-size: $size-4;
+        color: $color-primary;
+    }
 </style>
 
 

@@ -1,9 +1,9 @@
 <template>
-    <section id="missionstatement" class="section is-medium mission-statement">
+    <section id="idea" class="section is-medium mission-statement">
         <div class="container">
-            <h1 class="title">{{ content[lang]['missionStatement']['title'] }}</h1>
+            <h2 class="title">{{ content[lang]['missionStatement']['title'] }}</h2>
             <h2 class="subtitle" v-html="`${content[lang]['missionStatement']['subtitle']}`"></h2>
-            <a class="button is-color-secondary is-normal">{{ content[lang]['missionStatement']['cta'] }}</a>
+            <a href="#call" class="button is-color-secondary is-normal">{{ content[lang]['missionStatement']['cta'] }}</a>
         </div>
     </section>
 </template>
@@ -18,8 +18,8 @@
 <style lang="scss">
     @import "../assets/style/style.scss";
 
-    h1.title {
-        color: $color-secondary;
+    h2.title {
+        color: $color-secondary !important;
     }
 
 

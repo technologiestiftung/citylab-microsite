@@ -37,7 +37,7 @@
                             {{ content[lang]['footer']['more']['title'] }}
                         </h6>
                         
-                        <nuxt-link class="flex flex-row m-b-sm" :to="directDownloads">
+                        <!-- <nuxt-link class="flex flex-row m-b-sm" :to="directDownloads">
                             <div class="icon-wrapper">
                                 <font-awesome-icon style="transform: translateY(2px); margin-right: 5px;" far icon="file-download"/>
                             </div>
@@ -54,7 +54,7 @@
                             <p class="content">
                                 {{ content[lang]['footer']['more']['press'] }}
                             </p>
-                        </nuxt-link>
+                        </nuxt-link> -->
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directImprint">
                             <div class="icon-wrapper">

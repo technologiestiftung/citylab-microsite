@@ -21,34 +21,14 @@
                     <span style="margin-left: 10px" class="logo-type">CityLAB</span>
                     <span style="margin-left: 5px" class="logo-type-italic">Berlin</span>
                 </a>
-
-                <a 
-                    role="button" 
-                    class="navbar-burger burger" 
-                    aria-label="menu" 
-                    aria-expanded="false" 
-                    data-target="navbarBasicExample"
-                    v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }"
-                >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                </a>
             </div>
-
-            <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
+            <!-- v-bind:class="{ 'is-active' : showNav }" -->
+            <div id="navbarBasicExample" class="navbar-menu" >
                 <div class="navbar-end">
                     <div class="anchor-tags" v-bind:class="{ 'is-active' : !scrolled }">
-                        <a href="#missionstatement" class="navbar-item">
-                            {{ content[lang]['nav']['menu1'] }}
-                        </a>
 
-                        <a href="#projects" class="navbar-item">
-                            {{ content[lang]['nav']['menu2'] }}
-                        </a>
-
-                        <a href="#team" class="navbar-item">
-                            {{ content[lang]['nav']['menu3'] }}
+                        <a v-for="item in menuArr" :href="`${item.ref}`" class="navbar-item from-tablet" :class="{ 'hide' : !anchorTags }">
+                            {{ item.name }}
                         </a>
                     </div>
 
@@ -76,7 +56,7 @@
                 showNav: false
             }
         },
-        props: ['lang', 'content', 'direct', 'scrolled'],
+        props: ['lang', 'content', 'direct', 'scrolled', 'anchorTags'],
         computed: {
             directHome() {
                 return this.lang == 'en' ? '/index_en' : '/';
@@ -86,6 +66,9 @@
             },
             toggle() {
                 return this.scrolled == true ? 'scrolled' : '';
+            },
+            menuArr() {
+                return this.content[this.lang]['nav'];
             }
         },
         methods: {
@@ -115,6 +98,7 @@
         },
         mounted() {
             this.handleScroll();
+            console.log(this.anchorTags);
         },
 		destroyed () {
 			if (process.browser) { 
@@ -133,12 +117,24 @@
         transition: background .15s ease;
     }
 
-    .anchor-tags {
-        display: none;
+    .navbar-menu {
+        display: block !important;
     }
 
     .anchor-tags.is-active {
         display: flex;
+    }
+
+    .from-tablet {
+        display: none !important;
+
+        @include tablet {
+            display: flex !important;
+        }
+    }
+
+    .hide {
+        display: none !important;
     }
 
     nav.scrolled {
@@ -164,7 +160,7 @@
         .navbar {
             &-end {
                 .navbar-item {
-                    color: $color-tertiary !important;
+                    color: $color-primary !important;
 
                     &:hover {
                         background: none;

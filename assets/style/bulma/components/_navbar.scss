@@ -93,42 +93,40 @@ $navbar-breakpoint: $desktop !default;
         color: $color-invert;
       }
 
-      @include from($navbar-breakpoint) {
-        .navbar-start,
-        .navbar-end {
-          & > .navbar-item,
-          .navbar-link {
-            color: $color-invert;
-          }
-
-          & > a.navbar-item,
-          .navbar-link {
-            &:hover,
-            &.is-active {
-              background-color: darken($color, 5%);
-              color: $color-invert;
-            }
-          }
-
-          .navbar-link {
-            &::after {
-              border-color: $color-invert;
-            }
-          }
-        }
-
-        .navbar-item.has-dropdown:hover .navbar-link,
-        .navbar-item.has-dropdown.is-active .navbar-link {
-          background-color: darken($color, 5%);
+      .navbar-start,
+      .navbar-end {
+        & > .navbar-item,
+        .navbar-link {
           color: $color-invert;
         }
 
-        .navbar-dropdown {
-          a.navbar-item {
-            &.is-active {
-              background-color: $color;
-              color: $color-invert;
-            }
+        & > a.navbar-item,
+        .navbar-link {
+          &:hover,
+          &.is-active {
+            background-color: darken($color, 5%);
+            color: $color-invert;
+          }
+        }
+
+        .navbar-link {
+          &::after {
+            border-color: $color-invert;
+          }
+        }
+      }
+
+      .navbar-item.has-dropdown:hover .navbar-link,
+      .navbar-item.has-dropdown.is-active .navbar-link {
+        background-color: darken($color, 5%);
+        color: $color-invert;
+      }
+
+      .navbar-dropdown {
+        a.navbar-item {
+          &.is-active {
+            background-color: $color;
+            color: $color-invert;
           }
         }
       }
@@ -313,79 +311,20 @@ a.navbar-item,
   margin: 0.5rem 0;
 }
 
-@include until($navbar-breakpoint) {
-  .navbar > .container {
-    display: block;
+
+html,
+body {
+  &.has-navbar-fixed-top-touch {
+    padding-top: $navbar-height;
   }
 
-  .navbar-brand,
-  .navbar-tabs {
-    .navbar-item {
-      align-items: center;
-      display: flex;
-    }
-  }
-
-  .navbar-link {
-    &::after {
-      display: none;
-    }
-  }
-
-  .navbar-menu {
-    background-color: $navbar-background-color;
-    box-shadow: 0 8px 16px rgba($black, 0.1);
-    padding: 0.5rem 0;
-
-    &.is-active {
-      display: block;
-    }
-  }
-
-  // Fixed navbar
-  .navbar {
-    &.is-fixed-bottom-touch,
-    &.is-fixed-top-touch {
-      @include navbar-fixed;
-    }
-
-    &.is-fixed-bottom-touch {
-      bottom: 0;
-
-      &.has-shadow {
-        box-shadow: 0 -2px 3px rgba($black, 0.1);
-      }
-    }
-
-    &.is-fixed-top-touch {
-      top: 0;
-    }
-
-    &.is-fixed-top,
-    &.is-fixed-top-touch {
-      .navbar-menu {
-        @include overflow-touch;
-
-        max-height: calc(100vh - #{$navbar-height});
-        overflow: auto;
-      }
-    }
-  }
-
-  html,
-  body {
-    &.has-navbar-fixed-top-touch {
-      padding-top: $navbar-height;
-    }
-
-    &.has-navbar-fixed-bottom-touch {
-      padding-bottom: $navbar-height;
-    }
+  &.has-navbar-fixed-bottom-touch {
+    padding-bottom: $navbar-height;
   }
 }
 
 
-@include from($navbar-breakpoint) {
+
   .navbar,
   .navbar-menu,
   .navbar-start,
@@ -394,56 +333,56 @@ a.navbar-item,
     display: flex;
   }
 
-  .navbar {
-    min-height: $navbar-height;
+.navbar {
+  min-height: $navbar-height;
 
-    &.is-spaced {
-      padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  &.is-spaced {
+    padding: $navbar-padding-vertical $navbar-padding-horizontal;
 
-      .navbar-start,
-      .navbar-end {
-        align-items: center;
-      }
+    .navbar-start,
+    .navbar-end {
+      align-items: center;
+    }
 
-      a.navbar-item,
-      .navbar-link {
-        border-radius: $radius;
+    a.navbar-item,
+    .navbar-link {
+      border-radius: $radius;
+    }
+  }
+
+  &.is-transparent {
+    a.navbar-item,
+    .navbar-link {
+      &:hover,
+      &.is-active {
+        background-color: transparent !important;
       }
     }
 
-    &.is-transparent {
-      a.navbar-item,
-      .navbar-link {
-        &:hover,
-        &.is-active {
+    .navbar-item.has-dropdown {
+      &.is-active,
+      &.is-hoverable:hover {
+        .navbar-link {
           background-color: transparent !important;
         }
       }
+    }
 
-      .navbar-item.has-dropdown {
-        &.is-active,
-        &.is-hoverable:hover {
-          .navbar-link {
-            background-color: transparent !important;
-          }
+    .navbar-dropdown {
+      a.navbar-item {
+        &:hover {
+          background-color: $navbar-dropdown-item-hover-background-color;
+          color: $navbar-dropdown-item-hover-color;
         }
-      }
 
-      .navbar-dropdown {
-        a.navbar-item {
-          &:hover {
-            background-color: $navbar-dropdown-item-hover-background-color;
-            color: $navbar-dropdown-item-hover-color;
-          }
-
-          &.is-active {
-            background-color: $navbar-dropdown-item-active-background-color;
-            color: $navbar-dropdown-item-active-color;
-          }
+        &.is-active {
+          background-color: $navbar-dropdown-item-active-background-color;
+          color: $navbar-dropdown-item-active-color;
         }
       }
     }
   }
+
 
   .navbar-burger {
     display: none;

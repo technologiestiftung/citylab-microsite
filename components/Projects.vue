@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="section projects is-medium">
+    <section id="call" class="section projects is-medium">
         <div class="container">
             <h2 class="title">
                 {{ content[lang]['projects']['title'] }}
@@ -7,7 +7,7 @@
 
             <p class="intro content">{{ content[lang]['projects']['opencall'] }}</p>
 
-            <a class="button is-color-secondary is-normal">{{ content[lang]['projects']['cta'] }}</a>
+            <a :href="`${content[lang]['projects']['form_url']}`" class="button is-color-secondary is-normal">{{ content[lang]['projects']['cta'] }}</a>
         </div>
     </section>
 </template>

@@ -10,11 +10,24 @@ export const content = {
                 'Wir behalten uns das Recht vor, Personen, die gegen diesen Kodex verstoßen, von der Nutzung der Räume auszuschließen.'
             ]
         },
-        'nav': {
-            'menu1': 'Mission',
-            'menu2': 'Projekte',
-            'menu3': 'Team'
-        },
+        'nav': [
+            {
+                'name': 'Idee',
+                'ref': '#idea'
+            },
+            {
+                'name': 'Themen',
+                'ref': '#topics'
+            },
+            {
+                'name': 'Open Call',
+                'ref': '#call'
+            },
+            {
+                'name': 'Team',
+                'ref': '#team'
+            },
+        ],
         'hero': {
             'subtitle': "CityLAB Berlin",
             'claim': "Die digitale Zukunft Berlins <br/> gemeinsam gestalten.",
@@ -37,32 +50,33 @@ export const content = {
             {
                 'title': 'Mobilität <br/> von morgen',
                 'text': 'Von Fahrrad bis Flugtaxi, von Hyperloop bis Home Office – Städte sind Experimentierfelder für mobiles Leben. Wie gestalten wir den Verkehr der Zukunft?',
-                'img_url': 'images/topic_01.jpg'
+                'img_url': 'images/topic_01_blue.jpg'
             },
             {
                 'title': 'Innovative <br/> Verwaltung',
                 'text': 'Geburtsurkunde via Whatsapp und Kindergeld per Kryptowährung – passt das überhaupt zusammen? Wie sehen Verwaltungsservices aus, die von Bürger*innen her gedacht werden?',
-                'img_url': 'images/topic_02.jpg'
+                'img_url': 'images/topic_02_blue.jpg'
             },
             {
                 'title': 'Smart Cities <br/> für alle',
                 'text': 'Brücken bauen über digitale Gräben: Wie können wir die smarte Stadt so öffnen, dass möglichst alle Menschen darin handlungsfähig werden? ',
-                'img_url': 'images/topic_03.jpg'
+                'img_url': 'images/topic_03_blue.jpg'
             },
             {
                 'title': 'Offene Daten, <br/>offene Städte',
                 'text': 'Black Box oder gläserner Bürger? Wie schützen wir persönliche Informationen und schaffen zugleich Transparenz bei öffentlichen Daten und Algorithmen?',
-                'img_url': 'images/topic_04.jpg'
+                'img_url': 'images/topic_04_blue.jpg'
             },
             {
                 'title': 'Energie und <br/> Nachhaltigkeit',
                 'text': 'Upcycling, Kreislaufwirtschaft, intelligente Netze – wir erforschen Wege hin zu einem klimaneutralen und gesunden Berlin ' ,
-                'img_url': 'images/topic_05.jpg'
+                'img_url': 'images/topic_05_blue.jpg'
             },
         ],
         'projects': {
             'title': 'Open Call',
             'opencall': 'Ihr habt Ideen für eine bessere Stadt? Macht mit im CityLAB!',
+            'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
             'cta': 'Jetzt bewerben',
             'projects': [
                 {
@@ -126,7 +140,7 @@ export const content = {
         'footer': {
             'contact': {
                 'title': 'Kontakt',
-                'mail': 'hello@citylabberlin.de',
+                'mail': 'hello@citylab-berlin.org',
                 'address_street': 'Platz der Luftbrücke 4-6',
                 'address_code': '12101 Berlin',
             },
@@ -295,11 +309,24 @@ export const content = {
                 'We reserve the right to exclude persons who violate this Code from the use of the rooms.'
             ]
         },
-        'nav': {
-            'menu1': 'Mission',
-            'menu2': 'Projects',
-            'menu3': 'Team'
-        },
+        'nav': [
+            {
+                'name': 'Idea',
+                'ref': '#idea'
+            },
+            {
+                'name': 'Topics',
+                'ref': '#topics'
+            },
+            {
+                'name': 'Open Call',
+                'ref': '#call'
+            },
+            {
+                'name': 'Team',
+                'ref': '#team'
+            },
+        ],
         'hero': {
             'subtitle': "CityLAB Berlin",
             'claim': "Shaping Berlin's digital future together."
@@ -322,32 +349,33 @@ export const content = {
             {
                 'title': 'This is the title 01',
                 'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
-                'img_url': 'images/topic_01.jpg'
+                'img_url': 'images/topic_01_blue.jpg'
             },
             {
                 'title': 'This is the title 02',
                 'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
-                'img_url': 'images/topic_02.jpg'
+                'img_url': 'images/topic_02_blue.jpg'
             },
             {
                 'title': 'This is the title 03',
                 'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
-                'img_url': 'images/topic_03.jpg'
+                'img_url': 'images/topic_03_blue.jpg'
             },
             {
                 'title': 'This is the title 04',
                 'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
-                'img_url': 'images/topic_04.jpg'
+                'img_url': 'images/topic_04_blue.jpg'
             },
             {
                 'title': 'This is the title 05',
                 'text': 'he European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
-                'img_url': 'images/topic_05.jpg'
+                'img_url': 'images/topic_05_blue.jpg'
             },
         ],
         'projects': {
             'title': 'Open Call',
             'opencall': 'The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.',
+            'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
             'cta': 'Apply now',
             'projects': [
                 {
@@ -411,7 +439,7 @@ export const content = {
         'footer': {
             'contact': {
                 'title': 'Get in touch',
-                'mail': 'hello@citylabberlin.de',
+                'mail': 'hello@citylab-berlin.org',
                 'address_street': 'Platz der Luftbrücke 4-6',
                 'address_code': '12101 Berlin',
             },
