@@ -20,7 +20,7 @@
                 chunks: 20,
                 pointlight: null,
                 meshes: [],
-                time: 0,
+                time: 2,
             }
         },
         props: ['config'],

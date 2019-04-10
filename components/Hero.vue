@@ -20,7 +20,7 @@
         data() {
             return {
                 config: {},
-                backgroundUrl: 'images/hero_img.jpg',
+                backgroundUrl: 'images/hero_img_blue.jpg',
             }
         },
         methods: {
@@ -47,7 +47,7 @@
         background-size: cover;
 
         &::before{
-            background-color: rgba($color-tertiary, 0.5);
+            background-color: rgba($color-primary, 0.5);
             content: '';
             display: block;
             height: 600px;
