@@ -33,10 +33,10 @@ export const content = {
             'claim_01': "Die",
             'claim_02': "Zukunft Berlins",
             'claim_03': "gemeinsam gestalten.",
-            'words_arr': ['nachhaltige', 'innovative', 'aufregende', 'inklusive', 'digitale']
+            'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
         },
         'missionStatement': {
-            'title': 'Mission Statement',
+            'title': 'Unsere Mission',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsender Kreis aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
             'statement1-title': 'Inklusiv', 
             'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.', 
@@ -51,28 +51,28 @@ export const content = {
         },
         'topics': [
             {
-                'title': 'The mobility <br/> von morgen',
+                'title': 'Mobilität <br/> von morgen',
                 'text': 'Von Fahrrad bis Flugtaxi, von Hyperloop bis Home Office – Städte sind Experimentierfelder für mobiles Leben. Wie gestalten wir den Verkehr der Zukunft?',
                 'img_url': 'images/topic_01_blue.jpg'
             },
             {
                 'title': 'Innovative <br/> Verwaltung',
-                'text': 'Geburtsurkunde via Whatsapp und Kindergeld per Kryptowährung – passt das überhaupt zusammen? Wie sehen Verwaltungsservices aus, die von Bürger*innen her gedacht werden?',
+                'text': 'Geburtsurkunde via Whatsapp und Kindergeld per Kryptowährung – passt das zusammen? Wie sehen Verwaltungsservices aus, die von Bürger*innen her gedacht werden?',
                 'img_url': 'images/topic_02_blue.jpg'
             },
             {
                 'title': 'Smart Cities <br/> für alle',
-                'text': 'Brücken bauen über digitale Gräben: Wie können wir die smarte Stadt so öffnen, dass möglichst alle Menschen darin handlungsfähig werden? ',
+                'text': 'Brücken bauen über digitale Gräben: Wie können wir die smarte Stadt so öffnen, dass möglichst alle Menschen darin handlungsfähig werden?',
                 'img_url': 'images/topic_03_blue.jpg'
             },
             {
                 'title': 'Offene Daten, <br/>offene Städte',
-                'text': 'Black Box oder gläserner Bürger? Wie schützen wir persönliche Informationen und schaffen zugleich Transparenz bei öffentlichen Daten und Algorithmen?',
+                'text': 'Black Box Society oder gläserner Staat? Wie schützen wir persönliche Informationen und schaffen zugleich Transparenz über öffentliche Daten und Algorithmen?',
                 'img_url': 'images/topic_04_blue.jpg'
             },
             {
                 'title': 'Energie und <br/> Nachhaltigkeit',
-                'text': 'Upcycling, Kreislaufwirtschaft, intelligente Netze – wir erforschen Wege hin zu einem klimaneutralen und gesunden Berlin ' ,
+                'text': 'Kreislaufwirtschaft, Upcycling, intelligente Netze – wie kommen wir zu einem klimafreundlichen und gesunden Berlin? ' ,
                 'img_url': 'images/topic_05_blue.jpg'
             },
         ],
@@ -331,7 +331,7 @@ export const content = {
             'words_arr': ['sustainable', 'changing', 'innovative', 'exciting', 'inclusive', 'digital']
         },
         'missionStatement': {
-            'title': 'Mission Statement',
+            'title': 'Our Mission',
             'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
             'statement1-title': 'Agile', 
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.', 
