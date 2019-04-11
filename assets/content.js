@@ -90,7 +90,7 @@ export const content = {
             ]
         },
         'team': {
-            'title': 'Das Team',
+            'title': 'Team',
             'member': [
                 { 
                     'name': 'Benjamin Seibel', 
