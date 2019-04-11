@@ -98,7 +98,6 @@
         },
         mounted() {
             this.handleScroll();
-            console.log(this.anchorTags);
         },
 		destroyed () {
 			if (process.browser) { 

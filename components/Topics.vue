@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="labels-wrapper">
-                        <label for="slide"></label>
+                        <label for="slide1"></label>
                         <label for="slide2"></label>
                         <label for="slide3"></label>
                         <label for="slide4"></label>
@@ -47,29 +47,42 @@
         },
         data() {
             return {
-                loop: () => { return this.loopSlides()}
+                timeoutArr: [],
+                toggled: false
             }
         },
         methods: {
             loopSlides() {
+                window.activeTimers = 1;
+                this.clearTimeouts();
 
-                for (var i=1;i<=5;i++) {
-
-                    ((ind) => {
-                        setTimeout(() => {
-                            document.getElementById(`slide${ind}`).checked = true;
-
-                            if (ind == 5) {
-                                this.loopSlides();
-                            }
-                        }, 7000 * ind);
-                    })(i);
-                }
+                    for (var i=1;i<=5;i++) {
+                        
+                        ((ind) => {
+                            const timeout = setTimeout(() => {
+                                document.getElementById(`slide${ind}`).checked = true;
+    
+                                if (ind == 5) {
+                                    this.loopSlides();
+                                }
+                            }, 7000 * ind);
+                            this.timeoutArr.push(timeout); 
+                        })(i);
+                    }
+            },
+            clearTimeouts() {
+                this.timeoutArr.forEach(id => {
+                    clearTimeout(id); // will do nothing if no timeout with id is present
+                })
+                this.timeoutArr.length = 0;
+                // console.log('timeouts length',this.timeoutArr.length, this.timeoutArr);
             }
         },
         mounted() {
-            this.loopSlides();
-        }
+            if (window.activeTimers == undefined) {
+                this.loopSlides();
+            }
+        },
     }
     </script>
 
@@ -197,7 +210,7 @@
             border-radius: 5px;
         }
 
-        #slide1:checked ~ .labels-wrapper > label[for="slide"],
+        #slide1:checked ~ .labels-wrapper > label[for="slide1"],
         #slide2:checked ~ .labels-wrapper > label[for="slide2"],
         #slide3:checked ~ .labels-wrapper > label[for="slide3"],
         #slide4:checked ~ .labels-wrapper > label[for="slide4"],

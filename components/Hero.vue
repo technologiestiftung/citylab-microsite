@@ -34,7 +34,7 @@
         data() {
             return {
                 config: {},
-                backgroundUrl: 'images/hero_img_blue.jpg',
+                backgroundUrl: 'images/hero_img_03.jpg',
             }
         },
         computed: {
