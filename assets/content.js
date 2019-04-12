@@ -47,7 +47,7 @@ export const content = {
             'statement3-title': 'Offen', 
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
             'statement3-img_url': 'images/03.png', 
-            'cta': 'Mehr erfahren', 
+            'cta': 'Mitmachen', 
         },
         'topics': [
             {
