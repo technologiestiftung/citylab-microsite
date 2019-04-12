@@ -1,5 +1,5 @@
 <template>
-    <section ref="hero" :style="{ backgroundImage: `url(${backgroundUrl})`}"  class="hero is-color-primary">
+    <section ref="hero" :style="{ backgroundImage: `url(${bgUrl})`}"  class="hero is-color-primary">
         <section class="hero-content section is-medium">
             <!-- v-html="`${content[lang]['hero']['claim']}`" -->
             <vue-typed-js 
@@ -8,10 +8,14 @@
                 :typeSpeed="100"
                 :backDelay="4000"
             >
-                <h1 style="width: 100%" class="title">{{ content[lang]['hero']['claim_01'] }} <span class="typing"></span> {{ content[lang]['hero']['claim_02'] }} </h1>
+                <h1 style="width: 100%;" class="title">
+                    {{ content[lang]['hero']['claim_01'] }} 
+                    <span class="typing"></span> 
+                    {{ content[lang]['hero']['claim_02'] }} 
+                    <br class="condBreak"/>
+                    {{ content[lang]['hero']['claim_03'] }}
+                </h1>
             </vue-typed-js>
-            <br/>
-            <h1 style="margin-top: -20px;" class="title">{{ content[lang]['hero']['claim_03'] }}</h1>
         </section>
         <!-- <Three :config="config" /> -->
     </section>
@@ -41,6 +45,9 @@
             wordsArr() {
                 const arr = this.content[this.lang]['hero']['words_arr'];
                 return arr;
+            },
+            bgUrl() {
+                return this.lang == 'de' ? 'images/hero_img_03.jpg' : '../images/hero_img_03.jpg';
             }
         },
         methods: {
@@ -99,6 +106,16 @@
                     font-size: $size-1 !important;
                 }
             }
+        }
+    }
+
+    .condBreak {
+        display: none;
+    }
+
+    @include tablet {
+        .condBreak {
+            display: block;
         }
     }
 

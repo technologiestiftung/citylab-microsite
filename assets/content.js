@@ -335,40 +335,40 @@ export const content = {
             'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
             'statement1-title': 'Agile', 
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.', 
-            'statement1-img_url': 'images/01.png', 
+            'statement1-img_url': '../images/01.png', 
             'statement2-title': 'Participatory', 
             'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.', 
-            'statement2-img_url': 'images/02.png', 
+            'statement2-img_url': '../images/02.png', 
             'statement3-title': 'Open', 
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
-            'statement3-img_url': 'images/03.png', 
+            'statement3-img_url': '../images/03.png', 
             'cta': 'Learn more',
         },
         'topics': [
             {
                 'title': 'The mobility <br/> of tomorrow',
                 'text': 'From bikes to flying taxis and hyperloops to home office – cities provide fertile ground for exploring how we move. How can we help design the mobility of the future?',
-                'img_url': 'images/topic_01_blue.jpg'
+                'img_url': '../images/topic_01_blue.jpg'
             },
             {
                 'title': 'Innovative <br/> governments',
                 'text': 'Birth certificates via Whatsapp and child-care allowances per cryptocurrencies – is that even thinkable? We explore what government services look like when they put citizen needs first.',
-                'img_url': 'images/topic_02_blue.jpg'
+                'img_url': '../images/topic_02_blue.jpg'
             },
             {
                 'title': 'Smart Cities <br/> for all',
                 'text': 'Building bridges over digital gulfs: how can we build a city so smart that it empowers all citizens, not just a select few? ',
-                'img_url': 'images/topic_03_blue.jpg'
+                'img_url': '../images/topic_03_blue.jpg'
             },
             {
                 'title': 'Open data, <br/>open cities',
                 'text': 'Between a black box or citizens laid bare: How can we protect personal information while simultaneously ensuring transparency in government data and algorithms?',
-                'img_url': 'images/topic_04_blue.jpg'
+                'img_url': '../images/topic_04_blue.jpg'
             },
             {
                 'title': 'Energy and <br/> sustainability',
                 'text': 'Upcycling, the circular economy and intelligent networks – we’re researching paths toward a climate-neutral, healthy Berlin' ,
-                'img_url': 'images/topic_05_blue.jpg'
+                'img_url': '../images/topic_05_blue.jpg'
             },
 
         ],
@@ -392,35 +392,35 @@ export const content = {
                     'name': 'Benjamin Seibel', 
                     'mail': 'seibel@technologiestiftung-berlin.de', 
                     'twitter': 'bnjmnsbl', 
-                    'img_url': 'images/benjamin_portrait.jpg',
+                    'img_url': '../images/benjamin_portrait.jpg',
                     'title': 'Director'
                 },
                 { 
                     'name': 'Nadine Riede', 
                     'mail': 'riede@technologiestiftung-berlin.de', 
                     'twitter': '', 
-                    'img_url': 'images/nadine_portrait.jpg',
+                    'img_url': '../images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
                 { 
                     'name': 'Sebastian Meier', 
                     'mail': 'meier@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
-                    'img_url': 'images/sebastian_portrait.jpg',
+                    'img_url': '../images/sebastian_portrait.jpg',
                     'title': 'Head of Scientific Cooperation'
                 },
                 { 
                     'name': 'Sara Reichert', 
                     'mail': 'reichert@technologiestiftung-berlin.de', 
                     'twitter': '', 
-                    'img_url': 'images/sara_portrait.jpg',
+                    'img_url': '../images/sara_portrait.jpg',
                     'title': 'Workshop Lead'
                 },
                 { 
                     'name': 'Fabian Dinklage', 
                     'mail': 'dinklage@technologiestiftung-berlin.de', 
                     'twitter': 'fdnklg', 
-                    'img_url': 'images/fabian_portrait.jpg',
+                    'img_url': '../images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
             ],

@@ -9,7 +9,7 @@
                     <input type="radio" name="slider" id="slide5" selected="false">
                     <div id="slides">
                         <div id="overflow">
-                        <div class="inner">
+                        <div id="imgWrapper" class="inner">
                             <article v-for="item in topicsArr" class="slide">
                                 <div class="content-container">
                                     <div>
@@ -18,7 +18,7 @@
                                     </div>
                                 </div>
                                 <div class="image-container">
-                                    <img :src="item.img_url" alt="item.title" />
+                                    <img v-on:touchend="handleTouch(selectCurrent)" :src="item.img_url" alt="item.title" />
                                 </div>
                             </article>
                         </div>
@@ -48,7 +48,8 @@
         data() {
             return {
                 timeoutArr: [],
-                toggled: false
+                toggled: false,
+                selectCurrent: 1
             }
         },
         methods: {
@@ -56,19 +57,21 @@
                 window.activeTimers = 1;
                 this.clearTimeouts();
 
+                if (!this.toggled) {
                     for (var i=1;i<=5;i++) {
-                        
                         ((ind) => {
                             const timeout = setTimeout(() => {
                                 document.getElementById(`slide${ind}`).checked = true;
-    
+                                this.selectCurrent = ind; 
+
                                 if (ind == 5) {
                                     this.loopSlides();
                                 }
-                            }, 7000 * ind);
+                            }, 6500 * ind);
                             this.timeoutArr.push(timeout); 
                         })(i);
                     }
+                }
             },
             clearTimeouts() {
                 this.timeoutArr.forEach(id => {
@@ -76,6 +79,17 @@
                 })
                 this.timeoutArr.length = 0;
                 // console.log('timeouts length',this.timeoutArr.length, this.timeoutArr);
+            },
+            handleTouch(id) {
+                this.toggled = true;
+                console.log(id)
+                if (id == 5) {
+                    document.getElementById(`slide${5}`).checked = true;
+                    this.selectCurrent = 1;
+                } else {
+                    document.getElementById(`slide${id}`).checked = true;
+                    this.selectCurrent = id + 1;
+                }
             }
         },
         mounted() {
@@ -138,6 +152,7 @@
 
             @include tablet {
                 margin-bottom: 0px;
+                height: 100px;
             }
         }
         
