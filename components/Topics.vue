@@ -17,8 +17,9 @@
                                         <p class="teaser">{{item.text}}</p>
                                     </div>
                                 </div>
-                                <div class="image-container">
-                                    <img v-on:touchend="handleTouch(selectCurrent)" :src="item.img_url" alt="item.title" />
+                                <div v-on:touchstart="handleTouch(selectCurrent)" class="image-container-topics">
+                                    <div class="overlay"></div>
+                                    <img :src="item.img_url" alt="item.title" />
                                 </div>
                             </article>
                         </div>
@@ -82,7 +83,14 @@
             },
             handleTouch(id) {
                 this.toggled = true;
-                console.log(id)
+
+                document.querySelectorAll('.overlay').forEach(container => {
+                    container.classList.add('toggled');
+                    setTimeout(() => {
+                        container.classList.remove('toggled');
+                    }, 200);
+                })
+
                 if (id == 5) {
                     document.getElementById(`slide${5}`).checked = true;
                     this.selectCurrent = 1;
@@ -102,6 +110,22 @@
 
     <style lang="scss" scoped>
         @import "../assets/style/style.scss";
+
+        .overlay {
+            width: 100%;
+            height: 96.5%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $color-primary;
+            opacity: 0.0;
+            transition: opacity .25s ease;
+
+            &.toggled {
+                opacity: 0.4;
+                transition: opacity .25s ease;
+            }
+        }
 
         .slide {
 
@@ -126,18 +150,21 @@
                 margin-right: 40px;
             }
 
-            .image-container {
+            .image-container-topics {
                 width: 40%;
             }
         }
         
-        .image-container {
+        .image-container-topics {
             img {
                 width: 100%;
-                // height: auto;
+                height: 100%;
             }
             width: 100%;
+            height: 100%;
+            overflow: auto;
             float: left;
+            position: relative;
         }
         .title {
             // font-size: $size-2;
@@ -149,10 +176,15 @@
             text-align: left;
             color: $color-tertiary;
             margin-bottom: 40px;
+            height: 120px;
+
+            @include tablet {
+                height: 140px;
+            }
 
             @include tablet {
                 margin-bottom: 0px;
-                height: 100px;
+                height: auto;
             }
         }
         

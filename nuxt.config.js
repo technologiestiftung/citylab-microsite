@@ -1,4 +1,7 @@
 import pkg from './package'
+import PurgecssPlugin from 'purgecss-webpack-plugin'
+import glob from 'glob-all'
+import path from 'path'
 
 export default {
   mode: 'universal',
@@ -35,7 +38,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/fontawesome.js'
+    // '~/plugins/fontawesome.js'
   ],
 
   /*
@@ -43,25 +46,63 @@ export default {
   */
   modules: [
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    
+    [
+      'nuxt-fontawesome', {
+      component: 'font-awesome-icon', 
+      imports: [
+        //import 2 icons from set 
+        // please note this is PRO set in this example, 
+        // you must have it in your node_modules to actually import
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['faEnvelope', 'faBicycle', 'faNewspaper', 'faStamp', 'faUserSecret', 'faGenderless', 'faGlobeEurope']
+        }
+      ]
+    }]
   ],
 
   /*
   ** Build configuration
   */
   build: {
+    analyze: true,
     extractCSS: true,
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true
+      }
+    },
     postcss: {
       preset: {
         features: {
           customProperties: false
         }
-      }
+      },
     },
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+        // Remove unused CSS using purgecss. See https://github.com/FullHuman/purgecss
+        // for more information about purgecss.
+        config.plugins.push(
+          new PurgecssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue')
+            ]),
+            whitelist: ['html', 'body']
+          })
+        )
     }
   }
 }

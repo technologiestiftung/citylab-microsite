@@ -10,7 +10,6 @@
                     <article class="tile is-child">
                         <figure class="image is 1by1">
                             <img :src="`${person.img_url}`">
-                            <div class="overlay"></div>
                         </figure>
                         <div class="wrapper-details">
                             <p class="name">{{ person.name }}</p>
@@ -58,22 +57,6 @@
 
     figure {
         position: relative;
-
-        .overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: $color-primary;
-            opacity: 0.0;
-            transition: opacity .5s ease;
-
-            &:hover {
-                opacity: 0.2;
-                transition: opacity .5s ease;
-            }
-        }
     }
 
     .team-wrapper {

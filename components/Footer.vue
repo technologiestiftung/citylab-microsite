@@ -12,7 +12,7 @@
 
                         <a class="flex flex-row m-b-sm" :href="directGoogleMaps">
                             <div class="icon-wrapper">
-                                <font-awesome-icon far icon="bicycle" />
+                                <font-awesome-icon far style="width: 20px; transform: translateY(2px)" :icon="bicycle"/>
                             </div>
                             <p class="content">
                                 {{ content[lang]['footer']['contact']['address_street'] }}
@@ -23,7 +23,7 @@
 
                         <a class="flex flex-row" :href="mailtoCitylab">
                             <div class="icon-wrapper">
-                                <font-awesome-icon far icon="envelope" />
+                                <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="envelope"/>
                             </div>
                             <p class="content">
                                 {{ content[lang]['footer']['contact']['mail'] }}
@@ -58,7 +58,7 @@
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directImprint">
                             <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="stamp"/>
+                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px; width: 15px;" far :icon="stamp"/>
                             </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['imprint'] }}
@@ -67,7 +67,7 @@
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directDataprivacy">
                             <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="user-secret"/>
+                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px;" far :icon="userSecret"/>
                             </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['dataprivacy'] }}
@@ -76,7 +76,7 @@
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directCodeofconduct">
                             <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="genderless"/>
+                                <font-awesome-icon style="transform: translateY(-2px); margin-right: 5px; width: 15px;" far :icon="genderless"/>
                             </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['codeofconduct'] }}
@@ -119,6 +119,14 @@
 </template>
 
 <script>
+    import { 
+        faBicycle,
+        faEnvelope,
+        faStamp,
+        faUserSecret,
+        faGenderless
+    } from '@fortawesome/free-solid-svg-icons';
+
     export default {
         name: "Footer",
         props: ['content', 'lang'],
@@ -143,6 +151,21 @@
             }
         },
         computed: {
+            bicycle() {
+                return faBicycle;
+            },
+            envelope() {
+                return faEnvelope;
+            },
+            stamp() {
+                return faStamp;
+            },
+            userSecret() {
+                return faUserSecret;
+            },
+            genderless() {
+                return faGenderless;
+            },
             directCodeofconduct() {
                 return this.directs[this.lang].code
             },

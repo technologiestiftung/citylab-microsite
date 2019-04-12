@@ -11,7 +11,7 @@
 		<Footer :lang="lang" :content="content"/>
 
 		<button @click="topFunction()" id="myBtn" class="is-color-tertiary top">
-			<font-awesome-icon far icon="arrow-alt-circle-up"/>
+			<font-awesome-icon far :icon="arrowUp"/>
 		</button>
 		<Matomo/>
 	</div>
@@ -33,7 +33,10 @@
 	import Topics from '../components/Topics.vue';
 	import Tiles from '../components/Tiles.vue';
 
+	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
+
 	export default {
+		
 		components: {
 			Navigation,
 			Hero,
@@ -51,6 +54,11 @@
 				lang: 'de',
 				content: content,
 				direct: '/index_en'
+			}
+		},
+		computed: {
+			arrowUp() {
+				return faArrowAltCircleUp;
 			}
 		},
 		methods: {

@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate --no-lock"
+    "generate": "nuxt generate --no-lock",
+    "analyze": "nuxt build --analyze --no-lock"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
@@ -17,13 +18,19 @@
     "@nuxtjs/bulma": "^1.2.3",
     "cross-env": "^5.2.0",
     "nuxt": "^2.5.1",
+    "nuxt-compress": "^1.0.2",
+    "nuxt-fontawesome": "^0.4.0",
     "three": "^0.103.0",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^0.1.2",
+    "brotli-webpack-plugin": "^1.1.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "glob-all": "^3.1.0",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.10",
+    "purgecss-webpack-plugin": "^1.4.0",
     "sass-loader": "^7.1.0"
   }
 }

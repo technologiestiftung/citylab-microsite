@@ -33,7 +33,7 @@
                     </div>
 
                     <nuxt-link class="navbar-item" :to="direct">
-                        <font-awesome-icon style="font-size: 24px; margin-right: 10px" far icon="globe-europe"/>
+                        <font-awesome-icon style="width: 15px; height: 15px; transform: translateY(-1px); margin-right: 10px" far :icon="globeEurope"/>
                         <span>{{ lang }}</span>
                     </nuxt-link>
 
@@ -47,6 +47,7 @@
 </template>
 
 <script>
+    import { faGlobeEurope } from '@fortawesome/free-solid-svg-icons';
     export default {
         name: 'Navigation',
         computed: {
@@ -58,6 +59,9 @@
         },
         props: ['lang', 'content', 'direct', 'scrolled', 'anchorTags'],
         computed: {
+            globeEurope() {
+                return faGlobeEurope;
+            },
             directHome() {
                 return this.lang == 'en' ? '/index_en' : '/';
             },
