@@ -1,9 +1,9 @@
 export const content = {
     'de': {
         'codeofconduct': {
-            'title': 'Code of conduct',
+            'title': 'Code of Conduct',
             'points': [
-                'Das CityLAB ist ein offener Ort der Kooperation, des Austauschs und des Lernens. Menschen sollen sich hier unabhängig von Alter, Geschlecht, Aussehen, sexueller Orientierung, körperlicher oder geistiger Beeinträchtigungen, Hautfarbe, Herkunft oder Religion wohlfühlen und produktiv zusammenarbeiten können. ',
+                'Das CityLAB ist ein offener Ort der Kooperation, des Austauschs und des Lernens. Menschen sollen sich hier unabhängig von Alter, Geschlecht, Aussehen, sexueller Orientierung, körperlichen oder geistigen Beeinträchtigungen, Hautfarbe, Herkunft oder Religion wohlfühlen und produktiv zusammenarbeiten können. ',
                 'Wir dulden keinerlei Formen von diskriminierendem Verhalten, Beleidigung, Einschüchterung, Sexismus, Stalking etc., weder vor Ort noch auf unseren Online-Kanälen. Wenn ihr von einem solchen Verhalten betroffen seid, wendet euch bitte unverzüglich an eine Person aus dem CityLAB-Team.',
                 'Das CityLAB ist kein Dienstleister, sondern lebt vom aktiven Engagement aller Beteiligten. Sorgt gemeinsam dafür, dass eine angenehme Arbeitsatmosphäre entsteht. Wer Arbeitsplätze, Workshop- oder Veranstaltungsräume nutzt, hat dafür Sorge zu tragen, diese ordentlich zu hinterlassen. Beachtet zudem, dass es für unsere Räume strenge Denkmalschutzauflagen gibt. Entsprechend sind dauerhafte bzw. irreversible Eingriffe in die Räumlichkeiten strengstens untersagt.',
                 'Wenn ihr öffentliche Veranstaltungen oder Projektarbeit mit größeren Gruppen plant, haltet unbedingt im Vorfeld rechtzeitig Rücksprache mit unserer Koordination. Bitte beachtet die Sicherheits- und Brandschutzvorschriften. Ihr seid für das Verhalten eurer Gäste selbst verantwortlich.',
