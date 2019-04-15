@@ -111,7 +111,7 @@ export const content = {
                     'mail': 'meier@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
                     'img_url': 'images/sebastian_portrait.jpg',
-                    'title': 'Head of Scientific Cooperation'
+                    'title': 'Wissenschaftliche Leitung'
                 },
                 { 
                     'name': 'Sara Reichert', 
@@ -407,7 +407,7 @@ export const content = {
                     'mail': 'meier@technologiestiftung-berlin.de', 
                     'twitter': 'seb_meier', 
                     'img_url': '../images/sebastian_portrait.jpg',
-                    'title': 'Head of Scientific Cooperation'
+                    'title': 'Head of Science'
                 },
                 { 
                     'name': 'Sara Reichert', 
