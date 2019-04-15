@@ -17,6 +17,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/bulma": "^1.2.3",
     "cross-env": "^5.2.0",
+    "d3": "^5.9.2",
     "nuxt": "^2.5.1",
     "nuxt-compress": "^1.0.2",
     "nuxt-fontawesome": "^0.4.0",
