@@ -67,7 +67,22 @@
 
 <style lang="scss">
     @import "../assets/style/style.scss";
-    @import "../assets/style/vue-typed-js.scss";
+
+    .typed-element {
+        display: flex;
+        align-items: center;
+    }
+
+    .typed-element .typed-cursor {
+        opacity: 1;
+        animation: typedjsBlink 0.7s infinite;
+    }
+
+    @keyframes typedjsBlink {
+        50% {
+            opacity: 0.0;
+        }
+    }
 
     .hero {
         height: 600px;

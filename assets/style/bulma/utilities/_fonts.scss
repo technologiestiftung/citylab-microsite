@@ -1,48 +1,32 @@
 @font-face {
     font-family: 'National';
-    src: url('~assets/fonts/National-BoldItalic.woff2') format('woff2'),
-        url('~assets/fonts/National-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'National';
-    src: url('~assets/fonts/National-Bold.woff2') format('woff2'),
-        url('~assets/fonts/National-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'National';
-    src: url('~assets/fonts/National-Regular.woff2') format('woff2'),
-        url('~assets/fonts/National-Regular.woff') format('woff');
+    src: url('~assets/fonts/NationalWeb-Regular.woff2') format('woff2'),
+        url('~assets/fonts/NationalWeb-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'National';
-    src: url('~assets/fonts/National-RegularItalic.woff2') format('woff2'),
-        url('~assets/fonts/National-RegularItalic.woff') format('woff');
+    src: url('~assets/fonts/NationalWeb-RegularItalic.woff2') format('woff2'),
+        url('~assets/fonts/NationalWeb-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'National';
-    src: url('~assets/fonts/National-Extrabold.woff2') format('woff2'),
-        url('~assets/fonts/National-Extrabold.woff') format('woff');
-    font-weight: 800;
+    src: url('~assets/fonts/NationalWeb-Extrabold.woff2') format('woff2'),
+        url('~assets/fonts/NationalWeb-Extrabold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'National';
-    src: url('~assets/fonts/National-ExtraboldItalic.woff2') format('woff2'),
-        url('~assets/fonts/National-ExtraboldItalic.woff') format('woff');
-    font-weight: 800;
+    src: url('~assets/fonts/NationalWeb-ExtraboldItalic.woff2') format('woff2'),
+        url('~assets/fonts/NationalWeb-ExtraboldItalic.woff') format('woff');
+    font-weight: bold;
     font-style: italic;
 }
 
