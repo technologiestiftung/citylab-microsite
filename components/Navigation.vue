@@ -19,7 +19,7 @@
                         </svg>
 
                     <span style="margin-left: 10px" class="logo-type">CityLAB</span>
-                    <span style="margin-left: 5px" class="logo-type-italic">Berlin</span>
+                    <span style="margin-left: 5px; margin-top: 3px;" class="logo-type-italic">Berlin</span>
                 </a>
             </div>
             <!-- v-bind:class="{ 'is-active' : showNav }" -->
@@ -187,6 +187,7 @@
                 }
 
                 .logo-type-italic {
+                    margin-top: 2px;
                     color: $color-primary !important;
                     transition: color .15s ease;
                 }

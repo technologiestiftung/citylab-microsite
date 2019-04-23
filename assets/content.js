@@ -127,6 +127,13 @@ export const content = {
                     'img_url': 'images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
+                { 
+                    'name': 'Malgorzata Magdon', 
+                    'mail': 'Magdon@technologiestiftung-berlin.de', 
+                    'twitter': '', 
+                    'img_url': '../images/malgorzata_portrait.jpg',
+                    'title': 'Administration'
+                },
             ],
         },
         'cta': {
@@ -422,6 +429,13 @@ export const content = {
                     'twitter': 'fdnklg', 
                     'img_url': '../images/fabian_portrait.jpg',
                     'title': 'UX & Design'
+                },
+                { 
+                    'name': 'Malgorzata Magdon', 
+                    'mail': 'Magdon@technologiestiftung-berlin.de', 
+                    'twitter': '', 
+                    'img_url': '../images/malgorzata_portrait.jpg',
+                    'title': 'Administration'
                 },
             ],
         },
