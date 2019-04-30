@@ -20,7 +20,7 @@ export const content = {
       { 'type':'paragraph', 'content': 'Wir rufen hiermit auch explizit junge Nachwuchswissenschaftler*innen dazu auf, sich am Diskurs und dem Symposium zu beteiligen. Herausragende Semesterprojekte und Bachelor- oder Masterarbeiten können ebenfalls in Form von Extended Abstracts eingereicht werden. In diesem Kontext wollen wir auch darauf hinweisen, dass eine Annahme zur Präsentation im Rahmen des Symposiums nicht bedeutet, dass man danach ein Journal-Paper veröffentlichen muss. Dies ist ein optionales Angebot.' },
       { 'type':'paragraph', 'content': 'Die Extended Abstracts sind bis zum 01.07. als PDFs per Email an meier@technologiestiftung-berlin.de zu richten.' },
       { 'type':'paragraph', 'content': 'Die Teilnahme am Symposium ist kostenfrei. Aufgrund der räumlichen Gegebenheiten ist die Veranstaltung auf maximal 70 Teilnehmer*innen beschränkt. Alle angenommenen Autor*innen bekommen zwei Tickets für das Symposium reserviert. Die restlichen Tickets stehen ab dem 1. August mit der Bekanntgabe der Speaker*innen zur Verfügung.' },
-      { 'type':'paragraph', 'content': 'Die Veranstaltung wird finanziell unterstützt durch die Technologiestiftung Berlin und den Regierenden Bürgermeister Berlins die Senatskanzlei.' },
+      { 'type':'paragraph', 'content': 'Die Veranstaltung wird finanziell unterstützt durch die Technologiestiftung Berlin und dem Regierenden Bürgermeister von Berlin die Senatskanzlei.' },
     ],
     'programTitle': 'Program Committee',
     'chairTitle': 'Chairs',
