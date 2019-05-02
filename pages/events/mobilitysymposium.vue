@@ -1,7 +1,7 @@
 <template>
     <div>
 		<Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-		<HeroLight :image="'../images/hero_img_mobility_symposium.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']" :subSubTitle="eventContent[lang]['subSubTitle']" />
+		<HeroLight :image="'https://citylab-berlin.org/images/hero_img_mobility_symposium.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']" :subSubTitle="eventContent[lang]['subSubTitle']" />
         <section class="section is-medium event-content">
             <div class="container">
 				<p class="event-intro">{{ eventContent[lang]['intro'] }}</p>
@@ -37,7 +37,7 @@
 					</li>
 				</ul>
 
-				<img id="organiser-logos" :src="'../images/events/mobilitysymposium-organiser-logos.svg'" alt="Organisatoren" />
+				<img id="organiser-logos" src="https://citylab-berlin.org/images/events/mobilitysymposium-organiser-logos.svg" alt="Organisatoren" />
 
 				<p class="copyright">{{ eventContent[lang]['rights'] }}</p>
 
