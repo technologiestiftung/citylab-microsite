@@ -37,6 +37,8 @@
 					</li>
 				</ul>
 
+				<img id="organiser-logos" :src="'../images/events/mobilitysymposium-organiser-logos.svg'" alt="Organisers" />
+
 				<p class="copyright">{{ eventContent[lang]['rights'] }}</p>
 
 				<Matomo/>
@@ -131,6 +133,16 @@
 	.event-content p.copyright{
 		padding-top:40px;
 		font-size: 14px;
+	}
+
+	.journal-logos{
+		height:60px;
+		margin-right:50px;
+	}
+
+	#organiser-logos{
+		max-width:80%;
+		width:600px;
 	}
 
 </style>
