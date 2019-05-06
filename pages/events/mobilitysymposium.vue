@@ -93,7 +93,7 @@
         },
 		head () {
 			return {
-				title: 'Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)',
+				title: 'Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019) - ',
 				meta: [
 					{ name: 'description', content: 'Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)' },
 					{ property: 'fb:app_id', content: '487094758334595'},
