@@ -12,7 +12,6 @@
                         <div class="content">{{ partner['text'] }}</div>
                     </article>
                 </div>
-
             </div>
         </div>
     </section>    

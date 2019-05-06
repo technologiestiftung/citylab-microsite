@@ -37,7 +37,7 @@ export const content = {
         },
         'missionStatement': {
             'title': 'Unsere Mission',
-            'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsender Kreis aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
+            'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
             'statement1-title': 'Inklusiv', 
             'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.', 
             'statement1-img_url': 'images/02.png', 
@@ -67,6 +67,26 @@ export const content = {
                     'logo_url': 'https://p14.zdusercontent.com/attachment/1015988/Hjnr3apa9OCplUi1GbaLiCVa7?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..QA4hJSE7NQfMjFDK1w6tog.0-YOVfCRjxpeHUf5tjKutEEoQn-U5peEUgQ6ZxBZugOJrShlKGm0lCgAURhV9T8Y-dIiFS9xTpdJ0UVPzSL1k4ka4emU3lzjerjHwhHt3Yl65Fs3S4JUWOhHvmiiG9-C0DvY7PJAEpwtGMNf-auRy84MUiYSMIriQzwkTTBJ7rdm7laryRnCGntFYfhs_GgGK38QEk8ZUhmx6M45yPoGTYrwjFPN85D3YmUA1zsEYEYKpIYOE2zdWT38wtQ6yyNWFTi6GyVQZ-p8nXAGbE5ZQR8XlKU2CquvZurSDtFeWhM.BIRFSvq27MoywSgtua3tYw',
                     'text': 'Hier steht ein kurzer Text über den Partner.'
                 }
+            ]
+        },
+        'schedule': {
+            title: 'Termine und Ankündigungen',
+            subtitle: 'Hier steht ein kurzer optionaler Einleitungstext.',
+            items: [
+                {
+                    title: 'Titel der Veranstaltung',
+                    date_month: 'Mai',
+                    date_day: '18',
+                    description: 'Einleitungstext der Veranstaltung',
+                    button: 'More information'
+                },
+                {
+                    title: 'Titel der Veranstaltung',
+                    date_month: 'Mai',
+                    date_day: '18',
+                    description: 'Einleitungstext der Veranstaltung',
+                    button: 'More information'
+                },
             ]
         },
         'topics': [
@@ -370,6 +390,33 @@ export const content = {
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
             'statement3-img_url': '../images/03.png', 
             'cta': 'Learn more',
+        },
+        'schedule': {
+            title: 'Dates and announcements',
+            subtitle: 'Here is a short optional introductory text.',
+            items: [
+                {
+                    title: 'Title of the event',
+                    date_month: 'May',
+                    date_day: '18',
+                    description: 'Introductory text of the event',
+                    button: 'More information'
+                },
+                {
+                    title: 'Title of the event',
+                    date_month: 'May',
+                    date_day: '18',
+                    description: 'Introductory text of the event',
+                    button: 'More information'
+                },
+                {
+                    title: 'Title of the event',
+                    date_month: 'May',
+                    date_day: '18',
+                    description: 'Introductory text of the event',
+                    button: 'More information'
+                },
+            ]
         },
         'topics': [
             {
