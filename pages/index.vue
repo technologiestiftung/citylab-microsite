@@ -7,7 +7,7 @@
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
-		<Schedule :lang="lang" :content="content" :direct="direct"/>
+		<Schedule :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
@@ -20,9 +20,8 @@
 </template>
 
 <script>
-	import { 
-  		content as content
-	} from '../assets/content.js';
+	import { content as content } from '../assets/content.js';
+	import { links as links } from '../assets/links.js';
 
 	import Navigation from '../components/Navigation.vue';
 	import Hero from '../components/Hero.vue';
@@ -59,6 +58,7 @@
 			return {
 				lang: 'de',
 				content: content,
+				links: links,
 				direct: '/index_en'
 			}
 		},

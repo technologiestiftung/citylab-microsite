@@ -74,18 +74,28 @@ export const content = {
             subtitle: 'Hier steht ein kurzer optionaler Einleitungstext.',
             items: [
                 {
-                    title: 'Titel der Veranstaltung',
+                    title: 'Titel der Veranstaltung 01',
                     date_month: 'Mai',
                     date_day: '18',
                     description: 'Einleitungstext der Veranstaltung',
-                    button: 'More information'
+                    button: 'More information',
+                    link: '/events/mobilitysymposium'
                 },
                 {
-                    title: 'Titel der Veranstaltung',
+                    title: 'Titel der Veranstaltung 02',
                     date_month: 'Mai',
                     date_day: '18',
                     description: 'Einleitungstext der Veranstaltung',
-                    button: 'More information'
+                    button: 'More information',
+                    link: '/events/mobilitysymposium'
+                },
+                {
+                    title: 'Titel der Veranstaltung 03',
+                    date_month: 'Mai',
+                    date_day: '18',
+                    description: 'Einleitungstext der Veranstaltung',
+                    button: 'More information',
+                    link: '/events/mobilitysymposium'
                 },
             ]
         },
@@ -396,25 +406,28 @@ export const content = {
             subtitle: 'Here is a short optional introductory text.',
             items: [
                 {
-                    title: 'Title of the event',
-                    date_month: 'May',
+                    title: 'Urban Mobility Symposium',
+                    date_month: 'Oct',
                     date_day: '18',
                     description: 'Introductory text of the event',
-                    button: 'More information'
+                    button: 'More information',
+                    link: '/events/mobilitysymposium_en'
                 },
                 {
-                    title: 'Title of the event',
+                    title: 'Title of the event 02',
                     date_month: 'May',
                     date_day: '18',
                     description: 'Introductory text of the event',
-                    button: 'More information'
+                    button: 'More information',
+                    link: '/events/mobilitysymposium_en'
                 },
                 {
-                    title: 'Title of the event',
+                    title: 'Title of the event 03',
                     date_month: 'May',
                     date_day: '18',
                     description: 'Introductory text of the event',
-                    button: 'More information'
+                    button: 'More information',
+                    link: '/events/mobilitysymposium_en'
                 },
             ]
         },

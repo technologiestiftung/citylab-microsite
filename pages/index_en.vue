@@ -7,6 +7,7 @@
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
+		<Schedule :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
@@ -19,9 +20,8 @@
 </template>
 
 <script>
-	import { 
-  		content as content
-	} from '../assets/content.js';
+	import { content as content } from '../assets/content.js';
+	import { links as links } from '../assets/links.js';
 
 	import Navigation from '../components/Navigation.vue';
 	import Hero from '../components/Hero.vue';
@@ -34,6 +34,7 @@
 	import Topics from '../components/Topics.vue';
 	import Tiles from '../components/Tiles.vue';
 	import Partners from '../components/Partners.vue';
+	import Schedule from '../components/Schedule.vue';
 
 	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -50,12 +51,14 @@
 			Footer,
 			Topics,
 			Tiles,
-			Partners
+			Partners,
+			Schedule
 		},
 		data() {
 			return {
 				lang: 'en',
 				content: content,
+				links: links,
 				direct: '/'
 			}
 		},
