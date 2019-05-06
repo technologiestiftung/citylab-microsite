@@ -137,6 +137,12 @@ export const content = {
                     'subtitle': 'Projekt Untertitel',
                     'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
                 }
+            ],
+            'bullets_intro': 'Möchtest du ...',
+            'bullets': [
+                'eine Projektidee vorstellen und sie gemeinsam mit uns weiterdenken?',
+                'ein Meetup, einen Workshop oder eine Veranstaltung bei uns durchführen?',
+                'unsere Werkstatt nutzen oder vorübergehend einen festen Co-Working-Platz bei uns?'
             ]
         },
         'team': {
@@ -490,6 +496,12 @@ export const content = {
                     'subtitle': 'Projekt Untertitel',
                     'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
                 }
+            ],
+            'bullets_intro': 'Would you like to ...',
+            'bullets': [
+                'present a project idea and think it through together with us?',
+                'hold a Meetup, Workshop or Event with us?',
+                'use our workshop or temporarily a permanent co-working place with us?'
             ]
         },
         'team': {
