@@ -2,7 +2,7 @@
     <section class="section schedule is-medium" id="schedule">
         <div class="container">
             <h2 class="title"> {{ content[lang]['schedule']['title'] }} </h2>
-            <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2>
+            <!-- <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2> -->
         
             <div class="schedule-wrapper">
                 <article v-for="item in itemsArr" class="dates-item">
@@ -36,7 +36,9 @@
 
     @import "../assets/style/style.scss";
 
-    .schedule {
+    .schedule { 
+        background: $color-primary--lightest;
+
         &-wrapper {
             display: flex;
             flex-direction: column;

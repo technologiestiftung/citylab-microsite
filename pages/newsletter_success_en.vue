@@ -35,9 +35,9 @@
 		},
 		data() {
 			return {
-				lang: 'de',
+				lang: 'en',
 				content: content,
-				direct: '/newsletter_success_en'
+				direct: '/newsletter_success_de'
 			}
 		},
     }

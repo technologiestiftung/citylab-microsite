@@ -36,7 +36,6 @@
                                 
                                 {{ content[lang]['register']['form']['agb'] }}
                                 <p v-html="content[lang]['register']['form']['unsubscribe']">
-                                    
                                 </p>
                             </div>
                             <br style="clear:left;"/>
@@ -75,8 +74,8 @@
         data() {
             return {
                 content: content,
-                lang: 'de',
-				direct: '/newsletter_register_en'
+                lang: 'en',
+				direct: '/newsletter_register_de'
             }
         },
         mounted() {

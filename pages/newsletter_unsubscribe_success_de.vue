@@ -3,14 +3,9 @@
         <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
         <section class="section is-medium">
             <div class="container">
-                <h1 class="title" v-html="this.content[this.lang]['register']['success']['title']" style="margin-top: 100px"></h1>
+                <h1 class="title" v-html="this.content[this.lang]['register']['unsubscribeSuccess']['title']" style="margin-top: 100px"></h1>
 
-                <h2 class="subtitle" v-html="this.content[this.lang]['register']['success']['subtitle']"></h2>
-
-                <p v-html="this.content[this.lang]['register']['success']['p1']"></p>
-
-
-                <p v-html="this.content[this.lang]['register']['success']['p2']"></p>
+                <h2 class="subtitle" v-html="this.content[this.lang]['register']['unsubscribeSuccess']['subtitle']"></h2>
             </div>
         </section>
         <Footer style="position: fixed; bottom: 0px; width: 100%;" :lang="lang" :content="content"/>
@@ -37,7 +32,7 @@
 			return {
 				lang: 'de',
 				content: content,
-				direct: '/newsletter_success_en'
+				direct: '/newsletter_unsubscribe_success_en'
 			}
 		},
     }
@@ -46,5 +41,3 @@
 <style>
 
 </style>
-
-

@@ -3,9 +3,9 @@
         <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
         <section class="section is-medium">
             <div class="container">
-                <h1 class="title" style="margin-top: 100px">
-                    {{ content[lang]['register']['title'] }}
-                </h1>
+                <h1 class="title" v-html="this.content[this.lang]['register']['errors']['mailformat']['title']" style="margin-top: 100px"></h1>
+
+                <h2 class="subtitle" v-html="this.content[this.lang]['register']['errors']['mailformat']['subtitle']"></h2>
             
                 <form class="layout_form cr_form cr_font" action="https://eu1.cleverreach.com/f/82637-208290/wcs/" method="post" target="_blank">
                     <div class="cr_body cr_page cr_font formbox">
@@ -24,7 +24,7 @@
                             
 
                             <div id="4405750" rel="checkbox" class="cr_ipe_item ui-sortable musthave" style=" margin-bottom:0px;">
-                                <label class="itemname">{{ content[lang]['register']['mandatory'] }}</label>
+                                <label class="itemname">* Pflichtfeld</label>
                             <div class="agb" style="overflow:auto;">
                                 <input 
                                     :id="content[lang]['register']['form']['agb']" 
@@ -34,10 +34,7 @@
                                     type="checkbox"
                                 />
                                 
-                                {{ content[lang]['register']['form']['agb'] }}
-                                <p v-html="content[lang]['register']['form']['unsubscribe']">
-                                    
-                                </p>
+                                {{ content[lang]['register']['form']['agb'] }} &nbsp;
                             </div>
                             <br style="clear:left;"/>
                             <div id="4405748" rel="button" class="cr_ipe_item ui-sortable submit_container">
@@ -76,7 +73,7 @@
             return {
                 content: content,
                 lang: 'de',
-				direct: '/newsletter_register_en'
+				direct: '/newsletter_mailformat_en'
             }
         },
         mounted() {

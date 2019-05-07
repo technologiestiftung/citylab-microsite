@@ -50,18 +50,71 @@ export const content = {
             'cta': 'Mitmachen', 
         },
         'register': {
+            intro: {
+                title: 'Bleibe immer auf dem laufenden.',
+                subtitle: 'Melde dich für den Newsletter des CityLAB an und erfahre über Neuigkeiten und aktuelle Veranstaltungen.',
+                button: 'Anmelden',
+                url: '/newsletter_register_de'
+            },
             title: 'Anmeldung Newsletter',
+            urlunsubscribe: '/newsletter_unsubscribe_de',
+            mandatory: '* Pflichtfeld',
             form: {
                 name: 'Ihr Name',
                 mail: 'Ihre E-Mail-Adresse',
                 button: 'Anmelden',
-                agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass die Technologiestiftung Berlin mir regelmäßig Informationen zu Tätigkeiten der Technologiestiftung, stiftungsnahen Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar. Meine Einwilligung kann ich jederzeit hier gegenüber der Technologiestiftung Berlin widerrufen.'
+                agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass die Technologiestiftung Berlin mir regelmäßig Informationen zu Tätigkeiten der Technologiestiftung, stiftungsnahen Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
+                unsubscribe: 'Meine Einwilligung kann ich jederzeit hier gegenüber des CityLAB Berlin <a href="/newsletter_unsubscribe_de">widerrufen</a>.'
+            },
+            formunsubscribe: {
+                title: 'Newsletter abmelden',
+                p1: 'Bitte geben Sie Ihre E-Mail-Adresse ein, um sich abzumelden.',
+                mail: 'E-Mail',
+                button: 'Abmelden',
             },
             'success': {
                 title: 'Bleiben Sie auf dem Laufenden.',
                 subtitle: 'Vielen Dank für Ihre Bestellung des Newsletters des CityLAB Berlin.',
                 p1: 'Ihre E-Mail-Adresse wurde in unseren Newsletter Verteiler aufgenommen.',
-                p2: 'Bei Problemen oder Anfragen wenden Sie sich bitte an <a href="mailto:info@citylab-berlin.de">info(at)citylab-berlin.de</a>.'
+                p2: 'Bei Problemen oder Anfragen wenden Sie sich bitte an <a href="mailto:info@citylab-berlin.org">info(at)citylab-berlin.org</a>.'
+            },
+            'confirm': {
+                title: 'Anmeldung bestätigen',
+                subtitle: 'Vielen Dank für Ihre Anmeldung.',
+                p1: 'Sie erhalten in Kürze eine Nachricht auf der von Ihnen angegebenen E-Mail Adresse.',
+                p2: 'Diese beinhaltet einen Link zur Aktivierung Ihres Abonnement.'
+            },
+            'unsubscribe': {
+                title: 'Abmeldung bestätigen',
+                subtitle: 'Vielen Dank für Ihre Nachricht.',
+                p1: 'Sie erhalten in Kürze eine Link auf der von Ihnen angegebenen E-Mail Adresse.',
+                p2: 'Mit diesem bestätigen Sie bitte die Kündigung Ihres Abonnements.'
+            },
+            'unsubscribeSuccess': {
+                title: 'Abmeldung erfolgreich',
+                subtitle: 'Sie wurden erfolgreich aus dem Verteiler von CityLAB Berlin entfernt.'
+            },
+            errors: {
+                'mailalreadyexists': {
+                    title: 'Fehler',
+                    subtitle: 'Die von Ihnen eingegebene E-Mail-Adresse ist bereits angemeldet.'
+                },
+                'mailblocked': {
+                    title: 'Hinweis',
+                    subtitle: 'Die eingegebene E-Mail-Adresse wird vom System blockiert. Bitte melden Sie sich mit einer anderen E-Mail-Adresse an.'
+                },
+                'mailformat': {
+                    title: 'Fehler',
+                    subtitle: 'Die von Ihnen eingegebene E-Mail-Adresse entspricht nicht dem gültigem Format. Bitte überprüfen Sie Ihre Eingabe.'
+                },
+                'missinginput': {
+                    title: 'Hinweis',
+                    subtitle: 'Sie haben nicht alle Pflichtfelder ausgefüllt. Bitte ergänzen Sie die fehlenden Eingaben.'
+                },
+                'missingcaptcha': {
+                    title: 'Fehler',
+                    subtitle: 'Das von Ihnen eingegebene Captcha war leider nicht korrekt. Bitte versuchen Sie es erneut.'
+                },
             }
         },
         'partners': {
@@ -89,29 +142,13 @@ export const content = {
             subtitle: 'Hier steht ein kurzer optionaler Einleitungstext.',
             items: [
                 {
-                    title: 'Titel der Veranstaltung 01',
-                    date_month: 'Mai',
-                    date_day: '18',
-                    description: 'Einleitungstext der Veranstaltung',
-                    button: 'More information',
+                    title: 'Urban Mobility Symposium',
+                    date_month: 'Okt',
+                    date_day: '11',
+                    description: 'Karten, Daten, Geovisualisierung',
+                    button: 'Weitere Informationen',
                     link: '/events/mobilitysymposium'
-                },
-                {
-                    title: 'Titel der Veranstaltung 02',
-                    date_month: 'Mai',
-                    date_day: '18',
-                    description: 'Einleitungstext der Veranstaltung',
-                    button: 'More information',
-                    link: '/events/mobilitysymposium'
-                },
-                {
-                    title: 'Titel der Veranstaltung 03',
-                    date_month: 'Mai',
-                    date_day: '18',
-                    description: 'Einleitungstext der Veranstaltung',
-                    button: 'More information',
-                    link: '/events/mobilitysymposium'
-                },
+                }
             ]
         },
         'topics': [
@@ -429,27 +466,11 @@ export const content = {
                 {
                     title: 'Urban Mobility Symposium',
                     date_month: 'Oct',
-                    date_day: '18',
-                    description: 'Introductory text of the event',
+                    date_day: '11',
+                    description: 'Maps, Data, Geovisualisation',
                     button: 'More information',
                     link: '/events/mobilitysymposium_en'
-                },
-                {
-                    title: 'Title of the event 02',
-                    date_month: 'May',
-                    date_day: '18',
-                    description: 'Introductory text of the event',
-                    button: 'More information',
-                    link: '/events/mobilitysymposium_en'
-                },
-                {
-                    title: 'Title of the event 03',
-                    date_month: 'May',
-                    date_day: '18',
-                    description: 'Introductory text of the event',
-                    button: 'More information',
-                    link: '/events/mobilitysymposium_en'
-                },
+                }
             ]
         },
         'topics': [
@@ -480,6 +501,74 @@ export const content = {
             },
 
         ],
+        'register': {
+            intro: {
+                title: 'Stay updated!',
+                subtitle: 'Sign up for the CityLAB newsletter and get the latest news and events.',
+                button: 'Subscribe',
+                url: '/newsletter_register_en'
+            },
+            title: 'Sign up newsletter',
+            urlunsubscribe: '/newsletter_unsubscribe_en',
+            mandatory: '* Mandartoy field',
+            form: {
+                name: 'Your name',
+                mail: 'Your E-Mail',
+                button: 'Subscribe',
+                agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the Technology Foundation Berlin may send me regular information on the activities of the Technology Foundation, foundation-related topics and events by e-mail in the form of a newsletter. Comprehensive information on the registration and unsubscription procedure, the mail-order company and the statistical evaluation of your data can be found in our Privacy Policy.',
+                unsubscribe: 'I can revoke my consent to the CityLAB Berlin <a href="/newsletter_unsubscribe_en">here</a> at any time.'
+            },
+            formunsubscribe: {
+                title: 'Unsubscribe from newsletter',
+                p1: 'Please enter your e-mail address to unsubscribe.',
+                mail: 'E-Mail',
+                button: 'Unsubscribe',
+            },
+            'success': {
+                title: 'Stay up to date',
+                subtitle: 'Thank you for subscribing to the CityLAB Berlin newsletter.',
+                p1: 'Your e-mail address has been added to our newsletter distribution list.',
+                p2: 'In case of problems or inquiries please contact <a href="mailto:info@citylab-berlin.org">info(at)citylab-berlin.org</a>.'
+            },
+            'confirm': {
+                title: 'Confirm subscription',
+                subtitle: 'Thank you very much for your registration.',
+                p1: 'You will shortly receive a message at the e-mail address you provided.',
+                p2: 'This includes a link to activate your subscription.'
+            },
+            'unsubscribe': {
+                title: 'Confirm unsubscription',
+                subtitle: 'Thank you very much for your message.',
+                p1: 'You will shortly receive a link to the e-mail address you provided.',
+                p2: 'With this you confirm the cancellation of your subscription.'
+            },
+            'unsubscribeSuccess': {
+                title: 'Unsubscription successful',
+                subtitle: 'You have been successfully removed from the CityLAB Berlin distribution list.'
+            },
+            errors: {
+                'mailalreadyexists': {
+                    title: 'Error',
+                    subtitle: 'The email address you entered is already registered.'
+                },
+                'mailblocked': {
+                    title: 'Notice',
+                    subtitle: 'The entered e-mail address is blocked by the system. Please log in with a different e-mail address.'
+                },
+                'mailformat': {
+                    title: 'Error',
+                    subtitle: 'The e-mail address you entered does not correspond to the valid format. Please check your entry.'
+                },
+                'missinginput': {
+                    title: 'Notice',
+                    subtitle: 'You have not filled in all mandatory fields. Please fill in the missing fields.'
+                },
+                'missingcaptcha': {
+                    title: 'Error',
+                    subtitle: 'The captcha you entered was unfortunately not correct. Please try again.'
+                },
+            }
+        },
         'partners': {
             title: "Partners",
             items: [

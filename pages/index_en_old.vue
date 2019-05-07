@@ -7,8 +7,7 @@
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
-		<Schedule :lang="lang" :content="content" :direct="direct" :links="links"/>
-		<Newsletter :lang="lang" :content="content" :direct="direct"/>
+		<!-- <Schedule :lang="lang" :content="content" :direct="direct" :links="links"/> -->
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
@@ -36,7 +35,6 @@
 	import Tiles from '../components/Tiles.vue';
 	import Partners from '../components/Partners.vue';
 	import Schedule from '../components/Schedule.vue';
-	import Newsletter from '../components/Newsletter.vue';
 
 	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -49,20 +47,19 @@
 			Team,
 			Projects,
 			Cta,
-			Schedule,
 			Matomo,
 			Footer,
 			Topics,
-			Partners,
-			Newsletter,
 			Tiles,
+			Partners,
+			Schedule
 		},
 		data() {
 			return {
-				lang: 'de',
+				lang: 'en',
 				content: content,
 				links: links,
-				direct: '/index_en'
+				direct: '/'
 			}
 		},
 		computed: {

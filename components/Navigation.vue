@@ -34,7 +34,7 @@
 
                     <nuxt-link class="navbar-item" :to="direct">
                         <font-awesome-icon style="width: 15px; height: 15px; transform: translateY(-1px); margin-right: 10px" far :icon="globeEurope"/>
-                        <span>{{ lang }}</span>
+                        <span>{{ language }}</span>
                     </nuxt-link>
 
                 </div>
@@ -66,7 +66,7 @@
                 return this.lang == 'en' ? '/index_en' : '/';
             },
             language() {
-                return this.lang == 'en' ? 'language' : 'Sprache';
+                return this.lang == 'en' ? 'de' : 'en';
             },
             toggle() {
                 return this.scrolled == true ? 'scrolled' : '';
