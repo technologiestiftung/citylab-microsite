@@ -9,6 +9,8 @@
 		<Team :lang="lang" :content="content" :direct="direct"/>
 		<!-- <Schedule :lang="lang" :content="content" :direct="direct" :links="links"/> -->
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
+		<Team :lang="lang" :content="content" :direct="direct"/>
+		<!-- <Schedule :lang="lang" :content="content" :direct="direct" :links="links"/> -->
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
