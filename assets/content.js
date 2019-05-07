@@ -51,8 +51,8 @@ export const content = {
         },
         'register': {
             intro: {
-                title: 'Bleibe immer auf dem laufenden.',
-                subtitle: 'Melde dich für den Newsletter des CityLAB an und erfahre über Neuigkeiten und aktuelle Veranstaltungen.',
+                title: 'Newsletter',
+                subtitle: 'Aktuelle Informationen und Veranstaltungen aus dem CityLAB.',
                 button: 'Anmelden',
                 url: '/newsletter_register_de'
             },
@@ -503,8 +503,8 @@ export const content = {
         ],
         'register': {
             intro: {
-                title: 'Stay updated!',
-                subtitle: 'Sign up for the CityLAB newsletter and get the latest news and events.',
+                title: 'Newsletter',
+                subtitle: 'CityLAB\'s latest news and events.',
                 button: 'Subscribe',
                 url: '/newsletter_register_en'
             },
