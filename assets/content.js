@@ -49,6 +49,21 @@ export const content = {
             'statement3-img_url': 'images/03.jpg', 
             'cta': 'Mitmachen', 
         },
+        'register': {
+            title: 'Anmeldung Newsletter',
+            form: {
+                name: 'Ihr Name',
+                mail: 'Ihre E-Mail-Adresse',
+                button: 'Anmelden',
+                agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass die Technologiestiftung Berlin mir regelmäßig Informationen zu Tätigkeiten der Technologiestiftung, stiftungsnahen Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar. Meine Einwilligung kann ich jederzeit hier gegenüber der Technologiestiftung Berlin widerrufen.'
+            },
+            'success': {
+                title: 'Bleiben Sie auf dem Laufenden.',
+                subtitle: 'Vielen Dank für Ihre Bestellung des Newsletters des CityLAB Berlin.',
+                p1: 'Ihre E-Mail-Adresse wurde in unseren Newsletter Verteiler aufgenommen.',
+                p2: 'Bei Problemen oder Anfragen wenden Sie sich bitte an <a href="mailto:info@citylab-berlin.de">info(at)citylab-berlin.de</a>.'
+            }
+        },
         'partners': {
             title: 'Partner',
             items: [
