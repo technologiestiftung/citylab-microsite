@@ -39,6 +39,10 @@
     .schedule { 
         background: $color-primary--lightest;
 
+        @include tablet {
+            
+        }
+
         &-wrapper {
             display: flex;
             flex-direction: column;
@@ -52,12 +56,22 @@
             // border-top: 1px solid $color-primary--medium;
             align-items: center;
 
+            @include mobile {
+                padding: .85rem;
+            }
+
             &:nth-of-type(odd) {
                 background: $color-primary--lightest;
             }
 
             .subtitle {
                 margin-bottom: 0px;
+
+
+                @include mobile {
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+                }
             }
 
             &:last-of-type {
@@ -70,15 +84,29 @@
             flex-direction: column;
             justify-content: space-around;
 
+            @include mobile {
+                margin-right: 15px;
+            }
+
             .date-month {
                 font-size: $size-4;
                 line-height: 2rem;
+
+                @include mobile {
+                    line-height: 1.2rem;
+                    font-size: 1rem;
+                }
             }
 
             .date-day {
                 font-size: $size-3;
                 line-height: 1.75rem;
                 text-align: center;
+
+                @include mobile {
+                    line-height: 1.2rem;
+                    font-size: 1rem;
+                }
             }
          }
     }

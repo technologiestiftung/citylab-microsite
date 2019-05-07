@@ -146,7 +146,7 @@ export const content = {
                     date_month: 'Okt',
                     date_day: '11',
                     description: 'Karten, Daten, Geovisualisierung',
-                    button: 'Weitere Informationen',
+                    button: 'Details',
                     link: '/events/mobilitysymposium'
                 }
             ]

@@ -1,5 +1,5 @@
 <template>
-    <section class="section is-medium">
+    <section class="section is-medium newsletter">
         <div class="container">
 
             <h1 class="title">
@@ -34,6 +34,21 @@
 
 <style lang="scss">
     @import "../assets/style/style.scss";
+
+    .newsletter {
+        background: $color-tertiary;
+
+        .container {
+            .title {
+                color: white;
+            }
+
+            .subtitle {
+                color: white;
+            }
+        }
+
+    }
 
     .cr_form {
         .itemname {

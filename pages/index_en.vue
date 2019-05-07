@@ -7,7 +7,7 @@
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Projects :lang="lang" :content="content"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
-		<Schedule :lang="lang" :content="content" :direct="direct" :links="links"/>
+		<!-- <Schedule :lang="lang" :content="content" :direct="direct" :links="links"/> -->
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
