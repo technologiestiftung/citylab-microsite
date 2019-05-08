@@ -11,6 +11,9 @@ export default {
   */
   head: {
     titleTemplate: '%sCityLAB',
+    script: [
+      { src: 'https://citylab-berlin.org/matomo.js' }
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

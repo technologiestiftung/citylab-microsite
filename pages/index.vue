@@ -5,7 +5,7 @@
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
 		<Topics :lang="lang" :content="content" :direct="direct" />
-		<Projects :lang="lang" :content="content"/>
+		<Call :lang="lang" :content="content"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
 		<!-- <Schedule :lang="lang" :content="content" :direct="direct" :links="links"/> -->
@@ -16,7 +16,6 @@
 		<button @click="topFunction()" id="myBtn" class="is-color-tertiary top">
 			<font-awesome-icon far :icon="arrowUp"/>
 		</button>
-		<Matomo/>
 	</div>
 </template>
 
@@ -28,10 +27,9 @@
 	import Hero from '../components/Hero.vue';
 	import MissionStatement from '../components/MissionStatement.vue';
 	import Team from '../components/Team.vue';
-	import Projects from '../components/Projects.vue';
+	import Call from '../components/Call.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
-	import Matomo from '../components/Matomo.vue';
 	import Topics from '../components/Topics.vue';
 	import Tiles from '../components/Tiles.vue';
 	import Partners from '../components/Partners.vue';
@@ -47,10 +45,9 @@
 			Hero,
 			MissionStatement,
 			Team,
-			Projects,
+			Call,
 			Cta,
 			Schedule,
-			Matomo,
 			Footer,
 			Topics,
 			Partners,

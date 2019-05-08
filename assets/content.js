@@ -24,6 +24,10 @@ export const content = {
                 'ref': '#call'
             },
             {
+                'name': 'Newsletter',
+                'ref': '#newsletter'
+            },
+            {
                 'name': 'Team',
                 'ref': '#team'
             },

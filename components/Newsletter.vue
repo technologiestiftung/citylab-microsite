@@ -1,5 +1,5 @@
 <template>
-    <section class="section is-medium newsletter">
+    <section class="section is-medium newsletter" id="newsletter">
         <div class="container">
 
             <h1 class="title">

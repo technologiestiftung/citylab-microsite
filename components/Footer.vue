@@ -240,6 +240,7 @@
 
     .icon-wrapper {
         width: 28px;
+        height: 24px;
     }
 
     .text-light {
