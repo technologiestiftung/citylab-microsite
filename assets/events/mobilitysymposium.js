@@ -43,7 +43,7 @@ export const content = {
       ['Charlotte Pusch','Technische Universität Hamburg'],
       ['Raphael Reimann','Moovel'],
       ['Jochen Schiewe','HafenCity University, Hamburg'],
-      ['Harald Tschernthanner','Universität Potsdam'],
+      ['Harald Schernthanner','Universität Potsdam'],
       ['Lucia Tyrallova','Universität Potsdam']
     ],
     'rights':'Titelbild: 09-00-1949_06624 Verkeer op Koningssluis von IISG auf Flickr'
@@ -92,7 +92,7 @@ export const content = {
       ['Charlotte Pusch','Technische Universität Hamburg'],
       ['Raphael Reimann','Moovel'],
       ['Jochen Schiewe','HafenCity University, Hamburg'],
-      ['Harald Tschernthanner','Universität Potsdam'],
+      ['Harald Schernthanner','Universität Potsdam'],
       ['Lucia Tyrallova','Universität Potsdam']
     ],
     'rights':'Header Image: 09-00-1949_06624 Verkeer op Koningssluis by IISG on Flickr'
