@@ -287,7 +287,7 @@ export const content = {
             'title': 'Impressum',
             'info': {
                 'title': 'Angaben zur Technologiestiftung Berlin',
-                'p1': 'Technologiestiftung Berlin </br> Fasanenstraße 85 10623 Berlin <br/>  Tel.: +49 30 46302 500 <br/>',
+                'p1': 'Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin<br />Tel.: +49 30 209 69 99 0<br/>',
                 'mail_url': 'info@technologiestiftung-berlin.de',
                 'mail_name': 'info(at)technologiestiftung-berlin.de',
                 'p2': 'Stiftungsverzeichnis Berlin: AZ 3416/464 B3 <br/> USt-Id-Nr.: DE 187 459 128',
@@ -698,7 +698,7 @@ export const content = {
             'title': 'Legal note',
             'info': {
                 'title': 'Information about Technologiestiftung Berlin',
-                'p1': 'Technologiestiftung Berlin </br> Fasanenstraße 85 10623 Berlin <br/>  Tel.: +49 30 46302 500 <br/>',
+                'p1': 'Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin<br />Tel.: +49 30 209 69 99 0<br/>',
                 'mail_url': 'info@technologiestiftung-berlin.de',
                 'mail_name': 'info(at)technologiestiftung-berlin.de',
                 'p2': 'Foundation register Berlin: file reference number 3416/464 B3 <br/> VAT No.: DE 187 459 128',
