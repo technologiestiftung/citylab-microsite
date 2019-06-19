@@ -187,7 +187,7 @@
                 }
 
                 .logo-type-italic {
-                    margin-top: 2px;
+                    margin-top: 3px;
                     color: $color-primary !important;
                     transition: color .15s ease;
                 }

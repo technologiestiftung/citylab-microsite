@@ -188,7 +188,7 @@
                 return 'https://www.google.de/maps/@52.4843705,13.3836835,16.65z'
             },
             mailtoCitylab() {
-                return 'mailto:hello@citylabberlin.de'
+                return 'mailto:info@citylabberlin.de'
             },
         }
     }
