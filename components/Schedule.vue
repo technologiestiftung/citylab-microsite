@@ -5,15 +5,15 @@
             <!-- <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2> -->
         
             <div class="schedule-wrapper">
-                <article v-for="item in itemsArr" class="dates-item">
+                <article v-for="entry in data" class="dates-item">
                     <div class="date-wrapper">
-                        <span class="date-month"> {{ item['date_month'] }} </span>
-                        <span class="date-day"> {{ item['date_day'] }} </span>
+                        <span class="date-month"> {{ entry.month }} </span>
+                        <span class="date-day"> {{ entry.day }} </span>
                     </div>
 
-                    <h2 class="subtitle">{{ item['title'] }}</h2>
+                    <h2 class="subtitle">{{ entry.title }}</h2>
 
-                    <a :href="item['link']" class="button is-color-secondary is-normal">{{ item['button'] }}</a>
+                    <a :href="entry['link']" class="button is-color-secondary is-normal">{{ entry['button'] }}</a>
                 </article>
             </div>
         </div>
@@ -21,14 +21,61 @@
 </template>
 
 <script>
-    export default {
+    import axios from 'axios';
+
+    export default {    
         name: 'Schedule',
         props: ['content', 'lang', 'direct', 'links'],
         computed: {
             itemsArr() {
                 return this.content[this.lang]['schedule']['items'];
+            },
+
+        },
+        data() {
+            return {
+                entries: null,
+                data: []
             }
+        },
+        mounted() {
+            axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
+            .then((res) => {
+                let entries = res.data.feed.entry;
+
+                this.entries = entries;
+
+                entries.forEach(entry => {
+
+                    if (this.lang == 'de') {
+                        let obj = {
+                            day: entry.gsx$dateday.$t,
+                            month: entry.gsx$datemonthde.$t,
+                            title: entry.gsx$eventnamede.$t,
+                            button: entry.gsx$buttonde.$t,
+                            link: entry.gsx$eventlinkde.$t
+                        }
+
+                        this.data.push(obj);
+                    }
+
+                    if (this.lang == 'en') {
+                        let obj = {
+                            day: entry.gsx$dateday.$t,
+                            month: entry.gsx$datemonthen.$t,
+                            title: entry.gsx$eventnameen.$t,
+                            link: entry.gsx$eventlinken.$t,
+                            button: entry.gsx$buttonen.$t,
+                        }
+
+                        this.data.push(obj)
+                    }
+
+               
+                })
+            })      
         }
+
     }
 </script>
 

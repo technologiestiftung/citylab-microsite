@@ -8,7 +8,7 @@
 		<Call :lang="lang" :content="content"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
-		<!-- <Schedule :lang="lang" :content="content" :direct="direct" :links="links"/> -->
+		<Schedule :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>

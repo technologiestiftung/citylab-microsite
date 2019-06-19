@@ -57,8 +57,8 @@
   		content as eventContent
 	} from '../../assets/events/mobilitysymposium.js';
 
-  import Navigation from '../../components/Navigation.vue';
-  import HeroLight from '../../components/HeroLight.vue';
+  	import Navigation from '../../components/Navigation.vue';
+  	import HeroLight from '../../components/HeroLight.vue';
 	import Footer from '../../components/Footer.vue';
 	import Matomo from '../../components/Matomo.vue';
     
@@ -73,7 +73,7 @@
 			return {
 				lang: 'de',
 				content: content,
-        eventContent: eventContent,
+        		eventContent: eventContent,
 				direct: '/events/mobilitysymposium_en'
 			}
 		},

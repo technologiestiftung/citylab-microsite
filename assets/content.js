@@ -474,7 +474,7 @@ export const content = {
                     description: 'Maps, Data, Geovisualisation',
                     button: 'More information',
                     link: '/events/mobilitysymposium_en'
-                }
+                },
             ]
         },
         'topics': [

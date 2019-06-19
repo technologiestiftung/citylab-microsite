@@ -10,6 +10,20 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 export default {
+  generate: {
+    routes: function () {
+      return axios.get('https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json')
+        .then((res) => {
+          let entries = res.data.feed.entry;
+          return entries.map((entry) => {
+            return {
+              route: '/events/' + entry.gsx$dirName
+            }
+          })
+        })
+    }
+  },
+
   mode: 'universal',
 
   ...routerBase,
