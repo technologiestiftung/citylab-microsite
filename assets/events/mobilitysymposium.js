@@ -32,7 +32,7 @@ export const content = {
     ],
     'memberTitle':'Mitglieder',
     'members':[
-      ['Sigrun Beige','Telefonica Germany - Mobility Research Group'],
+      ['Sigrun Beige','Telefónica NEXT — Location & Mobility Analytics'],
       ['Marian Dörk','Fachhochschule Potsdam'],
       ['Julia Gonschorek','EASC eV.'],
       ['Anita Graser','Austrian Institute of Technology, Wien'],
@@ -43,7 +43,7 @@ export const content = {
       ['Charlotte Pusch','Technische Universität Hamburg'],
       ['Raphael Reimann','Moovel'],
       ['Jochen Schiewe','HafenCity University, Hamburg'],
-      ['Harald Tschernthanner','Universität Potsdam'],
+      ['Harald Schernthanner','Universität Potsdam'],
       ['Lucia Tyrallova','Universität Potsdam']
     ],
     'rights':'Titelbild: 09-00-1949_06624 Verkeer op Koningssluis von IISG auf Flickr'
@@ -81,7 +81,7 @@ export const content = {
     ],
     'memberTitle':'Members',
     'members':[
-      ['Sigrun Beige','Telefonica Germany - Mobility Research Group'],
+      ['Sigrun Beige','Telefónica NEXT — Location & Mobility Analytics'],
       ['Marian Dörk','Fachhochschule Potsdam'],
       ['Julia Gonschorek','EASC eV.'],
       ['Anita Graser','Austrian Institute of Technology, Wien'],
@@ -92,7 +92,7 @@ export const content = {
       ['Charlotte Pusch','Technische Universität Hamburg'],
       ['Raphael Reimann','Moovel'],
       ['Jochen Schiewe','HafenCity University, Hamburg'],
-      ['Harald Tschernthanner','Universität Potsdam'],
+      ['Harald Schernthanner','Universität Potsdam'],
       ['Lucia Tyrallova','Universität Potsdam']
     ],
     'rights':'Header Image: 09-00-1949_06624 Verkeer op Koningssluis by IISG on Flickr'

@@ -3,8 +3,16 @@ import PurgecssPlugin from 'purgecss-webpack-plugin'
 import glob from 'glob-all'
 import path from 'path'
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/citylab-microsite/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
+
+  ...routerBase,
 
   /*
   ** Headers of the page
