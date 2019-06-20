@@ -16,7 +16,11 @@ export default {
 			console.log('/////////////////////////');
 			console.log(eventRoutes);
 			console.log('/////////////////////////');
-			return eventRoutes;
+			return [
+        '/events/toasatelite',
+        '/events/anotherevent/',
+        'events/mobilitysymposium'
+      ];
 		})
 	}
   },
