@@ -2,6 +2,7 @@ import pkg from './package'
 import PurgecssPlugin from 'purgecss-webpack-plugin'
 import glob from 'glob-all'
 import path from 'path'
+import axios from 'axios';
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {

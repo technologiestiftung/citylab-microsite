@@ -46,32 +46,15 @@
                 this.entries = entries;
 
                 entries.forEach(entry => {
-
-                    if (this.lang == 'de') {
-                        let obj = {
-                            day: entry.gsx$dateday.$t,
-                            month: entry.gsx$datemonthde.$t,
-                            title: entry.gsx$eventnamede.$t,
-                            button: entry.gsx$buttonde.$t,
-                            link: entry.gsx$eventlinkde.$t
-                        }
-
-                        this.data.push(obj);
+                    let obj = {
+                        day: entry.gsx$dateday.$t,
+                        month: entry.gsx$datemonth.$t,
+                        title: entry.gsx$eventname.$t,
+                        button: entry.gsx$button.$t,
+                        link: entry.gsx$eventlink.$t
                     }
 
-                    if (this.lang == 'en') {
-                        let obj = {
-                            day: entry.gsx$dateday.$t,
-                            month: entry.gsx$datemonthen.$t,
-                            title: entry.gsx$eventnameen.$t,
-                            link: entry.gsx$eventlinken.$t,
-                            button: entry.gsx$buttonen.$t,
-                        }
-
-                        this.data.push(obj)
-                    }
-
-               
+                    this.data.push(obj);
                 })
             })      
         }

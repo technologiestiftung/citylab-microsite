@@ -39,13 +39,13 @@
             },
             computed: {
                 title() {
-                    if (this.data != null) { return this.data.gsx$eventnamede.$t } else { return }
+                    if (this.data != null) { return this.data.gsx$eventname.$t } else { return }
                 },
                 subtitle() {
-                    if (this.data != null) { return this.data.gsx$sublinede.$t } else { return }
+                    if (this.data != null) { return this.data.gsx$subline.$t } else { return }
                 },
                 subsubtitle() {
-                    if (this.data != null) { return this.data.gsx$subsublinede.$t } else { return }
+                    if (this.data != null) { return this.data.gsx$subsubline.$t } else { return }
                 },
             },
             beforeCreate() {
