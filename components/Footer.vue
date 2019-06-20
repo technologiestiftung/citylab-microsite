@@ -2,10 +2,10 @@
     <footer class="footer">
         <section class="section is-medium">
             <div class="container">
-
             
                 <div class="columns">
-                    <div class="column is-4">
+
+                    <div class="column is-3">
                         <h6 class="title is-4">
                             {{ content[lang]['footer']['contact']['title'] }}
                         </h6>
@@ -21,7 +21,7 @@
                             </p>
                         </a>
 
-                        <a class="flex flex-row" :href="mailtoCitylab">
+                        <a class="flex flex-row m-b-sm" :href="mailtoCitylab">
                             <div class="icon-wrapper">
                                 <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="envelope"/>
                             </div>
@@ -29,10 +29,28 @@
                                 {{ content[lang]['footer']['contact']['mail'] }}
                             </p>
                         </a>
+                    </div>
+
+                    <div class="column is-3">
+                        <h6 class="title is-4">
+                            {{ content[lang]['footer']['open']['columntitle'] }}
+                        </h6>
+
+                        <a class="flex flex-row m-b-sm" style="cursor: auto;">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="doorOpen"/>
+                            </div>
+                            <div class="flex flex-column">
+                                <p>
+                                    {{ content[lang]['footer']['open']['title'] }}
+                                </p>
+                                <p class="content">{{ content[lang]['footer']['open']['hours'] }}</p>
+                            </div>
+                        </a>
 
                     </div>
 
-                    <div class="column is-4">
+                    <div class="column is-3">
                         <h6 class="title is-4">
                             {{ content[lang]['footer']['more']['title'] }}
                         </h6>
@@ -85,8 +103,8 @@
 
                     </div>
 
-                    <div class="column is-4">
-                        <h6 class="title is-4">
+                    <div class="column is-3">
+                                                <h6 class="title is-4">
                             {{ content[lang]['footer']['funding']['title'] }}
                         </h6>
 
@@ -107,8 +125,8 @@
                         >
                             <img :src="`${content[lang]['footer']['funding']['svg_sen']}`" alt="">
                         </a>
-
                     </div>
+
                 </div>
                 <p class="text-light">
                     {{ content[lang]['footer']['funding']['text'] }}
@@ -124,7 +142,8 @@
         faEnvelope,
         faStamp,
         faUserSecret,
-        faGenderless
+        faGenderless,
+        faDoorOpen
     } from '@fortawesome/free-solid-svg-icons';
 
     export default {
@@ -151,6 +170,9 @@
             }
         },
         computed: {
+            doorOpen() {
+                return faDoorOpen;
+            },
             bicycle() {
                 return faBicycle;
             },
@@ -202,6 +224,9 @@
         &-row {
             flex-direction: row;
         }
+        &-column {
+            flex-direction: column;
+        }
     }
 
     .footer {
@@ -211,6 +236,10 @@
 
     h6.title {
         color: $color-tertiary;
+    }
+
+    .m-b-m {
+        margin-bottom: 30px;
     }
 
     .column {
