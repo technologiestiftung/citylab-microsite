@@ -11,16 +11,13 @@ export default {
 		.then((res) => {
 			let entries = res.data.feed.entry;
 			const eventRoutes = entries.map((entry) => {
-				return '/events/' + entry.gsx$dirName
+				return '/events/' + entry.gsx$dirname.$t
 			})
 			console.log('/////////////////////////');
 			console.log(eventRoutes);
-			console.log('/////////////////////////');
-			return [
-        '/events/toasatelite',
-        '/events/anotherevent/',
-        'events/mobilitysymposium'
-      ];
+      console.log('/////////////////////////');
+      
+			return eventRoutes;
 		})
 	}
   },
