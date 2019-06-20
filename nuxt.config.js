@@ -10,10 +10,13 @@ export default {
 	return axios.get('https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json')
 		.then((res) => {
 			let entries = res.data.feed.entry;
-			console.log(entries);
-			return entries.map((entry) => {
+			const eventRoutes = entries.map((entry) => {
 				return '/events/' + entry.gsx$dirName
 			})
+			console.log('/////////////////////////');
+			console.log(eventRoutes);
+			console.log('/////////////////////////');
+			return eventRoutes;
 		})
 	}
   },
