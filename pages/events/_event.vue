@@ -25,6 +25,10 @@
     
 
     export default {
+            validate({ params, query, store }) {
+                return true // if the params are valid
+                return false // will stop Nuxt.js to render the route and display the error page
+            },
             async asyncData ({ params, error, payload }) {
                 return { 
                     dirname: params.event,
