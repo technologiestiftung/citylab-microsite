@@ -1,6 +1,8 @@
-# tsb-citylab-microsite
+# CityLAB Site
 
-## Build Setup
+## Update site
+
+This site is deployed by Netlify (Net-liff-eye ). A push to ```master``` will automatically update the site and set live. If you have bigger updates, please create a new branch.
 
 ``` bash
 # install dependencies
