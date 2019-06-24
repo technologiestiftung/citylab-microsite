@@ -277,7 +277,7 @@ export const content = {
                 'svg_sen': '/be-berlin-logo.svg',
             },
             'open': {
-                columntitle: 'Öffnungszeiten',
+                columntitle: 'Besuchszeiten',
                 title: 'Ausstellung',
                 hours: 'Mi-Fr 10-17 Uhr'
             }
@@ -693,7 +693,7 @@ export const content = {
                 'svg_sen': '/be-berlin-logo.svg',
             },
             'open': {
-                columntitle: 'Opening hours',
+                columntitle: 'Visiting hours',
                 title: 'Exhibition',
                 hours: 'Wed-Fri 10am-5pm'
             }
