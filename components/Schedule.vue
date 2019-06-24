@@ -5,19 +5,19 @@
             <!-- <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2> -->
         
             <div class="schedule-wrapper">
-                <article v-for="entry in data" class="dates-item">
+                <article v-if="entry.visible != 'FALSE'" v-for="entry in data" class="dates-item">
                     <div class="date-wrapper">
                         <span class="date-month"> {{ entry.month }} </span>
                         <span class="date-day"> {{ entry.day }} </span>
                     </div>
 
-                    <div class="date-wrapper">
+                    <div class="date-wrapper">                        
                         <span class="date-time"> {{ entry.time }} </span>                        
                     </div>
 
                     <h2 class="subtitle">{{ entry.title }}</h2>
 
-                    <a :href="entry['link']" class="button is-color-secondary is-normal">{{ entry['button'] }}</a>
+                    <a :href="entry['link']" class="button is-color-secondary is-normal">{{ buttonText }}</a>
                 </article>
             </div>
         </div>
@@ -42,6 +42,15 @@
                 data: []
             }
         },
+        computed: {
+            isVisible(val) {
+                let swtch = val == 'FALSE' ? false : true;
+                return swtch;
+            },
+            buttonText() {
+                return this.lang == 'en' ? 'More info' : 'Mehr Infos'
+            }
+        },
         mounted() {
             axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
             .then((res) => {
@@ -55,10 +64,9 @@
                         month: entry.gsx$datemonth.$t,
                         time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
-                        button: entry.gsx$button.$t,
-                        link: entry.gsx$eventlink.$t
+                        link: entry.gsx$eventlink.$t,
+                        visible: entry.gsx$visible.$t
                     }
-
                     this.data.push(obj);
                 })
             })      
