@@ -32,7 +32,7 @@ export const content = {
     ],
     'memberTitle':'Mitglieder',
     'members':[
-      ['Sigrun Beige','Telefonica Germany - Mobility Research Group'],
+      ['Sigrun Beige','Telefónica NEXT — Location & Mobility Analytics'],
       ['Marian Dörk','Fachhochschule Potsdam'],
       ['Julia Gonschorek','EASC eV.'],
       ['Anita Graser','Austrian Institute of Technology, Wien'],
@@ -81,7 +81,7 @@ export const content = {
     ],
     'memberTitle':'Members',
     'members':[
-      ['Sigrun Beige','Telefonica Germany - Mobility Research Group'],
+      ['Sigrun Beige','Telefónica NEXT — Location & Mobility Analytics'],
       ['Marian Dörk','Fachhochschule Potsdam'],
       ['Julia Gonschorek','EASC eV.'],
       ['Anita Graser','Austrian Institute of Technology, Wien'],

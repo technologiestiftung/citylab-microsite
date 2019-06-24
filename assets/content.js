@@ -256,7 +256,7 @@ export const content = {
             'contact': {
                 'title': 'Kontakt',
                 'mail': 'info@citylab-berlin.org',
-                'address_street': 'Platz der Luftbrücke 4-6',
+                'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
             },
             'more': {
@@ -275,6 +275,11 @@ export const content = {
                 'text_sen': 'Gefördert aus Mitteln der',
                 'href_sen': 'https://www.technologiestiftung-berlin.de',
                 'svg_sen': '/be-berlin-logo.svg',
+            },
+            'open': {
+                columntitle: 'Besuchszeiten',
+                title: 'Ausstellung',
+                hours: 'Mi-Fr 10-17 Uhr'
             }
         },
         'press': {
@@ -667,7 +672,7 @@ export const content = {
             'contact': {
                 'title': 'Get in touch',
                 'mail': 'info@citylab-berlin.org',
-                'address_street': 'Platz der Luftbrücke 4-6',
+                'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
             },
             'more': {
@@ -679,13 +684,18 @@ export const content = {
                 'dataprivacy': 'Data privacy'
             },
             'funding': {
-                'title': 'Sponsors:',
+                'title': 'Sponsors',
                 'text_tsb': 'A project from the',
                 'href_tsb': 'https://www.technologiestiftung-berlin.de',
                 'svg_tsb': '/tsb.svg',
                 'text_sen': 'Supported by',
                 'href_sen': 'https://www.technologiestiftung-berlin.de',
                 'svg_sen': '/be-berlin-logo.svg',
+            },
+            'open': {
+                columntitle: 'Visiting hours',
+                title: 'Exhibition',
+                hours: 'Wed-Fri 10am-5pm'
             }
         },
         'press': {
