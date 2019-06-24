@@ -65,7 +65,8 @@
                         time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
                         link: entry.gsx$eventlink.$t,
-                        visible: entry.gsx$visible.$t
+                        visible: entry.gsx$visible.$t,
+
                     }
                     this.data.push(obj);
                 })
@@ -110,8 +111,6 @@
             .subtitle {
                 margin-bottom: 0px;
                 width: 450px;
-                font-weight: bold;
-
 
                 @include mobile {
                     font-size: 1rem;
@@ -136,6 +135,7 @@
             .date-time {
                 font-size: $size-4;
                 line-height: 2rem;
+                color: $color-tertiary;
 
                 @include mobile {
                     line-height: 1.2rem;
@@ -146,6 +146,7 @@
             .date-month {
                 font-size: $size-4;
                 line-height: 2rem;
+                color: $color-tertiary;
 
                 @include mobile {
                     line-height: 1.2rem;
@@ -157,6 +158,7 @@
                 font-size: $size-3;
                 line-height: 1.75rem;
                 text-align: center;
+                color: $color-tertiary;
 
                 @include mobile {
                     line-height: 1.2rem;

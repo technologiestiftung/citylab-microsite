@@ -10,15 +10,26 @@
 
         <section class="section is-medium event-content">
             <div class="container">
-                <h4 class="title">{{headlineIntro}}</h4>
-                <p class="event-intro">{{contentIntro}}</p>
 
+                <div class="content-wrapper">
+                    <h4 class="title">{{headlineIntro}}</h4>
+                    <p class="event-intro">{{contentIntro}}</p>
+                </div>
+
+                <div class="content-wrapper">
+                    <h4 class="title">{{headlineBlockOne}}</h4>
+                    <p class="event-intro">{{contentBlockOne}}</p>
+                </div>
+
+                <div class="content-wrapper">
+                    <h4 class="title">{{headlineBlockTwo}}</h4>
+                    <p class="event-intro">{{contentBlockTwo}}</p>
+                </div>
 
                 <div class="summary-wrapper is-medium">
                     <h4>{{dict[lang]['summary']['title']}}</h4>
 
                     <div class="flex-container">
-
                         <div class="content-block">
                             <h5>{{dict[lang]['summary']['website']}}</h5>
                             <span>{{websiteSummary}}</span>
@@ -49,6 +60,12 @@
                             <span>{{addressSummary}}</span>
                         </div>
                     </div>
+
+                </div>
+
+                <div style="margin-top: 30px !important;" class="flex-container col">
+                    <span>{{registerInfo}}</span>
+                    <a :href="registerLink" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
                 </div>
 
             </div>
@@ -76,7 +93,6 @@
                 return false // will stop Nuxt.js to render the route and display the error page
             },
             async asyncData ({ params, error, payload }) {
-                console.log('lal')
                 return { 
                     dirname: params.event,
                     data: null,
@@ -84,7 +100,7 @@
                     content: content,
                     direct: `/events/${params.event}`,
                     dict: {
-                        "en": {
+                        "de": {
                             "summary": {
                                 "title": "Steckbrief",
                                 "website": 'Webseite',
@@ -95,7 +111,7 @@
                                 'address': 'Adresse'
                             }
                         },
-                        "de": {
+                        "en": {
                             "summary": {
                                 "title": "More information",
                                 "website": 'Website',
@@ -121,6 +137,9 @@
                 getContent() {
                     return this.content;
                 },
+                getLanguage() {
+                    if (this.data != null) { return this.data.gsx$eventlanguage.$t } else { return }
+                },
                 title() {
                     if (this.data != null) { return this.data.gsx$eventname.$t } else { return }
                 },
@@ -136,7 +155,24 @@
                 contentIntro() {
                     if (this.data != null) { return this.data.gsx$contentintro.$t } else { return }
                 },
-
+                headlineBlockOne() {
+                    if (this.data != null) { return this.data.gsx$headlineblockone.$t } else { return }
+                },
+                contentBlockOne() {
+                    if (this.data != null) { return this.data.gsx$contentblockone.$t } else { return }
+                },
+                headlineBlockTwo() {
+                    if (this.data != null) { return this.data.gsx$headlineblocktwo.$t } else { return }
+                },
+                contentBlockTwo() {
+                    if (this.data != null) { return this.data.gsx$contentblocktwo.$t } else { return }
+                },
+                registerLink() {
+                    if (this.data != null) { return this.data.gsx$registerlink.$t } else { return }
+                },
+                registerInfo() {
+                    if (this.data != null) { return this.data.gsx$registerinfo.$t } else { return }
+                },
                 websiteSummary() {
                     if (this.data != null) { return this.data.gsx$websitesummary.$t } else { return }
                 },
@@ -163,10 +199,11 @@
                         // set event entry to data which matches with dirname
                         this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
                         this.data = this.data[0];
+                        this.lang = this.data.gsx$eventlanguage.$t;
                     })
             },
             mounted() {
-                // console.log('lassl');
+                
             }
     }
 </script>
@@ -181,6 +218,15 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;      
+    }
+
+    .col {
+        flex-direction: column;
+
+        a {
+            width: 130px;
+            margin-bottom: 30px;
+        }
     }
     
     .summary-wrapper {
@@ -212,16 +258,26 @@
             }
 
             span {
+                color: white;
                 opacity: .5;
             }
         }
     }
 
-	.event-content p{
-		color: $color-tertiary;
-        font-size: $size-5;
-		padding-bottom:40px;
-	}
+	.event-content {
+        p {
+            color: $color-tertiary;
+            font-size: $size-5;
+            padding-bottom:40px;
+        }
+
+        span {
+            color: $color-tertiary;
+            margin-bottom: $spacing-s;
+        }
+    }
+    
+
 
 	h4.title{
 		color: $color-secondary !important;
