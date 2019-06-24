@@ -1,22 +1,68 @@
 <template>
     <div>
-        <!-- <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" /> -->
+        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
         <HeroLight 
-            :image="'https://citylab-berlin.org/images/hero_img_mobility_symposium.jpg'" 
+            :image="heroImageUrl" 
             :title="title" 
             :subTitle="subtitle" 
             :subSubTitle="subsubtitle" 
         />
+
         <section class="section is-medium event-content">
             <div class="container">
+                <h4 class="title">{{headlineIntro}}</h4>
+                <p class="event-intro">{{contentIntro}}</p>
+
+
+                <div class="summary-wrapper is-medium">
+                    <h4>{{dict[lang]['summary']['title']}}</h4>
+
+                    <div class="flex-container">
+
+                        <div class="content-block">
+                            <h5>{{dict[lang]['summary']['website']}}</h5>
+                            <span>{{websiteSummary}}</span>
+                        </div>
+
+                        <div class="content-block">
+                            <h5>{{dict[lang]['summary']['phone']}}</h5>
+                            <span>{{phoneSummary}}</span>
+                        </div>
+
+                        <div class="content-block">
+                            <h5>{{dict[lang]['summary']['organizer']}}</h5>
+                            <span>{{organiserSummary}}</span>
+                        </div>
+
+                        <div class="content-block">
+                            <h5>{{dict[lang]['summary']['date']}}</h5>
+                            <span>{{dateSummary}}</span>
+                        </div>
+
+                        <div class="content-block">
+                            <h5>{{dict[lang]['summary']['mail']}}</h5>
+                            <span>{{mailSummary}}</span>
+                        </div>
+
+                        <div class="content-block">
+                            <h5>{{dict[lang]['summary']['address']}}</h5>
+                            <span>{{addressSummary}}</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
+
+        </section>   
+        <Footer :lang="lang" :content="getContent"/> 
+
     </div>
 </template>
 
 <script>
     import Navigation from '../../components/Navigation.vue';
     import HeroLight from '../../components/HeroLight.vue';
+    import Footer from '../../components/Footer.vue';
     import axios from 'axios';
 
 	import { 
@@ -30,18 +76,51 @@
                 return false // will stop Nuxt.js to render the route and display the error page
             },
             async asyncData ({ params, error, payload }) {
+                console.log('lal')
                 return { 
                     dirname: params.event,
                     data: null,
                     lang: 'en',
-                    direct: `/events/${params.event}`
+                    content: content,
+                    direct: `/events/${params.event}`,
+                    dict: {
+                        "en": {
+                            "summary": {
+                                "title": "Steckbrief",
+                                "website": 'Webseite',
+                                'phone': 'Telefon',
+                                'organizer': 'Veranstalter',
+                                'date': 'Datum',
+                                'mail': 'E-Mail',
+                                'address': 'Adresse'
+                            }
+                        },
+                        "de": {
+                            "summary": {
+                                "title": "More information",
+                                "website": 'Website',
+                                'phone': 'Phone',
+                                'organizer': 'Organizer',
+                                'date': 'Date',
+                                'mail': 'Mail',
+                                'address': 'Address'
+                            }
+                        }
+                    }
                 }
             },
             components: {
                 Navigation,
-                HeroLight
+                HeroLight,
+                Footer
             },
             computed: {
+                heroImageUrl() {
+                    return `https://citylab-berlin.org/images/${this.dirname}-hero.jpg`
+                },
+                getContent() {
+                    return this.content;
+                },
                 title() {
                     if (this.data != null) { return this.data.gsx$eventname.$t } else { return }
                 },
@@ -51,6 +130,32 @@
                 subsubtitle() {
                     if (this.data != null) { return this.data.gsx$subsubline.$t } else { return }
                 },
+                headlineIntro() {
+                    if (this.data != null) { return this.data.gsx$headlineintro.$t } else { return }
+                },
+                contentIntro() {
+                    if (this.data != null) { return this.data.gsx$contentintro.$t } else { return }
+                },
+
+                websiteSummary() {
+                    if (this.data != null) { return this.data.gsx$websitesummary.$t } else { return }
+                },
+                phoneSummary() {
+                    if (this.data != null) { return this.data.gsx$phonesummary.$t } else { return }
+                },
+                dateSummary() {
+                    if (this.data != null) { return this.data.gsx$datesummary.$t } else { return }
+                },
+                organiserSummary() {
+                    if (this.data != null) { return this.data.gsx$organisersummary.$t } else { return }
+                },
+                mailSummary() {
+                    if (this.data != null) { return this.data.gsx$mailsummary.$t } else { return }
+                },
+                addressSummary() {
+                    if (this.data != null) { return this.data.gsx$addresssummary.$t } else { return }
+                },
+
             },
             beforeCreate() {
                 axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
@@ -70,7 +175,47 @@
 	@import "../../assets/style/style.scss";
     h1.title, h3.title {
 		color: $color-secondary;
-	}
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;      
+    }
+    
+    .summary-wrapper {
+        color: white;
+        background: $color-tertiary;
+        padding: $spacing-m;
+
+        h4 {
+            font-size: $size-3;
+            line-height: .75;
+            width: 100%;
+        }
+
+        .content-block {
+            font-size: $size-6;
+            width: 25%;
+            margin-top: 20px;
+
+            h5 {
+                margin-bottom: -3px;
+            }
+
+            @include tablet-only {
+                width: 33%;
+            }
+
+            @include mobile {
+                width: 50%;
+            }
+
+            span {
+                opacity: .5;
+            }
+        }
+    }
 
 	.event-content p{
 		color: $color-tertiary;

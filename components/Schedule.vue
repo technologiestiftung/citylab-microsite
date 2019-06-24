@@ -11,6 +11,10 @@
                         <span class="date-day"> {{ entry.day }} </span>
                     </div>
 
+                    <div class="date-wrapper">
+                        <span class="date-time"> {{ entry.time }} </span>                        
+                    </div>
+
                     <h2 class="subtitle">{{ entry.title }}</h2>
 
                     <a :href="entry['link']" class="button is-color-secondary is-normal">{{ entry['button'] }}</a>
@@ -49,6 +53,7 @@
                     let obj = {
                         day: entry.gsx$dateday.$t,
                         month: entry.gsx$datemonth.$t,
+                        time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
                         button: entry.gsx$button.$t,
                         link: entry.gsx$eventlink.$t
@@ -96,6 +101,8 @@
 
             .subtitle {
                 margin-bottom: 0px;
+                width: 450px;
+                font-weight: bold;
 
 
                 @include mobile {
@@ -116,6 +123,16 @@
 
             @include mobile {
                 margin-right: 15px;
+            }
+
+            .date-time {
+                font-size: $size-4;
+                line-height: 2rem;
+
+                @include mobile {
+                    line-height: 1.2rem;
+                    font-size: 1rem;
+                }
             }
 
             .date-month {
