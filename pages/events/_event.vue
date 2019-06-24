@@ -116,7 +116,7 @@
             },
             computed: {
                 heroImageUrl() {
-                    return `https://citylab-berlin.org/images/${this.dirname}-hero.jpg`
+                    return `https://citylab-berlin.org/images/${this.dirname}_hero.jpg`
                 },
                 getContent() {
                     return this.content;
