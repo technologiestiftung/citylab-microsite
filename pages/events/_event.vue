@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
+        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" :languageVisible="false" />
         <HeroLight 
             :image="heroImageUrl" 
             :title="title" 
@@ -102,7 +102,7 @@
                     dict: {
                         "de": {
                             "summary": {
-                                "title": "Steckbrief",
+                                "title": "Zusammenfassung",
                                 "website": 'Webseite',
                                 'phone': 'Telefon',
                                 'organizer': 'Veranstalter',
@@ -125,7 +125,6 @@
                     }
                 }
             },
-
             head () {
                 return {
                     title: `${this.title} - ${this.subtitle} (${this.dateSummary}) - `,
@@ -232,7 +231,6 @@
                     })
             },
             mounted() {
-                ö
             }
     }
 </script>
@@ -260,6 +258,8 @@
     
     .summary-wrapper {
         color: white;
+        margin-bottom: 50px;
+        margin-top: 20px;
         background: $color-tertiary;
         padding: $spacing-m;
 
