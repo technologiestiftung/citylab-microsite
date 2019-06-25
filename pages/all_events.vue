@@ -13,7 +13,7 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px;" class="date-wrapper">                        
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                        
                                 <span class="date-time"> {{ entry.time }} </span>                        
                             </div>
 
@@ -197,6 +197,10 @@
                 opacity: .5;
                 margin-left: $spacing-l;
                 max-width: 150px;
+
+                @include mobile {
+                    display: none;
+                }
             }
 
             &:last-of-type {
@@ -223,6 +227,7 @@
                 @include mobile {
                     line-height: 1.2rem;
                     font-size: 1rem;
+                    margin-right: 15px;
                 }
             }
 
