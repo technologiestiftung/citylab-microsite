@@ -125,6 +125,32 @@
                     }
                 }
             },
+            head () {
+                return {
+                    title: 'Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019) - ',
+                    meta: [
+                        { name: 'description', content: 'Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)' },
+                        { property: 'fb:app_id', content: '487094758334595'},
+                        { property: 'og:url',  content: "https://www.citylab-berlin.org/events/mobilitysymposium"},
+                        { property: 'og:type',  content: "website"},
+                        { property: 'og:title',  content: "Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)"},
+                        { property: 'og:image',  content: "https://citylab-berlin.org/images/events/mobilitysymposium_social_media.jpg"},
+                        { property: 'og:description',  content: "The symposium focusses on the processing, analysis and presentation of spatial information in the context of urban mobility. From cartographic applications and products for visual analysis, communication and presentation of mobility data, to geoinformatics solutions for multimodal routings or traffic flow optimization. A desirable, but not compelling focus is on approaches that deal with new innovations for more sustainable mobility solutions."},
+                        { property: 'og:site_name',  content: "CityLAB Berlin"},
+                        { property: 'article:author',  content: "Sebastian Meier"},
+                        { name: 'twitter:card', content:"summary"},
+                        { name: 'twitter:site',  content: "@TSBBerlin"},
+                        { name: 'twitter:creator',  content: "@seb_meier"},
+                        { name: 'twitter:url', content: "https://www.citylab-berlin.org/events/mobilitysymposium"},
+                        { name: 'twitter:title', content: "Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)"},
+                        { name: 'twitter:description', content: "The symposium focusses on the processing, analysis and presentation of spatial information in the context of urban mobility. From cartographic applications and products for visual analysis, communication and presentation of mobility data, to geoinformatics solutions for multimodal routings or traffic flow optimization. A desirable, but not compelling focus is on approaches that deal with new innovations for more sustainable mobility solutions."},
+                        { name: 'twitter:image', content: "https://citylab-berlin.org/images/events/mobilitysymposium_social_media.jpg"},
+                        { itemprop: 'name', content:"Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)"},
+                        { itemprop: 'description', content: "The symposium focusses on the processing, analysis and presentation of spatial information in the context of urban mobility. From cartographic applications and products for visual analysis, communication and presentation of mobility data, to geoinformatics solutions for multimodal routings or traffic flow optimization. A desirable, but not compelling focus is on approaches that deal with new innovations for more sustainable mobility solutions."},
+                        { itemprop: 'image', content: "https://citylab-berlin.org/images/events/mobilitysymposium_social_media.jpg"},
+                    ]
+                }
+            },
             components: {
                 Navigation,
                 HeroLight,
@@ -132,7 +158,7 @@
             },
             computed: {
                 heroImageUrl() {
-                    return `https://citylab-berlin.org/images/${this.dirname}_hero.jpg`
+                    return `https://citylab-berlin.org/images/events/${this.dirname}_hero.jpg`
                 },
                 getContent() {
                     return this.content;
@@ -203,7 +229,7 @@
                     })
             },
             mounted() {
-                
+                ö
             }
     }
 </script>
