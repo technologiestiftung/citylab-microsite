@@ -1,4 +1,7 @@
 export const content = {
+    'config': {
+        sheetUrlEvents: 'https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json',
+    },
     'de': {
         'codeofconduct': {
             'title': 'Code of Conduct',
@@ -22,6 +25,10 @@ export const content = {
             {
                 'name': 'Open Call',
                 'ref': '#call'
+            },
+            {
+                'name': 'Termine',
+                'ref': '#schedule'
             },
             {
                 'name': 'Newsletter',
@@ -52,6 +59,10 @@ export const content = {
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
             'statement3-img_url': 'images/03.jpg', 
             'cta': 'Mitmachen', 
+        },
+        'events': {
+            'upcomingEventsTitle': 'Bevorstehend',
+            'pastEventsTitle': 'Vergangen',
         },
         'register': {
             intro: {
@@ -443,6 +454,14 @@ export const content = {
                 'ref': '#call'
             },
             {
+                'name': 'Schedule',
+                'ref': '#schedule'
+            },
+            {
+                'name': 'Newsletter',
+                'ref': '#newsletter'
+            },
+            {
                 'name': 'Team',
                 'ref': '#team'
             },
@@ -467,6 +486,10 @@ export const content = {
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
             'statement3-img_url': '../images/03.png', 
             'cta': 'Learn more',
+        },
+        'events': {
+            'upcomingEventsTitle': 'Upcoming events',
+            'pastEventsTitle': 'Past events',
         },
         'schedule': {
             title: 'Dates and announcements',

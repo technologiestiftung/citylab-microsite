@@ -1,87 +1,93 @@
 <template>
-    <section class="section schedule is-medium" id="schedule">
-        <div class="container">
-            <h2 class="title"> {{ content[lang]['schedule']['title'] }} </h2>
-            <!-- <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2> -->
-        
-            <div class="schedule-wrapper">
-                <a class="event-tile" v-if="entry.visible != 'FALSE' && dateIsUpcoming(entry.date) && index < 5" :href="entry['link']" v-for="(entry, index) in data">
-                    <article class="dates-item" style="width: 100%;">
-                        <div class="date-wrapper">
-                            <span class="date-month"> {{ entry.month }} </span>
-                            <span class="date-day"> {{ entry.day }} </span>
-                        </div>
+    <div>
+		<Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+        <section class="section is-medium schedule">
+            <div class="container">
+                <h1 style="margin-top: 100px" class="title">{{content[this.lang]['events']['upcomingEventsTitle']}}</h1>
 
-                        <div style="margin-right: 0px;" class="date-wrapper">                        
-                            <span class="date-time"> {{ entry.time }} </span>                        
-                        </div>
+                <div class="schedule-wrapper">
+                    <a class="event-tile" v-if="entry.visible != 'FALSE' && dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in data">
+                        <article class="dates-item" style="width: 100%;">
+                            <div class="date-wrapper">
+                                <span class="date-month"> {{ entry.month }} </span>
+                                <span class="date-day"> {{ entry.day }} </span>
+                            </div>
 
-                        <h2 class="subtitle">{{ entry.title }}</h2>
+                            <div style="margin-right: 0px;" class="date-wrapper">                        
+                                <span class="date-time"> {{ entry.time }} </span>                        
+                            </div>
 
-                        <h2 class="subtitle format">{{ entry.format }}</h2>
+                            <h2 class="subtitle">{{ entry.title }}</h2>
 
-                        <a :href="entry['link']" class="arrow-right">></a>
-                    </article>
-                </a>
+                            <h2 class="subtitle format">{{ entry.format }}</h2>
+
+                            <a :href="entry['link']" class="arrow-right">></a>
+                        </article>
+                    </a>
+                </div>
+
             </div>
 
-            <nuxt-link style="margin-top: 30px;" class="button is-color-secondary  is-normal" :to="directAllEvents">
-                {{ lang ==  'de' ? 'Alle Veranstaltungen' : 'All events' }}
-            </nuxt-link>
+            <div class="container">
+                <h1 style="margin-top: 100px" class="title">{{content[this.lang]['events']['pastEventsTitle']}}</h1>
 
-        </div>
+                <div class="schedule-wrapper">
+                    <a class="event-tile" v-if="entry.visible != 'FALSE' && !dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in data">
+                        <article class="dates-item" style="width: 100%;">
+                            <div class="date-wrapper">
+                                <span class="date-month"> {{ entry.month }} </span>
+                                <span class="date-day"> {{ entry.day }} </span>
+                            </div>
 
+                            <div style="margin-right: 0px;" class="date-wrapper">                        
+                                <span class="date-time"> {{ entry.time }} </span>                        
+                            </div>
 
-    </section>
+                            <h2 class="subtitle">{{ entry.title }}</h2>
+
+                            <h2 class="subtitle format">{{ entry.format }}</h2>
+
+                            <a :href="entry['link']" class="arrow-right">></a>
+                        </article>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+		<Footer :lang="lang" :content="content"/>
+		<Matomo/>
+	</div>
 </template>
 
 <script>
     import axios from 'axios';
+	import { 
+  		content as content
+	} from '../assets/content.js';
 
-    export default {    
-        name: 'Schedule',
-        props: ['content', 'lang', 'direct', 'links'],
-        computed: {
-            itemsArr() {
-                return this.content[this.lang]['schedule']['items'];
-            },
-
-        },
-        data() {
-            return {
-                entries: null,
+    import Navigation from '../components/Navigation.vue';
+	import Footer from '../components/Footer.vue';
+	import Matomo from '../components/Matomo.vue';
+    
+    export default {
+        components: {
+			Navigation,
+			Footer,
+			Matomo
+		},
+		data() {
+			return {
+				lang: 'de',
+				content: content,
+                direct: '/all_events_en',
                 data: [],
-                directs: {
-                    de: {
-                        all: '/all_events',
-                    },
-                    en: {
-                        all: '/all_events_en',
-                    }
-                }
-            }
+                entries: null
+			}
         },
         computed: {
-            isVisible(val) {
-                let swtch = val == 'FALSE' ? false : true;
-                return swtch;
-            },
             buttonText() {
                 return this.lang == 'en' ? 'More info' : 'Mehr Infos'
             },
-            directAllEvents() {
-                return this.directs[this.lang]['all'];
-            }
-        },
-        methods: {
-            dateIsUpcoming(date) {
-                const today = new Date();
-                const eventDate = new Date(date);
-
-                const upcoming = today.getTime() < eventDate.getTime();
-
-                return upcoming;
-            }
         },
         mounted() {
             axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
@@ -92,9 +98,9 @@
 
                 entries.forEach(entry => {
                     let obj = {
-                        format: entry.gsx$format.$t,
-                        date: entry.gsx$date.$t,
                         day: entry.gsx$dateday.$t,
+                        date: entry.gsx$date.$t,
+                        format: entry.gsx$format.$t,
                         month: entry.gsx$datemonth.$t,
                         time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
@@ -104,13 +110,18 @@
                     }
                     this.data.push(obj);
                 })
-                this.data = this.data.filter(event => { return this.dateIsUpcoming(event.date) });
-                this.data = this.data.sort((a,b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() });
-
-                console.log(this.data);
             })      
-        }
+        }, 
+        methods: {
+            dateIsUpcoming(date) {
+                const today = new Date();
+                const eventDate = new Date(date);
 
+                const upcoming = today.getTime() < eventDate.getTime();
+
+                return upcoming;
+            }
+        }
     }
 </script>
 
@@ -171,6 +182,7 @@
             }
 
             .subtitle {
+                font-size: $size-4;
                 margin-bottom: 0px;
                 width: 450px;
 
@@ -239,5 +251,6 @@
          }
     }
 </style>
+
 
 
