@@ -126,10 +126,6 @@
                 }
             },
 
-            
-
-eventName + '-' subline 
-
             head () {
                 return {
                     title: `${this.title} - ${this.subtitle} (${this.dateSummary}) - `,
