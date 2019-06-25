@@ -75,11 +75,8 @@
 
                 entries.forEach(entry => {
                     let obj = {
-                        day: entry.gsx$dateday.$t,
-                        month: entry.gsx$datemonth.$t,
                         time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
-                        link: entry.gsx$eventlink.$t,
                         visible: entry.gsx$visible.$t
                     }
 					this.obj.push(obj);

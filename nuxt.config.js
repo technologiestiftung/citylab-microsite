@@ -13,9 +13,6 @@ export default {
 			const eventRoutes = entries.map((entry) => {
 				return '/events/' + entry.gsx$dirname.$t
 			})
-			console.log('/////////////////////////');
-			console.log(eventRoutes);
-      console.log('/////////////////////////');
       
 			return eventRoutes;
 		})

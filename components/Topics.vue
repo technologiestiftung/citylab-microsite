@@ -79,7 +79,6 @@
                     clearTimeout(id); // will do nothing if no timeout with id is present
                 })
                 this.timeoutArr.length = 0;
-                // console.log('timeouts length',this.timeoutArr.length, this.timeoutArr);
             },
             handleTouch(id) {
                 this.toggled = true;

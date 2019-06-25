@@ -81,6 +81,20 @@
                 const upcoming = today.getTime() < eventDate.getTime();
 
                 return upcoming;
+            },
+            getDay(date) {
+                let dat = new Date(date);
+                return dat.getDate();
+            },
+            getMonth(date) {
+                let dat = new Date(date);
+                const mlistEn = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+                const mlist = [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ];
+                let monthCurrent = this.lang == 'en' ? mlistEn[dat.getMonth()] : mlist[dat.getMonth()];
+                return monthCurrent;
+            },
+            createEventLink(dirname) {
+                return `/events/${dirname}`;
             }
         },
         mounted() {
@@ -93,12 +107,13 @@
                 entries.forEach(entry => {
                     let obj = {
                         format: entry.gsx$format.$t,
+                        dirname: entry.gsx$dirname.$t,
                         date: entry.gsx$date.$t,
-                        day: entry.gsx$dateday.$t,
-                        month: entry.gsx$datemonth.$t,
+                        day: this.getDay(entry.gsx$date.$t),
+                        month: this.getMonth(entry.gsx$date.$t),
                         time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
-                        link: entry.gsx$eventlink.$t,
+                        link: this.createEventLink(entry.gsx$dirname.$t),
                         visible: entry.gsx$visible.$t,
 
                     }
@@ -107,7 +122,6 @@
                 this.data = this.data.filter(event => { return this.dateIsUpcoming(event.date) });
                 this.data = this.data.sort((a,b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() });
 
-                console.log(this.data);
             })      
         }
 

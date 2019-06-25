@@ -98,14 +98,14 @@
 
                 entries.forEach(entry => {
                     let obj = {
-                        day: entry.gsx$dateday.$t,
                         date: entry.gsx$date.$t,
+                        day: this.getDay(entry.gsx$date.$t),
+                        month: this.getMonth(entry.gsx$date.$t),
                         format: entry.gsx$format.$t,
-                        month: entry.gsx$datemonth.$t,
                         time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
-                        link: entry.gsx$eventlink.$t,
                         visible: entry.gsx$visible.$t,
+                        link: this.createEventLink(entry.gsx$dirname.$t)
 
                     }
                     this.data.push(obj);
@@ -120,6 +120,20 @@
                 const upcoming = today.getTime() < eventDate.getTime();
 
                 return upcoming;
+            },
+            getDay(date) {
+                let dat = new Date(date);
+                return dat.getDate();
+            },
+            getMonth(date) {
+                let dat = new Date(date);
+                const mlistEn = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+                const mlist = [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ];
+                let monthCurrent = this.lang == 'en' ? mlistEn[dat.getMonth()] : mlist[dat.getMonth()];
+                return monthCurrent;
+            },
+            createEventLink(dirname) {
+                return `/events/${dirname}`;
             }
         }
     }

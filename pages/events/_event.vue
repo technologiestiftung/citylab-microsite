@@ -30,32 +30,32 @@
                     <h4>{{dict[lang]['summary']['title']}}</h4>
 
                     <div class="flex-container">
-                        <div class="content-block">
+                        <div v-if="summaryAvailable.website > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['website']}}</h5>
-                            <span>{{websiteSummary}}</span>
+                            <a :href="`${websiteSummary}`">{{websiteSummary}}</a>
                         </div>
 
-                        <div class="content-block">
+                        <div v-if="summaryAvailable.phone > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['phone']}}</h5>
                             <span>{{phoneSummary}}</span>
                         </div>
 
-                        <div class="content-block">
+                        <div v-if="summaryAvailable.organiser > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['organizer']}}</h5>
                             <span>{{organiserSummary}}</span>
                         </div>
 
-                        <div class="content-block">
+                        <div v-if="summaryAvailable.date > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['date']}}</h5>
                             <span>{{dateSummary}}</span>
                         </div>
 
-                        <div class="content-block">
+                        <div v-if="summaryAvailable.mail > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['mail']}}</h5>
-                            <span>{{mailSummary}}</span>
+                             <a :href="`mailto: ${mailSummary}`">{{mailSummary}}</a>
                         </div>
 
-                        <div class="content-block">
+                        <div v-if="summaryAvailable.address > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['address']}}</h5>
                             <span>{{addressSummary}}</span>
                         </div>
@@ -99,6 +99,14 @@
                     lang: 'en',
                     content: content,
                     direct: `/events/${params.event}`,
+                    summaryAvailable: {
+                        website: 0,
+                        phone: 0,
+                        organiser: 0,
+                        address: 0,
+                        date: 0,
+                        mail: 0
+                    },
                     dict: {
                         "de": {
                             "summary": {
@@ -218,8 +226,13 @@
                 },
                 socialDescription() {
                     if (this.data != null) { return this.data.gsx$socialdescription.$t } else { return }
-                },
+                }
 
+            },
+            methods: {
+                getLength(data) {
+                    return data.length;
+                }
             },
             beforeCreate() {
                 axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
@@ -228,9 +241,20 @@
                         this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
                         this.data = this.data[0];
                         this.lang = this.data.gsx$eventlanguage.$t;
+
+
+                        this.summaryAvailable.address = this.getLength(this.data.gsx$addresssummary.$t);
+                        this.summaryAvailable.phone = this.getLength(this.data.gsx$phonesummary.$t);
+                        this.summaryAvailable.mail = this.getLength(this.data.gsx$mailsummary.$t);
+                        this.summaryAvailable.website = this.getLength(this.data.gsx$websitesummary.$t);
+                        this.summaryAvailable.date = this.getLength(this.data.gsx$datesummary.$t);
+                        this.summaryAvailable.organiser = this.getLength(this.data.gsx$organisersummary.$t);
+
                     })
+
             },
             mounted() {
+
             }
     }
 </script>
@@ -271,19 +295,24 @@
 
         .content-block {
             font-size: $size-6;
-            width: 25%;
+            width: 33%;
             margin-top: 20px;
+
+            a {
+                color: white;
+                opacity: .5;
+            }
 
             h5 {
                 margin-bottom: -3px;
             }
 
             @include tablet-only {
-                width: 33%;
+                width: 50%;
             }
 
             @include mobile {
-                width: 50%;
+                width: 100%;
             }
 
             span {
