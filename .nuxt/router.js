@@ -27,6 +27,7 @@ const _22e4fb8a = () => interopDefault(import('../pages/newsletter_missinginput_
 const _2518a7b2 = () => interopDefault(import('../pages/newsletter_missinginput_en.vue' /* webpackChunkName: "pages/newsletter_missinginput_en" */))
 const _ae0afdaa = () => interopDefault(import('../pages/newsletter_register_de.vue' /* webpackChunkName: "pages/newsletter_register_de" */))
 const _a9a3a55a = () => interopDefault(import('../pages/newsletter_register_en.vue' /* webpackChunkName: "pages/newsletter_register_en" */))
+const _82925dec = () => interopDefault(import('../pages/newsletter_register_en_lang.vue' /* webpackChunkName: "pages/newsletter_register_en_lang" */))
 const _076aebc2 = () => interopDefault(import('../pages/newsletter_success_de.vue' /* webpackChunkName: "pages/newsletter_success_de" */))
 const _03039372 = () => interopDefault(import('../pages/newsletter_success_en.vue' /* webpackChunkName: "pages/newsletter_success_en" */))
 const _13400cf0 = () => interopDefault(import('../pages/newsletter_unsubscribe_confirm_de.vue' /* webpackChunkName: "pages/newsletter_unsubscribe_confirm_de" */))
@@ -216,6 +217,10 @@ export function createRouter() {
       path: "/newsletter_register_en",
       component: _a9a3a55a,
       name: "newsletter_register_en"
+    }, {
+      path: "/newsletter_register_en_lang",
+      component: _82925dec,
+      name: "newsletter_register_en_lang"
     }, {
       path: "/newsletter_success_de",
       component: _076aebc2,
