@@ -111,7 +111,7 @@
 
     .cr_ipe_radio {
         margin-left: 1px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .cr_form {

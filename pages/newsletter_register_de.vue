@@ -126,6 +126,11 @@ var $cr=jQuery.noConflict();var old_src;$cr(document).ready(function(){$cr(".cr_
             }
         }
 
+        .cr_ipe_radio {
+            margin-left: 1px;
+            margin-right: 5px;
+        }
+
         button.submit {
             font-weight: normal;
             padding-top: 0;
