@@ -65,7 +65,7 @@
 
                 <div style="margin-top: 30px !important;" class="flex-container col">
                     <span>{{registerInfo}}</span>
-                    <a :href="registerLink" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
+                    <a :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
                 </div>
 
             </div>
