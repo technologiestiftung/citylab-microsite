@@ -23,6 +23,17 @@
                             </div>
                             
 
+                            <label class="itemname">{{ content[lang]['register']['form']['language'] }} *</label>
+                            <div style="overflow:auto;">
+                                <input id="de4423013" class="cr_ipe_radio" name="1146885" type="radio" value="de" selected checked />
+                                <span class="lang-label">Deutsch</span>
+                                <br>
+
+                                <input id="en4423013" class="cr_ipe_radio" name="1146885" type="radio" value="en"  />
+                                <span class="lang-label">Englisch</span>
+                                <br>
+                            </div>
+
                             <div id="4405750" rel="checkbox" class="cr_ipe_item ui-sortable musthave" style=" margin-bottom:0px;">
                                 <label class="itemname">* Pflichtfeld</label>
                             <div class="agb" style="overflow:auto;">
@@ -118,6 +129,11 @@
 
         .agb {
             color: $color-tertiary;
+        }
+
+        .cr_ipe_radio {
+            margin-left: 1px;
+            margin-right: 5px;
         }
 
         .cr_site {

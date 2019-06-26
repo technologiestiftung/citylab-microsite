@@ -11,19 +11,19 @@
         <section class="section is-medium event-content">
             <div class="container">
 
-                <div class="content-wrapper">
-                    <h4 class="title">{{headlineIntro}}</h4>
-                    <p class="event-intro">{{contentIntro}}</p>
+                <div v-if="summaryAvailable.introHeadline > 0 || summaryAvailable.introContent > 0" class="content-wrapper">
+                    <h4 v-if="summaryAvailable.introHeadline > 0" class="title">{{headlineIntro}}</h4>
+                    <p v-if="summaryAvailable.introContent > 0" class="event-intro">{{contentIntro}}</p>
                 </div>
 
-                <div class="content-wrapper">
-                    <h4 class="title">{{headlineBlockOne}}</h4>
-                    <p class="event-intro">{{contentBlockOne}}</p>
+                <div  v-if="summaryAvailable.BlockOneContent > 0 || summaryAvailable.BlockOneHeadline > 0" class="content-wrapper">
+                    <h4 v-if="summaryAvailable.BlockOneHeadline > 0" class="title">{{headlineBlockOne}}</h4>
+                    <p v-if="summaryAvailable.BlockOneContent > 0" class="event-intro">{{contentBlockOne}}</p>
                 </div>
 
-                <div class="content-wrapper">
-                    <h4 class="title">{{headlineBlockTwo}}</h4>
-                    <p class="event-intro">{{contentBlockTwo}}</p>
+                <div v-if="summaryAvailable.BlockTwoContent > 0 || summaryAvailable.BlockTwoHeadline > 0" class="content-wrapper">
+                    <h4 v-if="summaryAvailable.BlockTwoHeadline > 0" class="title">{{headlineBlockTwo}}</h4>
+                    <p v-if="summaryAvailable.BlockTwoContent > 0" class="event-intro">{{contentBlockTwo}}</p>
                 </div>
 
                 <div class="summary-wrapper is-medium">
@@ -65,7 +65,7 @@
 
                 <div style="margin-top: 30px !important;" class="flex-container col">
                     <span>{{registerInfo}}</span>
-                    <a :href="registerLink" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
+                    <a :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
                 </div>
 
             </div>
@@ -105,7 +105,13 @@
                         organiser: 0,
                         address: 0,
                         date: 0,
-                        mail: 0
+                        mail: 0,
+                        introHeadline: 0,
+                        introContent: 0,
+                        blockOneHeadline: 0,
+                        blockOneContent: 0,
+                        blockTwoHeadline: 0,
+                        blockTwoContent: 0,
                     },
                     dict: {
                         "de": {
@@ -250,6 +256,14 @@
                         this.summaryAvailable.date = this.getLength(this.data.gsx$datesummary.$t);
                         this.summaryAvailable.organiser = this.getLength(this.data.gsx$organisersummary.$t);
 
+                        this.summaryAvailable.introHeadline = this.getLength(this.data.gsx$headlineintro.$t);
+                        this.summaryAvailable.introContent = this.getLength(this.data.gsx$contentintro.$t);
+
+                        this.summaryAvailable.BlockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
+                        this.summaryAvailable.BlockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
+
+                        this.summaryAvailable.BlockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
+                        this.summaryAvailable.BlockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
                     })
 
             },
@@ -283,7 +297,7 @@
     .summary-wrapper {
         color: white;
         margin-bottom: 50px;
-        margin-top: 20px;
+        margin-top: 60px;
         background: $color-tertiary;
         padding: $spacing-m;
 
@@ -326,22 +340,27 @@
         p {
             color: $color-tertiary;
             font-size: $size-5;
-            padding-bottom:40px;
+            margin-bottom: 20px;
         }
 
         span {
             color: $color-tertiary;
             margin-bottom: $spacing-s;
         }
+
+        h4.title{
+            color: $color-secondary !important;
+            font-size: $size-3;
+            margin-bottom: 0 !important;
+            padding-bottom: 20px !important;
+            padding-top: 50px;
+        }
+    }
+
+    .content-wrapper {
+        padding-bottom: 0;
     }
     
-
-
-	h4.title{
-		color: $color-secondary !important;
-		font-size: $size-3;
-		padding-bottom:20px;
-	}
 
 	h5.title{
 		color: $color-secondary !important;
@@ -362,7 +381,6 @@
 	}
 
 	.event-content p.copyright{
-		padding-top:40px;
 		font-size: 14px;
 	}
 

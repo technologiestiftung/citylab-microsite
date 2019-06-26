@@ -254,7 +254,6 @@
                 line-height: 90%;
 
                 &-italic {
-                    transform: translateY(-1px);
                     margin-left: 5px;
                     color: $white;
                     font-weight: 800;
