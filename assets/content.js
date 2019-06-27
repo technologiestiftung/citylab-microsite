@@ -1,4 +1,7 @@
 export const content = {
+    'config': {
+        sheetUrlEvents: 'https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json',
+    },
     'de': {
         'codeofconduct': {
             'title': 'Code of Conduct',
@@ -23,6 +26,10 @@ export const content = {
                 'name': 'Open Call',
                 'ref': '#call'
             },
+            // {
+            //     'name': 'Termine',
+            //     'ref': '#schedule'
+            // },
             {
                 'name': 'Newsletter',
                 'ref': '#newsletter'
@@ -53,6 +60,10 @@ export const content = {
             'statement3-img_url': 'images/03.jpg', 
             'cta': 'Mitmachen', 
         },
+        'events': {
+            'upcomingEventsTitle': 'Bevorstehend',
+            'pastEventsTitle': 'Vergangen',
+        },
         'register': {
             intro: {
                 title: 'Newsletter',
@@ -65,6 +76,7 @@ export const content = {
             mandatory: '* Pflichtfeld',
             form: {
                 name: 'Ihr Name',
+                language: 'Sprache des Newsletters',
                 mail: 'Ihre E-Mail-Adresse',
                 button: 'Anmelden',
                 agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass die Technologiestiftung Berlin mir regelmäßig Informationen zu Tätigkeiten der Technologiestiftung, stiftungsnahen Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
@@ -442,6 +454,14 @@ export const content = {
                 'name': 'Open Call',
                 'ref': '#call'
             },
+            // {
+            //     'name': 'Schedule',
+            //     'ref': '#schedule'
+            // },
+            {
+                'name': 'Newsletter',
+                'ref': '#newsletter'
+            },
             {
                 'name': 'Team',
                 'ref': '#team'
@@ -468,6 +488,10 @@ export const content = {
             'statement3-img_url': '../images/03.png', 
             'cta': 'Learn more',
         },
+        'events': {
+            'upcomingEventsTitle': 'Upcoming events',
+            'pastEventsTitle': 'Past events',
+        },
         'schedule': {
             title: 'Dates and announcements',
             subtitle: 'Here is a short optional introductory text.',
@@ -479,7 +503,7 @@ export const content = {
                     description: 'Maps, Data, Geovisualisation',
                     button: 'More information',
                     link: '/events/mobilitysymposium_en'
-                }
+                },
             ]
         },
         'topics': [
@@ -523,6 +547,7 @@ export const content = {
             form: {
                 name: 'Your name',
                 mail: 'Your E-Mail',
+                language: 'Language of the newsletter',
                 button: 'Subscribe',
                 agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the Technology Foundation Berlin may send me regular information on the activities of the Technology Foundation, foundation-related topics and events by e-mail in the form of a newsletter. Comprehensive information on the registration and unsubscription procedure, the mail-order company and the statistical evaluation of your data can be found in our Privacy Policy.',
                 unsubscribe: 'I can revoke my consent to the CityLAB Berlin <a href="/newsletter_unsubscribe_en">here</a> at any time.'

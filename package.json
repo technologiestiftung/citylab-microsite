@@ -16,12 +16,11 @@
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/bulma": "^1.2.3",
+    "axios": "^0.19.0",
     "cross-env": "^5.2.0",
-    "d3": "^5.9.2",
     "nuxt": "^2.5.1",
     "nuxt-compress": "^1.0.2",
     "nuxt-fontawesome": "^0.4.0",
-    "push-dir": "^0.4.1",
     "three": "^0.103.0",
     "vue-typed-js": "^0.1.2"
   },
