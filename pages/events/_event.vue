@@ -260,11 +260,11 @@
                         this.summaryAvailable.introHeadline = this.getLength(this.data.gsx$headlineintro.$t);
                         this.summaryAvailable.introContent = this.getLength(this.data.gsx$contentintro.$t);
 
-                        this.summaryAvailable.BlockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
-                        this.summaryAvailable.BlockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
+                        this.summaryAvailable.blockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
+                        this.summaryAvailable.blockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
 
-                        this.summaryAvailable.BlockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
-                        this.summaryAvailable.BlockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
+                        this.summaryAvailable.blockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
+                        this.summaryAvailable.blockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
 
                         this.summaryAvailable.registerLink = this.getLength(this.data.gsx$registerlink.$t);
                     })
