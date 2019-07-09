@@ -117,7 +117,9 @@
                 const today = new Date();
                 const eventDate = new Date(date);
 
-                const upcoming = today.getTime() < eventDate.getTime();
+                const upcoming = today.getTime() <= eventDate.getTime();
+
+                eventDate.setHours(23,59,59)
 
                 return upcoming;
             },
