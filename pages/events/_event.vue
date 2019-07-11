@@ -16,14 +16,14 @@
                     <p v-if="summaryAvailable.introContent > 0" class="event-intro">{{contentIntro}}</p>
                 </div>
 
-                <div  v-if="summaryAvailable.BlockOneContent > 0 || summaryAvailable.BlockOneHeadline > 0" class="content-wrapper">
-                    <h4 v-if="summaryAvailable.BlockOneHeadline > 0" class="title">{{headlineBlockOne}}</h4>
-                    <p v-if="summaryAvailable.BlockOneContent > 0" class="event-intro">{{contentBlockOne}}</p>
+                <div  v-if="summaryAvailable.blockOneContent > 0 || summaryAvailable.BlockOneHeadline > 0" class="content-wrapper">
+                    <h4 v-if="summaryAvailable.blockOneHeadline > 0" class="title">{{headlineBlockOne}}</h4>
+                    <p v-if="summaryAvailable.blockOneContent > 0" class="event-intro">{{contentBlockOne}}</p>
                 </div>
 
-                <div v-if="summaryAvailable.BlockTwoContent > 0 || summaryAvailable.BlockTwoHeadline > 0" class="content-wrapper">
-                    <h4 v-if="summaryAvailable.BlockTwoHeadline > 0" class="title">{{headlineBlockTwo}}</h4>
-                    <p v-if="summaryAvailable.BlockTwoContent > 0" class="event-intro">{{contentBlockTwo}}</p>
+                <div v-if="summaryAvailable.blockTwoContent > 0 || summaryAvailable.BlockTwoHeadline > 0" class="content-wrapper">
+                    <h4 v-if="summaryAvailable.blockTwoHeadline > 0" class="title">{{headlineBlockTwo}}</h4>
+                    <p v-if="summaryAvailable.blockTwoContent > 0" class="event-intro">{{contentBlockTwo}}</p>
                 </div>
 
                 <div class="summary-wrapper is-medium">
@@ -32,32 +32,32 @@
                     <div class="flex-container">
                         <div v-if="summaryAvailable.website > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['website']}}</h5>
-                            <a :href="`${websiteSummary}`">{{websiteSummary}}</a>
+                            <a class="summary-text" :href="`${websiteSummary}`">{{websiteSummary}}</a>
                         </div>
 
                         <div v-if="summaryAvailable.phone > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['phone']}}</h5>
-                            <span>{{phoneSummary}}</span>
+                            <span class="summary-text">{{phoneSummary}}</span>
                         </div>
 
                         <div v-if="summaryAvailable.organiser > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['organizer']}}</h5>
-                            <span>{{organiserSummary}}</span>
+                            <span class="summary-text">{{organiserSummary}}</span>
                         </div>
 
                         <div v-if="summaryAvailable.date > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['date']}}</h5>
-                            <span>{{dateSummary}}</span>
+                            <span class="summary-text">{{dateSummary}}</span>
                         </div>
 
                         <div v-if="summaryAvailable.mail > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['mail']}}</h5>
-                             <a :href="`mailto: ${mailSummary}`">{{mailSummary}}</a>
+                             <a class="summary-text" :href="`mailto: ${mailSummary}`">{{mailSummary}}</a>
                         </div>
 
                         <div v-if="summaryAvailable.address > 0" class="content-block">
                             <h5>{{dict[lang]['summary']['address']}}</h5>
-                            <span>{{addressSummary}}</span>
+                            <span class="summary-text">{{addressSummary}}</span>
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@
 
                 <div style="margin-top: 30px !important;" class="flex-container col">
                     <span>{{registerInfo}}</span>
-                    <a :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
+                    <a v-if="this.summaryAvailable.registerLink > 0" :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
                 </div>
 
             </div>
@@ -112,6 +112,7 @@
                         blockOneContent: 0,
                         blockTwoHeadline: 0,
                         blockTwoContent: 0,
+                        registerLink: 0,
                     },
                     dict: {
                         "de": {
@@ -259,11 +260,13 @@
                         this.summaryAvailable.introHeadline = this.getLength(this.data.gsx$headlineintro.$t);
                         this.summaryAvailable.introContent = this.getLength(this.data.gsx$contentintro.$t);
 
-                        this.summaryAvailable.BlockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
-                        this.summaryAvailable.BlockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
+                        this.summaryAvailable.blockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
+                        this.summaryAvailable.blockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
 
-                        this.summaryAvailable.BlockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
-                        this.summaryAvailable.BlockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
+                        this.summaryAvailable.blockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
+                        this.summaryAvailable.blockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
+
+                        this.summaryAvailable.registerLink = this.getLength(this.data.gsx$registerlink.$t);
                     })
 
             },
@@ -282,7 +285,11 @@
     .flex-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;      
+        flex-wrap: wrap;    
+        
+        span {
+            font-size: $size-5;
+        }
     }
 
     .col {
@@ -292,6 +299,12 @@
             width: 130px;
             margin-bottom: 30px;
         }
+    }
+
+    .summary-text {
+        line-height: 20px;
+        margin-top: 5px;
+        display: inline-block;
     }
     
     .summary-wrapper {
@@ -329,9 +342,10 @@
                 width: 100%;
             }
 
-            span {
+            span.summary-text {
                 color: white;
                 opacity: .5;
+                font-size: 16px;
             }
         }
     }

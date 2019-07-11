@@ -37,6 +37,7 @@
 	import Newsletter from '../components/Newsletter.vue';
 
 	import axios from 'axios';
+	import { mapState } from 'vuex';
 
 	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -96,7 +97,8 @@
 				})
 
 				return val;
-			}
+			},
+			...mapState(['offset'])
 		},
 		methods: {
 			handleScroll () {
@@ -112,10 +114,27 @@
 			topFunction() {
 				document.body.scrollTop = 0; // For Safari
 				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			}
+			},
+			setOffset(boolean) {
+                this.$store.dispatch("SET_OFFSET", boolean);
+            },
 		},
-		created () {
+		mounted() {
 			if (process.browser) { 
+
+				window.addEventListener("hashchange", () => {
+					console.log(window.scrollY);
+
+					if (!this.offset) {
+						console.log('without offset')
+						window.scrollTo(window.scrollX, window.scrollY - 75);
+						this.setOffset(true);
+					} else if (this.offset) {
+						console.log('it works!')
+						window.scrollTo(window.scrollX, window.scrollY);
+					}
+				});
+
 				window.addEventListener('scroll', this.handleScroll);
 			}
 		},

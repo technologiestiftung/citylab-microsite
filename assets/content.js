@@ -26,10 +26,10 @@ export const content = {
                 'name': 'Open Call',
                 'ref': '#call'
             },
-            // {
-            //     'name': 'Termine',
-            //     'ref': '#schedule'
-            // },
+            {
+                'name': 'Termine',
+                'ref': '#schedule'
+            },
             {
                 'name': 'Newsletter',
                 'ref': '#newsletter'
@@ -454,10 +454,10 @@ export const content = {
                 'name': 'Open Call',
                 'ref': '#call'
             },
-            // {
-            //     'name': 'Schedule',
-            //     'ref': '#schedule'
-            // },
+            {
+                'name': 'Schedule',
+                'ref': '#schedule'
+            },
             {
                 'name': 'Newsletter',
                 'ref': '#newsletter'
