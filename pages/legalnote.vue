@@ -14,7 +14,7 @@
 				<p class="content" v-html="content[lang]['imprint']['info']['p1']"></p>
 				<a style="cursor: auto;" :href="`mailto:${content[lang]['imprint']['info']['mail_url']}`" class="content"> {{ content[lang]['imprint']['info']['mail_name'] }} </a>
 
-				<p class="content" v-html="content[lang]['imprint']['info']['p2']"></p>
+				<!-- <p class="content" v-html="content[lang]['imprint']['info']['p2']"></p> -->
 
 				<p class="content">
 					{{ content[lang]['imprint']['info']['p3'] }}
@@ -57,7 +57,7 @@
 
 
 
-				
+
             </div>
         </section>
 		<Footer :lang="lang" :content="content"/>
@@ -66,14 +66,14 @@
 </template>
 
 <script>
-	import { 
+	import {
   		content as content
 	} from '../assets/content.js';
 
     import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 	import Matomo from '../components/Matomo.vue';
-    
+
     export default {
         components: {
 			Navigation,
