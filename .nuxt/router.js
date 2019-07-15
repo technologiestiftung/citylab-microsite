@@ -38,6 +38,7 @@ const _31775b66 = () => interopDefault(import('../pages/newsletter_unsubscribe_s
 const _2d100316 = () => interopDefault(import('../pages/newsletter_unsubscribe_success_en.vue' /* webpackChunkName: "pages/newsletter_unsubscribe_success_en" */))
 const _476074df = () => interopDefault(import('../pages/press.vue' /* webpackChunkName: "pages/press" */))
 const _34558439 = () => interopDefault(import('../pages/press_en.vue' /* webpackChunkName: "pages/press_en" */))
+const _e90b287e = () => interopDefault(import('../pages/resources.vue' /* webpackChunkName: "pages/resources" */))
 const _3dd68a17 = () => interopDefault(import('../pages/resources_en.vue' /* webpackChunkName: "pages/resources_en" */))
 const _050949c7 = () => interopDefault(import('../pages/events/mobilitysymposium.vue' /* webpackChunkName: "pages/events/mobilitysymposium" */))
 const _1675a651 = () => interopDefault(import('../pages/events/mobilitysymposium_en.vue' /* webpackChunkName: "pages/events/mobilitysymposium_en" */))
@@ -262,6 +263,10 @@ export function createRouter() {
       path: "/press_en",
       component: _34558439,
       name: "press_en"
+    }, {
+      path: "/resources",
+      component: _e90b287e,
+      name: "resources"
     }, {
       path: "/resources_en",
       component: _3dd68a17,

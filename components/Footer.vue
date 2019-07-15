@@ -101,14 +101,14 @@
                             </p>
                         </nuxt-link>
 
-                        <!-- <nuxt-link class="flex flex-row m-b-sm" :to="directResources">
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directResources">
                             <div class="icon-wrapper">
                                 <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px; height: 16px;" far :icon="information"/>
                             </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['resources'] }}
                             </p>
-                        </nuxt-link> -->
+                        </nuxt-link>
 
                     </div>
 

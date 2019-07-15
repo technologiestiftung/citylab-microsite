@@ -46,6 +46,14 @@ export const content = {
             'claim_03': "gemeinsam gestalten.",
             'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
         },
+        'resources': {
+            'title': 'Ressourcen',
+            'p1': 'In diesem Abschnitt findest du praktische Informationen zum CityLAB.',
+            'specs_title': 'Spezifikationen',
+            'specs_p': `Wenn Sie sich insbesondere für einen unserer Räume interessieren, finden Sie weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
+            'specs_url': '/docs/citylab-specs-de.pdf',
+            'specs_url_button': 'CityLAB Spezifikationen PDF'
+        },
         'missionStatement': {
             'title': 'Unsere Mission',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
@@ -444,10 +452,10 @@ export const content = {
         },
         'resources': {
             'title': 'Resources',
-            'p1': 'This is a short paragraph about the resources site.',
+            'p1': 'At this section you find practical information regarding the CityLAB Berlin.',
             'specs_title': 'Specifications',
-            'specs_p': 'This is a short paragraph about the resources site.',
-            'specs_url': '/docs/citylab-specs-de.pdf',
+            'specs_p': `If you're interested in one of our spaces in particular, find more details about room sizes and available equipment in the data sheet below:`,
+            'specs_url': '/docs/citylab-specs-en.pdf',
             'specs_url_button': 'CityLAB specifications PDF'
         },
         'nav': [
