@@ -24,7 +24,7 @@
                             
 
                             <div id="4405750" rel="checkbox" class="cr_ipe_item ui-sortable musthave" style=" margin-bottom:0px;">
-                                <label class="itemname">* Pflichtfeld</label>
+                                <label class="itemname">* Mandatory field</label>
                             <div class="agb" style="overflow:auto;">
                                 <input 
                                     :id="content[lang]['register']['form']['agb']" 

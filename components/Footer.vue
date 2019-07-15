@@ -101,6 +101,15 @@
                             </p>
                         </nuxt-link>
 
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directResources">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px; height: 16px;" far :icon="information"/>
+                            </div>
+                            <p class="content">
+                                {{ content[lang]['footer']['more']['resources'] }}
+                            </p>
+                        </nuxt-link>
+
                     </div>
 
                     <div class="column is-3">
@@ -143,7 +152,8 @@
         faStamp,
         faUserSecret,
         faGenderless,
-        faDoorOpen
+        faDoorOpen,
+        faInfo
     } from '@fortawesome/free-solid-svg-icons';
 
     export default {
@@ -158,6 +168,7 @@
                         dataprivacy: '/dataprivacy',
                         code: '/codeofconduct',
                         imprint: '/legalnote',
+                        resources: '/resources',
                     },
                     en: {
                         downloads: '/downloads_en',
@@ -165,6 +176,7 @@
                         imprint: '/legalnote_en',
                         dataprivacy: '/dataprivacy_en',
                         code: '/codeofconduct_en',
+                        resources: '/resources_en',
                     }
                 }
             }
@@ -182,11 +194,17 @@
             stamp() {
                 return faStamp;
             },
+            information() {
+                return faInfo;
+            },
             userSecret() {
                 return faUserSecret;
             },
             genderless() {
                 return faGenderless;
+            },
+            directResources() {
+                return this.directs[this.lang].resources
             },
             directCodeofconduct() {
                 return this.directs[this.lang].code

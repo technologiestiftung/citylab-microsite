@@ -25,6 +25,9 @@ config.autoAddCss = false
     import  { faGlobeEurope as fortawesomefreesolidsvgicons_faGlobeEurope } from '@fortawesome/free-solid-svg-icons'
     library.add(fortawesomefreesolidsvgicons_faGlobeEurope)
 
+    import  { faInfo as fortawesomefreesolidsvgicons_faInfo } from '@fortawesome/free-solid-svg-icons'
+    library.add(fortawesomefreesolidsvgicons_faInfo)
+
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('font-awesome-icon-layers', FontAwesomeLayers)
 Vue.component('font-awesome-icon-layers-text', FontAwesomeLayersText)

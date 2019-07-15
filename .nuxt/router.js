@@ -27,7 +27,7 @@ const _22e4fb8a = () => interopDefault(import('../pages/newsletter_missinginput_
 const _2518a7b2 = () => interopDefault(import('../pages/newsletter_missinginput_en.vue' /* webpackChunkName: "pages/newsletter_missinginput_en" */))
 const _ae0afdaa = () => interopDefault(import('../pages/newsletter_register_de.vue' /* webpackChunkName: "pages/newsletter_register_de" */))
 const _a9a3a55a = () => interopDefault(import('../pages/newsletter_register_en.vue' /* webpackChunkName: "pages/newsletter_register_en" */))
-const _82925dec = () => interopDefault(import('../pages/newsletter_register_en_lang.vue' /* webpackChunkName: "pages/newsletter_register_en_lang" */))
+const _6ff4441c = () => interopDefault(import('../pages/newsletter_register_en_xxxx.vue' /* webpackChunkName: "pages/newsletter_register_en_xxxx" */))
 const _076aebc2 = () => interopDefault(import('../pages/newsletter_success_de.vue' /* webpackChunkName: "pages/newsletter_success_de" */))
 const _03039372 = () => interopDefault(import('../pages/newsletter_success_en.vue' /* webpackChunkName: "pages/newsletter_success_en" */))
 const _13400cf0 = () => interopDefault(import('../pages/newsletter_unsubscribe_confirm_de.vue' /* webpackChunkName: "pages/newsletter_unsubscribe_confirm_de" */))
@@ -38,6 +38,7 @@ const _31775b66 = () => interopDefault(import('../pages/newsletter_unsubscribe_s
 const _2d100316 = () => interopDefault(import('../pages/newsletter_unsubscribe_success_en.vue' /* webpackChunkName: "pages/newsletter_unsubscribe_success_en" */))
 const _476074df = () => interopDefault(import('../pages/press.vue' /* webpackChunkName: "pages/press" */))
 const _34558439 = () => interopDefault(import('../pages/press_en.vue' /* webpackChunkName: "pages/press_en" */))
+const _3dd68a17 = () => interopDefault(import('../pages/resources_en.vue' /* webpackChunkName: "pages/resources_en" */))
 const _050949c7 = () => interopDefault(import('../pages/events/mobilitysymposium.vue' /* webpackChunkName: "pages/events/mobilitysymposium" */))
 const _1675a651 = () => interopDefault(import('../pages/events/mobilitysymposium_en.vue' /* webpackChunkName: "pages/events/mobilitysymposium_en" */))
 const _1d362626 = () => interopDefault(import('../pages/events/_event.vue' /* webpackChunkName: "pages/events/_event" */))
@@ -218,9 +219,9 @@ export function createRouter() {
       component: _a9a3a55a,
       name: "newsletter_register_en"
     }, {
-      path: "/newsletter_register_en_lang",
-      component: _82925dec,
-      name: "newsletter_register_en_lang"
+      path: "/newsletter_register_en_xxxx",
+      component: _6ff4441c,
+      name: "newsletter_register_en_xxxx"
     }, {
       path: "/newsletter_success_de",
       component: _076aebc2,
@@ -261,6 +262,10 @@ export function createRouter() {
       path: "/press_en",
       component: _34558439,
       name: "press_en"
+    }, {
+      path: "/resources_en",
+      component: _3dd68a17,
+      name: "resources_en"
     }, {
       path: "/events/mobilitysymposium",
       component: _050949c7,

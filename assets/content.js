@@ -277,7 +277,8 @@ export const content = {
                 'downloads': 'Downloads',
                 'codeofconduct': 'Code of Conduct',
                 'imprint': 'Impressum',
-                'dataprivacy': 'Datenschutz'
+                'dataprivacy': 'Datenschutz',
+                'resources': 'Ressourcen',
             },
             'funding': {
                 'title': 'Gefördert durch',
@@ -440,6 +441,14 @@ export const content = {
                 'If you are planning public events or project work with larger groups, please provide sufficient notice to our coordination team. Please observe the safety and fire regulations. You are responsible for the behaviour of your guests.',
                 'We reserve the right to exclude persons who violate this code from the use of the rooms.'
             ]
+        },
+        'resources': {
+            'title': 'Resources',
+            'p1': 'This is a short paragraph about the resources site.',
+            'specs_title': 'Specifications',
+            'specs_p': 'This is a short paragraph about the resources site.',
+            'specs_url': '/docs/citylab-specs-de.pdf',
+            'specs_url_button': 'CityLAB specifications PDF'
         },
         'nav': [
             {
@@ -706,7 +715,8 @@ export const content = {
                 'downloads': 'Downloads',
                 'codeofconduct': 'Code of Conduct',
                 'imprint': 'Legal note',
-                'dataprivacy': 'Data privacy'
+                'dataprivacy': 'Data privacy',
+                'resources': 'Resources',
             },
             'funding': {
                 'title': 'Sponsors',
