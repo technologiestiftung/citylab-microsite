@@ -81,6 +81,7 @@
 				content: content,
                 direct: '/all_events',
                 data: [],
+                otherEvents: content['en'].otherevents,
                 entries: null
 			}
         },
@@ -109,6 +110,10 @@
 
                     }
                     this.data.push(obj);
+                })
+
+                this.otherEvents.forEach(entry => {
+                    this.data.push(entry);
                 })
             })      
         }, 
@@ -141,6 +146,7 @@
     }
 </script>
 
+
 <style lang="scss">
 
     @import "../assets/style/style.scss";
@@ -169,6 +175,7 @@
 
 
         }
+
 
         .arrow-right {
             font-size: 36px;
@@ -227,6 +234,7 @@
             margin-right: $spacing-l;
             display: flex;
             flex-direction: column;
+            min-width: 70px;
             justify-content: space-around;
 
             @include mobile {
@@ -249,6 +257,7 @@
             .date-month {
                 font-size: $size-4;
                 line-height: 2rem;
+                text-align: center;
                 color: $color-tertiary;
 
                 @include mobile {

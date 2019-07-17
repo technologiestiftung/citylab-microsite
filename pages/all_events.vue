@@ -81,7 +81,8 @@
 				content: content,
                 direct: '/all_events_en',
                 data: [],
-                entries: null
+                entries: null,
+                otherEvents: content['de'].otherevents,
 			}
         },
         computed: {
@@ -108,6 +109,10 @@
                         visible: entry.gsx$visible.$t,
                     }
                     this.data.push(obj);
+                })
+
+                this.otherEvents.forEach(entry => {
+                    this.data.push(entry);
                 })
             })      
         }, 
@@ -226,6 +231,7 @@
         .date-wrapper {
             margin-right: $spacing-l;
             display: flex;
+            min-width: 70px;
             flex-direction: column;
             justify-content: space-around;
 
@@ -235,6 +241,7 @@
 
             .date-time {
                 font-size: $size-4;
+                text-align: center;
                 line-height: 2rem;
                 color: $color-tertiary;
                 margin-right: $spacing-l;
@@ -249,6 +256,7 @@
             .date-month {
                 font-size: $size-4;
                 line-height: 2rem;
+                text-align: center;
                 color: $color-tertiary;
 
                 @include mobile {

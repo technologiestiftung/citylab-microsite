@@ -3,6 +3,18 @@ export const content = {
         sheetUrlEvents: 'https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json',
     },
     'de': {
+        'otherevents': [
+            {
+                day: '11',
+                month: 'Okt',
+                date: '11.10.2019',
+                format: 'Symposium',
+                time: '10-18 Uhr',
+                title: 'Urban Mobility Symposium',
+                link: 'https://citylab-berlin.org/events/mobilitysymposium',
+                visible: true,
+            }
+        ],
         'codeofconduct': {
             'title': 'Code of Conduct',
             'points': [
@@ -440,6 +452,18 @@ export const content = {
         },
     },
     'en': {
+        'otherevents': [
+            {
+                day: '11',
+                month: 'Oct',
+                date: '11.10.2019',
+                format: 'Symposium',
+                time: '10-6 pm',
+                title: 'Urban Mobility Symposium',
+                link: 'https://citylab-berlin.org/events/mobilitysymposium_en',
+                visible: true,
+            }
+        ],
         'codeofconduct': {
             'title': 'Code of conduct',
             'points': [
