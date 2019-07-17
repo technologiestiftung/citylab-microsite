@@ -69,16 +69,16 @@ export const content = {
         'missionStatement': {
             'title': 'Unsere Mission',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
-            'statement1-title': 'Inklusiv', 
-            'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.', 
-            'statement1-img_url': 'images/02.png', 
-            'statement2-title': 'Agil', 
-            'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.', 
+            'statement1-title': 'Inklusiv',
+            'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.',
+            'statement1-img_url': 'images/02.png',
+            'statement2-title': 'Agil',
+            'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.',
             'statement2-img_url': 'images/01.jpg',
-            'statement3-title': 'Offen', 
-            'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
-            'statement3-img_url': 'images/03.jpg', 
-            'cta': 'Mitmachen', 
+            'statement3-title': 'Offen',
+            'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
+            'statement3-img_url': 'images/03.jpg',
+            'cta': 'Mitmachen',
         },
         'events': {
             'upcomingEventsTitle': 'Bevorstehend',
@@ -216,7 +216,7 @@ export const content = {
         ],
         'projects': {
             'title': 'Open Call',
-            'opencall': 'Ihr habt Ideen für eine bessere Stadt? Macht mit im CityLAB!',
+            'opencall': 'Du hast Ideen für eine bessere Stadt? Mach mit im CityLAB!',
             'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
             'cta': 'Jetzt bewerben',
             'projects': [
@@ -236,45 +236,45 @@ export const content = {
         'team': {
             'title': 'Team',
             'member': [
-                { 
-                    'name': 'Benjamin Seibel', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'bnjmnsbl', 
+                {
+                    'name': 'Benjamin Seibel',
+                    'mail': 'seibel@technologiestiftung-berlin.de',
+                    'twitter': 'bnjmnsbl',
                     'img_url': 'images/benjamin_portrait.jpg',
                     'title': 'Leitung'
                 },
-                { 
-                    'name': 'Nadine Riede', 
-                    'mail': 'riede@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Nadine Riede',
+                    'mail': 'riede@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': 'images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
-                { 
-                    'name': 'Sebastian Meier', 
-                    'mail': 'meier@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
+                {
+                    'name': 'Sebastian Meier',
+                    'mail': 'meier@technologiestiftung-berlin.de',
+                    'twitter': 'seb_meier',
                     'img_url': 'images/sebastian_portrait.jpg',
                     'title': 'Wissenschaftliche Leitung'
                 },
-                { 
-                    'name': 'Sara Reichert', 
-                    'mail': 'reichert@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Sara Reichert',
+                    'mail': 'reichert@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': 'images/sara_portrait.jpg',
                     'title': 'Werkstattleitung'
                 },
-                { 
-                    'name': 'Fabian Dinklage', 
-                    'mail': 'dinklage@technologiestiftung-berlin.de', 
-                    'twitter': 'fdnklg', 
+                {
+                    'name': 'Fabian Dinklage',
+                    'mail': 'dinklage@technologiestiftung-berlin.de',
+                    'twitter': 'fdnklg',
                     'img_url': 'images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
-                { 
-                    'name': 'Malgorzata Magdon', 
-                    'mail': 'Magdon@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Malgorzata Magdon',
+                    'mail': 'Magdon@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/malgorzata_portrait.jpg',
                     'title': 'Administration'
                 },
@@ -518,15 +518,15 @@ export const content = {
         'missionStatement': {
             'title': 'Our Mission',
             'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
-            'statement1-title': 'Agile', 
-            'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.', 
-            'statement1-img_url': '../images/01.jpg', 
-            'statement2-title': 'Participatory', 
-            'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.', 
-            'statement2-img_url': '../images/02.png', 
-            'statement3-title': 'Open', 
-            'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
-            'statement3-img_url': '../images/03.png', 
+            'statement1-title': 'Agile',
+            'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.',
+            'statement1-img_url': '../images/01.jpg',
+            'statement2-title': 'Participatory',
+            'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.',
+            'statement2-img_url': '../images/02.png',
+            'statement3-title': 'Open',
+            'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.',
+            'statement3-img_url': '../images/03.png',
             'cta': 'Learn more',
         },
         'events': {
@@ -686,45 +686,45 @@ export const content = {
         'team': {
             'title': 'The team',
             'member': [
-                { 
-                    'name': 'Benjamin Seibel', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'bnjmnsbl', 
+                {
+                    'name': 'Benjamin Seibel',
+                    'mail': 'seibel@technologiestiftung-berlin.de',
+                    'twitter': 'bnjmnsbl',
                     'img_url': '../images/benjamin_portrait.jpg',
                     'title': 'Director'
                 },
-                { 
-                    'name': 'Nadine Riede', 
-                    'mail': 'riede@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Nadine Riede',
+                    'mail': 'riede@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
-                { 
-                    'name': 'Sebastian Meier', 
-                    'mail': 'meier@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
+                {
+                    'name': 'Sebastian Meier',
+                    'mail': 'meier@technologiestiftung-berlin.de',
+                    'twitter': 'seb_meier',
                     'img_url': '../images/sebastian_portrait.jpg',
                     'title': 'Head of Science'
                 },
-                { 
-                    'name': 'Sara Reichert', 
-                    'mail': 'reichert@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Sara Reichert',
+                    'mail': 'reichert@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/sara_portrait.jpg',
                     'title': 'Workshop Lead'
                 },
-                { 
-                    'name': 'Fabian Dinklage', 
-                    'mail': 'dinklage@technologiestiftung-berlin.de', 
-                    'twitter': 'fdnklg', 
+                {
+                    'name': 'Fabian Dinklage',
+                    'mail': 'dinklage@technologiestiftung-berlin.de',
+                    'twitter': 'fdnklg',
                     'img_url': '../images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
-                { 
-                    'name': 'Malgorzata Magdon', 
-                    'mail': 'Magdon@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Malgorzata Magdon',
+                    'mail': 'Magdon@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/malgorzata_portrait.jpg',
                     'title': 'Administration'
                 },

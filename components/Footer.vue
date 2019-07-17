@@ -2,7 +2,7 @@
     <footer class="footer">
         <section class="section is-medium">
             <div class="container">
-            
+
                 <div class="columns">
 
                     <div class="column is-3">
@@ -54,7 +54,7 @@
                         <h6 class="title is-4">
                             {{ content[lang]['footer']['more']['title'] }}
                         </h6>
-                        
+
                         <!-- <nuxt-link class="flex flex-row m-b-sm" :to="directDownloads">
                             <div class="icon-wrapper">
                                 <font-awesome-icon style="transform: translateY(2px); margin-right: 5px;" far icon="file-download"/>
@@ -63,7 +63,7 @@
                                 {{ content[lang]['footer']['more']['downloads'] }}
                             </p>
                         </nuxt-link>
-        
+
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directPress">
                             <div class="icon-wrapper">
@@ -119,7 +119,7 @@
 
                         <span> {{ content[lang]['footer']['funding']['text_tsb'] }}</span>
 
-                        <a 
+                        <a
                         class="flex flex-row m-b-sm logo"
                         :href="`${content[lang]['footer']['funding']['href_tsb']}`"
                         >
@@ -128,8 +128,8 @@
 
                         <span> {{ content[lang]['footer']['funding']['text_sen'] }}</span>
 
-                        <a 
-                        class="flex flex-row m-b-sm logo" 
+                        <a
+                        class="flex flex-row m-b-sm logo"
                         :href="`${content[lang]['footer']['funding']['href_sen']}`"
                         >
                             <img :src="`${content[lang]['footer']['funding']['svg_sen']}`" alt="">
@@ -146,7 +146,7 @@
 </template>
 
 <script>
-    import { 
+    import {
         faBicycle,
         faEnvelope,
         faStamp,
@@ -228,7 +228,7 @@
                 return 'https://www.google.de/maps/@52.4843705,13.3836835,16.65z'
             },
             mailtoCitylab() {
-                return 'mailto:info@citylabberlin.de'
+                return 'mailto:info@citylab-berlin.org'
             },
         }
     }
