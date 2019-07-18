@@ -38,6 +38,7 @@
 
 	import axios from 'axios';
 	import { mapState } from 'vuex';
+	import pkg from '../package'
 
 	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -56,6 +57,23 @@
 			Partners,
 			Newsletter,
 			Tiles,
+		},
+		head() {
+			return {
+				meta: [
+					{ charset: 'utf-8' },
+					{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+					{ hid: 'description', name: 'description', content: pkg.description },
+					{ property: 'og:title', content: "CityLAB Berlin" },
+					{ property: 'og:description', content: "CityLAB Berlin" },
+					{ property: 'og:image', content: "https://citylab-berlin.org/images/social-graph.jpg" },
+					{ property: 'og:url', content: "https://citylab-berlin.org" },
+					{ property: 'twitter:card', content: "summary_large_image" },
+					{ property: 'og:site_name', content: "CityLAB Berlin" },
+					{ property: 'twitter:image:alt', content: "CityLAB Berlin" },
+					{ property: 'twitter:image', content: "https://citylab-berlin.org/images/social-graph.jpg" },
+				],
+			}
 		},
 		data() {
 			return {

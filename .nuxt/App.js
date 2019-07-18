@@ -10,7 +10,7 @@ import _6f6c098b from '../layouts/default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"titleTemplate":"%sCityLAB","script":[{"src":"https:\u002F\u002Fcitylab-berlin.org\u002Fmatomo.js"}],"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Berlins Zukunft gemeinsam gestalten."},{"property":"og:title","content":"CityLAB Berlin"},{"property":"og:description","content":"CityLAB Berlin"},{"property":"og:image","content":"https:\u002F\u002Fcitylab-berlin.org\u002Fimages\u002Fsocial-graph.jpg"},{"property":"og:url","content":"https:\u002F\u002Fcitylab-berlin.org"},{"property":"twitter:card","content":"summary_large_image"},{"property":"og:site_name","content":"CityLAB Berlin"},{"property":"twitter:image:alt","content":"CityLAB Berlin"},{"property":"twitter:image","content":"https:\u002F\u002Fcitylab-berlin.org\u002Fimages\u002Fsocial-graph.jpg"}],"link":[{"rel":"icon","type":"image\u002Fpng","sizes":"32x32","href":"\u002Ffavicon-32x32.png"},{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[]},
+  head: {"titleTemplate":"%sCityLAB","script":[{"src":"https:\u002F\u002Fcitylab-berlin.org\u002Fmatomo.js"}],"link":[{"rel":"icon","type":"image\u002Fpng","sizes":"32x32","href":"\u002Ffavicon-32x32.png"},{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"meta":[],"style":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })

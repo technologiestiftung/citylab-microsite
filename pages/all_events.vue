@@ -114,6 +114,8 @@
                 this.otherEvents.forEach(entry => {
                     this.data.push(entry);
                 })
+
+                this.data.sort((a,b) => { return new Date(a.date) - new Date(b.date) });
             })      
         }, 
         methods: {
