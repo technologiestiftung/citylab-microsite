@@ -33,7 +33,6 @@ export default {
 		{ hid: 'og:title', property: 'og:title', content: "CityLAB Berlin" },
 		{ hid: 'og:description', property: 'og:description', content: "CityLAB Berlin" },
 		{ hid: 'og:image', property: 'og:image', content: "https://citylab-berlin.org/images/social-graph.jpg" },
-		{ hid: 'og:url', property: 'og:url', content: "https://citylab-berlin.org" },
 		{ hid: 'twitter:card', property: 'twitter:card', content: "summary_large_image" },
 		{ hid: 'og:site_name', property: 'og:site_name', content: "CityLAB Berlin" },
 		{ hid: 'twitter:image:alt', property: 'twitter:image:alt', content: "CityLAB Berlin" },
