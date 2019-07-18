@@ -5,16 +5,6 @@ export const content = {
     'de': {
         'otherevents': [
             {
-                day: '11',
-                month: 'Okt',
-                date: '11.10.2019',
-                format: 'Symposium',
-                time: '10-18 Uhr',
-                title: 'Urban Mobility Symposium',
-                link: 'https://citylab-berlin.org/events/mobilitysymposium',
-                visible: true,
-            },
-            {
                 day: '9',
                 month: 'Sept',
                 date: '09.09.2019',
@@ -23,7 +13,18 @@ export const content = {
                 title: 'Data-driven Urban Innovation',
                 link: 'https://citylab-berlin.org/events/summerschool',
                 visible: true,
+            },
+            {
+                day: '11',
+                month: 'Okt',
+                date: '11.10.2019',
+                format: 'Symposium',
+                time: '10-18 Uhr',
+                title: 'Urban Mobility Symposium',
+                link: 'https://citylab-berlin.org/events/mobilitysymposium',
+                visible: true,
             }
+            
         ],
         'codeofconduct': {
             'title': 'Code of Conduct',
