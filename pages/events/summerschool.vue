@@ -1,7 +1,8 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/hero_img_summer_school.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']" :subSubTitle="eventContent[lang]['subSubTitle']" />
+    <HeroLight :image="'https://citylab-berlin.org/images/events/hero_img_summer_school.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']" :subSubTitle="eventContent[lang]['subSubTitle'] + '<br /><a href=\'#apply\' class=\'applyButton\'>Apply now</a>'">
+    </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
         <p class="event-intro">{{ eventContent[lang]['intro'] }}</p>
@@ -9,6 +10,7 @@
         <h3 class="title">{{ eventContent[lang]['universitiesTitle'] }}</h3>
         <div class="universities-list">
           <div v-for="university in universitiesArr">
+            <img :src="'https://citylab-berlin.org/images/events/summerschoool-logo-' + university.img + '.jpg'" :alt="university.title.split(',')[0]" />
             <h4 class="title" v-html="university.title"></h4>
             <p>{{ university.content }}</p>
             <strong>Lead:</strong>&nbsp;<span>{{ university.lead }}</span><br />
@@ -25,7 +27,17 @@
           </li>
         </ul>-->
 
-        <div id="applyContainer">
+        <h3 class="title">{{ eventContent[lang]['scheduleTitle'] }}</h3>
+        <ul class="schedule-list">
+          <li v-for="item in scheduleArr">
+            <span class="schedule-title"><span>{{ item.time }}, {{ item.day }} - </span><strong>{{ item.title }}</strong></span>
+            <ul>
+              <li v-for="contentItem in item.content">- {{ contentItem }}</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div id="apply">
           <h3 class="title">{{ eventContent[lang]['applyTitle'] }}</h3>
           <p v-html="eventContent[lang]['applyText1']"></p>
           <p v-html="eventContent[lang]['applyText2']"></p>
@@ -116,13 +128,30 @@
 
 <style lang="scss">
   @import "../../assets/style/style.scss";
-    h1.title, h3.title {
+  h1.title, h3.title {
     color: $color-secondary;
+  }
+
+  #apply{
+    padding-top:70px;
+  }
+
+  ul.schedule-list>li{
+    padding-bottom:30px;
+    font-size: $size-5;
+  }
+
+  .schedule-title{
+    text-decoration:underline;
+  }
+
+  .schedule-title span{
+    font-style:italic;
   }
 
   .event-content p{
     color: $color-tertiary;
-        font-size: $size-5;
+    font-size: $size-5;
     padding-bottom:40px;
   }
 
@@ -139,30 +168,28 @@
     margin-bottom:10px !important;
   }
 
-  .name-list li,
-  .time-list li{
-    color: $color-tertiary;
-        font-size: $size-5;
-    padding-bottom:5px;
-  }
-
-  .name-list, .time-list{
-    margin-bottom:20px;
-  }
-
-  .event-content p.copyright{
-    padding-top:40px;
-    font-size: 14px;
-  }
-
-  .journal-logos{
-    height:60px;
-    margin-right:50px;
-  }
-
   #organiser-logos{
     max-width:80%;
     width:600px;
+  }
+
+  .applyButton{
+    border-radius:4px;
+    background-color:white;
+    color:#2F2FA2 !important;
+    border:2px solid white;
+    margin-top:20px;
+    display:inline-block;
+    font-size:1.2rem !important;
+    padding:5px 10px 9px 10px;
+    &:hover{
+      background:transparent;
+      color:white !important;
+    }
+  }
+
+  .universities-list h4{
+    color:black !important;
   }
 
 </style>
