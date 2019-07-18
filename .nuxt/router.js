@@ -42,6 +42,8 @@ const _e90b287e = () => interopDefault(import('../pages/resources.vue' /* webpac
 const _3dd68a17 = () => interopDefault(import('../pages/resources_en.vue' /* webpackChunkName: "pages/resources_en" */))
 const _050949c7 = () => interopDefault(import('../pages/events/mobilitysymposium.vue' /* webpackChunkName: "pages/events/mobilitysymposium" */))
 const _1675a651 = () => interopDefault(import('../pages/events/mobilitysymposium_en.vue' /* webpackChunkName: "pages/events/mobilitysymposium_en" */))
+const _44417bb5 = () => interopDefault(import('../pages/events/summerschool.vue' /* webpackChunkName: "pages/events/summerschool" */))
+const _02f005a3 = () => interopDefault(import('../pages/events/summerschool_en.vue' /* webpackChunkName: "pages/events/summerschool_en" */))
 const _1d362626 = () => interopDefault(import('../pages/events/_event.vue' /* webpackChunkName: "pages/events/_event" */))
 const _4d7919ee = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -279,6 +281,14 @@ export function createRouter() {
       path: "/events/mobilitysymposium_en",
       component: _1675a651,
       name: "events-mobilitysymposium_en"
+    }, {
+      path: "/events/summerschool",
+      component: _44417bb5,
+      name: "events-summerschool"
+    }, {
+      path: "/events/summerschool_en",
+      component: _02f005a3,
+      name: "events-summerschool_en"
     }, {
       path: "/events/:event?",
       component: _1d362626,
