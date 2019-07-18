@@ -97,7 +97,6 @@
 				meta: [
 					{ hid: 'description', name: 'description', content: 'Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)' },
 					{ hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
-					{ hid: 'og:url', property: 'og:url',  content: "https://www.citylab-berlin.org/events/mobilitysymposium"},
 					{ hid: 'og:type', property: 'og:type',  content: "website"},
 					{ hid: 'og:title', property: 'og:title',  content: "Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)"},
 					{ hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/mobilitysymposium_social_media.jpg"},
