@@ -13,8 +13,8 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                        
-                                <span class="date-time"> {{ entry.time }} </span>                        
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
+                                <span class="date-time"> {{ entry.time }} </span>
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
@@ -39,8 +39,8 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px;" class="date-wrapper">                        
-                                <span class="date-time"> {{ entry.time }} </span>                        
+                            <div style="margin-right: 0px;" class="date-wrapper">
+                                <span class="date-time"> {{ entry.time }} </span>
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
@@ -61,14 +61,14 @@
 
 <script>
     import axios from 'axios';
-	import { 
+	import {
   		content as content
 	} from '../assets/content.js';
 
     import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 	import Matomo from '../components/Matomo.vue';
-    
+
     export default {
         components: {
 			Navigation,
@@ -117,7 +117,7 @@
 
                 this.data.sort((a,b) => { return new Date(a.date) - new Date(b.date) });
             })      
-        }, 
+        },
         methods: {
             dateIsUpcoming(date) {
                 const today = new Date();
@@ -151,11 +151,11 @@
 
     @import "../assets/style/style.scss";
 
-    .schedule { 
+    .schedule {
         // background: $color-primary--lightest;
 
         @include tablet {
-            
+
         }
 
         .event-tile {
@@ -281,6 +281,3 @@
          }
     }
 </style>
-
-
-
