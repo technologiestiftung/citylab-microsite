@@ -6,44 +6,37 @@
             <div class="container">
         <p class="event-intro">{{ eventContent[lang]['intro'] }}</p>
 
-        <h4 class="title">{{ eventContent[lang]['timeTitle'] }}</h4>
-        <ul class="time-list">
-          <li v-for="time in timeArr">
-            <strong>{{ time[0] }}</strong>
-            <span>{{ time[1] }}</span>
-          </li>
-        </ul>
-
-        <div v-for="paragraph in parArr">
-          <h4 class="title" v-if="paragraph.type === 'title'">{{ paragraph.content }}</h4>
-          <p v-if="paragraph.type === 'paragraph'" v-html="paragraph.content"></p>
+        <h3 class="title">{{ eventContent[lang]['universitiesTitle'] }}</h3>
+        <div class="universities-list">
+          <div v-for="university in universitiesArr">
+            <h4 class="title" v-html="university.title"></h4>
+            <p>{{ university.content }}</p>
+            <strong>Lead:</strong>&nbsp;<span>{{ university.lead }}</span><br />
+            <strong>Contact:</strong>&nbsp;<span><a :href="'mailto:' + university.contactMail">{{ university.contact }}</a></span>
+          </div>
         </div>
 
-        <h4 class="title">{{ eventContent[lang]['programTitle'] }}</h4>
-
-        <h5 class="title">{{ eventContent[lang]['chairTitle'] }}</h5>
-        <ul class="name-list">
-          <li v-for="chair in chairArr">
+        <h3 class="title">{{ eventContent[lang]['partnerTitle'] }}</h3>
+        <p>{{ eventContent[lang]['partnerText'] }}</p>
+        <!--<ul class="name-list">
+          <li v-for="university in universitiesArr">
             <strong>{{ chair[0] }}</strong>
             <span>{{ chair[1] }}</span>
           </li>
-        </ul>
-
-        <h5 class="title">{{ eventContent[lang]['memberTitle'] }}</h5>
-        <ul class="name-list">
-          <li v-for="member in memberArr">
-            <strong>{{ member[0] }}</strong>
-            <span>{{ member[1] }}</span>
-          </li>
-        </ul>
-
-        <img id="organiser-logos" src="https://citylab-berlin.org/images/events/summerschool-organiser-logos.svg" alt="Organisatoren" />
+        </ul>-->
 
         <div id="applyContainer">
-
-          <p class="apply">{{ eventContent[lang]['rights'] }}</p>
-
+          <h3 class="title">{{ eventContent[lang]['applyTitle'] }}</h3>
+          <p v-html="eventContent[lang]['applyText1']"></p>
+          <p v-html="eventContent[lang]['applyText2']"></p>
         </div>
+
+        <div id="locationContainer">
+          <h3 class="title">{{ eventContent[lang]['locationTitle'] }}</h3>
+          <p v-html="eventContent[lang]['locationText']"></p>
+        </div>
+
+        <img id="organiser-logos" src="https://citylab-berlin.org/images/events/summerschool-organiser-logos.svg" alt="Organisatoren" />
 
         <Matomo/>
             </div>
@@ -83,13 +76,13 @@
     },
     computed: {
       scheduleArr() {
-                return this.eventContent[this.lang].timeline
+                return this.eventContent[this.lang].schedule
             },
       universitiesArr() {
-                return this.eventContent[this.lang].paragraphs
+                return this.eventContent[this.lang].universities
             },
       partnersArr() {
-                return this.eventContent[this.lang].chairs
+                return this.eventContent[this.lang].partners
             }
         },
     head () {
