@@ -60,9 +60,9 @@ export const content = {
         },
         'resources': {
             'title': 'Ressourcen',
-            'p1': 'In diesem Abschnitt findest du praktische Informationen zum CityLAB.',
+            'p1': 'In diesem Abschnitt findest Du praktische Informationen zum CityLAB.',
             'specs_title': 'Spezifikationen',
-            'specs_p': `Wenn Sie sich insbesondere für einen unserer Räume interessieren, finden Sie weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
+            'specs_p': `Wenn Du dich insbesondere für einen unserer Räume interessierst, findest Du weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
             'specs_url': '/docs/citylab-specs-de.pdf',
             'specs_url_button': 'CityLAB Spezifikationen PDF'
         },
@@ -282,7 +282,7 @@ export const content = {
         },
         'cta': {
             'title': 'Meldet euch bei uns!',
-            'subtitle': 'Wenn Sie mit uns zusammenarbeiten oder uns erreichen möchten, besuchen Sie uns in unserem Büro oder schreiben Sie uns eine Nachricht.'
+            'subtitle': 'Wenn Du mit uns zusammenarbeiten oder uns erreichen möchtest, besuche uns in unserem Büro oder schreib uns eine Nachricht.'
         },
         'footer': {
             'contact': {
