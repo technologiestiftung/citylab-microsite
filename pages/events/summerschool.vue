@@ -10,7 +10,7 @@
         <h3 class="title">{{ eventContent[lang]['universitiesTitle'] }}</h3>
         <div class="universities-list">
           <div v-for="university in universitiesArr">
-            <img :src="'https://citylab-berlin.org/images/events/summerschoool-logo-' + university.img + '.jpg'" :alt="university.title.split(',')[0]" />
+            <img :src="'https://citylab-berlin.org/images/events/summerschool-logo-' + university.img + '.jpg'" :alt="university.title.split('<')[0]" :srcset="'https://citylab-berlin.org/images/events/summerschool-logo-' + university.img + '.jpg 1x, https://citylab-berlin.org/images/events/summerschool-logo-' + university.img + '@2x.jpg 2x'" />
             <h4 class="title" v-html="university.title"></h4>
             <p>{{ university.content }}</p>
             <strong>Lead:</strong>&nbsp;<span>{{ university.lead }}</span><br />
@@ -188,9 +188,37 @@
     }
   }
 
-  .universities-list h4{
-    color:black !important;
+  .universities-list{
+    padding-top:30px; 
+
+    h4{
+      padding-top:10px !important;
+      color:black !important;
+      margin-bottom: 0 !important;
+      padding-bottom:10px !important;
+      font-size: 24px;
+    }
+    p{
+      padding-bottom:10px;
+    }
+    &>div>strong, &>div>span{
+      font-size:1.25rem;
+    }
+    &>div{
+      padding-bottom:60px;
+    }
+    a{
+      text-decoration:underline;
+      color:black !important;
+      &:hover{
+        color:#3273dc !important;
+      }
+    }
   }
+
+  .universities-list>div{
+  }
+
 
 </style>
 
