@@ -26,6 +26,10 @@
                     <p v-if="summaryAvailable.blockTwoContent > 0" class="event-intro">{{contentBlockTwo}}</p>
                 </div>
 
+                <div v-if="logo" class="content-wrapper">
+                    <img class="logos" :src="logoUrl" alt="">
+                </div>
+
                 <div class="summary-wrapper is-medium">
                     <h4>{{dict[lang]['summary']['title']}}</h4>
 
@@ -234,7 +238,14 @@
                 },
                 socialDescription() {
                     if (this.data != null) { return this.data.gsx$socialdescription.$t } else { return }
-                }
+                },
+                logo() {
+                    if (this.data != null) { return this.data.gsx$logo.$t } else { return }
+                },
+                logoUrl() {
+                    // return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
+                    return `../images/events/${this.dirname}_logo.png`
+                },
 
             },
             methods: {
