@@ -39,7 +39,7 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px;" class="date-wrapper">
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
                                 <span class="date-time"> {{ entry.time }} </span>
                             </div>
 
@@ -153,10 +153,6 @@
 
     .schedule {
         // background: $color-primary--lightest;
-
-        @include tablet {
-
-        }
 
         .event-tile {
             transition: $time-s ease transform;

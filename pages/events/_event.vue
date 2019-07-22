@@ -243,8 +243,8 @@
                     if (this.data != null) { return this.data.gsx$logo.$t } else { return }
                 },
                 logoUrl() {
-                    // return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
-                    return `../images/events/${this.dirname}_logo.png`
+                    return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
+                    // return `../images/events/${this.dirname}_logo.png`
                 },
 
             },
