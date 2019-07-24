@@ -24,7 +24,7 @@ export const content = {
                 link: 'https://citylab-berlin.org/events/mobilitysymposium',
                 visible: true,
             }
-            
+
         ],
         'codeofconduct': {
             'title': 'Code of Conduct',
@@ -35,6 +35,18 @@ export const content = {
                 'Wenn ihr öffentliche Veranstaltungen oder Projektarbeit mit größeren Gruppen plant, haltet unbedingt im Vorfeld rechtzeitig Rücksprache mit unserer Koordination. Bitte beachtet die Sicherheits- und Brandschutzvorschriften. Ihr seid für das Verhalten eurer Gäste selbst verantwortlich.',
                 'Wir behalten uns das Recht vor, Personen, die gegen diesen Kodex verstoßen, von der Nutzung der Räume auszuschließen.'
             ]
+        },
+        'coworking': {
+          'title': 'Co-Working-Fellowships im CityLAB Berlin',
+          'subtitle': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier sind einige wissenswerte Dinge:',
+          'points': [
+              'Das CityLAB ist kein klassischer Co-Working-Space. Wir arbeiten im CityLAB projektbezogen an innovativen Lösungen für eine bessere Stadt. Für die Nutzung der Co-Working-Plätze ist es Voraussetzung, dass Du ein eigenes Projekt mit Bezug zu unseren Themenfeldern verfolgst. Falls Du noch keine eigene Projektidee hast, können wir gerne gemeinsam überlegen, wie Du Deine Fähigkeiten sinnvoll bei uns einbringen kannst.',
+              'Alle Co-Worker*innen sollen aktiv am CityLAB mitwirken. Konkret heißt das, dass Du Dein Projekt jeweils zu Beginn und Abschluss öffentlich vorstellst. Zudem wünschen wir uns, dass Du während der Projektlaufzeit einen oder mehrere Meetups oder Workshops organisierst, in denen Du anderen deine Arbeit näherbringst. Natürlich freuen wir uns, wenn Du darüber hinaus weitere Ideen hast. Unsere Konferenz-, Event- und Ausstellungsräume und die Werkstatt stehen allen Co-Worker*innen offen.',
+              'Die Nutzung des Co-Working ist kostenfrei, allerdings zeitlich auf die Dauer deines Projekts beschränkt (in der Regel zwischen einem und sechs Monate).',
+              'Wir vergeben nicht mehr Plätze, als wir haben. Trotzdem kann es vorkommen, dass die Co-Working-Plätze an einigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).',
+              'Das CityLAB ist öffentlich finanziert und gemeinnützig. Daher ist die Nutzung des Co-Working gemeinnützigen Zwecken vorbehalten.',
+          ],
+          'linktext': 'Beachte unseren <a href="http://www.citylab-berlin.org/codeofconduct" target="_blank"> Code of Conduct</a>.'
         },
         'nav': [
             {
@@ -503,6 +515,15 @@ export const content = {
             'specs_url': '/docs/citylab-specs-en.pdf',
             'specs_url_button': 'CityLAB specifications PDF'
         },
+        'coworking': {
+          'title': 'Notes on using our co-working facilities',
+          'points': [
+              'Fix this',
+              'Fix this',
+              'Fix this',
+              'Fix this',
+          ]
+      },
         'nav': [
             {
                 'name': 'Idea',
