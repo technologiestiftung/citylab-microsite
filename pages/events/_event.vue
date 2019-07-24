@@ -26,6 +26,16 @@
                     <p v-if="summaryAvailable.blockTwoContent > 0" class="event-intro">{{contentBlockTwo}}</p>
                 </div>
 
+                <div v-if="summaryAvailable.blockThreeContent > 0 || summaryAvailable.BlockThreeHeadline > 0" class="content-wrapper">
+                    <h4 v-if="summaryAvailable.blockThreeHeadline > 0" class="title">{{headlineBlockThree}}</h4>
+                    <p v-if="summaryAvailable.blockThreeContent > 0" class="event-intro">{{contentBlockThree}}</p>
+                </div>
+
+                <div v-if="summaryAvailable.blockFourContent > 0 || summaryAvailable.BlockFourHeadline > 0" class="content-wrapper">
+                    <h4 v-if="summaryAvailable.blockFourHeadline > 0" class="title">{{headlineBlockFour}}</h4>
+                    <p v-if="summaryAvailable.blockFourContent > 0" class="event-intro">{{contentBlockFour}}</p>
+                </div>
+
                 <div v-if="logo" class="content-wrapper">
                     <img class="logos" :src="logoUrl" alt="">
                 </div>
@@ -212,6 +222,18 @@
                 contentBlockTwo() {
                     if (this.data != null) { return this.data.gsx$contentblocktwo.$t } else { return }
                 },
+                headlineBlockThree() {
+                    if (this.data != null) { return this.data.gsx$headlineblockthree.$t } else { return }
+                },
+                contentBlockThree() {
+                    if (this.data != null) { return this.data.gsx$contentblockthree.$t } else { return }
+                },
+                headlineBlockFour() {
+                    if (this.data != null) { return this.data.gsx$headlineblockfour.$t } else { return }
+                },
+                contentBlockFour() {
+                    if (this.data != null) { return this.data.gsx$contentblockfour.$t } else { return }
+                },
                 registerLink() {
                     if (this.data != null) { return this.data.gsx$registerlink.$t } else { return }
                 },
@@ -277,6 +299,12 @@
 
                         this.summaryAvailable.blockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
                         this.summaryAvailable.blockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
+
+                        this.summaryAvailable.blockThreeHeadline = this.getLength(this.data.gsx$headlineblockthree.$t);
+                        this.summaryAvailable.blockThreeContent = this.getLength(this.data.gsx$contentblockthree.$t);
+
+                        this.summaryAvailable.blockFourHeadline = this.getLength(this.data.gsx$headlineblockfour.$t);
+                        this.summaryAvailable.blockFourContent = this.getLength(this.data.gsx$contentblockfour.$t);
 
                         this.summaryAvailable.registerLink = this.getLength(this.data.gsx$registerlink.$t);
                     })
