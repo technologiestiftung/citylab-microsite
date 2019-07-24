@@ -218,10 +218,12 @@
             margin-right: $spacing-l;
             display: flex;
             flex-direction: column;
+            min-width: 75px;
             justify-content: space-around;
 
             @include mobile {
                 margin-right: 15px;
+                min-width: 50px;
             }
 
             .date-time {
@@ -241,6 +243,7 @@
                 font-size: $size-4;
                 line-height: 2rem;
                 color: $color-tertiary;
+                text-align: center;
 
                 @include mobile {
                     line-height: 1.2rem;

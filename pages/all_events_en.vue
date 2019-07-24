@@ -13,7 +13,7 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px;" class="date-wrapper">                        
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                      
                                 <span class="date-time"> {{ entry.time }} </span>                        
                             </div>
 
@@ -81,6 +81,7 @@
 				content: content,
                 direct: '/all_events',
                 data: [],
+                otherEvents: content['en'].otherevents,
                 entries: null
 			}
         },
@@ -110,6 +111,12 @@
                     }
                     this.data.push(obj);
                 })
+
+                this.otherEvents.forEach(entry => {
+                    this.data.push(entry);
+                })
+                
+                this.data.sort((a,b) => { return new Date(a.date) - new Date(b.date) });
             })      
         }, 
         methods: {
@@ -141,6 +148,7 @@
     }
 </script>
 
+
 <style lang="scss">
 
     @import "../assets/style/style.scss";
@@ -169,6 +177,7 @@
 
 
         }
+
 
         .arrow-right {
             font-size: 36px;
@@ -227,6 +236,7 @@
             margin-right: $spacing-l;
             display: flex;
             flex-direction: column;
+            min-width: 70px;
             justify-content: space-around;
 
             @include mobile {
@@ -249,6 +259,7 @@
             .date-month {
                 font-size: $size-4;
                 line-height: 2rem;
+                text-align: center;
                 color: $color-tertiary;
 
                 @include mobile {

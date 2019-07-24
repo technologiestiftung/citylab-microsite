@@ -20,6 +20,7 @@
 </template>
 
 <script>
+	import pkg from '../package'
 	import { content as content } from '../assets/content.js';
 	import { links as links } from '../assets/links.js';
 

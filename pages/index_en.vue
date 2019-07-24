@@ -38,6 +38,7 @@
 
 	import axios from 'axios';
 	import { mapState } from 'vuex';
+	import pkg from '../package'
 
 	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 

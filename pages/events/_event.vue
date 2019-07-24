@@ -26,6 +26,10 @@
                     <p v-if="summaryAvailable.blockTwoContent > 0" class="event-intro">{{contentBlockTwo}}</p>
                 </div>
 
+                <div v-if="logo" class="content-wrapper">
+                    <img class="logos" :src="logoUrl" alt="">
+                </div>
+
                 <div class="summary-wrapper is-medium">
                     <h4>{{dict[lang]['summary']['title']}}</h4>
 
@@ -140,28 +144,29 @@
                     }
                 }
             },
+            
             head () {
                 return {
                     title: `${this.title} - ${this.subtitle} (${this.dateSummary}) - `,
                     meta: [
-                        { name: 'description', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)` },
-                        { property: 'fb:app_id', content: '487094758334595'},
-                        { property: 'og:url',  content:  `https://www.citylab-berlin.org/events/${this.dirname}`},
-                        { property: 'og:type',  content: "website"},
-                        { property: 'og:title',  content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)`},
-                        { property: 'og:image',  content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
-                        { property: 'og:description',  content: this.socialDescription},
-                        { property: 'og:site_name',  content: "CityLAB Berlin"},
-                        { property: 'article:author',  content: "CityLAB Berlin"},
-                        { name: 'twitter:card', content:"summary"},
-                        { name: 'twitter:site',  content: "@citylabberlin"},
-                        { name: 'twitter:creator',  content: "@citylabberlin"},
-                        { name: 'twitter:url', content: `https://www.citylab-berlin.org/events/${this.dirname}`},
-                        { name: 'twitter:title', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)`},
-                        { name: 'twitter:description', content: this.socialDescription},
-                        { name: 'twitter:image', content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
-                        { itemprop: 'name', content:this.socialDescription},
-                        { itemprop: 'image', content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
+                        { hid: 'description', name: 'description', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)` },
+                        { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
+                        { hid: 'og:url', property: 'og:url',  content:  `https://www.citylab-berlin.org/events/${this.dirname}`},
+                        { hid: 'og:type', property: 'og:type',  content: "website"},
+                        { hid: 'og:title', property: 'og:title',  content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)`},
+                        { hid: 'og:image', property: 'og:image',  content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
+                        { hid: 'og:description', property: 'og:description',  content: this.socialDescription},
+                        { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
+                        { hid: 'article:author', property: 'article:author',  content: "CityLAB Berlin"},
+                        { hid: 'twitter:card', name: 'twitter:card', content:"summary"},
+                        { hid: 'twitter:site', name: 'twitter:site',  content: "@citylabberlin"},
+                        { hid: 'twitter:creator', name: 'twitter:creator',  content: "@citylabberlin"},
+                        { hid: 'twitter:url', name: 'twitter:url', content: `https://www.citylab-berlin.org/events/${this.dirname}`},
+                        { hid: 'twitter:title', name: 'twitter:title', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)`},
+                        { hid: 'twitter:description', name: 'twitter:description', content: this.socialDescription},
+                        { hid: 'twitter:image', name: 'twitter:image', content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
+                        { hid: 'name', itemprop: 'name', content:this.socialDescription},
+                        { hid: 'image', itemprop: 'image', content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
                     ]
                 }
             },
@@ -233,7 +238,14 @@
                 },
                 socialDescription() {
                     if (this.data != null) { return this.data.gsx$socialdescription.$t } else { return }
-                }
+                },
+                logo() {
+                    if (this.data != null) { return this.data.gsx$logo.$t } else { return }
+                },
+                logoUrl() {
+                    return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
+                    // return `../images/events/${this.dirname}_logo.png`
+                },
 
             },
             methods: {

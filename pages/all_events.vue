@@ -13,8 +13,8 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                        
-                                <span class="date-time"> {{ entry.time }} </span>                        
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
+                                <span class="date-time"> {{ entry.time }} </span>
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
@@ -39,8 +39,8 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px;" class="date-wrapper">                        
-                                <span class="date-time"> {{ entry.time }} </span>                        
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
+                                <span class="date-time"> {{ entry.time }} </span>
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
@@ -61,14 +61,14 @@
 
 <script>
     import axios from 'axios';
-	import { 
+	import {
   		content as content
 	} from '../assets/content.js';
 
     import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 	import Matomo from '../components/Matomo.vue';
-    
+
     export default {
         components: {
 			Navigation,
@@ -81,7 +81,8 @@
 				content: content,
                 direct: '/all_events_en',
                 data: [],
-                entries: null
+                entries: null,
+                otherEvents: content['de'].otherevents,
 			}
         },
         computed: {
@@ -109,8 +110,14 @@
                     }
                     this.data.push(obj);
                 })
+
+                this.otherEvents.forEach(entry => {
+                    this.data.push(entry);
+                })
+
+                this.data.sort((a,b) => { return new Date(a.date) - new Date(b.date) });
             })      
-        }, 
+        },
         methods: {
             dateIsUpcoming(date) {
                 const today = new Date();
@@ -144,12 +151,8 @@
 
     @import "../assets/style/style.scss";
 
-    .schedule { 
+    .schedule {
         // background: $color-primary--lightest;
-
-        @include tablet {
-            
-        }
 
         .event-tile {
             transition: $time-s ease transform;
@@ -226,6 +229,7 @@
         .date-wrapper {
             margin-right: $spacing-l;
             display: flex;
+            min-width: 70px;
             flex-direction: column;
             justify-content: space-around;
 
@@ -235,6 +239,7 @@
 
             .date-time {
                 font-size: $size-4;
+                text-align: center;
                 line-height: 2rem;
                 color: $color-tertiary;
                 margin-right: $spacing-l;
@@ -249,6 +254,7 @@
             .date-month {
                 font-size: $size-4;
                 line-height: 2rem;
+                text-align: center;
                 color: $color-tertiary;
 
                 @include mobile {
@@ -271,6 +277,3 @@
          }
     }
 </style>
-
-
-

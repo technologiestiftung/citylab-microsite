@@ -3,7 +3,7 @@
         <section class="hero-content section is-medium">
             <h1 style="width: 100%;" class="title">{{ title }}</h1>
             <h2 style="width: 100%;" class="title" v-if="subTitle">{{ subTitle }}</h2>
-            <h3 style="width: 100%;" class="title" v-if="subSubTitle">{{ subSubTitle }}</h3>
+            <h3 style="width: 100%;" class="title" v-if="subSubTitle" v-html="subSubTitle"></h3>
         </section>
     </section>
 </template>
