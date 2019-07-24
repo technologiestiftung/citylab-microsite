@@ -7,7 +7,7 @@ export const content = {
             {
                 day: '9',
                 month: 'Sept',
-                date: '09.09.2019',
+                date: '2019-09-09',
                 format: 'Summer School',
                 time: '10-18 Uhr',
                 title: 'Data-driven Urban Innovation',
@@ -17,7 +17,7 @@ export const content = {
             {
                 day: '11',
                 month: 'Okt',
-                date: '11.10.2019',
+                date: '2019-10-11',
                 format: 'Symposium',
                 time: '10-18 Uhr',
                 title: 'Urban Mobility Symposium',
