@@ -126,8 +126,8 @@ export const content = {
                 language: 'Sprache des Newsletters',
                 mail: 'Ihre E-Mail-Adresse',
                 button: 'Anmelden',
-                agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass die Technologiestiftung Berlin mir regelmäßig Informationen zu Tätigkeiten der Technologiestiftung, stiftungsnahen Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
-                unsubscribe: 'Meine Einwilligung kann ich jederzeit hier gegenüber des CityLAB Berlin <a href="/newsletter_unsubscribe_de">widerrufen</a>.'
+                agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir regelmäßig Informationen zu den Tätigkeiten, Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
+                unsubscribe: 'Meine Einwilligung kann ich jederzeit hier gegenüber dem CityLAB Berlin <a href="/newsletter_unsubscribe_de">widerrufen</a>.'
             },
             formunsubscribe: {
                 title: 'Newsletter abmelden',
@@ -144,13 +144,13 @@ export const content = {
             'confirm': {
                 title: 'Anmeldung bestätigen',
                 subtitle: 'Vielen Dank für Ihre Anmeldung.',
-                p1: 'Sie erhalten in Kürze eine Nachricht auf der von Ihnen angegebenen E-Mail Adresse.',
+                p1: 'Sie erhalten in Kürze eine Nachricht auf die von Ihnen angegebene E-Mail Adresse.',
                 p2: 'Diese beinhaltet einen Link zur Aktivierung Ihres Abonnement.'
             },
             'unsubscribe': {
                 title: 'Abmeldung bestätigen',
                 subtitle: 'Vielen Dank für Ihre Nachricht.',
-                p1: 'Sie erhalten in Kürze eine Link auf der von Ihnen angegebenen E-Mail Adresse.',
+                p1: 'Sie erhalten in Kürze eine Link auf die von Ihnen angegebene E-Mail Adresse.',
                 p2: 'Mit diesem bestätigen Sie bitte die Kündigung Ihres Abonnements.'
             },
             'unsubscribeSuccess': {
@@ -172,7 +172,7 @@ export const content = {
                 },
                 'missinginput': {
                     title: 'Hinweis',
-                    subtitle: 'Sie haben nicht alle Pflichtfelder ausgefüllt. Bitte ergänzen Sie die fehlenden Eingaben.'
+                    subtitle: 'Sie haben nicht alle Pflichtfelder ausgefüllt. Bitte ergänzen Sie die fehlenden Angaben.'
                 },
                 'missingcaptcha': {
                     title: 'Fehler',
@@ -637,13 +637,13 @@ export const content = {
             },
             title: 'Sign up newsletter',
             urlunsubscribe: '/newsletter_unsubscribe_en',
-            mandatory: '* Mandartoy field',
+            mandatory: '* Mandatory field',
             form: {
                 name: 'Your name',
                 mail: 'Your E-Mail',
                 language: 'Language of the newsletter',
                 button: 'Subscribe',
-                agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the Technology Foundation Berlin may send me regular information on the activities of the Technology Foundation, foundation-related topics and events by e-mail in the form of a newsletter. Comprehensive information on the registration and unsubscription procedure, the mail-order company and the statistical evaluation of your data can be found in our Privacy Policy.',
+                agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the City Berlin may send me regular information on the activities of the CityLAB Berlin, related topics and events by e-mail. Comprehensive information on the registration and unsubscription procedure, the service provider and the statistical evaluation of your data can be found in our Privacy Policy.',
                 unsubscribe: 'I can revoke my consent to the CityLAB Berlin <a href="/newsletter_unsubscribe_en">here</a> at any time.'
             },
             formunsubscribe: {
@@ -661,13 +661,13 @@ export const content = {
             'confirm': {
                 title: 'Confirm subscription',
                 subtitle: 'Thank you very much for your registration.',
-                p1: 'You will shortly receive a message at the e-mail address you provided.',
+                p1: 'You will receive a message shortly to the e-mail address you provided.',
                 p2: 'This includes a link to activate your subscription.'
             },
             'unsubscribe': {
                 title: 'Confirm unsubscription',
                 subtitle: 'Thank you very much for your message.',
-                p1: 'You will shortly receive a link to the e-mail address you provided.',
+                p1: 'You will receive a link to the e-mail address you provided.',
                 p2: 'With this you confirm the cancellation of your subscription.'
             },
             'unsubscribeSuccess': {
@@ -693,7 +693,7 @@ export const content = {
                 },
                 'missingcaptcha': {
                     title: 'Error',
-                    subtitle: 'The captcha you entered was unfortunately not correct. Please try again.'
+                    subtitle: 'The captcha you entered was not correct. Please try again.'
                 },
             }
         },
