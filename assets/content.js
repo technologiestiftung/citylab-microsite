@@ -535,15 +535,6 @@ export const content = {
             'coworking_url': '/coworking_en',
             'coworking_url_button': 'Co-working',
         },
-        'coworking': {
-          'title': 'Notes on using our co-working facilities',
-          'points': [
-              'Fix this',
-              'Fix this',
-              'Fix this',
-              'Fix this',
-          ]
-      },
         'nav': [
             {
                 'name': 'Idea',
