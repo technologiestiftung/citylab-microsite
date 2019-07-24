@@ -12,8 +12,8 @@
 
 				<ol>
 					<li style="margin-bottom: 20px;" v-for="point in pointsArr">{{point}}</li>
-          <li v-html="content[lang]['coworking']['linktext']"> </li>
-        </ol>
+          			<li v-html="content[lang]['coworking']['linktext']"> </li>
+        		</ol>
 
 				<Matomo/>
             </div>

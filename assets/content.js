@@ -87,7 +87,11 @@ export const content = {
             'specs_title': 'Spezifikationen',
             'specs_p': `Wenn Du dich insbesondere für einen unserer Räume interessierst, findest Du weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
             'specs_url': '/docs/citylab-specs-de.pdf',
-            'specs_url_button': 'CityLAB Spezifikationen PDF'
+            'specs_url_button': 'CityLAB Spezifikationen PDF',
+            'coworking_title': 'Co-Working-Fellowships',
+            'coworking_p': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:',
+            'coworking_url': '/coworking',
+            'coworking_url_button': 'Co-working',
         },
         'missionStatement': {
             'title': 'Unsere Mission',
@@ -507,13 +511,29 @@ export const content = {
                 'We reserve the right to exclude persons who violate this code from the use of the rooms.'
             ]
         },
+        'coworking': {
+            'title': 'Co-Working-Fellowships im CityLAB Berlin',
+            'subtitle': `You're interested in using one of one of the co-working spots available in the CityLAB? Great! Here's what you need to know:`,
+            'points': [
+                `The CityLAB is not a classic co-working space. Here, we do project-based work that is specifically focused on creating a better city. As such, we are specifically looking for co-workers who are already working on a project relevant to our areas of focus. If you don't have a project of your own, we're also happy to discuss with you how you might be able to put your skills to use within the lab.`,
+                `We expect CityLAB co-workers to be active, engaged members of the lab. Specifically, we'd like for our co-workers to present their projects in a public event at both the start and end of their time with us. We're also hoping you'll use our spaces to organize workshops or meetups during the length of your project to make your work accessible to a wider audience. We're of course open to any ideas you have, and in general, CityLAB co-workers have free usage of all of our rooms (including the conference room, the event room, the workshop and the exhibition space).`,
+                `Usage of a co-working spot is free, but the length is limited to the lifespan of your project (we're envisioning typically one to six months).`,
+                `We're only giving out as many spaces as we have available, but it's still possible that at times the co-working spaces will be inaccessible (e.g., due to an event).`,
+                `The CityLAB is a non-profit, publicly-funded organization, and usage of it should be consistent with these principles.`,
+            ],
+            'linktext': `We expect everyone in the CityLAB to adhere to our <a href="http://www.citylab-berlin.org/codeofconduct_en" target="_blank"> Code of Conduct</a>.`
+          },
         'resources': {
             'title': 'Resources',
             'p1': 'At this section you find practical information regarding the CityLAB Berlin.',
             'specs_title': 'Specifications',
             'specs_p': `If you're interested in one of our spaces in particular, find more details about room sizes and available equipment in the data sheet below:`,
             'specs_url': '/docs/citylab-specs-en.pdf',
-            'specs_url_button': 'CityLAB specifications PDF'
+            'specs_url_button': 'CityLAB specifications PDF',
+            'coworking_title': 'Co-Working-Fellowships',
+            'coworking_p': 'You want to use a co-working place in CityLAB? Here you will find the most important information:',
+            'coworking_url': '/coworking_en',
+            'coworking_url_button': 'Co-working',
         },
         'coworking': {
           'title': 'Notes on using our co-working facilities',

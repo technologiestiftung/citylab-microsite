@@ -198,7 +198,7 @@
                 }
 
                 .logo-type-italic {
-                    margin-top: 3px;
+                    margin-top: 2px;
                     color: $color-primary !important;
                     transition: color .15s ease;
                 }
@@ -254,6 +254,7 @@
                 line-height: 90%;
 
                 &-italic {
+                    margin-top: 2px;
                     margin-left: 5px;
                     color: $white;
                     font-weight: 800;

@@ -14,12 +14,22 @@
 				<h3 class="title is-5">
 					{{ content[lang]['resources']['specs_title'] }}
 				</h3>
-
 				<div class="content">
 					{{ content[lang]['resources']['specs_p'] }}
 				</div>
-
 				<a :href="content[lang]['resources']['specs_url']" class="button is-color-secondary is-normal">{{ content[lang]['resources']['specs_url_button'] }}</a>	
+
+				<br><br><br>
+
+				<h3 class="title is-5">
+					{{ content[lang]['resources']['coworking_title'] }}
+				</h3>
+				<div class="content">
+					{{ content[lang]['resources']['coworking_p'] }}
+				</div>
+				<a :href="content[lang]['resources']['coworking_url']" class="button is-color-secondary is-normal">{{ content[lang]['resources']['coworking_url_button'] }}</a>	
+
+				<br><br><br>
 
 				<Matomo/>
             </div>
