@@ -126,7 +126,7 @@
                             <img :src="`${content[lang]['footer']['funding']['svg_tsb']}`" alt="">
                         </a>
 
-                        <span> {{ content[lang]['footer']['funding']['text_sen'] }}</span>
+                        <span v-if="content[lang]['footer']['funding']['text_sen'].length > 0"> {{ content[lang]['footer']['funding']['text_sen'] }}</span>
 
                         <a
                         class="flex flex-row m-b-sm logo"
