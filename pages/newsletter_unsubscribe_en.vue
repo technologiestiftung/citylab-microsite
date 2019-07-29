@@ -9,7 +9,7 @@
 
                 <h2 class="subtitle">{{ content[lang]['register']['formunsubscribe']['p1'] }}</h2>
             
-                <form class="layout_form cr_form cr_font" action="https://eu1.cleverreach.com/f/82637-208290/wcu/" method="post" target="_blank">
+                <form class="layout_form cr_form cr_font" action="https://eu1.cleverreach.com/f/82637-209077/wcu/" method="post" target="_blank">
                     <div class="cr_body cr_page cr_font formbox">
                         <div class="non_sortable" style="text-align:left;"></div>
                         
