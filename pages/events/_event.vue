@@ -36,7 +36,7 @@
                     <p v-if="summaryAvailable.blockFourContent > 0" class="event-intro">{{contentBlockFour}}</p>
                 </div>
 
-                <div v-if="logo == 'true'" class="content-wrapper">
+                <div v-if="logo == 'TRUE'" class="content-wrapper">
                     <img class="logos" :src="logoUrl" alt="">
                 </div>
 
