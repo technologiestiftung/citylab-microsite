@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="column is-3">
-                                                <h6 class="title is-4">
+                        <h6 class="title is-4" style="opacity: 0;">
                             {{ content[lang]['footer']['funding']['title'] }}
                         </h6>
 
