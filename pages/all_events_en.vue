@@ -6,7 +6,7 @@
                 <h1 style="margin-top: 100px" class="title">{{content[this.lang]['events']['upcomingEventsTitle']}}</h1>
 
                 <div class="schedule-wrapper">
-                    <a class="event-tile" v-if="entry.visible != 'FALSE' && dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in data">
+                    <a class="event-tile" v-if="entry.visible != 'FALSE' && dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in dataUpcoming">
                         <article class="dates-item" style="width: 100%;">
                             <div class="date-wrapper">
                                 <span class="date-month"> {{ entry.month }} </span>
@@ -32,7 +32,7 @@
                 <h1 style="margin-top: 100px" class="title">{{content[this.lang]['events']['pastEventsTitle']}}</h1>
 
                 <div class="schedule-wrapper">
-                    <a class="event-tile" v-if="entry.visible != 'FALSE' && !dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in data">
+                    <a class="event-tile" v-if="entry.visible != 'FALSE' && !dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in dataPast">
                         <article class="dates-item" style="width: 100%;">
                             <div class="date-wrapper">
                                 <span class="date-month"> {{ entry.month }} </span>
@@ -81,6 +81,8 @@
 				content: content,
                 direct: '/all_events',
                 data: [],
+                dataUpcoming: null,
+                dataPast: null,
                 otherEvents: content['en'].otherevents,
                 entries: null
 			}
@@ -115,8 +117,11 @@
                 this.otherEvents.forEach(entry => {
                     this.data.push(entry);
                 })
+
+                this.dataUpcoming = this.data;
                 
-                this.data.sort((a,b) => { return new Date(a.date) - new Date(b.date) });
+                this.dataPast = JSON.parse(JSON.stringify(this.data));
+                this.dataPast.sort((a,b) => { return new Date(b.date) - new Date(a.date) });
             })      
         }, 
         methods: {
