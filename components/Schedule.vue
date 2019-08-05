@@ -102,33 +102,27 @@
             }
         },
         mounted() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1uAHt2suCPt1JMYhdG-t-uqPuxNa7QFEH-1zWiE0f2Ds/od6/public/values?alt=json`)
-                .then((res) => {
-                    let entries = res.data.feed.entry;
-
-                    console.log(entries);
-
-                    // this.entries = entries;
-
-                    // entries.forEach(entry => {
-                    //     let obj = {
-                    //         format: entry.gsx$format.$t,
-                    //         dirname: entry.gsx$dirname.$t,
-                    //         date: entry.gsx$date.$t,
-                    //         day: this.getDay(entry.gsx$date.$t),
-                    //         month: this.getMonth(entry.gsx$date.$t),
-                    //         time: entry.gsx$datetime.$t,
-                    //         title: entry.gsx$eventname.$t,
-                    //         link: this.createEventLink(entry.gsx$dirname.$t),
-                    //         visible: entry.gsx$visible.$t,
-
-                    //     }
-                    //     this.data.push(obj);
-                    // })
-                    // this.data = this.data.filter(event => { return this.dateIsUpcoming(event.date) });
-                    // this.data = this.data.sort((a,b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() });
-
-                })      
+            axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
+            .then((res) => {
+                let entries = res.data.feed.entry;
+                this.entries = entries;
+                entries.forEach(entry => {
+                    let obj = {
+                        format: entry.gsx$format.$t,
+                        dirname: entry.gsx$dirname.$t,
+                        date: entry.gsx$date.$t,
+                        day: this.getDay(entry.gsx$date.$t),
+                        month: this.getMonth(entry.gsx$date.$t),
+                        time: entry.gsx$datetime.$t,
+                        title: entry.gsx$eventname.$t,
+                        link: this.createEventLink(entry.gsx$dirname.$t),
+                        visible: entry.gsx$visible.$t,
+                    }
+                    this.data.push(obj);
+                })
+                this.data = this.data.filter(event => { return this.dateIsUpcoming(event.date) });
+                this.data = this.data.sort((a,b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() });
+            })     
         }
 
     }
