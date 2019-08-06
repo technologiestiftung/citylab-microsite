@@ -1,11 +1,11 @@
 <template>
     <div>
         <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" :languageVisible="false" />
-        <HeroLight 
-            :image="heroImageUrl" 
-            :title="title" 
-            :subTitle="subtitle" 
-            :subSubTitle="subsubtitle" 
+        <HeroLight
+            :image="heroImageUrl"
+            :title="title"
+            :subTitle="subtitle"
+            :subSubTitle="subsubtitle"
         />
 
         <section class="section is-medium event-content">
@@ -30,7 +30,9 @@
                     <h4 v-if="summaryAvailable.blockThreeHeadline > 0" class="title">{{headlineBlockThree}}</h4>
                     <p v-if="summaryAvailable.blockThreeContent > 0" class="event-intro">{{contentBlockThree}}</p>
                 </div>
-
+                <div v-if="image" class="content-wrapper">
+                    <img class="recap-image" :src="imgUrl" alt="">
+                </div>
                 <div v-if="summaryAvailable.blockFourContent > 0 || summaryAvailable.BlockFourHeadline > 0" class="content-wrapper">
                     <h4 v-if="summaryAvailable.blockFourHeadline > 0" class="title">{{headlineBlockFour}}</h4>
                     <p v-if="summaryAvailable.blockFourContent > 0" class="event-intro">{{contentBlockFour}}</p>
@@ -84,8 +86,8 @@
 
             </div>
 
-        </section>   
-        <Footer :lang="lang" :content="getContent"/> 
+        </section>
+        <Footer :lang="lang" :content="getContent"/>
 
     </div>
 </template>
@@ -96,10 +98,10 @@
     import Footer from '../../components/Footer.vue';
     import axios from 'axios';
 
-	import { 
+	import {
   		content as content
     } from '../../assets/content.js'
-    
+
 
     export default {
             validate({ params, query, store }) {
@@ -107,7 +109,7 @@
                 return false // will stop Nuxt.js to render the route and display the error page
             },
             async asyncData ({ params, error, payload }) {
-                return { 
+                return {
                     dirname: params.event,
                     data: null,
                     lang: 'en',
@@ -154,7 +156,7 @@
                     }
                 }
             },
-            
+
             head () {
                 return {
                     title: `${this.title} - ${this.subtitle} (${this.dateSummary}) - `,
@@ -261,6 +263,14 @@
                 socialDescription() {
                     if (this.data != null) { return this.data.gsx$socialdescription.$t } else { return }
                 },
+                image() {
+                    if (this.data != null) { return this.data.gsx$image.$t } else { console.log("image not found"); return }
+
+                },
+                imgUrl() {
+                    return `https://citylab-berlin.org/images/events/${this.dirname}_img.png`
+
+                },
                 logo() {
                     if (this.data != null) { return this.data.gsx$logo.$t } else { return }
                 },
@@ -325,8 +335,8 @@
     .flex-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;    
-        
+        flex-wrap: wrap;
+
         span {
             font-size: $size-5;
         }
@@ -346,7 +356,7 @@
         margin-top: 5px;
         display: inline-block;
     }
-    
+
     .summary-wrapper {
         color: white;
         margin-bottom: 50px;
@@ -414,7 +424,7 @@
     .content-wrapper {
         padding-bottom: 0;
     }
-    
+
 
 	h5.title{
 		color: $color-secondary !important;
