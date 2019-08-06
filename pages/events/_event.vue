@@ -13,27 +13,27 @@
 
                 <div v-if="summaryAvailable.introHeadline > 0 || summaryAvailable.introContent > 0" class="content-wrapper">
                     <h4 v-if="summaryAvailable.introHeadline > 0" class="title">{{headlineIntro}}</h4>
-                    <p v-if="summaryAvailable.introContent > 0" class="event-intro">{{contentIntro}}</p>
+                    <p v-html="contentIntro" v-if="summaryAvailable.introContent > 0" class="event-intro"></p>
                 </div>
 
                 <div  v-if="summaryAvailable.blockOneContent > 0 || summaryAvailable.BlockOneHeadline > 0" class="content-wrapper">
                     <h4 v-if="summaryAvailable.blockOneHeadline > 0" class="title">{{headlineBlockOne}}</h4>
-                    <p v-if="summaryAvailable.blockOneContent > 0" class="event-intro">{{contentBlockOne}}</p>
+                    <p v-html="contentBlockOne" v-if="summaryAvailable.blockOneContent > 0" class="event-intro"></p>
                 </div>
 
                 <div v-if="summaryAvailable.blockTwoContent > 0 || summaryAvailable.BlockTwoHeadline > 0" class="content-wrapper">
                     <h4 v-if="summaryAvailable.blockTwoHeadline > 0" class="title">{{headlineBlockTwo}}</h4>
-                    <p v-if="summaryAvailable.blockTwoContent > 0" class="event-intro">{{contentBlockTwo}}</p>
+                    <p v-html="contentBlockTwo" v-if="summaryAvailable.blockTwoContent > 0" class="event-intro"></p>
                 </div>
 
                 <div v-if="summaryAvailable.blockThreeContent > 0 || summaryAvailable.BlockThreeHeadline > 0" class="content-wrapper">
                     <h4 v-if="summaryAvailable.blockThreeHeadline > 0" class="title">{{headlineBlockThree}}</h4>
-                    <p v-if="summaryAvailable.blockThreeContent > 0" class="event-intro">{{contentBlockThree}}</p>
+                    <p v-html="contentBlockThree" v-if="summaryAvailable.blockThreeContent > 0" class="event-intro"></p>
                 </div>
 
                 <div v-if="summaryAvailable.blockFourContent > 0 || summaryAvailable.BlockFourHeadline > 0" class="content-wrapper">
                     <h4 v-if="summaryAvailable.blockFourHeadline > 0" class="title">{{headlineBlockFour}}</h4>
-                    <p v-if="summaryAvailable.blockFourContent > 0" class="event-intro">{{contentBlockFour}}</p>
+                    <p v-html="contentBlockFour" v-if="summaryAvailable.blockFourContent > 0" class="event-intro"></p>
                 </div>
 
                 <div v-if="logo == 'TRUE'" class="content-wrapper">
@@ -345,6 +345,19 @@
         line-height: 20px;
         margin-top: 5px;
         display: inline-block;
+    }
+
+    p {
+        a {
+            color: #393A60 !important;
+            text-decoration: underline;
+            transition: opacity .25s ease-in-out;
+
+            &:hover {
+                opacity: .5;
+                transition: opacity .25s ease-in-out;
+            }
+        }
     }
     
     .summary-wrapper {
