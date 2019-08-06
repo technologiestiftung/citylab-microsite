@@ -118,6 +118,7 @@
                 })
 
                 this.dataUpcoming = this.data;
+                this.dataUpcoming.sort((a,b) => { return new Date(a.date) - new Date(b.date) });
                 
                 this.dataPast = JSON.parse(JSON.stringify(this.data));
                 this.dataPast.sort((a,b) => { return new Date(b.date) - new Date(a.date) });
