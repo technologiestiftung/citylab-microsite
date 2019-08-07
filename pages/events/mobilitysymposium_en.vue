@@ -23,6 +23,12 @@
 					For the ordering of tickets we use Eventbrite. For the ordering eventbrite's <a href="https://www.eventbrite.com/l/LegalTerms/">legal terms</a>, <a href="https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy?lg=en_US">privacy policy</a> and <a href="https://www.eventbrite.co.uk/support/articles/en_US/Troubleshooting/eventbrite-cookie-policy?lg=en_GB">cookie policy</a> applies.
 				</div>
 
+				<style>
+					#eventbrite-widget-container-68243631539 iframe{
+						height:100% !important;
+					}
+				</style>
+
 				<div id="eventbrite-widget-container-68243631539"></div>
 
 				<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
