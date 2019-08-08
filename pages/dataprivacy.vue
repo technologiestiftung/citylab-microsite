@@ -189,6 +189,17 @@
 
 				<p class="content" v-html="content[lang]['dataprivacy']['thirds']['p4']"></p>
 
+				<h3 class="title is-5" style="margin-bottom: 5px">
+					{{ content[lang]['dataprivacy']['eventbrite']['title'] }}
+				</h3>
+
+				<p class="content" v-html="content[lang]['dataprivacy']['eventbrite']['p1']"></p>
+
+				<p class="content" v-html="content[lang]['dataprivacy']['eventbrite']['p2']"></p>
+
+				<p class="content" v-html="content[lang]['dataprivacy']['eventbrite']['p3']"></p>
+
+				<p class="content" v-html="content[lang]['dataprivacy']['eventbrite']['p4']"></p>
 				
             </div>
 			<Matomo/>
