@@ -475,6 +475,13 @@ export const content = {
                 'ul1': '<li>Kontaktformular Power Mail für die Bestellung der Hacking Box und beim Projekt Digitale Entwicklung des Kulturbereichs</li><li>Open-Street-Map-Karte zur Information über die Anfahrt sowie zur geografischen Verortung von Projekten</li><li>Juicer für einen Social-Media-Feed auf www.codingklassenfahrt.de (siehe 3.2)</li><li>YouTube-Video-Einbindung auf www.codingklassenfahrt.de&nbsp;(siehe 3.2) und www.kultur-b-digtal.de (siehe 3.4)</li>',
                 'p3': 'Durch Nutzung des <b>Power-Mail-Formular</b>s, das eine Extention unseres Content Managementsystems typo3 darstellt und von uns für die Bestellung der Hacking Box angeboten wird, geben Sie uns die Einwilligung nach Art.6 Abs. 1 Lit.A DSGVO, Ihre Daten für den Zweck der Ausleihe zu verarbeiten. Die Daten werden ausschließlich auf unserem Server verarbeitet und von uns genutzt. Nach Ende des Verleihvorgangs werden die Daten gelöscht.',
                 'p4': 'Um Ihnen die Anfahrt zu unseren Geschäftsräumen zu erleichtern und um Ihnen an anderen Stellen eine Ortung unserer Projekte zu bieten, haben wir <b>Open-Street-Map-Karten</b> in unseren Auftritt eingebunden. Hierfür nutzen wir das Application Programming Interface Open Layers. Die Verbindung läuft direkt über unserer Content Managementsystem und übermittelt keine persönlichen Daten an Dritte.&nbsp;'
+            },
+            'eventbrite': {
+                'title': '2.7 Eventbrite',
+                'p1': 'Für die Registrierung von Teilnehmer*innen nutzen wir den Anbieter Eventbrite Inc., Delaware, 155 5th Street, Floor 7, San Francisco, CA 94103, USA. Mit der Registrierung für eine unserer Veranstaltungen übermitteln Sie Ihren Vor- und Nachnamen, Telefonnummer, E-Mail-Adresse und Postanschrift an den Anbieter. Der Anbieter sendet Ihnen im Anschluss eine E-Mail zur Bestätigung Ihrer Buchung.',
+                'p2': 'Mit der Anmeldung speichert Eventbrite neben den oben genannten Daten die Veranstaltung für die Sie sich registriert haben, inkl. der geplanten Ausführungszeit (Datum, Uhrzeit) sowie den Zeitpunkt der Registrierung (Datum, Uhrzeit).',
+                'p3': 'Es besteht kein Vertrag zur Auftragsdatenverarbeitung mit Eventbrite, da aktuell lediglich ein Datenverarbeitungsnachtrag (DVN) für Auftragsverarbeiter und Unterauftragsverarbeiter angeboten wird (einzusehen unter: https://www.eventbrite.de/support/articles/de/Troubleshooting/datenverarbeitungsnachtrag-fuer-auftragsverarbeiter-und-unterauftragsverarbeiter?lg=de).',
+                'p4': 'Eine Übersicht über die Unternehmensrichtlinien von Eventbrite finden Sie unter https://www.eventbrite.de/l/LegalTerms/'
             }
         },
     },
