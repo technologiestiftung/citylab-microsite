@@ -5,7 +5,7 @@
                 {{ content[lang]['team']['title'] }}
             </h2>
 
-            <div class="tile is-ancestor wrap fourPerRow team-wrapper">
+            <div class="tile wrap team-wrapper">
                 <div v-for="person in teamArr" class="tile is-parent fourth">
                     <article class="tile is-child">
                         <figure class="image is 1by1">
