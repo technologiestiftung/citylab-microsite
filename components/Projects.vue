@@ -4,21 +4,27 @@
                 <h2 class="title">{{this.content[this.lang].projects.title}}</h2>
 
                 <div class="tile wrap team-wrapper">
-                    <a v-for="project in data" :href="`./project/${project.dirname}`">
-                        <div class="tile is-parent third">
-                            <article class="tile is-child">
-                                <figure class="image is 1by1">
-                                    <img :src="imageUrl">
-                                </figure>
-                                <div class="wrapper-details">
-                                    <p class="name">{{ project.name }}</p>
-                                    <p class="title">{{ project.subline }}</p>
-                                </div>
-                            </article>
+                        <div v-if="i < 3" class="tile third" v-for="(project,i) in data">
+                            <a :href="`./projects/${project.dirname}`">
+                                <article>
+                                    <figure class="image is 1by1">
+                                        <img class="project-img" :src="`https://citylab-berlin.org/images/projects/${project.dirname}_tile.png`">
+                                    </figure>
+                                    <div class="wrapper-details">
+                                        <p class="name">{{ project.name }}</p>
+                                        <p class="title">{{ project.subline }}</p>
+                                    </div>
+                                </article>
+                            </a>    
                         </div>
-                    </a>
                 </div>
+
+                <nuxt-link style="margin-top: 30px;" class="button is-color-secondary  is-normal" :to="directAllProjects">
+                    {{ lang ==  'de' ? 'Alle Projekte' : 'All projects' }}
+                </nuxt-link>
+
             </div>
+
         </section>
 
 </template>
@@ -36,19 +42,28 @@
             imageUrl() {
                 return `https://citylab-berlin.org/images/projects/${this.dirname}_tile.png`
             },
+            directAllProjects() {
+                return this.directs[this.lang]['all'];
+            }
         },
         data() {
             return {
                 entries: null,
-                data: []
+                data: [],
+                directs: {
+                    de: {
+                        all: '/all_projects',
+                    },
+                    en: {
+                        all: '/all_projects_en',
+                    }
+                }
             }
         },
         created() {
             axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/od6/public/values?alt=json`)
             .then((res) => {
                 let entries = res.data.feed.entry;
-
-                console.log(entries);
 
                 this.entries = entries;
 
@@ -63,29 +78,101 @@
                     this.data.push(obj);
 
                 })
-                console.log(this.data);
             })
         }
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
     @import "../assets/style/style.scss";
 
-    .tile.third {
-        flex: 0 0 100% !important;
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    figure {
+        position: relative;
+    }
+
+    a > article {
+        background: $color-primary--lightest;
+        overflow: auto;
+        transition: all .25s ease-in-out;
+
+        &:hover {
+            background: $color-primary--light;
+            transition: all .25s ease-in-out;
+        }
+    }
+
+    .team-wrapper {
+        display: flex !important;
+    }
+
+    .content-block {
+        font-size: $size-6;
+        width: 33%;
+        margin-top: 20px;
+
+        a {
+            color: white;
+            opacity: .5;
+        }
+
+        h5 {
+            margin-bottom: -3px;
+        }
+
+        @include tablet-only {
+            width: 50%;
+        }
 
         @include mobile {
-            flex: 0 0 50% !important;
+            width: 100%;
         }
 
-        @include tablet {
-            flex: 0 0 50% !important;
+        span.summary-text {
+            color: white;
+            opacity: .5;
+            font-size: 16px;
+        }
+    }
+
+    .tile {
+        align-items: stretch;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        .wrapper-details {
+            margin: 15px;
+
+            p.title {
+                margin-bottom: 0px;
+                color: rgba(47, 47, 162, 0.5);
+                font-weight: normal;
+                font-size: 1rem;
+                margin-bottom: 0px !important;
+            }
         }
 
-        @include desktop {
-            flex: 0 0 33% !important;
+        &.third {
+
+            padding: 10px;
+            flex: 0 0 100% !important;
+
+            @include mobile {
+                flex: 0 0 50% !important;
+            }
+
+            @include tablet {
+                flex: 0 0 50% !important;
+            }
+
+            @include desktop {
+                flex: 0 0 33% !important;
+            }
         }
     }
 </style>

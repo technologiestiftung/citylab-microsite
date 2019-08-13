@@ -92,6 +92,10 @@ export const content = {
             'coworking_p': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:',
             'coworking_url': '/coworking',
             'coworking_url_button': 'Co-working',
+            'board_title': 'Beirat',
+            'board_p': 'Hier findest du eine Übersicht zu allen Beiratsmitgliedern:',
+            'board_url': '/board',
+            'board_url_button': 'Übersicht Beirat',
         },
         'missionStatement': {
             'title': 'Unsere Mission',
@@ -241,6 +245,47 @@ export const content = {
                 'img_url': 'images/topic_05_blue.jpg'
             },
         ],
+        'board': {
+            title: 'Beirat',
+            text: 'Dies ist eine Übersicht des Beirats.',
+            'member': [
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+            ]
+        },
         'call': {
             'title': 'Open Call',
             'opencall': 'Du hast Ideen für eine bessere Stadt? Mach mit im CityLAB!',
@@ -544,6 +589,10 @@ export const content = {
             'coworking_p': 'You want to use a co-working place in CityLAB? Here you will find the most important information:',
             'coworking_url': '/coworking_en',
             'coworking_url_button': 'Co-working',
+            'board_title': 'Advisory Board',
+            'board_p': 'Find a detailed list of the members of the advisory board here:',
+            'board_url': '/board_en',
+            'board_url_button': 'Advisory Board',
         },
         'nav': [
             {
@@ -748,6 +797,46 @@ export const content = {
         },
         projects: {
             title: 'Projects'
+        },
+        'board': {
+            title: 'Advisory board',
+            'member': [
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+                {
+                    'name': 'Benjamin Seibel',
+                    'title': 'Director',
+                    'img_url': '../images/board/benjamin_portrait.jpg'
+                },
+            ]
         },
         'team': {
             'title': 'The team',

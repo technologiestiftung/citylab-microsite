@@ -266,7 +266,6 @@
                 },
                 logoUrl() {
                     return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
-                    // return `../images/events/${this.dirname}_logo.png`
                 },
 
             },

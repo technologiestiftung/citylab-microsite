@@ -33,6 +33,16 @@
 
 				<br><br><br>
 
+				<h3 class="title is-5">
+					{{ content[lang]['resources']['board_title'] }}
+				</h3>
+				<div class="content">
+					{{ content[lang]['resources']['board_p'] }}
+				</div>
+				<a :href="content[lang]['resources']['board_url']" class="button is-color-secondary is-normal">{{ content[lang]['resources']['board_url_button'] }}</a>	
+
+				<br><br><br>
+
 				<Matomo/>
             </div>
         </section>
