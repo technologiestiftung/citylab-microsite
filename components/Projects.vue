@@ -5,7 +5,7 @@
 
                 <div class="tile wrap team-wrapper">
                         <div v-if="i < 3" class="tile third" v-for="(project,i) in data">
-                            <a :href="`./projects/${project.dirname}`">
+                            <a :href="`./${directProject}/${project.dirname}`">
                                 <article>
                                     <figure class="image is 1by1">
                                         <img class="project-img" :src="`https://citylab-berlin.org/images/projects/${project.dirname}_tile.png`">
@@ -44,6 +44,12 @@
             },
             directAllProjects() {
                 return this.directs[this.lang]['all'];
+            },
+            directProject() {
+                return this.directs[this.lang]['projects'];
+            },
+            sheetId() {
+                return this.directs[this.lang]['sheetId'];
             }
         },
         data() {
@@ -53,15 +59,19 @@
                 directs: {
                     de: {
                         all: '/all_projects',
+                        projects: 'projects',
+                        sheetId: 1
                     },
                     en: {
                         all: '/all_projects_en',
+                        projects: 'projects_en',
+                        sheetId: 2
                     }
                 }
             }
         },
         created() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/od6/public/values?alt=json`)
+            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/${this.sheetId}/public/values?alt=json`)
             .then((res) => {
                 let entries = res.data.feed.entry;
 
