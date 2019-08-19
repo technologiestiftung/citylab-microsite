@@ -241,7 +241,7 @@ export const content = {
                 'img_url': 'images/topic_05_blue.jpg'
             },
         ],
-        'projects': {
+        'call': {
             'title': 'Open Call',
             'opencall': 'Du hast Ideen für eine bessere Stadt? Mach mit im CityLAB!',
             'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
@@ -259,6 +259,9 @@ export const content = {
                 'ein Meetup, einen Workshop oder eine Veranstaltung bei uns durchführen?',
                 'unsere Werkstatt nutzen oder vorübergehend einen festen Co-Working-Platz bei uns?'
             ]
+        },
+        projects: {
+            title: 'Projekte'
         },
         'team': {
             'title': 'Team',
@@ -724,7 +727,7 @@ export const content = {
                 }
             ]
         },
-        'projects': {
+        'call': {
             'title': 'Open Call',
             'opencall': 'You\'ve got an idea for how you\'d design a better city using CityLAB resources? Join in and let us know your ideas!',
             'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
@@ -742,6 +745,9 @@ export const content = {
                 'hold a Meetup, Workshop or Event with us?',
                 'use our workshop or temporarily a permanent co-working place with us?'
             ]
+        },
+        projects: {
+            title: 'Projects'
         },
         'team': {
             'title': 'The team',

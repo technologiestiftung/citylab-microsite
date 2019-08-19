@@ -82,8 +82,6 @@
 
                 const upcoming = today.getTime() <= eventDate.getTime();
 
-                console.log(upcoming, eventDate, today)
-
                 return upcoming;
             },
             getDay(date) {
@@ -193,7 +191,6 @@
                     line-height: 1.2rem;
                 }
             }
-
 
             .format {
                 opacity: .5;
