@@ -101,12 +101,12 @@
       return {
         title: 'Summer School 2019 - Data-driven Urban Innovation',
         meta: [
-          { hid: 'description', name: 'description', content: 'Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-20 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-19 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
           { hid: 'og:title', property: 'og:title',  content: "Summer School 2019 - Data-driven Urban Innovation"},
           { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/summerschool_social_media.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-20 - CityLAB Berlin)"},
+          { hid: 'og:description', property: 'og:description',  content: "Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-19 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
           { hid: 'article:author', property: 'article:author',  content: "Sebastian Meier"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
@@ -114,10 +114,10 @@
           { hid: 'twitter:creator', name: 'twitter:creator',  content: "@seb_meier"},
           { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/summerschool"},
           { hid: 'twitter:title', name: 'twitter:title', content: "Summer School 2019 - Data-driven Urban Innovation"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-20 - CityLAB Berlin)"},
+          { hid: 'twitter:description', name: 'twitter:description', content: "Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-19 - CityLAB Berlin)"},
           { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/summerschool_social_media.jpg"},
           { hid: 'name', itemprop: 'name', content:"Summer School 2019 - Data-driven Urban Innovation"},
-          { hid: 'description', itemprop: 'description', content: "Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-20 - CityLAB Berlin)"},
+          { hid: 'description', itemprop: 'description', content: "Summer School 2019 - Data-driven Urban Innovation (2019-9-9 to 2019-9-19 - CityLAB Berlin)"},
           { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/summerschool_social_media.jpg"},
         ]
       }
