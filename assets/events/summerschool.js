@@ -25,7 +25,7 @@ export const content = {
       {'time': '2019-9-17', 'day': 'Tuesday', 'title': 'Practical workshops & project work','content': ['Prototyping, Cloud Services, Physical Computing, etc.']},
       {'time': '2019-9-18', 'day': 'Wednesday', 'title': 'Production day','content': ['Finalizing projects for inclusion in the CityLAB exhibition']},
       {'time': '2019-9-19', 'day': 'Thursday', 'title': '4pm - Presentation','content': ['Public presentation of the projects']},
-      {'time': '2019-9-19', 'day': 'Friday', 'title': 'Global Climate Strike','content': ['']}
+      {'time': '2019-9-20', 'day': 'Friday', 'title': 'Global Climate Strike','content': ['']}
     ],
     'applyTitle':'Apply for the summer school',
     'applyText1':'If you are connected to one of the university groups listed above, please get in touch with the corresponding contact person. If not, you can apply directly to be part of this year\'s summer school, for more information see below.',
