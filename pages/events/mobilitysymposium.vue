@@ -8,10 +8,10 @@
 
         <h4 class="title">Vorläufiges Programm</h4>
 
-        <ul>
+        <ul id="program">
           <li v-for="item in program">
 						<strong>{{ item.time }}</strong>
-						<span class="speaker">{{ item.name }}</span>
+						<span class="speaker">{{ item.name }}</span><br />
             <span class="title">{{ item.title }}</span>
 					</li>
         </ul>
@@ -220,6 +220,23 @@
 		max-width:80%;
 		width:600px;
 	}
+
+  #program, #program li{
+    list-style: none;
+    margin:0;
+    padding:0;
+    clear:both;
+  }
+
+  #program strong{
+    float:left;
+    display: block;
+    width:40px;
+  }
+
+  #program .title{
+    font-size:1 rem;
+  }
 
 </style>
 
