@@ -12,7 +12,7 @@
           <li v-for="item in program">
 						<strong>{{ item.time }}</strong>
             <span>
-						  <span class="speaker">{{ item.name }}</span><br />
+						  <span class="speaker speaker-length-{{ item.name.length }}">{{ item.name }}</span><br />
               <span class="speakerTitle">{{ item.title }}</span>
             </span>
 					</li>
@@ -230,6 +230,7 @@
 
   #program{
     display: table;
+    font-size:1.25rem;
   }
 
   #program li{
@@ -253,6 +254,18 @@
   #program .speakerTitle{
     display: inline-block;
     width:100%;
+  }
+
+  #eventbrite-notice{
+    padding-top:50px;
+  }
+
+  #program .speaker{
+    font-style: italic;
+  }
+
+  #program .speaker.speaker-length-0{
+    display:none;
   }
 
 </style>
