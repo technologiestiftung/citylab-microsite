@@ -12,8 +12,8 @@
           <li v-for="item in program">
 						<strong>{{ item.time }}</strong>
             <span>
-						  <span v-bind:class="{ 'speaker': true, 'hide': item.name.length === 0}">{{ item.name }}</span><br />
-              <span class="speakerTitle">{{ item.title }}</span>
+						  <span v-bind:class="{ 'speaker': true, 'hide': item.name.length === 0}">{{ item.name }}</span>
+              <span class="speakerTitle" v-html="item.title"></span>
             </span>
 					</li>
         </ul>
@@ -236,6 +236,7 @@
 
   #program li{
     display: table-row;
+    padding-bottom:10px;
   }
 
   #program strong{
