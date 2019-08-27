@@ -235,7 +235,6 @@
 
   #program li{
     display: table-row;
-    padding-bottom:10px;
   }
 
   #program strong{
@@ -243,8 +242,9 @@
     padding-right: 20px;
   }
 
-  #program>span{
+  #program li>span{
     display: table-cell;
+    padding-bottom: 20px;
   }
 
   #program .speaker,
