@@ -15,7 +15,7 @@ export const content = {
       {'time': '', 'name': 'Industry Talk by Targomo', 'title': 'Multimodales Routing & Erreichbarkeit'},
       {'time': '12:30', 'name': '', 'title': '<b>Mittagspause</b>'},
       {'time': '14:00', 'name': 'Till Nagel (Hochschule Mannheim)', 'title': '<b>Keynote II</b>'},
-      {'time': '14:45', 'name': '', 'title': 'Session II: Neue Mobilität'},
+      {'time': '14:45', 'name': '', 'title': '<b>Session II: Neue Mobilität</b>'},
       {'time': '', 'name': 'William Jones & Santosh Seshadri (Orbica)', 'title': 'Transport advocacy through smart data analysis and visualisation'},
       {'time': '', 'name': 'Christoph Aberle (Technische Universität Hamburg)', 'title': 'Mobility as a Service – eine Chance für Menschen in Armut? GIS-basierte Untersuchung vierer Ridepooling-Angebote in Hamburg'},
       {'time': '', 'name': 'Industry Talk: Civity', 'title': 'E-Scooter in Deutschland'},
