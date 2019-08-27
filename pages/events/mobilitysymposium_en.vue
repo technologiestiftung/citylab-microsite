@@ -11,8 +11,10 @@
         <ul id="program">
           <li v-for="item in program">
 						<strong>{{ item.time }}</strong>
-						<span class="speaker">{{ item.name }}</span><br />
-            <span class="title">{{ item.title }}</span>
+            <span>
+						  <span class="speaker">{{ item.name }}</span><br />
+              <span class="speakerTitle">{{ item.title }}</span>
+            </span>
 					</li>
         </ul>
 
@@ -224,17 +226,33 @@
     list-style: none;
     margin:0;
     padding:0;
-    clear:both;
+  }
+
+  #program{
+    display: table;
+  }
+
+  #program li{
+    display: table-row;
   }
 
   #program strong{
-    float:left;
-    display: block;
+    display: table-cell;
     width:40px;
   }
 
-  #program .title{
-    font-size:1 rem;
+  #program>span{
+    display: table-cell;
+  }
+
+  #program .speakerTitle{
+    font-size:1rem !important;
+  }
+
+  #program .speaker,
+  #program .speakerTitle{
+    display: inline-block;
+    width:100%;
   }
 
 </style>
