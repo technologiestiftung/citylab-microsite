@@ -126,19 +126,22 @@
 			}
 		},
 		computed: {
-            timeArr() {
-                return this.eventContent[this.lang].timeline
-            },
+      timeArr() {
+        return this.eventContent[this.lang].timeline
+      },
 			parArr() {
-                return this.eventContent[this.lang].paragraphs
-            },
+        return this.eventContent[this.lang].paragraphs
+      },
 			chairArr() {
-                return this.eventContent[this.lang].chairs
-            },
+        return this.eventContent[this.lang].chairs
+      },
 			memberArr() {
-                return this.eventContent[this.lang].members
-            }
-        },
+        return this.eventContent[this.lang].members
+      },
+			program() {
+        return this.eventContent[this.lang].program
+      }
+    },
 		head () {
 			return {
 				title: 'Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019) - ',
