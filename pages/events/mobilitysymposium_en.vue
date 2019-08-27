@@ -6,18 +6,15 @@
             <div class="container">
 				<p class="event-intro">{{ eventContent[lang]['intro'] }}</p>
 
-				<h4 class="title">{{ eventContent[lang]['timeTitle'] }}</h4>
-				<ul class="time-list">
-					<li v-for="time in timeArr">
-						<strong>{{ time[0] }}</strong>
-						<span>{{ time[1] }}</span>
-					</li>
-				</ul>
+        <h4 class="title">Preliminary Program</h4>
 
-				<div v-for="paragraph in parArr">
-					<h4 class="title" v-if="paragraph.type === 'title'">{{ paragraph.content }}</h4>
-					<p v-if="paragraph.type === 'paragraph'" v-html="paragraph.content"></p>
-				</div>
+        <ul>
+          <li v-for="item in program">
+						<strong>{{ item.time }}</strong>
+						<span class="speaker">{{ item.name }}</span>
+            <span class="title">{{ item.title }}</span>
+					</li>
+        </ul>
 
 				<div id="eventbrite-notice">
 					For the ordering of tickets we use Eventbrite. For the ordering eventbrite's <a href="https://www.eventbrite.com/l/LegalTerms/">legal terms</a>, <a href="https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy?lg=en_US">privacy policy</a> and <a href="https://www.eventbrite.co.uk/support/articles/en_US/Troubleshooting/eventbrite-cookie-policy?lg=en_GB">cookie policy</a> applies.
@@ -67,8 +64,27 @@
 						<span>{{ member[1] }}</span>
 					</li>
 				</ul>
+        
+        <div id="financial-support">
+          <p v-html="eventContent[lang]['financialSupport']"></p>
+        </div>
 
 				<img id="organiser-logos" src="https://citylab-berlin.org/images/events/mobilitysymposium-organiser-logos.svg" alt="Organisers" />
+
+        <h3 class="title">Call for Papers</h3>
+
+				<h4 class="title">{{ eventContent[lang]['timeTitle'] }}</h4>
+				<ul class="time-list">
+					<li v-for="time in timeArr">
+						<strong>{{ time[0] }}</strong>
+						<span>{{ time[1] }}</span>
+					</li>
+				</ul>
+
+				<div v-for="paragraph in parArr">
+					<h4 class="title" v-if="paragraph.type === 'title'">{{ paragraph.content }}</h4>
+					<p v-if="paragraph.type === 'paragraph'" v-html="paragraph.content"></p>
+				</div>
 
 				<p class="copyright">{{ eventContent[lang]['rights'] }}</p>
 
