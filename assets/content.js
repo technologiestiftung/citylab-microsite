@@ -255,7 +255,7 @@ export const content = {
         'footer': {
             'contact': {
                 'title': 'Kontakt',
-                'mail': 'hello@citylab-berlin.org',
+                'mail': 'info@citylab-berlin.org',
                 'address_street': 'Platz der Luftbrücke 4-6',
                 'address_code': '12101 Berlin',
             },
@@ -666,7 +666,7 @@ export const content = {
         'footer': {
             'contact': {
                 'title': 'Get in touch',
-                'mail': 'hello@citylab-berlin.org',
+                'mail': 'info@citylab-berlin.org',
                 'address_street': 'Platz der Luftbrücke 4-6',
                 'address_code': '12101 Berlin',
             },
