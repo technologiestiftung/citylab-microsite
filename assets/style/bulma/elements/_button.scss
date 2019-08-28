@@ -4,7 +4,7 @@ $button-background-color: $white !default;
 $button-border-color: $grey-lighter !default;
 $button-border-width: $control-border-width !default;
 
-$button-padding-vertical: calc(1.25rem - #{$button-border-width}) !default;
+$button-padding-vertical: .4rem !default;
 $button-padding-horizontal: 1rem !default;
 
 $button-hover-color: $link-hover !default;
@@ -61,7 +61,7 @@ $button-static-border-color: $grey-lighter !default;
   border-radius: 0px !important;
   cursor: pointer;
   justify-content: center;
-  padding-bottom: $button-padding-vertical;
+  padding-bottom: .6rem;
   padding-left: $button-padding-horizontal;
   padding-right: $button-padding-horizontal;
   padding-top: $button-padding-vertical;

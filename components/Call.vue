@@ -1,13 +1,13 @@
 <template>
-    <section id="call" class="section projects is-medium">
+    <section id="call" class="section call is-medium">
         <div class="container">
             <h2 class="title">
-                {{ content[lang]['projects']['title'] }}
+                {{ content[lang]['call']['title'] }}
             </h2>
 
-            <p class="intro content">{{ content[lang]['projects']['opencall'] }}</p>
+            <p class="intro content">{{ content[lang]['call']['opencall'] }}</p>
 
-            <p class="intro content">{{ content[lang]['projects']['bullets_intro'] }}</p>
+            <p class="intro content">{{ content[lang]['call']['bullets_intro'] }}</p>
 
             <ul class="content bullet-list">
                 <li class="intro bullet" v-for="partner in bulletsArr">
@@ -15,18 +15,18 @@
                 </li>
             </ul>
 
-            <a :href="`${content[lang]['projects']['form_url']}`" class="button is-color-secondary is-normal">{{ content[lang]['projects']['cta'] }}</a>
+            <a :href="`${content[lang]['call']['form_url']}`" class="button is-color-secondary is-normal">{{ content[lang]['call']['cta'] }}</a>
         </div>
     </section>
 </template>
 
 <script>
     export default {
-        name: 'Projects',
+        name: 'Call',
         props: ['content', 'lang'],
         computed: {
             bulletsArr() {
-                return this.content[this.lang]['projects']['bullets']
+                return this.content[this.lang]['call']['bullets']
             }
         }
     }
@@ -35,7 +35,7 @@
 <style lang="scss">
     @import "../assets/style/style.scss";
 
-    .projects {
+    .call {
         background: $color-primary--lightest;
 
         ul.content {

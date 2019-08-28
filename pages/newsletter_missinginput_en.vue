@@ -21,10 +21,9 @@
                                 <label for="text4405746" class="itemname">{{ content[lang]['register']['form']['mail'] }} *</label> 
                                 <input class="input" id="text4405746" name="email" value="" type="text"/>
                             </div>
-                            
 
                             <div id="4405750" rel="checkbox" class="cr_ipe_item ui-sortable musthave" style=" margin-bottom:0px;">
-                                <label class="itemname">* Pflichtfeld</label>
+                                <label class="itemname">* Mandatory field</label>
                             <div class="agb" style="overflow:auto;">
                                 <input 
                                     :id="content[lang]['register']['form']['agb']" 

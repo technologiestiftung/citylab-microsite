@@ -1,14 +1,24 @@
+import Vue from 'vue'
 import Vuex from 'vuex'
 
-export const state = () => ({
-  leads: []
-})
+Vue.use(Vuex);
 
-export const mutations = {
-  SET_LEADS(state, leads) {
-    state.leads = leads
-  }
+const store = () => {
+  return new Vuex.Store({
+    state: {
+      offset: false
+    },
+    mutations: {
+      SET_OFFSET: (state, payload) => {
+        state.offset = payload;
+      }
+    },
+    actions: {
+      SET_OFFSET: (context, payload) => {
+        context.commit("SET_OFFSET", payload);
+      },
+    }
+  })
 }
 
-export const actions = {
-}
+export default store

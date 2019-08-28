@@ -1,5 +1,31 @@
 export const content = {
+    'config': {
+        sheetUrlEvents: 'https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json',
+    },
     'de': {
+        'otherevents': [
+            {
+                day: '9',
+                month: 'Sept',
+                date: '2019-09-09',
+                format: 'Summer School',
+                time: '10-18 Uhr',
+                title: 'Data-driven Urban Innovation',
+                link: 'https://citylab-berlin.org/events/summerschool',
+                visible: true,
+            },
+            {
+                day: '11',
+                month: 'Okt',
+                date: '2019-10-11',
+                format: 'Symposium',
+                time: '10-18 Uhr',
+                title: 'Urban Mobility Symposium',
+                link: 'https://citylab-berlin.org/events/mobilitysymposium',
+                visible: true,
+            }
+
+        ],
         'codeofconduct': {
             'title': 'Code of Conduct',
             'points': [
@@ -9,6 +35,18 @@ export const content = {
                 'Wenn ihr öffentliche Veranstaltungen oder Projektarbeit mit größeren Gruppen plant, haltet unbedingt im Vorfeld rechtzeitig Rücksprache mit unserer Koordination. Bitte beachtet die Sicherheits- und Brandschutzvorschriften. Ihr seid für das Verhalten eurer Gäste selbst verantwortlich.',
                 'Wir behalten uns das Recht vor, Personen, die gegen diesen Kodex verstoßen, von der Nutzung der Räume auszuschließen.'
             ]
+        },
+        'coworking': {
+          'title': 'Co-Working-Fellowships im CityLAB Berlin',
+          'subtitle': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier sind einige wissenswerte Dinge:',
+          'points': [
+              'Das CityLAB ist kein klassischer Co-Working-Space. Wir arbeiten im CityLAB projektbezogen an innovativen Lösungen für eine bessere Stadt. Für die Nutzung der Co-Working-Plätze ist es Voraussetzung, dass Du ein eigenes Projekt mit Bezug zu unseren Themenfeldern verfolgst. Falls Du noch keine eigene Projektidee hast, können wir gerne gemeinsam überlegen, wie Du Deine Fähigkeiten sinnvoll bei uns einbringen kannst.',
+              'Alle Co-Worker*innen sollen aktiv am CityLAB mitwirken. Konkret heißt das, dass Du Dein Projekt jeweils zu Beginn und Abschluss öffentlich vorstellst. Zudem wünschen wir uns, dass Du während der Projektlaufzeit einen oder mehrere Meetups oder Workshops organisierst, in denen Du anderen deine Arbeit näherbringst. Natürlich freuen wir uns, wenn Du darüber hinaus weitere Ideen hast. Unsere Konferenz-, Event- und Ausstellungsräume und die Werkstatt stehen allen Co-Worker*innen offen.',
+              'Die Nutzung des Co-Working ist kostenfrei, allerdings zeitlich auf die Dauer deines Projekts beschränkt (in der Regel zwischen einem und sechs Monate).',
+              'Wir vergeben nicht mehr Plätze, als wir haben. Trotzdem kann es vorkommen, dass die Co-Working-Plätze an einigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).',
+              'Das CityLAB ist öffentlich finanziert und gemeinnützig. Daher ist die Nutzung des Co-Working gemeinnützigen Zwecken vorbehalten.',
+          ],
+          'linktext': 'Beachte unseren <a href="http://www.citylab-berlin.org/codeofconduct" target="_blank"> Code of Conduct</a>.'
         },
         'nav': [
             {
@@ -22,6 +60,10 @@ export const content = {
             {
                 'name': 'Open Call',
                 'ref': '#call'
+            },
+            {
+                'name': 'Termine',
+                'ref': '#schedule'
             },
             {
                 'name': 'Newsletter',
@@ -39,19 +81,35 @@ export const content = {
             'claim_03': "gemeinsam gestalten.",
             'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
         },
+        'resources': {
+            'title': 'Ressourcen',
+            'p1': 'In diesem Abschnitt findest Du praktische Informationen zum CityLAB.',
+            'specs_title': 'Spezifikationen',
+            'specs_p': `Wenn Du dich insbesondere für einen unserer Räume interessierst, findest Du weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
+            'specs_url': '/docs/citylab-specs-de.pdf',
+            'specs_url_button': 'CityLAB Spezifikationen PDF',
+            'coworking_title': 'Co-Working-Fellowships',
+            'coworking_p': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:',
+            'coworking_url': '/coworking',
+            'coworking_url_button': 'Co-working',
+        },
         'missionStatement': {
             'title': 'Unsere Mission',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
-            'statement1-title': 'Inklusiv', 
-            'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.', 
-            'statement1-img_url': 'images/02.png', 
-            'statement2-title': 'Agil', 
-            'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.', 
+            'statement1-title': 'Inklusiv',
+            'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.',
+            'statement1-img_url': 'images/02.png',
+            'statement2-title': 'Agil',
+            'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.',
             'statement2-img_url': 'images/01.jpg',
-            'statement3-title': 'Offen', 
-            'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.', 
-            'statement3-img_url': 'images/03.jpg', 
-            'cta': 'Mitmachen', 
+            'statement3-title': 'Offen',
+            'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
+            'statement3-img_url': 'images/03.jpg',
+            'cta': 'Mitmachen',
+        },
+        'events': {
+            'upcomingEventsTitle': 'Bevorstehend',
+            'pastEventsTitle': 'Vergangen',
         },
         'register': {
             intro: {
@@ -65,10 +123,11 @@ export const content = {
             mandatory: '* Pflichtfeld',
             form: {
                 name: 'Ihr Name',
+                language: 'Sprache des Newsletters',
                 mail: 'Ihre E-Mail-Adresse',
                 button: 'Anmelden',
-                agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass die Technologiestiftung Berlin mir regelmäßig Informationen zu Tätigkeiten der Technologiestiftung, stiftungsnahen Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
-                unsubscribe: 'Meine Einwilligung kann ich jederzeit hier gegenüber des CityLAB Berlin <a href="/newsletter_unsubscribe_de">widerrufen</a>.'
+                agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir regelmäßig Informationen zu den Tätigkeiten, Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
+                unsubscribe: 'Meine Einwilligung kann ich jederzeit hier gegenüber dem CityLAB Berlin <a href="/newsletter_unsubscribe_de">widerrufen</a>.'
             },
             formunsubscribe: {
                 title: 'Newsletter abmelden',
@@ -85,13 +144,13 @@ export const content = {
             'confirm': {
                 title: 'Anmeldung bestätigen',
                 subtitle: 'Vielen Dank für Ihre Anmeldung.',
-                p1: 'Sie erhalten in Kürze eine Nachricht auf der von Ihnen angegebenen E-Mail Adresse.',
+                p1: 'Sie erhalten in Kürze eine Nachricht auf die von Ihnen angegebene E-Mail Adresse.',
                 p2: 'Diese beinhaltet einen Link zur Aktivierung Ihres Abonnement.'
             },
             'unsubscribe': {
                 title: 'Abmeldung bestätigen',
                 subtitle: 'Vielen Dank für Ihre Nachricht.',
-                p1: 'Sie erhalten in Kürze eine Link auf der von Ihnen angegebenen E-Mail Adresse.',
+                p1: 'Sie erhalten in Kürze eine Link auf die von Ihnen angegebene E-Mail Adresse.',
                 p2: 'Mit diesem bestätigen Sie bitte die Kündigung Ihres Abonnements.'
             },
             'unsubscribeSuccess': {
@@ -113,7 +172,7 @@ export const content = {
                 },
                 'missinginput': {
                     title: 'Hinweis',
-                    subtitle: 'Sie haben nicht alle Pflichtfelder ausgefüllt. Bitte ergänzen Sie die fehlenden Eingaben.'
+                    subtitle: 'Sie haben nicht alle Pflichtfelder ausgefüllt. Bitte ergänzen Sie die fehlenden Angaben.'
                 },
                 'missingcaptcha': {
                     title: 'Fehler',
@@ -182,9 +241,9 @@ export const content = {
                 'img_url': 'images/topic_05_blue.jpg'
             },
         ],
-        'projects': {
+        'call': {
             'title': 'Open Call',
-            'opencall': 'Ihr habt Ideen für eine bessere Stadt? Macht mit im CityLAB!',
+            'opencall': 'Du hast Ideen für eine bessere Stadt? Mach mit im CityLAB!',
             'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
             'cta': 'Jetzt bewerben',
             'projects': [
@@ -201,48 +260,51 @@ export const content = {
                 'unsere Werkstatt nutzen oder vorübergehend einen festen Co-Working-Platz bei uns?'
             ]
         },
+        projects: {
+            title: 'Projekte'
+        },
         'team': {
             'title': 'Team',
             'member': [
-                { 
-                    'name': 'Benjamin Seibel', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'bnjmnsbl', 
+                {
+                    'name': 'Benjamin Seibel',
+                    'mail': 'seibel@technologiestiftung-berlin.de',
+                    'twitter': 'bnjmnsbl',
                     'img_url': 'images/benjamin_portrait.jpg',
                     'title': 'Leitung'
                 },
-                { 
-                    'name': 'Nadine Riede', 
-                    'mail': 'riede@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Nadine Riede',
+                    'mail': 'riede@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': 'images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
-                { 
-                    'name': 'Sebastian Meier', 
-                    'mail': 'meier@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
+                {
+                    'name': 'Sebastian Meier',
+                    'mail': 'meier@technologiestiftung-berlin.de',
+                    'twitter': 'seb_meier',
                     'img_url': 'images/sebastian_portrait.jpg',
                     'title': 'Wissenschaftliche Leitung'
                 },
-                { 
-                    'name': 'Sara Reichert', 
-                    'mail': 'reichert@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Sara Reichert',
+                    'mail': 'reichert@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': 'images/sara_portrait.jpg',
                     'title': 'Werkstattleitung'
                 },
-                { 
-                    'name': 'Fabian Dinklage', 
-                    'mail': 'dinklage@technologiestiftung-berlin.de', 
-                    'twitter': 'fdnklg', 
+                {
+                    'name': 'Fabian Dinklage',
+                    'mail': 'dinklage@technologiestiftung-berlin.de',
+                    'twitter': 'fdnklg',
                     'img_url': 'images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
-                { 
-                    'name': 'Malgorzata Magdon', 
-                    'mail': 'Magdon@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Malgorzata Magdon',
+                    'mail': 'Magdon@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/malgorzata_portrait.jpg',
                     'title': 'Administration'
                 },
@@ -250,13 +312,13 @@ export const content = {
         },
         'cta': {
             'title': 'Meldet euch bei uns!',
-            'subtitle': 'Wenn Sie mit uns zusammenarbeiten oder uns erreichen möchten, besuchen Sie uns in unserem Büro oder schreiben Sie uns eine Nachricht.'
+            'subtitle': 'Wenn Du mit uns zusammenarbeiten oder uns erreichen möchtest, besuche uns in unserem Büro oder schreib uns eine Nachricht.'
         },
         'footer': {
             'contact': {
                 'title': 'Kontakt',
                 'mail': 'info@citylab-berlin.org',
-                'address_street': 'Platz der Luftbrücke 4-6',
+                'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
             },
             'more': {
@@ -265,16 +327,22 @@ export const content = {
                 'downloads': 'Downloads',
                 'codeofconduct': 'Code of Conduct',
                 'imprint': 'Impressum',
-                'dataprivacy': 'Datenschutz'
+                'dataprivacy': 'Datenschutz',
+                'resources': 'Ressourcen',
             },
             'funding': {
-                'title': 'Gefördert durch',
+                'title': '.',
                 'text_tsb': 'Ein Projekt der',
                 'href_tsb': 'https://www.technologiestiftung-berlin.de',
                 'svg_tsb': '/tsb.svg',
-                'text_sen': 'Gefördert aus Mitteln der',
+                'text_sen': 'Gefördert durch',
                 'href_sen': 'https://www.technologiestiftung-berlin.de',
                 'svg_sen': '/be-berlin-logo.svg',
+            },
+            'open': {
+                columntitle: 'Besuchszeiten',
+                title: 'Ausstellung',
+                hours: 'Mi-Fr 10-17 Uhr'
             }
         },
         'press': {
@@ -287,7 +355,7 @@ export const content = {
             'title': 'Impressum',
             'info': {
                 'title': 'Angaben zur Technologiestiftung Berlin',
-                'p1': 'Technologiestiftung Berlin </br> Fasanenstraße 85 10623 Berlin <br/>  Tel.: +49 30 46302 500 <br/>',
+                'p1': 'Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin<br />Tel.: +49 30 209 69 99 0<br/>',
                 'mail_url': 'info@technologiestiftung-berlin.de',
                 'mail_name': 'info(at)technologiestiftung-berlin.de',
                 'p2': 'Stiftungsverzeichnis Berlin: AZ 3416/464 B3 <br/> USt-Id-Nr.: DE 187 459 128',
@@ -410,10 +478,39 @@ export const content = {
                 'ul1': '<li>Kontaktformular Power Mail für die Bestellung der Hacking Box und beim Projekt Digitale Entwicklung des Kulturbereichs</li><li>Open-Street-Map-Karte zur Information über die Anfahrt sowie zur geografischen Verortung von Projekten</li><li>Juicer für einen Social-Media-Feed auf www.codingklassenfahrt.de (siehe 3.2)</li><li>YouTube-Video-Einbindung auf www.codingklassenfahrt.de&nbsp;(siehe 3.2) und www.kultur-b-digtal.de (siehe 3.4)</li>',
                 'p3': 'Durch Nutzung des <b>Power-Mail-Formular</b>s, das eine Extention unseres Content Managementsystems typo3 darstellt und von uns für die Bestellung der Hacking Box angeboten wird, geben Sie uns die Einwilligung nach Art.6 Abs. 1 Lit.A DSGVO, Ihre Daten für den Zweck der Ausleihe zu verarbeiten. Die Daten werden ausschließlich auf unserem Server verarbeitet und von uns genutzt. Nach Ende des Verleihvorgangs werden die Daten gelöscht.',
                 'p4': 'Um Ihnen die Anfahrt zu unseren Geschäftsräumen zu erleichtern und um Ihnen an anderen Stellen eine Ortung unserer Projekte zu bieten, haben wir <b>Open-Street-Map-Karten</b> in unseren Auftritt eingebunden. Hierfür nutzen wir das Application Programming Interface Open Layers. Die Verbindung läuft direkt über unserer Content Managementsystem und übermittelt keine persönlichen Daten an Dritte.&nbsp;'
+            },
+            'eventbrite': {
+                'title': '2.7 Eventbrite',
+                'p1': 'Für die Registrierung von Teilnehmer*innen nutzen wir den Anbieter Eventbrite Inc., Delaware, 155 5th Street, Floor 7, San Francisco, CA 94103, USA. Mit der Registrierung für eine unserer Veranstaltungen übermitteln Sie Ihren Vor- und Nachnamen, Telefonnummer, E-Mail-Adresse und Postanschrift an den Anbieter. Der Anbieter sendet Ihnen im Anschluss eine E-Mail zur Bestätigung Ihrer Buchung.',
+                'p2': 'Mit der Anmeldung speichert Eventbrite neben den oben genannten Daten die Veranstaltung für die Sie sich registriert haben, inkl. der geplanten Ausführungszeit (Datum, Uhrzeit) sowie den Zeitpunkt der Registrierung (Datum, Uhrzeit).',
+                'p3': 'Es besteht kein Vertrag zur Auftragsdatenverarbeitung mit Eventbrite, da aktuell lediglich ein Datenverarbeitungsnachtrag (DVN) für Auftragsverarbeiter und Unterauftragsverarbeiter angeboten wird (einzusehen unter: https://www.eventbrite.de/support/articles/de/Troubleshooting/datenverarbeitungsnachtrag-fuer-auftragsverarbeiter-und-unterauftragsverarbeiter?lg=de).',
+                'p4': 'Eine Übersicht über die Unternehmensrichtlinien von Eventbrite finden Sie unter https://www.eventbrite.de/l/LegalTerms/'
             }
         },
     },
     'en': {
+        'otherevents': [
+            {
+                day: '11',
+                month: 'Oct',
+                date: '11.10.2019',
+                format: 'Symposium',
+                time: '10-6 pm',
+                title: 'Urban Mobility Symposium',
+                link: 'https://citylab-berlin.org/events/mobilitysymposium_en',
+                visible: true
+            },
+            {
+                day: '9',
+                month: 'Sept',
+                date: '09.09.2019',
+                format: 'Summer School',
+                time: '10-18 Uhr',
+                title: 'Data-driven Urban Innovation',
+                link: 'https://citylab-berlin.org/events/summerschool',
+                visible: true,
+            }
+        ],
         'codeofconduct': {
             'title': 'Code of conduct',
             'points': [
@@ -423,6 +520,30 @@ export const content = {
                 'If you are planning public events or project work with larger groups, please provide sufficient notice to our coordination team. Please observe the safety and fire regulations. You are responsible for the behaviour of your guests.',
                 'We reserve the right to exclude persons who violate this code from the use of the rooms.'
             ]
+        },
+        'coworking': {
+            'title': 'Co-Working-Fellowships im CityLAB Berlin',
+            'subtitle': `You're interested in using one of one of the co-working spots available in the CityLAB? Great! Here's what you need to know:`,
+            'points': [
+                `The CityLAB is not a classic co-working space. Here, we do project-based work that is specifically focused on creating a better city. As such, we are specifically looking for co-workers who are already working on a project relevant to our areas of focus. If you don't have a project of your own, we're also happy to discuss with you how you might be able to put your skills to use within the lab.`,
+                `We expect CityLAB co-workers to be active, engaged members of the lab. Specifically, we'd like for our co-workers to present their projects in a public event at both the start and end of their time with us. We're also hoping you'll use our spaces to organize workshops or meetups during the length of your project to make your work accessible to a wider audience. We're of course open to any ideas you have, and in general, CityLAB co-workers have free usage of all of our rooms (including the conference room, the event room, the workshop and the exhibition space).`,
+                `Usage of a co-working spot is free, but the length is limited to the lifespan of your project (we're envisioning typically one to six months).`,
+                `We're only giving out as many spaces as we have available, but it's still possible that at times the co-working spaces will be inaccessible (e.g., due to an event).`,
+                `The CityLAB is a non-profit, publicly-funded organization, and usage of it should be consistent with these principles.`,
+            ],
+            'linktext': `We expect everyone in the CityLAB to adhere to our <a href="http://www.citylab-berlin.org/codeofconduct_en" target="_blank"> Code of Conduct</a>.`
+          },
+        'resources': {
+            'title': 'Resources',
+            'p1': 'At this section you find practical information regarding the CityLAB Berlin.',
+            'specs_title': 'Specifications',
+            'specs_p': `If you're interested in one of our spaces in particular, find more details about room sizes and available equipment in the data sheet below:`,
+            'specs_url': '/docs/citylab-specs-en.pdf',
+            'specs_url_button': 'CityLAB specifications PDF',
+            'coworking_title': 'Co-Working-Fellowships',
+            'coworking_p': 'You want to use a co-working place in CityLAB? Here you will find the most important information:',
+            'coworking_url': '/coworking_en',
+            'coworking_url_button': 'Co-working',
         },
         'nav': [
             {
@@ -436,6 +557,14 @@ export const content = {
             {
                 'name': 'Open Call',
                 'ref': '#call'
+            },
+            {
+                'name': 'Schedule',
+                'ref': '#schedule'
+            },
+            {
+                'name': 'Newsletter',
+                'ref': '#newsletter'
             },
             {
                 'name': 'Team',
@@ -452,16 +581,20 @@ export const content = {
         'missionStatement': {
             'title': 'Our Mission',
             'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
-            'statement1-title': 'Agile', 
-            'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.', 
-            'statement1-img_url': '../images/01.jpg', 
-            'statement2-title': 'Participatory', 
-            'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.', 
-            'statement2-img_url': '../images/02.png', 
-            'statement3-title': 'Open', 
-            'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.', 
-            'statement3-img_url': '../images/03.png', 
+            'statement1-title': 'Agile',
+            'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.',
+            'statement1-img_url': '../images/01.jpg',
+            'statement2-title': 'Participatory',
+            'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.',
+            'statement2-img_url': '../images/02.png',
+            'statement3-title': 'Open',
+            'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.',
+            'statement3-img_url': '../images/03.png',
             'cta': 'Learn more',
+        },
+        'events': {
+            'upcomingEventsTitle': 'Upcoming events',
+            'pastEventsTitle': 'Past events',
         },
         'schedule': {
             title: 'Dates and announcements',
@@ -474,7 +607,7 @@ export const content = {
                     description: 'Maps, Data, Geovisualisation',
                     button: 'More information',
                     link: '/events/mobilitysymposium_en'
-                }
+                },
             ]
         },
         'topics': [
@@ -514,12 +647,13 @@ export const content = {
             },
             title: 'Sign up newsletter',
             urlunsubscribe: '/newsletter_unsubscribe_en',
-            mandatory: '* Mandartoy field',
+            mandatory: '* Mandatory field',
             form: {
                 name: 'Your name',
                 mail: 'Your E-Mail',
+                language: 'Language of the newsletter',
                 button: 'Subscribe',
-                agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the Technology Foundation Berlin may send me regular information on the activities of the Technology Foundation, foundation-related topics and events by e-mail in the form of a newsletter. Comprehensive information on the registration and unsubscription procedure, the mail-order company and the statistical evaluation of your data can be found in our Privacy Policy.',
+                agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the City Berlin may send me regular information on the activities of the CityLAB Berlin, related topics and events by e-mail. Comprehensive information on the registration and unsubscription procedure, the service provider and the statistical evaluation of your data can be found in our Privacy Policy.',
                 unsubscribe: 'I can revoke my consent to the CityLAB Berlin <a href="/newsletter_unsubscribe_en">here</a> at any time.'
             },
             formunsubscribe: {
@@ -537,13 +671,13 @@ export const content = {
             'confirm': {
                 title: 'Confirm subscription',
                 subtitle: 'Thank you very much for your registration.',
-                p1: 'You will shortly receive a message at the e-mail address you provided.',
+                p1: 'You will receive a message shortly to the e-mail address you provided.',
                 p2: 'This includes a link to activate your subscription.'
             },
             'unsubscribe': {
                 title: 'Confirm unsubscription',
                 subtitle: 'Thank you very much for your message.',
-                p1: 'You will shortly receive a link to the e-mail address you provided.',
+                p1: 'You will receive a link to the e-mail address you provided.',
                 p2: 'With this you confirm the cancellation of your subscription.'
             },
             'unsubscribeSuccess': {
@@ -569,7 +703,7 @@ export const content = {
                 },
                 'missingcaptcha': {
                     title: 'Error',
-                    subtitle: 'The captcha you entered was unfortunately not correct. Please try again.'
+                    subtitle: 'The captcha you entered was not correct. Please try again.'
                 },
             }
         },
@@ -593,7 +727,7 @@ export const content = {
                 }
             ]
         },
-        'projects': {
+        'call': {
             'title': 'Open Call',
             'opencall': 'You\'ve got an idea for how you\'d design a better city using CityLAB resources? Join in and let us know your ideas!',
             'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
@@ -612,48 +746,51 @@ export const content = {
                 'use our workshop or temporarily a permanent co-working place with us?'
             ]
         },
+        projects: {
+            title: 'Projects'
+        },
         'team': {
             'title': 'The team',
             'member': [
-                { 
-                    'name': 'Benjamin Seibel', 
-                    'mail': 'seibel@technologiestiftung-berlin.de', 
-                    'twitter': 'bnjmnsbl', 
+                {
+                    'name': 'Benjamin Seibel',
+                    'mail': 'seibel@technologiestiftung-berlin.de',
+                    'twitter': 'bnjmnsbl',
                     'img_url': '../images/benjamin_portrait.jpg',
                     'title': 'Director'
                 },
-                { 
-                    'name': 'Nadine Riede', 
-                    'mail': 'riede@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Nadine Riede',
+                    'mail': 'riede@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
-                { 
-                    'name': 'Sebastian Meier', 
-                    'mail': 'meier@technologiestiftung-berlin.de', 
-                    'twitter': 'seb_meier', 
+                {
+                    'name': 'Sebastian Meier',
+                    'mail': 'meier@technologiestiftung-berlin.de',
+                    'twitter': 'seb_meier',
                     'img_url': '../images/sebastian_portrait.jpg',
                     'title': 'Head of Science'
                 },
-                { 
-                    'name': 'Sara Reichert', 
-                    'mail': 'reichert@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Sara Reichert',
+                    'mail': 'reichert@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/sara_portrait.jpg',
                     'title': 'Workshop Lead'
                 },
-                { 
-                    'name': 'Fabian Dinklage', 
-                    'mail': 'dinklage@technologiestiftung-berlin.de', 
-                    'twitter': 'fdnklg', 
+                {
+                    'name': 'Fabian Dinklage',
+                    'mail': 'dinklage@technologiestiftung-berlin.de',
+                    'twitter': 'fdnklg',
                     'img_url': '../images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
-                { 
-                    'name': 'Malgorzata Magdon', 
-                    'mail': 'Magdon@technologiestiftung-berlin.de', 
-                    'twitter': '', 
+                {
+                    'name': 'Malgorzata Magdon',
+                    'mail': 'Magdon@technologiestiftung-berlin.de',
+                    'twitter': '',
                     'img_url': '../images/malgorzata_portrait.jpg',
                     'title': 'Administration'
                 },
@@ -667,7 +804,7 @@ export const content = {
             'contact': {
                 'title': 'Get in touch',
                 'mail': 'info@citylab-berlin.org',
-                'address_street': 'Platz der Luftbrücke 4-6',
+                'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
             },
             'more': {
@@ -676,16 +813,22 @@ export const content = {
                 'downloads': 'Downloads',
                 'codeofconduct': 'Code of Conduct',
                 'imprint': 'Legal note',
-                'dataprivacy': 'Data privacy'
+                'dataprivacy': 'Data privacy',
+                'resources': 'Resources',
             },
             'funding': {
-                'title': 'Sponsors:',
+                'title': '.',
                 'text_tsb': 'A project from the',
                 'href_tsb': 'https://www.technologiestiftung-berlin.de',
                 'svg_tsb': '/tsb.svg',
-                'text_sen': 'Supported by',
+                'text_sen': 'Sponsored by',
                 'href_sen': 'https://www.technologiestiftung-berlin.de',
                 'svg_sen': '/be-berlin-logo.svg',
+            },
+            'open': {
+                columntitle: 'Visiting hours',
+                title: 'Exhibition',
+                hours: 'Wed-Fri 10am-5pm'
             }
         },
         'press': {
@@ -698,7 +841,7 @@ export const content = {
             'title': 'Legal note',
             'info': {
                 'title': 'Information about Technologiestiftung Berlin',
-                'p1': 'Technologiestiftung Berlin </br> Fasanenstraße 85 10623 Berlin <br/>  Tel.: +49 30 46302 500 <br/>',
+                'p1': 'Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin<br />Tel.: +49 30 209 69 99 0<br/>',
                 'mail_url': 'info@technologiestiftung-berlin.de',
                 'mail_name': 'info(at)technologiestiftung-berlin.de',
                 'p2': 'Foundation register Berlin: file reference number 3416/464 B3 <br/> VAT No.: DE 187 459 128',

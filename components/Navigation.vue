@@ -32,7 +32,7 @@
                         </a>
                     </div>
 
-                    <nuxt-link class="navbar-item" :to="direct">
+                    <nuxt-link v-if="languageVisible" class="navbar-item" :to="direct">
                         <font-awesome-icon style="width: 15px; height: 15px; transform: translateY(-1px); margin-right: 10px" far :icon="globeEurope"/>
                         <span>{{ language }}</span>
                     </nuxt-link>
@@ -57,7 +57,18 @@
                 showNav: false
             }
         },
-        props: ['lang', 'content', 'direct', 'scrolled', 'anchorTags'],
+        props: {
+            lang: String,
+            content: Object,
+            direct: String,
+            scrolled: Boolean,
+            anchorTags: Boolean,
+            languageVisible: {
+                type: Boolean,
+                default: true
+            }
+
+        },
         computed: {
             globeEurope() {
                 return faGlobeEurope;
@@ -243,6 +254,7 @@
 
                 &-italic {
                     transform: translateY(.5px);
+                    margin-top: 2px;
                     margin-left: 5px;
                     color: $white;
                     font-weight: 800;

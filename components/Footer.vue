@@ -3,9 +3,9 @@
         <section class="section is-medium">
             <div class="container">
 
-            
                 <div class="columns">
-                    <div class="column is-4">
+
+                    <div class="column is-3">
                         <h6 class="title is-4">
                             {{ content[lang]['footer']['contact']['title'] }}
                         </h6>
@@ -21,7 +21,7 @@
                             </p>
                         </a>
 
-                        <a class="flex flex-row" :href="mailtoCitylab">
+                        <a class="flex flex-row m-b-sm" :href="mailtoCitylab">
                             <div class="icon-wrapper">
                                 <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="envelope"/>
                             </div>
@@ -29,14 +29,32 @@
                                 {{ content[lang]['footer']['contact']['mail'] }}
                             </p>
                         </a>
+                    </div>
+
+                    <div class="column is-3">
+                        <h6 class="title is-4">
+                            {{ content[lang]['footer']['open']['columntitle'] }}
+                        </h6>
+
+                        <a class="flex flex-row m-b-sm" style="cursor: auto;">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="doorOpen"/>
+                            </div>
+                            <div class="flex flex-column">
+                                <p>
+                                    {{ content[lang]['footer']['open']['title'] }}
+                                </p>
+                                <p class="content">{{ content[lang]['footer']['open']['hours'] }}</p>
+                            </div>
+                        </a>
 
                     </div>
 
-                    <div class="column is-4">
+                    <div class="column is-3">
                         <h6 class="title is-4">
                             {{ content[lang]['footer']['more']['title'] }}
                         </h6>
-                        
+
                         <!-- <nuxt-link class="flex flex-row m-b-sm" :to="directDownloads">
                             <div class="icon-wrapper">
                                 <font-awesome-icon style="transform: translateY(2px); margin-right: 5px;" far icon="file-download"/>
@@ -45,7 +63,7 @@
                                 {{ content[lang]['footer']['more']['downloads'] }}
                             </p>
                         </nuxt-link>
-        
+
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directPress">
                             <div class="icon-wrapper">
@@ -83,32 +101,41 @@
                             </p>
                         </nuxt-link>
 
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directResources">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px; height: 16px;" far :icon="information"/>
+                            </div>
+                            <p class="content">
+                                {{ content[lang]['footer']['more']['resources'] }}
+                            </p>
+                        </nuxt-link>
+
                     </div>
 
-                    <div class="column is-4">
-                        <h6 class="title is-4">
+                    <div class="column is-3">
+                        <h6 class="title is-4" style="opacity: 0;">
                             {{ content[lang]['footer']['funding']['title'] }}
                         </h6>
 
                         <span> {{ content[lang]['footer']['funding']['text_tsb'] }}</span>
 
-                        <a 
+                        <a
                         class="flex flex-row m-b-sm logo"
                         :href="`${content[lang]['footer']['funding']['href_tsb']}`"
                         >
                             <img :src="`${content[lang]['footer']['funding']['svg_tsb']}`" alt="">
                         </a>
 
-                        <span> {{ content[lang]['footer']['funding']['text_sen'] }}</span>
+                        <span v-if="content[lang]['footer']['funding']['text_sen'].length > 0"> {{ content[lang]['footer']['funding']['text_sen'] }}</span>
 
-                        <a 
-                        class="flex flex-row m-b-sm logo" 
+                        <a
+                        class="flex flex-row m-b-sm logo"
                         :href="`${content[lang]['footer']['funding']['href_sen']}`"
                         >
                             <img :src="`${content[lang]['footer']['funding']['svg_sen']}`" alt="">
                         </a>
-
                     </div>
+
                 </div>
                 <p class="text-light">
                     {{ content[lang]['footer']['funding']['text'] }}
@@ -119,12 +146,14 @@
 </template>
 
 <script>
-    import { 
+    import {
         faBicycle,
         faEnvelope,
         faStamp,
         faUserSecret,
-        faGenderless
+        faGenderless,
+        faDoorOpen,
+        faInfo
     } from '@fortawesome/free-solid-svg-icons';
 
     export default {
@@ -139,6 +168,7 @@
                         dataprivacy: '/dataprivacy',
                         code: '/codeofconduct',
                         imprint: '/legalnote',
+                        resources: '/resources',
                     },
                     en: {
                         downloads: '/downloads_en',
@@ -146,11 +176,15 @@
                         imprint: '/legalnote_en',
                         dataprivacy: '/dataprivacy_en',
                         code: '/codeofconduct_en',
+                        resources: '/resources_en',
                     }
                 }
             }
         },
         computed: {
+            doorOpen() {
+                return faDoorOpen;
+            },
             bicycle() {
                 return faBicycle;
             },
@@ -160,11 +194,17 @@
             stamp() {
                 return faStamp;
             },
+            information() {
+                return faInfo;
+            },
             userSecret() {
                 return faUserSecret;
             },
             genderless() {
                 return faGenderless;
+            },
+            directResources() {
+                return this.directs[this.lang].resources
             },
             directCodeofconduct() {
                 return this.directs[this.lang].code
@@ -188,7 +228,7 @@
                 return 'https://www.google.de/maps/@52.4843705,13.3836835,16.65z'
             },
             mailtoCitylab() {
-                return 'mailto:info@citylabberlin.de'
+                return 'mailto:info@citylab-berlin.org'
             },
         }
     }
@@ -202,6 +242,9 @@
         &-row {
             flex-direction: row;
         }
+        &-column {
+            flex-direction: column;
+        }
     }
 
     .footer {
@@ -211,6 +254,10 @@
 
     h6.title {
         color: $color-tertiary;
+    }
+
+    .m-b-m {
+        margin-bottom: 30px;
     }
 
     .column {

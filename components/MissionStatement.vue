@@ -10,7 +10,7 @@
 
 <script>
     export default {
-        name: 'Missionstatement',
+        name: 'MissionStatement',
         props: ['lang', 'content']
     }
 </script>
