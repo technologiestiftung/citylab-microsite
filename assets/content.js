@@ -306,7 +306,8 @@ export const content = {
             ]
         },
         projects: {
-            title: 'Projekte'
+            title: 'Projekte',
+            titleAll: 'Alle Projekte',
         },
         'team': {
             'title': 'Team',
@@ -350,7 +351,7 @@ export const content = {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/malgorzata_portrait.jpg',
+                    'img_url': 'images/malgorzata_portrait.jpg',
                     'title': 'Administration'
                 },
             ],
@@ -796,7 +797,8 @@ export const content = {
             ]
         },
         projects: {
-            title: 'Projects'
+            title: 'Projects',
+            titleAll: 'All projects',
         },
         'board': {
             title: 'Advisory board',

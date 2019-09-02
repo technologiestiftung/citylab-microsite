@@ -8,7 +8,7 @@
                             <a :href="`./${directProject}/${project.dirname}`">
                                 <article>
                                     <figure class="image is 1by1">
-                                        <img class="project-img" :src="`https://citylab-berlin.org/images/projects/${project.dirname}_tile.png`">
+                                        <img class="project-img" :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">
                                     </figure>
                                     <div class="wrapper-details">
                                         <p class="name">{{ project.name }}</p>
@@ -40,7 +40,7 @@
                 return this.content[this.lang]['team']['member']
             },
             imageUrl() {
-                return `https://citylab-berlin.org/images/projects/${this.dirname}_tile.png`
+                return `images/projects/${this.dirname}_tile.jpg`
             },
             directAllProjects() {
                 return this.directs[this.lang]['all'];
@@ -50,7 +50,7 @@
             },
             sheetId() {
                 return this.directs[this.lang]['sheetId'];
-            }
+            },
         },
         data() {
             return {
@@ -83,10 +83,11 @@
                         name: entry.gsx$projectname.$t,
                         publisher: entry.gsx$publisher.$t,
                         subline: entry.gsx$projectsubline.$t,
-                        dirname: entry.gsx$dirname.$t,
+                        dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
+                        imgname: entry.gsx$dirname.$t,
+                        defaultImg: entry.gsx$defaultimg.$t
                     }
                     this.data.push(obj);
-
                 })
             })
         }
@@ -118,6 +119,7 @@
 
     .team-wrapper {
         display: flex !important;
+        transform: translateX(-10px);
     }
 
     .content-block {
@@ -149,6 +151,10 @@
         }
     }
 
+    .name {
+        line-height: 120%;
+    }
+
     .tile {
         align-items: stretch;
         flex-basis: 0;
@@ -157,6 +163,7 @@
 
         .wrapper-details {
             margin: 15px;
+            min-height: 60px;
 
             p.title {
                 margin-bottom: 0px;

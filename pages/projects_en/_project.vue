@@ -55,11 +55,12 @@
                 return false // will stop Nuxt.js to render the route and display the error page
         },
         async asyncData ({ params, error, payload }) {
+            // console.log(params.project.slice(0,-3));
             return { 
-                dirname: params.project,
-                lang: 'en',
+                dirname: params.project.slice(0,-3),
+                lang: 'de',
                 content: content,
-                direct: `/projects/${params.project}`,
+                direct: `/projects_en/${params.project}`,
                 data: null,
                 summaryAvailable: {
                     website: 0,
@@ -91,7 +92,13 @@
                 return this.content;
             },
             heroImageUrl() {
-                return `https://citylab-berlin.org/images/projects/${this.dirname}_tile.png`
+                // return `../images/projects/${this.dirname}_hero.jpg`
+
+                if (this.data != null) { 
+                    const file = this.data.gsx$defaultimg.$t == 'TRUE' ? 'default' : `${this.data.gsx$dirname.$t}`;
+                    const path = `../images/projects/${file}_hero.jpg`
+                    return path;
+                }
             },
             title() {
                 if (this.data != null) { return this.data.gsx$projectname.$t } else { return }
@@ -142,10 +149,9 @@
             axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json`)
                 .then((res) => {
                     // set event entry to data which matches with dirname
+                    console.log(this.dirname, res.data.feed.entry)
                     this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
                     this.data = this.data[0];
-
-                    console.log(this.data);
 
                     this.summaryAvailable.introHeadline = this.getLength(this.data.gsx$headlineintro.$t);
                     this.summaryAvailable.introContent = this.getLength(this.data.gsx$contentintro.$t);

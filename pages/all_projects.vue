@@ -64,10 +64,10 @@
         },
 		data() {
 			return {
-				lang: 'en',
+				lang: 'de',
                 content: content,
                 entries: null,
-                direct: '/all_projects',
+                direct: '/all_projects_en',
                 data: [],
                 directs: {
                     de: {
