@@ -84,7 +84,7 @@
 			}
         },
         created() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json`)
+            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json`)
             .then((res) => {
                 let entries = res.data.feed.entry;
                 this.entries = entries;
@@ -168,6 +168,7 @@
 
     .name {
         line-height: 120%;
+        color: $color-primary;
     }
 
     .title {

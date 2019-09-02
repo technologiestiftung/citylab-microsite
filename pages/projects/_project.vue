@@ -33,6 +33,13 @@
                     <h4 v-if="summaryAvailable.blockFourHeadline > 0" class="title">{{headlineBlockFour}}</h4>
                     <p v-html="contentBlockFour" v-if="summaryAvailable.blockFourContent > 0" class="event-intro"></p>
                 </div>
+
+                <div class="logo-wrapper">
+                    <a :href="logo[1]" v-for="logo in logos">
+                        <img class="logo" :src="logo[0]"/>
+                    </a>
+                </div>
+
             </div>
         </section>
         <Footer :lang="lang" :content="getContent"/> 
@@ -137,6 +144,25 @@
             },
             contentBlockFour() {
                 if (this.data != null) { return this.data.gsx$contentblockfour.$t } else { return }
+            },
+            logos() {
+                if (this.data != null) {
+                    let arr = []; 
+                    const urls = this.data.gsx$logo.$t.split(',');
+
+                    for (let index = 0; index < urls.length; index++) {
+                        const filename = `../images/projects/${this.data.gsx$dirname.$t}_logo_${index + 1}.jpg`;
+                        const url = urls[index];
+                        arr.push([filename, url]);
+                    }
+
+                    if (urls.length > 0) {
+                        return arr;
+                    } else {
+                        return 
+                    }
+
+                } else { return }
             }
         },
         methods: {
@@ -177,6 +203,16 @@
 
     h4.title {
         color: $color-secondary;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+
+        img {
+            width: 150px;
+        }
     }
 
 	.event-content {
