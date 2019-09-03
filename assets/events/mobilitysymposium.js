@@ -44,7 +44,7 @@ export const content = {
       { 'type':'title', 'content': 'Teilnahme' },
       { 'type':'paragraph', 'content': 'Die Teilnahme am Symposium ist kostenfrei. Aufgrund der räumlichen Gegebenheiten ist die Veranstaltung auf maximal 70 Teilnehmer*innen beschränkt. Alle angenommenen Autor*innen bekommen zwei Tickets für das Symposium reserviert. Die restlichen Tickets stehen ab dem 1. August mit der Bekanntgabe der Speaker*innen zur Verfügung.' },
     ],
-    'financialSupport': 'Die Veranstaltung wird finanziell unterstützt durch<br />die Senatsverwaltung für Wirtschaft, Energie und Betriebe.<br /><br /><img src="https://citylab-berlin.org/images/events/sen_wienbe_logo_quer.jpg" alt="Senatsverwaltung für Wirtschaft, Energie und Betriebe" style="height:60px" />',
+    'financialSupport': 'Die Veranstaltung wird finanziell unterstützt durch<br />den Regierenden Bürgermeister von Berlin — Senatskanzlei.<br /><br /><img src="https://www.citylab-berlin.org/be-berlin-logo.svg" alt="Der Regierende Bürgermeister von Berlin — Senatskanzlei" style="height:60px" />',
     'programTitle': 'Programmausschuss',
     'chairTitle': 'Vorsitz',
     'chairs':[
@@ -114,7 +114,7 @@ export const content = {
       { 'type':'title', 'content': 'Participation' },
       { 'type':'paragraph', 'content': 'Participation in the symposium is free of charge. Due to the space available, the event is limited to a maximum of 70 participants. All accepted authors will receive two tickets reserved for the symposium. The remaining tickets will be available from the 1st of August with the announcement of the speakers.' },
     ],
-    'financialSupport': 'The event is financially supported by<br />the Senate Department for Economics, Energy and Public Enterprises.<br /><br /><img src="https://citylab-berlin.org/images/events/sen_wienbe_logo_quer.jpg" alt="Senate Department for Economics, Energy and Public Enterprises" style="height:60px" />',
+    'financialSupport': 'The event is financially supported by<br />the The Governing Mayor of Berlin — Senate Chancellery.<br /><br /><img src="https://www.citylab-berlin.org/be-berlin-logo.svg" alt="The Governing Mayor of Berlin — Senate Chancellery" style="height:60px" />',
     'programTitle': 'Program Committee',
     'chairTitle': 'Chairs',
     'chairs':[
