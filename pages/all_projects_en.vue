@@ -8,7 +8,7 @@
 
                 <div class="tile wrap team-wrapper">
                         <div class="tile third" v-for="project in data" v-if="project.visible == 'TRUE'">
-                            <a :href="`./${directProject}/${project.dirname}`">
+                            <a :href="`/${directProject}/${project.dirname}`">
                                 <article>
                                     <figure class="image is 1by1">
                                         <img class="project-img" :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">

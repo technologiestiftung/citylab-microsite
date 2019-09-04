@@ -151,7 +151,7 @@
                     const urls = this.data.gsx$logo.$t.split(',');
 
                     for (let index = 0; index < urls.length; index++) {
-                        const filename = `../images/projects/${this.data.gsx$dirname.$t}_logo_${index + 1}.jpg`;
+                        const filename = `/images/projects/${this.data.gsx$dirname.$t}_logo_${index + 1}.jpg`;
                         const url = urls[index];
                         arr.push([filename, url]);
                     }

@@ -96,7 +96,7 @@
 
                 if (this.data != null) { 
                     const file = this.data.gsx$defaultimg.$t == 'TRUE' ? 'default' : `${this.data.gsx$dirname.$t}`;
-                    const path = `../images/projects/${file}_hero.jpg`
+                    const path = `/images/projects/${file}_hero.jpg`
                     return path;
                 }
             },
