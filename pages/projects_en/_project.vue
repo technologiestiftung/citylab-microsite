@@ -33,6 +33,13 @@
                     <h4 v-if="summaryAvailable.blockFourHeadline > 0" class="title">{{headlineBlockFour}}</h4>
                     <p v-html="contentBlockFour" v-if="summaryAvailable.blockFourContent > 0" class="event-intro"></p>
                 </div>
+
+                <div class="logo-wrapper">
+                    <a :href="logo[1]" v-for="logo in logos">
+                        <img class="logo" v-if="logo[0] != 'FALSE'" :src="logo[0]"/>
+                        <span v-if="logo[0] == 'FALSE'" target="_blank" class="button is-color-secondary is-normal">Link</span>
+                    </a>
+                </div>
             </div>
         </section>
         <Footer :lang="lang" :content="getContent"/> 
@@ -96,7 +103,7 @@
 
                 if (this.data != null) { 
                     const file = this.data.gsx$defaultimg.$t == 'TRUE' ? 'default' : `${this.data.gsx$dirname.$t}`;
-                    const path = `/images/projects/${file}_hero.jpg`
+                    const path = `https://www.citylab-berlin.org/images/projects/${file}_hero.jpg`
                     return path;
                 }
             },
@@ -138,6 +145,30 @@
             },
             contentBlockFour() {
                 if (this.data != null) { return this.data.gsx$contentblockfour.$t } else { return }
+            },
+            logos() {
+                if (this.data != null) {
+                    let arr = []; 
+                    const urls = this.data.gsx$link.$t.split(',');
+
+                    for (let index = 0; index < urls.length; index++) {
+                        let filename
+                        if (this.data.gsx$logo.$t == 'TRUE') {
+                            filename = `https://www.citylab-berlin.org/images/projects/${this.data.gsx$dirname.$t}_logo_${index + 1}.jpg`;
+                        } else {
+                            filename = 'FALSE'
+                        }
+                        const url = urls[index];
+                        arr.push([filename, url]);
+                    }
+
+                    if (urls.length > 0) {
+                        return arr;
+                    } else {
+                        return 
+                    }
+
+                } else { return }
             }
         },
         methods: {
