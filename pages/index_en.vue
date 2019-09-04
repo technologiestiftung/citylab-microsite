@@ -6,6 +6,7 @@
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Call :lang="lang" :content="content"/>
+		<!-- <Projects :lang="lang" :content="content"/> -->
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
@@ -33,6 +34,7 @@
 	import Topics from '../components/Topics.vue';
 	import Tiles from '../components/Tiles.vue';
 	import Partners from '../components/Partners.vue';
+	import Projects from '../components/Projects.vue';
 	import Schedule from '../components/Schedule.vue';
 	import Newsletter from '../components/Newsletter.vue';
 
@@ -56,6 +58,7 @@
 			Topics,
 			Partners,
 			Newsletter,
+			Projects,
 			Tiles,
 		},
 		data() {
