@@ -180,7 +180,6 @@
             axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json`)
                 .then((res) => {
                     // set event entry to data which matches with dirname
-                    console.log(this.dirname, res.data.feed.entry)
                     this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
                     this.data = this.data[0];
 

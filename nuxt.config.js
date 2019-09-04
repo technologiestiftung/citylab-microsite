@@ -7,16 +7,54 @@ import axios from 'axios';
 export default {
   generate: {
 	routes: function () {
-	return axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
-		.then((res) => {
-			let entries = res.data.feed.entry;
-			const eventRoutes = entries.map((entry) => {
-				return '/events/' + entry.gsx$dirname.$t
-			})
-      
-			return eventRoutes;
-		})
-	}
+
+    return axios.all([
+      axios.get('https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json'), // events
+      axios.get('https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json'), // projects
+      axios.get('https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json') // projects_en
+    ])
+    .then(axios.spread((events, projects, projects_en) => {
+
+      // do something with both responses
+      let entriesEvents = events.data.feed.entry;
+      let entriesProjects = projects.data.feed.entry;
+      let entriesProjectsEn = projects_en.data.feed.entry;
+
+      const eventRoutes = entriesEvents.map((entry) => {
+        return '/events/' + entry.gsx$dirname.$t
+      })
+
+      const projectRoutes = entriesProjects.map((entry) => {
+        return '/projects/' + entry.gsx$dirname.$t
+      })
+
+      const projectEnRoutes = entriesProjectsEn.map((entry) => {
+        return '/projects_en/' + entry.gsx$dirname.$t
+      })
+
+      let routesAll = [];
+
+      const all = routesAll.concat(eventRoutes).concat(projectRoutes).concat(projectEnRoutes)
+
+      // console.log(all);
+
+      return all;
+    }));
+
+
+    // return axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
+    //   .then((res) => {
+    //     let entries = res.data.feed.entry;
+    //     const eventRoutes = entries.map((entry) => {
+    //       return '/events/' + entry.gsx$dirname.$t
+    //     })
+        
+    //     return eventRoutes;
+    //   }).then((eventRoutes) => {
+        
+    //   })
+
+    }
   },
 
   mode: 'universal',
