@@ -7,7 +7,7 @@
                 <h1 style="margin-top: 100px" class="title">{{this.content[this.lang].projects.titleAll}}</h1>
 
                 <div class="tile wrap team-wrapper">
-                        <div class="tile third" v-for="project in data">
+                        <div class="tile third" v-for="project in data" v-if="project.visible == 'TRUE'">
                             <a :href="`./${directProject}/${project.dirname}`">
                                 <article>
                                     <figure class="image is 1by1">
