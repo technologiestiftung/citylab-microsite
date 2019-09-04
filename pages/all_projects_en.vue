@@ -11,7 +11,7 @@
                             <a :href="`/${directProject}/${project.dirname}`">
                                 <article>
                                     <figure class="image is 1by1">
-                                        <img class="project-img" :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">
+                                        <img class="project-img" :src="`https://www.citylab-berlin.org/images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">
                                     </figure>
                                     <div class="wrapper-details">
                                         <p class="name">{{ project.name }}</p>
