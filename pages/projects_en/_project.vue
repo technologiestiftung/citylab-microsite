@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" :languageVisible="false" />
+        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" :languageVisible="true" />
         <HeroLight 
             :image="heroImageUrl" 
             :title="title" 
@@ -57,10 +57,10 @@
         async asyncData ({ params, error, payload }) {
             // console.log(params.project.slice(0,-3));
             return { 
-                dirname: params.project.slice(0,-3),
-                lang: 'de',
+                dirname: params.project,
+                lang: 'en',
                 content: content,
-                direct: `/projects_en/${params.project}`,
+                direct: `/projects/${params.project}`,
                 data: null,
                 summaryAvailable: {
                     website: 0,

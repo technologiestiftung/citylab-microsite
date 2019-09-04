@@ -64,9 +64,9 @@
         async asyncData ({ params, error, payload }) {
             return { 
                 dirname: params.project,
-                lang: 'en',
+                lang: 'de',
                 content: content,
-                direct: `/projects/${params.project}`,
+                direct: `/projects_en/${params.project}`,
                 data: null,
                 summaryAvailable: {
                     website: 0,
