@@ -385,6 +385,7 @@ export const content = {
                 'imprint': 'Impressum',
                 'dataprivacy': 'Datenschutz',
                 'resources': 'Ressourcen',
+                'board': 'Beirat'
             },
             'funding': {
                 'title': '.',
@@ -926,6 +927,7 @@ export const content = {
                 'imprint': 'Legal note',
                 'dataprivacy': 'Data privacy',
                 'resources': 'Resources',
+                'board': 'Advisory Board'
             },
             'funding': {
                 'title': '.',

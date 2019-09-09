@@ -110,6 +110,15 @@
                             </p>
                         </nuxt-link>
 
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directBoard">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px; height: 16px;" far :icon="users"/>
+                            </div>
+                            <p class="content">
+                                {{ content[lang]['footer']['more']['board'] }}
+                            </p>
+                        </nuxt-link>
+
                     </div>
 
                     <div class="column is-3">
@@ -153,7 +162,8 @@
         faUserSecret,
         faGenderless,
         faDoorOpen,
-        faInfo
+        faInfo,
+        faUsers
     } from '@fortawesome/free-solid-svg-icons';
 
     export default {
@@ -169,6 +179,7 @@
                         code: '/codeofconduct',
                         imprint: '/legalnote',
                         resources: '/resources',
+                        board: '/board',
                     },
                     en: {
                         downloads: '/downloads_en',
@@ -177,6 +188,7 @@
                         dataprivacy: '/dataprivacy_en',
                         code: '/codeofconduct_en',
                         resources: '/resources_en',
+                        board: '/board_en',
                     }
                 }
             }
@@ -202,6 +214,12 @@
             },
             genderless() {
                 return faGenderless;
+            },
+            users() {
+                return faUsers;
+            },
+            directBoard() {
+                return this.directs[this.lang].board
             },
             directResources() {
                 return this.directs[this.lang].resources
