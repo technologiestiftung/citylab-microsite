@@ -250,39 +250,49 @@ export const content = {
             text: 'Dies ist eine Übersicht des Beirats.',
             'member': [
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'StS Dr. Frank Nägele (Vorsitz)',
+                    'title': 'Senatskanzlei Berlin',
+                    'img_url': '../images/board/edit/frank_naegele.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'StS Christian Rickerts',
+                    'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
+                    'img_url': '../images/board/edit/christian_rickerts.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'StS Sabine Smentek',
+                    'title': 'Senatsverwaltung für Inneres und Sport',
+                    'img_url': '../images/board/edit/sabine_smentek.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Prof. Dr. Olga Willner',
+                    'title': 'HTW Berlin',
+                    'img_url': '../images/board/edit/olga_willner.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Prof. Dr. Sven Ripsas',
+                    'title': 'HWR Berlin',
+                    'img_url': '../images/board/edit/default.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Jutta Lautenschlager',
+                    'title': 'GovMen',
+                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Sebastian Stietzel',
+                    'title': 'IHK Berlin',
+                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                },
+                {
+                    'name': 'Walter Palmetshofer',
+                    'title': 'Open Knowledge Foundation',
+                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                },
+                {
+                    'name': 'Geraldine de Bastion',
+                    'title': 'Konnektiv/re:publica',
+                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
                 },
             ]
         },
@@ -804,39 +814,49 @@ export const content = {
             title: 'Advisory board',
             'member': [
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'StS Dr. Frank Nägele (Vorsitz)',
+                    'title': 'Senatskanzlei Berlin',
+                    'img_url': '../images/board/edit/frank_naegele.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'StS Christian Rickerts',
+                    'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
+                    'img_url': '../images/board/edit/christian_rickerts.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'StS Sabine Smentek',
+                    'title': 'Senatsverwaltung für Inneres und Sport',
+                    'img_url': '../images/board/edit/sabine_smentek.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Prof. Dr. Olga Willner',
+                    'title': 'HTW Berlin',
+                    'img_url': '../images/board/edit/olga_willner.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Prof. Dr. Sven Ripsas',
+                    'title': 'HWR Berlin',
+                    'img_url': '../images/board/edit/default.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Jutta Lautenschlager',
+                    'title': 'GovMen',
+                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
                 },
                 {
-                    'name': 'Benjamin Seibel',
-                    'title': 'Director',
-                    'img_url': '../images/board/benjamin_portrait.jpg'
+                    'name': 'Sebastian Stietzel',
+                    'title': 'IHK Berlin',
+                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                },
+                {
+                    'name': 'Walter Palmetshofer',
+                    'title': 'Open Knowledge Foundation',
+                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                },
+                {
+                    'name': 'Geraldine de Bastion',
+                    'title': 'Konnektiv/re:publica',
+                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
                 },
             ]
         },
