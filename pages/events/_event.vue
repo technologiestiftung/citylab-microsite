@@ -78,8 +78,18 @@
                 </div>
 
                 <div style="margin-top: 30px !important;" class="flex-container col">
-                    <span>{{registerInfo}}</span>
+                    <!-- registerInfo kommt aus Google Spreadsheet -->
+                    <span>{{registerInfo}}</span> 
                     <a v-if="this.summaryAvailable.registerLink > 0" :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
+<!-- 
+                    ab hier: calendar import
+                    <form v-if="this.calendarImp == 'TRUE'" @submit="save(this['name'].value, this['text'].value)" class="button is-color-secondary is-normal">
+                        <input type="text" name="name" value="eineDatei.txt">
+                        <textarea name="text">lalalala</textarea>   
+                        <input type="submit" value="Download für iCal">
+                    </form>      -->
+
+                    <span @click="save('CLB_Event.ics', calData)">Download</span>         
                 </div>
 
             </div>
@@ -127,6 +137,10 @@
                         blockTwoHeadline: 0,
                         blockTwoContent: 0,
                         registerLink: 0,
+
+                        // Don't need it in summary?
+                        calendarImp: 0,
+     
                     },
                     dict: {
                         "de": {
@@ -269,10 +283,34 @@
                     // return `../images/events/${this.dirname}_logo.png`
                 },
 
+                // Schreibweise Concat // Stringliterals
+                calData() {
+                    return `asdlkjas asldkjaklsd ${this.dateSummary}`
+                },
+
+                //ab hier Code für calendar import
+                calendarImp() {
+                    if (this.data != null) { return this.data.gsx$calendarimp.$t } else { return }
+                }
+
             },
             methods: {
                 getLength(data) {
                     return data.length;
+                },
+                save(filename, data) {
+                    console.log('save!!!')
+                    var blob = new Blob([data], {type: 'text/csv'});   
+                    if (window.navigator.msSaveOrOpenBlob) {
+                            window.navigator.msSaveBlob(blob, filename);
+                    } else{
+                        var elem = window.document.createElement('a');
+                        elem.href = window.URL.createObjectURL(blob);
+                        elem.download = filename;        
+                        document.body.appendChild(elem);
+                        elem.click();        
+                        document.body.removeChild(elem);
+                    }
                 }
             },
             beforeCreate() {
@@ -307,13 +345,16 @@
                         this.summaryAvailable.blockFourContent = this.getLength(this.data.gsx$contentblockfour.$t);
 
                         this.summaryAvailable.registerLink = this.getLength(this.data.gsx$registerlink.$t);
+
+                        //ab hier: calendar import 
+                        this.summaryAvailable.calendarImp = this.data.gsx$calendarimp.$t;                        
                     })
 
-            },
+            }, //close beforeCreate()
             mounted() {
 
-            }
-    }
+            } //close mounted
+    } //close export default
 </script>
 
 <style lang="scss">
@@ -460,6 +501,17 @@
 		max-width:80%;
 		width:600px;
 	}
+
+    .col a{
+    width: 180px;
+    margin-right: 2em;
+    float: left;
+
+    }
+
+    form * {
+
+    }
 
 </style>
 
