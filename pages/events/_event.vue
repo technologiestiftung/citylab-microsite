@@ -80,16 +80,12 @@
                 <div style="margin-top: 30px !important;" class="flex-container col">
                     <!-- registerInfo kommt aus Google Spreadsheet -->
                     <span>{{registerInfo}}</span> 
-                    <a v-if="this.summaryAvailable.registerLink > 0" :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
-<!-- 
-                    ab hier: calendar import
-                    <form v-if="this.calendarImp == 'TRUE'" @submit="save(this['name'].value, this['text'].value)" class="button is-color-secondary is-normal">
-                        <input type="text" name="name" value="eineDatei.txt">
-                        <textarea name="text">lalalala</textarea>   
-                        <input type="submit" value="Download für iCal">
-                    </form>      -->
+                </div>
 
-                    <span @click="save('CLB_Event.ics', calData)">Download</span>         
+                <div style="margin-top: 30px !important; display: inline" class="flex-container btn">
+                    <a v-if="this.summaryAvailable.registerLink > 0" :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
+                    <!-- Download for calendar button -->
+                    <a class="button is-color-secondary is-normal" style="display" @click="save('CLB_Event.ics', calData)">Download für iCal</a>         
                 </div>
 
             </div>
@@ -137,10 +133,6 @@
                         blockTwoHeadline: 0,
                         blockTwoContent: 0,
                         registerLink: 0,
-
-                        // Don't need it in summary?
-                        calendarImp: 0,
-     
                     },
                     dict: {
                         "de": {
@@ -212,6 +204,25 @@
                 title() {
                     if (this.data != null) { return this.data.gsx$eventname.$t } else { return }
                 },
+
+                startDate() {
+                    if (this.data != null) { 
+                        const date = this.data.gsx$date.$t;
+                        const startTime = this.data.gsx$starttime.$t;
+                        const newDate = `${date.substring(0,4)}${date.substring(5,7)}${date.substring(8,10)}T${startTime.substring(0,2)}${startTime.substring(3,5)}00`
+                        return newDate;
+                        } else { return }
+                },
+
+                endDate() {
+                    if (this.data != null) { 
+                        const date = this.data.gsx$date.$t;
+                        const endTime = this.data.gsx$endtime.$t;
+                        const newDate = `${date.substring(0,4)}${date.substring(5,7)}${date.substring(8,10)}T${endTime.substring(0,2)}${endTime.substring(3,5)}00`
+                        return newDate;
+                        } else { return }
+                },
+
                 subtitle() {
                     if (this.data != null) { return this.data.gsx$subline.$t } else { return }
                 },
@@ -281,10 +292,32 @@
                 logoUrl() {
                     return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
                 },
+                
 
-                // Schreibweise Concat // Stringliterals
+                // Schreibweise Concat mit Hilfe von Stringliterals
                 calData() {
-                    return `asdlkjas asldkjaklsd ${this.dateSummary}`
+                    return `BEGIN:VCALENDAR\n
+VERSION:2.0\n
+CALSCALE:GREGORIAN\n
+TZID:Europe/Berlin\n
+TZNAME:MESZ\n
+BEGIN:VEVENT\n
+LOCATION:CityLAB Berlin\\nPlatz der Luftbrücke 4\\n12101 Berlin\n
+GEO:52.483814;13.388565\n
+METHOD:PUBLISH\n
+TZID:Europe/Berlin\n
+DTSTART:${this.startDate}\n
+DTEND:${this.endDate}\n
+SUMMARY:${this.title}\n
+URL;VALUE=URI:https://www.citylab-berlin.org/\n
+TRANSP:OPAQUE\n
+BEGIN:VALARM\n
+TRIGGER:-PT1H\n
+ATTACH;VALUE=URI:Chord\n
+ACTION:AUDIO\n
+END:VALARM\n
+END:VEVENT\n
+END:VCALENDAR`
                 },
 
                 //ab hier Code für calendar import
@@ -297,6 +330,7 @@
                 getLength(data) {
                     return data.length;
                 },
+
                 save(filename, data) {
                     console.log('save!!!')
                     var blob = new Blob([data], {type: 'text/csv'});   
@@ -506,6 +540,12 @@
     margin-right: 2em;
     float: left;
 
+    }
+
+    .button.is-color-secondary{
+        margin-top: 30px;
+        min-width: 180px;
+        margin-right: 3em;
     }
 
     form * {
