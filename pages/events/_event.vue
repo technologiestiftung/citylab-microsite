@@ -201,7 +201,7 @@
             },
             computed: {
                 heroImageUrl() {
-                    return `https://citylab-berlin.org/images/events/${this.dirname}_hero.jpg`
+                    return `../images/events/${this.dirname}_hero.jpg`
                 },
                 getContent() {
                     return this.content;
@@ -280,7 +280,6 @@
                 },
                 logoUrl() {
                     return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
-                    // return `../images/events/${this.dirname}_logo.png`
                 },
 
                 // Schreibweise Concat // Stringliterals

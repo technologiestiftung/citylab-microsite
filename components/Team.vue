@@ -85,7 +85,7 @@
         }
 
         .mail {
-            margin-bottom: $spacing-s
+            margin-bottom: $spacing-s;
         }
     }
 

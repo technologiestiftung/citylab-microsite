@@ -92,6 +92,10 @@ export const content = {
             'coworking_p': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:',
             'coworking_url': '/coworking',
             'coworking_url_button': 'Co-working',
+            'board_title': 'Beirat',
+            'board_p': 'Hier findest du eine Übersicht zu allen Beiratsmitgliedern:',
+            'board_url': '/board',
+            'board_url_button': 'Übersicht Beirat',
         },
         'missionStatement': {
             'title': 'Unsere Mission',
@@ -241,6 +245,57 @@ export const content = {
                 'img_url': 'images/topic_05_blue.jpg'
             },
         ],
+        'board': {
+            title: 'Beirat',
+            text: 'Dies ist eine Übersicht des Beirats.',
+            'member': [
+                {
+                    'name': 'StS Dr. Frank Nägele (Vorsitz)',
+                    'title': 'Senatskanzlei Berlin',
+                    'img_url': '../images/board/edit/frank_naegele.jpg'
+                },
+                {
+                    'name': 'StS Christian Rickerts',
+                    'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
+                    'img_url': '../images/board/edit/christian_rickerts.jpg'
+                },
+                {
+                    'name': 'StS Sabine Smentek',
+                    'title': 'Senatsverwaltung für Inneres und Sport',
+                    'img_url': '../images/board/edit/sabine_smentek.jpg'
+                },
+                {
+                    'name': 'Prof. Dr. Olga Willner',
+                    'title': 'HTW Berlin',
+                    'img_url': '../images/board/edit/olga_willner.jpg'
+                },
+                {
+                    'name': 'Prof. Dr. Sven Ripsas',
+                    'title': 'HWR Berlin',
+                    'img_url': '../images/board/edit/default.jpg'
+                },
+                {
+                    'name': 'Jutta Lautenschlager',
+                    'title': 'GovMen',
+                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
+                },
+                {
+                    'name': 'Sebastian Stietzel',
+                    'title': 'IHK Berlin',
+                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                },
+                {
+                    'name': 'Walter Palmetshofer',
+                    'title': 'Open Knowledge Foundation',
+                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                },
+                {
+                    'name': 'Geraldine de Bastion',
+                    'title': 'Konnektiv/re:publica',
+                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
+                },
+            ]
+        },
         'call': {
             'title': 'Open Call',
             'opencall': 'Du hast Ideen für eine bessere Stadt? Mach mit im CityLAB!',
@@ -261,7 +316,8 @@ export const content = {
             ]
         },
         projects: {
-            title: 'Projekte'
+            title: 'Projekte',
+            titleAll: 'Alle Projekte',
         },
         'team': {
             'title': 'Team',
@@ -305,7 +361,7 @@ export const content = {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/malgorzata_portrait.jpg',
+                    'img_url': 'images/malgorzata_portrait.jpg',
                     'title': 'Administration'
                 },
             ],
@@ -329,6 +385,7 @@ export const content = {
                 'imprint': 'Impressum',
                 'dataprivacy': 'Datenschutz',
                 'resources': 'Ressourcen',
+                'board': 'Beirat'
             },
             'funding': {
                 'title': '.',
@@ -544,6 +601,10 @@ export const content = {
             'coworking_p': 'You want to use a co-working place in CityLAB? Here you will find the most important information:',
             'coworking_url': '/coworking_en',
             'coworking_url_button': 'Co-working',
+            'board_title': 'Advisory Board',
+            'board_p': 'Find a detailed list of the members of the advisory board here:',
+            'board_url': '/board_en',
+            'board_url_button': 'Advisory Board',
         },
         'nav': [
             {
@@ -747,7 +808,58 @@ export const content = {
             ]
         },
         projects: {
-            title: 'Projects'
+            title: 'Projects',
+            titleAll: 'All projects',
+        },
+        'board': {
+            title: 'Advisory board',
+            'member': [
+                {
+                    'name': 'StS Dr. Frank Nägele (Vorsitz)',
+                    'title': 'Senatskanzlei Berlin',
+                    'img_url': '../images/board/edit/frank_naegele.jpg'
+                },
+                {
+                    'name': 'StS Christian Rickerts',
+                    'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
+                    'img_url': '../images/board/edit/christian_rickerts.jpg'
+                },
+                {
+                    'name': 'StS Sabine Smentek',
+                    'title': 'Senatsverwaltung für Inneres und Sport',
+                    'img_url': '../images/board/edit/sabine_smentek.jpg'
+                },
+                {
+                    'name': 'Prof. Dr. Olga Willner',
+                    'title': 'HTW Berlin',
+                    'img_url': '../images/board/edit/olga_willner.jpg'
+                },
+                {
+                    'name': 'Prof. Dr. Sven Ripsas',
+                    'title': 'HWR Berlin',
+                    'img_url': '../images/board/edit/default.jpg'
+                },
+                {
+                    'name': 'Jutta Lautenschlager',
+                    'title': 'GovMen',
+                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
+                },
+                {
+                    'name': 'Sebastian Stietzel',
+                    'title': 'IHK Berlin',
+                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                },
+                {
+                    'name': 'Walter Palmetshofer',
+                    'title': 'Open Knowledge Foundation',
+                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                },
+                {
+                    'name': 'Geraldine de Bastion',
+                    'title': 'Konnektiv/re:publica',
+                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
+                },
+            ]
         },
         'team': {
             'title': 'The team',
@@ -815,6 +927,7 @@ export const content = {
                 'imprint': 'Legal note',
                 'dataprivacy': 'Data privacy',
                 'resources': 'Resources',
+                'board': 'Advisory Board'
             },
             'funding': {
                 'title': '.',
