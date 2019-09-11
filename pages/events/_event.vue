@@ -193,7 +193,8 @@
             },
             computed: {
                 heroImageUrl() {
-                    return `../images/events/${this.dirname}_hero.jpg`
+
+                    return `https://citylab-berlin.org/images/events/${this.dirname}_hero.jpg`
                 },
                 getContent() {
                     return this.content;
