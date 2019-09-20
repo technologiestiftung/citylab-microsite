@@ -60,7 +60,7 @@ export const content = {
           'what_q':'Welche Kosten sind förderfähig?',
           'what_a': 'Förderfähig sind Personalkosten, externe Honorare sowie Sach- und Reisekosten.',
           'how_q':'Wie läuft das Bewerbungsverfahren ab?',
-          'how_a': 'In einem ersten Schritt muss Du lediglich ein <a href="/"> kurzes Formular </a> und einen <a href="/docs/fantrag_finanzierungsplan_muster.xlsx">Kostenplan</a> ausfüllen. Schick bitte beides per Mail an <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org.</a> <br /><br />Alle Anträge werden dem CityLAB-Beirat zur Bewertung vorgelegt. Bei Fragen melden wir uns. Falls Dein Projekt als grundsätzlich förderwürdig eingeschätzt wird, werden wir Dich bitten, einen formalen Zuwendungsantrag einzureichen. Dabei unterstützen wir gerne.',
+          'how_a': 'In einem ersten Schritt muss Du lediglich ein <a href="/docs/foerderantrag_citylab.pdf"> kurzes Formular </a> und einen <a href="/docs/fantrag_finanzierungsplan_muster.xlsx">Kostenplan</a> ausfüllen. Schick bitte beides per Mail an <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org.</a> <br /><br />Alle Anträge werden dem CityLAB-Beirat zur Bewertung vorgelegt. Bei Fragen melden wir uns. Falls Dein Projekt als grundsätzlich förderwürdig eingeschätzt wird, werden wir Dich bitten, einen formalen Zuwendungsantrag einzureichen. Dabei unterstützen wir gerne.',
 
         },
 
