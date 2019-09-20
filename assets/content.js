@@ -48,6 +48,22 @@ export const content = {
           ],
           'linktext': 'Beachte unseren <a href="http://www.citylab-berlin.org/codeofconduct" target="_blank"> Code of Conduct</a>.'
         },
+        'funding_details': {
+          'title': 'Projektförderung im CityLAB',
+          'subtitle': 'Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
+          'who_q': 'Welche Projekte sind förderfähig?',
+          'who_a': 'Grundlage für unser Förderprogramm ist eine Förderlinie der Berliner Senatskanzlei. Sie sieht eine Fördermöglichkeit von Projekten vor, die "einen Beitrag zu den Themenfeldern digitale Verwaltung, soziale Innovation und/oder Smart Cities sowie technischen Lösungen zur Verbesserung des Bürgerengagements und –beteiligung leisten.“ Projekte sollten ein klares Ziel verfolgen, das im vorgesehenen Zeitraum realistisch umsetzbar ist. <a href="/docs/foerderrichtlinie_citylab.pdf">Die gesamte Förderlinie mit allen Kriterien findest Du hier</a>.',
+          'when_q': 'Wann ist die Bewerbungsfrist?',
+          'when_a': 'Die Bewerbungfrist für die nächste Förderrunde ist der 20.10.2019.',
+          'howmuch_q': 'Wie hoch ist das Fördervolumen?',
+          'howmuch_a': 'Das Gesamtvolumen des Förderprogramms für 2019 sind 300.000€.',
+          'what_q':'Welche Kosten sind förderfähig?',
+          'what_a': 'Förderfähig sind Personalkosten, externe Honorare sowie Sach- und Reisekosten.',
+          'how_q':'Wie läuft das Bewerbungsverfahren ab?',
+          'how_a': 'In einem ersten Schritt muss Du lediglich ein <a href="/"> kurzes Formular </a> und einen <a href="/docs/fantrag_finanzierungsplan_muster.xlsx">Kostenplan</a> ausfüllen. Schick bitte beides per Mail an <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org.</a> <br /><br />Alle Anträge werden dem CityLAB-Beirat zur Bewertung vorgelegt. Bei Fragen melden wir uns. Falls Dein Projekt als grundsätzlich förderwürdig eingeschätzt wird, werden wir Dich bitten, einen formalen Zuwendungsantrag einzureichen. Dabei unterstützen wir gerne.',
+
+        },
+
         'nav': [
             {
                 'name': 'Idee',
@@ -315,6 +331,12 @@ export const content = {
                 'unsere Werkstatt nutzen oder vorübergehend einen festen Co-Working-Platz bei uns?'
             ]
         },
+        'funding': {
+          'title': 'Projektförderung im CityLAB',
+          'opencall': 'Wir bieten Förderung für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities. ',
+          'cta': 'Mehr erfahren',
+
+      },
         projects: {
             title: 'Projekte',
             titleAll: 'Alle Projekte',
@@ -590,6 +612,20 @@ export const content = {
             ],
             'linktext': `We expect everyone in the CityLAB to adhere to our <a href="http://www.citylab-berlin.org/codeofconduct_en" target="_blank"> Code of Conduct</a>.`
           },
+          'funding_details': {
+            'title': 'Financial Support',
+            'subtitle': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier sind einige wissenswerte Dinge:',
+            'points': [
+                'Das CityLAB ist kein klassischer Co-Working-Space. Wir arbeiten im CityLAB projektbezogen an innovativen Lösungen für eine bessere Stadt. Für die Nutzung der Co-Working-Plätze ist es Voraussetzung, dass Du ein eigenes Projekt mit Bezug zu unseren Themenfeldern verfolgst. Falls Du noch keine eigene Projektidee hast, können wir gerne gemeinsam überlegen, wie Du Deine Fähigkeiten sinnvoll bei uns einbringen kannst.',
+                'Alle Co-Worker*innen sollen aktiv am CityLAB mitwirken. Konkret heißt das, dass Du Dein Projekt jeweils zu Beginn und Abschluss öffentlich vorstellst. Zudem wünschen wir uns, dass Du während der Projektlaufzeit einen oder mehrere Meetups oder Workshops organisierst, in denen Du anderen deine Arbeit näherbringst. Natürlich freuen wir uns, wenn Du darüber hinaus weitere Ideen hast. Unsere Konferenz-, Event- und Ausstellungsräume und die Werkstatt stehen allen Co-Worker*innen offen.',
+                'Die Nutzung des Co-Working ist kostenfrei, allerdings zeitlich auf die Dauer deines Projekts beschränkt (in der Regel zwischen einem und sechs Monate).',
+                'Wir vergeben nicht mehr Plätze, als wir haben. Trotzdem kann es vorkommen, dass die Co-Working-Plätze an einigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).',
+                'Das CityLAB ist öffentlich finanziert und gemeinnützig. Daher ist die Nutzung des Co-Working gemeinnützigen Zwecken vorbehalten.',
+            ],
+
+            'linktext': 'Beachte unseren <a href="http://www.citylab-berlin.org/codeofconduct" target="_blank"> Code of Conduct</a>.'
+          },
+
         'resources': {
             'title': 'Resources',
             'p1': 'At this section you find practical information regarding the CityLAB Berlin.',
@@ -807,6 +843,12 @@ export const content = {
                 'use our workshop or temporarily a permanent co-working place with us?'
             ]
         },
+        'funding': {
+          'title': 'Project Funding',
+          'opencall': 'We offer financial support for selected projects on Civic Tech, Digital Government, Social Innovation and Smart Cities. ',
+          'cta': 'Learn more',
+
+      },
         projects: {
             title: 'Projects',
             titleAll: 'All projects',

@@ -5,6 +5,7 @@
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
 		<Topics :lang="lang" :content="content" :direct="direct" />
+    <Funding :lang="lang" :content="content" :direct="direct" />
 		<Call :lang="lang" :content="content"/>
 		<!-- <Projects :lang="lang" :content="content"/> -->
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
@@ -27,7 +28,8 @@
 	import Navigation from '../components/Navigation.vue';
 	import Hero from '../components/Hero.vue';
 	import MissionStatement from '../components/MissionStatement.vue';
-	import Team from '../components/Team.vue';
+  import Team from '../components/Team.vue';
+  import Funding from '../components/Funding.vue';
 	import Call from '../components/Call.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
@@ -45,12 +47,13 @@
 	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
 	export default {
-		
+
 		components: {
 			Navigation,
 			Hero,
 			MissionStatement,
-			Team,
+      Team,
+      Funding,
 			Call,
 			Cta,
 			Schedule,
@@ -86,7 +89,7 @@
                     }
 					this.obj.push(obj);
                 })
-            })      
+            })
         },
 		computed: {
 			arrowUp() {
@@ -124,7 +127,7 @@
             },
 		},
 		mounted () {
-			if (process.browser) { 
+			if (process.browser) {
 
 				window.addEventListener("hashchange", () => {
 
@@ -142,7 +145,7 @@
 			}
 		},
 		destroyed () {
-			if (process.browser) { 
+			if (process.browser) {
 				window.removeEventListener('scroll', this.handleScroll);
 			}
 		}
