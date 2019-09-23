@@ -4,21 +4,27 @@
                 <h2 class="title">{{this.content[this.lang].projects.title}}</h2>
 
                 <div class="tile wrap team-wrapper">
-                    <a v-for="project in data" :href="`./project/${project.dirname}`">
-                        <div class="tile is-parent third">
-                            <article class="tile is-child">
-                                <figure class="image is 1by1">
-                                    <img :src="imageUrl">
-                                </figure>
-                                <div class="wrapper-details">
-                                    <p class="name">{{ project.name }}</p>
-                                    <p class="title">{{ project.subline }}</p>
-                                </div>
-                            </article>
+                        <div v-if="i < 3" class="tile third" v-for="(project,i) in data">
+                            <a :href="`./${directProject}/${project.dirname}`">
+                                <article>
+                                    <figure class="image is 1by1">
+                                        <img class="project-img" :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">
+                                    </figure>
+                                    <div class="wrapper-details">
+                                        <p class="name">{{ project.name }}</p>
+                                        <p class="title">{{ project.subline }}</p>
+                                    </div>
+                                </article>
+                            </a>    
                         </div>
-                    </a>
                 </div>
+
+                <nuxt-link style="margin-top: 30px;" class="button is-color-secondary  is-normal" :to="directAllProjects">
+                    {{ lang ==  'de' ? 'Alle Projekte' : 'All projects' }}
+                </nuxt-link>
+
             </div>
+
         </section>
 
 </template>
@@ -34,21 +40,40 @@
                 return this.content[this.lang]['team']['member']
             },
             imageUrl() {
-                return `https://citylab-berlin.org/images/projects/${this.dirname}_tile.png`
+                return `images/projects/${this.dirname}_tile.jpg`
+            },
+            directAllProjects() {
+                return this.directs[this.lang]['all'];
+            },
+            directProject() {
+                return this.directs[this.lang]['projects'];
+            },
+            sheetId() {
+                return this.directs[this.lang]['sheetId'];
             },
         },
         data() {
             return {
                 entries: null,
-                data: []
+                data: [],
+                directs: {
+                    de: {
+                        all: '/all_projects',
+                        projects: 'projects',
+                        sheetId: 1
+                    },
+                    en: {
+                        all: '/all_projects_en',
+                        projects: 'projects_en',
+                        sheetId: 2
+                    }
+                }
             }
         },
         created() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/od6/public/values?alt=json`)
+            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/${this.sheetId}/public/values?alt=json`)
             .then((res) => {
                 let entries = res.data.feed.entry;
-
-                console.log(entries);
 
                 this.entries = entries;
 
@@ -58,34 +83,113 @@
                         name: entry.gsx$projectname.$t,
                         publisher: entry.gsx$publisher.$t,
                         subline: entry.gsx$projectsubline.$t,
-                        dirname: entry.gsx$dirname.$t,
+                        dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
+                        imgname: entry.gsx$dirname.$t,
+                        defaultImg: entry.gsx$defaultimg.$t
                     }
                     this.data.push(obj);
-
                 })
-                console.log(this.data);
             })
         }
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
     @import "../assets/style/style.scss";
 
-    .tile.third {
-        flex: 0 0 100% !important;
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    figure {
+        position: relative;
+    }
+
+    a > article {
+        background: $color-primary--lightest;
+        overflow: auto;
+        transition: all .25s ease-in-out;
+
+        &:hover {
+            background: $color-primary--light;
+            transition: all .25s ease-in-out;
+        }
+    }
+
+    .team-wrapper {
+        display: flex !important;
+        transform: translateX(-10px);
+    }
+
+    .content-block {
+        font-size: $size-6;
+        width: 33%;
+        margin-top: 20px;
+
+        a {
+            color: white;
+            opacity: .5;
+        }
+
+        h5 {
+            margin-bottom: -3px;
+        }
+
+        @include tablet-only {
+            width: 50%;
+        }
 
         @include mobile {
-            flex: 0 0 50% !important;
+            width: 100%;
         }
 
-        @include tablet {
-            flex: 0 0 50% !important;
+        span.summary-text {
+            color: white;
+            opacity: .5;
+            font-size: 16px;
+        }
+    }
+
+    .name {
+        line-height: 120%;
+    }
+
+    .tile {
+        align-items: stretch;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        .wrapper-details {
+            margin: 15px;
+            min-height: 60px;
+
+            p.title {
+                margin-bottom: 0px;
+                color: rgba(47, 47, 162, 0.5);
+                font-weight: normal;
+                font-size: 1rem;
+                margin-bottom: 0px !important;
+            }
         }
 
-        @include desktop {
-            flex: 0 0 33% !important;
+        &.third {
+
+            padding: 10px;
+            flex: 0 0 100% !important;
+
+            @include mobile {
+                flex: 0 0 50% !important;
+            }
+
+            @include tablet {
+                flex: 0 0 50% !important;
+            }
+
+            @include desktop {
+                flex: 0 0 33% !important;
+            }
         }
     }
 </style>

@@ -78,8 +78,14 @@
                 </div>
 
                 <div style="margin-top: 30px !important;" class="flex-container col">
-                    <span>{{registerInfo}}</span>
+                    <!-- registerInfo kommt aus Google Spreadsheet -->
+                    <span>{{registerInfo}}</span> 
+                </div>
+
+                <div style="margin-top: 30px !important; display: inline" class="flex-container btn">
                     <a v-if="this.summaryAvailable.registerLink > 0" :href="registerLink" target="_blank" class="button is-color-secondary is-normal">{{ lang == 'en' ? 'Register now' : 'Jetzt registrieren' }}</a>
+                    <!-- Download for calendar button -->
+                    <a class="button is-color-secondary is-normal" style="display" @click="save('CLB_Event.ics', calData)">Download für iCal</a>         
                 </div>
 
             </div>
@@ -187,6 +193,7 @@
             },
             computed: {
                 heroImageUrl() {
+
                     return `https://citylab-berlin.org/images/events/${this.dirname}_hero.jpg`
                 },
                 getContent() {
@@ -198,6 +205,25 @@
                 title() {
                     if (this.data != null) { return this.data.gsx$eventname.$t } else { return }
                 },
+
+                startDate() {
+                    if (this.data != null) { 
+                        const date = this.data.gsx$date.$t;
+                        const startTime = this.data.gsx$starttime.$t;
+                        const newDate = `${date.substring(0,4)}${date.substring(5,7)}${date.substring(8,10)}T${startTime.substring(0,2)}${startTime.substring(3,5)}00`
+                        return newDate;
+                        } else { return }
+                },
+
+                endDate() {
+                    if (this.data != null) { 
+                        const date = this.data.gsx$date.$t;
+                        const endTime = this.data.gsx$endtime.$t;
+                        const newDate = `${date.substring(0,4)}${date.substring(5,7)}${date.substring(8,10)}T${endTime.substring(0,2)}${endTime.substring(3,5)}00`
+                        return newDate;
+                        } else { return }
+                },
+
                 subtitle() {
                     if (this.data != null) { return this.data.gsx$subline.$t } else { return }
                 },
@@ -266,13 +292,59 @@
                 },
                 logoUrl() {
                     return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
-                    // return `../images/events/${this.dirname}_logo.png`
                 },
+                
+
+                // Schreibweise Concat mit Hilfe von Stringliterals
+                calData() {
+                    return `BEGIN:VCALENDAR\n
+VERSION:2.0\n
+CALSCALE:GREGORIAN\n
+TZID:Europe/Berlin\n
+TZNAME:MESZ\n
+BEGIN:VEVENT\n
+LOCATION:CityLAB Berlin\\nPlatz der Luftbrücke 4\\n12101 Berlin\n
+GEO:52.483814;13.388565\n
+METHOD:PUBLISH\n
+TZID:Europe/Berlin\n
+DTSTART:${this.startDate}\n
+DTEND:${this.endDate}\n
+SUMMARY:${this.title}\n
+URL;VALUE=URI:https://www.citylab-berlin.org/\n
+TRANSP:OPAQUE\n
+BEGIN:VALARM\n
+TRIGGER:-PT1H\n
+ATTACH;VALUE=URI:Chord\n
+ACTION:AUDIO\n
+END:VALARM\n
+END:VEVENT\n
+END:VCALENDAR`
+                },
+
+                //ab hier Code für calendar import
+                calendarImp() {
+                    if (this.data != null) { return this.data.gsx$calendarimp.$t } else { return }
+                }
 
             },
             methods: {
                 getLength(data) {
                     return data.length;
+                },
+
+                save(filename, data) {
+                    console.log('save!!!')
+                    var blob = new Blob([data], {type: 'text/csv'});   
+                    if (window.navigator.msSaveOrOpenBlob) {
+                            window.navigator.msSaveBlob(blob, filename);
+                    } else{
+                        var elem = window.document.createElement('a');
+                        elem.href = window.URL.createObjectURL(blob);
+                        elem.download = filename;        
+                        document.body.appendChild(elem);
+                        elem.click();        
+                        document.body.removeChild(elem);
+                    }
                 }
             },
             beforeCreate() {
@@ -307,13 +379,16 @@
                         this.summaryAvailable.blockFourContent = this.getLength(this.data.gsx$contentblockfour.$t);
 
                         this.summaryAvailable.registerLink = this.getLength(this.data.gsx$registerlink.$t);
+
+                        //ab hier: calendar import 
+                        this.summaryAvailable.calendarImp = this.data.gsx$calendarimp.$t;                        
                     })
 
-            },
+            }, //close beforeCreate()
             mounted() {
 
-            }
-    }
+            } //close mounted
+    } //close export default
 </script>
 
 <style lang="scss">
@@ -460,6 +535,23 @@
 		max-width:80%;
 		width:600px;
 	}
+
+    .col a{
+    width: 180px;
+    margin-right: 2em;
+    float: left;
+
+    }
+
+    .button.is-color-secondary{
+        margin-top: 30px;
+        min-width: 180px;
+        margin-right: 3em;
+    }
+
+    form * {
+
+    }
 
 </style>
 
