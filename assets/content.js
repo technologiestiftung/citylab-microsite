@@ -272,7 +272,7 @@ export const content = {
                 {
                     'name': 'Prof. Dr. Sven Ripsas',
                     'title': 'HWR Berlin',
-                    'img_url': '../images/board/edit/default.jpg'
+                    'img_url': '../images/board/edit/sven.jpg'
                 },
                 {
                     'name': 'Jutta Lautenschlager',
@@ -837,7 +837,7 @@ export const content = {
                 {
                     'name': 'Prof. Dr. Sven Ripsas',
                     'title': 'HWR Berlin',
-                    'img_url': '../images/board/edit/default.jpg'
+                    'img_url': '../images/board/edit/sven.jpg'
                 },
                 {
                     'name': 'Jutta Lautenschlager',
