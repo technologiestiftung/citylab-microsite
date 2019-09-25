@@ -620,7 +620,7 @@ export const content = {
             'what_q': 'What types of costs are eligible for funding?',
             'what_a': 'Eligible costs are personnel costs, honorariums for external contributors, material costs, and travel expenses.',
             'how_q': 'What does the application process look like?',
-            'how_a': 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. <br /><br />All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. If we decide that your project fulfills the necessary criteria to receive funding, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.',
+            'how_a': 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. <br /><br />All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. In case of a positive review, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.',
           },
 
         'resources': {
