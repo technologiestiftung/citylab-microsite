@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/hero_img_summer_school.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/fixmyberlin_interview_hero.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
