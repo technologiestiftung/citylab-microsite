@@ -6,7 +6,7 @@
             <div class="container">
 				<p class="event-intro">{{ eventContent[lang]['intro'] }}</p>
 
-        <h4 class="title">Vorläufiges Programm</h4>
+        <h4 class="title">Programm</h4>
 
         <ul id="program">
           <li v-for="item in program">
@@ -17,6 +17,18 @@
             </span>
 					</li>
         </ul>
+
+        <h4 class="title">Keynotes</h4>
+
+        <img src="https://citylab-berlin.org/images/events/mobilitysymposium-anita.jpg" alt="Anita Graser" class="author-image" />
+        <h5 class="title">Anita Graser</h5>
+        <h6 class="title">Austrian Institute of Technology</h6>
+        <p>Anita Graser ist Geodatenwissenschaftlerin, GIS-Expertin und Autorin. Ihre Forschungsschwerpunkte liegen in der Analyse von Bewegungsdaten. Sie ist Co-Autorin von QGIS Map Design und anderen Büchern über QGIS. Für weitere Informationen besuchen Sie ihren Blog unter <a href="https://anitagraser.com/about/">https://anitagraser.com/about/</a>.</p>
+
+        <img src="https://citylab-berlin.org/images/events/mobilitysymposium-till.jpg" alt="Till Nagel" class="author-image" />
+        <h5 class="title">Till Nagel</h5>
+        <h6 class="title">Hochschule Mannheim</h6>
+        <p>Till Nagel ist Professor für Visual Analytics an der Hochschule Mannheim. Seine Forschungsinteressen liegen in den Bereichen Informationsvisualisierung, Interaktionsdesign und Data Literacy. Er leitet das Human Data Interaction Lab, in dem neue Möglichkeiten untersucht werden, unterschiedliche Zielgruppen mit interaktiven Datenrepräsentationen zu unterstützen. <a href="https://services.informatik.hs-mannheim.de/~nagel/">https://services.informatik.hs-mannheim.de/~nagel/</a></p>
 
 				<div id="eventbrite-notice">
 					Für die Bereitstellung der Tickets nutzen wir Eventbrite. Für die Bestellung gelten Eventbrites <a href="https://www.eventbrite.de/l/LegalTerms/">Unternehmensrichtlinie</a>, <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinien-von-eventbrite?lg=de">Datenschutzrichtlinie</a> und <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/cookie-richtlinien-von-eventbrite?lg=de">Cookie Richtlinie</a>.
