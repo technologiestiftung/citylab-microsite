@@ -6,7 +6,7 @@
             <div class="container">
 				<p class="event-intro">{{ eventContent[lang]['intro'] }}</p>
 
-        <h4 class="title">Preliminary Program</h4>
+        <h4 class="title">Program</h4>
 
         <ul id="program">
           <li v-for="item in program">
@@ -17,6 +17,21 @@
             </span>
 					</li>
         </ul>
+
+        <h4 class="title">Keynotes</h4>
+
+        <img src="https://citylab-berlin.org/images/events/mobilitysymposium-anita.jpg" alt="Anita Graser" class="author-image" />
+        <h6 class="title speaker-name">Anita Graser</h6>
+        <h5 class="title">Austrian Institute of Technology</h5>
+        <p>Anita Graser is a spatial data scientist, open source GIS advocate, and author. Her research focuses on the analysis of movement data. She’s co-author of QGIS Map Design and other books about QGIS. For further information, check out her blog at <a href="https://anitagraser.com/about/">https://anitagraser.com/about/</a>.</p>
+
+        <img src="https://citylab-berlin.org/images/events/mobilitysymposium-till.jpg" alt="Till Nagel" class="author-image" />
+        <h6 class="title speaker-name">Till Nagel</h6>
+        <h5 class="title">Hochschule Mannheim</h5>
+        <p>Till Nagel is a Professor for Visual Analytics at the Mannheim University of Applied Sciences. His research interests are in the fields of information visualization, interaction design and data literacy. He heads the Human Data Interaction Lab, which investigates new ways of supporting different target groups with interactive data representations. <a href="https://services.informatik.hs-mannheim.de/~nagel/">https://services.informatik.hs-mannheim.de/~nagel/</a></p>
+
+        <h4 class="title">Location</h4>
+        <p>CityLAB Berlin<br />Platz der Luftbrücke 4<br />12101 Berlin<br /><br />ÖPNV: Platz der Luftbrücke</p>
 
 				<div id="eventbrite-notice">
 					For the ordering of tickets we use Eventbrite. For the ordering eventbrite's <a href="https://www.eventbrite.com/l/LegalTerms/">legal terms</a>, <a href="https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy?lg=en_US">privacy policy</a> and <a href="https://www.eventbrite.co.uk/support/articles/en_US/Troubleshooting/eventbrite-cookie-policy?lg=en_GB">cookie policy</a> applies.
@@ -263,6 +278,16 @@
 
   #program .speaker.hide{
     display:none;
+  }
+
+  img.author-image{
+    width:250px;
+    max-width:90%;
+    margin-bottom:10px;
+  }
+
+  .title.speaker-name{
+    margin-bottom:0 !important;
   }
 
 </style>
