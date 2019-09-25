@@ -55,8 +55,6 @@ export const content = {
           'who_a': 'Grundlage für unser Förderprogramm ist eine Förderlinie der Berliner Senatskanzlei. Sie sieht eine Fördermöglichkeit von Projekten vor, die "einen Beitrag zu den Themenfeldern digitale Verwaltung, soziale Innovation und/oder Smart Cities sowie technischen Lösungen zur Verbesserung des Bürgerengagements und -beteiligung leisten.“ Projekte sollten ein klares Ziel verfolgen, das im vorgesehenen Zeitraum realistisch umsetzbar ist. <a href="/docs/foerderrichtlinie_citylab.pdf">Die gesamte Förderlinie mit allen Kriterien findest Du hier</a>.',
           'when_q': 'Wann ist die Bewerbungsfrist?',
           'when_a': 'Die Bewerbungfrist für die nächste Förderrunde ist der 27.10.2019. Der frühestmögliche Projektstart ist der 01.01.2020.',
-          'howmuch_q': 'Wie hoch ist das Fördervolumen?',
-          'howmuch_a': 'Das Gesamtvolumen des Förderprogramms beläuft sich auf ca. 500.000€.',
           'what_q':'Welche Kosten sind förderfähig?',
           'what_a': 'Förderfähig sind Personalkosten, externe Honorare sowie Sach- und Reisekosten.',
           'how_q':'Wie läuft das Bewerbungsverfahren ab?',
