@@ -30,6 +30,9 @@
         <h5 class="title">Hochschule Mannheim</h5>
         <p>Till Nagel ist Professor für Visual Analytics an der Hochschule Mannheim. Seine Forschungsinteressen liegen in den Bereichen Informationsvisualisierung, Interaktionsdesign und Data Literacy. Er leitet das Human Data Interaction Lab, in dem neue Möglichkeiten untersucht werden, unterschiedliche Zielgruppen mit interaktiven Datenrepräsentationen zu unterstützen. <a href="https://services.informatik.hs-mannheim.de/~nagel/">https://services.informatik.hs-mannheim.de/~nagel/</a></p>
 
+        <h4 class="title">Location</h4>
+        <p>CityLAB Berlin<br />Platz der Luftbrücke 4<br />12101 Berlin<br /><br />ÖPNV: Platz der Luftbrücke</p>
+
 				<div id="eventbrite-notice">
 					Für die Bereitstellung der Tickets nutzen wir Eventbrite. Für die Bestellung gelten Eventbrites <a href="https://www.eventbrite.de/l/LegalTerms/">Unternehmensrichtlinie</a>, <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinien-von-eventbrite?lg=de">Datenschutzrichtlinie</a> und <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/cookie-richtlinien-von-eventbrite?lg=de">Cookie Richtlinie</a>.
 				</div>
