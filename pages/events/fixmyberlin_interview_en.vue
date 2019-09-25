@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/fixmyberlin_interview_hero.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/fixmyberlin_hero.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -67,20 +67,20 @@
           { hid: 'description', name: 'description', content: 'Drei Fragen an FixMyBerlin' },
           { hid: 'og:type', property: 'og:type',  content: "website"},
           { hid: 'og:title', property: 'og:title',  content: 'Interview – FixMyBerlin'},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/fixmyberlin_interview_social_media.jpg"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/fixmyberlin_socialmedia.jpg"},
           { hid: 'og:description', property: 'og:description',  content: "Drei Fragen an FixMyBerlin"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
           { hid: 'article:author', property: 'article:author',  content: "Benjamin Seibel"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
           { hid: 'twitter:site', name: 'twitter:site',  content: "@TSBBerlin"},
           { hid: 'twitter:creator', name: 'twitter:creator',  content: "@bnjmnsbl"},
-          { hid: 'twitter:url', name: 'twitter:url', content: "https://citylab-berlin.org/images/events/fixmyberlin_interview_social_media.jpg"},
+          { hid: 'twitter:url', name: 'twitter:url', content: "https://citylab-berlin.org/images/events/fixmyberlin_socialmedia.jpg"},
           { hid: 'twitter:title', name: 'twitter:title', content: "Drei Fragen an FixMyBerlin"},
           { hid: 'twitter:description', name: 'twitter:description', content: "Drei Fragen an FixMyBerlin"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/fixmyberlin_interview_social_media.jpg"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/fixmyberlin_socialmedia.jpg"},
           { hid: 'name', itemprop: 'name', content:"Interview – FixMyBerlin"},
           { hid: 'description', itemprop: 'description', content: "Interview – FixMyBerlin"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/fixmyberlin_interview_social_media.jpg"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/fixmyberlin_socialmedia.jpg"},
         ]
       }
     },
