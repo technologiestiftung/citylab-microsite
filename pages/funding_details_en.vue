@@ -14,8 +14,6 @@
                 <p class="answer" v-html="content[lang]['funding_details']['who_a']"></p>
                 <p><strong>{{ content[lang]['funding_details']['when_q']}}</strong></p>
                 <p class="answer" v-html="content[lang]['funding_details']['when_a']"></p>
-                <p><strong>{{ content[lang]['funding_details']['howmuch_q']}}</strong></p>
-                <p class="answer" v-html="content[lang]['funding_details']['howmuch_a']"></p>
                 <p><strong>{{ content[lang]['funding_details']['what_q']}}</strong></p>
                 <p class="answer" v-html="content[lang]['funding_details']['what_a']"></p>
                 <p><strong>{{ content[lang]['funding_details']['how_q']}}</strong></p>
@@ -47,9 +45,9 @@
 		},
 		data() {
 			return {
-				lang: 'de',
+				lang: 'en',
 				content: content,
-				direct: '/funding_details_en'
+				direct: '/funding_details'
 			}
 		},
 		computed: {

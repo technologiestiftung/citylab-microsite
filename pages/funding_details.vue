@@ -53,7 +53,7 @@
 			return {
 				lang: 'de',
 				content: content,
-				direct: '/funding_details'
+				direct: '/funding_details_en'
 			}
 		},
 		computed: {

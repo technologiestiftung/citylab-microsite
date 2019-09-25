@@ -611,19 +611,18 @@ export const content = {
                 `The CityLAB is a non-profit, publicly-funded organization, and usage of it should be consistent with these principles.`,
             ],
             'linktext': `We expect everyone in the CityLAB to adhere to our <a href="http://www.citylab-berlin.org/codeofconduct_en" target="_blank"> Code of Conduct</a>.`
-          },
-          'funding_details': {
-            'title': 'Financial Support',
-            'subtitle': 'Du willst einen Co-Working-Platz im CityLAB nutzen? Hier sind einige wissenswerte Dinge:',
-            'points': [
-                'Das CityLAB ist kein klassischer Co-Working-Space. Wir arbeiten im CityLAB projektbezogen an innovativen Lösungen für eine bessere Stadt. Für die Nutzung der Co-Working-Plätze ist es Voraussetzung, dass Du ein eigenes Projekt mit Bezug zu unseren Themenfeldern verfolgst. Falls Du noch keine eigene Projektidee hast, können wir gerne gemeinsam überlegen, wie Du Deine Fähigkeiten sinnvoll bei uns einbringen kannst.',
-                'Alle Co-Worker*innen sollen aktiv am CityLAB mitwirken. Konkret heißt das, dass Du Dein Projekt jeweils zu Beginn und Abschluss öffentlich vorstellst. Zudem wünschen wir uns, dass Du während der Projektlaufzeit einen oder mehrere Meetups oder Workshops organisierst, in denen Du anderen deine Arbeit näherbringst. Natürlich freuen wir uns, wenn Du darüber hinaus weitere Ideen hast. Unsere Konferenz-, Event- und Ausstellungsräume und die Werkstatt stehen allen Co-Worker*innen offen.',
-                'Die Nutzung des Co-Working ist kostenfrei, allerdings zeitlich auf die Dauer deines Projekts beschränkt (in der Regel zwischen einem und sechs Monate).',
-                'Wir vergeben nicht mehr Plätze, als wir haben. Trotzdem kann es vorkommen, dass die Co-Working-Plätze an einigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).',
-                'Das CityLAB ist öffentlich finanziert und gemeinnützig. Daher ist die Nutzung des Co-Working gemeinnützigen Zwecken vorbehalten.',
-            ],
-
-            'linktext': 'Beachte unseren <a href="http://www.citylab-berlin.org/codeofconduct" target="_blank"> Code of Conduct</a>.'
+        },
+         'funding_details': {
+            'title': 'Project grants through the CityLAB',
+            'subtitle': 'Do you have a project of your own that you’d like to develop further here in the CityLAB, but you lack the financial means to do so? Apply for our funding program!',
+            'who_q': 'What kinds of projects do we support?',
+            'who_a': 'We are able to offer this opportunity thanks to a funding line established by the Berlin Senate Chancellery. They are interested in supporting projects that “make a contribution to the fields of digital government, social innovation and/or smart cities, as well as that offer technical solutions for enhancing citizen engagement and participation.” Projects need to have a clearly stated goal that can be realistically achieved within the prescribed time period. Further details for this specific funding line and all of the relevant selection criteria <a href="/docs/foerderrichtlinie_citylab.pdf">can be found here.</a> (for now in German only, if you need help, please get in touch!).',
+            'when_q': 'When is the deadline for submissions?',
+            'when_a': 'The deadline to be included in the next round of funding is October 27, 2019. The earliest possible start date for projects is January 1, 2020.',
+            'what_q': 'What types of costs are eligible for funding?',
+            'what_a': 'Eligible costs are personnel costs, honorariums for external contributors, material costs, and travel expenses.',
+            'how_q': 'What does the application process look like?',
+            'how_a': 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. <br /><br />All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. If we decide that your project fulfills the necessary criteria to receive funding, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.',
           },
 
         'resources': {
@@ -845,7 +844,7 @@ export const content = {
         },
         'funding': {
           'title': 'Project Funding',
-          'opencall': 'We offer financial support for selected projects on Civic Tech, Digital Government, Social Innovation and Smart Cities. ',
+          'opencall': 'We are excited to be able to offer funding to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
           'cta': 'Learn more',
 
       },
