@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/fixmyberlin_hero.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/hero_img_summer_school.jpg'" :title="eventContent[lang]['title']" :subTitle="eventContent[lang]['subTitle']">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -49,17 +49,6 @@
         direct: '/events/fixmyberlin_interview_en'
       }
     },
-    computed: {
-      scheduleArr() {
-                return this.eventContent[this.lang].schedule
-            },
-      universitiesArr() {
-                return this.eventContent[this.lang].universities
-            },
-      partnersArr() {
-                return this.eventContent[this.lang].partners
-            }
-        },
     head () {
       return {
         title: 'Summer School 2019 - Data-driven Urban Innovation',
