@@ -21,13 +21,13 @@
         <h4 class="title">Keynotes</h4>
 
         <img src="https://citylab-berlin.org/images/events/mobilitysymposium-anita.jpg" alt="Anita Graser" class="author-image" />
-        <h5 class="title">Anita Graser</h5>
-        <h6 class="title">Austrian Institute of Technology</h6>
+        <h6 class="title">Anita Graser</h6>
+        <h5 class="title">Austrian Institute of Technology</h5>
         <p>Anita Graser ist Geodatenwissenschaftlerin, GIS-Expertin und Autorin. Ihre Forschungsschwerpunkte liegen in der Analyse von Bewegungsdaten. Sie ist Co-Autorin von QGIS Map Design und anderen Büchern über QGIS. Für weitere Informationen besuchen Sie ihren Blog unter <a href="https://anitagraser.com/about/">https://anitagraser.com/about/</a>.</p>
 
         <img src="https://citylab-berlin.org/images/events/mobilitysymposium-till.jpg" alt="Till Nagel" class="author-image" />
-        <h5 class="title">Till Nagel</h5>
-        <h6 class="title">Hochschule Mannheim</h6>
+        <h6 class="title">Till Nagel</h6>
+        <h5 class="title">Hochschule Mannheim</h5>
         <p>Till Nagel ist Professor für Visual Analytics an der Hochschule Mannheim. Seine Forschungsinteressen liegen in den Bereichen Informationsvisualisierung, Interaktionsdesign und Data Literacy. Er leitet das Human Data Interaction Lab, in dem neue Möglichkeiten untersucht werden, unterschiedliche Zielgruppen mit interaktiven Datenrepräsentationen zu unterstützen. <a href="https://services.informatik.hs-mannheim.de/~nagel/">https://services.informatik.hs-mannheim.de/~nagel/</a></p>
 
 				<div id="eventbrite-notice">
@@ -276,6 +276,11 @@
 
   #program .speaker{
     font-style: italic;
+  }
+
+  img.author-image{
+    width:250px;
+    max-width:90%;
   }
 
 </style>
