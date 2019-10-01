@@ -50,6 +50,7 @@
         data() {
             return {
                 entries: null,
+                otherEvents: this.content[this.lang].otherevents,
                 data: [],
                 directs: {
                     de: {
@@ -104,6 +105,9 @@
             .then((res) => {
                 let entries = res.data.feed.entry;
                 this.entries = entries;
+
+                this.otherEvents.forEach(e => { this.data.push(e) });
+
                 entries.forEach(entry => {
                     let obj = {
                         format: entry.gsx$format.$t,
@@ -118,6 +122,7 @@
                     }
                     this.data.push(obj);
                 })
+
                 this.data = this.data.filter(event => { return this.dateIsUpcoming(event.date) });
                 this.data = this.data.sort((a,b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() });
             })     
