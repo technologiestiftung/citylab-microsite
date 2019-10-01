@@ -37,32 +37,7 @@
 					Für die Bereitstellung der Tickets nutzen wir Eventbrite. Für die Bestellung gelten Eventbrites <a href="https://www.eventbrite.de/l/LegalTerms/">Unternehmensrichtlinie</a>, <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinien-von-eventbrite?lg=de">Datenschutzrichtlinie</a> und <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/cookie-richtlinien-von-eventbrite?lg=de">Cookie Richtlinie</a>.
 				</div>
 
-				<style>
-					#eventbrite-widget-container-68243631539 iframe{
-						height:100% !important;
-					}
-				</style>
-
-				<div id="eventbrite-widget-container-68243631539"></div>
-
-				<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-				<script type="text/javascript">
-				    var exampleCallback = function() {
-				        console.log('Order complete!');
-				    };
-
-				    window.EBWidgets.createWidget({
-				        // Required
-				        widgetType: 'checkout',
-				        eventId: '68243631539',
-				        iframeContainerId: 'eventbrite-widget-container-68243631539',
-
-				        // Optional
-				        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-				        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-				    });
-				</script>
+				<h4 class="title">Die Veranstaltung ist ausverkauft.</h4>
 
 				<h4 class="title">{{ eventContent[lang]['programTitle'] }}</h4>
 

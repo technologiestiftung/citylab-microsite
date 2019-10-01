@@ -33,36 +33,7 @@
         <h4 class="title">Location</h4>
         <p>CityLAB Berlin<br />Platz der Luftbrücke 4<br />12101 Berlin<br /><br />ÖPNV: Platz der Luftbrücke</p>
 
-				<div id="eventbrite-notice">
-					For the ordering of tickets we use Eventbrite. For the ordering eventbrite's <a href="https://www.eventbrite.com/l/LegalTerms/">legal terms</a>, <a href="https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy?lg=en_US">privacy policy</a> and <a href="https://www.eventbrite.co.uk/support/articles/en_US/Troubleshooting/eventbrite-cookie-policy?lg=en_GB">cookie policy</a> applies.
-				</div>
-
-				<style>
-					#eventbrite-widget-container-68243631539 iframe{
-						height:100% !important;
-					}
-				</style>
-
-				<div id="eventbrite-widget-container-68243631539"></div>
-
-				<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-				<script type="text/javascript">
-				    var exampleCallback = function() {
-				        console.log('Order complete!');
-				    };
-
-				    window.EBWidgets.createWidget({
-				        // Required
-				        widgetType: 'checkout',
-				        eventId: '68243631539',
-				        iframeContainerId: 'eventbrite-widget-container-68243631539',
-
-				        // Optional
-				        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-				        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-				    });
-				</script>
+				<h4 class="title">The event is sold out.</h4>
 
 				<h4 class="title">{{ eventContent[lang]['programTitle'] }}</h4>
 
