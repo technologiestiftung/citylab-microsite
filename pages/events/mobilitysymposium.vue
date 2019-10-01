@@ -33,10 +33,6 @@
         <h4 class="title">Location</h4>
         <p>CityLAB Berlin<br />Platz der Luftbrücke 4<br />12101 Berlin<br /><br />ÖPNV: Platz der Luftbrücke</p>
 
-				<div id="eventbrite-notice">
-					Für die Bereitstellung der Tickets nutzen wir Eventbrite. Für die Bestellung gelten Eventbrites <a href="https://www.eventbrite.de/l/LegalTerms/">Unternehmensrichtlinie</a>, <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinien-von-eventbrite?lg=de">Datenschutzrichtlinie</a> und <a href="https://www.eventbrite.de/support/articles/de/Troubleshooting/cookie-richtlinien-von-eventbrite?lg=de">Cookie Richtlinie</a>.
-				</div>
-
 				<h4 class="title">Die Veranstaltung ist ausverkauft.</h4>
 
 				<h4 class="title">{{ eventContent[lang]['programTitle'] }}</h4>
