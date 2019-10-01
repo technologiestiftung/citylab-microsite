@@ -123,7 +123,6 @@
                     this.data.push(obj);
                 })
 
-                
                 this.data = this.data.filter(event => { return this.dateIsUpcoming(event.date) });
                 this.data = this.data.sort((a,b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() });
             })     
