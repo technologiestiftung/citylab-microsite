@@ -51,7 +51,7 @@
     },
     head () {
       return {
-        title: 'Interview - FixMyBerlin,
+        title: 'Interview - FixMyBerlin',
         meta: [
           { hid: 'description', name: 'description', content: 'Drei Fragen an FixMyBerlin' },
           { hid: 'og:type', property: 'og:type',  content: "website"},
