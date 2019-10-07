@@ -52,7 +52,7 @@
 
            head () {
       return {
-        title: 'Summer School 2019 - Data-driven Urban Innovation',
+        title: 'Interview - FixMyBerlin',
         meta: [
           { hid: 'description', name: 'description', content: 'Drei Fragen an FixMyBerlin' },
           { hid: 'og:type', property: 'og:type',  content: "website"},
