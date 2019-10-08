@@ -29,6 +29,16 @@
                                 {{ content[lang]['footer']['contact']['mail'] }}
                             </p>
                         </a>
+
+                        <a class="flex flex-row m-b-sm" style="cursor: auto;">
+                            <div class="icon-wrapper">
+                                <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="phone"/>
+                            </div>
+                            <p class="content">
+                                {{ content[lang]['footer']['contact']['phone'] }}
+                            </p>
+                        </a>
+
                     </div>
 
                     <div class="column is-3">

@@ -394,6 +394,7 @@ export const content = {
             'contact': {
                 'title': 'Kontakt',
                 'mail': 'info@citylab-berlin.org',
+                'phone': '030 95 99 96 410',
                 'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
             },
@@ -955,6 +956,7 @@ export const content = {
             'contact': {
                 'title': 'Get in touch',
                 'mail': 'info@citylab-berlin.org',
+                'phone': '030 95 99 96 410',
                 'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
             },
