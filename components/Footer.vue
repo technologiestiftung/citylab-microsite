@@ -169,6 +169,7 @@
         faBicycle,
         faEnvelope,
         faStamp,
+        faPhone,
         faUserSecret,
         faGenderless,
         faDoorOpen,
@@ -212,6 +213,9 @@
             },
             envelope() {
                 return faEnvelope;
+            },
+            phone() {
+                return faPhone;
             },
             stamp() {
                 return faStamp;
