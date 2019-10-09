@@ -18,6 +18,8 @@
 					</li>
         </ul>
 
+        <a href="http://citylab-berlin.org/downloads/mobility_symposium_program.pdf">Programm as PDF herunterladen</a>
+
         <h4 class="title">Keynotes</h4>
 
         <img src="https://citylab-berlin.org/images/events/mobilitysymposium-anita.jpg" alt="Anita Graser" class="author-image" />
@@ -29,6 +31,8 @@
         <h6 class="title speaker-name">Till Nagel</h6>
         <h5 class="title">Hochschule Mannheim</h5>
         <p>Till Nagel ist Professor für Visual Analytics an der Hochschule Mannheim. Seine Forschungsinteressen liegen in den Bereichen Informationsvisualisierung, Interaktionsdesign und Data Literacy. Er leitet das Human Data Interaction Lab, in dem neue Möglichkeiten untersucht werden, unterschiedliche Zielgruppen mit interaktiven Datenrepräsentationen zu unterstützen. <a href="https://services.informatik.hs-mannheim.de/~nagel/">https://services.informatik.hs-mannheim.de/~nagel/</a></p>
+
+        <a href="http://citylab-berlin.org/downloads/mobility_symposium_abstracts.pdf"><img src="https://citylab-berlin.org/images/events/mobility_symposium_abstracts_de.jpg" alt="Angenommene Einreichungen" /></a>
 
         <h4 class="title">Location</h4>
         <p>CityLAB Berlin<br />Platz der Luftbrücke 4<br />12101 Berlin<br /><br />ÖPNV: Platz der Luftbrücke</p>
