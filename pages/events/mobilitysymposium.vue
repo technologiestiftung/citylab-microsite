@@ -8,7 +8,7 @@
 
         <h4 class="title">Programm</h4>
 
-        <a href="http://citylab-berlin.org/downloads/mobility_symposium_program.pdf">Programm as PDF herunterladen</a>
+        <a style="display:block; margin: -20px 0 20px 0" href="http://citylab-berlin.org/downloads/mobility_symposium_program.pdf">Programm as PDF herunterladen</a>
 
         <ul id="program">
           <li v-for="item in program">
