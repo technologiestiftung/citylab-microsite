@@ -8,6 +8,8 @@
 
         <h4 class="title">Program</h4>
 
+        <a href="http://citylab-berlin.org/downloads/mobility_symposium_program.pdf">Download program as PDF</a>
+
         <ul id="program">
           <li v-for="item in program">
 						<strong>{{ item.time }}</strong>
@@ -17,8 +19,6 @@
             </span>
 					</li>
         </ul>
-
-        <a href="http://citylab-berlin.org/downloads/mobility_symposium_program.pdf">Download program as PDF</a>
 
         <h4 class="title">Keynotes</h4>
 
@@ -61,7 +61,7 @@
           <p v-html="eventContent[lang]['financialSupport']"></p>
         </div>
 
-				<img id="organiser-logos" src="https://citylab-berlin.org/images/events/mobilitysymposium-organiser-logos.svg" alt="Organisers" />
+				<img id="organiser-logos" src="https://citylab-berlin.org/images/events/mobilitysymposium-organiser-logos.svg" alt="Organisers" /><br /><br />
 
         <h3 class="title">Call for Papers</h3>
 
