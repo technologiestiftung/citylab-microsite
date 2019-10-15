@@ -71,10 +71,9 @@
     },
     data() {
       return {
-        lang: 'en',
+        lang: 'de',
         content: content,
-        eventContent: eventContent,
-        direct: '/events/summerschool'
+        direct: '/events/schule-outsidein_en'
       }
     },
     computed: {

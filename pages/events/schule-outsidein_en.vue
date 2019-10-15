@@ -73,8 +73,7 @@
       return {
         lang: 'en',
         content: content,
-        eventContent: eventContent,
-        direct: '/events/summerschool'
+        direct: '/events/schule-outsidein'
       }
     },
     computed: {
