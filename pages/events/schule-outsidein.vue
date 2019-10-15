@@ -1,14 +1,14 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/hero_img_summer_school.jpg'" :title="TITLE" :subTitle="SUBTITLE" :subSubTitle="SUBSUBTITLE">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/hero_img_summer_school.jpg'" :title="'TITLE'" :subTitle="'SUBTITLE'" :subSubTitle="'SUBSUBTITLE'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
         <p class="event-intro">INTROTEXT DEUTSCH</p>
 
         <h3 class="title">ZWISCHENÜBERSCHRIFT</h3>
-        <p>FLIESSTEXT</p>
+        <p>FLIESSTEXT <a href="URL">LINKTEXT</a></p>
 
         <h3 class="title">ZWISCHENÜBERSCHRIFT</h3>
         <p>FLIESSTEXT</p>
@@ -27,12 +27,8 @@
       content as content
   } from '../../assets/content.js';
 
-  import { 
-      content as eventContent
-  } from '../../assets/events/summerschool.js';
-
-    import Navigation from '../../components/Navigation.vue';
-    import HeroLight from '../../components/HeroLight.vue';
+  import Navigation from '../../components/Navigation.vue';
+  import HeroLight from '../../components/HeroLight.vue';
   import Footer from '../../components/Footer.vue';
   import Matomo from '../../components/Matomo.vue';
     
