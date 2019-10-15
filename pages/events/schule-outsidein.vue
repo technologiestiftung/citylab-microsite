@@ -36,7 +36,7 @@
               <span class="summary-text">18-29.11.2019</span>
             </div>
            <div class="content-block">
-              <h5>Besuchzeiten</h5>
+              <h5>Besuchszeiten</h5>
               <span class="summary-text">Mi-Fr 10-17 Uhr</span>
             </div>
             <div class="content-block">
