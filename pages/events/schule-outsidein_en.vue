@@ -109,8 +109,164 @@
 <style lang="scss">
   @import "../../assets/style/style.scss";
   h1.title, h3.title {
-    color: $color-secondary;
-  }
+		color: $color-secondary;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+        
+        span {
+            font-size: $size-5;
+        }
+    }
+
+    .col {
+        flex-direction: column;
+
+        a {
+            width: 130px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .summary-text {
+        line-height: 20px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+
+    p {
+        a {
+            color: #393A60 !important;
+            text-decoration: underline;
+            transition: opacity .25s ease-in-out;
+
+            &:hover {
+                opacity: .5;
+                transition: opacity .25s ease-in-out;
+            }
+        }
+    }
+    
+    .summary-wrapper {
+        color: white;
+        margin-bottom: 50px;
+        margin-top: 60px;
+        background: $color-tertiary;
+        padding: $spacing-m;
+
+        h4 {
+            font-size: $size-3;
+            line-height: .75;
+            width: 100%;
+        }
+
+        .content-block {
+            font-size: $size-6;
+            width: 33%;
+            margin-top: 20px;
+
+            a {
+                color: white;
+                opacity: .5;
+            }
+
+            h5 {
+                margin-bottom: -3px;
+            }
+
+            @include tablet-only {
+                width: 50%;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+
+            span.summary-text {
+                color: white;
+                opacity: .5;
+                font-size: 16px;
+            }
+        }
+    }
+
+	.event-content {
+        p {
+            color: $color-tertiary;
+            font-size: $size-5;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: $color-tertiary;
+            margin-bottom: $spacing-s;
+        }
+
+        h4.title{
+            color: $color-secondary !important;
+            font-size: $size-3;
+            margin-bottom: 0 !important;
+            padding-bottom: 20px !important;
+            padding-top: 50px;
+        }
+    }
+
+    .content-wrapper {
+        padding-bottom: 0;
+    }
+    
+
+	h5.title{
+		color: $color-secondary !important;
+		font-size: $size-4;
+		padding-bottom:0px;
+		margin-bottom:10px !important;
+	}
+
+	.name-list li,
+	.time-list li{
+		color: $color-tertiary;
+        font-size: $size-5;
+		padding-bottom:5px;
+	}
+
+	.name-list, .time-list{
+		margin-bottom:20px;
+	}
+
+	.event-content p.copyright{
+		font-size: 14px;
+	}
+
+	.journal-logos{
+		height:60px;
+		margin-right:50px;
+	}
+
+	#organiser-logos{
+		max-width:80%;
+		width:600px;
+	}
+
+    .col a{
+    width: 180px;
+    margin-right: 2em;
+    float: left;
+
+    }
+
+    .button.is-color-secondary{
+        margin-top: 30px;
+        min-width: 180px;
+        margin-right: 3em;
+    }
+
+    form * {
+
+    }
 </style>
 
 
