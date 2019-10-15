@@ -336,7 +336,7 @@ export const content = {
         },
         'funding': {
           'title': 'Projektförderung im CityLAB',
-          'opencall': 'Wir bieten Förderung für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities. ',
+          'opencall': 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.',
           'cta': 'Mehr erfahren',
 
       },
@@ -853,7 +853,7 @@ export const content = {
         },
         'funding': {
           'title': 'Project Funding',
-          'opencall': 'We are excited to be able to offer funding to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
+          'opencall': 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
           'cta': 'Learn more',
 
       },
