@@ -15,6 +15,36 @@
 
         <img src="https://citylab-berlin.org/images/events/summerschool-organiser-logos.svg" alt="Organisatoren" />
 
+        <div class="summary-wrapper is-medium">
+          <h4>Zusammenfassung</h4>
+          <div class="flex-container">
+            <div class="content-block">
+              <h5>Telefon</h5>
+              <span class="summary-text">(+49) 30 209 69 99 61</span>
+            </div>
+            <div class="content-block">
+              <h5>Veranstalter</h5>
+              <span class="summary-text">Technologiestiftung Berlin</span>
+            </div>
+            <div class="content-block">
+              <h5>Datum</h5>
+              <span class="summary-text">18.10.2019, 16 Uhr</span>
+            </div>
+            <div class="content-block">
+              <h5>E-Mail</h5>
+              <a href="mailto:bildung@technologiestiftung-berlin.de" class="summary-text">bildung@technologiestiftung-berlin.de</a>
+            </div>
+            <div class="content-block">
+              <h5>Adresse</h5>
+              <span class="summary-text">Platz der Luftbrücke 4, Gebäude H2rund, 12101 Berlin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-container btn" style="margin-top:30px!important;display:inline">
+          <a href="https://n3gz.org/2019/09/06/2-young-professionals-meetup-zur-digitalen-verwaltung-mit-inga-karrer-dihk/#anmeldung" target="_blank" class="button is-color-secondary is-normal">Jetzt registrieren</a>
+        </div>
+
         <Matomo/>
             </div>
         </section>
