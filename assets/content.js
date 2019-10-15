@@ -23,6 +23,16 @@ export const content = {
                 title: 'Urban Mobility Symposium',
                 link: 'https://citylab-berlin.org/events/mobilitysymposium',
                 visible: true,
+            },
+            {
+                day: '18',
+                month: 'Nov',
+                date: '2019-11-18',
+                format: 'Ausstellung',
+                time: '10-18 Uhr',
+                title: 'schule*OUT-SIDE-IN',
+                link: 'https://citylab-berlin.org/events/schule-outsidein',
+                visible: false,
             }
 
         ],
@@ -588,10 +598,20 @@ export const content = {
                 month: 'Sept',
                 date: '2019-09-09',
                 format: 'Summer School',
-                time: '10-18 Uhr',
+                time: '10-18 pm',
                 title: 'Data-driven Urban Innovation',
                 link: 'https://citylab-berlin.org/events/summerschool',
                 visible: true,
+            },
+            {
+                day: '18',
+                month: 'Nov',
+                date: '2019-11-18',
+                format: 'Exhibition',
+                time: '10-18 pm',
+                title: 'schule*OUT-SIDE-IN',
+                link: 'https://citylab-berlin.org/events/schule-outsidein_en',
+                visible: false,
             }
         ],
         'codeofconduct': {
