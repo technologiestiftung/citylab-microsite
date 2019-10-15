@@ -53,12 +53,17 @@ export const content = {
           'subtitle': 'Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
           'who_q': 'Welche Projekte sind förderfähig?',
           'who_a': 'Grundlage für unser Förderprogramm ist eine Förderlinie der Berliner Senatskanzlei. Sie sieht eine Fördermöglichkeit von Projekten vor, die "einen Beitrag zu den Themenfeldern digitale Verwaltung, soziale Innovation und/oder Smart Cities sowie technischen Lösungen zur Verbesserung des Bürgerengagements und -beteiligung leisten.“ Projekte sollten ein klares Ziel verfolgen, das im vorgesehenen Zeitraum realistisch umsetzbar ist. <a href="/docs/foerderrichtlinie_citylab.pdf">Die gesamte Förderlinie mit allen Kriterien findest Du hier</a>.',
+          'how_much_q': 'Wie hoch ist die maximale Fördersumme pro Projekt?',
+          'how_much_a': 'Die maximale Fördersumme beträgt 50.000€. Auch kleinere Anträge sind ausdrücklich willkommen.' ,
           'when_q': 'Wann ist die Bewerbungsfrist?',
           'when_a': 'Die Bewerbungfrist für die nächste Förderrunde ist der 27.10.2019. Der frühestmögliche Projektstart ist der 01.01.2020.',
           'what_q':'Welche Kosten sind förderfähig?',
           'what_a': 'Förderfähig sind Personalkosten, externe Honorare sowie Sach- und Reisekosten.',
           'how_q':'Wie läuft das Bewerbungsverfahren ab?',
-          'how_a': 'In einem ersten Schritt muss Du lediglich ein <a href="/docs/foerderantrag_citylab.pdf"> kurzes Formular </a> und einen <a href="/docs/antrag_finanzierungsplan_muster.xlsx">Kostenplan</a> ausfüllen. Schick bitte beides per Mail an <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org.</a> <br /><br />Alle Anträge werden dem CityLAB-Beirat zur Bewertung vorgelegt. Bei Fragen melden wir uns. Falls Dein Projekt als grundsätzlich förderwürdig eingeschätzt wird, werden wir Dich bitten, einen formalen Zuwendungsantrag einzureichen. Dabei unterstützen wir gerne.',
+          'how_a': 'In einem ersten Schritt muss Du lediglich ein <a href="/docs/foerderantrag_citylab.pdf"> kurzes Formular </a> und einen <a href="/docs/antrag_finanzierungsplan_muster.xlsx">Kostenplan</a> ausfüllen. Schick bitte beides per Mail an <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org.</a> Alle Anträge werden dem CityLAB-Beirat zur Bewertung vorgelegt. Bei Fragen melden wir uns. Falls Dein Projekt als grundsätzlich förderwürdig eingeschätzt wird, werden wir Dich bitten, einen formalen Zuwendungsantrag einzureichen. Dabei unterstützen wir gerne.',
+          'schedule_q': 'Ich habe noch Fragen. An wen kann ich mich wenden?',
+          'schedule_a': 'Bitte vereinbare einen Telefontermin unter <a href="https://calendly.com/citylab/foerderprogramm">diesem Link.</a>',
+          'last_updated': 'Zuletzt aktualisiert am 14.10.2019'
 
         },
 
@@ -616,12 +621,17 @@ export const content = {
             'subtitle': 'Do you have a project of your own that you’d like to develop further here in the CityLAB, but you lack the financial means to do so? Apply for our funding program!',
             'who_q': 'What kinds of projects do we support?',
             'who_a': 'We are able to offer this opportunity thanks to a funding line established by the Berlin Senate Chancellery. They are interested in supporting projects that “make a contribution to the fields of digital government, social innovation and/or smart cities, as well as that offer technical solutions for enhancing citizen engagement and participation.” Projects need to have a clearly stated goal that can be realistically achieved within the prescribed time period. Further details for this specific funding line and all of the relevant selection criteria <a href="/docs/foerderrichtlinie_citylab.pdf">can be found here</a> (for now in German only, if you need help, please get in touch!).',
+            'how_much_q': 'What is the maximum amount I can apply for?',
+            'how_much_a': 'The maximum amount is 50.000€. Smaller proposals are welcome as well.' ,
             'when_q': 'When is the deadline for submissions?',
             'when_a': 'The deadline to be included in the next round of funding is October 27, 2019. The earliest possible start date for projects is January 1, 2020.',
             'what_q': 'What types of costs are eligible for funding?',
             'what_a': 'Eligible costs are personnel costs, honorariums for external contributors, material costs, and travel expenses.',
             'how_q': 'What does the application process look like?',
-            'how_a': 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. <br /><br />All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. In case of a positive review, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.',
+            'how_a': 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. In case of a positive review, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.',
+            'schedule_q': 'I still have questions. Who can I talk to?',
+            'schedule_a': 'Please schedule a call under <a href="https://calendly.com/citylab/foerderprogramm">this link.</a>',
+            'last_updated': 'Last updated Oct 14, 2019'
           },
 
         'resources': {

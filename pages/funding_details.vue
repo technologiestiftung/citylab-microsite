@@ -16,9 +16,14 @@
                 <p class="answer" v-html="content[lang]['funding_details']['when_a']"></p>
                 <p><strong>{{ content[lang]['funding_details']['what_q']}}</strong></p>
                 <p class="answer" v-html="content[lang]['funding_details']['what_a']"></p>
+                <p><strong>{{ content[lang]['funding_details']['how_much_q']}}</strong></p>
+                <p class="answer" v-html="content[lang]['funding_details']['how_much_a']"></p>
                 <p><strong>{{ content[lang]['funding_details']['how_q']}}</strong></p>
                 <p class="answer" v-html="content[lang]['funding_details']['how_a']"></p>
-
+                <p><strong>{{ content[lang]['funding_details']['schedule_q']}}</strong></p>
+                <p class="answer" v-html="content[lang]['funding_details']['schedule_a']"></p>
+                <br />
+                <p><i>{{content[lang]['funding_details']['last_updated']}} </i></p>
 
       	<!-- <ul>
 					<li style="margin-bottom: 20px;" v-for="point in pointsArr">{{point}}</li>
