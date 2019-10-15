@@ -15,14 +15,13 @@
         <h3 class="title"></h3>
         <p>
           Big building lots for new schools in Berlin are hard to find, so that new ideas on how to cope with the increasing scarcity of available space are required. 
-          How can new concepts for school buildings contribute to urban density and a social and functional diversity in the city?<br />
-        </p>
+          How can new concepts for school buildings contribute to urban density and a social and functional diversity in the city?</p>
 
         <h3 class="title"></h3>
         <p>Using this initiative and the occurring questions as a starting point, architecture students of BTU Cottbus-Senftenberg developed a concept 
           and presented a design proposal for a school building on a building lot in the inner city of Berlin. 
           The school, intended as part of a city block, is combined with other uses and opens "OUT-SIDE-IN" to the neighborhood and city. 
-          The CityLAB Berlin presents the results of the design seminar.</p>
+          The CityLAB Berlin presents the results of the design seminar.</p><br />
 
         <img src="https://citylab-berlin.org/images/events/schule-outsidein-organiser-logo.jpg" alt="Organisatoren" />
 
@@ -40,6 +39,10 @@
             <div class="content-block">
               <h5>Date</h5>
               <span class="summary-text">18-29.11.2019</span>
+            </div>
+           <div class="content-block">
+              <h5>Opening times</h5>
+              <span class="summary-text">Wed-Fri 10am-5pm</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>

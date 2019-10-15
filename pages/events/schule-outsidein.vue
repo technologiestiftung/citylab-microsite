@@ -7,16 +7,16 @@
             <div class="container">
         <p class="event-intro">Neue Schulen werden gebraucht, am besten sofort, der Platz reicht nicht mehr für die Nachfrage aus. 
           Die Berliner „Schulbauoffensive“, mit einem geplanten Neubau von mehr als 60 Schulen bis 2026, bietet die Chance neue pädagogische Konzepte und die ganztägige Nutzung der Schulräume zu entwickeln und zu erproben. 
-          Wie wird sich die Typologie der Schule in diesem Prozess verändern?</p><br />
+          Wie wird sich die Typologie der Schule in diesem Prozess verändern?</p>
 
         <p>Baugrundstücke für neue Schulen sind in Berlin nicht beliebig vermehrbar und auch hier sind neue Ideen gefordert, 
           wie man mit der zunehmenden Verknappung der zur Verfügung stehenden Flächen umgehen kann. 
-          Wie kann der Schulbau zu einer urbanen Dichte sowie einer sozialen und funktionalen Vielfalt in der Stadt beitragen?</p><br />
+          Wie kann der Schulbau zu einer urbanen Dichte sowie einer sozialen und funktionalen Vielfalt in der Stadt beitragen?</p>
 
         <h3 class="title"></h3>
         <p>Ausgehend von dieser Situation und Fragestellung entwickelten Architekturstudierende der BTU Cottbus-Senftenberg Entwürfe für einen komplexen, 
           innerstädtischen Schulstandort. Die Schule wird als Stadtbaustein mit weiteren Nutzungen kombiniert und weitergedacht 
-          und öffnet sich so „OUT-SIDE-IN“ für die Stadt. Im CityLAB Berlin sind die Ergebnisse des Entwurfsseminars ausgestellt.</p>
+          und öffnet sich so „OUT-SIDE-IN“ für die Stadt. Im CityLAB Berlin sind die Ergebnisse des Entwurfsseminars ausgestellt.</p><br />
 
         <img src="https://citylab-berlin.org/images/events/schule-outsidein-organiser-logo.jpg" alt="Organisatoren" />
 
@@ -34,6 +34,10 @@
             <div class="content-block">
               <h5>Datum</h5>
               <span class="summary-text">18-29.11.2019</span>
+            </div>
+           <div class="content-block">
+              <h5>Besuchzeiten</h5>
+              <span class="summary-text">Mi-Fr 10-17 Uhr</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>
@@ -83,7 +87,7 @@
         },
     head () {
       return {
-        title: 'schule*OUT-SIDE-IN',
+        title: 'Summer School 2019 - Data-driven Urban Innovation',
         meta: [
           { hid: 'description', name: 'description', content: 'schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},

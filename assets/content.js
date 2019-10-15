@@ -29,10 +29,10 @@ export const content = {
                 month: 'Nov',
                 date: '2019-11-18',
                 format: 'Ausstellung',
-                time: '10.00 - 17.00 Uhr',
+                time: '10.00 - 17.00',
                 title: 'schule*OUT-SIDE-IN',
                 link: 'https://citylab-berlin.org/events/schule-outsidein',
-                visible: false,
+                visible: true,
             } 
 
         ],
@@ -611,7 +611,7 @@ export const content = {
                 time: '10.00 - 17.00',
                 title: 'schule*OUT-SIDE-IN',
                 link: 'https://citylab-berlin.org/events/schule-outsidein_en',
-                visible: false,
+                visible: true,
             }
         ],
         'codeofconduct': {
