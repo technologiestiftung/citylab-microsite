@@ -91,7 +91,7 @@
         },
     head () {
       return {
-        title: 'school*OUT-SIDE-IN @CityLAB',
+        title: 'school*OUT-SIDE-IN ',
         meta: [
           { hid: 'description', name: 'description', content: 'school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
