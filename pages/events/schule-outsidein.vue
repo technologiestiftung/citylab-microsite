@@ -87,7 +87,7 @@
         },
     head () {
       return {
-        title: 'Summer School 2019 - Data-driven Urban Innovation',
+        title: 'schule*OUT-SIDE-IN @CityLAB',
         meta: [
           { hid: 'description', name: 'description', content: 'schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
