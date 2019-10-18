@@ -211,6 +211,14 @@
         color: $color-secondary;
     }
 
+    section.hero {
+        margin-top: 75px;
+
+        @media screen and (max-width: 1087px) {
+            margin-top: 67px;
+        }
+    }
+
     .logo-wrapper {
         display: flex;
         flex-direction: row;
