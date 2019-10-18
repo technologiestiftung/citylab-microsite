@@ -24,9 +24,7 @@
                 </nuxt-link>
 
             </div>
-
         </section>
-
 </template>
 
 <script>
