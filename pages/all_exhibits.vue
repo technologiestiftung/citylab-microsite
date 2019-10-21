@@ -36,7 +36,7 @@
                         </div>
                 </div>
 
-                <h1 style="margin-top: 50ÜX" class="title">{{this.content[this.lang].exhibition.pastExhibits}}</h1>
+                <h1 style="margin-top: 50px" class="title">{{this.content[this.lang].exhibition.pastExhibits}}</h1>
 
                 <div class="tile wrap exhibit-wrapper">
                         <div class="tile-wrapper" :id="`tile-${exhibitIndex}`" @click="toggleExpandClass(exhibitIndex)" v-if="exhibit.date.length == 2" v-for="(exhibit, exhibitIndex) in data">
@@ -151,8 +151,6 @@
                         // imgname: entry.gsx$dirname.$t,
                         // defaultImg: entry.gsx$defaultimg.$t
                     }
-
-                    console.log(obj)
 
                     if (entry.gsx$exhibitname.$t.length > 0) {
                         this.data.push(obj);
