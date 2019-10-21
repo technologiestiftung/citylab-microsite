@@ -36,6 +36,14 @@ export const content = {
             } 
 
         ],
+        'exhibition': {
+            'title': 'Die Ausstellung',
+            'subtitle': 'In unserer dauerhaften Ausstellung befinden sich 13 Exponate, die sich mit dem Thema Digitalisierung im öffentlichen Raum nähern.',
+            'subtitleAbout': 'Hier steht ein kurzer Text zu den Exponaten und der Ausstellung',
+            'imgUrl': 'images/exhibition-preview.jpg',
+            'link': 'Alle Exponate',
+            'pastExhibits': 'Vergangene Exponate'
+        },
         'codeofconduct': {
             'title': 'Code of Conduct',
             'points': [
@@ -614,6 +622,14 @@ export const content = {
                 visible: true,
             }
         ],
+        'exhibition': {
+            'title': 'The exhibition',
+            'subtitle': 'In our permanent exhibition there are 13 exhibits that approach the topic of digitization in public space.',
+            'subtitleAbout': 'Hier steht ein kurzer Text zu den Exponaten und der Ausstellung',
+            'imgUrl': 'images/exhibition-preview.jpg',
+            'link': 'All exhibits',
+            'pastExhibits': 'Past exhibits'
+        },
         'codeofconduct': {
             'title': 'Code of conduct',
             'points': [

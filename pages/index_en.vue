@@ -5,9 +5,10 @@
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
 		<Topics :lang="lang" :content="content" :direct="direct" />
-    <Funding :lang="lang" :content="content" :direct="direct" />
+    	<Funding :lang="lang" :content="content" :direct="direct" />
+		<Exhibition :lang="lang" :content="content" :direct="direct" />
 		<Call :lang="lang" :content="content"/>
-		<!-- <Projects :lang="lang" :content="content"/> -->
+		<Projects :lang="lang" :content="content"/>
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>
@@ -28,8 +29,9 @@
 	import Navigation from '../components/Navigation.vue';
 	import Hero from '../components/Hero.vue';
 	import MissionStatement from '../components/MissionStatement.vue';
-  import Team from '../components/Team.vue';
-  import Funding from '../components/Funding.vue';
+  	import Team from '../components/Team.vue';
+  	import Funding from '../components/Funding.vue';
+  	import Exhibition from '../components/Exhibition.vue';
 	import Call from '../components/Call.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
@@ -52,14 +54,15 @@
 			Navigation,
 			Hero,
 			MissionStatement,
-      Team,
-      Funding,
+			Team,
+      		Funding,
 			Call,
 			Cta,
 			Schedule,
 			Footer,
 			Topics,
 			Partners,
+			Exhibition,
 			Newsletter,
 			Projects,
 			Tiles,
