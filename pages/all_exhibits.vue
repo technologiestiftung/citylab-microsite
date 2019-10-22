@@ -13,18 +13,20 @@
                 <div class="tile wrap exhibit-wrapper">
                         <div class="tile-wrapper" :id="`tile-${exhibitIndex}`" @click="toggleExpandClass(exhibitIndex)" v-if="exhibit.date.length < 2" v-for="(exhibit, exhibitIndex) in data">
                             <div class="wrapper-details">
+
                                 <div>
                                     <p class="name">{{ exhibit.name }}</p>
 
                                     <div class="flex-row--expanded">
                                         <div class="link-wrapper" v-for="(link, index) in exhibit.link">
-                                            <a v-if="link.length > 0" class="publisher--expanded" :href="link">{{ exhibit.publisher[index] }}</a>
-                                            <p v-if="link.length == 0" class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
+                                            <a v-if="link.length > 0" class="publisher--expanded" :href="link" target="_blank">{{ exhibit.publisher[index] }}</a>
+                                            <p v-if="link.length == 0" class="publisher--expanded" >{{ exhibit.publisher[index] }}</p>
                                         </div>
                                     </div>
 
-                                    <p class="description">{{ exhibit.description }}</p>
+                                    <p class="description" v-html="exhibit.description"></p>
                                 </div>
+
                                 <span class="expand">
                                     {{ since }} 
                                     {{exhibit.date[0]}}  
@@ -32,10 +34,23 @@
                                         - {{exhibit.date[1]}}
                                     </span>
                                 </span>
+
+                                <div class="more-info-wrapper" :id="`more-${exhibitIndex}`">
+                                    <svg width="10px" height="16px" viewBox="0 0 14 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Artboard-Copy-7" transform="translate(-411.000000, -1935.000000)" stroke="#2E2FA2" stroke-width="4">
+                                                <polyline id="Path-Copy-2" transform="translate(417.000000, 1945.500000) rotate(-270.000000) translate(-417.000000, -1945.500000) " points="408 1950 416.807988 1941 426 1950"></polyline>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
                             </div>
+
                             <figure class="image is 1by1">
                                 <img class="exhibit-img" :src="`../images/exhibits/${exhibit.imgName}`">
                             </figure>
+
                         </div>
                 </div>
 
@@ -215,9 +230,26 @@
             display: none
         }
 
+        .flex-row--expanded {
+            display: block;
+            margin: 10px 0 15px 0;
+        }
+
+
         &.expanded {
             .flex-row--expanded {
                 display: block;
+                margin: 10px 0 15px 0;
+            }
+
+            .publisher--expanded {
+                pointer-events: all !important;
+                border-bottom: 1px solid rgba(47, 47, 162, .5);
+                transition: border-bottom .25s ease-in-out;
+            }
+
+            .more-info-wrapper {
+                display: none;
             }
 
             p.description {
@@ -234,9 +266,30 @@
             flex-direction: column-reverse;
         }
 
+        .more-info-wrapper {
+            position: relative;
+            margin: 20px 0 24px 0;
+
+            svg {
+                transition: all .125s ease-in-out;
+                position: absolute;
+                opacity: .5;
+            }
+        }
+
         &:hover {
             background: rgba(47, 47, 162, 0.1);
             transition: background .125s ease-in-out;
+
+            .more-info-wrapper {
+                margin: 20px 0 24px 0;
+
+                svg {
+                    transform: translateX(5px);
+                    transition: all .125s ease-in-out;
+                    opacity: 1;
+                }
+            }
         }
     }
 
@@ -245,9 +298,13 @@
         &:first-of-type {
             margin-top: 5px;
         }
-        
+
+        &:last-of-type {
+            margin-bottom: 10px;
+        }
+
         margin-bottom: 5px;
-        height: 30px;
+        height: 23px;
         display: flex;
         align-items: flex-end;
     }
@@ -379,8 +436,8 @@
             }
 
             a.publisher--expanded {
-                border-bottom: 1px solid rgba(47, 47, 162, .5);
-                padding-bottom: 3px;
+                pointer-events: none;
+                transition: border-bottom .25s ease-in-out;
 
                 &:hover {
                     border-bottom: 1px solid rgba(47, 47, 162, 1);
@@ -390,6 +447,7 @@
             span.expand {
                 color: rgba(47, 47, 162, .5);
                 font-size: 16px;
+                margin-bottom: 10px;
                 width: fit-content;
 
             }
