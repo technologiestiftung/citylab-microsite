@@ -450,6 +450,7 @@
             }
 
             p.publisher--expanded {
+                font-size: 1rem;
                 color: rgba(47, 47, 162, .5);
             }
 
