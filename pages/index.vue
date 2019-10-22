@@ -6,6 +6,7 @@
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Funding :lang="lang" :content="content" :direct="direct" />
+		<!-- <Exhibition :lang="lang" :content="content" :direct="direct" /> -->
     	<Call :lang="lang" :content="content"/>
 		<!-- <Projects :lang="lang" :content="content"/> -->
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
@@ -31,7 +32,8 @@
 	import MissionStatement from '../components/MissionStatement.vue';
 	import Team from '../components/Team.vue';
 	import Funding from '../components/Funding.vue';
-  import Call from '../components/Call.vue';
+  	import Call from '../components/Call.vue';
+  	import Exhibition from '../components/Exhibition.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
 	import Topics from '../components/Topics.vue';
@@ -53,8 +55,9 @@
 			Hero,
 			MissionStatement,
 			Team,
-      Call,
-      Funding,
+      		Call,
+			Funding,
+			Exhibition,
 			Cta,
 			Schedule,
 			Footer,
