@@ -42,7 +42,9 @@ export const content = {
             'subtitleAbout': 'Hier steht ein kurzer Text zu den Exponaten und der Ausstellung',
             'imgUrl': 'images/exhibition-preview.jpg',
             'link': 'Alle Exponate',
-            'pastExhibits': 'Vergangene Exponate'
+            'pastExhibits': 'Vergangene Exponate',
+            'since': 'Ausgestellt seit: ',
+            'from': 'Ausgestellt von: ',
         },
         'codeofconduct': {
             'title': 'Code of Conduct',
@@ -628,7 +630,9 @@ export const content = {
             'subtitleAbout': 'Hier steht ein kurzer Text zu den Exponaten und der Ausstellung',
             'imgUrl': 'images/exhibition-preview.jpg',
             'link': 'All exhibits',
-            'pastExhibits': 'Past exhibits'
+            'pastExhibits': 'Past exhibits',
+            'since': 'Ausgestellt seit: ',
+            'from': 'Ausgestellt von: ',
         },
         'codeofconduct': {
             'title': 'Code of conduct',

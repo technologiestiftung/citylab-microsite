@@ -28,7 +28,8 @@
                                 </div>
 
                                 <span class="expand">
-                                    {{ since }} 
+                                    <span v-if="exhibit.date.length > 1">{{content[lang].exhibition.from}}</span>
+                                    <span v-if="exhibit.date.length < 2">{{content[lang].exhibition.since}}</span>
                                     {{exhibit.date[0]}}  
                                     <span v-if="exhibit.date.length > 1">
                                         - {{exhibit.date[1]}}
@@ -54,7 +55,7 @@
                         </div>
                 </div>
 
-                <h1 style="margin-top: 50px" class="title">{{this.content[this.lang].exhibition.pastExhibits}}</h1>
+                <h1 style="margin-top: 75px" class="title">{{this.content[this.lang].exhibition.pastExhibits}}</h1>
 
                 <div class="tile wrap exhibit-wrapper">
                         <div class="tile-wrapper" :id="`tile-${exhibitIndex}`" @click="toggleExpandClass(exhibitIndex)" v-if="exhibit.date.length == 2" v-for="(exhibit, exhibitIndex) in data">
@@ -64,15 +65,16 @@
 
                                     <div class="flex-row--expanded">
                                         <div class="link-wrapper" v-for="(link, index) in exhibit.link">
-                                            <a v-if="link.length > 0" class="publisher--expanded" :href="link">{{ exhibit.publisher[index] }}</a>
-                                            <p v-if="link.length == 0" class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
+                                            <a v-if="link.length > 0" class="publisher--expanded" :href="link" target="_blank">{{ exhibit.publisher[index] }}</a>
+                                            <p v-if="link.length == 0" class="publisher--expanded" >{{ exhibit.publisher[index] }}</p>
                                         </div>
                                     </div>
 
                                     <p class="description">{{ exhibit.description }}</p>
                                 </div>
                                 <span class="expand">
-                                    {{ since }} 
+                                    <span v-if="exhibit.date.length > 1">{{content[lang].exhibition.from}}</span>
+                                    <span v-if="exhibit.date.length < 2">{{content[lang].exhibition.since}}</span>
                                     {{exhibit.date[0]}}  
                                     <span v-if="exhibit.date.length > 1">
                                         - {{exhibit.date[1]}}
