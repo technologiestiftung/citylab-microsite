@@ -15,17 +15,12 @@
                             <div class="wrapper-details">
                                 <div>
                                     <p class="name">{{ exhibit.name }}</p>
-                                   
-                                    <div class="flex-row">
-                                        <p class="publisher" v-for="(link, index) in exhibit.link">
-                                            {{ exhibit.publisher[index] }}
-                                        </p>
-                                    </div>
 
                                     <div class="flex-row--expanded">
-                                        <a v-for="(link, index) in exhibit.link" class="link" :href="link">
-                                            <p class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
-                                        </a>
+                                        <div class="link-wrapper" v-for="(link, index) in exhibit.link">
+                                            <a v-if="link.length > 0" class="publisher--expanded" :href="link">{{ exhibit.publisher[index] }}</a>
+                                            <p v-if="link.length == 0" class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
+                                        </div>
                                     </div>
 
                                     <p class="description">{{ exhibit.description }}</p>
@@ -52,16 +47,11 @@
                                 <div>
                                     <p class="name">{{ exhibit.name }}</p>
 
-                                    <div class="flex-row">
-                                        <p class="publisher" v-for="(link, index) in exhibit.link">
-                                            {{ exhibit.publisher[index] }}
-                                        </p>
-                                    </div>
-
                                     <div class="flex-row--expanded">
-                                        <a v-for="(link, index) in exhibit.link" class="link" :href="link">
-                                            <p class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
-                                        </a>
+                                        <div class="link-wrapper" v-for="(link, index) in exhibit.link">
+                                            <a v-if="link.length > 0" class="publisher--expanded" :href="link">{{ exhibit.publisher[index] }}</a>
+                                            <p v-if="link.length == 0" class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
+                                        </div>
                                     </div>
 
                                     <p class="description">{{ exhibit.description }}</p>
@@ -221,14 +211,6 @@
             display: none;
         }
 
-        .flex-row {
-            display: block;
-        }
-
-        .flex-row--expanded {
-            display: none;
-        }
-
         span.expand {
             display: none
         }
@@ -236,10 +218,6 @@
         &.expanded {
             .flex-row--expanded {
                 display: block;
-            }
-
-            .flex-row {
-                display:none;
             }
 
             p.description {
@@ -260,6 +238,18 @@
             background: rgba(47, 47, 162, 0.1);
             transition: background .125s ease-in-out;
         }
+    }
+
+    .link-wrapper {
+
+        &:first-of-type {
+            margin-top: 5px;
+        }
+        
+        margin-bottom: 5px;
+        height: 30px;
+        display: flex;
+        align-items: flex-end;
     }
 
     .exhibit-wrapper {
@@ -363,7 +353,6 @@
                 line-height: 120%;
 
                 @media screen and (max-width: 768px) {
-                    margin-bottom: 10px;
                     font-size: 1.5rem !important;
                 }
             }
@@ -381,11 +370,21 @@
                     cursor: pointer;
                     color: rgba(47, 47, 162, .5);
                     font-size: 1rem;
+
                     &:hover {
                         color: rgba(47, 47, 162, 1)
                     }
                 }
 
+            }
+
+            a.publisher--expanded {
+                border-bottom: 1px solid rgba(47, 47, 162, .5);
+                padding-bottom: 3px;
+
+                &:hover {
+                    border-bottom: 1px solid rgba(47, 47, 162, 1);
+                }
             }
 
             span.expand {
