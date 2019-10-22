@@ -244,9 +244,12 @@
                 margin: 10px 0 15px 0;
             }
 
+            a.publisher--expanded {
+                border-bottom: 1px solid rgba(47, 47, 162, .5);
+            }
+
             .publisher--expanded {
                 pointer-events: all !important;
-                border-bottom: 1px solid rgba(47, 47, 162, .5);
                 transition: border-bottom .25s ease-in-out;
             }
 
@@ -421,7 +424,7 @@
                 color: rgba(47, 47, 162, 1);
             }
 
-            .publisher {
+            a.publisher {
                 color: rgba(47, 47, 162, .5);
                 font-size: 1rem;
 
@@ -444,6 +447,10 @@
                 &:hover {
                     border-bottom: 1px solid rgba(47, 47, 162, 1);
                 }
+            }
+
+            p.publisher--expanded {
+                color: rgba(47, 47, 162, .5);
             }
 
             span.expand {
