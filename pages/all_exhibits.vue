@@ -15,11 +15,19 @@
                             <div class="wrapper-details">
                                 <div>
                                     <p class="name">{{ exhibit.name }}</p>
+                                   
                                     <div class="flex-row">
+                                        <p class="publisher" v-for="(link, index) in exhibit.link">
+                                            {{ exhibit.publisher[index] }}
+                                        </p>
+                                    </div>
+
+                                    <div class="flex-row--expanded">
                                         <a v-for="(link, index) in exhibit.link" class="link" :href="link">
-                                            <p class="publisher">{{ exhibit.publisher[index] }}</p>
+                                            <p class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
                                         </a>
                                     </div>
+
                                     <p class="description">{{ exhibit.description }}</p>
                                 </div>
                                 <span class="expand">
@@ -43,11 +51,19 @@
                             <div class="wrapper-details">
                                 <div>
                                     <p class="name">{{ exhibit.name }}</p>
+
                                     <div class="flex-row">
+                                        <p class="publisher" v-for="(link, index) in exhibit.link">
+                                            {{ exhibit.publisher[index] }}
+                                        </p>
+                                    </div>
+
+                                    <div class="flex-row--expanded">
                                         <a v-for="(link, index) in exhibit.link" class="link" :href="link">
-                                            <p class="publisher">{{ exhibit.publisher[index] }}</p>
+                                            <p class="publisher--expanded">{{ exhibit.publisher[index] }}</p>
                                         </a>
                                     </div>
+
                                     <p class="description">{{ exhibit.description }}</p>
                                 </div>
                                 <span class="expand">
@@ -205,11 +221,27 @@
             display: none;
         }
 
+        .flex-row {
+            display: block;
+        }
+
+        .flex-row--expanded {
+            display: none;
+        }
+
         span.expand {
             display: none
         }
 
         &.expanded {
+            .flex-row--expanded {
+                display: block;
+            }
+
+            .flex-row {
+                display:none;
+            }
+
             p.description {
                 display: block;
             }
@@ -344,11 +376,16 @@
             .publisher {
                 color: rgba(47, 47, 162, .5);
                 font-size: 1rem;
-                cursor: pointer;
 
-                &:hover {
-                    color: rgba(47, 47, 162, 1)
+                &--expanded {
+                    cursor: pointer;
+                    color: rgba(47, 47, 162, .5);
+                    font-size: 1rem;
+                    &:hover {
+                        color: rgba(47, 47, 162, 1)
+                    }
                 }
+
             }
 
             span.expand {
