@@ -628,7 +628,7 @@ export const content = {
             'title': 'Our exhibition',
             'subtitle': 'In our permanent exhibition there are 13 exhibits that approach the topic of digitization in public space.',
             'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we provide insights into our current projects and other exciting exhibits from our partners.',
-            'imgUrl': 'images/exhibition-preview.jpg',
+            'imgUrl': '../images/exhibition-preview.jpg',
             'link': 'Current exhibits',
             'pastExhibits': 'Past exhibits',
             'since': 'Exhibited since: ',
