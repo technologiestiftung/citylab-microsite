@@ -37,11 +37,11 @@ export const content = {
 
         ],
         'exhibition': {
-            'title': 'Die Ausstellung',
+            'title': 'Unsere Ausstellung',
             'subtitle': 'In unserer dauerhaften Ausstellung befinden sich 13 Exponate, die sich mit dem Thema Digitalisierung im öffentlichen Raum nähern.',
             'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
             'imgUrl': 'images/exhibition-preview.jpg',
-            'link': 'Alle Exponate',
+            'link': 'Aktuelle Exponate',
             'pastExhibits': 'Vergangene Exponate',
             'since': 'Ausgestellt seit: ',
             'from': 'Ausgestellt von: ',
@@ -625,14 +625,14 @@ export const content = {
             }
         ],
         'exhibition': {
-            'title': 'The exhibition',
+            'title': 'Our exhibition',
             'subtitle': 'In our permanent exhibition there are 13 exhibits that approach the topic of digitization in public space.',
-            'subtitleAbout': 'Hier steht ein kurzer Text zu den Exponaten und der Ausstellung',
+            'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we provide insights into our current projects and other exciting exhibits from our partners.',
             'imgUrl': 'images/exhibition-preview.jpg',
-            'link': 'All exhibits',
+            'link': 'Current exhibits',
             'pastExhibits': 'Past exhibits',
-            'since': 'Ausgestellt seit: ',
-            'from': 'Ausgestellt von: ',
+            'since': 'Exhibited since: ',
+            'from': 'Exhibited from: ',
         },
         'codeofconduct': {
             'title': 'Code of conduct',
