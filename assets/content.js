@@ -39,7 +39,7 @@ export const content = {
         'exhibition': {
             'title': 'Die Ausstellung',
             'subtitle': 'In unserer dauerhaften Ausstellung befinden sich 13 Exponate, die sich mit dem Thema Digitalisierung im öffentlichen Raum nähern.',
-            'subtitleAbout': 'Hier steht ein kurzer Text zu den Exponaten und der Ausstellung',
+            'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
             'imgUrl': 'images/exhibition-preview.jpg',
             'link': 'Alle Exponate',
             'pastExhibits': 'Vergangene Exponate',
