@@ -38,7 +38,7 @@ export const content = {
         ],
         'exhibition': {
             'title': 'Unsere Ausstellung',
-            'subtitle': 'Experience the city of the future in interactive exhibits.',
+            'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
             'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
             'imgUrl': 'images/exhibition-preview.jpg',
             'link': 'Aktuelle Exponate',
@@ -626,7 +626,7 @@ export const content = {
         ],
         'exhibition': {
             'title': 'Our exhibition',
-            'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
+            'subtitle': 'Experience the city of the future in interactive exhibits.',
             'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we provide insights into our current projects and other exciting exhibits from our partners.',
             'imgUrl': '../images/exhibition-preview.jpg',
             'link': 'Current exhibits',
