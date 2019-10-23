@@ -200,6 +200,7 @@
 
     .subtitle {
         font-size: 24px;
+        color: #393A60;
     }
 
     figure {
