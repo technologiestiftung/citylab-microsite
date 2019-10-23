@@ -403,6 +403,13 @@ export const content = {
                     'title': 'UX & Design'
                 },
                 {
+                    'name': 'Mirko Hohmann',
+                    'mail': 'hohmann@technologiestiftung-berlin.de',
+                    'twitter': 'mirkohohmann',
+                    'img_url': 'images/mirko_portrait.jpg',
+                    'title': 'Projektmanager'
+                },
+                {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
@@ -988,6 +995,13 @@ export const content = {
                     'twitter': 'fdnklg',
                     'img_url': '../images/fabian_portrait.jpg',
                     'title': 'UX & Design'
+                },
+                {
+                    'name': 'Mirko Hohmann',
+                    'mail': 'hohmann@technologiestiftung-berlin.de',
+                    'twitter': 'mirkohohmann',
+                    'img_url': '../images/mirko_portrait.jpg',
+                    'title': 'Projectmanagement'
                 },
                 {
                     'name': 'Malgorzata Magdon',
