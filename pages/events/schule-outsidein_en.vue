@@ -29,8 +29,8 @@
           <h4>More information</h4>
           <div class="flex-container">
             <div class="content-block">
-              <h5>Phone number</h5>
-              <span class="summary-text">+49 (0) 355 694 245</span>
+              <h5>Opening</h5>
+              <span class="summary-text">18.11.2019, 6 pm</span>
             </div>
             <div class="content-block">
               <h5>Organizer</h5>
@@ -42,7 +42,7 @@
             </div>
            <div class="content-block">
               <h5>Opening times</h5>
-              <span class="summary-text">Wed-Fri 10am-5pm</span>
+              <span class="summary-text">Wed-Sat 10am-5pm</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>

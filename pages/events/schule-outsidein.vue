@@ -24,8 +24,8 @@
           <h4>Zusammenfassung</h4>
           <div class="flex-container">
             <div class="content-block">
-              <h5>Telefon</h5>
-              <span class="summary-text">+49 (0) 355 694 245</span>
+              <h5>Eröffnung</h5>
+              <span class="summary-text">18.11.2019, 18 Uhr</span>
             </div>
             <div class="content-block">
               <h5>Veranstalter</h5>
@@ -37,7 +37,7 @@
             </div>
            <div class="content-block">
               <h5>Besuchszeiten</h5>
-              <span class="summary-text">Mi-Fr 10-17 Uhr</span>
+              <span class="summary-text">Mi-Sa 10-17 Uhr</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>
