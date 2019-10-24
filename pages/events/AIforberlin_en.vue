@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="false" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Workshop kick-off for an event series <br>on City & AI'" :subSubTitle="'12.11.2019, 5-9 pm, CityLAB Berlin Event space'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Workshop kick-off for an event series on City & Artificial Intelligence'" :subSubTitle="'12.11.2019, 5-9 pm, CityLAB Berlin Event space'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -30,8 +30,9 @@
           all you need for the first session is your human intelligence.</p> 
           
 
-        <p>Come by and join us in the collective search and development of AI for Berlin. 
-          The Event will be held in Englisch and German.</p><br />
+        <p>Come by and join us in the collective search and development of AI for Berlin.</p>
+
+        <p>The Event will be held in Englisch and German.</p><br />
 
 
         <div class="summary-wrapper is-medium">

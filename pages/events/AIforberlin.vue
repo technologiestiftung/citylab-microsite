@@ -30,8 +30,9 @@
           als Enthusiast*in die Chance nutzen willst, selbst den Puls der Zeit zu erleben - für die erste Session 
           brauchst Du nur Deine menschliche Intelligenz.</p>
 
-        <p>Komm vorbei und mach mit bei der gemeinsamen Suche und Entwicklung von KI für Berlin. <br>
-        Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
+        <p>Komm vorbei und mach mit bei der gemeinsamen Suche und Entwicklung von KI für Berlin.</p>
+
+        <p>Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
 
 
         <div class="summary-wrapper is-medium">
