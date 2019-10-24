@@ -452,7 +452,7 @@ export const content = {
             'open': {
                 columntitle: 'Besuchszeiten',
                 title: 'Ausstellung',
-                hours: 'Mi-Fr 10-17 Uhr'
+                hours: 'Mi-Sa 10-17 Uhr'
             }
         },
         'press': {
@@ -1046,7 +1046,7 @@ export const content = {
             'open': {
                 columntitle: 'Visiting hours',
                 title: 'Exhibition',
-                hours: 'Wed-Fri 10am-5pm'
+                hours: 'Wed-Sat 10am-5pm'
             }
         },
         'press': {
