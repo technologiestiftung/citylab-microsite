@@ -37,11 +37,11 @@ export const content = {
 
         ],
         'exhibition': {
-            'title': 'Die Ausstellung',
-            'subtitle': 'In unserer dauerhaften Ausstellung befinden sich 13 Exponate, die sich mit dem Thema Digitalisierung im öffentlichen Raum nähern.',
+            'title': 'Unsere Ausstellung',
+            'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
             'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
             'imgUrl': 'images/exhibition-preview.jpg',
-            'link': 'Alle Exponate',
+            'link': 'Aktuelle Exponate',
             'pastExhibits': 'Vergangene Exponate',
             'since': 'Ausgestellt seit: ',
             'from': 'Ausgestellt von: ',
@@ -403,6 +403,13 @@ export const content = {
                     'title': 'UX & Design'
                 },
                 {
+                    'name': 'Mirko Hohmann',
+                    'mail': 'hohmann@technologiestiftung-berlin.de',
+                    'twitter': 'mirkohohmann',
+                    'img_url': 'images/mirko_portrait.jpg',
+                    'title': 'Projektmanager'
+                },
+                {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
@@ -445,7 +452,7 @@ export const content = {
             'open': {
                 columntitle: 'Besuchszeiten',
                 title: 'Ausstellung',
-                hours: 'Mi-Fr 10-17 Uhr'
+                hours: 'Mi-Sa 10-17 Uhr'
             }
         },
         'press': {
@@ -625,14 +632,14 @@ export const content = {
             }
         ],
         'exhibition': {
-            'title': 'The exhibition',
-            'subtitle': 'In our permanent exhibition there are 13 exhibits that approach the topic of digitization in public space.',
-            'subtitleAbout': 'Hier steht ein kurzer Text zu den Exponaten und der Ausstellung',
-            'imgUrl': 'images/exhibition-preview.jpg',
-            'link': 'All exhibits',
+            'title': 'Our exhibition',
+            'subtitle': 'Experience the city of the future in interactive exhibits.',
+            'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we provide insights into our current projects and other exciting exhibits from our partners.',
+            'imgUrl': '../images/exhibition-preview.jpg',
+            'link': 'Current exhibits',
             'pastExhibits': 'Past exhibits',
-            'since': 'Ausgestellt seit: ',
-            'from': 'Ausgestellt von: ',
+            'since': 'Exhibited since: ',
+            'from': 'Exhibited from: ',
         },
         'codeofconduct': {
             'title': 'Code of conduct',
@@ -990,6 +997,13 @@ export const content = {
                     'title': 'UX & Design'
                 },
                 {
+                    'name': 'Mirko Hohmann',
+                    'mail': 'hohmann@technologiestiftung-berlin.de',
+                    'twitter': 'mirkohohmann',
+                    'img_url': '../images/mirko_portrait.jpg',
+                    'title': 'Projectmanagement'
+                },
+                {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
@@ -1032,7 +1046,7 @@ export const content = {
             'open': {
                 columntitle: 'Visiting hours',
                 title: 'Exhibition',
-                hours: 'Wed-Fri 10am-5pm'
+                hours: 'Wed-Sat 10am-5pm'
             }
         },
         'press': {

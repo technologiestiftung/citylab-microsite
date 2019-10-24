@@ -30,8 +30,6 @@
             <nuxt-link class="cross-link" :to="directAllExhibits">
                 {{content[lang]['exhibition']['link']}}
             </nuxt-link>
-
-            <span class="cross-link">{{content[lang]['exhibition']['link']}}</span>
         </div>
     </section>
 </template>
@@ -49,8 +47,6 @@
                 const elm = document.querySelector('.preview');
                 const height = (elm.offsetWidth / 100) * 56.9;
                 elm.style.height = `${height}px`;
-
-                console.log('resize')
             },
             
         },

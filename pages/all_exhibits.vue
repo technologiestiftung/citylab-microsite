@@ -4,14 +4,13 @@
 
         <section class="section is-medium schedule">
             <div class="container">
+
+                <h2 v-html="this.content[this.lang].exhibition.subtitleAbout" class="subtitle" style="margin-top: 100px !important"></h2>
+
                 <h1 style="margin-top: 100px" class="title">{{this.content[this.lang].exhibition.link}}</h1>
 
-                <h2 class="subtitle">
-					{{this.content[this.lang].exhibition.subtitleAbout}}
-				</h2>
-
                 <div class="tile wrap exhibit-wrapper">
-                        <div class="tile-wrapper" :id="`tile-${exhibitIndex}`" @click="toggleExpandClass(exhibitIndex)" v-if="exhibit.date.length < 2" v-for="(exhibit, exhibitIndex) in data">
+                        <div class="tile-wrapper" :id="`tile-${exhibitIndex}`" @click="toggleExpandClass(exhibitIndex)" v-if="exhibit.date.length < 2 && exhibit.visible == 'TRUE'" v-for="(exhibit, exhibitIndex) in data">
                             <div class="wrapper-details">
 
                                 <div>
@@ -58,7 +57,7 @@
                 <h1 style="margin-top: 75px" class="title">{{this.content[this.lang].exhibition.pastExhibits}}</h1>
 
                 <div class="tile wrap exhibit-wrapper">
-                        <div class="tile-wrapper" :id="`tile-${exhibitIndex}`" @click="toggleExpandClass(exhibitIndex)" v-if="exhibit.date.length == 2" v-for="(exhibit, exhibitIndex) in data">
+                        <div class="tile-wrapper" :id="`tile-${exhibitIndex}`" @click="toggleExpandClass(exhibitIndex)" v-if="exhibit.date.length == 2 && exhibit.visible == 'TRUE'" v-for="(exhibit, exhibitIndex) in data">
                             <div class="wrapper-details">
                                 <div>
                                     <p class="name">{{ exhibit.name }}</p>
@@ -80,6 +79,16 @@
                                         - {{exhibit.date[1]}}
                                     </span>
                                 </span>
+
+                                <div class="more-info-wrapper" :id="`more-${exhibitIndex}`">
+                                    <svg width="10px" height="16px" viewBox="0 0 14 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Artboard-Copy-7" transform="translate(-411.000000, -1935.000000)" stroke="#2E2FA2" stroke-width="4">
+                                                <polyline id="Path-Copy-2" transform="translate(417.000000, 1945.500000) rotate(-270.000000) translate(-417.000000, -1945.500000) " points="408 1950 416.807988 1941 426 1950"></polyline>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
                             <figure class="image is 1by1">
                                 <img class="exhibit-img" :src="`../images/exhibits/${exhibit.imgName}`">
@@ -170,9 +179,6 @@
                         publisher: entry.gsx$exhibitpublisher.$t.split(','),
                         link: entry.gsx$publisherlink.$t.split(','),
                         date: entry.gsx$date.$t.split(','),
-                        // dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
-                        // imgname: entry.gsx$dirname.$t,
-                        // defaultImg: entry.gsx$defaultimg.$t
                     }
 
                     if (entry.gsx$exhibitname.$t.length > 0) {
@@ -190,6 +196,11 @@
 
     .wrap {
         flex-wrap: wrap;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        color: #393A60;
     }
 
     figure {
@@ -381,8 +392,7 @@
         flex-shrink: 1;
 
         .wrapper-details {
-            margin: 15px 0 0 0;
-            padding-bottom: 15px;
+            margin: 15px 0 15px 0;
             width: 65%;
             display: flex;
             flex-direction: column;
@@ -457,7 +467,6 @@
             span.expand {
                 color: rgba(47, 47, 162, .5);
                 font-size: 16px;
-                margin-bottom: 10px;
                 width: fit-content;
 
             }
