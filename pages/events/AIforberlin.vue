@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="false" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Auftakt der Workshopreihe zu KI & Stadt'" :subSubTitle="'12.11.2019 CityLAB Berlin Veranstaltungsraum'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Auftakt der Workshopreihe zu KI & Stadt'" :subSubTitle="'12.11.2019, 17-21 Uhr, CityLAB Berlin Veranstaltungsraum'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -17,7 +17,7 @@
         <h3 class="title"></h3>
         <p>Mit unserer Workshop Reihe „AI for Berlin” möchten wir zusammen mit unserem Partnerunternehmen 
           <a href= https://www.birdsonmars.com>Birds on Mars</a> 
-        und Euch am 12.11.2019 hierfür einen Startschuss setzen. 
+        und Euch am <b>12.11.2019</b> hierfür einen Startschuss setzen. 
           Konkret beginnen wir in der Auftaktsession mit 4 Stunden Ideenfindung und Konzeption. 
           Denn wie so oft fehlt es gerade im Bereich KI & Stadt noch an vielen guten Ideen, 
           die wir gemeinsam entwickeln und damit die Spielmaße für die nächsten Sessions in der Reihe erarbeiten.</p>
@@ -33,13 +33,12 @@
         <p>Komm vorbei und mach mit bei der gemeinsamen Suche und Entwicklung von KI für Berlin. <br>
         Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
 
-        <img src="" alt="Organisatoren" />
 
         <div class="summary-wrapper is-medium">
           <h4>Zusammenfassung</h4>
           <div class="flex-container">
             <div class="content-block">
-              <h5>Uhrzeit</h5>
+              <h5>Website</h5>
               <span class="summary-text">17 - 21 Uhr</span>
             </div>
             <div class="content-block">
@@ -48,11 +47,7 @@
             </div>
             <div class="content-block">
               <h5>Datum</h5>
-              <span class="summary-text">12.11.2019</span>
-            </div>
-           <div class="content-block">
-              <h5>Besuchszeiten</h5>
-              <span class="summary-text">Mi-Sa 10-17 Uhr</span>
+              <span class="summary-text">12.11.2019, 17-21 Uhr</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>

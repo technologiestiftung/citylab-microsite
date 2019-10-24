@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="false" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Workshop kick-off for an event series on City & AI'" :subSubTitle="'12.11.2019 CityLAB Berlin Event space'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Workshop kick-off for an event series <br>on City & AI'" :subSubTitle="'12.11.2019, 5-9 pm, CityLAB Berlin Event space'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -15,7 +15,7 @@
 
         <h3 class="title"></h3>
         <p>Together with our partner <a href= https://www.birdsonmars.com>Birds on Mars</a>, we’re starting our workshop series 
-        “AI for Berlin” on Nov. 12, and we’re hoping you’ll join us! The 4-hour kick-off session starts with idea generation 
+        “AI for Berlin” on <b>Nov. 12</b>, and we’re hoping you’ll join us! The 4-hour kick-off session starts with idea generation 
         and conception. As is so often the case, the field of AI is missing creative ideas! We want to develop 
         them together and generate a great foundation for the future working sessions of this ongoing series.</p>
 
@@ -33,13 +33,12 @@
         <p>Come by and join us in the collective search and development of AI for Berlin. 
           The Event will be held in Englisch and German.</p><br />
 
-        <img src="" alt="Organisatoren" />
 
         <div class="summary-wrapper is-medium">
           <h4>More information</h4>
           <div class="flex-container">
             <div class="content-block">
-              <h5>Opening</h5>
+              <h5>Website</h5>
               <span class="summary-text">18.11.2019, 6 pm</span>
             </div>
             <div class="content-block">
@@ -48,11 +47,7 @@
             </div>
             <div class="content-block">
               <h5>Date</h5>
-              <span class="summary-text">12.11.2019</span>
-            </div>
-           <div class="content-block">
-              <h5>Time</h5>
-              <span class="summary-text">5 - 9 pm</span>
+              <span class="summary-text">12.11.2019, 5-9 pm</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>
