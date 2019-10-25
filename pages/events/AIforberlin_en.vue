@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="false" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Workshop kick-off for an event series on City & Artificial Intelligence'" :subSubTitle="'12.11.2019, 5-9 pm, CityLAB Berlin Event space'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Workshop kick-off for an event series on city & Artificial Intelligence'" :subSubTitle="'12.11.2019, 5-9 pm, CityLAB Berlin Event space'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -40,11 +40,11 @@
           <div class="flex-container">
             <div class="content-block">
               <h5>Website</h5>
-              <span class="summary-text">18.11.2019, 6 pm</span>
+              <span class="summary-text"><a href= https://www.birdsonmars.com>https://www.birdsonmars.com</a> </span>
             </div>
             <div class="content-block">
               <h5>Organizer</h5>
-              <span class="summary-text">BTU Cottbus - Senftenberg</span>
+              <span class="summary-text">Birds on Mars</span>
             </div>
             <div class="content-block">
               <h5>Date</h5>
@@ -52,7 +52,7 @@
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>
-              <a href="mailto:wulfa@b-tu.de" class="summary-text">wulfa@b-tu.de</a>
+              <a href="mailto:info@birdsonmars.com" class="summary-text">info@birdsonmars.com</a>
             </div>
             <div class="content-block">
               <h5>Adress</h5>
@@ -60,6 +60,12 @@
             </div>
           </div>
         </div>
+
+      <p>Free entry with a registration</p>
+
+      <div class="flex-container btn" style="margin-top:30px!important;display:inline">
+<a href="https://www.eventbrite.de/e/ai-for-berlin-workshop-kick-off-for-an-event-series-on-city-ai-registration-78591728977" target="_blank" class="button is-color-secondary is-normal">Register now</a>
+</div>
 
 
         <Matomo/>

@@ -15,9 +15,9 @@
           Lasst sie uns suchen, oder noch besser gemeinsam entwickeln!</p>
 
         <h3 class="title"></h3>
-        <p>Mit unserer Workshop Reihe „AI for Berlin” möchten wir zusammen mit unserem Partnerunternehmen 
+        <p>Mit unserer Workshop Reihe „AI for Berlin” möchten wir zusammen mit unserem Partner 
           <a href= https://www.birdsonmars.com>Birds on Mars</a> 
-        und Euch am <b>12.11.2019</b> hierfür einen Startschuss setzen. 
+        und Euch am <b>12. November</b> hierfür einen Startschuss setzen. 
           Konkret beginnen wir in der Auftaktsession mit 4 Stunden Ideenfindung und Konzeption. 
           Denn wie so oft fehlt es gerade im Bereich KI & Stadt noch an vielen guten Ideen, 
           die wir gemeinsam entwickeln und damit die Spielmaße für die nächsten Sessions in der Reihe erarbeiten.</p>
@@ -40,19 +40,19 @@
           <div class="flex-container">
             <div class="content-block">
               <h5>Website</h5>
-              <span class="summary-text">17 - 21 Uhr</span>
+              <span class="summary-text"><a href= https://www.birdsonmars.com>https://www.birdsonmars.com</a> </span>
             </div>
             <div class="content-block">
               <h5>Veranstalter</h5>
-              <span class="summary-text">BTU Cottbus - Senftenberg</span>
+              <span class="summary-text">Birds on Mars</span>
             </div>
             <div class="content-block">
               <h5>Datum</h5>
               <span class="summary-text">12.11.2019, 17-21 Uhr</span>
             </div>
-            <div class="content-block">
+        <div class="content-block">
               <h5>E-Mail</h5>
-              <a href="mailto:wulfa@b-tu.de" class="summary-text">wulfa@b-tu.de</a>
+              <a href="mailto:info@birdsonmars.com" class="summary-text">info@birdsonmars.com</a>
             </div>
             <div class="content-block">
               <h5>Adresse</h5>
@@ -61,7 +61,11 @@
           </div>
         </div>
 
-      <p> Eintritt ohne Anmeldung </p>
+      <p> Eintritt frei mit Anmeldung </p>
+
+      <div class="flex-container btn" style="margin-top:30px!important;display:inline">
+<a href="https://www.eventbrite.de/e/ai-for-berlin-workshop-kick-off-for-an-event-series-on-city-ai-registration-78591728977" target="_blank" class="button is-color-secondary is-normal">Jetzt registrieren</a>
+</div>
 
         <Matomo/>
             </div>
