@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Navigation :scrolled="false" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
+    <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
     <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Auftakt der Workshopreihe zu KI & Stadt'" :subSubTitle="'12.11.2019, 17-21 Uhr, CityLAB Berlin Veranstaltungsraum'">
     </HeroLight>
         <section class="section is-medium event-content">
