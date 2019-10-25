@@ -44,7 +44,7 @@
             </div>
             <div class="content-block">
               <h5>Veranstalter</h5>
-              <span class="summary-text">Birds on Mars</span>
+              <span class="summary-text">CityLAB & Birds on Mars</span>
             </div>
             <div class="content-block">
               <h5>Datum</h5>
@@ -52,7 +52,7 @@
             </div>
         <div class="content-block">
               <h5>E-Mail</h5>
-              <a href="mailto:info@birdsonmars.com" class="summary-text">info@birdsonmars.com</a>
+              <a href="mailto:florian@birdsonmars.com" class="summary-text">Florian Dohmann</a>
             </div>
             <div class="content-block">
               <h5>Adresse</h5>
@@ -104,7 +104,7 @@
       return {
         title: 'AI for Berlin - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'AI for Berlin(2019-11-12 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'AI for Berlin (2019-11-12 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
           { hid: 'og:title', property: 'og:title',  content: "AI for Berlin"},

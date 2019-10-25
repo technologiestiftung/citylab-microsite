@@ -33,6 +33,16 @@ export const content = {
                 title: 'schule*OUT-SIDE-IN',
                 link: 'https://citylab-berlin.org/events/schule-outsidein',
                 visible: true,
+            },
+            {
+                day: '12',
+                month: 'Nov',
+                date: '2019-11-18',
+                format: 'Workshop',
+                time: '17.00 - 21.00',
+                title: 'AI for Berlin',
+                link: 'https://citylab-berlin.org/events/AIforberlin',
+                visible: true,
             } 
 
         ],
@@ -628,6 +638,16 @@ export const content = {
                 time: '10.00 - 17.00',
                 title: 'schule*OUT-SIDE-IN',
                 link: 'https://citylab-berlin.org/events/schule-outsidein_en',
+                visible: true,
+            },
+            {
+                day: '12',
+                month: 'Nov',
+                date: '2019-11-18',
+                format: 'Workshop',
+                time: '17.00 - 21.00',
+                title: 'AI for Berlin',
+                link: 'https://citylab-berlin.org/events/AIforberlin_en',
                 visible: true,
             }
         ],
