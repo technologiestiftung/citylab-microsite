@@ -25,16 +25,6 @@ export const content = {
                 visible: true,
             },
             {
-                day: '18',
-                month: 'Nov',
-                date: '2019-11-18',
-                format: 'Ausstellung',
-                time: '10.00 - 17.00',
-                title: 'schule*OUT-SIDE-IN',
-                link: 'https://citylab-berlin.org/events/schule-outsidein',
-                visible: true,
-            },
-            {
                 day: '12',
                 month: 'Nov',
                 date: '2019-11-18',
@@ -43,7 +33,17 @@ export const content = {
                 title: 'AI for Berlin',
                 link: 'https://citylab-berlin.org/events/AIforberlin',
                 visible: true,
-            } 
+            },
+            {
+                day: '18',
+                month: 'Nov',
+                date: '2019-11-18',
+                format: 'Ausstellung',
+                time: '10.00 - 17.00',
+                title: 'schule*OUT-SIDE-IN',
+                link: 'https://citylab-berlin.org/events/schule-outsidein',
+                visible: true,
+            }
 
         ],
         'exhibition': {
@@ -631,16 +631,6 @@ export const content = {
                 visible: true,
             },
             {
-                day: '18',
-                month: 'Nov',
-                date: '2019-11-18',
-                format: 'Exhibition',
-                time: '10.00 - 17.00',
-                title: 'schule*OUT-SIDE-IN',
-                link: 'https://citylab-berlin.org/events/schule-outsidein_en',
-                visible: true,
-            },
-            {
                 day: '12',
                 month: 'Nov',
                 date: '2019-11-18',
@@ -649,7 +639,18 @@ export const content = {
                 title: 'AI for Berlin',
                 link: 'https://citylab-berlin.org/events/AIforberlin_en',
                 visible: true,
+            },
+            {
+                day: '18',
+                month: 'Nov',
+                date: '2019-11-18',
+                format: 'Exhibition',
+                time: '10.00 - 17.00',
+                title: 'schule*OUT-SIDE-IN',
+                link: 'https://citylab-berlin.org/events/schule-outsidein_en',
+                visible: true,
             }
+          
         ],
         'exhibition': {
             'title': 'Our exhibition',
