@@ -26,7 +26,7 @@ export const content = {
             },
             {
                 day: '12',
-                month: 'Nov',
+                month: 'November',
                 date: '2019-11-18',
                 format: 'Workshop',
                 time: '17.00 - 21.00',
@@ -36,7 +36,7 @@ export const content = {
             },
             {
                 day: '18',
-                month: 'Nov',
+                month: 'November',
                 date: '2019-11-18',
                 format: 'Ausstellung',
                 time: '10.00 - 17.00',
