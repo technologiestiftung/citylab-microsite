@@ -114,7 +114,16 @@
                 })
 
                 this.otherEvents.forEach(entry => {
-                    this.data.push(entry);
+                    let obj = {
+                        day: this.getDay(entry.date),
+                        month: this.getMonth(entry.date),
+                        format: entry.format,
+                        date: entry.date,
+                        time: entry.time,
+                        title: entry.title,
+                        link: entry.link,
+                    }
+                    this.data.push(obj);
                 })
 
                 this.dataUpcoming = this.data;

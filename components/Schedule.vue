@@ -106,7 +106,18 @@
                 let entries = res.data.feed.entry;
                 this.entries = entries;
 
-                this.otherEvents.forEach(e => { this.data.push(e) });
+                this.otherEvents.forEach(entry => {
+                    let obj = {
+                        day: this.getDay(entry.date),
+                        month: this.getMonth(entry.date),
+                        format: entry.format,
+                        date: entry.date,
+                        time: entry.time,
+                        title: entry.title,
+                        link: entry.link,
+                    }
+                    this.data.push(obj);
+                })
 
                 entries.forEach(entry => {
                     let obj = {
