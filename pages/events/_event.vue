@@ -79,7 +79,7 @@
 
                 <div style="margin-top: 30px !important;" class="flex-container col">
                     <!-- registerInfo kommt aus Google Spreadsheet -->
-                    <span>{{registerInfo}}</span> 
+                    <span v-html="registerInfo"></span> 
                 </div>
 
                 <div style="margin-top: 30px !important; display: inline" class="flex-container btn">
