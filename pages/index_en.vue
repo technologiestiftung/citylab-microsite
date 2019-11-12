@@ -17,7 +17,7 @@
 		<Footer :lang="lang" :content="content"/>
 
 		<button @click="topFunction()" id="myBtn" class="is-color-tertiary top">
-			<font-awesome-icon far :icon="arrowUp"/>
+			↑
 		</button>
 	</div>
 </template>

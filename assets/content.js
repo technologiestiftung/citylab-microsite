@@ -120,6 +120,7 @@ export const content = {
             'claim_01': "Die",
             'claim_02': "Zukunft Berlins",
             'claim_03': "gemeinsam gestalten.",
+            'imgUrl': '../images/intro-preview.jpg',
             'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
         },
         'resources': {
@@ -733,6 +734,7 @@ export const content = {
             'claim_01': "Shaping Berlin's",
             'claim_02': "",
             'claim_03': "future together.",
+            'imgUrl': '../images/intro-preview.jpg',
             'words_arr': ['sustainable', 'changing', 'innovative', 'exciting', 'inclusive', 'digital']
         },
         'missionStatement': {

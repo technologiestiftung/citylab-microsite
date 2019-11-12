@@ -16,7 +16,7 @@ export default {
             </h2>
         </div>
 
-        <div class="preview container">
+        <div :class="`preview container preview-${this.key}`">
             <div class="wrapper">
                 <h2 class="title">
                     {{ content[lang]['exhibition']['title'] }}
@@ -29,7 +29,7 @@ export default {
                     {{content[lang]['exhibition']['link']}}
                 </nuxt-link>
             </div>
-            <img :src="content[lang]['exhibition']['imgUrl']"/>
+            <img :src="content[lang]['hero']['imgUrl']"/>
         </div>
 
         <div class="wrapper-mobile is-medium">
@@ -46,7 +46,7 @@ export default {
 
 <script>
     export default {
-        props: ['lang', 'content', 'direct'],
+        props: ['lang', 'content', 'direct', 'key'],
         name: 'Teaser',
         computed: {
             directAllExhibits() {
@@ -55,7 +55,8 @@ export default {
         },
         methods: {
             adjustHeight() {
-                const elm = document.querySelector('.preview');
+                const elm = document.querySelector(`.preview-${this.key}`);
+                console.log(elm);
                 const height = (elm.offsetWidth / 100) * 56.9;
                 elm.style.height = `${height}px`;
             },

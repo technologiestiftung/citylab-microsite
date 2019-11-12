@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-		<Teaser style="margin-top: 80px" :lang="lang" :content="content" :direct="direct"/>
+		<Teaser style="margin-top: 80px" :lang="lang" key="hero" :content="content" :direct="direct"/>
 		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
@@ -17,9 +17,7 @@
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
 
-		<button @click="topFunction()" id="myBtn" class="is-color-tertiary top">
-			<font-awesome-icon far :icon="arrowUp"/>
-		</button>
+		<button @click="topFunction()" id="myBtn" class="arrow-up top">↑</button>
 	</div>
 </template>
 
@@ -29,7 +27,6 @@
 	import { links as links } from '../assets/links.js';
 
 	import Navigation from '../components/Navigation.vue';
-	import Hero from '../components/Hero.vue';
 	import MissionStatement from '../components/MissionStatement.vue';
 	import Team from '../components/Team.vue';
 	import Funding from '../components/Funding.vue';
@@ -54,7 +51,6 @@
 
 		components: {
 			Navigation,
-			Hero,
 			MissionStatement,
 			Team,
 			Call,
@@ -182,10 +178,20 @@
 		}
 	}
 
-	.is-color-tertiary {
-		background: none;
-		color: $color-tertiary;
+	.arrow-up {
+		font-size: 40px !important;
+		color: $color-primary;
+		padding: 0px 44px 57px 16px;
+		border-radius: 100px;
+		margin-right: 30px;
+		margin-bottom: 30px;
 		border: none;
-		font-size: 24px;
+		transition: background .125s ease-in-out;
+
+		&:hover {
+			background: #F4F4FA;
+			color: $color-primary !important;
+			transition: background .125s ease-in-out;
+		}
 	}
 </style>

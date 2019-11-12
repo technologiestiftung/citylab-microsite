@@ -11,9 +11,6 @@
                         </h6>
 
                         <a class="flex flex-row m-b-sm" :href="directGoogleMaps">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon far style="width: 20px; transform: translateY(2px)" :icon="bicycle"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['contact']['address_street'] }}
                                 <br/>
@@ -22,18 +19,12 @@
                         </a>
 
                         <a class="flex flex-row m-b-sm" :href="mailtoCitylab">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="envelope"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['contact']['mail'] }}
                             </p>
                         </a>
 
                         <a class="flex flex-row m-b-sm" style="cursor: auto;">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="phone"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['contact']['phone'] }}
                             </p>
@@ -47,9 +38,6 @@
                         </h6>
 
                         <a class="flex flex-row m-b-sm" style="cursor: auto;">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon far style="width: 15px; transform: translateY(2px);" :icon="doorOpen"/>
-                            </div>
                             <div class="flex flex-column">
                                 <p>
                                     {{ content[lang]['footer']['open']['title'] }}
@@ -85,45 +73,30 @@
                         </nuxt-link> -->
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directImprint">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px; width: 15px;" far :icon="stamp"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['imprint'] }}
                             </p>
                         </nuxt-link>
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directDataprivacy">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px;" far :icon="userSecret"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['dataprivacy'] }}
                             </p>
                         </nuxt-link>
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directCodeofconduct">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(-2px); margin-right: 5px; width: 15px;" far :icon="genderless"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['codeofconduct'] }}
                             </p>
                         </nuxt-link>
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directResources">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px; height: 16px;" far :icon="information"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['resources'] }}
                             </p>
                         </nuxt-link>
 
                         <nuxt-link class="flex flex-row m-b-sm" :to="directBoard">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px; width: 15px; height: 16px;" far :icon="users"/>
-                            </div>
                             <p class="content">
                                 {{ content[lang]['footer']['more']['board'] }}
                             </p>
@@ -165,18 +138,6 @@
 </template>
 
 <script>
-    import {
-        faBicycle,
-        faEnvelope,
-        faStamp,
-        faPhone,
-        faUserSecret,
-        faGenderless,
-        faDoorOpen,
-        faInfo,
-        faUsers
-    } from '@fortawesome/free-solid-svg-icons';
-
     export default {
         name: "Footer",
         props: ['content', 'lang'],
@@ -205,33 +166,6 @@
             }
         },
         computed: {
-            doorOpen() {
-                return faDoorOpen;
-            },
-            bicycle() {
-                return faBicycle;
-            },
-            envelope() {
-                return faEnvelope;
-            },
-            phone() {
-                return faPhone;
-            },
-            stamp() {
-                return faStamp;
-            },
-            information() {
-                return faInfo;
-            },
-            userSecret() {
-                return faUserSecret;
-            },
-            genderless() {
-                return faGenderless;
-            },
-            users() {
-                return faUsers;
-            },
             directBoard() {
                 return this.directs[this.lang].board
             },
@@ -269,6 +203,14 @@
 <style lang="scss" scoped>
     @import "../assets/style/style.scss";
 
+    footer {
+        border-top: 1px solid $color-primary--light;
+
+        section {
+            background: white;
+        }
+    }
+
     .flex {
         display: flex;
         &-row {
@@ -281,11 +223,10 @@
 
     .footer {
         padding: 0;
-        background: $color-tertiary--lightest !important;
     }
 
     h6.title {
-        color: $color-tertiary;
+        color: $color-primary;
     }
 
     .m-b-m {
@@ -294,12 +235,12 @@
 
     .column {
         span {
-            color: $color-tertiary;
-            opacity: .8;
+            color: $color-primary;
+            opacity: 1;
         }
 
         a {
-            color: $color-tertiary;
+            color: $color-primary;
             opacity: 0.8;
 
             &:hover {
