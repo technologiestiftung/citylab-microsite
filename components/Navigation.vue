@@ -7,7 +7,7 @@
             <div class="navbar-brand">
                 <a style="height: 50px;" class="navbar-item" :href="directHome">
 
-                <svg width="153px" height="31px" viewBox="0 0 153 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg width="180px" height="40px" viewBox="0 0 153 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="citylab-logo" fill-rule="nonzero">
                             <path d="M47.9092237,17.6991239 C46.930703,19.405883 45.6801985,20.25 43.2154313,20.25 C40.2798694,20.25 38.25,18.1944091 38.25,14.5973871 C38.25,11.0003651 40.1890931,9 43.5416048,9 C45.8251647,9 47.2206351,10.0461458 48,11.7896057 L45.354025,13.0926568 C45.0640931,12.0832117 44.6109017,11.4411235 43.4691217,11.4411235 C41.9649267,11.4411235 41.040941,12.6522479 41.040941,14.6707886 C41.040941,16.6529781 41.8744955,17.8088765 43.5416048,17.8088765 C44.3934527,17.8088765 45.1548694,17.3135914 45.5352326,16.3226714 L47.9092237,17.6991239 Z" id="Fill-1" fill="#2F2FA2"></path>
@@ -52,15 +52,23 @@
 
         </div>
 
-        <div class="nav-overlay is-medium" v-bind:class='{ "is-active": showNav }' >
-            <div class="container">
-                <div class="anchor-tags">
-                    <a v-bind:key="i" v-for="(item,i) in menuArr" :href="`${item.ref}`" class="navbar-item" :class="{ 'hide' : !anchorTags }" @mouseover="() => {navMouseEnter(i)}" @mouseleave="() => {navMouseLeave(i)}" >
-                        {{ item.name }}
-                        <span v-bind:id="`arrow-${i}`" class="arrow" :if="{hover}">→</span>
-                    </a>
+
+        <div class="nav-overlay" v-bind:class='{ "is-active": showNav }' >
+            <section class="section is-medium">
+                <div class="container">
+                    <div class="anchor-tags">
+                        <a v-bind:key="i" v-for="(item,i) in menuArr" :href="`${item.ref}`" class="navbar-item" :class="{ 'hide' : !anchorTags }" @mouseover="() => {navMouseEnter(i)}" @mouseleave="() => {navMouseLeave(i)}" >
+                            {{ item.name }}
+                            <span v-bind:id="`arrow-${i}`" class="arrow" :if="{hover}">→</span>
+                        </a>
+                    </div>
+
+                    <div class="social-wrapper">
+                        <Twitter/>
+                        <Instagram/>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
 
     </nav>
@@ -68,8 +76,16 @@
 </template>
 
 <script>
+    import Twitter from './Twitter';
+    import Instagram from './Instagram';
+
     export default {
         name: 'Navigation',
+        components: {
+            Twitter,
+            Instagram
+        }
+        ,
         computed: {
         },
         data() {
@@ -230,19 +246,34 @@
         background: white;
         color: $color-primary;
 
-        .container {
-            max-width: 900px;
+        section.section {
+            height: 100%;
+            display: flex;
+            align-items: center;
         }
 
-        &.is-medium {
-            padding: 20% 14rem;
+        .container {
+            width: 100%;
+            @include desktop {
+                // Sizes
+                &.is-medium {
+                padding: .75rem 14rem;
+                }
+            }
         }
 
         &.is-active {
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
             opacity: 1;
             animation: display-none-transition .125s both;
         }
+    }
+
+
+    .nav {
+        padding-top: 40px;
     }
 
     nav {
@@ -288,8 +319,36 @@
         }
     }
 
+    .social-wrapper {
+        display: flex;
+        width: 95px;
+        margin-top: 90px;
+        padding: 0.5rem 0.75rem;
+        justify-content: space-between;
+    }
+
     .navbar-end {
         height: 50px;
+
+        a.navbar-item {
+            font-family: $family-sans-serif;
+            color: $color-primary;
+            text-transform: uppercase;
+            height: 41px;
+            transform: translateY(5px);
+            border-radius: 100px;
+            transition: background .125s ease-in-out;
+
+            span {
+                transform: translateY(-1px);
+            }
+
+            &:hover {
+                background: $color-primary--light;
+                color: $color-primary;
+                transition: background .125s ease-in-out;
+            }
+        }
     }
 
     .hide {
@@ -395,11 +454,6 @@
                     color: $white;
                 }
             }
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
         }
 
         &-first, &-second {

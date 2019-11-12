@@ -1,3 +1,13 @@
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
+
 <template>
     <section class="section exhibition">
         <div class="wrapper-mobile is-medium">
@@ -37,6 +47,7 @@
 <script>
     export default {
         props: ['lang', 'content', 'direct'],
+        name: 'Teaser',
         computed: {
             directAllExhibits() {
                 return this.directs[this.lang]['all'];

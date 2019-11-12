@@ -1,13 +1,14 @@
 <template>
 	<div>
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-		<Hero :lang="lang" :content="content" :direct="direct"/>
+		<Teaser style="margin-top: 80px" :lang="lang" :content="content" :direct="direct"/>
+		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Tiles :lang="lang" :content="content" :direct="direct"/>
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Funding :lang="lang" :content="content" :direct="direct" />
 		<Exhibition :lang="lang" :content="content" :direct="direct" />
-    	<Call :lang="lang" :content="content"/>
+		<Call :lang="lang" :content="content"/>
 		<Projects :lang="lang" :content="content"/>
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
@@ -32,10 +33,11 @@
 	import MissionStatement from '../components/MissionStatement.vue';
 	import Team from '../components/Team.vue';
 	import Funding from '../components/Funding.vue';
-  	import Call from '../components/Call.vue';
-  	import Exhibition from '../components/Exhibition.vue';
+	import Call from '../components/Call.vue';
+	import Exhibition from '../components/Exhibition.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
+	import Teaser from '../components/Teaser.vue';
 	import Topics from '../components/Topics.vue';
 	import Tiles from '../components/Tiles.vue';
 	import Partners from '../components/Partners.vue';
@@ -55,7 +57,7 @@
 			Hero,
 			MissionStatement,
 			Team,
-      		Call,
+			Call,
 			Funding,
 			Exhibition,
 			Cta,
@@ -63,6 +65,7 @@
 			Footer,
 			Topics,
 			Partners,
+			Teaser,
 			Projects,
 			Newsletter,
 			Tiles,
