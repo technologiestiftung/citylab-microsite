@@ -8,7 +8,7 @@
 		<Funding :lang="lang" :content="content" :direct="direct" />
 		<Exhibition :lang="lang" :content="content" :direct="direct" />
     	<Call :lang="lang" :content="content"/>
-		<!-- <Projects :lang="lang" :content="content"/> -->
+		<Projects :lang="lang" :content="content"/>
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<Team :lang="lang" :content="content" :direct="direct"/>

@@ -91,28 +91,28 @@ export const content = {
 
         'nav': [
             {
-                'name': 'Idee',
-                'ref': '#idea'
+                'name': 'Start',
+                'ref': '/'
             },
             {
-                'name': 'Themen',
-                'ref': '#topics'
+                'name': 'Über Uns',
+                'ref': '/about_us'
             },
             {
                 'name': 'Open Call',
                 'ref': '#call'
             },
             {
-                'name': 'Termine',
-                'ref': '#schedule'
+                'name': 'Mitmachen',
+                'ref': '/collaborate'
+            },
+            {
+                'name': 'Veranstaltungen',
+                'ref': '/all_events'
             },
             {
                 'name': 'Newsletter',
-                'ref': '#newsletter'
-            },
-            {
-                'name': 'Team',
-                'ref': '#team'
+                'ref': '/Newsletter'
             },
         ],
         'hero': {
