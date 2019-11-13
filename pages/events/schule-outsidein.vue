@@ -33,7 +33,7 @@
             </div>
             <div class="content-block">
               <h5>Datum</h5>
-              <span class="summary-text">18-29.11.2019</span>
+              <span class="summary-text">18-30.11.2019</span>
             </div>
            <div class="content-block">
               <h5>Besuchszeiten</h5>
