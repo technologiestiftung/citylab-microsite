@@ -7,7 +7,7 @@ $title-strong-weight: inherit !default;
 $title-sub-size: 0.75em !default;
 $title-sup-size: 0.75em !default;
 
-$subtitle-color: $grey-dark !default;
+$subtitle-color: $color-primary !default;
 $subtitle-size: $size-5 !default;
 $subtitle-weight: $weight-normal !default;
 $subtitle-line-height: 1.25 !default;
@@ -74,9 +74,9 @@ $subtitle-negative-margin: -1.25rem !default;
 
 .subtitle {
   color: $subtitle-color;
-  font-size: $subtitle-size;
+  font-size: $size-4;
   font-weight: $subtitle-weight;
-  line-height: $subtitle-line-height;
+  line-height: $size-3;
 
   strong {
     color: $subtitle-strong-color;

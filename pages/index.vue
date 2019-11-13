@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-		<Teaser style="margin-top: 80px" :lang="lang" key="hero" :content="content" :direct="direct"/>
+		<Teaser style="margin-top: 80px;" :content='content' :lang='lang' topic="aboutus" subtopic="coworking"/>
 		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
 		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
 		<Tiles :lang="lang" :content="content" :direct="direct"/>

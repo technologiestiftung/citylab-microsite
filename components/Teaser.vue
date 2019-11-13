@@ -1,44 +1,30 @@
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>
-
 <template>
     <section class="section exhibition">
         <div class="wrapper-mobile is-medium">
-            <h2 class="title">
-                {{ content[lang]['exhibition']['title'] }}
-            </h2>
+            <h2 v-html="contentTeaser['title']" class="title"></h2>
         </div>
 
-        <div :class="`preview container preview-${this.key}`">
+        <div class="preview container" :id="`preview-${id}`" >
             <div class="wrapper">
-                <h2 class="title">
-                    {{ content[lang]['exhibition']['title'] }}
-                </h2>
+                <h2 class="title" v-html="contentTeaser['title']"></h2>
                 <h2 class="subtitle">
-                    {{ content[lang]['exhibition']['subtitle'] }}
+                    {{ contentTeaser['description'] }}
                 </h2>
 
-                <nuxt-link class="cross-link" :to="directAllExhibits">
-                    {{content[lang]['exhibition']['link']}}
+                <nuxt-link class="cross-link" :to="contentTeaser['direct']">
+                    {{contentTeaser['btn']}}
                 </nuxt-link>
             </div>
-            <img :src="content[lang]['hero']['imgUrl']"/>
+            <img :src="contentTeaser['imgUrl']"/>
         </div>
 
         <div class="wrapper-mobile is-medium">
             <h2 class="subtitle">
-                {{ content[lang]['exhibition']['subtitle'] }}
+                {{ contentTeaser['description'] }}
             </h2>
 
-            <nuxt-link class="cross-link" :to="directAllExhibits">
-                {{content[lang]['exhibition']['link']}}
+            <nuxt-link class="cross-link" :to="contentTeaser['direct']">
+                {{ contentTeaser['btn'] }}
             </nuxt-link>
         </div>
     </section>
@@ -46,33 +32,26 @@ export default {
 
 <script>
     export default {
-        props: ['lang', 'content', 'direct', 'key'],
+        props: {
+          lang: String,
+          content: Object,
+          direct: String,
+          topic: String,
+          subtopic: String,
+          id: String
+        },
         name: 'Teaser',
         computed: {
-            directAllExhibits() {
-                return this.directs[this.lang]['all'];
-            }
+            contentTeaser: function() { return this.content[this.lang][this.topic][this.subtopic] },
         },
         methods: {
             adjustHeight() {
-                const elm = document.querySelector(`.preview-${this.key}`);
+                const elm = document.getElementById(`preview-${this.id}`);
                 console.log(elm);
                 const height = (elm.offsetWidth / 100) * 56.9;
                 elm.style.height = `${height}px`;
             },
 
-        },
-        data() {
-            return {
-                directs: {
-                    de: {
-                        all: '/all_exhibits',
-                    },
-                    en: {
-                        all: '/all_exhibits_en',
-                    }
-                }
-            }
         },
         mounted() {
             this.$nextTick(function () {
@@ -84,6 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/style/style.scss";
     .section.exhibition {
         padding: 3.5rem 0rem;
     }
@@ -116,6 +96,14 @@ export default {
                 justify-self: center;
 
                 z-index: 1;
+
+                h2.title {
+                  color: $color-secondary;
+                }
+
+                h2.subtitle {
+                  margin-top: 1rem;
+                }
 
                 @media screen and (max-width: 1000px) {
                     grid-column: 2 / 9;

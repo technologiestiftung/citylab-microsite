@@ -38,6 +38,28 @@ export const content = {
             }
 
         ],
+        'aboutus': {
+            funding: {
+                title: 'Projektförderung im CityLAB',
+                description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
+                btn: 'Mehr erfahren  →',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            },
+            coworking: {
+                title: 'Co-working Fellowships im CityLAB',
+                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
+                btn: 'Jetzt bewerben  →',
+                imgUrl: 'images/coworking-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            },
+            event: {
+                title: 'Nutze unsere Räume für deine Veranstaltung',
+                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
+                btn: 'Jetzt anfragen  →',
+                imgUrl: 'images/event-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            }
+        },
         'exhibition': {
             'title': 'Unsere Ausstellung',
             'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
@@ -635,8 +657,13 @@ export const content = {
                 link: 'https://citylab-berlin.org/events/schule-outsidein_en',
                 visible: true,
             }
-          
         ],
+        'aboutus': {
+            funding: {
+                title: 'Projektförderung im CityLAB',
+                description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!'
+            }
+        },
         'exhibition': {
             'title': 'Our exhibition',
             'subtitle': 'Experience the city of the future in interactive exhibits.',
