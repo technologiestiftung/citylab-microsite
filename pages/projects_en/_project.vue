@@ -62,8 +62,7 @@
                 return false // will stop Nuxt.js to render the route and display the error page
         },
         async asyncData ({ params, error, payload }) {
-            // console.log(params.project.slice(0,-3));
-            return { 
+            return {
                 dirname: params.project,
                 lang: 'en',
                 content: content,

@@ -333,7 +333,6 @@ END:VCALENDAR`
                 },
 
                 save(filename, data) {
-                    console.log('save!!!')
                     var blob = new Blob([data], {type: 'text/csv'});
                     if (window.navigator.msSaveOrOpenBlob) {
                             window.navigator.msSaveBlob(blob, filename);

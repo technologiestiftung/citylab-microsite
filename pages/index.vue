@@ -18,12 +18,10 @@
 </template>
 
 <script>
-	import pkg from '../package'
 	import { content as content } from '../assets/content.js';
 	import { links as links } from '../assets/links.js';
 
 	import Navigation from '../components/Navigation.vue';
-	import Exhibition from '../components/Exhibition.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
 	import Teaser from '../components/Teaser.vue';
@@ -44,7 +42,6 @@
 
 		components: {
 			Navigation,
-			Exhibition,
 			Cta,
 			Schedule,
 			Paragraph,
@@ -52,6 +49,7 @@
 			Topics,
 			Partners,
 			TeaserIntro,
+			Teaser,
 			Projects,
 			Newsletter,
 		},
@@ -121,14 +119,11 @@
 			if (process.browser) {
 
 				window.addEventListener("hashchange", () => {
-					console.log(window.scrollY);
 
 					if (!this.offset) {
-						console.log('without offset')
 						window.scrollTo(window.scrollX, window.scrollY - 75);
 						this.setOffset(true);
 					} else if (this.offset) {
-						console.log('it works!')
 						window.scrollTo(window.scrollX, window.scrollY);
 					}
 				});

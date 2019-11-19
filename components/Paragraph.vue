@@ -1,7 +1,7 @@
 <template>
   <section :class="`section is-medium ${contentParagraph['style']}`">
     <div class="container">
-      <div :class="paragraph">
+      <div class="paragraph">
           <div class="container">
               <h1 class="title">{{ contentParagraph['title'] }}</h1>
               <h2 v-html="contentParagraph['description']" class="subtitle"></h2>

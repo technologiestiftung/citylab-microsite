@@ -36,8 +36,6 @@ export default {
 
       const all = routesAll.concat(eventRoutes).concat(projectRoutes).concat(projectEnRoutes)
 
-      // console.log(all);
-
       return all;
     }));
 

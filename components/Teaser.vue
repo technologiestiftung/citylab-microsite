@@ -47,7 +47,6 @@
         methods: {
             adjustHeight() {
                 const elm = document.getElementById(`preview-${this.id}`);
-                console.log(elm);
                 const height = (elm.offsetWidth / 100) * 56.9;
                 elm.style.height = `${height}px`;
             },
