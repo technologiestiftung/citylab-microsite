@@ -1,72 +1,71 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Workshop kick-off for an event series on city & Artificial Intelligence'" :subSubTitle="'12.11.2019, 5-9 pm, CityLAB Berlin Event space'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Auftakt der Workshopreihe zu KI & Stadt'" :subSubTitle="'12.11.2019, 17-21 Uhr, CityLAB Berlin Veranstaltungsraum'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
-        <p class="event-intro">Everybody’s talking about AI, and rightly so – the technology’s potential is enormous. 
-          Particularly in the business world, we’re seeing more and more examples of this: AI is able to drive cars autonomously, 
-          speak like a human being, win against the best poker players in the world, and find cancer cells faster than a doctor.
-          But where is the AI for our city of Berlin?</p>
+        <p class="event-intro">Alle reden von KI. Zu Recht. Denn das Potenzial ist enorm. 
+          In der Wirtschaft gibt es hierfür immer mehr Beispiele - KI fährt Autos autonom, spricht wie ein Mensch, 
+          gewinnt seit neuestem gegen die besten Pokerspieler der Welt und findet Krebszellen schneller als eine Ärztin. 
+          Aber wo ist die KI für unsere Stadt Berlin?</p>
 
-        <p>An AI that ensures greater sustainability, improves urban climate, waters our trees, optimizes cycle paths, 
-          reduces fine dust – does this AI exist? Let’s look for it, or, even better, let’s develop it together!</p>
-
-        <h3 class="title"></h3>
-        <p>Together with our partner <a href= https://www.birdsonmars.com>Birds on Mars</a>, we’re starting our workshop series 
-        “AI for Berlin” on <b>Nov. 12</b>, and we’re hoping you’ll join us! The 4-hour kick-off session starts with idea generation 
-        and conception. As is so often the case, the field of AI is missing creative ideas! We want to develop 
-        them together and generate a great foundation for the future working sessions of this ongoing series.</p>
+        <p>Eine KI, die uns hilft, für mehr Nachhaltigkeit sorgt, das Stadtklima verbessert, 
+          unsere Bäume bewässert, die Radwege optimiert, Feinstaub reduziert. Wo ist sie? 
+          Lasst sie uns suchen, oder noch besser gemeinsam entwickeln!</p>
 
         <h3 class="title"></h3>
-        <p>Good ideas need to not just be conceived of but also implemented, and this no less true here. 
-          In the subsequent sessions, we’ll select individual ideas as a group and then form interdisciplinary teams 
-          in which we’ll implement our prototypes. Through this work, we’ll be able to initiate more comprehensive 
-          and sustainable projects for our city.</p>
+        <p>Mit unserer Workshop Reihe „AI for Berlin” möchten wir zusammen mit unserem Partner 
+          <a href= https://www.birdsonmars.com>Birds on Mars</a> 
+        und Euch am <b>12. November</b> hierfür einen Startschuss setzen. 
+          Konkret beginnen wir in der Auftaktsession mit 4 Stunden Ideenfindung und Konzeption. 
+          Denn wie so oft fehlt es gerade im Bereich KI & Stadt noch an vielen guten Ideen, 
+          die wir gemeinsam entwickeln und damit die Spielmaße für die nächsten Sessions in der Reihe erarbeiten.</p>
           
-        <p>Regardless of whether you already have a concrete idea you’d like to contribute, are in love with Python programming, 
-          or you simply want to have an opportunity to experience the cutting edge of urban innovation – 
-          all you need for the first session is your human intelligence.</p> 
+        <p>Gute Ideen gehören umgesetzt. So auch hier. Ziel ist es, in den nachfolgenden Sessions einzelne Ideen im Kollektiv auszuwählen, 
+          prototypisch in interdisziplinären Teams umzusetzen und damit umfangreichere und nachhaltige Implementierungsprojekte 
+          in der Stadt anzustoßen.</p>  
           
+        <p>Egal ob Du schon eine konkrete Idee hast, die Du mit einbringen möchtest, Python-begeistert bist oder einfach 
+          als Enthusiast*in die Chance nutzen willst, selbst den Puls der Zeit zu erleben - für die erste Session 
+          brauchst Du nur Deine menschliche Intelligenz.</p>
 
-        <p>Come by and join us in the collective search and development of AI for Berlin.</p>
+        <p>Komm vorbei und mach mit bei der gemeinsamen Suche und Entwicklung von KI für Berlin.</p>
 
-        <p>The Event will be held in Englisch and German.</p><br />
+        <p>Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
 
 
         <div class="summary-wrapper is-medium">
-          <h4>More information</h4>
+          <h4>Zusammenfassung</h4>
           <div class="flex-container">
             <div class="content-block">
               <h5>Website</h5>
               <span class="summary-text"><a href= https://www.birdsonmars.com>https://www.birdsonmars.com</a> </span>
             </div>
             <div class="content-block">
-              <h5>Organizer</h5>
+              <h5>Veranstalter</h5>
               <span class="summary-text">CityLAB & Birds on Mars</span>
             </div>
             <div class="content-block">
-              <h5>Date</h5>
-              <span class="summary-text">12.11.2019, 5-9 pm</span>
+              <h5>Datum</h5>
+              <span class="summary-text">12.11.2019, 17-21 Uhr</span>
             </div>
-            <div class="content-block">
+        <div class="content-block">
               <h5>E-Mail</h5>
               <a href="mailto:florian@birdsonmars.com" class="summary-text">Florian Dohmann</a>
             </div>
             <div class="content-block">
-              <h5>Adress</h5>
+              <h5>Adresse</h5>
               <span class="summary-text">Platz der Luftbrücke 4, Gebäude H2rund, 12101 Berlin</span>
             </div>
           </div>
         </div>
 
-      <p>Free entry with a registration</p>
+      <p> Eintritt frei mit Anmeldung </p>
 
       <div class="flex-container btn" style="margin-top:30px!important;display:inline">
-<a href="https://www.eventbrite.de/e/ai-for-berlin-workshop-kick-off-for-an-event-series-on-city-ai-registration-78591728977" target="_blank" class="button is-color-secondary is-normal">Register now</a>
+<a href="https://www.eventbrite.de/e/ai-for-berlin-workshop-kick-off-for-an-event-series-on-city-ai-registration-78591728977" target="_blank" class="button is-color-secondary is-normal">Jetzt registrieren</a>
 </div>
-
 
         <Matomo/>
             </div>
@@ -94,9 +93,9 @@
     },
     data() {
       return {
-        lang: 'en',
+        lang: 'de',
         content: content,
-        direct: '/events/AIforberlin'
+        direct: '/events/AIforberlin_en'
       }
     },
     computed: {
@@ -105,7 +104,7 @@
       return {
         title: 'AI for Berlin - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'AI for Berlin(2019-11-12 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'AI for Berlin (2019-11-12 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
           { hid: 'og:title', property: 'og:title',  content: "AI for Berlin"},
@@ -175,7 +174,7 @@
         color: white;
         margin-bottom: 50px;
         margin-top: 60px;
-        background: $color-tertiary;
+        background: $color-primary;
         padding: $spacing-m;
 
         h4 {
@@ -216,13 +215,13 @@
 
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 
@@ -249,7 +248,7 @@
 
 	.name-list li,
 	.time-list li{
-		color: $color-tertiary;
+		color: $color-primary;
         font-size: $size-5;
 		padding-bottom:5px;
 	}

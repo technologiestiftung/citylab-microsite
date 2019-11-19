@@ -38,29 +38,14 @@ export const content = {
             }
 
         ],
-        'aboutus': {
-            funding: {
-                title: 'Projektförderung im CityLAB',
-                description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
-                btn: 'Mehr erfahren  →',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
-            },
-            coworking: {
-                title: 'Co-working Fellowships im CityLAB',
-                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
-                btn: 'Jetzt bewerben  →',
-                imgUrl: 'images/coworking-preview.jpg',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
-            },
-            event: {
-                title: 'Nutze unsere Räume für deine Veranstaltung',
-                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
-                btn: 'Jetzt anfragen  →',
-                imgUrl: 'images/event-preview.jpg',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
-            }
-        },
         'exhibition': {
+            teaser: {
+                'title': 'Unsere Ausstellung',
+                'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
+                'imgUrl': '../images/exhibition-preview.jpg',
+                'btn': 'Alle Exponate  →',
+                'direct': '/all_exhibits'
+            },
             'title': 'Unsere Ausstellung',
             'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
             'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
@@ -110,7 +95,6 @@ export const content = {
           'last_updated': 'Zuletzt aktualisiert am 14.10.2019'
 
         },
-
         'nav': [
             {
                 'name': 'Start',
@@ -119,10 +103,6 @@ export const content = {
             {
                 'name': 'Über Uns',
                 'ref': '/about_us'
-            },
-            {
-                'name': 'Open Call',
-                'ref': '#call'
             },
             {
                 'name': 'Mitmachen',
@@ -134,16 +114,24 @@ export const content = {
             },
             {
                 'name': 'Newsletter',
-                'ref': '/Newsletter'
+                'ref': '/newsletter_register'
             },
         ],
         'hero': {
-            'subtitle': "CityLAB Berlin",
-            'claim_01': "Die",
-            'claim_02': "Zukunft Berlins",
-            'claim_03': "gemeinsam gestalten.",
-            'imgUrl': '../images/intro-preview.jpg',
-            'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
+            intro: {
+                'subtitle': "CityLAB Berlin",
+                'claim_01': "Die",
+                'claim_02': "Zukunft Berlins",
+                'claim_03': "gemeinsam gestalten.",
+                'title': 'Berlins Zukunft gemeinsam gestalten',
+                'btn': 'Jetzt mitmachen  →',
+                'btnSecond': 'Mehr erfahren',
+                'description': 'Die Zukunft Berlins gemeinsam gestalten. Die Zukunft Berlins gemeinsam gestalten. Die Zukunft Berlins gemeinsam gestalten. Verwaltung auch noch.',
+                direct: '/collaborate',
+                directSecond: '/about_us',
+                'imgUrl': '/images/intro-preview.jpg',
+                'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
+            }
         },
         'resources': {
             'title': 'Ressourcen',
@@ -164,6 +152,7 @@ export const content = {
         'missionStatement': {
             'title': 'Unsere Mission',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
+            'statement-head': 'Unsere Themen:',
             'statement1-title': 'Inklusiv',
             'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.',
             'statement1-img_url': 'images/02.png',
@@ -182,8 +171,8 @@ export const content = {
         'register': {
             intro: {
                 title: 'Newsletter',
-                subtitle: 'Aktuelle Informationen und Veranstaltungen aus dem CityLAB.',
-                button: 'Anmelden',
+                subtitle: ' Aktuelle Informationen und Veranstaltungen aus dem CityLAB. Aktuelle Informationen und Veranstaltungen aus dem CityLAB. Aktuelle Informationen und Veranstaltungen aus dem CityLAB.',
+                button: 'Anmelden  →',
                 url: '/newsletter_register_de'
             },
             title: 'Anmeldung Newsletter',
@@ -379,14 +368,100 @@ export const content = {
                 'unsere Werkstatt nutzen oder vorübergehend einen festen Co-Working-Platz bei uns?'
             ]
         },
-        'funding': {
-          'title': 'Projektförderung im CityLAB',
-          'opencall': 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.',
-          'cta': 'Mehr erfahren',
-
-      },
+        'collaborate': {
+            paragraph : {
+                'title': 'Jetzt mitmachen',
+                'description': 'Egal ob Veranstaltung, Co-Working oder eine eigene Idee. Wenn ihr bei einem Thema, dass sich um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities derht mitwirken wollt. Kontakiert uns oder kommt direkt im CityLAB vorbei.',
+                'btn': 'Mehr erfahren  →',
+                'direct': '/collaborate',
+                'style': 'dark'
+            },
+            funding: {
+                title: 'Projektförderung im CityLAB',
+                description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
+                btn: 'Jetzt bewerben  →',
+                'style': 'bright',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'Welche Projekte sind förderfähig?',
+                        description: 'Grundlage für unser Förderprogramm ist eine Förderlinie der Berliner Senatskanzlei. Sie sieht eine Fördermöglichkeit von Projekten vor, die "einen Beitrag zu den Themenfeldern digitale Verwaltung, soziale Innovation und/oder Smart Cities sowie technischen Lösungen zur Verbesserung des Bürgerengagements und -beteiligung leisten.“ Projekte sollten ein klares Ziel verfolgen, das im vorgesehenen Zeitraum realistisch umsetzbar ist. <a href="/docs/foerderrichtlinie_citylab.pdf">Die gesamte Förderlinie mit allen Kriterien findest Du hier</a>.'
+                    },
+                    {
+                        title: 'Wann ist die Bewerbungsfrist?',
+                        description: 'Die Bewerbungfrist für die nächste Förderrunde ist der 27.10.2019. Der frühestmögliche Projektstart ist der 01.01.2020.'
+                    },
+                    {
+                        title: 'Welche Kosten sind förderfähig?',
+                        description: 'Förderfähig sind Personalkosten, externe Honorare sowie Sach- und Reisekosten.'
+                    },
+                    {
+                        title: 'Wie hoch ist die maximale Fördersumme pro Projekt?',
+                        description: 'Die maximale Fördersumme beträgt 50.000€. Auch kleinere Anträge sind ausdrücklich willkommen.'
+                    },
+                    {
+                        title: 'Wie läuft das Bewerbungsverfahren ab?',
+                        description: 'In einem ersten Schritt muss Du lediglich ein <a href="/docs/foerderantrag_citylab.pdf"> kurzes Formular </a> und einen <a href="/docs/antrag_finanzierungsplan_muster.xlsx">Kostenplan</a> ausfüllen. Schick bitte beides per Mail an <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org.</a> Alle Anträge werden dem CityLAB-Beirat zur Bewertung vorgelegt. Bei Fragen melden wir uns. Falls Dein Projekt als grundsätzlich förderwürdig eingeschätzt wird, werden wir Dich bitten, einen formalen Zuwendungsantrag einzureichen. Dabei unterstützen wir gerne.'
+                    },
+                    {
+                        title: 'Ich habe noch Fragen. An wen kann ich mich wenden?',
+                        description: 'Bitte vereinbare einen Telefontermin unter <a href="https://calendly.com/citylab/foerderprogramm">diesem Link.</a>'
+                    },
+                ]
+            },
+            coworking: {
+                title: 'Co-working Fellowships im CityLAB',
+                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
+                btn: 'Jetzt bewerben  →',
+                'style': 'bright',
+                imgUrl: 'images/coworking-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'Wofür kann ich den Co-Working-Space nutzen?',
+                        description: 'Das CityLAB ist kein klassischer Co-Working-Space. Wir arbeiten im CityLAB projektbezogen an innovativen Lösungen für eine bessere Stadt. Für die Nutzung der Co-Working-Plätze ist es Voraussetzung, dass Du ein eigenes Projekt mit Bezug zu unseren Themenfeldern verfolgst. Falls Du noch keine eigene Projektidee hast, können wir gerne gemeinsam überlegen, wie Du Deine Fähigkeiten sinnvoll bei uns einbringen kannst.'
+                    },
+                    {
+                        title: 'Wie kann ich mich einbringen?',
+                        description: 'Alle Co-Worker*innen sollen aktiv am CityLAB mitwirken. Konkret heißt das, dass Du Dein Projekt jeweils zu Beginn und Abschluss öffentlich vorstellst. Zudem wünschen wir uns, dass Du während der Projektlaufzeit einen oder mehrere Meetups oder Workshops organisierst, in denen Du anderen deine Arbeit näherbringst. Natürlich freuen wir uns, wenn Du darüber hinaus weitere Ideen hast. Unsere Konferenz-, Event- und Ausstellungsräume und die Werkstatt stehen allen Co-Worker*innen offen.'
+                    },
+                    {
+                        title: 'Wie hoch sind die Kosten?',
+                        description: 'Die Nutzung des Co-Working ist kostenfrei, allerdings zeitlich auf die Dauer deines Projekts beschränkt (in der Regel zwischen einem und sechs Monate).'
+                    },
+                    {
+                        title: 'Wieviele Plätze sind verfügbar?',
+                        description: 'Wir vergeben nicht mehr Plätze, als wir haben. Trotzdem kann es vorkommen, dass die Co-Working-Plätze an einigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).'
+                    },
+                    {
+                        title: 'Wie finanziert sich das CityLAB?',
+                        description: 'Das CityLAB ist öffentlich finanziert und gemeinnützig. Daher ist die Nutzung des Co-Working gemeinnützigen Zwecken vorbehalten.'
+                    },
+                    {
+                        title: 'Was gibt es noch zu beachten?',
+                        description: 'Beachte unseren <a href="http://www.citylab-berlin.org/codeofconduct" target="_blank"> Code of Conduct</a>.'
+                    },
+                ]
+            },
+            project: {
+                title: 'Erstelle ein Projekt für das CityLAB',
+                description: 'Hier steht ein beschreibender Text mit allgemeinen Informationen zu Mögloichkeiten der Zusammenarbeit, wenn das Ziel der Zusammenarbeit ein Projekt sein soll.',
+                btn: 'Jetzt bewerben  →',
+                'style': 'bright',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            },
+            event: {
+                title: 'Nutze unsere Räume für deine Veranstaltung',
+                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
+                btn: 'Jetzt anfragen  →',
+                'style': 'bright',
+                imgUrl: 'images/event-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            }
+        },
         projects: {
             title: 'Projekte',
+            description: 'Dies ist eine kurze Einführung in die Projekte. Dies ist eine kurze Einführung in die Projekte. Dies ist eine kurze Einführung in die Projekte.',
             titleAll: 'Alle Projekte',
         },
         'team': {
@@ -658,13 +733,14 @@ export const content = {
                 visible: true,
             }
         ],
-        'aboutus': {
-            funding: {
-                title: 'Projektförderung im CityLAB',
-                description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!'
-            }
-        },
         'exhibition': {
+            teaser: {
+                'title': 'Our exhibition',
+                'description': 'Experience the city of the future in interactive exhibits.',
+                'imgUrl': '../images/exhibition-preview.jpg',
+                'btn': 'All exhibits  →',
+                'direct': '/all_exhibits_en'
+            },
             'title': 'Our exhibition',
             'subtitle': 'Experience the city of the future in interactive exhibits.',
             'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we provide insights into our current projects and other exciting exhibits from our partners.',
@@ -696,7 +772,7 @@ export const content = {
             ],
             'linktext': `We expect everyone in the CityLAB to adhere to our <a href="http://www.citylab-berlin.org/codeofconduct_en" target="_blank"> Code of Conduct</a>.`
         },
-         'funding_details': {
+        'funding_details': {
             'title': 'Project grants through the CityLAB',
             'subtitle': 'Do you have a project of your own that you’d like to develop further here in the CityLAB, but you lack the financial means to do so? Apply for our funding program!',
             'who_q': 'What kinds of projects do we support?',
@@ -712,8 +788,23 @@ export const content = {
             'schedule_q': 'I still have questions. Who can I talk to?',
             'schedule_a': 'Please schedule a call under <a href="https://calendly.com/citylab/foerderprogramm">this link.</a>',
             'last_updated': 'Last updated Oct 14, 2019'
-          },
-
+        },
+        'hero': {
+            intro: {
+                'subtitle': "CityLAB Berlin",
+                'claim_01': "Shaping Berlin's",
+                'claim_02': "",
+                'claim_03': "future together.",
+                'title': 'Berlins Zukunft gemeinsam gestalten',
+                'btn': 'Join now  →',
+                'btnSecond': 'More information',
+                'description': `Shaping Berlin's future together. Shaping Berlin's future together. Shaping Berlin's future together. Administration, too.`,
+                direct: '/collaborate_en',
+                directSecond: '/about_us_en',
+                'imgUrl': '/images/intro-preview.jpg',
+                'words_arr': ['sustainable', 'open', 'diverse', 'inclusive', 'digital']
+            }
+        },
         'resources': {
             'title': 'Resources',
             'p1': 'At this section you find practical information regarding the CityLAB Berlin.',
@@ -732,40 +823,29 @@ export const content = {
         },
         'nav': [
             {
-                'name': 'Idea',
-                'ref': '#idea'
+                'name': 'Start',
+                'ref': '/index_en'
             },
             {
-                'name': 'Topics',
-                'ref': '#topics'
+                'name': 'About us',
+                'ref': '/about_us_en'
             },
             {
-                'name': 'Open Call',
-                'ref': '#call'
+                'name': 'Collaborate',
+                'ref': '/collaborate_en'
             },
             {
-                'name': 'Schedule',
-                'ref': '#schedule'
+                'name': 'Events',
+                'ref': '/all_events_en'
             },
             {
                 'name': 'Newsletter',
-                'ref': '#newsletter'
-            },
-            {
-                'name': 'Team',
-                'ref': '#team'
+                'ref': '/newsletter_register_en'
             },
         ],
-        'hero': {
-            'subtitle': "CityLAB Berlin",
-            'claim_01': "Shaping Berlin's",
-            'claim_02': "",
-            'claim_03': "future together.",
-            'imgUrl': '../images/intro-preview.jpg',
-            'words_arr': ['sustainable', 'changing', 'innovative', 'exciting', 'inclusive', 'digital']
-        },
         'missionStatement': {
             'title': 'Our Mission',
+            'statement-head': 'Our topics:',
             'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
             'statement1-title': 'Agile',
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.',
@@ -776,7 +856,7 @@ export const content = {
             'statement3-title': 'Open',
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.',
             'statement3-img_url': '../images/03.png',
-            'cta': 'Learn more',
+            'cta': 'Learn more  →',
         },
         'events': {
             'upcomingEventsTitle': 'Upcoming events',
@@ -795,6 +875,97 @@ export const content = {
                     link: '/events/mobilitysymposium_en'
                 },
             ]
+        },
+        'collaborate': {
+            paragraph : {
+                'title': 'Participate Now',
+                'description': 'No matter if event, co-working or your own idea. If you want to participate in a topic related to civic tech, digital management, social innovation and smart cities. Contact us or come directly to CityLAB.',
+                'btn': 'More information  →',
+                'direct': '/collaborate_en',
+                'style': 'dark'
+            },
+            funding: {
+                title: 'Project Funding',
+                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
+                btn: 'Apply now  →',
+                'style': 'bright',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'What kinds of projects do we support?',
+                        description: 'We are able to offer this opportunity thanks to a funding line established by the Berlin Senate Chancellery. They are interested in supporting projects that “make a contribution to the fields of digital government, social innovation and/or smart cities, as well as that offer technical solutions for enhancing citizen engagement and participation.” Projects need to have a clearly stated goal that can be realistically achieved within the prescribed time period. Further details for this specific funding line and all of the relevant selection criteria <a href="/docs/foerderrichtlinie_citylab.pdf">can be found here</a> (for now in German only, if you need help, please get in touch!).'
+                    },
+                    {
+                        title: 'When is the deadline for submissions?',
+                        description: 'The deadline to be included in the next round of funding is October 27, 2019. The earliest possible start date for projects is January 1, 2020.'
+                    },
+                    {
+                        title: 'What types of costs are eligible for funding?',
+                        description: 'Eligible costs are personnel costs, honorariums for external contributors, material costs, and travel expenses.'
+                    },
+                    {
+                        title: 'What is the maximum amount I can apply for?',
+                        description: 'The maximum amount is 50.000€. Smaller proposals are welcome as well.'
+                    },
+                    {
+                        title: 'What does the application process look like?',
+                        description: 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. In case of a positive review, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.'
+                    },
+                    {
+                        title: 'I still have questions. Who can I talk to?',
+                        description: 'Please schedule a call under <a href="https://calendly.com/citylab/foerderprogramm">this link.</a>'
+                    },
+                ]
+            },
+            coworking: {
+                title: 'Co-working Fellowship in the CityLAB',
+                description: 'Would you like to apply for a Co-WOrking place with us? Here is place for more text.',
+                btn: 'Apply now  →',
+                'style': 'bright',
+                imgUrl: 'images/coworking-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'What kinds of projects do we support?',
+                        description: 'We are able to offer this opportunity thanks to a funding line established by the Berlin Senate Chancellery. They are interested in supporting projects that “make a contribution to the fields of digital government, social innovation and/or smart cities, as well as that offer technical solutions for enhancing citizen engagement and participation.” Projects need to have a clearly stated goal that can be realistically achieved within the prescribed time period. Further details for this specific funding line and all of the relevant selection criteria <a href="/docs/foerderrichtlinie_citylab.pdf">can be found here</a> (for now in German only, if you need help, please get in touch!).'
+                    },
+                    {
+                        title: 'When is the deadline for submissions?',
+                        description: 'The deadline to be included in the next round of funding is October 27, 2019. The earliest possible start date for projects is January 1, 2020.'
+                    },
+                    {
+                        title: 'What types of costs are eligible for funding?',
+                        description: 'Eligible costs are personnel costs, honorariums for external contributors, material costs, and travel expenses.'
+                    },
+                    {
+                        title: 'What is the maximum amount I can apply for?',
+                        description: 'The maximum amount is 50.000€. Smaller proposals are welcome as well.'
+                    },
+                    {
+                        title: 'What does the application process look like?',
+                        description: 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. In case of a positive review, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.'
+                    },
+                    {
+                        title: 'I still have questions. Who can I talk to?',
+                        description: 'Please schedule a call under <a href="https://calendly.com/citylab/foerderprogramm">this link.</a>'
+                    },
+                ]
+            },
+            project: {
+                title: 'Start your idea with the CityLAB',
+                description: 'Here is a descriptive text with general information about possibilities of cooperation, if the aim of the cooperation should be a project.',
+                btn: 'Apply now  →',
+                'style': 'bright',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            },
+            event: {
+                title: 'Use our rooms for your event',
+                description: 'Would you like to organise an event and need some space? Here is place for more text',
+                btn: 'Request now  →',
+                'style': 'bright',
+                imgUrl: 'images/event-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            }
         },
         'topics': [
             {
@@ -827,8 +998,8 @@ export const content = {
         'register': {
             intro: {
                 title: 'Newsletter',
-                subtitle: 'CityLAB\'s latest news and events.',
-                button: 'Subscribe',
+                subtitle: 'Current information and events from CityLAB. Current information and events from CityLAB. Current information and events from CityLAB.',
+                button: 'Subscribe  →',
                 url: '/newsletter_register_en'
             },
             title: 'Sign up newsletter',
@@ -838,7 +1009,7 @@ export const content = {
                 name: 'Your name',
                 mail: 'Your E-Mail',
                 language: 'Language of the newsletter',
-                button: 'Subscribe',
+                button: 'Subscribe  →',
                 agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the City Berlin may send me regular information on the activities of the CityLAB Berlin, related topics and events by e-mail. Comprehensive information on the registration and unsubscription procedure, the service provider and the statistical evaluation of your data can be found in our Privacy Policy.',
                 unsubscribe: 'I can revoke my consent to the CityLAB Berlin <a href="/newsletter_unsubscribe_en">here</a> at any time.'
             },
@@ -933,13 +1104,16 @@ export const content = {
             ]
         },
         'funding': {
-          'title': 'Project Funding',
-          'opencall': 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
-          'cta': 'Learn more',
+            paragraph : {
+                'title': 'Project Funding',
+                'opencall': 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
+                'cta': 'Learn more',
+            }
 
       },
         projects: {
             title: 'Projects',
+            description: 'This is a short introduction about the projects. This is a short introduction about the projects. This is a short introduction about the projects.',
             titleAll: 'All projects',
         },
         'board': {

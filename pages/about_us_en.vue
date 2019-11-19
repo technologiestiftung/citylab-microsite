@@ -36,9 +36,9 @@
 		},
 		data() {
 			return {
-				lang: 'de',
+				lang: 'en',
 				content: content,
-				direct: '/about_us_en'
+				direct: '/about_us'
 			}
 		}
 	}

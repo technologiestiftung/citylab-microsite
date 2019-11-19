@@ -13,15 +13,15 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
-                                <span class="date-time"> {{ entry.time }} </span>
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                      
+                                <span class="date-time"> {{ entry.time }} </span>                        
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
 
                             <h2 class="subtitle format">{{ entry.format }}</h2>
 
-                            <a :href="entry['link']" class="arrow-right">></a>
+                            <a :href="entry['link']" class="arrow-right">→</a>
                         </article>
                     </a>
                 </div>
@@ -39,8 +39,8 @@
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
-                                <span class="date-time"> {{ entry.time }} </span>
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                        
+                                <span class="date-time"> {{ entry.time }} </span>                        
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
@@ -61,14 +61,14 @@
 
 <script>
     import axios from 'axios';
-	import {
+	import { 
   		content as content
 	} from '../assets/content.js';
 
     import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 	import Matomo from '../components/Matomo.vue';
-
+    
     export default {
         components: {
 			Navigation,
@@ -80,11 +80,11 @@
 				lang: 'de',
 				content: content,
                 direct: '/all_events_en',
+                data: [],
                 dataUpcoming: null,
                 dataPast: null,
-                data: [],
-                entries: null,
                 otherEvents: content['de'].otherevents,
+                entries: null
 			}
         },
         computed: {
@@ -92,7 +92,7 @@
                 return this.lang == 'en' ? 'More info' : 'Mehr Infos'
             },
         },
-        created() {
+        mounted() {
             axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
             .then((res) => {
                 let entries = res.data.feed.entry;
@@ -101,14 +101,15 @@
 
                 entries.forEach(entry => {
                     let obj = {
+                        date: entry.gsx$date.$t,
                         day: this.getDay(entry.gsx$date.$t),
                         month: this.getMonth(entry.gsx$date.$t),
-                        date: entry.gsx$date.$t,
                         format: entry.gsx$format.$t,
                         time: entry.gsx$datetime.$t,
                         title: entry.gsx$eventname.$t,
-                        link: this.createEventLink(entry.gsx$dirname.$t),
                         visible: entry.gsx$visible.$t,
+                        link: this.createEventLink(entry.gsx$dirname.$t)
+
                     }
                     this.data.push(obj);
                 })
@@ -132,15 +133,15 @@
                 this.dataPast = JSON.parse(JSON.stringify(this.data));
                 this.dataPast.sort((a,b) => { return new Date(b.date) - new Date(a.date) });
             })      
-        },
+        }, 
         methods: {
             dateIsUpcoming(date) {
                 const today = new Date();
                 const eventDate = new Date(date);
 
-                eventDate.setHours(23,59,59)
-
                 const upcoming = today.getTime() <= eventDate.getTime();
+
+                eventDate.setHours(23,59,59)
 
                 return upcoming;
             },
@@ -150,8 +151,8 @@
             },
             getMonth(date) {
                 let dat = new Date(date);
-                const mlistEn = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-                const mlist = [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ];
+                const mlistEn = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+                const mlist = [ "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez" ];
                 let monthCurrent = this.lang == 'en' ? mlistEn[dat.getMonth()] : mlist[dat.getMonth()];
                 return monthCurrent;
             },
@@ -162,11 +163,12 @@
     }
 </script>
 
+
 <style lang="scss">
 
     @import "../assets/style/style.scss";
 
-    .schedule {
+    .schedule { 
         // background: $color-primary--lightest;
 
         .event-tile {
@@ -175,6 +177,7 @@
                 .arrow-right {
                     transform: translateX(5px);
                     transition: $time-s ease transform;
+                    color: $color-primary;
                 }
             }
 
@@ -183,16 +186,14 @@
                     background: $color-primary--lightest;
                 }
             }
-
-
         }
 
 
         .arrow-right {
-            font-size: 36px;
+            font-size: 2rem;
             margin-right: 15px;
-            color: $color-tertiary;
-            font-weight: bold;
+            color: $color-primary;
+            font-weight: normal;
             transition: $time-s ease transform;
         }
 
@@ -215,7 +216,6 @@
             }
 
             .subtitle {
-                font-size: $size-4;
                 margin-bottom: 0px;
                 width: 450px;
 
@@ -224,7 +224,6 @@
                     line-height: 1.2rem;
                 }
             }
-
 
             .format {
                 opacity: .5;
@@ -244,19 +243,19 @@
         .date-wrapper {
             margin-right: $spacing-l;
             display: flex;
-            min-width: 70px;
             flex-direction: column;
+            min-width: 35px;
             justify-content: space-around;
 
             @include mobile {
                 margin-right: 15px;
+                min-width: 50px;
             }
 
             .date-time {
                 font-size: $size-4;
-                text-align: center;
                 line-height: 2rem;
-                color: $color-tertiary;
+                color: $color-primary;
                 margin-right: $spacing-l;
 
                 @include mobile {
@@ -267,14 +266,15 @@
             }
 
             .date-month {
-                font-size: $size-4;
-                line-height: 2rem;
+                font-size: $size-5;
+                line-height: 1rem;
+                color: $color-primary;
                 text-align: center;
-                color: $color-tertiary;
+                opacity: .5;
 
                 @include mobile {
-                    line-height: 1.2rem;
-                    font-size: 1rem;
+                    line-height: 1rem;
+                    font-size: $size-5;
                 }
             }
 
@@ -282,13 +282,16 @@
                 font-size: $size-3;
                 line-height: 1.75rem;
                 text-align: center;
-                color: $color-tertiary;
+                color: $color-primary;
 
                 @include mobile {
                     line-height: 1.2rem;
-                    font-size: 1rem;
+                    font-size: $size-4;
                 }
             }
          }
     }
 </style>
+
+
+

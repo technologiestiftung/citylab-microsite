@@ -1,58 +1,47 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin_hero.jpg'" :title="'AI for Berlin'" :subTitle="'Auftakt der Workshopreihe zu KI & Stadt'" :subSubTitle="'12.11.2019, 17-21 Uhr, CityLAB Berlin Veranstaltungsraum'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/schule-outsidein_hero.jpg'" :title="'schule*OUT-SIDE-IN'" :subTitle="'Studentenentwürfe zur neuen Berliner Schule'" :subSubTitle="'18-29.11.2019 CityLAB Berlin Foyer'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
-        <p class="event-intro">Alle reden von KI. Zu Recht. Denn das Potenzial ist enorm. 
-          In der Wirtschaft gibt es hierfür immer mehr Beispiele - KI fährt Autos autonom, spricht wie ein Mensch, 
-          gewinnt seit neuestem gegen die besten Pokerspieler der Welt und findet Krebszellen schneller als eine Ärztin. 
-          Aber wo ist die KI für unsere Stadt Berlin?</p>
+        <p class="event-intro">Neue Schulen werden gebraucht, am besten sofort, der Platz reicht nicht mehr für die Nachfrage aus. 
+          Die Berliner „Schulbauoffensive“, mit einem geplanten Neubau von mehr als 60 Schulen bis 2026, bietet die Chance neue pädagogische Konzepte und die ganztägige Nutzung der Schulräume zu entwickeln und zu erproben. 
+          Wie wird sich die Typologie der Schule in diesem Prozess verändern?</p>
 
-        <p>Eine KI, die uns hilft, für mehr Nachhaltigkeit sorgt, das Stadtklima verbessert, 
-          unsere Bäume bewässert, die Radwege optimiert, Feinstaub reduziert. Wo ist sie? 
-          Lasst sie uns suchen, oder noch besser gemeinsam entwickeln!</p>
+        <p>Baugrundstücke für neue Schulen sind in Berlin nicht beliebig vermehrbar und auch hier sind neue Ideen gefordert, 
+          wie man mit der zunehmenden Verknappung der zur Verfügung stehenden Flächen umgehen kann. 
+          Wie kann der Schulbau zu einer urbanen Dichte sowie einer sozialen und funktionalen Vielfalt in der Stadt beitragen?</p>
 
         <h3 class="title"></h3>
-        <p>Mit unserer Workshop Reihe „AI for Berlin” möchten wir zusammen mit unserem Partner 
-          <a href= https://www.birdsonmars.com>Birds on Mars</a> 
-        und Euch am <b>12. November</b> hierfür einen Startschuss setzen. 
-          Konkret beginnen wir in der Auftaktsession mit 4 Stunden Ideenfindung und Konzeption. 
-          Denn wie so oft fehlt es gerade im Bereich KI & Stadt noch an vielen guten Ideen, 
-          die wir gemeinsam entwickeln und damit die Spielmaße für die nächsten Sessions in der Reihe erarbeiten.</p>
-          
-        <p>Gute Ideen gehören umgesetzt. So auch hier. Ziel ist es, in den nachfolgenden Sessions einzelne Ideen im Kollektiv auszuwählen, 
-          prototypisch in interdisziplinären Teams umzusetzen und damit umfangreichere und nachhaltige Implementierungsprojekte 
-          in der Stadt anzustoßen.</p>  
-          
-        <p>Egal ob Du schon eine konkrete Idee hast, die Du mit einbringen möchtest, Python-begeistert bist oder einfach 
-          als Enthusiast*in die Chance nutzen willst, selbst den Puls der Zeit zu erleben - für die erste Session 
-          brauchst Du nur Deine menschliche Intelligenz.</p>
+        <p>Ausgehend von dieser Situation und Fragestellung entwickelten Architekturstudierende der BTU Cottbus-Senftenberg Entwürfe für einen komplexen, 
+          innerstädtischen Schulstandort. Die Schule wird als Stadtbaustein mit weiteren Nutzungen kombiniert und weitergedacht 
+          und öffnet sich so „OUT-SIDE-IN“ für die Stadt. Im CityLAB Berlin sind die Ergebnisse des Entwurfsseminars ausgestellt.</p><br />
 
-        <p>Komm vorbei und mach mit bei der gemeinsamen Suche und Entwicklung von KI für Berlin.</p>
-
-        <p>Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
-
+        <img src="https://citylab-berlin.org/images/events/schule-outsidein-organiser-logo.jpg" alt="Organisatoren" />
 
         <div class="summary-wrapper is-medium">
           <h4>Zusammenfassung</h4>
           <div class="flex-container">
             <div class="content-block">
-              <h5>Website</h5>
-              <span class="summary-text"><a href= https://www.birdsonmars.com>https://www.birdsonmars.com</a> </span>
+              <h5>Eröffnung</h5>
+              <span class="summary-text">18.11.2019, 18 Uhr</span>
             </div>
             <div class="content-block">
               <h5>Veranstalter</h5>
-              <span class="summary-text">CityLAB & Birds on Mars</span>
+              <span class="summary-text">BTU Cottbus - Senftenberg</span>
             </div>
             <div class="content-block">
               <h5>Datum</h5>
-              <span class="summary-text">12.11.2019, 17-21 Uhr</span>
+              <span class="summary-text">18-29.11.2019</span>
             </div>
-        <div class="content-block">
+           <div class="content-block">
+              <h5>Besuchszeiten</h5>
+              <span class="summary-text">Mi-Sa 10-17 Uhr</span>
+            </div>
+            <div class="content-block">
               <h5>E-Mail</h5>
-              <a href="mailto:florian@birdsonmars.com" class="summary-text">Florian Dohmann</a>
+              <a href="mailto:wulfa@b-tu.de" class="summary-text">wulfa@b-tu.de</a>
             </div>
             <div class="content-block">
               <h5>Adresse</h5>
@@ -61,11 +50,7 @@
           </div>
         </div>
 
-      <p> Eintritt frei mit Anmeldung </p>
-
-      <div class="flex-container btn" style="margin-top:30px!important;display:inline">
-<a href="https://www.eventbrite.de/e/ai-for-berlin-workshop-kick-off-for-an-event-series-on-city-ai-registration-78591728977" target="_blank" class="button is-color-secondary is-normal">Jetzt registrieren</a>
-</div>
+      <p> Eintritt ohne Anmeldung </p>
 
         <Matomo/>
             </div>
@@ -95,31 +80,31 @@
       return {
         lang: 'de',
         content: content,
-        direct: '/events/AIforberlin_en'
+        direct: '/events/schule-outsidein_en'
       }
     },
     computed: {
         },
     head () {
       return {
-        title: 'AI for Berlin - ',
+        title: 'schule*OUT-SIDE-IN - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'AI for Berlin (2019-11-12 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
-          { hid: 'og:title', property: 'og:title',  content: "AI for Berlin"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin_hero.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "AI for Berlin (2019-11-12 - CityLAB Berlin)"},
+          { hid: 'og:title', property: 'og:title',  content: "schule*OUT-SIDE-IN"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/schule-outsidein_social_media.jpg"},
+          { hid: 'og:description', property: 'og:description',  content: "schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
-          { hid: 'article:author', property: 'article:author',  content: "BTU Cottbus-Senftenberg"},
+          { hid: 'article:author', property: 'article:author',  content: "BTU Cottbus - Senftenberg"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
-          { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/AIforberlin_en"},
-          { hid: 'twitter:title', name: 'twitter:title', content: "AI for Berlin"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "AI for Berlin (2019-11-12 - CityLAB Berlin)"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin_hero.jpg"},
-          { hid: 'name', itemprop: 'name', content:"AI for Berlin"},
-          { hid: 'description', itemprop: 'description', content: "AI for Berlin (2019-11-12 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin_hero.jpg"},
+          { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/schule-outsidein_en"},
+          { hid: 'twitter:title', name: 'twitter:title', content: "schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
+          { hid: 'twitter:description', name: 'twitter:description', content: "school*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/schule-outsidein_social_media.jpg"},
+          { hid: 'name', itemprop: 'name', content:"schule*OUT-SIDE-IN"},
+          { hid: 'description', itemprop: 'description', content: "schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/schule-outsidein_social_media.jpg"},
         ]
       }
     },
@@ -174,7 +159,7 @@
         color: white;
         margin-bottom: 50px;
         margin-top: 60px;
-        background: $color-tertiary;
+        background: $color-primary;
         padding: $spacing-m;
 
         h4 {
@@ -215,13 +200,13 @@
 
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 
@@ -248,7 +233,7 @@
 
 	.name-list li,
 	.time-list li{
-		color: $color-tertiary;
+		color: $color-primary;
         font-size: $size-5;
 		padding-bottom:5px;
 	}
@@ -282,6 +267,7 @@
         margin-top: 30px;
         min-width: 180px;
         margin-right: 3em;
+        background: $color-secondary;
     }
 
 </style>

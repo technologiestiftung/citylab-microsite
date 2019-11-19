@@ -1,50 +1,42 @@
 <template>
 	<div>
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-		<Hero :lang="lang" :content="content" :direct="direct"/>
-		<MissionStatement :lang="lang" :content="content" :direct="direct"/>
-		<Tiles :lang="lang" :content="content" :direct="direct"/>
+		<TeaserIntro :content='content' :lang='lang' topic="hero" subtopic="intro"/>
+		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
 		<Topics :lang="lang" :content="content" :direct="direct" />
-    	<Funding :lang="lang" :content="content" :direct="direct" />
-		<Exhibition :lang="lang" :content="content" :direct="direct" />
-		<Call :lang="lang" :content="content"/>
-		<!-- <Projects :lang="lang" :content="content"/> -->
+		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
+		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
+		<Projects :lang="lang" :content="content"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
-		<Team :lang="lang" :content="content" :direct="direct"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
 
-		<button @click="topFunction()" id="myBtn" class="is-color-tertiary top">
-			↑
-		</button>
+		<button @click="topFunction()" id="myBtn" class="arrow-up top">↑</button>
 	</div>
 </template>
 
 <script>
+	import pkg from '../package'
 	import { content as content } from '../assets/content.js';
 	import { links as links } from '../assets/links.js';
 
 	import Navigation from '../components/Navigation.vue';
-	import Hero from '../components/Hero.vue';
-	import MissionStatement from '../components/MissionStatement.vue';
-  	import Team from '../components/Team.vue';
-  	import Funding from '../components/Funding.vue';
-  	import Exhibition from '../components/Exhibition.vue';
-	import Call from '../components/Call.vue';
+	import Exhibition from '../components/Exhibition.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
+	import Teaser from '../components/Teaser.vue';
 	import Topics from '../components/Topics.vue';
-	import Tiles from '../components/Tiles.vue';
+	import TeaserIntro from '../components/TeaserIntro.vue';
 	import Partners from '../components/Partners.vue';
 	import Projects from '../components/Projects.vue';
 	import Schedule from '../components/Schedule.vue';
 	import Newsletter from '../components/Newsletter.vue';
+	import Paragraph from '../components/Paragraph.vue';
 
 	import axios from 'axios';
 	import { mapState } from 'vuex';
-	import pkg from '../package'
 
 	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -52,20 +44,16 @@
 
 		components: {
 			Navigation,
-			Hero,
-			MissionStatement,
-			Team,
-      		Funding,
-			Call,
+			Exhibition,
 			Cta,
 			Schedule,
+			Paragraph,
 			Footer,
 			Topics,
 			Partners,
-			Exhibition,
-			Newsletter,
+			TeaserIntro,
 			Projects,
-			Tiles,
+			Newsletter,
 		},
 		data() {
 			return {
@@ -129,16 +117,17 @@
                 this.$store.dispatch("SET_OFFSET", boolean);
             },
 		},
-		mounted () {
+		mounted() {
 			if (process.browser) {
 
 				window.addEventListener("hashchange", () => {
+					console.log(window.scrollY);
 
-					window.scrollTo(window.scrollX, window.scrollY - 75);
-					if (this.offset) {
+					if (!this.offset) {
 						console.log('without offset')
+						window.scrollTo(window.scrollX, window.scrollY - 75);
 						this.setOffset(true);
-					} else if (!this.offset) {
+					} else if (this.offset) {
 						console.log('it works!')
 						window.scrollTo(window.scrollX, window.scrollY);
 					}
@@ -178,10 +167,20 @@
 		}
 	}
 
-	.is-color-tertiary {
-		background: none;
-		color: $color-tertiary;
+	.arrow-up {
+		font-size: 40px !important;
+		color: $color-primary;
+		padding: 0px 44px 57px 16px;
+		border-radius: 100px;
+		margin-right: 30px;
+		margin-bottom: 30px;
 		border: none;
-		font-size: 24px;
+		transition: background .125s ease-in-out;
+
+		&:hover {
+			background: #F4F4FA;
+			color: $color-primary !important;
+			transition: background .125s ease-in-out;
+		}
 	}
 </style>

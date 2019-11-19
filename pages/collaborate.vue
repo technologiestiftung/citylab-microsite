@@ -1,9 +1,12 @@
 <template>
 	<div>
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-		<MissionStatement style="margin-top: 100px" :lang="lang" :content="content" :direct="direct"/>
-		<Tiles :lang="lang" :content="content" :direct="direct"/>
-		<Team :lang="lang" :content="content" :direct="direct"/>
+		<Paragraph  style="margin-top: 100px" :content='content' :lang='lang' :topic="topic" subtopic="funding"/>
+		<ExpansionPanel :topic="topic" subtopic="funding" :lang="lang" :content="content" />
+		<Teaser :content='content' :lang='lang' id="coworking" :topic="topic" subtopic="coworking"/>
+		<ExpansionPanel :topic="topic" subtopic="coworking" :lang="lang" :content="content" />
+		<Paragraph :content='content' :lang='lang' :topic="topic" subtopic="project"/>
+		<Teaser :content='content' :lang='lang' id="event" :topic="topic" subtopic="event"/>
 		<Footer :lang="lang" :content="content"/>
 		<Matomo/>
 	</div>
@@ -16,46 +19,36 @@
 
 	import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
-	import MissionStatement from '../components/MissionStatement.vue';
 	import Paragraph from '../components/Paragraph.vue';
 	import Matomo from '../components/Matomo.vue';
-	import Tiles from '../components/Tiles.vue';
+	import ExpansionPanel from '../components/ExpansionPanel.vue';
 	import Teaser from '../components/Teaser.vue';
-	import Team from '../components/Team.vue';
 
 	export default {
 		components: {
 			Navigation,
+			ExpansionPanel,
 			Footer,
 			Paragraph,
 			Matomo,
-			Tiles,
-			Team,
-			MissionStatement,
 			Teaser
 		},
 		data() {
 			return {
 				lang: 'de',
 				content: content,
-				direct: '/about_us_en'
+				direct: '/collaborate_en',
+				topic: 'collaborate'
 			}
 		}
 	}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	@import "../assets/style/style.scss";
     h1.title, h3.title {
-			color: $color-secondary;
-		}
-
-		details {
-			padding: 15px;
-			background: $color-primary;
-
-			&[open] {
-				background: $color-primary;
-			}
-		}
+		color: $color-secondary;
+	}
 </style>
+
+

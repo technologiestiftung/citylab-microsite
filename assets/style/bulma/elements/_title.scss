@@ -45,6 +45,10 @@ $subtitle-negative-margin: -1.25rem !default;
   font-weight: $title-weight;
   line-height: $title-line-height;
 
+  @media screen and (max-width: 768px) {
+    margin-bottom: .5rem;
+  }
+
   @include tablet {
     font-size: $size-2;
   }
@@ -74,9 +78,10 @@ $subtitle-negative-margin: -1.25rem !default;
 
 .subtitle {
   color: $subtitle-color;
-  font-size: $size-4;
+
+  font-size: 20px;
   font-weight: $subtitle-weight;
-  line-height: $size-3;
+  line-height: 140%;
 
   strong {
     color: $subtitle-strong-color;

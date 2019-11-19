@@ -1,33 +1,73 @@
 <template>
-    <section class="section">
-        <div class="wrapper-mobile is-medium">
-            <h2 v-html="contentTeaser['title']" class="title"></h2>
-        </div>
+    <section class="section intro">
 
         <div class="preview container" :id="`preview-${id}`" >
             <div class="wrapper">
-                <h2 class="title" v-html="contentTeaser['title']"></h2>
+                <!-- <h2 class="title" v-html="contentTeaser['title']"></h2> -->
+                <vue-typed-js
+                    :strings="contentTeaser['words_arr']" 
+                    :loop="true"
+                    :typeSpeed="100"
+                    :backDelay="4000"
+                >
+                    <h1 style="width: 100%;" class="title">
+                        {{ contentTeaser['claim_01'] }}
+                        <span class="typing"></span>
+                        {{ contentTeaser['claim_02'] }}
+                        <br class="condBreak"/>
+                        {{ contentTeaser['claim_03'] }}
+                    </h1>
+                </vue-typed-js>
                 <h2 class="subtitle">
                     {{ contentTeaser['description'] }}
                 </h2>
 
                 <Button style="margin-bottom: 10px;" :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
+
+                <nuxt-link class="cross-link--small" :to="contentTeaser['directSecond']">
+                    {{ contentTeaser['btnSecond'] }}
+                </nuxt-link>
             </div>
             <img :src="contentTeaser['imgUrl']"/>
         </div>
 
         <div class="wrapper-mobile is-medium">
+
+            <!-- <h2 v-html="contentTeaser['title']" class="title"></h2> -->
+            <vue-typed-js
+                :strings="contentTeaser['words_arr']"
+                :loop="true"
+                :typeSpeed="100"
+                :backDelay="4000"
+            >
+                <h1 style="width: 100%;" class="title">
+                    {{ contentTeaser['claim_01'] }}
+                    <span class="typing"></span>
+                    {{ contentTeaser['claim_02'] }}
+                    <br class="condBreak"/>
+                    {{ contentTeaser['claim_03'] }}
+                </h1>
+            </vue-typed-js>
+
             <h2 class="subtitle">
                 {{ contentTeaser['description'] }}
             </h2>
 
             <Button style="margin-bottom: 10px;" :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
+
+            <nuxt-link class="cross-link--small" :to="contentTeaser['directSecond']">
+                {{ contentTeaser['btnSecond'] }}
+            </nuxt-link>
         </div>
     </section>
 </template>
 
 <script>
-    import Button from './Button';
+    import VueTypedJs from 'vue-typed-js';
+    import Vue from 'vue';
+    import Button from './Button.vue'
+
+    Vue.use(VueTypedJs);
     export default {
         props: {
           lang: String,
@@ -38,7 +78,7 @@
           id: String
         },
         components: {
-            Button
+          Button
         },
         name: 'Teaser',
         computed: {
@@ -54,6 +94,8 @@
 
         },
         mounted() {
+            console.log(this.contentTeaser);
+
             this.$nextTick(function () {
                 this.adjustHeight();
             })
@@ -66,6 +108,25 @@
     @import "../assets/style/style.scss";
     .section {
         padding: 3.5rem 0rem;
+
+        &.intro {
+            margin-top: 19px;
+
+            @media screen and (max-width: 850px) {
+                margin-top: 11px;
+            }
+        }
+    }
+
+    .cross-link--small {
+        border-bottom: 1px solid $color-secondary;
+        padding-bottom: 5px;
+        color: $color-secondary;
+
+        &:hover {
+            color: $color-secondary--medium;
+            border-bottom: 1px solid $color-secondary--medium;
+        }
     }
 
     .container {
@@ -88,7 +149,7 @@
 
             div.wrapper {
                 background: white;
-                padding: 1rem 1.25rem 2rem 1.25rem;
+                padding: 1.75rem 2rem 2.5rem 2rem;
 
                 grid-column: 3 / 8;
                 grid-row: 2;
@@ -98,20 +159,23 @@
 
                 z-index: 1;
 
-                h2.title {
+
+                h1.title {
                   color: $color-secondary;
+                  margin-bottom: 30px;
                 }
 
                 h2.subtitle {
                   margin-top: 1rem;
+                  margin-bottom: .5rem;
                 }
 
-                @media screen and (max-width: 1000px) {
+                @media screen and (max-width: 1100px) {
                     grid-column: 2 / 9;
                 }
 
                 @media screen and (max-width: 1000px) {
-                    grid-column: 3 / 9;
+                    grid-column: 2 / 10;
                 }
 
                 @media screen and (max-width: 850px) {
@@ -134,8 +198,14 @@
         }
 
         @media screen and (max-width: 850px) {
+
+            h1.title {
+                color: $color-secondary !important;
+                margin-bottom: 1.5rem;
+            }
+
             display: block;
-            padding: 3.5rem 1.5rem;
+            padding: 3.5rem 1.5rem 0rem 1.5rem;
         }
     }
 

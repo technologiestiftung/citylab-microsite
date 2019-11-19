@@ -204,6 +204,7 @@
     @import "../assets/style/style.scss";
 
     footer {
+        transition: sweep .5s ease-in-out;
         border-top: 1px solid $color-primary--light;
 
         section {

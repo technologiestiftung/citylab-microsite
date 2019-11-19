@@ -21,7 +21,7 @@
 
                             <h2 class="subtitle format">{{ entry.format }}</h2>
 
-                            <a :href="entry['link']" class="arrow-right">></a>
+                            <a :href="entry['link']" class="arrow-right">→</a>
                         </article>
                     </a>
                 </div>
@@ -151,8 +151,8 @@
             },
             getMonth(date) {
                 let dat = new Date(date);
-                const mlistEn = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-                const mlist = [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ];
+                const mlistEn = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+                const mlist = [ "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez" ];
                 let monthCurrent = this.lang == 'en' ? mlistEn[dat.getMonth()] : mlist[dat.getMonth()];
                 return monthCurrent;
             },
@@ -171,16 +171,13 @@
     .schedule { 
         // background: $color-primary--lightest;
 
-        @include tablet {
-            
-        }
-
         .event-tile {
             transition: $time-s ease transform;
             &:hover {
                 .arrow-right {
                     transform: translateX(5px);
                     transition: $time-s ease transform;
+                    color: $color-primary;
                 }
             }
 
@@ -189,16 +186,14 @@
                     background: $color-primary--lightest;
                 }
             }
-
-
         }
 
 
         .arrow-right {
-            font-size: 36px;
+            font-size: 2rem;
             margin-right: 15px;
-            color: $color-tertiary;
-            font-weight: bold;
+            color: $color-primary;
+            font-weight: normal;
             transition: $time-s ease transform;
         }
 
@@ -221,7 +216,6 @@
             }
 
             .subtitle {
-                font-size: $size-4;
                 margin-bottom: 0px;
                 width: 450px;
 
@@ -230,7 +224,6 @@
                     line-height: 1.2rem;
                 }
             }
-
 
             .format {
                 opacity: .5;
@@ -251,17 +244,18 @@
             margin-right: $spacing-l;
             display: flex;
             flex-direction: column;
-            min-width: 70px;
+            min-width: 35px;
             justify-content: space-around;
 
             @include mobile {
                 margin-right: 15px;
+                min-width: 50px;
             }
 
             .date-time {
                 font-size: $size-4;
                 line-height: 2rem;
-                color: $color-tertiary;
+                color: $color-primary;
                 margin-right: $spacing-l;
 
                 @include mobile {
@@ -272,14 +266,15 @@
             }
 
             .date-month {
-                font-size: $size-4;
-                line-height: 2rem;
+                font-size: $size-5;
+                line-height: 1rem;
+                color: $color-primary;
                 text-align: center;
-                color: $color-tertiary;
+                opacity: .5;
 
                 @include mobile {
-                    line-height: 1.2rem;
-                    font-size: 1rem;
+                    line-height: 1rem;
+                    font-size: $size-5;
                 }
             }
 
@@ -287,11 +282,11 @@
                 font-size: $size-3;
                 line-height: 1.75rem;
                 text-align: center;
-                color: $color-tertiary;
+                color: $color-primary;
 
                 @include mobile {
                     line-height: 1.2rem;
-                    font-size: 1rem;
+                    font-size: $size-4;
                 }
             }
          }

@@ -6,9 +6,9 @@
             <div class="container">
 				<p class="event-intro">{{ eventContent[lang]['intro'] }}</p>
 
-        <h4 class="title">Programm</h4>
+        <h4 class="title">Program</h4>
 
-        <a style="display:block; margin: -20px 0 20px 0" href="http://citylab-berlin.org/downloads/mobility_symposium_program.pdf">Programm als PDF herunterladen</a>
+        <a style="display:block; margin: -20px 0 20px 0" href="http://citylab-berlin.org/downloads/mobility_symposium_program.pdf">Download program as PDF</a>
 
         <ul id="program">
           <li v-for="item in program">
@@ -25,19 +25,19 @@
         <img src="https://citylab-berlin.org/images/events/mobilitysymposium-anita.jpg" alt="Anita Graser" class="author-image" />
         <h6 class="title speaker-name">Anita Graser</h6>
         <h5 class="title">Austrian Institute of Technology</h5>
-        <p>Anita Graser ist Geodatenwissenschaftlerin, GIS-Expertin und Autorin. Ihre Forschungsschwerpunkte liegen in der Analyse von Bewegungsdaten. Sie ist Co-Autorin von QGIS Map Design und anderen Büchern über QGIS. Für weitere Informationen besuchen Sie ihren Blog unter <a href="https://anitagraser.com/about/">https://anitagraser.com/about/</a>.</p>
+        <p>Anita Graser is a spatial data scientist, open source GIS advocate, and author. Her research focuses on the analysis of movement data. She’s co-author of QGIS Map Design and other books about QGIS. For further information, check out her blog at <a href="https://anitagraser.com/about/">https://anitagraser.com/about/</a>.</p>
 
         <img src="https://citylab-berlin.org/images/events/mobilitysymposium-till.jpg" alt="Till Nagel" class="author-image" />
         <h6 class="title speaker-name">Till Nagel</h6>
         <h5 class="title">Hochschule Mannheim</h5>
-        <p>Till Nagel ist Professor für Visual Analytics an der Hochschule Mannheim. Seine Forschungsinteressen liegen in den Bereichen Informationsvisualisierung, Interaktionsdesign und Data Literacy. Er leitet das Human Data Interaction Lab, in dem neue Möglichkeiten untersucht werden, unterschiedliche Zielgruppen mit interaktiven Datenrepräsentationen zu unterstützen. <a href="https://services.informatik.hs-mannheim.de/~nagel/">https://services.informatik.hs-mannheim.de/~nagel/</a></p>
+        <p>Till Nagel is a Professor for Visual Analytics at the Mannheim University of Applied Sciences. His research interests are in the fields of information visualization, interaction design and data literacy. He heads the Human Data Interaction Lab, which investigates new ways of supporting different target groups with interactive data representations. <a href="https://services.informatik.hs-mannheim.de/~nagel/">https://services.informatik.hs-mannheim.de/~nagel/</a></p>
 
-        <a href="http://citylab-berlin.org/downloads/mobility_symposium_abstracts.pdf"><img src="https://citylab-berlin.org/images/events/mobility_symposium_abstracts_de.jpg" alt="Angenommene Einreichungen" /></a><br /><br />
+        <a href="http://citylab-berlin.org/downloads/mobility_symposium_abstracts.pdf"><img src="https://citylab-berlin.org/images/events/mobility_symposium_abstracts_en.jpg" alt="Accepted Abstracts" /></a><br /><br />
 
         <h4 class="title">Location</h4>
         <p>CityLAB Berlin<br />Platz der Luftbrücke 4<br />12101 Berlin<br /><br />ÖPNV: Platz der Luftbrücke</p>
 
-				<h4 class="title">Die Veranstaltung ist ausverkauft.</h4>
+				<h4 class="title">The event is sold out.</h4>
 
 				<h4 class="title">{{ eventContent[lang]['programTitle'] }}</h4>
 
@@ -61,10 +61,9 @@
           <p v-html="eventContent[lang]['financialSupport']"></p>
         </div>
 
-				<img id="organiser-logos" src="https://citylab-berlin.org/images/events/mobilitysymposium-organiser-logos.svg" alt="Organisatoren" />
+				<img id="organiser-logos" src="https://citylab-berlin.org/images/events/mobilitysymposium-organiser-logos.svg" alt="Organisers" />
 
-
-				<h3 class="title">Call for Papers</h3>
+        <h3 class="title">Call for Papers</h3>
 
 				<h4 class="title">{{ eventContent[lang]['timeTitle'] }}</h4>
 				<ul class="time-list">
@@ -97,8 +96,8 @@
   		content as eventContent
 	} from '../../assets/events/mobilitysymposium.js';
 
-  	import Navigation from '../../components/Navigation.vue';
-  	import HeroLight from '../../components/HeroLight.vue';
+  import Navigation from '../../components/Navigation.vue';
+  import HeroLight from '../../components/HeroLight.vue';
 	import Footer from '../../components/Footer.vue';
 	import Matomo from '../../components/Matomo.vue';
     
@@ -111,10 +110,10 @@
 		},
 		data() {
 			return {
-				lang: 'de',
+				lang: 'en',
 				content: content,
         		eventContent: eventContent,
-				direct: '/events/mobilitysymposium_en'
+				direct: '/events/mobilitysymposium'
 			}
 		},
 		computed: {
@@ -156,7 +155,7 @@
 					{ hid: 'name', itemprop: 'name', content:"Urban Mobility Symposium - Karten, Daten, Geovisualisierung (11.10.2019 - CityLAB Berlin)"},
 					{ hid: 'description', itemprop: 'description', content: "The symposium focusses on the processing, analysis and presentation of spatial information in the context of urban mobility. From cartographic applications and products for visual analysis, communication and presentation of mobility data, to geoinformatics solutions for multimodal routings or traffic flow optimization. A desirable, but not compelling focus is on approaches that deal with new innovations for more sustainable mobility solutions."},
 					{ hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/mobilitysymposium_social_media.jpg"},
-				]
+				]		
 			}
 		},
     }
@@ -169,7 +168,7 @@
 	}
 
 	.event-content p{
-		color: $color-tertiary;
+		color: $color-primary;
         font-size: $size-5;
 		padding-bottom:40px;
 	}
@@ -189,7 +188,7 @@
 
 	.name-list li,
 	.time-list li{
-		color: $color-tertiary;
+		color: $color-primary;
         font-size: $size-5;
 		padding-bottom:5px;
 	}
@@ -248,12 +247,12 @@
     padding-top:50px;
   }
 
-  #program .speaker.hide{
-    display:none;
-  }
-
   #program .speaker{
     font-style: italic;
+  }
+
+  #program .speaker.hide{
+    display:none;
   }
 
   img.author-image{

@@ -169,6 +169,7 @@
     .name {
         line-height: 120%;
         color: $color-primary;
+        font-size: 1.5rem;
     }
 
     .title {
@@ -208,7 +209,7 @@
             }
 
             @include desktop {
-                flex: 0 0 33% !important;
+                flex: 0 0 50% !important;
             }
         }
     }

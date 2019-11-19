@@ -1,7 +1,7 @@
 <template>
-  <section class="section is-medium">
+  <section :class="`section is-medium ${contentParagraph['style']}`">
     <div class="container">
-      <div class="paragraph">
+      <div :class="paragraph">
           <div class="container">
               <h1 class="title">{{ contentParagraph['title'] }}</h1>
               <h2 v-html="contentParagraph['description']" class="subtitle"></h2>
@@ -26,29 +26,56 @@
           direct: String,
           topic: String,
         },
-        data() {
-          return {
-            directs: {
-              de: {
-                  all: '/funding_details',
-              },
-              en: {
-                  all: '/funding_details_en',
-              }
-            }
-          }
-        },
-        mounted() {
-          console.log(this.lang, this.content)
-        },
         computed: {
           contentParagraph: function() { return this.content[this.lang][this.topic][this.subtopic] },
         },
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../assets/style/style.scss";
+
+    .section {
+      &.dark {
+        background: $color-primary;
+
+        .container {
+          h1.title {
+            color: white;
+          }
+  
+          h2.subtitle {
+            color: white;
+          }
+      }
+      }
+
+      &.bright {
+        background: white;
+
+        .container {
+          h1.title {
+            color: $color-secondary;
+          }
+
+          h2.subtitle {
+            color: $color-primary;
+          }
+        }
+      }
+
+    }
+    
+
+    .container {
+      h1.title {
+        color: $color-secondary;
+      }
+      h2.subtitle {
+        margin-top: 1.5rem !important;
+      }
+      animation: sweep .5s ease-in-out;
+    }
 </style>
 
 

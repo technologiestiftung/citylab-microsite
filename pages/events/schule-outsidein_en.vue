@@ -1,56 +1,60 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/schule-outsidein_hero.jpg'" :title="'schule*OUT-SIDE-IN'" :subTitle="'Studentenentwürfe zur neuen Berliner Schule'" :subSubTitle="'18-29.11.2019 CityLAB Berlin Foyer'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/schule-outsidein_hero.jpg'" :title="'school*OUT-SIDE-IN'" :subTitle="'Student design proposals for the new berlin school'" :subSubTitle="'18-29.11.2019 CityLAB Berlin Foyer'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
-        <p class="event-intro">Neue Schulen werden gebraucht, am besten sofort, der Platz reicht nicht mehr für die Nachfrage aus. 
-          Die Berliner „Schulbauoffensive“, mit einem geplanten Neubau von mehr als 60 Schulen bis 2026, bietet die Chance neue pädagogische Konzepte und die ganztägige Nutzung der Schulräume zu entwickeln und zu erproben. 
-          Wie wird sich die Typologie der Schule in diesem Prozess verändern?</p>
+        <p class="event-intro">Berlin is in urgent need for new schools, the sooner the better. 
+          The available spaces can no longer meet the demand. 
+          The Berlin "Schulbauoffensive" (School Building Offensive) is planning to build more than 60 schools by 2026. 
+          This situation offers the chance to develop and test new pedagogical concepts and the all-day use of the classrooms spatially. 
+          How will the typology of the school change in this process?</p>
 
-        <p>Baugrundstücke für neue Schulen sind in Berlin nicht beliebig vermehrbar und auch hier sind neue Ideen gefordert, 
-          wie man mit der zunehmenden Verknappung der zur Verfügung stehenden Flächen umgehen kann. 
-          Wie kann der Schulbau zu einer urbanen Dichte sowie einer sozialen und funktionalen Vielfalt in der Stadt beitragen?</p>
 
         <h3 class="title"></h3>
-        <p>Ausgehend von dieser Situation und Fragestellung entwickelten Architekturstudierende der BTU Cottbus-Senftenberg Entwürfe für einen komplexen, 
-          innerstädtischen Schulstandort. Die Schule wird als Stadtbaustein mit weiteren Nutzungen kombiniert und weitergedacht 
-          und öffnet sich so „OUT-SIDE-IN“ für die Stadt. Im CityLAB Berlin sind die Ergebnisse des Entwurfsseminars ausgestellt.</p><br />
+        <p>
+          Big building lots for new schools in Berlin are hard to find, so that new ideas on how to cope with the increasing scarcity of available space are required. 
+          How can new concepts for school buildings contribute to urban density and a social and functional diversity in the city?</p>
+
+        <h3 class="title"></h3>
+        <p>Using this initiative and the occurring questions as a starting point, architecture students of BTU Cottbus-Senftenberg developed a concept 
+          and presented a design proposal for a school building on a building lot in the inner city of Berlin. 
+          The school, intended as part of a city block, is combined with other uses and opens "OUT-SIDE-IN" to the neighborhood and city. 
+          The CityLAB Berlin presents the results of the design seminar.</p><br />
 
         <img src="https://citylab-berlin.org/images/events/schule-outsidein-organiser-logo.jpg" alt="Organisatoren" />
 
         <div class="summary-wrapper is-medium">
-          <h4>Zusammenfassung</h4>
+          <h4>More information</h4>
           <div class="flex-container">
             <div class="content-block">
-              <h5>Eröffnung</h5>
-              <span class="summary-text">18.11.2019, 18 Uhr</span>
+              <h5>Opening</h5>
+              <span class="summary-text">18.11.2019, 6 pm</span>
             </div>
             <div class="content-block">
-              <h5>Veranstalter</h5>
+              <h5>Organizer</h5>
               <span class="summary-text">BTU Cottbus - Senftenberg</span>
             </div>
             <div class="content-block">
-              <h5>Datum</h5>
+              <h5>Date</h5>
               <span class="summary-text">18-29.11.2019</span>
             </div>
            <div class="content-block">
-              <h5>Besuchszeiten</h5>
-              <span class="summary-text">Mi-Sa 10-17 Uhr</span>
+              <h5>Opening times</h5>
+              <span class="summary-text">Wed-Sat 10am-5pm</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>
               <a href="mailto:wulfa@b-tu.de" class="summary-text">wulfa@b-tu.de</a>
             </div>
             <div class="content-block">
-              <h5>Adresse</h5>
+              <h5>Adress</h5>
               <span class="summary-text">Platz der Luftbrücke 4, Gebäude H2rund, 12101 Berlin</span>
             </div>
           </div>
         </div>
 
-      <p> Eintritt ohne Anmeldung </p>
 
         <Matomo/>
             </div>
@@ -78,33 +82,33 @@
     },
     data() {
       return {
-        lang: 'de',
+        lang: 'en',
         content: content,
-        direct: '/events/schule-outsidein_en'
+        direct: '/events/schule-outsidein'
       }
     },
     computed: {
         },
     head () {
       return {
-        title: 'schule*OUT-SIDE-IN - ',
+        title: 'school*OUT-SIDE-IN - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
-          { hid: 'og:title', property: 'og:title',  content: "schule*OUT-SIDE-IN"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/schule-outsidein_social_media.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
+          { hid: 'og:title', property: 'og:title',  content: "school*OUT-SIDE-IN"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/schule_outsidein_social_media.jpg"},
+          { hid: 'og:description', property: 'og:description',  content: "school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
-          { hid: 'article:author', property: 'article:author',  content: "BTU Cottbus - Senftenberg"},
+          { hid: 'article:author', property: 'article:author',  content: "BTU Cottbus-Senftenberg"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
           { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/schule-outsidein_en"},
-          { hid: 'twitter:title', name: 'twitter:title', content: "schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "school*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/schule-outsidein_social_media.jpg"},
-          { hid: 'name', itemprop: 'name', content:"schule*OUT-SIDE-IN"},
-          { hid: 'description', itemprop: 'description', content: "schule*OUT-SIDE-IN (2019-11-18 bis 2019-11-29 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/schule-outsidein_social_media.jpg"},
+          { hid: 'twitter:title', name: 'twitter:title', content: "school*OUT-SIDE-IN"},
+          { hid: 'twitter:description', name: 'twitter:description', content: "school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/schule_outsidein_social_media.jpg"},
+          { hid: 'name', itemprop: 'name', content:"Summer School 2019 - Data-driven Urban Innovation"},
+          { hid: 'description', itemprop: 'description', content: "school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/schule_outsidein_social_media.jpg"},
         ]
       }
     },
@@ -159,7 +163,7 @@
         color: white;
         margin-bottom: 50px;
         margin-top: 60px;
-        background: $color-tertiary;
+        background: $color-primary;
         padding: $spacing-m;
 
         h4 {
@@ -200,13 +204,13 @@
 
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 
@@ -233,7 +237,7 @@
 
 	.name-list li,
 	.time-list li{
-		color: $color-tertiary;
+		color: $color-primary;
         font-size: $size-5;
 		padding-bottom:5px;
 	}

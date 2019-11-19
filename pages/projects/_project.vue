@@ -40,6 +40,7 @@
                         <span v-if="logo[0] == 'FALSE'" target="_blank" class="button is-color-secondary is-normal">Link</span>
                     </a>
                 </div>
+
             </div>
         </section>
         <Footer :lang="lang" :content="getContent"/> 
@@ -62,12 +63,11 @@
                 return false // will stop Nuxt.js to render the route and display the error page
         },
         async asyncData ({ params, error, payload }) {
-            // console.log(params.project.slice(0,-3));
             return { 
                 dirname: params.project,
-                lang: 'en',
+                lang: 'de',
                 content: content,
-                direct: `/projects/${params.project}`,
+                direct: `/projects_en/${params.project}`,
                 data: null,
                 summaryAvailable: {
                     website: 0,
@@ -177,7 +177,7 @@
             }
         },
         beforeCreate() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json`)
+            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json`)
                 .then((res) => {
                     // set event entry to data which matches with dirname
                     this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
@@ -211,15 +211,33 @@
         color: $color-secondary;
     }
 
+    section.hero {
+        margin-top: 75px;
+
+        @media screen and (max-width: 1087px) {
+            margin-top: 67px;
+        }
+    }
+
+    .logo-wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+
+        img {
+            width: 150px;
+        }
+    }
+
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 

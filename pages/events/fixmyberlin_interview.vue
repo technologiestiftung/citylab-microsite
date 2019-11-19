@@ -43,14 +43,13 @@
     },
     data() {
       return {
-        lang: 'en',
+        lang: 'de',
         content: content,
         eventContent: eventContent,
-        direct: '/events/fixmyberlin_interview'
+        direct: '/events/fixmyberlin_interview_en'
       }
     },
-
-           head () {
+    head () {
       return {
         title: 'Interview - FixMyBerlin',
         meta: [
@@ -74,7 +73,6 @@
         ]
       }
     },
-
     }
 </script>
 
@@ -93,9 +91,8 @@
   }
 
   .event-content p{
-    color: $color-tertiary;
+    color: $color-primary;
     font-size: $size-5;
-    margin-bottom: 20px;
   }
 
   h4.title{

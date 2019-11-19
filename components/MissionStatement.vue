@@ -3,15 +3,19 @@
         <div class="container">
             <h2 class="title">{{ content[lang]['missionStatement']['title'] }}</h2>
             <h2 class="subtitle" v-html="`${content[lang]['missionStatement']['subtitle']}`"></h2>
-            <a href="#call" class="button is-color-secondary is-normal">{{ content[lang]['missionStatement']['cta'] }}</a>
+            <Button style="margin-bottom: 10px;" type="external" :label="content[lang]['missionStatement']['cta']" :direct="content[lang]['call']['form_url']"/>
         </div>
     </section>
 </template>
 
 <script>
+    import Button from './Button';
     export default {
         name: 'MissionStatement',
-        props: ['lang', 'content']
+        props: ['lang', 'content'],
+        components: {
+            Button
+        }
     }
 </script>
 
@@ -24,7 +28,7 @@
 
 
     h2.subtitle {
-        color: $color-tertiary;
+        color: $color-primary;
         margin-top: 0px !important;
         font-size: $size-4;
         line-height: $size-3;

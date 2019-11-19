@@ -13,6 +13,7 @@
                             <article v-for="item in topicsArr" class="slide">
                                 <div class="content-container">
                                     <div>
+                                        <span class="subtitle">{{topcisHeadline}}</span>
                                         <h2 class="title" v-html="`${item.title}`"></h2>
                                         <p class="teaser">{{item.text}}</p>
                                     </div>
@@ -44,6 +45,9 @@
         computed: {
             topicsArr() {
                 return this.content[this.lang]['topics'];
+            },
+            topcisHeadline() {
+                return this.content[this.lang]['missionStatement']['statement-head'];
             }
         },
         data() {
@@ -63,7 +67,7 @@
                         ((ind) => {
                             const timeout = setTimeout(() => {
                                 document.getElementById(`slide${ind}`).checked = true;
-                                this.selectCurrent = ind; 
+                                this.selectCurrent = ind;
 
                                 if (ind == 5) {
                                     this.loopSlides();
@@ -110,6 +114,11 @@
     <style lang="scss" scoped>
         @import "../assets/style/style.scss";
 
+        .section#topics {
+            background: $color-primary--lightest;
+            // padding: 4rem 14rem;
+        }
+
         .overlay {
             width: 100%;
             height: 96.5%;
@@ -138,6 +147,15 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            .subtitle {
+                color: $color-secondary;
+                text-align: initial;
+                width: 100%;
+                float: left;
+                margin-bottom: 0px;
+                font-size: $size-6;
+            }
         }
             
         @include tablet {
@@ -173,7 +191,7 @@
         }
         .teaser {
             text-align: left;
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: 40px;
             height: 120px;
 

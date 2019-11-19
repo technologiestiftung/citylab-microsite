@@ -44,7 +44,6 @@
                             </div>
                         </div>
                     </div>    
-                    <noscript><a href="http://www.cleverreach.de">www.CleverReach.de</a></noscript>
                     </div>
                 </form>
             </div>
@@ -137,8 +136,7 @@ var $cr=jQuery.noConflict();var old_src;$cr(document).ready(function(){$cr(".cr_
         .cr_site {
             background-color:#eee;
         }
-    
-    
+
         .cr_header {color:#000000;}
         .cr_body {background-color:#ffffff;font-size:12px;color:#000000;}
         .cr_hr {background-color:#ccc;}

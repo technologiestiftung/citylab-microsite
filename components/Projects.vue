@@ -1,10 +1,11 @@
 <template>
-        <section id="team" class="section team is-medium">
+        <section id="team" class="section projects is-medium">
             <div class="container">
                 <h2 class="title">{{this.content[this.lang].projects.title}}</h2>
+                <h2 v-html="this.content[this.lang].projects.description" class="subtitle"></h2>
 
                 <div class="tile wrap team-wrapper">
-                        <div v-if="i < 3" class="tile third" v-for="(project,i) in data">
+                        <div v-if="i < 4" class="tile third" v-for="(project,i) in data">
                             <a :href="`./${directProject}/${project.dirname}`">
                                 <article>
                                     <figure class="image is 1by1">
@@ -15,13 +16,11 @@
                                         <p class="title">{{ project.subline }}</p>
                                     </div>
                                 </article>
-                            </a>    
+                            </a>
                         </div>
                 </div>
 
-                <nuxt-link style="margin-top: 30px;" class="button is-color-secondary  is-normal" :to="directAllProjects">
-                    {{ lang ==  'de' ? 'Alle Projekte' : 'All projects' }}
-                </nuxt-link>
+                <Button style="margin-bottom: 10px;" :label="lang ==  'de' ? 'Alle Projekte  →' : 'All projects  →'" :direct="lang ==  'de' ? '/all_projects' : '/all_projects_en'"/>
 
             </div>
         </section>
@@ -29,10 +28,14 @@
 
 <script>
     import axios from 'axios';
+    import Button from './Button';
 
     export default {
         name: 'Projects',
         props: ['content', 'lang', 'direct'],
+        components: {
+            Button
+        },
         computed: {
             teamArr() {
                 return this.content[this.lang]['team']['member']
@@ -105,14 +108,26 @@
     }
 
     a > article {
-        background: $color-primary--lightest;
+        background: white;
         overflow: auto;
         transition: all .25s ease-in-out;
 
         &:hover {
-            background: $color-primary--light;
+            background: $color-primary--hover;
             transition: all .25s ease-in-out;
         }
+    }
+
+    .projects {
+        background: $color-primary;
+    }
+
+    h2.title {
+        color: white !important;
+    }
+
+    h2.subtitle {
+        color: white;
     }
 
     .team-wrapper {
@@ -126,7 +141,7 @@
         margin-top: 20px;
 
         a {
-            color: white;
+            color: $color-primary;
             opacity: .5;
         }
 
@@ -143,13 +158,14 @@
         }
 
         span.summary-text {
-            color: white;
+            color: $color-primary;
             opacity: .5;
             font-size: 16px;
         }
     }
 
     .name {
+        font-size: 1.5rem;
         line-height: 120%;
     }
 
@@ -163,12 +179,15 @@
             margin: 15px;
             min-height: 60px;
 
-            p.title {
+            h2.title {
                 margin-bottom: 0px;
-                color: rgba(47, 47, 162, 0.5);
+                color: white !important;
                 font-weight: normal;
-                font-size: 1rem;
                 margin-bottom: 0px !important;
+            }
+
+            h2.subtitle {
+                color: white;
             }
         }
 
@@ -178,7 +197,7 @@
             flex: 0 0 100% !important;
 
             @include mobile {
-                flex: 0 0 50% !important;
+                flex: 0 0 100% !important;
             }
 
             @include tablet {
@@ -186,7 +205,7 @@
             }
 
             @include desktop {
-                flex: 0 0 33% !important;
+                flex: 0 0 50% !important;
             }
         }
     }
