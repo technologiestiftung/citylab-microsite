@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <section class="section is-medium">
             <div class="container">
                 <h1 class="title" v-html="this.content[this.lang]['register']['unsubscribe']['title']" style="margin-top: 100px"></h1>

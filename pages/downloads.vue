@@ -1,6 +1,6 @@
 <template>
     <div>
-		<Navigation :lang="lang" :content="content" :direct="direct"/>
+		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <section class="section downloads">
             <div class="container">
                 <h1 class="title">

@@ -114,7 +114,7 @@ export const content = {
             },
             {
                 'name': 'Newsletter',
-                'ref': '/newsletter_register'
+                'ref': '/newsletter_register_de'
             },
         ],
         'hero': {

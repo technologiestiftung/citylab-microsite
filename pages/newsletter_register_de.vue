@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <section class="section is-medium">
             <div class="container">
                 <h1 class="title" style="margin-top: 100px">
@@ -229,6 +229,26 @@ var $cr=jQuery.noConflict();var old_src;$cr(document).ready(function(){$cr(".cr_
         .cr_hr {background-color:#ccc;}
         .cr_site a {color:#0084ff;}
         .imprint{color:#000;}
+
+        .ui-sortable {
+            input {
+                background: $color-primary--lightest;
+                color: $color-primary;
+                border: 0px;
+
+                a {
+                    color: $color-primary;
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $color-primary;
+                }
+            }
+        }
+
+        .agb {
+            color: $color-primary;
+            font-size: 10px;
+            line-height: 140%;
+        }
     }
 
 </style>

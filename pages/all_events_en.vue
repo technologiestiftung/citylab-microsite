@@ -1,6 +1,6 @@
 <template>
     <div>
-		<Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <section class="section is-medium schedule">
             <div class="container">
                 <h1 style="margin-top: 100px" class="title">{{content[this.lang]['events']['upcomingEventsTitle']}}</h1>

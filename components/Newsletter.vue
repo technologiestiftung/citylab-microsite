@@ -143,12 +143,6 @@
             height: 40px;
         }
 
-        .agb {
-            color: $color-primary;
-            font-size: 10px;
-            line-height: 140%;
-        }
-
         .cr_site {
             background-color:#eee;
         }
@@ -221,7 +215,6 @@
             font-size: 20px;
         }
 
-
         .ui-sortable {
             input {
                 background: $color-primary--lightest;
@@ -234,6 +227,12 @@
                     border-bottom: 1px solid $color-primary;
                 }
             }
+        }
+
+        .agb {
+            color: $color-primary;
+            font-size: 10px;
+            line-height: 140%;
         }
     
         .cr_ipe_item select {
