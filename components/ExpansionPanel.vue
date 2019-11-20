@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-medium">
+  <section class="section is-medium expansion-panel">
     <div class="container">
       <div class="panel">
 
@@ -49,6 +49,10 @@
 
   summary::-webkit-marker-type {
     display: none !important;
+  }
+
+  .expansion-panel {
+    animation: sweep .5s ease-in-out;
   }
 
   .exp-panel {

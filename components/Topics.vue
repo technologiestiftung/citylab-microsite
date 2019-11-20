@@ -116,6 +116,7 @@
 
         .section#topics {
             background: $color-primary--lightest;
+            animation: sweep .5s ease-in-out;
             // padding: 4rem 14rem;
         }
 
