@@ -11,7 +11,7 @@
                     {{ contentTeaser['description'] }}
                 </h2>
 
-                <Button style="margin-bottom: 10px;" :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
+                <Button :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
             </div>
             <img :src="contentTeaser['imgUrl']"/>
         </div>
@@ -21,7 +21,7 @@
                 {{ contentTeaser['description'] }}
             </h2>
 
-            <Button style="margin-bottom: 10px;" :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
+            <Button :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
         </div>
     </section>
 </template>
@@ -87,7 +87,7 @@
 
             div.wrapper {
                 background: white;
-                padding: 1rem 1.25rem 2rem 1.25rem;
+                padding: .75rem 1.25rem 1.5rem 1.25rem;
 
                 grid-column: 3 / 8;
                 grid-row: 2;
@@ -103,6 +103,7 @@
 
                 h2.subtitle {
                   margin-top: 1rem;
+                  margin-bottom: .5rem !important;
                 }
 
                 @media screen and (max-width: 1000px) {

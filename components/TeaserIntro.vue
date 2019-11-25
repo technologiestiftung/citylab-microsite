@@ -18,9 +18,7 @@
                         {{ contentTeaser['claim_03'] }}
                     </h1>
                 </vue-typed-js>
-                <h2 class="subtitle">
-                    {{ contentTeaser['description'] }}
-                </h2>
+                <h2 v-html="contentTeaser['description']" class="subtitle"></h2>
 
                 <Button style="margin-bottom: 10px;" :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
 
@@ -49,9 +47,7 @@
                 </h1>
             </vue-typed-js>
 
-            <h2 class="subtitle">
-                {{ contentTeaser['description'] }}
-            </h2>
+            <h2 v-html="contentTeaser['description']" class="subtitle"></h2>
 
             <Button style="margin-bottom: 10px;" :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
 

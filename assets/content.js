@@ -126,7 +126,7 @@ export const content = {
                 'title': 'Berlins Zukunft gemeinsam gestalten',
                 'btn': 'Jetzt mitmachen  →',
                 'btnSecond': 'Mehr erfahren',
-                'description': 'Die Zukunft Berlins gemeinsam gestalten. Die Zukunft Berlins gemeinsam gestalten. Die Zukunft Berlins gemeinsam gestalten. Verwaltung auch noch.',
+                'description': 'Im CityLAB wird digitale Innovation, Partizipation und Inklusion zusammen&shy;gedacht: Als Experimentier&shy;labor, Ort des Austauschs und Co-Working Space gestalten wir gemeinsam das digitale Berlin von Morgen.',
                 direct: '/collaborate',
                 directSecond: '/about_us',
                 'imgUrl': '/images/intro-preview.jpg',
@@ -171,7 +171,7 @@ export const content = {
         'register': {
             intro: {
                 title: 'Newsletter',
-                subtitle: ' Aktuelle Informationen und Veranstaltungen aus dem CityLAB. Aktuelle Informationen und Veranstaltungen aus dem CityLAB. Aktuelle Informationen und Veranstaltungen aus dem CityLAB.',
+                subtitle: ' Du möchtest über aktuelle Veranstaltungen und Projekte des CityLABs informiert werden? Melde dich für unseren monatlichen Newsletter an und bleib immer auf dem neusten Stand.',
                 button: 'Anmelden  →',
                 url: '/newsletter_register_de'
             },
@@ -371,7 +371,7 @@ export const content = {
         'collaborate': {
             paragraph : {
                 'title': 'Jetzt mitmachen',
-                'description': 'Egal ob Veranstaltung, Co-Working oder eine eigene Idee. Wenn ihr bei einem Thema, dass sich um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities derht mitwirken wollt. Kontakiert uns oder kommt direkt im CityLAB vorbei.',
+                'description': 'Veranstaltung, Co-Working oder eigene Idee weiterentwickeln: das CityLAB ist ein Ort der Kollaboration. Wenn du bei den Themen Civic Tech, Government Tech, sozialer Innovation und Smart Cities mitwirken möchtest, kontaktiere uns ganz unkompliziert oder komm direkt im CityLAB vorbei.',
                 'btn': 'Mehr erfahren  →',
                 'direct': '/collaborate',
                 'style': 'dark'
@@ -410,8 +410,8 @@ export const content = {
                 ]
             },
             coworking: {
-                title: 'Co-working Fellowships im CityLAB',
-                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
+                title: 'Werde Co-Working Fellow im CityLAB',
+                description: 'Das CityLAB bietet für ausgewählte StartUps einen kostenlosen Co-Working Platz an. Werde Teil der Community und bewirb dich für das Co-Working Fellowship.',
                 btn: 'Jetzt bewerben  →',
                 'style': 'bright',
                 imgUrl: 'images/coworking-preview.jpg',
@@ -444,15 +444,15 @@ export const content = {
                 ]
             },
             project: {
-                title: 'Erstelle ein Projekt für das CityLAB',
-                description: 'Hier steht ein beschreibender Text mit allgemeinen Informationen zu Mögloichkeiten der Zusammenarbeit, wenn das Ziel der Zusammenarbeit ein Projekt sein soll.',
+                title: 'Gestalte ein Projekt für und mit dem CityLAB',
+                description: 'Du hast eine Idee für die nachhaltige, digitale Stadt der Zukunft und möchtest sie gerne mit uns gemeinsam entwickeln? Melde dich für eine Kollaboration bei uns und profitiere von Veranstaltungen, Netzwerk und Betreuung im CityLAB.',
                 btn: 'Jetzt bewerben  →',
                 'style': 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             },
             event: {
                 title: 'Nutze unsere Räume für deine Veranstaltung',
-                description: 'Du möchtest du für einen Co-WOrking platz bei uns bewerben? Hier steht noch mehr Text',
+                description: 'Wir bieten für ausgewählte Events kostenlos unsere Räume im Tempelhofer Flughafen an. Melde dich bei uns für die Umsetzung deiner Veranstaltungsidee.',
                 btn: 'Jetzt anfragen  →',
                 'style': 'bright',
                 imgUrl: 'images/event-preview.jpg',

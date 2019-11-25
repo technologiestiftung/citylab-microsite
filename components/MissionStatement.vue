@@ -3,7 +3,7 @@
         <div class="container">
             <h2 class="title">{{ content[lang]['missionStatement']['title'] }}</h2>
             <h2 class="subtitle" v-html="`${content[lang]['missionStatement']['subtitle']}`"></h2>
-            <Button style="margin-bottom: 10px;" type="external" :label="content[lang]['missionStatement']['cta']" :direct="content[lang]['call']['form_url']"/>
+            <Button type="external" :label="content[lang]['missionStatement']['cta']" :direct="content[lang]['call']['form_url']"/>
         </div>
     </section>
 </template>
