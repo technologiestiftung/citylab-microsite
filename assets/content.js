@@ -374,7 +374,7 @@ export const content = {
                 'description': 'Veranstaltung, Co-Working oder eigene Idee weiterentwickeln: das CityLAB ist ein Ort der Kollaboration. Wenn du bei den Themen Civic Tech, Government Tech, sozialer Innovation und Smart Cities mitwirken möchtest, kontaktiere uns ganz unkompliziert oder komm direkt im CityLAB vorbei.',
                 'btn': 'Mehr erfahren  →',
                 'direct': '/collaborate',
-                'style': 'dark'
+                'style': 'bright'
             },
             funding: {
                 title: 'Projektförderung im CityLAB',
@@ -448,6 +448,7 @@ export const content = {
                 description: 'Du hast eine Idee für die nachhaltige, digitale Stadt der Zukunft und möchtest sie gerne mit uns gemeinsam entwickeln? Melde dich für eine Kollaboration bei uns und profitiere von Veranstaltungen, Netzwerk und Betreuung im CityLAB.',
                 btn: 'Jetzt bewerben  →',
                 'style': 'bright',
+                imgUrl: 'images/project-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             },
             event: {
@@ -503,6 +504,20 @@ export const content = {
                     'title': 'UX & Design'
                 },
                 {
+                    'name': 'Sina Beckstein',
+                    'mail': 'beckstein@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': 'images/sina_portrait.jpg',
+                    'title': 'Projektmanagerin'
+                },
+                {
+                    'name': 'Joshua Pacheco',
+                    'mail': 'pacheco@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': 'images/joshua_portrait.jpg',
+                    'title': 'Service Design'
+                },
+                {
                     'name': 'Mirko Hohmann',
                     'mail': 'hohmann@technologiestiftung-berlin.de',
                     'twitter': 'mirkohohmann',
@@ -513,7 +528,7 @@ export const content = {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/malgorzata_portrait.jpg',
+                    'img_url': 'images/gosia_portrait.jpg',
                     'title': 'Administration'
                 },
             ],
@@ -1167,55 +1182,69 @@ export const content = {
             ]
         },
         'team': {
-            'title': 'The team',
+            'title': 'Team',
             'member': [
                 {
                     'name': 'Benjamin Seibel',
                     'mail': 'seibel@technologiestiftung-berlin.de',
                     'twitter': 'bnjmnsbl',
-                    'img_url': '../images/benjamin_portrait.jpg',
+                    'img_url': 'images/benjamin_portrait.jpg',
                     'title': 'Director'
                 },
                 {
                     'name': 'Nadine Riede',
                     'mail': 'riede@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/nadine_portrait.jpg',
+                    'img_url': 'images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
                 {
                     'name': 'Sebastian Meier',
                     'mail': 'meier@technologiestiftung-berlin.de',
                     'twitter': 'seb_meier',
-                    'img_url': '../images/sebastian_portrait.jpg',
+                    'img_url': 'images/sebastian_portrait.jpg',
                     'title': 'Head of Science'
                 },
                 {
                     'name': 'Sara Reichert',
                     'mail': 'reichert@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/sara_portrait.jpg',
+                    'img_url': 'images/sara_portrait.jpg',
                     'title': 'Workshop Lead'
                 },
                 {
                     'name': 'Fabian Dinklage',
                     'mail': 'dinklage@technologiestiftung-berlin.de',
                     'twitter': 'fdnklg',
-                    'img_url': '../images/fabian_portrait.jpg',
+                    'img_url': 'images/fabian_portrait.jpg',
                     'title': 'UX & Design'
+                },
+                {
+                    'name': 'Sina Beckstein',
+                    'mail': 'beckstein@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': 'images/sina_portrait.jpg',
+                    'title': 'Projectmanagement'
+                },
+                {
+                    'name': 'Joshua Pacheco',
+                    'mail': 'pacheco@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': 'images/joshua_portrait.jpg',
+                    'title': 'Service Design'
                 },
                 {
                     'name': 'Mirko Hohmann',
                     'mail': 'hohmann@technologiestiftung-berlin.de',
                     'twitter': 'mirkohohmann',
-                    'img_url': '../images/mirko_portrait.jpg',
+                    'img_url': 'images/mirko_portrait.jpg',
                     'title': 'Projectmanagement'
                 },
                 {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/malgorzata_portrait.jpg',
+                    'img_url': 'images/gosia_portrait.jpg',
                     'title': 'Administration'
                 },
             ],

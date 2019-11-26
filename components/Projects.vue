@@ -164,9 +164,14 @@
         }
     }
 
-    .name {
+    p.name {
         font-size: 1.5rem;
-        line-height: 120%;
+        color: $color-primary;
+    }
+
+    p.title {
+        color: $color-primary--medium;
+        font-size: 1rem;
     }
 
     .tile {
@@ -192,7 +197,6 @@
         }
 
         &.third {
-
             padding: 10px;
             flex: 0 0 100% !important;
 

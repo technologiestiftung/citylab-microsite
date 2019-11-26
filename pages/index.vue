@@ -5,9 +5,9 @@
 		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
-		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
-		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
 		<Projects :lang="lang" :content="content"/>
+		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
+		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->

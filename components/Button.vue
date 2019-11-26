@@ -25,10 +25,11 @@
       }
     }
 
+    background: #F64C72 !important;
     @include transition;
-      opacity: 1;
+
     &:hover {
-      opacity: .75;
+      background: #F97996 !important;
       @include transition;
     }
   }

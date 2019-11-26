@@ -1,5 +1,5 @@
 <template>
-    <section class="section schedule is-medium" id="schedule">
+    <section class="section schedule is-medium dark" id="schedule">
         <div class="container">
             <h2 class="title"> {{ content[lang]['schedule']['title'] }} </h2>
             <!-- <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2> -->
@@ -148,8 +148,66 @@
 
     @import "../assets/style/style.scss";
 
-    .schedule { 
-        // background: $color-primary--lightest;
+    .schedule {
+        background: $color-primary--lightest;
+
+        &.dark {
+            background: $color-primary;
+
+            .container {
+                h2.title {
+                    color: white;
+                }
+            }
+
+            .event-tile {
+            transition: $time-s ease transform;
+
+            .arrow-right {
+                transition: $time-s ease transform;
+                color: white;
+                opacity: .75
+            }
+
+            &:hover {
+                .arrow-right {
+                    transform: translateX(5px);
+                    transition: $time-s ease transform;
+                    color: white;
+                    opacity: 1;
+                }
+            }
+
+            &:nth-of-type(odd) {
+                .dates-item {
+                    background: #4142af;
+                }
+            }
+
+            h2.subtitle {
+                color: white;
+            }
+
+            .date-wrapper {
+                .date-time {
+                    color: white;
+                }
+
+                .date-month {
+                    color: white;
+                }
+
+                .date-day {
+                    color: white;
+                }
+            }
+
+            .dates-item {
+                color: white;
+            }
+        }
+
+        }
 
         .event-tile {
             transition: $time-s ease transform;
@@ -168,6 +226,9 @@
             }
         }
 
+        h2.title {
+            color: $color-secondary;
+        }
 
         .arrow-right {
             font-size: 2rem;
