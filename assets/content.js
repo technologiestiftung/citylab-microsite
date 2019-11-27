@@ -126,7 +126,7 @@ export const content = {
                 'title': 'Berlins Zukunft gemeinsam gestalten',
                 'btn': 'Jetzt mitmachen  →',
                 'btnSecond': 'Mehr erfahren',
-                'description': 'Im CityLAB wird digitale Innovation, Partizipation und Inklusion zusammen&shy;gedacht: Als Experimentier&shy;labor, Ort des Austauschs und Co-Working Space gestalten wir gemeinsam das digitale Berlin von Morgen.',
+                'description': 'Im CityLAB wird Innovation und Partizipation zusammen&shy;gedacht: Verwaltung und Stadtgesellschaft arbeiten hier gemeinsam an Lösungen für das digitale Berlin von Morgen.',
                 direct: '/collaborate',
                 directSecond: '/about_us',
                 'imgUrl': '/images/intro-preview.jpg',
