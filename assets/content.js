@@ -583,12 +583,12 @@ export const content = {
                 'p1': 'Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin<br />Tel.: +49 30 209 69 99 0<br/>',
                 'mail_url': 'info@technologiestiftung-berlin.de',
                 'mail_name': 'info(at)technologiestiftung-berlin.de',
-                'p2': 'Stiftungsverzeichnis Berlin: AZ 3416/464 B3 <br/> USt-Id-Nr.: DE 187 459 128',
+                'p2': '<br/> USt-Id-Nr.: DE 187 459 128',
                 'p3': 'Die Technologiestiftung Berlin ist eine rechtsfähige und gemeinnützige Stiftung bürgerlichen Rechts. Sie unterliegt nach dem Berliner Stiftungsgesetz in der Fassung vom 11. Dezember 1997 (GVBl. S. 674) der Staatsaufsicht, die von der Senatsverwaltung für Justiz, Salzburger Str. 21-25, 10825 Berlin, geführt wird.'
             },
             'boardmembers': {
                 'title': 'Vertretungsberechtigter Vorstand',
-                'p': 'Nicolas Zimmer (Vorsitz), Steffen Döring, Prof. Dr.-Ing. Ina Schieferdecker'
+                'p': 'Nicolas Zimmer (Vorsitz), Steffen Döring'
             },
             'responsible': {
                 'title': 'Inhaltlich Verantwortliche gemäß §5 TMG',
