@@ -1072,7 +1072,7 @@ export const content = {
             },
             'boardmembers': {
                 'title': 'Authorised Board members',
-                'p': 'Nicolas Zimmer (Chairperson), Steffen Döring, Prof. Dr.-Ing. Ina Schieferdecker'
+                'p': 'Nicolas Zimmer (Chairperson), Steffen Döring'
             },
             'responsible': {
                 'title': 'Person responsible for the contents pursuant to Section 5 Telemedia Act (TMG)',
