@@ -475,7 +475,7 @@ export const content = {
             },
             'boardmembers': {
                 'title': 'Vertretungsberechtigter Vorstand',
-                'p': 'Nicolas Zimmer (Vorsitz), Steffen Döring, Prof. Dr.-Ing. Ina Schieferdecker'
+                'p': 'Nicolas Zimmer (Vorsitz), Steffen Döring'
             },
             'responsible': {
                 'title': 'Inhaltlich Verantwortliche gemäß §5 TMG',
