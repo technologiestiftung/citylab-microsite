@@ -371,7 +371,7 @@ export const content = {
         'collaborate': {
             paragraph : {
                 'title': 'Jetzt mitmachen',
-                'description': 'Veranstaltung, Co-Working oder eigene Idee weiterentwickeln: das CityLAB ist ein Ort der Kollaboration. Wenn du bei den Themen Civic Tech, Government Tech, sozialer Innovation und Smart Cities mitwirken möchtest, kontaktiere uns ganz unkompliziert oder komm direkt im CityLAB vorbei.',
+                'description': 'Veranstaltung, Co-Working oder eigene Idee weiterentwickeln: das CityLAB ist ein Ort der Kollaboration. Wenn du bei den Themen Civic Tech, GovTech, sozialer Innovation und Smart Cities mitwirken möchtest, kontaktiere uns ganz unkompliziert oder komm direkt im CityLAB vorbei.',
                 'btn': 'Mehr erfahren  →',
                 'direct': '/collaborate',
                 'style': 'bright'
@@ -410,8 +410,8 @@ export const content = {
                 ]
             },
             coworking: {
-                title: 'Werde Co-Working Fellow im CityLAB',
-                description: 'Das CityLAB bietet für ausgewählte StartUps einen kostenlosen Co-Working Platz an. Werde Teil der Community und bewirb dich für das Co-Working Fellowship.',
+                title: 'Co-Working im CityLAB',
+                description: 'Das CityLAB bietet kostenlose Co-Working-Plätze für gemeinwohlorientierte Projekte. Werde Teil unserer Community und bewirb dich für ein Co-Working Fellowship.',
                 btn: 'Jetzt bewerben  →',
                 'style': 'bright',
                 imgUrl: 'images/coworking-preview.jpg',
@@ -430,11 +430,11 @@ export const content = {
                         description: 'Die Nutzung des Co-Working ist kostenfrei, allerdings zeitlich auf die Dauer deines Projekts beschränkt (in der Regel zwischen einem und sechs Monate).'
                     },
                     {
-                        title: 'Wieviele Plätze sind verfügbar?',
-                        description: 'Wir vergeben nicht mehr Plätze, als wir haben. Trotzdem kann es vorkommen, dass die Co-Working-Plätze an einigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).'
+                        title: 'Zu welchen Zeiten sind die Plätze nutzbar?',
+                        description: 'Montag bis Freitag zwischen 09:00-18:00 Uhr, nach Absprache auch darüber hinaus. Es kann sein, dass die Co-Working-Plätze an einigen wenigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).'
                     },
                     {
-                        title: 'Wie finanziert sich das CityLAB?',
+                        title: 'Kann ich das Co-Working für mein kommerzielles Projekt nutzen?',
                         description: 'Das CityLAB ist öffentlich finanziert und gemeinnützig. Daher ist die Nutzung des Co-Working gemeinnützigen Zwecken vorbehalten.'
                     },
                     {
@@ -444,8 +444,8 @@ export const content = {
                 ]
             },
             project: {
-                title: 'Gestalte ein Projekt für und mit dem CityLAB',
-                description: 'Du hast eine Idee für die nachhaltige, digitale Stadt der Zukunft und möchtest sie gerne mit uns gemeinsam entwickeln? Melde dich für eine Kollaboration bei uns und profitiere von Veranstaltungen, Netzwerk und Betreuung im CityLAB.',
+                title: 'Gestalte ein Projekt im CityLAB',
+                description: 'Du hast eine Idee für die nachhaltige, digitale Stadt der Zukunft und möchtest diese gemeinsam mit uns weiterentwickeln? Melde dich und werde Teil des CityLAB-Netzwerks!',
                 btn: 'Jetzt bewerben  →',
                 'style': 'bright',
                 imgUrl: 'images/project-preview.jpg',
@@ -453,7 +453,7 @@ export const content = {
             },
             event: {
                 title: 'Nutze unsere Räume für deine Veranstaltung',
-                description: 'Wir bieten für ausgewählte Events kostenlos unsere Räume im Tempelhofer Flughafen an. Melde dich bei uns für die Umsetzung deiner Veranstaltungsidee.',
+                description: 'Du planst einen kreativen Workshop, ein Meetup oder eine öffentliche Veranstaltung zur digitalen Stadt? Nutze unsere Räume im ehemaligen Flughafen Tempelhof.',
                 btn: 'Jetzt anfragen  →',
                 'style': 'bright',
                 imgUrl: 'images/event-preview.jpg',
