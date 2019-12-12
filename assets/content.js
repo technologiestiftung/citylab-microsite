@@ -970,14 +970,15 @@ export const content = {
                 title: 'Start your idea with the CityLAB',
                 description: 'Here is a descriptive text with general information about possibilities of cooperation, if the aim of the cooperation should be a project.',
                 btn: 'Apply now  →',
-                'style': 'bright',
+                imgUrl: 'images/project-preview.jpg',
+                style: 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             },
             event: {
                 title: 'Use our rooms for your event',
                 description: 'Would you like to organise an event and need some space? Here is place for more text',
                 btn: 'Request now  →',
-                'style': 'bright',
+                style: 'bright',
                 imgUrl: 'images/event-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             }

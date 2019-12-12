@@ -5,7 +5,7 @@
                 <h2 v-html="this.content[this.lang].projects.description" class="subtitle"></h2>
 
                 <div class="tile wrap team-wrapper">
-                        <div v-if="i < 4" class="tile third" v-for="(project,i) in data">
+                        <div class="tile third" v-for="(project,i) in data" v-if="project.featured === 'TRUE'">
                             <a :href="`./${directProject}/${project.dirname}`">
                                 <article>
                                     <figure class="image is 1by1">
@@ -79,16 +79,19 @@
                 this.entries = entries;
 
                 entries.forEach(entry => {
-                    let obj = {
-                        visible: entry.gsx$visible.$t,
-                        name: entry.gsx$projectname.$t,
-                        publisher: entry.gsx$publisher.$t,
-                        subline: entry.gsx$projectsubline.$t,
-                        dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
-                        imgname: entry.gsx$dirname.$t,
-                        defaultImg: entry.gsx$defaultimg.$t
+                    if (entry.gsx$visible.$t === 'TRUE') {
+                        let obj = {
+                            visible: entry.gsx$visible.$t,
+                            featured: entry.gsx$featured.$t,
+                            name: entry.gsx$projectname.$t,
+                            publisher: entry.gsx$publisher.$t,
+                            subline: entry.gsx$projectsubline.$t,
+                            dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
+                            imgname: entry.gsx$dirname.$t,
+                            defaultImg: entry.gsx$defaultimg.$t
+                        }
+                        this.data.push(obj);
                     }
-                    this.data.push(obj);
                 })
             })
         }

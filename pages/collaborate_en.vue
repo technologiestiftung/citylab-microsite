@@ -1,12 +1,13 @@
 <template>
 	<div>
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-		<Paragraph  style="margin-top: 100px" :content='content' :lang='lang' :topic="topic" subtopic="funding"/>
-		<ExpansionPanel :topic="topic" subtopic="funding" :lang="lang" :content="content" />
+		<!-- <Paragraph :content='content' :lang='lang' :topic="topic" subtopic="project"/> -->
+		<Teaser :content='content' :lang='lang' id="project" :topic="topic" subtopic="project"/>
+		<Teaser :content='content' :lang='lang' id="event" :topic="topic" subtopic="event"/>
 		<Teaser :content='content' :lang='lang' id="coworking" :topic="topic" subtopic="coworking"/>
 		<ExpansionPanel :topic="topic" subtopic="coworking" :lang="lang" :content="content" />
-		<Paragraph :content='content' :lang='lang' :topic="topic" subtopic="project"/>
-		<Teaser :content='content' :lang='lang' id="event" :topic="topic" subtopic="event"/>
+    <Paragraph :content='content' :lang='lang' :topic="topic" subtopic="funding"/>
+		<ExpansionPanel :topic="topic" subtopic="funding" :lang="lang" :content="content" />
 		<Footer :lang="lang" :content="content"/>
 		<Matomo/>
 	</div>
