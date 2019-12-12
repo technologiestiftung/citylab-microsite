@@ -156,7 +156,7 @@
 
             .container {
                 h2.title {
-                    color: white;
+                    color: white !important;
                 }
             }
 
