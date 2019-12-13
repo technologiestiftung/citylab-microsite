@@ -184,7 +184,7 @@
         flex-shrink: 1;
 
         .wrapper-details {
-            margin: 15px;
+            margin: 15px 20px 20px 15px;
             min-height: 60px;
 
             h2.title {

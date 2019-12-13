@@ -134,7 +134,7 @@
         }
     }
 
-    .cross-link {
+    .cross-link--small {
         padding-bottom: 10px;
         font-size: 24px;
         border-bottom: 1px solid;

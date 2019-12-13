@@ -5,9 +5,9 @@
 		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
-		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
-		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
 		<Projects :lang="lang" :content="content"/>
+		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
+		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-	import pkg from '../package'
 	import { content as content } from '../assets/content.js';
 	import { links as links } from '../assets/links.js';
 
@@ -48,9 +47,9 @@
 			Paragraph,
 			Footer,
 			Topics,
-			Teaser,
 			Partners,
 			TeaserIntro,
+			Teaser,
 			Projects,
 			Newsletter,
 		},
@@ -170,13 +169,14 @@
 		border-radius: 100px;
 		margin-right: 30px;
 		margin-bottom: 30px;
+		background: #F4F4FA;
 		border: none;
-		transition: background .125s ease-in-out;
+		transition: all .125s ease-in-out;
 
 		&:hover {
-			background: #F4F4FA;
-			color: $color-primary !important;
-			transition: background .125s ease-in-out;
+			background: $color-primary;
+			color: white !important;
+			transition: all .125s ease-in-out;
 		}
 	}
 </style>

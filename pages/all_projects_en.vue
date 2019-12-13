@@ -181,7 +181,7 @@
         flex-shrink: 1;
 
         .wrapper-details {
-            margin: 15px;
+            margin: 15px 20px 20px 15px;
             min-height: 60px;
 
             p.title {
@@ -199,7 +199,7 @@
             flex: 0 0 100% !important;
 
             @include mobile {
-                flex: 0 0 50% !important;
+                flex: 0 0 100% !important;
             }
 
             @include tablet {

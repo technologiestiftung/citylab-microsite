@@ -135,11 +135,11 @@
 
         @media screen and (max-width: 850px) {
             display: block;
-            padding: 3.5rem 1.5rem;
+            padding: 1.5rem;
         }
     }
 
-    .cross-link {
+    .cross-link--small {
         padding-bottom: 10px;
         font-size: 24px;
         border-bottom: 1px solid;

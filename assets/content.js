@@ -43,7 +43,7 @@ export const content = {
                 'title': 'Unsere Ausstellung',
                 'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
                 'imgUrl': '../images/exhibition-preview.jpg',
-                'btn': 'Alle Exponate  →',
+                'btn': 'Alle Exponate',
                 'direct': '/all_exhibits'
             },
             'title': 'Unsere Ausstellung',
@@ -124,7 +124,7 @@ export const content = {
                 'claim_02': "Zukunft Berlins",
                 'claim_03': "gemeinsam gestalten.",
                 'title': 'Berlins Zukunft gemeinsam gestalten',
-                'btn': 'Jetzt mitmachen  →',
+                'btn': 'Jetzt mitmachen',
                 'btnSecond': 'Mehr erfahren',
                 'description': 'Im CityLAB wird Innovation und Partizipation zusammen&shy;gedacht: Verwaltung und Stadtgesellschaft arbeiten hier gemeinsam an Lösungen für das digitale Berlin von Morgen.',
                 direct: '/collaborate',
@@ -172,7 +172,7 @@ export const content = {
             intro: {
                 title: 'Newsletter',
                 subtitle: ' Du möchtest über aktuelle Veranstaltungen und Projekte des CityLABs informiert werden? Melde dich für unseren monatlichen Newsletter an und bleib immer auf dem neusten Stand.',
-                button: 'Anmelden  →',
+                button: 'Anmelden',
                 url: '/newsletter_register_de'
             },
             title: 'Anmeldung Newsletter',
@@ -372,14 +372,14 @@ export const content = {
             paragraph : {
                 'title': 'Jetzt mitmachen',
                 'description': 'Veranstaltung, Co-Working oder eigene Idee weiterentwickeln: das CityLAB ist ein Ort der Kollaboration. Wenn du bei den Themen Civic Tech, GovTech, sozialer Innovation und Smart Cities mitwirken möchtest, kontaktiere uns ganz unkompliziert oder komm direkt im CityLAB vorbei.',
-                'btn': 'Mehr erfahren  →',
+                'btn': 'Mehr erfahren',
                 'direct': '/collaborate',
                 'style': 'bright'
             },
             funding: {
                 title: 'Projektförderung im CityLAB',
                 description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
-                btn: 'Jetzt bewerben  →',
+                btn: 'Jetzt bewerben',
                 'style': 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
                 faq: [
@@ -412,7 +412,7 @@ export const content = {
             coworking: {
                 title: 'Co-Working im CityLAB',
                 description: 'Das CityLAB bietet kostenlose Co-Working-Plätze für gemeinwohlorientierte Projekte. Werde Teil unserer Community und bewirb dich für ein Co-Working Fellowship.',
-                btn: 'Jetzt bewerben  →',
+                btn: 'Jetzt bewerben',
                 'style': 'bright',
                 imgUrl: 'images/coworking-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
@@ -446,7 +446,7 @@ export const content = {
             project: {
                 title: 'Gestalte ein Projekt im CityLAB',
                 description: 'Du hast eine Idee für die nachhaltige, digitale Stadt der Zukunft und möchtest diese gemeinsam mit uns weiterentwickeln? Melde dich und werde Teil des CityLAB-Netzwerks!',
-                btn: 'Jetzt bewerben  →',
+                btn: 'Jetzt bewerben',
                 'style': 'bright',
                 imgUrl: 'images/project-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
@@ -454,7 +454,7 @@ export const content = {
             event: {
                 title: 'Nutze unsere Räume für deine Veranstaltung',
                 description: 'Du planst einen kreativen Workshop, ein Meetup oder eine öffentliche Veranstaltung zur digitalen Stadt? Nutze unsere Räume im ehemaligen Flughafen Tempelhof.',
-                btn: 'Jetzt anfragen  →',
+                btn: 'Jetzt anfragen',
                 'style': 'bright',
                 imgUrl: 'images/event-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
@@ -753,12 +753,12 @@ export const content = {
                 'title': 'Our exhibition',
                 'description': 'Experience the city of the future in interactive exhibits.',
                 'imgUrl': '../images/exhibition-preview.jpg',
-                'btn': 'All exhibits  →',
+                'btn': 'All exhibits',
                 'direct': '/all_exhibits_en'
             },
             'title': 'Our exhibition',
             'subtitle': 'Experience the city of the future in interactive exhibits.',
-            'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we provide insights into our current projects and other exciting exhibits from our partners.',
+            'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we show insights into our current projects and other exciting exhibits from the CityLAB partner circle.</br></br>The exhibition can be visited free of charge from Wednesday to Saturday, 10am to 5pm. We are happy to offer guided tours on request.',
             'imgUrl': '../images/exhibition-preview.jpg',
             'link': 'Current exhibits',
             'pastExhibits': 'Past exhibits',
@@ -810,10 +810,10 @@ export const content = {
                 'claim_01': "Shaping Berlin's",
                 'claim_02': "",
                 'claim_03': "future together.",
-                'title': 'Berlins Zukunft gemeinsam gestalten',
-                'btn': 'Join now  →',
+                'title': "Shaping Berlin's future together",
+                'btn': 'Join now',
                 'btnSecond': 'More information',
-                'description': `Shaping Berlin's future together. Shaping Berlin's future together. Shaping Berlin's future together. Administration, too.`,
+                'description': `In CityLAB, innovation and participation are thought together: administration and urban society work together here on solutions for the digital Berlin of tomorrow.`,
                 direct: '/collaborate_en',
                 directSecond: '/about_us_en',
                 'imgUrl': '/images/intro-preview.jpg',
@@ -871,7 +871,7 @@ export const content = {
             'statement3-title': 'Open',
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.',
             'statement3-img_url': '../images/03.png',
-            'cta': 'Learn more  →',
+            'cta': 'Learn more',
         },
         'events': {
             'upcomingEventsTitle': 'Upcoming events',
@@ -895,14 +895,14 @@ export const content = {
             paragraph : {
                 'title': 'Participate Now',
                 'description': 'No matter if event, co-working or your own idea. If you want to participate in a topic related to civic tech, digital management, social innovation and smart cities. Contact us or come directly to CityLAB.',
-                'btn': 'More information  →',
+                'btn': 'More information',
                 'direct': '/collaborate_en',
-                'style': 'dark'
+                'style': 'bright'
             },
             funding: {
                 title: 'Project Funding',
                 description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
-                btn: 'Apply now  →',
+                btn: 'Apply now',
                 'style': 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
                 faq: [
@@ -935,7 +935,7 @@ export const content = {
             coworking: {
                 title: 'Co-working Fellowship in the CityLAB',
                 description: 'Would you like to apply for a Co-WOrking place with us? Here is place for more text.',
-                btn: 'Apply now  →',
+                btn: 'Apply now',
                 'style': 'bright',
                 imgUrl: 'images/coworking-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
@@ -969,7 +969,7 @@ export const content = {
             project: {
                 title: 'Start your idea with the CityLAB',
                 description: 'Here is a descriptive text with general information about possibilities of cooperation, if the aim of the cooperation should be a project.',
-                btn: 'Apply now  →',
+                btn: 'Apply now',
                 imgUrl: 'images/project-preview.jpg',
                 style: 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
@@ -977,7 +977,7 @@ export const content = {
             event: {
                 title: 'Use our rooms for your event',
                 description: 'Would you like to organise an event and need some space? Here is place for more text',
-                btn: 'Request now  →',
+                btn: 'Request now',
                 style: 'bright',
                 imgUrl: 'images/event-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
@@ -1014,8 +1014,8 @@ export const content = {
         'register': {
             intro: {
                 title: 'Newsletter',
-                subtitle: 'Current information and events from CityLAB. Current information and events from CityLAB. Current information and events from CityLAB.',
-                button: 'Subscribe  →',
+                subtitle: 'Would you like to be informed about current CityLAB events and projects? Subscribe to our monthly newsletter and stay up to date.',
+                button: 'Subscribe',
                 url: '/newsletter_register_en'
             },
             title: 'Sign up newsletter',
@@ -1025,7 +1025,7 @@ export const content = {
                 name: 'Your name',
                 mail: 'Your E-Mail',
                 language: 'Language of the newsletter',
-                button: 'Subscribe  →',
+                button: 'Subscribe',
                 agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the City Berlin may send me regular information on the activities of the CityLAB Berlin, related topics and events by e-mail. Comprehensive information on the registration and unsubscription procedure, the service provider and the statistical evaluation of your data can be found in our Privacy Policy.',
                 unsubscribe: 'I can revoke my consent to the CityLAB Berlin <a href="/newsletter_unsubscribe_en">here</a> at any time.'
             },

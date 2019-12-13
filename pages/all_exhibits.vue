@@ -200,7 +200,7 @@
 
     .subtitle {
         font-size: 24px;
-        color: #393A60;
+        color: $color-primary;
     }
 
     figure {
@@ -478,7 +478,7 @@
             flex: 0 0 100% !important;
 
             @include mobile {
-                flex: 0 0 50% !important;
+                flex: 0 0 100% !important;
             }
 
             @include tablet {
