@@ -95,6 +95,16 @@
 		color: $color-secondary;
 	}
 
+	a.content {
+		text-decoration: underline;
+		color: $color-secondary;
+		cursor: pointer;
+	}
+
+	div.content {
+		color: $color-primary;
+	}
+
 </style>
 
 

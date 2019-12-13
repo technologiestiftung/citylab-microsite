@@ -20,7 +20,7 @@
                         </div>
                 </div>
 
-                <Button style="margin-bottom: 10px;" :label="lang ==  'de' ? 'Alle Projekte  →' : 'All projects  →'" :direct="lang ==  'de' ? '/all_projects' : '/all_projects_en'"/>
+                <Button style="margin-bottom: 10px;" :label="lang ==  'de' ? 'Alle Projekte' : 'All projects'" :direct="lang ==  'de' ? '/all_projects' : '/all_projects_en'"/>
 
             </div>
         </section>

@@ -25,7 +25,7 @@
                 </a>
             </div>
 
-            <Button :label="lang ==  'de' ? 'Alle Veranstaltungen  →' : 'All events  →'" :direct="directAllEvents" />
+            <Button :label="lang ==  'de' ? 'Alle Veranstaltungen' : 'All events'" :direct="directAllEvents" />
 
         </div>
 

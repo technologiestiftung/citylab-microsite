@@ -89,6 +89,16 @@
 		margin-top: 0 !important;
 	}
 
+	a.content {
+		text-decoration: underline;
+		color: $color-secondary;
+		cursor: pointer;
+	}
+
+	div.content {
+		color: $color-primary;
+	}
+
 	h3.title.is-5 {
 		margin-top: 0 !important;
 		margin-bottom: 5px;
