@@ -51,8 +51,12 @@
 <style lang="scss">
 	@import "../assets/style/style.scss";
     h1.title, h3.title {
-		color: $color-secondary;
-	}
+			color: $color-secondary;
+		}
+
+		li {
+			color: $color-primary;
+		}
 </style>
 
 

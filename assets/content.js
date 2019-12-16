@@ -42,14 +42,14 @@ export const content = {
             teaser: {
                 'title': 'Unsere Ausstellung',
                 'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
-                'imgUrl': '../images/exhibition-preview.jpg',
+                'imgUrl': '/images/exhibition-preview.jpg',
                 'btn': 'Alle Exponate',
                 'direct': '/all_exhibits'
             },
             'title': 'Unsere Ausstellung',
             'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
             'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
-            'imgUrl': 'images/exhibition-preview.jpg',
+            'imgUrl': '/images/exhibition-preview.jpg',
             'link': 'Aktuelle Exponate',
             'pastExhibits': 'Vergangene Exponate',
             'since': 'Ausgestellt seit: ',
@@ -155,13 +155,13 @@ export const content = {
             'statement-head': 'Unsere Themen:',
             'statement1-title': 'Inklusiv',
             'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.',
-            'statement1-img_url': 'images/02.png',
+            'statement1-img_url': '/images/02.png',
             'statement2-title': 'Agil',
             'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.',
-            'statement2-img_url': 'images/01.jpg',
+            'statement2-img_url': '/images/01.jpg',
             'statement3-title': 'Offen',
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
-            'statement3-img_url': 'images/03.jpg',
+            'statement3-img_url': '/images/03.jpg',
             'cta': 'Mitmachen',
         },
         'events': {
@@ -275,27 +275,27 @@ export const content = {
             {
                 'title': 'Mobilität <br/> von morgen',
                 'text': 'Von Fahrrad bis Flugtaxi, von Hyperloop bis Home Office – Städte sind Experimentierfelder für mobiles Leben. Wie gestalten wir den Verkehr der Zukunft?',
-                'img_url': 'images/topic_01_blue.jpg'
+                'img_url': '/images/topic_01_blue.jpg'
             },
             {
                 'title': 'Innovative <br/> Verwaltung',
                 'text': 'Geburtsurkunde via Whatsapp und Kindergeld per Kryptowährung – passt das zusammen? Wie sehen Verwaltungsservices aus, die von Bürger*innen her gedacht werden?',
-                'img_url': 'images/topic_02_blue.jpg'
+                'img_url': '/images/topic_02_blue.jpg'
             },
             {
                 'title': 'Smart Cities <br/> für alle',
                 'text': 'Brücken bauen über digitale Gräben: Wie können wir die smarte Stadt so öffnen, dass möglichst alle Menschen darin handlungsfähig werden?',
-                'img_url': 'images/topic_03_blue.jpg'
+                'img_url': '/images/topic_03_blue.jpg'
             },
             {
                 'title': 'Offene Daten, <br/>offene Städte',
                 'text': 'Black Box Society oder gläserner Staat? Wie schützen wir persönliche Informationen und schaffen zugleich Transparenz über öffentliche Daten und Algorithmen?',
-                'img_url': 'images/topic_04_blue.jpg'
+                'img_url': '/images/topic_04_blue.jpg'
             },
             {
                 'title': 'Energie und <br/> Nachhaltigkeit',
                 'text': 'Kreislaufwirtschaft, Upcycling, intelligente Netze – wie kommen wir zu einem klimafreundlichen und gesunden Berlin? ' ,
-                'img_url': 'images/topic_05_blue.jpg'
+                'img_url': '/images/topic_05_blue.jpg'
             },
         ],
         'board': {
@@ -305,47 +305,47 @@ export const content = {
                 {
                     'name': 'StS Dr. Frank Nägele (Vorsitz)',
                     'title': 'Senatskanzlei Berlin',
-                    'img_url': '../images/board/edit/frank_naegele.jpg'
+                    'img_url': '/images/board/edit/frank_naegele.jpg'
                 },
                 {
                     'name': 'StS Christian Rickerts',
                     'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
-                    'img_url': '../images/board/edit/christian_rickerts.jpg'
+                    'img_url': '/images/board/edit/christian_rickerts.jpg'
                 },
                 {
                     'name': 'StS Sabine Smentek',
                     'title': 'Senatsverwaltung für Inneres und Sport',
-                    'img_url': '../images/board/edit/sabine_smentek.jpg'
+                    'img_url': '/images/board/edit/sabine_smentek.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Olga Willner',
                     'title': 'HTW Berlin',
-                    'img_url': '../images/board/edit/olga_willner.jpg'
+                    'img_url': '/images/board/edit/olga_willner.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Sven Ripsas',
                     'title': 'HWR Berlin',
-                    'img_url': '../images/board/edit/sven.jpg'
+                    'img_url': '/images/board/edit/sven.jpg'
                 },
                 {
                     'name': 'Jutta Lautenschlager',
                     'title': 'GovMen',
-                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
+                    'img_url': '/images/board/edit/jutta_lautenschlager.jpg'
                 },
                 {
                     'name': 'Sebastian Stietzel',
                     'title': 'IHK Berlin',
-                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                    'img_url': '/images/board/edit/sebastian_stitzel.jpg'
                 },
                 {
                     'name': 'Walter Palmetshofer',
                     'title': 'Open Knowledge Foundation',
-                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                    'img_url': '/images/board/edit/walter_palmetshofer.jpg'
                 },
                 {
                     'name': 'Geraldine de Bastion',
                     'title': 'Konnektiv/re:publica',
-                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
+                    'img_url': '/images/board/edit/geraldine_de_bastion.jpg'
                 },
             ]
         },
@@ -358,7 +358,7 @@ export const content = {
                 {
                     'title': 'Projekt titel',
                     'subtitle': 'Projekt Untertitel',
-                    'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
+                    'thumbnail_url': '/images/projects/fancy thumbnail.jpg'
                 }
             ],
             'bullets_intro': 'Möchtest du ...',
@@ -414,7 +414,7 @@ export const content = {
                 description: 'Das CityLAB bietet kostenlose Co-Working-Plätze für gemeinwohlorientierte Projekte. Werde Teil unserer Community und bewirb dich für ein Co-Working Fellowship.',
                 btn: 'Jetzt bewerben',
                 'style': 'bright',
-                imgUrl: 'images/coworking-preview.jpg',
+                imgUrl: '/images/coworking-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
                 faq: [
                     {
@@ -448,7 +448,7 @@ export const content = {
                 description: 'Du hast eine Idee für die nachhaltige, digitale Stadt der Zukunft und möchtest diese gemeinsam mit uns weiterentwickeln? Melde dich und werde Teil des CityLAB-Netzwerks!',
                 btn: 'Jetzt bewerben',
                 'style': 'bright',
-                imgUrl: 'images/project-preview.jpg',
+                imgUrl: '/images/project-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             },
             event: {
@@ -456,13 +456,13 @@ export const content = {
                 description: 'Du planst einen kreativen Workshop, ein Meetup oder eine öffentliche Veranstaltung zur digitalen Stadt? Nutze unsere Räume im ehemaligen Flughafen Tempelhof.',
                 btn: 'Jetzt anfragen',
                 'style': 'bright',
-                imgUrl: 'images/event-preview.jpg',
+                imgUrl: '/images/event-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             }
         },
         projects: {
-            title: 'Projekte',
-            description: 'Dies ist eine kurze Einführung in die Projekte. Dies ist eine kurze Einführung in die Projekte. Dies ist eine kurze Einführung in die Projekte.',
+            title: 'Projekte ',
+            description: 'Ein Auszug unserer aktuellen Projekte im Überblick.',
             titleAll: 'Alle Projekte',
         },
         'team': {
@@ -472,63 +472,63 @@ export const content = {
                     'name': 'Benjamin Seibel',
                     'mail': 'seibel@technologiestiftung-berlin.de',
                     'twitter': 'bnjmnsbl',
-                    'img_url': 'images/benjamin_portrait.jpg',
+                    'img_url': '/images/benjamin_portrait.jpg',
                     'title': 'Leitung'
                 },
                 {
                     'name': 'Nadine Riede',
                     'mail': 'riede@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/nadine_portrait.jpg',
+                    'img_url': '/images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
                 {
                     'name': 'Sebastian Meier',
                     'mail': 'meier@technologiestiftung-berlin.de',
                     'twitter': 'seb_meier',
-                    'img_url': 'images/sebastian_portrait.jpg',
+                    'img_url': '/images/sebastian_portrait.jpg',
                     'title': 'Wissenschaftliche Leitung'
                 },
                 {
                     'name': 'Sara Reichert',
                     'mail': 'reichert@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/sara_portrait.jpg',
+                    'img_url': '/images/sara_portrait.jpg',
                     'title': 'Werkstattleitung'
                 },
                 {
                     'name': 'Fabian Dinklage',
                     'mail': 'dinklage@technologiestiftung-berlin.de',
                     'twitter': 'fdnklg',
-                    'img_url': 'images/fabian_portrait.jpg',
+                    'img_url': '/images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
                 {
                     'name': 'Sina Beckstein',
                     'mail': 'beckstein@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/sina_portrait.jpg',
+                    'img_url': '/images/sina_portrait.jpg',
                     'title': 'Projektmanagerin'
                 },
                 {
                     'name': 'Joshua Pacheco',
                     'mail': 'pacheco@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/joshua_portrait.jpg',
+                    'img_url': '/images/joshua_portrait.jpg',
                     'title': 'Service Design'
                 },
                 {
                     'name': 'Mirko Hohmann',
                     'mail': 'hohmann@technologiestiftung-berlin.de',
                     'twitter': 'mirkohohmann',
-                    'img_url': 'images/mirko_portrait.jpg',
+                    'img_url': '/images/mirko_portrait.jpg',
                     'title': 'Projektmanager'
                 },
                 {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/gosia_portrait.jpg',
+                    'img_url': '/images/gosia_portrait.jpg',
                     'title': 'Administration'
                 },
             ],
@@ -752,14 +752,14 @@ export const content = {
             teaser: {
                 'title': 'Our exhibition',
                 'description': 'Experience the city of the future in interactive exhibits.',
-                'imgUrl': '../images/exhibition-preview.jpg',
+                'imgUrl': '/images/exhibition-preview.jpg',
                 'btn': 'All exhibits',
                 'direct': '/all_exhibits_en'
             },
             'title': 'Our exhibition',
             'subtitle': 'Experience the city of the future in interactive exhibits.',
             'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we show insights into our current projects and other exciting exhibits from the CityLAB partner circle.</br></br>The exhibition can be visited free of charge from Wednesday to Saturday, 10am to 5pm. We are happy to offer guided tours on request.',
-            'imgUrl': '../images/exhibition-preview.jpg',
+            'imgUrl': '/images/exhibition-preview.jpg',
             'link': 'Current exhibits',
             'pastExhibits': 'Past exhibits',
             'since': 'Exhibited since: ',
@@ -864,13 +864,13 @@ export const content = {
             'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
             'statement1-title': 'Agile',
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.',
-            'statement1-img_url': '../images/01.jpg',
+            'statement1-img_url': '/images/01.jpg',
             'statement2-title': 'Participatory',
             'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.',
-            'statement2-img_url': '../images/02.png',
+            'statement2-img_url': '/images/02.png',
             'statement3-title': 'Open',
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.',
-            'statement3-img_url': '../images/03.png',
+            'statement3-img_url': '/images/03.png',
             'cta': 'Learn more',
         },
         'events': {
@@ -937,7 +937,7 @@ export const content = {
                 description: 'Would you like to apply for a Co-WOrking place with us? Here is place for more text.',
                 btn: 'Apply now',
                 'style': 'bright',
-                imgUrl: 'images/coworking-preview.jpg',
+                imgUrl: '/images/coworking-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
                 faq: [
                     {
@@ -970,7 +970,7 @@ export const content = {
                 title: 'Start your idea with the CityLAB',
                 description: 'Here is a descriptive text with general information about possibilities of cooperation, if the aim of the cooperation should be a project.',
                 btn: 'Apply now',
-                imgUrl: 'images/project-preview.jpg',
+                imgUrl: '/images/project-preview.jpg',
                 style: 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             },
@@ -979,7 +979,7 @@ export const content = {
                 description: 'Would you like to organise an event and need some space? Here is place for more text',
                 btn: 'Request now',
                 style: 'bright',
-                imgUrl: 'images/event-preview.jpg',
+                imgUrl: '/images/event-preview.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             }
         },
@@ -987,27 +987,27 @@ export const content = {
             {
                 'title': 'The mobility <br/> of tomorrow',
                 'text': 'From bikes to flying taxis and hyperloops to home office – cities provide fertile ground for exploring how we move. How can we help design the mobility of the future?',
-                'img_url': '../images/topic_01_blue.jpg'
+                'img_url': '/images/topic_01_blue.jpg'
             },
             {
                 'title': 'Innovative <br/> governments',
                 'text': 'Birth certificates via Whatsapp and child-care allowances per cryptocurrencies – is that even thinkable? We explore what government services look like when they put citizen needs first.',
-                'img_url': '../images/topic_02_blue.jpg'
+                'img_url': '/images/topic_02_blue.jpg'
             },
             {
                 'title': 'Smart Cities <br/> for all',
                 'text': 'Building bridges over digital gulfs: how can we build a city so smart that it empowers all citizens, not just a select few? ',
-                'img_url': '../images/topic_03_blue.jpg'
+                'img_url': '/images/topic_03_blue.jpg'
             },
             {
                 'title': 'Open data, <br/>open cities',
                 'text': 'Between a black box or citizens laid bare: How can we protect personal information while simultaneously ensuring transparency in government data and algorithms?',
-                'img_url': '../images/topic_04_blue.jpg'
+                'img_url': '/images/topic_04_blue.jpg'
             },
             {
                 'title': 'Energy and <br/> sustainability',
                 'text': 'Upcycling, the circular economy and intelligent networks – we’re researching paths toward a climate-neutral, healthy Berlin' ,
-                'img_url': '../images/topic_05_blue.jpg'
+                'img_url': '/images/topic_05_blue.jpg'
             },
 
         ],
@@ -1109,7 +1109,7 @@ export const content = {
                 {
                     'title': 'Projekt titel',
                     'subtitle': 'Projekt Untertitel',
-                    'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
+                    'thumbnail_url': '/images/projects/fancy thumbnail.jpg'
                 }
             ],
             'bullets_intro': 'Would you like to ...',
@@ -1129,7 +1129,7 @@ export const content = {
       },
         projects: {
             title: 'Projects',
-            description: 'This is a short introduction about the projects. This is a short introduction about the projects. This is a short introduction about the projects.',
+            description: 'An overview of our current projects.',
             titleAll: 'All projects',
         },
         'board': {
@@ -1138,47 +1138,47 @@ export const content = {
                 {
                     'name': 'StS Dr. Frank Nägele (Vorsitz)',
                     'title': 'Senatskanzlei Berlin',
-                    'img_url': '../images/board/edit/frank_naegele.jpg'
+                    'img_url': '/images/board/edit/frank_naegele.jpg'
                 },
                 {
                     'name': 'StS Christian Rickerts',
                     'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
-                    'img_url': '../images/board/edit/christian_rickerts.jpg'
+                    'img_url': '/images/board/edit/christian_rickerts.jpg'
                 },
                 {
                     'name': 'StS Sabine Smentek',
                     'title': 'Senatsverwaltung für Inneres und Sport',
-                    'img_url': '../images/board/edit/sabine_smentek.jpg'
+                    'img_url': '/images/board/edit/sabine_smentek.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Olga Willner',
                     'title': 'HTW Berlin',
-                    'img_url': '../images/board/edit/olga_willner.jpg'
+                    'img_url': '/images/board/edit/olga_willner.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Sven Ripsas',
                     'title': 'HWR Berlin',
-                    'img_url': '../images/board/edit/sven.jpg'
+                    'img_url': '/images/board/edit/sven.jpg'
                 },
                 {
                     'name': 'Jutta Lautenschlager',
                     'title': 'GovMen',
-                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
+                    'img_url': '/images/board/edit/jutta_lautenschlager.jpg'
                 },
                 {
                     'name': 'Sebastian Stietzel',
                     'title': 'IHK Berlin',
-                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                    'img_url': '/images/board/edit/sebastian_stitzel.jpg'
                 },
                 {
                     'name': 'Walter Palmetshofer',
                     'title': 'Open Knowledge Foundation',
-                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                    'img_url': '/images/board/edit/walter_palmetshofer.jpg'
                 },
                 {
                     'name': 'Geraldine de Bastion',
                     'title': 'Konnektiv/re:publica',
-                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
+                    'img_url': '/images/board/edit/geraldine_de_bastion.jpg'
                 },
             ]
         },
@@ -1189,63 +1189,63 @@ export const content = {
                     'name': 'Benjamin Seibel',
                     'mail': 'seibel@technologiestiftung-berlin.de',
                     'twitter': 'bnjmnsbl',
-                    'img_url': 'images/benjamin_portrait.jpg',
+                    'img_url': '/images/benjamin_portrait.jpg',
                     'title': 'Director'
                 },
                 {
                     'name': 'Nadine Riede',
                     'mail': 'riede@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/nadine_portrait.jpg',
+                    'img_url': '/images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
                 {
                     'name': 'Sebastian Meier',
                     'mail': 'meier@technologiestiftung-berlin.de',
                     'twitter': 'seb_meier',
-                    'img_url': 'images/sebastian_portrait.jpg',
+                    'img_url': '/images/sebastian_portrait.jpg',
                     'title': 'Head of Science'
                 },
                 {
                     'name': 'Sara Reichert',
                     'mail': 'reichert@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/sara_portrait.jpg',
+                    'img_url': '/images/sara_portrait.jpg',
                     'title': 'Workshop Lead'
                 },
                 {
                     'name': 'Fabian Dinklage',
                     'mail': 'dinklage@technologiestiftung-berlin.de',
                     'twitter': 'fdnklg',
-                    'img_url': 'images/fabian_portrait.jpg',
+                    'img_url': '/images/fabian_portrait.jpg',
                     'title': 'UX & Design'
                 },
                 {
                     'name': 'Sina Beckstein',
                     'mail': 'beckstein@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/sina_portrait.jpg',
+                    'img_url': '/images/sina_portrait.jpg',
                     'title': 'Projectmanagement'
                 },
                 {
                     'name': 'Joshua Pacheco',
                     'mail': 'pacheco@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/joshua_portrait.jpg',
+                    'img_url': '/images/joshua_portrait.jpg',
                     'title': 'Service Design'
                 },
                 {
                     'name': 'Mirko Hohmann',
                     'mail': 'hohmann@technologiestiftung-berlin.de',
                     'twitter': 'mirkohohmann',
-                    'img_url': 'images/mirko_portrait.jpg',
+                    'img_url': '/images/mirko_portrait.jpg',
                     'title': 'Projectmanagement'
                 },
                 {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/gosia_portrait.jpg',
+                    'img_url': '/images/gosia_portrait.jpg',
                     'title': 'Administration'
                 },
             ],

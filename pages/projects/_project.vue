@@ -117,7 +117,7 @@
                 if (this.data != null) { return this.data.gsx$projectsubsubline.$t } else { return }
             },
             headlineIntro() {
-                if (this.data != null) { return this.data.gsx$headlineintro.$t } else { return }
+                if (this.data != null && this.data) { return this.data.gsx$headlineintro.$t } else { return }
             },
             contentIntro() {
                 if (this.data != null) { return this.data.gsx$contentintro.$t } else { return }

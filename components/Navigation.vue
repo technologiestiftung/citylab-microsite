@@ -358,7 +358,7 @@
     nav.scrolled {
         background: $white;
         transition: background .15s ease;
-        border-bottom: 1px solid $color-tertiary--lightest;
+        border-bottom: 2px solid $color-primary--light;
 
         path#front {
             fill: $color-secondary;

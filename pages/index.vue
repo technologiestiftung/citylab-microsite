@@ -169,7 +169,9 @@
 		border-radius: 100px;
 		margin-right: 30px;
 		margin-bottom: 30px;
-		background: #F4F4FA;
+		line-height: 120%;
+		box-shadow: 0 2px 60px 0 rgba(47, 47, 162, 0.2);
+		background: white;
 		border: none;
 		transition: all .125s ease-in-out;
 

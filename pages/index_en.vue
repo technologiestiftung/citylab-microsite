@@ -168,8 +168,10 @@
 		padding: 0px 44px 57px 16px;
 		border-radius: 100px;
 		margin-right: 30px;
+		line-height: 120%;
 		margin-bottom: 30px;
-		background: #F4F4FA;
+		box-shadow: 0 2px 60px 0 rgba(47, 47, 162, 0.2);
+		background: white;
 		border: none;
 		transition: all .125s ease-in-out;
 

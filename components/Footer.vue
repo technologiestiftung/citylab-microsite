@@ -205,7 +205,7 @@
 
     footer {
         transition: sweep .5s ease-in-out;
-        border-top: 1px solid $color-primary--light;
+        border-top: 2px solid $color-primary--light;
         background: white !important;
 
         section {
