@@ -16,6 +16,11 @@
                     {{ content[lang]['hero']['claim_03'] }}
                 </h1>
             </vue-typed-js>
+            <div class="info-overlay">
+                <div>
+                    <p v-html="content[lang]['hero']['info']"></p>
+                </div>
+            </div>
         </section>
         <!-- <Three :config="config" /> -->
     </section>
@@ -71,6 +76,21 @@
     .typed-element {
         display: flex;
         align-items: center;
+    }
+
+    .info-overlay {
+        max-width: 900px;
+        margin: 0 auto;
+
+        div {
+            background: white;
+            width: fit-content;
+            margin-top: 30px;
+            padding: 15px;
+            line-height: 120%;
+            color: $color-tertiary;
+            font-size: 16px;
+        }
     }
 
     .typed-element .typed-cursor {

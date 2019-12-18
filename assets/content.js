@@ -120,6 +120,7 @@ export const content = {
             'claim_01': "Die",
             'claim_02': "Zukunft Berlins",
             'claim_03': "gemeinsam gestalten.",
+            'info': "Vom <b>23.12.</b> bis <b>01.01.</b> geschlossen. Fröhliche Weihnachten! 🎄",
             'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
         },
         'resources': {
@@ -733,6 +734,7 @@ export const content = {
             'claim_01': "Shaping Berlin's",
             'claim_02': "",
             'claim_03': "future together.",
+            'info': "We're closed from <b>Dec 23th</b> to <b>Jan 1st</b>. Merry Christmas! 🎄",
             'words_arr': ['sustainable', 'changing', 'innovative', 'exciting', 'inclusive', 'digital']
         },
         'missionStatement': {
