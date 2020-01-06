@@ -16,11 +16,11 @@
                     {{ content[lang]['hero']['claim_03'] }}
                 </h1>
             </vue-typed-js>
-            <div class="info-overlay">
+            <!-- <div class="info-overlay">
                 <div>
                     <p v-html="content[lang]['hero']['info']"></p>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- <Three :config="config" /> -->
     </section>
