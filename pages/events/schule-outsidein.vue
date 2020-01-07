@@ -159,7 +159,7 @@
         color: white;
         margin-bottom: 50px;
         margin-top: 60px;
-        background: $color-tertiary;
+        background: $color-primary;
         padding: $spacing-m;
 
         h4 {
@@ -200,13 +200,13 @@
 
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 
@@ -233,7 +233,7 @@
 
 	.name-list li,
 	.time-list li{
-		color: $color-tertiary;
+		color: $color-primary;
         font-size: $size-5;
 		padding-bottom:5px;
 	}
@@ -267,6 +267,7 @@
         margin-top: 30px;
         min-width: 180px;
         margin-right: 3em;
+        background: $color-secondary;
     }
 
 </style>

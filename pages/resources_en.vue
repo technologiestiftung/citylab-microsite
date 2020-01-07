@@ -1,6 +1,6 @@
 <template>
     <div>
-		<Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <section class="section is-medium">
             <div class="container">
                 <h1 class="title" style="margin-top: 100px">
@@ -87,6 +87,16 @@
 
 	h2.subtitle {
 		margin-top: 0 !important;
+	}
+
+	a.content {
+		text-decoration: underline;
+		color: $color-secondary;
+		cursor: pointer;
+	}
+
+	div.content {
+		color: $color-primary;
 	}
 
 	h3.title.is-5 {

@@ -36,11 +36,8 @@ export default {
 
       const all = routesAll.concat(eventRoutes).concat(projectRoutes).concat(projectEnRoutes)
 
-      // console.log(all);
-
       return all;
     }));
-
 
     // return axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
     //   .then((res) => {

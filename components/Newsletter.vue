@@ -2,25 +2,62 @@
     <section class="section is-medium newsletter" id="newsletter">
         <div class="container">
 
-            <h1 class="title">
-                {{ content[lang]['register']['intro']['title'] }}
-            </h1>
+            <div>
+                <h1 class="title">
+                    {{ content[lang]['register']['intro']['title'] }}
+                </h1>
 
-            <h2 class="subtitle" style="margin-top: 100px">
-                {{ content[lang]['register']['intro']['subtitle'] }}
-            </h2>
+                <h2 class="subtitle" style="margin-top: 100px">
+                    {{ content[lang]['register']['intro']['subtitle'] }}
+                </h2>
+            </div>
 
-            <a :href="content[lang]['register']['intro']['url']" class="button is-color-secondary is-normal">{{ content[lang]['register']['intro']['button'] }}</a>
+            <div class="register-wrapper">
+                <form class="layout_form cr_form cr_font" action="https://eu1.cleverreach.com/f/82637-208290/wcs/" method="post" target="_blank">
+                    <div class="cr_body cr_page cr_font formbox">
+                        <div class="non_sortable" style="text-align:left;"></div>
 
+                            <div class="editable_content" style="text-align:left;">
+                                <div id="4405745" rel="text" class="cr_ipe_item ui-sortable">
+                                <input class="input" id="text4405745" name="1090337" style="margin-bottom:15px;" type="text" value="Name"/>
+                            </div>
+                            <div id="4405746" rel="email" class="cr_ipe_item ui-sortable musthave" style="margin-bottom:15px;">
+                                <input class="input" id="text4405746" name="email" value="E-mail Adresse *" type="text"/>
+                            </div>
+
+                            <div id="4405750" rel="checkbox" class="cr_ipe_item ui-sortable musthave" style=" margin-bottom:0px;">
+                                <label class="itemname">{{ content[lang]['register']['mandatory'] }}</label>
+                            <div class="agb" style="overflow:auto;">
+                                <input
+                                    :id="content[lang]['register']['form']['agb']"
+                                    :value="content[lang]['register']['form']['agb']"
+                                    class="cr_ipe_checkbox"
+                                    name="1127998[]"
+                                    type="checkbox"
+                                />
+                                <span v-html="`${content[lang]['register']['form']['agb']} ${content[lang]['register']['form']['unsubscribe']}`"></span>
+                            </div>
+                            <br style="clear:left;"/>
+                            <div id="4405748" rel="button" class="cr_ipe_item ui-sortable submit_container">
+                                <button type="submit" class="cr_button button submit is-color-secondary is-normal">{{ content[lang]['register']['form']['button'] }}</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        
 
     </section>
 </template>
 
-<script>    
+<script>
+    import Button from './Button';
     export default {
         name: 'Newsletter',
+        components: {
+            Button
+        },
         props: ['content', 'lang', 'direct'],
         mounted() {
             function loadjQuery(e,t){var n=document.createElement("script");n.setAttribute("src",e);n.onload=t;n.onreadystatechange=function(){if(this.readyState=="complete"||this.readyState=="loaded")t()};document.getElementsByTagName("head")[0].appendChild(n)}function main(){
@@ -36,15 +73,46 @@
     @import "../assets/style/style.scss";
 
     .newsletter {
-        background: $color-tertiary;
+        padding-bottom: 0rem !important; 
+
+        .musthave {
+            label {
+                font-size: 9px;
+                line-height: 100%;
+            }
+        }
 
         .container {
+            display: flex;
+            flex-direction: row;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+
             .title {
-                color: white;
+                color: $color-secondary;
             }
 
             .subtitle {
-                color: white;
+                color: $color-primary;
+            }
+        }
+
+        .register-wrapper {
+            box-shadow: 0 2px 60px 0 rgba(47,47,162,0.10);
+            min-width: 320px;
+            max-width: 370px;
+            padding: 30px;
+            background: white;
+            transform: translateY(-100px);
+            margin-left: 30px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+                margin-left: 0px;
+                transform: translateY(0px);
+                margin: 2rem 0 4rem 0;
             }
         }
 
@@ -75,15 +143,10 @@
             height: 40px;
         }
 
-        .agb {
-            color: $color-tertiary;
-        }
-
         .cr_site {
             background-color:#eee;
         }
-    
-    
+
         .cr_header {color:#000000;}
         .cr_body {background-color:#ffffff;font-size:12px;color:#000000;}
         .cr_hr {background-color:#ccc;}
@@ -146,6 +209,30 @@
             // padding: 5px;
             font-family: $family-sans-serif;
             font-size: 16px;
+        }
+
+        .submit-container {
+            font-size: 20px;
+        }
+
+        .ui-sortable {
+            input {
+                background: $color-primary--lightest;
+                color: $color-primary;
+                border: 0px;
+
+                a {
+                    color: $color-primary;
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $color-primary;
+                }
+            }
+        }
+
+        .agb {
+            color: $color-primary;
+            font-size: 10px;
+            line-height: 140%;
         }
     
         .cr_ipe_item select {

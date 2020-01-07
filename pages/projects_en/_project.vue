@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" :languageVisible="true" />
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <HeroLight 
             :image="heroImageUrl" 
             :title="title" 
@@ -62,8 +62,7 @@
                 return false // will stop Nuxt.js to render the route and display the error page
         },
         async asyncData ({ params, error, payload }) {
-            // console.log(params.project.slice(0,-3));
-            return { 
+            return {
                 dirname: params.project,
                 lang: 'en',
                 content: content,
@@ -213,13 +212,13 @@
 
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 

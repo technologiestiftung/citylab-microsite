@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" :languageVisible="false" />
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <HeroLight 
             :image="heroImageUrl" 
             :title="title" 
@@ -333,16 +333,15 @@ END:VCALENDAR`
                 },
 
                 save(filename, data) {
-                    console.log('save!!!')
-                    var blob = new Blob([data], {type: 'text/csv'});   
+                    var blob = new Blob([data], {type: 'text/csv'});
                     if (window.navigator.msSaveOrOpenBlob) {
                             window.navigator.msSaveBlob(blob, filename);
                     } else{
                         var elem = window.document.createElement('a');
                         elem.href = window.URL.createObjectURL(blob);
-                        elem.download = filename;        
+                        elem.download = filename;
                         document.body.appendChild(elem);
-                        elem.click();        
+                        elem.click();
                         document.body.removeChild(elem);
                     }
                 }
@@ -439,7 +438,7 @@ END:VCALENDAR`
         color: white;
         margin-bottom: 50px;
         margin-top: 60px;
-        background: $color-tertiary;
+        background: $color-primary;
         padding: $spacing-m;
 
         h4 {
@@ -480,13 +479,13 @@ END:VCALENDAR`
 
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 
@@ -513,7 +512,7 @@ END:VCALENDAR`
 
 	.name-list li,
 	.time-list li{
-		color: $color-tertiary;
+		color: $color-primary;
         font-size: $size-5;
 		padding-bottom:5px;
 	}

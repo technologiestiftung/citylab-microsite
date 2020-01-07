@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <section class="section is-medium">
             <div class="container">
                 <h1 class="title" v-html="this.content[this.lang]['register']['errors']['mailformat']['title']" style="margin-top: 100px"></h1>
@@ -187,6 +187,26 @@
             // padding: 5px;
             font-family: $family-sans-serif;
             font-size: 16px;
+        }
+
+        .ui-sortable {
+            input {
+                background: $color-primary--lightest;
+                color: $color-primary;
+                border: 0px;
+
+                a {
+                    color: $color-primary;
+                    padding-bottom: 3px;
+                    border-bottom: 1px solid $color-primary;
+                }
+            }
+        }
+
+        .agb {
+            color: $color-primary;
+            font-size: 10px;
+            line-height: 140%;
         }
     
         .cr_ipe_item select {

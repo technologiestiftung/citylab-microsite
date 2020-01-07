@@ -17,6 +17,12 @@ $section-padding-large: 18rem 1.5rem !default;
       padding: $section-padding-large;
     }
   }
+}
 
-
+.panel {
+  details {
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  }
 }

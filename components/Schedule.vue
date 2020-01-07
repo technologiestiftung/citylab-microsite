@@ -1,5 +1,5 @@
 <template>
-    <section class="section schedule is-medium" id="schedule">
+    <section class="section schedule is-medium dark" id="schedule">
         <div class="container">
             <h2 class="title"> {{ content[lang]['schedule']['title'] }} </h2>
             <!-- <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2> -->
@@ -20,14 +20,12 @@
 
                         <h2 class="subtitle format">{{ entry.format }}</h2>
 
-                        <a :href="entry['link']" class="arrow-right">></a>
+                        <a :href="entry['link']" class="arrow-right">→</a>
                     </article>
                 </a>
             </div>
 
-            <nuxt-link style="margin-top: 30px;" class="button is-color-secondary  is-normal" :to="directAllEvents">
-                {{ lang ==  'de' ? 'Alle Veranstaltungen' : 'All events' }}
-            </nuxt-link>
+            <Button :label="lang ==  'de' ? 'Alle Veranstaltungen' : 'All events'" :direct="directAllEvents" />
 
         </div>
 
@@ -37,8 +35,9 @@
 
 <script>
     import axios from 'axios';
+    import Button from './Button'
 
-    export default {    
+    export default {
         name: 'Schedule',
         props: ['content', 'lang', 'direct', 'links'],
         computed: {
@@ -46,6 +45,9 @@
                 return this.content[this.lang]['schedule']['items'];
             },
 
+        },
+        components: {
+            Button
         },
         data() {
             return {
@@ -91,8 +93,8 @@
             },
             getMonth(date) {
                 let dat = new Date(date);
-                const mlistEn = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-                const mlist = [ "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ];
+                const mlistEn = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+                const mlist = [ "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez" ];
                 let monthCurrent = this.lang == 'en' ? mlistEn[dat.getMonth()] : mlist[dat.getMonth()];
                 return monthCurrent;
             },
@@ -136,7 +138,7 @@
 
                 this.data = this.data.filter(event => { return this.dateIsUpcoming(event.date) });
                 this.data = this.data.sort((a,b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() });
-            })     
+            })
         }
 
     }
@@ -146,11 +148,65 @@
 
     @import "../assets/style/style.scss";
 
-    .schedule { 
-        // background: $color-primary--lightest;
+    .schedule {
+        background: $color-primary--lightest;
 
-        @include tablet {
-            
+        &.dark {
+            background: $color-primary;
+
+            .container {
+                h2.title {
+                    color: white !important;
+                }
+            }
+
+            .event-tile {
+            transition: $time-s ease transform;
+
+            .arrow-right {
+                transition: $time-s ease transform;
+                color: white;
+                opacity: .75
+            }
+
+            &:hover {
+                .arrow-right {
+                    transform: translateX(5px);
+                    transition: $time-s ease transform;
+                    color: white;
+                    opacity: 1;
+                }
+            }
+
+            &:nth-of-type(odd) {
+                .dates-item {
+                    background: #4142af;
+                }
+            }
+
+            h2.subtitle {
+                color: white;
+            }
+
+            .date-wrapper {
+                .date-time {
+                    color: white;
+                }
+
+                .date-month {
+                    color: white;
+                }
+
+                .date-day {
+                    color: white;
+                }
+            }
+
+            .dates-item {
+                color: white;
+            }
+        }
+
         }
 
         .event-tile {
@@ -159,6 +215,7 @@
                 .arrow-right {
                     transform: translateX(5px);
                     transition: $time-s ease transform;
+                    color: $color-primary;
                 }
             }
 
@@ -167,16 +224,17 @@
                     background: $color-primary--lightest;
                 }
             }
-
-
         }
 
+        h2.title {
+            color: $color-secondary;
+        }
 
         .arrow-right {
-            font-size: 36px;
+            font-size: 2rem;
             margin-right: 15px;
-            color: $color-tertiary;
-            font-weight: bold;
+            color: $color-primary;
+            font-weight: normal;
             transition: $time-s ease transform;
         }
 
@@ -227,7 +285,7 @@
             margin-right: $spacing-l;
             display: flex;
             flex-direction: column;
-            min-width: 75px;
+            min-width: 35px;
             justify-content: space-around;
 
             @include mobile {
@@ -238,7 +296,7 @@
             .date-time {
                 font-size: $size-4;
                 line-height: 2rem;
-                color: $color-tertiary;
+                color: $color-primary;
                 margin-right: $spacing-l;
 
                 @include mobile {
@@ -249,14 +307,15 @@
             }
 
             .date-month {
-                font-size: $size-4;
-                line-height: 2rem;
-                color: $color-tertiary;
+                font-size: $size-5;
+                line-height: 1rem;
+                color: $color-primary;
                 text-align: center;
+                opacity: .5;
 
                 @include mobile {
-                    line-height: 1.2rem;
-                    font-size: 1rem;
+                    line-height: 1rem;
+                    font-size: $size-5;
                 }
             }
 
@@ -264,11 +323,11 @@
                 font-size: $size-3;
                 line-height: 1.75rem;
                 text-align: center;
-                color: $color-tertiary;
+                color: $color-primary;
 
                 @include mobile {
                     line-height: 1.2rem;
-                    font-size: 1rem;
+                    font-size: $size-4;
                 }
             }
          }

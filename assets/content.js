@@ -39,10 +39,17 @@ export const content = {
 
         ],
         'exhibition': {
+            teaser: {
+                'title': 'Unsere Ausstellung',
+                'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
+                'imgUrl': '/images/exhibition-preview.jpg',
+                'btn': 'Alle Exponate',
+                'direct': '/all_exhibits'
+            },
             'title': 'Unsere Ausstellung',
             'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
             'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
-            'imgUrl': 'images/exhibition-preview.jpg',
+            'imgUrl': '/images/exhibition-preview.jpg',
             'link': 'Aktuelle Exponate',
             'pastExhibits': 'Vergangene Exponate',
             'since': 'Ausgestellt seit: ',
@@ -88,40 +95,43 @@ export const content = {
           'last_updated': 'Zuletzt aktualisiert am 14.10.2019'
 
         },
-
         'nav': [
             {
-                'name': 'Idee',
-                'ref': '#idea'
+                'name': 'Start',
+                'ref': '/'
             },
             {
-                'name': 'Themen',
-                'ref': '#topics'
+                'name': 'Über Uns',
+                'ref': '/about_us'
             },
             {
-                'name': 'Open Call',
-                'ref': '#call'
+                'name': 'Mitmachen',
+                'ref': '/collaborate'
             },
             {
-                'name': 'Termine',
-                'ref': '#schedule'
+                'name': 'Veranstaltungen',
+                'ref': '/all_events'
             },
             {
                 'name': 'Newsletter',
-                'ref': '#newsletter'
-            },
-            {
-                'name': 'Team',
-                'ref': '#team'
+                'ref': '/newsletter_register_de'
             },
         ],
         'hero': {
-            'subtitle': "CityLAB Berlin",
-            'claim_01': "Die",
-            'claim_02': "Zukunft Berlins",
-            'claim_03': "gemeinsam gestalten.",
-            'info': "Vom <b>23.12.</b> bis <b>01.01.</b> geschlossen. Fröhliche Weihnachten! 🎄",
-            'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
+            intro: {
+                'subtitle': "CityLAB Berlin",
+                'claim_01': "Die",
+                'claim_02': "Zukunft Berlins",
+                'claim_03': "gemeinsam gestalten.",
+                'title': 'Berlins Zukunft gemeinsam gestalten',
+                'btn': 'Jetzt mitmachen',
+                'btnSecond': 'Mehr erfahren',
+                'description': 'Im CityLAB wird Innovation und Partizipation zusammen&shy;gedacht: Verwaltung und Stadtgesellschaft arbeiten hier gemeinsam an Lösungen für das digitale Berlin von Morgen.',
+                direct: '/collaborate',
+                directSecond: '/about_us',
+                'imgUrl': '/images/intro-preview.jpg',
+                'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
+            }
         },
         'resources': {
             'title': 'Ressourcen',
@@ -142,15 +152,16 @@ export const content = {
         'missionStatement': {
             'title': 'Unsere Mission',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
+            'statement-head': 'Unsere Themen:',
             'statement1-title': 'Inklusiv',
             'statement1-text': 'Wir arbeiten gemeinsam in Co-Creation-Prozessen und bieten vielfältige Möglichkeiten der Mitgestaltung.',
-            'statement1-img_url': 'images/02.png',
+            'statement1-img_url': '/images/02.png',
             'statement2-title': 'Agil',
             'statement2-text': 'Wir nutzen agile Methoden und Rapid Prototyping, um schneller zu bedarfsgerechten Lösungen zu kommen.',
-            'statement2-img_url': 'images/01.jpg',
+            'statement2-img_url': '/images/01.jpg',
             'statement3-title': 'Offen',
             'statement3-text': 'Wir fördern offene Daten, Software und Standards und unterstützen die Vision einer "technologischen Souveränität" von Städten.',
-            'statement3-img_url': 'images/03.jpg',
+            'statement3-img_url': '/images/03.jpg',
             'cta': 'Mitmachen',
         },
         'events': {
@@ -160,7 +171,7 @@ export const content = {
         'register': {
             intro: {
                 title: 'Newsletter',
-                subtitle: 'Aktuelle Informationen und Veranstaltungen aus dem CityLAB.',
+                subtitle: ' Du möchtest über aktuelle Veranstaltungen und Projekte des CityLABs informiert werden? Melde dich für unseren monatlichen Newsletter an und bleib immer auf dem neusten Stand.',
                 button: 'Anmelden',
                 url: '/newsletter_register_de'
             },
@@ -264,27 +275,27 @@ export const content = {
             {
                 'title': 'Mobilität <br/> von morgen',
                 'text': 'Von Fahrrad bis Flugtaxi, von Hyperloop bis Home Office – Städte sind Experimentierfelder für mobiles Leben. Wie gestalten wir den Verkehr der Zukunft?',
-                'img_url': 'images/topic_01_blue.jpg'
+                'img_url': '/images/topic_01_blue.jpg'
             },
             {
                 'title': 'Innovative <br/> Verwaltung',
                 'text': 'Geburtsurkunde via Whatsapp und Kindergeld per Kryptowährung – passt das zusammen? Wie sehen Verwaltungsservices aus, die von Bürger*innen her gedacht werden?',
-                'img_url': 'images/topic_02_blue.jpg'
+                'img_url': '/images/topic_02_blue.jpg'
             },
             {
                 'title': 'Smart Cities <br/> für alle',
                 'text': 'Brücken bauen über digitale Gräben: Wie können wir die smarte Stadt so öffnen, dass möglichst alle Menschen darin handlungsfähig werden?',
-                'img_url': 'images/topic_03_blue.jpg'
+                'img_url': '/images/topic_03_blue.jpg'
             },
             {
                 'title': 'Offene Daten, <br/>offene Städte',
                 'text': 'Black Box Society oder gläserner Staat? Wie schützen wir persönliche Informationen und schaffen zugleich Transparenz über öffentliche Daten und Algorithmen?',
-                'img_url': 'images/topic_04_blue.jpg'
+                'img_url': '/images/topic_04_blue.jpg'
             },
             {
                 'title': 'Energie und <br/> Nachhaltigkeit',
                 'text': 'Kreislaufwirtschaft, Upcycling, intelligente Netze – wie kommen wir zu einem klimafreundlichen und gesunden Berlin? ' ,
-                'img_url': 'images/topic_05_blue.jpg'
+                'img_url': '/images/topic_05_blue.jpg'
             },
         ],
         'board': {
@@ -294,47 +305,47 @@ export const content = {
                 {
                     'name': 'StS Dr. Frank Nägele (Vorsitz)',
                     'title': 'Senatskanzlei Berlin',
-                    'img_url': '../images/board/edit/frank_naegele.jpg'
+                    'img_url': '/images/board/edit/frank_naegele.jpg'
                 },
                 {
                     'name': 'StS Christian Rickerts',
                     'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
-                    'img_url': '../images/board/edit/christian_rickerts.jpg'
+                    'img_url': '/images/board/edit/christian_rickerts.jpg'
                 },
                 {
                     'name': 'StS Sabine Smentek',
                     'title': 'Senatsverwaltung für Inneres und Sport',
-                    'img_url': '../images/board/edit/sabine_smentek.jpg'
+                    'img_url': '/images/board/edit/sabine_smentek.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Olga Willner',
                     'title': 'HTW Berlin',
-                    'img_url': '../images/board/edit/olga_willner.jpg'
+                    'img_url': '/images/board/edit/olga_willner.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Sven Ripsas',
                     'title': 'HWR Berlin',
-                    'img_url': '../images/board/edit/sven.jpg'
+                    'img_url': '/images/board/edit/sven.jpg'
                 },
                 {
                     'name': 'Jutta Lautenschlager',
                     'title': 'GovMen',
-                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
+                    'img_url': '/images/board/edit/jutta_lautenschlager.jpg'
                 },
                 {
                     'name': 'Sebastian Stietzel',
                     'title': 'IHK Berlin',
-                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                    'img_url': '/images/board/edit/sebastian_stitzel.jpg'
                 },
                 {
                     'name': 'Walter Palmetshofer',
                     'title': 'Open Knowledge Foundation',
-                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                    'img_url': '/images/board/edit/walter_palmetshofer.jpg'
                 },
                 {
                     'name': 'Geraldine de Bastion',
                     'title': 'Konnektiv/re:publica',
-                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
+                    'img_url': '/images/board/edit/geraldine_de_bastion.jpg'
                 },
             ]
         },
@@ -347,7 +358,7 @@ export const content = {
                 {
                     'title': 'Projekt titel',
                     'subtitle': 'Projekt Untertitel',
-                    'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
+                    'thumbnail_url': '/images/projects/fancy thumbnail.jpg'
                 }
             ],
             'bullets_intro': 'Möchtest du ...',
@@ -357,14 +368,101 @@ export const content = {
                 'unsere Werkstatt nutzen oder vorübergehend einen festen Co-Working-Platz bei uns?'
             ]
         },
-        'funding': {
-          'title': 'Projektförderung im CityLAB',
-          'opencall': 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.',
-          'cta': 'Mehr erfahren',
-
-      },
+        'collaborate': {
+            paragraph : {
+                'title': 'Jetzt mitmachen',
+                'description': 'Veranstaltung, Co-Working oder eigene Idee weiterentwickeln: das CityLAB ist ein Ort der Kollaboration. Wenn du bei den Themen Civic Tech, GovTech, sozialer Innovation und Smart Cities mitwirken möchtest, kontaktiere uns ganz unkompliziert oder komm direkt im CityLAB vorbei.',
+                'btn': 'Mehr erfahren',
+                'direct': '/collaborate',
+                'style': 'bright'
+            },
+            funding: {
+                title: 'Projektförderung im CityLAB',
+                description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
+                btn: 'Jetzt bewerben',
+                'style': 'bright',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'Welche Projekte sind förderfähig?',
+                        description: 'Grundlage für unser Förderprogramm ist eine Förderlinie der Berliner Senatskanzlei. Sie sieht eine Fördermöglichkeit von Projekten vor, die "einen Beitrag zu den Themenfeldern digitale Verwaltung, soziale Innovation und/oder Smart Cities sowie technischen Lösungen zur Verbesserung des Bürgerengagements und -beteiligung leisten.“ Projekte sollten ein klares Ziel verfolgen, das im vorgesehenen Zeitraum realistisch umsetzbar ist. <a href="/docs/foerderrichtlinie_citylab.pdf">Die gesamte Förderlinie mit allen Kriterien findest Du hier</a>.'
+                    },
+                    {
+                        title: 'Wann ist die Bewerbungsfrist?',
+                        description: 'Die Bewerbungfrist für die nächste Förderrunde ist der 27.10.2019. Der frühestmögliche Projektstart ist der 01.01.2020.'
+                    },
+                    {
+                        title: 'Welche Kosten sind förderfähig?',
+                        description: 'Förderfähig sind Personalkosten, externe Honorare sowie Sach- und Reisekosten.'
+                    },
+                    {
+                        title: 'Wie hoch ist die maximale Fördersumme pro Projekt?',
+                        description: 'Die maximale Fördersumme beträgt 50.000€. Auch kleinere Anträge sind ausdrücklich willkommen.'
+                    },
+                    {
+                        title: 'Wie läuft das Bewerbungsverfahren ab?',
+                        description: 'In einem ersten Schritt muss Du lediglich ein <a href="/docs/foerderantrag_citylab.pdf"> kurzes Formular </a> und einen <a href="/docs/antrag_finanzierungsplan_muster.xlsx">Kostenplan</a> ausfüllen. Schick bitte beides per Mail an <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org.</a> Alle Anträge werden dem CityLAB-Beirat zur Bewertung vorgelegt. Bei Fragen melden wir uns. Falls Dein Projekt als grundsätzlich förderwürdig eingeschätzt wird, werden wir Dich bitten, einen formalen Zuwendungsantrag einzureichen. Dabei unterstützen wir gerne.'
+                    },
+                    {
+                        title: 'Ich habe noch Fragen. An wen kann ich mich wenden?',
+                        description: 'Bitte vereinbare einen Telefontermin unter <a href="https://calendly.com/citylab/foerderprogramm">diesem Link.</a>'
+                    },
+                ]
+            },
+            coworking: {
+                title: 'Co-Working im CityLAB',
+                description: 'Das CityLAB bietet kostenlose Co-Working-Plätze für gemeinwohlorientierte Projekte. Werde Teil unserer Community und bewirb dich für ein Co-Working Fellowship.',
+                btn: 'Jetzt bewerben',
+                'style': 'bright',
+                imgUrl: '/images/coworking-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'Wofür kann ich den Co-Working-Space nutzen?',
+                        description: 'Das CityLAB ist kein klassischer Co-Working-Space. Wir arbeiten im CityLAB projektbezogen an innovativen Lösungen für eine bessere Stadt. Für die Nutzung der Co-Working-Plätze ist es Voraussetzung, dass Du ein eigenes Projekt mit Bezug zu unseren Themenfeldern verfolgst. Falls Du noch keine eigene Projektidee hast, können wir gerne gemeinsam überlegen, wie Du Deine Fähigkeiten sinnvoll bei uns einbringen kannst.'
+                    },
+                    {
+                        title: 'Wie kann ich mich einbringen?',
+                        description: 'Alle Co-Worker*innen sollen aktiv am CityLAB mitwirken. Konkret heißt das, dass Du Dein Projekt jeweils zu Beginn und Abschluss öffentlich vorstellst. Zudem wünschen wir uns, dass Du während der Projektlaufzeit einen oder mehrere Meetups oder Workshops organisierst, in denen Du anderen deine Arbeit näherbringst. Natürlich freuen wir uns, wenn Du darüber hinaus weitere Ideen hast. Unsere Konferenz-, Event- und Ausstellungsräume und die Werkstatt stehen allen Co-Worker*innen offen.'
+                    },
+                    {
+                        title: 'Wie hoch sind die Kosten?',
+                        description: 'Die Nutzung des Co-Working ist kostenfrei, allerdings zeitlich auf die Dauer deines Projekts beschränkt (in der Regel zwischen einem und sechs Monate).'
+                    },
+                    {
+                        title: 'Zu welchen Zeiten sind die Plätze nutzbar?',
+                        description: 'Montag bis Freitag zwischen 09:00-18:00 Uhr, nach Absprache auch darüber hinaus. Es kann sein, dass die Co-Working-Plätze an einigen wenigen Tagen nicht verfügbar sind (z.B. wegen Veranstaltungen).'
+                    },
+                    {
+                        title: 'Kann ich das Co-Working für mein kommerzielles Projekt nutzen?',
+                        description: 'Das CityLAB ist öffentlich finanziert und gemeinnützig. Daher ist die Nutzung des Co-Working gemeinnützigen Zwecken vorbehalten.'
+                    },
+                    {
+                        title: 'Was gibt es noch zu beachten?',
+                        description: 'Beachte unseren <a href="http://www.citylab-berlin.org/codeofconduct" target="_blank"> Code of Conduct</a>.'
+                    },
+                ]
+            },
+            project: {
+                title: 'Gestalte ein Projekt im CityLAB',
+                description: 'Du hast eine Idee für die nachhaltige, digitale Stadt der Zukunft und möchtest diese gemeinsam mit uns weiterentwickeln? Melde dich und werde Teil des CityLAB-Netzwerks!',
+                btn: 'Jetzt bewerben',
+                'style': 'bright',
+                imgUrl: '/images/project-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            },
+            event: {
+                title: 'Nutze unsere Räume für deine Veranstaltung',
+                description: 'Du planst einen kreativen Workshop, ein Meetup oder eine öffentliche Veranstaltung zur digitalen Stadt? Nutze unsere Räume im ehemaligen Flughafen Tempelhof.',
+                btn: 'Jetzt anfragen',
+                'style': 'bright',
+                imgUrl: '/images/event-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            }
+        },
         projects: {
-            title: 'Projekte',
+            title: 'Projekte ',
+            description: 'Ein Auszug unserer aktuellen Projekte im Überblick.',
             titleAll: 'Alle Projekte',
         },
         'team': {
@@ -374,49 +472,63 @@ export const content = {
                     'name': 'Benjamin Seibel',
                     'mail': 'seibel@technologiestiftung-berlin.de',
                     'twitter': 'bnjmnsbl',
-                    'img_url': 'images/benjamin_portrait.jpg',
+                    'img_url': '/images/benjamin_portrait.jpg',
                     'title': 'Leitung'
                 },
                 {
                     'name': 'Nadine Riede',
                     'mail': 'riede@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/nadine_portrait.jpg',
+                    'img_url': '/images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
                 {
                     'name': 'Sebastian Meier',
                     'mail': 'meier@technologiestiftung-berlin.de',
                     'twitter': 'seb_meier',
-                    'img_url': 'images/sebastian_portrait.jpg',
+                    'img_url': '/images/sebastian_portrait.jpg',
                     'title': 'Wissenschaftliche Leitung'
                 },
                 {
                     'name': 'Sara Reichert',
                     'mail': 'reichert@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/sara_portrait.jpg',
+                    'img_url': '/images/sara_portrait.jpg',
                     'title': 'Werkstattleitung'
                 },
                 {
                     'name': 'Fabian Dinklage',
                     'mail': 'dinklage@technologiestiftung-berlin.de',
                     'twitter': 'fdnklg',
-                    'img_url': 'images/fabian_portrait.jpg',
+                    'img_url': '/images/fabian_portrait.jpg',
                     'title': 'UX & Design'
+                },
+                {
+                    'name': 'Sina Beckstein',
+                    'mail': 'beckstein@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': '/images/sina_portrait.jpg',
+                    'title': 'Projektmanagerin'
+                },
+                {
+                    'name': 'Joshua Pacheco',
+                    'mail': 'pacheco@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': '/images/joshua_portrait.jpg',
+                    'title': 'Service Design'
                 },
                 {
                     'name': 'Mirko Hohmann',
                     'mail': 'hohmann@technologiestiftung-berlin.de',
                     'twitter': 'mirkohohmann',
-                    'img_url': 'images/mirko_portrait.jpg',
+                    'img_url': '/images/mirko_portrait.jpg',
                     'title': 'Projektmanager'
                 },
                 {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': 'images/malgorzata_portrait.jpg',
+                    'img_url': '/images/gosia_portrait.jpg',
                     'title': 'Administration'
                 },
             ],
@@ -471,7 +583,7 @@ export const content = {
                 'p1': 'Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin<br />Tel.: +49 30 209 69 99 0<br/>',
                 'mail_url': 'info@technologiestiftung-berlin.de',
                 'mail_name': 'info(at)technologiestiftung-berlin.de',
-                'p2': 'Stiftungsverzeichnis Berlin: AZ 3416/464 B3 <br/> USt-Id-Nr.: DE 187 459 128',
+                'p2': '<br/> USt-Id-Nr.: DE 187 459 128',
                 'p3': 'Die Technologiestiftung Berlin ist eine rechtsfähige und gemeinnützige Stiftung bürgerlichen Rechts. Sie unterliegt nach dem Berliner Stiftungsgesetz in der Fassung vom 11. Dezember 1997 (GVBl. S. 674) der Staatsaufsicht, die von der Senatsverwaltung für Justiz, Salzburger Str. 21-25, 10825 Berlin, geführt wird.'
             },
             'boardmembers': {
@@ -635,13 +747,19 @@ export const content = {
                 link: 'https://citylab-berlin.org/events/schule-outsidein_en',
                 visible: true,
             }
-          
         ],
         'exhibition': {
+            teaser: {
+                'title': 'Our exhibition',
+                'description': 'Experience the city of the future in interactive exhibits.',
+                'imgUrl': '/images/exhibition-preview.jpg',
+                'btn': 'All exhibits',
+                'direct': '/all_exhibits_en'
+            },
             'title': 'Our exhibition',
             'subtitle': 'Experience the city of the future in interactive exhibits.',
-            'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we provide insights into our current projects and other exciting exhibits from our partners.',
-            'imgUrl': '../images/exhibition-preview.jpg',
+            'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we show insights into our current projects and other exciting exhibits from the CityLAB partner circle.</br></br>The exhibition can be visited free of charge from Wednesday to Saturday, 10am to 5pm. We are happy to offer guided tours on request.',
+            'imgUrl': '/images/exhibition-preview.jpg',
             'link': 'Current exhibits',
             'pastExhibits': 'Past exhibits',
             'since': 'Exhibited since: ',
@@ -669,7 +787,7 @@ export const content = {
             ],
             'linktext': `We expect everyone in the CityLAB to adhere to our <a href="http://www.citylab-berlin.org/codeofconduct_en" target="_blank"> Code of Conduct</a>.`
         },
-         'funding_details': {
+        'funding_details': {
             'title': 'Project grants through the CityLAB',
             'subtitle': 'Do you have a project of your own that you’d like to develop further here in the CityLAB, but you lack the financial means to do so? Apply for our funding program!',
             'who_q': 'What kinds of projects do we support?',
@@ -685,8 +803,23 @@ export const content = {
             'schedule_q': 'I still have questions. Who can I talk to?',
             'schedule_a': 'Please schedule a call under <a href="https://calendly.com/citylab/foerderprogramm">this link.</a>',
             'last_updated': 'Last updated Oct 14, 2019'
-          },
-
+        },
+        'hero': {
+            intro: {
+                'subtitle': "CityLAB Berlin",
+                'claim_01': "Shaping Berlin's",
+                'claim_02': "",
+                'claim_03': "future together.",
+                'title': "Shaping Berlin's future together",
+                'btn': 'Join now',
+                'btnSecond': 'More information',
+                'description': `In CityLAB, innovation and participation are thought together: administration and urban society work together here on solutions for the digital Berlin of tomorrow.`,
+                direct: '/collaborate_en',
+                directSecond: '/about_us_en',
+                'imgUrl': '/images/intro-preview.jpg',
+                'words_arr': ['sustainable', 'open', 'diverse', 'inclusive', 'digital']
+            }
+        },
         'resources': {
             'title': 'Resources',
             'p1': 'At this section you find practical information regarding the CityLAB Berlin.',
@@ -705,28 +838,24 @@ export const content = {
         },
         'nav': [
             {
-                'name': 'Idea',
-                'ref': '#idea'
+                'name': 'Start',
+                'ref': '/index_en'
             },
             {
-                'name': 'Topics',
-                'ref': '#topics'
+                'name': 'About us',
+                'ref': '/about_us_en'
             },
             {
-                'name': 'Open Call',
-                'ref': '#call'
+                'name': 'Collaborate',
+                'ref': '/collaborate_en'
             },
             {
-                'name': 'Schedule',
-                'ref': '#schedule'
+                'name': 'Events',
+                'ref': '/all_events_en'
             },
             {
                 'name': 'Newsletter',
-                'ref': '#newsletter'
-            },
-            {
-                'name': 'Team',
-                'ref': '#team'
+                'ref': '/newsletter_register_en'
             },
         ],
         'hero': {
@@ -739,16 +868,17 @@ export const content = {
         },
         'missionStatement': {
             'title': 'Our Mission',
+            'statement-head': 'Our topics:',
             'subtitle': 'The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it\'s a dynamic experiment intended to be continuously developed and re-imagined.',
             'statement1-title': 'Agile',
             'statement1-text': 'We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users\' needs.',
-            'statement1-img_url': '../images/01.jpg',
+            'statement1-img_url': '/images/01.jpg',
             'statement2-title': 'Participatory',
             'statement2-text': 'We work together in co-creation processes and offer a variety of opportunities for Berliners to get involved.',
-            'statement2-img_url': '../images/02.png',
+            'statement2-img_url': '/images/02.png',
             'statement3-title': 'Open',
             'statement3-text': 'We promote open data, software and standards and support the vision of "technological sovereignty" of cities.',
-            'statement3-img_url': '../images/03.png',
+            'statement3-img_url': '/images/03.png',
             'cta': 'Learn more',
         },
         'events': {
@@ -769,38 +899,130 @@ export const content = {
                 },
             ]
         },
+        'collaborate': {
+            paragraph : {
+                'title': 'Participate Now',
+                'description': 'No matter if event, co-working or your own idea. If you want to participate in a topic related to civic tech, digital management, social innovation and smart cities. Contact us or come directly to CityLAB.',
+                'btn': 'More information',
+                'direct': '/collaborate_en',
+                'style': 'bright'
+            },
+            funding: {
+                title: 'Project Funding',
+                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
+                btn: 'Apply now',
+                'style': 'bright',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'What kinds of projects do we support?',
+                        description: 'We are able to offer this opportunity thanks to a funding line established by the Berlin Senate Chancellery. They are interested in supporting projects that “make a contribution to the fields of digital government, social innovation and/or smart cities, as well as that offer technical solutions for enhancing citizen engagement and participation.” Projects need to have a clearly stated goal that can be realistically achieved within the prescribed time period. Further details for this specific funding line and all of the relevant selection criteria <a href="/docs/foerderrichtlinie_citylab.pdf">can be found here</a> (for now in German only, if you need help, please get in touch!).'
+                    },
+                    {
+                        title: 'When is the deadline for submissions?',
+                        description: 'The deadline to be included in the next round of funding is October 27, 2019. The earliest possible start date for projects is January 1, 2020.'
+                    },
+                    {
+                        title: 'What types of costs are eligible for funding?',
+                        description: 'Eligible costs are personnel costs, honorariums for external contributors, material costs, and travel expenses.'
+                    },
+                    {
+                        title: 'What is the maximum amount I can apply for?',
+                        description: 'The maximum amount is 50.000€. Smaller proposals are welcome as well.'
+                    },
+                    {
+                        title: 'What does the application process look like?',
+                        description: 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. In case of a positive review, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.'
+                    },
+                    {
+                        title: 'I still have questions. Who can I talk to?',
+                        description: 'Please schedule a call under <a href="https://calendly.com/citylab/foerderprogramm">this link.</a>'
+                    },
+                ]
+            },
+            coworking: {
+                title: 'Co-working Fellowship in the CityLAB',
+                description: 'Would you like to apply for a Co-WOrking place with us? Here is place for more text.',
+                btn: 'Apply now',
+                'style': 'bright',
+                imgUrl: '/images/coworking-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                faq: [
+                    {
+                        title: 'What kinds of projects do we support?',
+                        description: 'We are able to offer this opportunity thanks to a funding line established by the Berlin Senate Chancellery. They are interested in supporting projects that “make a contribution to the fields of digital government, social innovation and/or smart cities, as well as that offer technical solutions for enhancing citizen engagement and participation.” Projects need to have a clearly stated goal that can be realistically achieved within the prescribed time period. Further details for this specific funding line and all of the relevant selection criteria <a href="/docs/foerderrichtlinie_citylab.pdf">can be found here</a> (for now in German only, if you need help, please get in touch!).'
+                    },
+                    {
+                        title: 'When is the deadline for submissions?',
+                        description: 'The deadline to be included in the next round of funding is October 27, 2019. The earliest possible start date for projects is January 1, 2020.'
+                    },
+                    {
+                        title: 'What types of costs are eligible for funding?',
+                        description: 'Eligible costs are personnel costs, honorariums for external contributors, material costs, and travel expenses.'
+                    },
+                    {
+                        title: 'What is the maximum amount I can apply for?',
+                        description: 'The maximum amount is 50.000€. Smaller proposals are welcome as well.'
+                    },
+                    {
+                        title: 'What does the application process look like?',
+                        description: 'For the first step, applicants only need to submit a completed <a href="/docs/foerderantrag_citylab.pdf">application form</a> and their <a href="/docs/antrag_finanzierungsplan_muster.xlsx">projected expenses</a> for the project. Both can be sent to <a href="mailto:call@citylab-berlin.org">call@citylab-berlin.org</a>. All submissions will be evaluated by the CityLAB advisory board. If we have questions about your application, we’ll reach out. In case of a positive review, we’ll ask you to submit a formal grant application with the Senate Chancellery. We’re happy to assist applicants with completing this step.'
+                    },
+                    {
+                        title: 'I still have questions. Who can I talk to?',
+                        description: 'Please schedule a call under <a href="https://calendly.com/citylab/foerderprogramm">this link.</a>'
+                    },
+                ]
+            },
+            project: {
+                title: 'Start your idea with the CityLAB',
+                description: 'You have an idea for the sustainable, digital city of the future and would like to develop it further with us? Sign up and become part of the CityLAB network!',
+                btn: 'Apply now',
+                imgUrl: '/images/project-preview.jpg',
+                style: 'bright',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            },
+            event: {
+                title: 'Use our rooms for your event',
+                description: 'Are you planning a creative workshop, meetup or public event on the digital city? Use our rooms in the former Tempelhof Airport.',
+                btn: 'Request now',
+                style: 'bright',
+                imgUrl: '/images/event-preview.jpg',
+                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+            }
+        },
         'topics': [
             {
                 'title': 'The mobility <br/> of tomorrow',
                 'text': 'From bikes to flying taxis and hyperloops to home office – cities provide fertile ground for exploring how we move. How can we help design the mobility of the future?',
-                'img_url': '../images/topic_01_blue.jpg'
+                'img_url': '/images/topic_01_blue.jpg'
             },
             {
                 'title': 'Innovative <br/> governments',
                 'text': 'Birth certificates via Whatsapp and child-care allowances per cryptocurrencies – is that even thinkable? We explore what government services look like when they put citizen needs first.',
-                'img_url': '../images/topic_02_blue.jpg'
+                'img_url': '/images/topic_02_blue.jpg'
             },
             {
                 'title': 'Smart Cities <br/> for all',
                 'text': 'Building bridges over digital gulfs: how can we build a city so smart that it empowers all citizens, not just a select few? ',
-                'img_url': '../images/topic_03_blue.jpg'
+                'img_url': '/images/topic_03_blue.jpg'
             },
             {
                 'title': 'Open data, <br/>open cities',
                 'text': 'Between a black box or citizens laid bare: How can we protect personal information while simultaneously ensuring transparency in government data and algorithms?',
-                'img_url': '../images/topic_04_blue.jpg'
+                'img_url': '/images/topic_04_blue.jpg'
             },
             {
                 'title': 'Energy and <br/> sustainability',
                 'text': 'Upcycling, the circular economy and intelligent networks – we’re researching paths toward a climate-neutral, healthy Berlin' ,
-                'img_url': '../images/topic_05_blue.jpg'
+                'img_url': '/images/topic_05_blue.jpg'
             },
 
         ],
         'register': {
             intro: {
                 title: 'Newsletter',
-                subtitle: 'CityLAB\'s latest news and events.',
+                subtitle: 'Would you like to be informed about current CityLAB events and projects? Subscribe to our monthly newsletter and stay up to date.',
                 button: 'Subscribe',
                 url: '/newsletter_register_en'
             },
@@ -895,7 +1117,7 @@ export const content = {
                 {
                     'title': 'Projekt titel',
                     'subtitle': 'Projekt Untertitel',
-                    'thumbnail_url': 'images/projects/fancy thumbnail.jpg'
+                    'thumbnail_url': '/images/projects/fancy thumbnail.jpg'
                 }
             ],
             'bullets_intro': 'Would you like to ...',
@@ -906,13 +1128,16 @@ export const content = {
             ]
         },
         'funding': {
-          'title': 'Project Funding',
-          'opencall': 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
-          'cta': 'Learn more',
+            paragraph : {
+                'title': 'Project Funding',
+                'opencall': 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
+                'cta': 'Learn more',
+            }
 
       },
         projects: {
             title: 'Projects',
+            description: 'An overview of our current projects.',
             titleAll: 'All projects',
         },
         'board': {
@@ -921,100 +1146,114 @@ export const content = {
                 {
                     'name': 'StS Dr. Frank Nägele (Vorsitz)',
                     'title': 'Senatskanzlei Berlin',
-                    'img_url': '../images/board/edit/frank_naegele.jpg'
+                    'img_url': '/images/board/edit/frank_naegele.jpg'
                 },
                 {
                     'name': 'StS Christian Rickerts',
                     'title': 'Senatsverwaltung für Wirtschaft, Energie und Betriebe',
-                    'img_url': '../images/board/edit/christian_rickerts.jpg'
+                    'img_url': '/images/board/edit/christian_rickerts.jpg'
                 },
                 {
                     'name': 'StS Sabine Smentek',
                     'title': 'Senatsverwaltung für Inneres und Sport',
-                    'img_url': '../images/board/edit/sabine_smentek.jpg'
+                    'img_url': '/images/board/edit/sabine_smentek.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Olga Willner',
                     'title': 'HTW Berlin',
-                    'img_url': '../images/board/edit/olga_willner.jpg'
+                    'img_url': '/images/board/edit/olga_willner.jpg'
                 },
                 {
                     'name': 'Prof. Dr. Sven Ripsas',
                     'title': 'HWR Berlin',
-                    'img_url': '../images/board/edit/sven.jpg'
+                    'img_url': '/images/board/edit/sven.jpg'
                 },
                 {
                     'name': 'Jutta Lautenschlager',
                     'title': 'GovMen',
-                    'img_url': '../images/board/edit/jutta_lautenschlager.jpg'
+                    'img_url': '/images/board/edit/jutta_lautenschlager.jpg'
                 },
                 {
                     'name': 'Sebastian Stietzel',
                     'title': 'IHK Berlin',
-                    'img_url': '../images/board/edit/sebastian_stitzel.jpg'
+                    'img_url': '/images/board/edit/sebastian_stitzel.jpg'
                 },
                 {
                     'name': 'Walter Palmetshofer',
                     'title': 'Open Knowledge Foundation',
-                    'img_url': '../images/board/edit/walter_palmetshofer.jpg'
+                    'img_url': '/images/board/edit/walter_palmetshofer.jpg'
                 },
                 {
                     'name': 'Geraldine de Bastion',
                     'title': 'Konnektiv/re:publica',
-                    'img_url': '../images/board/edit/geraldine_de_bastion.jpg'
+                    'img_url': '/images/board/edit/geraldine_de_bastion.jpg'
                 },
             ]
         },
         'team': {
-            'title': 'The team',
+            'title': 'Team',
             'member': [
                 {
                     'name': 'Benjamin Seibel',
                     'mail': 'seibel@technologiestiftung-berlin.de',
                     'twitter': 'bnjmnsbl',
-                    'img_url': '../images/benjamin_portrait.jpg',
+                    'img_url': '/images/benjamin_portrait.jpg',
                     'title': 'Director'
                 },
                 {
                     'name': 'Nadine Riede',
                     'mail': 'riede@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/nadine_portrait.jpg',
+                    'img_url': '/images/nadine_portrait.jpg',
                     'title': 'Head of Content & Events'
                 },
                 {
                     'name': 'Sebastian Meier',
                     'mail': 'meier@technologiestiftung-berlin.de',
                     'twitter': 'seb_meier',
-                    'img_url': '../images/sebastian_portrait.jpg',
+                    'img_url': '/images/sebastian_portrait.jpg',
                     'title': 'Head of Science'
                 },
                 {
                     'name': 'Sara Reichert',
                     'mail': 'reichert@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/sara_portrait.jpg',
+                    'img_url': '/images/sara_portrait.jpg',
                     'title': 'Workshop Lead'
                 },
                 {
                     'name': 'Fabian Dinklage',
                     'mail': 'dinklage@technologiestiftung-berlin.de',
                     'twitter': 'fdnklg',
-                    'img_url': '../images/fabian_portrait.jpg',
+                    'img_url': '/images/fabian_portrait.jpg',
                     'title': 'UX & Design'
+                },
+                {
+                    'name': 'Sina Beckstein',
+                    'mail': 'beckstein@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': '/images/sina_portrait.jpg',
+                    'title': 'Projectmanagement'
+                },
+                {
+                    'name': 'Joshua Pacheco',
+                    'mail': 'pacheco@technologiestiftung-berlin.de',
+                    'twitter': '',
+                    'img_url': '/images/joshua_portrait.jpg',
+                    'title': 'Service Design'
                 },
                 {
                     'name': 'Mirko Hohmann',
                     'mail': 'hohmann@technologiestiftung-berlin.de',
                     'twitter': 'mirkohohmann',
-                    'img_url': '../images/mirko_portrait.jpg',
+                    'img_url': '/images/mirko_portrait.jpg',
                     'title': 'Projectmanagement'
                 },
                 {
                     'name': 'Malgorzata Magdon',
                     'mail': 'Magdon@technologiestiftung-berlin.de',
                     'twitter': '',
-                    'img_url': '../images/malgorzata_portrait.jpg',
+                    'img_url': '/images/gosia_portrait.jpg',
                     'title': 'Administration'
                 },
             ],

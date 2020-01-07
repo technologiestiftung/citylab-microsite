@@ -4,6 +4,13 @@ $color-primary: #2F2FA2;
 $color-secondary: #F64C72;
 $color-tertiary: #393A60;
 
+$color-primary--medium: rgba($color-primary, 0.5);
+$color-primary--mediumlight: rgba($color-primary, 0.25);
+$color-primary--light: rgba($color-primary, 0.1);
+$color-primary--lighter: rgba($color-primary, 0.06);
+$color-primary--lightest: rgba($color-primary, 0.03);
+$color-primary--hover: #EAEAF5;
+
 $color-secondary--medium: rgba($color-secondary, 0.5);
 $color-secondary--lightest: rgba($color-secondary, 0.05);
 

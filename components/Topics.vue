@@ -13,6 +13,7 @@
                             <article v-for="item in topicsArr" class="slide">
                                 <div class="content-container">
                                     <div>
+                                        <span class="subtitle">{{topcisHeadline}}</span>
                                         <h2 class="title" v-html="`${item.title}`"></h2>
                                         <p class="teaser">{{item.text}}</p>
                                     </div>
@@ -44,6 +45,9 @@
         computed: {
             topicsArr() {
                 return this.content[this.lang]['topics'];
+            },
+            topcisHeadline() {
+                return this.content[this.lang]['missionStatement']['statement-head'];
             }
         },
         data() {
@@ -63,7 +67,7 @@
                         ((ind) => {
                             const timeout = setTimeout(() => {
                                 document.getElementById(`slide${ind}`).checked = true;
-                                this.selectCurrent = ind; 
+                                this.selectCurrent = ind;
 
                                 if (ind == 5) {
                                     this.loopSlides();
@@ -110,6 +114,12 @@
     <style lang="scss" scoped>
         @import "../assets/style/style.scss";
 
+        .section#topics {
+            background: $color-primary--lightest;
+            animation: sweep .5s ease-in-out;
+            // padding: 4rem 14rem;
+        }
+
         .overlay {
             width: 100%;
             height: 96.5%;
@@ -130,27 +140,48 @@
 
             display: flex;
             justify-content: space-between;
-            flex-direction: column;
-
-            
-        .content-container {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-            
-        @include tablet {
             flex-direction: row;
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+            }
+
+        .content-container {
+            width: 45%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-right: 30px;
+
+            .subtitle {
+                color: $color-secondary;
+                text-align: initial;
+                width: 100%;
+                float: left;
+                margin-bottom: 0px;
+                font-size: $size-6;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .content-container {
+                width: 100%;
+            }
+
+            flex-direction: column;
             max-width: 900px;
 
             .content-container {
-                width: 55%;
+                width: 100%;
                 margin-right: 40px;
+
+                .teaser {
+                    margin-bottom: 30px;
+                }
             }
 
             .image-container-topics {
-                width: 40%;
+                width: 100%;
             }
         }
         
@@ -173,20 +204,16 @@
         }
         .teaser {
             text-align: left;
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: 40px;
             height: 120px;
 
-            @include tablet {
-                height: 140px;
-            }
-
-            @include tablet {
-                margin-bottom: 0px;
+            @media screen and (max-width: 900px) {
+                margin-bottom: 30px;
                 height: auto;
             }
         }
-        
+
         }
 
         * {

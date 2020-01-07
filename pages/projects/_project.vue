@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" :languageVisible="true" />
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
         <HeroLight 
             :image="heroImageUrl" 
             :title="title" 
@@ -117,7 +117,7 @@
                 if (this.data != null) { return this.data.gsx$projectsubsubline.$t } else { return }
             },
             headlineIntro() {
-                if (this.data != null) { return this.data.gsx$headlineintro.$t } else { return }
+                if (this.data != null && this.data) { return this.data.gsx$headlineintro.$t } else { return }
             },
             contentIntro() {
                 if (this.data != null) { return this.data.gsx$contentintro.$t } else { return }
@@ -231,13 +231,13 @@
 
 	.event-content {
         p {
-            color: $color-tertiary;
+            color: $color-primary;
             font-size: $size-5;
             margin-bottom: 20px;
         }
 
         span {
-            color: $color-tertiary;
+            color: $color-primary;
             margin-bottom: $spacing-s;
         }
 
