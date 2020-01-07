@@ -130,6 +130,7 @@
 
 				window.addEventListener('scroll', this.handleScroll);
 			}
+			const test = this;
 		},
 		destroyed () {
 			if (process.browser) {

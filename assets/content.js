@@ -858,14 +858,6 @@ export const content = {
                 'ref': '/newsletter_register_en'
             },
         ],
-        'hero': {
-            'subtitle': "CityLAB Berlin",
-            'claim_01': "Shaping Berlin's",
-            'claim_02': "",
-            'claim_03': "future together.",
-            'info': "We're closed from <b>Dec 23th</b> to <b>Jan 1st</b>. Merry Christmas! 🎄",
-            'words_arr': ['sustainable', 'changing', 'innovative', 'exciting', 'inclusive', 'digital']
-        },
         'missionStatement': {
             'title': 'Our Mission',
             'statement-head': 'Our topics:',
