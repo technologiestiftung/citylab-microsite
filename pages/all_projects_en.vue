@@ -95,7 +95,7 @@
                         name: entry.gsx$projectname.$t,
                         publisher: entry.gsx$publisher.$t,
                         subline: entry.gsx$projectsubline.$t,
-                        dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
+                        dirname: entry.gsx$dirname.$t,
                         imgname: entry.gsx$dirname.$t,
                         defaultImg: entry.gsx$defaultimg.$t
                     }

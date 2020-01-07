@@ -968,7 +968,7 @@ export const content = {
             },
             project: {
                 title: 'Start your idea with the CityLAB',
-                description: 'Here is a descriptive text with general information about possibilities of cooperation, if the aim of the cooperation should be a project.',
+                description: 'You have an idea for the sustainable, digital city of the future and would like to develop it further with us? Sign up and become part of the CityLAB network!',
                 btn: 'Apply now',
                 imgUrl: '/images/project-preview.jpg',
                 style: 'bright',
@@ -976,7 +976,7 @@ export const content = {
             },
             event: {
                 title: 'Use our rooms for your event',
-                description: 'Would you like to organise an event and need some space? Here is place for more text',
+                description: 'Are you planning a creative workshop, meetup or public event on the digital city? Use our rooms in the former Tempelhof Airport.',
                 btn: 'Request now',
                 style: 'bright',
                 imgUrl: '/images/event-preview.jpg',
