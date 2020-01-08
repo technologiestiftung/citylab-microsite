@@ -26,6 +26,11 @@
                     {{ contentTeaser['btnSecond'] }}
                 </nuxt-link>
             </div>
+            <v-lazy-image
+                class="lazy-img"
+                :src="contentTeaser['imgUrl']"
+                :src-placeholder="contentTeaser['imgUrlLazy']"
+            />
             <img :src="contentTeaser['imgUrl']"/>
         </div>
 
@@ -62,6 +67,7 @@
     import VueTypedJs from 'vue-typed-js';
     import Vue from 'vue';
     import Button from './Button.vue'
+    import VLazyImage from "v-lazy-image";
 
     Vue.use(VueTypedJs);
     export default {
@@ -74,7 +80,8 @@
           id: String
         },
         components: {
-          Button
+          Button,
+          VLazyImage
         },
         name: 'Teaser',
         computed: {
@@ -109,6 +116,11 @@
                 margin-top: 11px;
             }
         }
+    }
+
+    .lazy-img {
+        width: 100% !important;
+        height: auto;
     }
 
     .cross-link--small {

@@ -13,7 +13,11 @@
 
                 <Button :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
             </div>
-            <img :src="contentTeaser['imgUrl']"/>
+            <v-lazy-image
+                class="lazy-img"
+                :src="contentTeaser['imgUrl']"
+                :src-placeholder="contentTeaser['imgUrlLazy']"
+            />
         </div>
 
         <div class="wrapper-mobile is-medium">
@@ -27,6 +31,7 @@
 </template>
 
 <script>
+    import VLazyImage from "v-lazy-image";
     import Button from './Button';
     export default {
         props: {
@@ -38,7 +43,8 @@
           id: String
         },
         components: {
-            Button
+            Button,
+            VLazyImage
         },
         name: 'Teaser',
         computed: {
@@ -65,6 +71,11 @@
     @import "../assets/style/style.scss";
     .section {
         padding: 3.5rem 0rem;
+    }
+
+    .lazy-img {
+        width: 100% !important;
+        height: auto;
     }
 
     .container {

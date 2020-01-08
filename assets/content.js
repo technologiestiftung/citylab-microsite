@@ -43,6 +43,7 @@ export const content = {
                 'title': 'Unsere Ausstellung',
                 'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
                 'imgUrl': '/images/exhibition-preview.jpg',
+                'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
                 'btn': 'Alle Exponate',
                 'direct': '/all_exhibits'
             },
@@ -50,6 +51,7 @@ export const content = {
             'subtitle': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
             'subtitleAbout': 'Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.',
             'imgUrl': '/images/exhibition-preview.jpg',
+            'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
             'link': 'Aktuelle Exponate',
             'pastExhibits': 'Vergangene Exponate',
             'since': 'Ausgestellt seit: ',
@@ -130,6 +132,7 @@ export const content = {
                 direct: '/collaborate',
                 directSecond: '/about_us',
                 'imgUrl': '/images/intro-preview.jpg',
+                'imgUrlLazy': '/images/intro-preview-lazy.jpg',
                 'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
             }
         },
@@ -415,6 +418,7 @@ export const content = {
                 btn: 'Jetzt bewerben',
                 'style': 'bright',
                 imgUrl: '/images/coworking-preview.jpg',
+                'imgUrlLazy': '/images/coworking-preview-lazy.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
                 faq: [
                     {
@@ -449,6 +453,7 @@ export const content = {
                 btn: 'Jetzt bewerben',
                 'style': 'bright',
                 imgUrl: '/images/project-preview.jpg',
+                imgUrlLazy: '/images/project-preview-lazy.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             },
             event: {
@@ -457,6 +462,7 @@ export const content = {
                 btn: 'Jetzt anfragen',
                 'style': 'bright',
                 imgUrl: '/images/event-preview.jpg',
+                imgUrlLazy: '/images/event-preview-lazy.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             }
         },
@@ -753,6 +759,7 @@ export const content = {
                 'title': 'Our exhibition',
                 'description': 'Experience the city of the future in interactive exhibits.',
                 'imgUrl': '/images/exhibition-preview.jpg',
+                'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
                 'btn': 'All exhibits',
                 'direct': '/all_exhibits_en'
             },
@@ -760,6 +767,7 @@ export const content = {
             'subtitle': 'Experience the city of the future in interactive exhibits.',
             'subtitleAbout': 'Experience the city of tomorrow today: In our exhibition we show insights into our current projects and other exciting exhibits from the CityLAB partner circle.</br></br>The exhibition can be visited free of charge from Wednesday to Saturday, 10am to 5pm. We are happy to offer guided tours on request.',
             'imgUrl': '/images/exhibition-preview.jpg',
+            'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
             'link': 'Current exhibits',
             'pastExhibits': 'Past exhibits',
             'since': 'Exhibited since: ',
@@ -817,6 +825,7 @@ export const content = {
                 direct: '/collaborate_en',
                 directSecond: '/about_us_en',
                 'imgUrl': '/images/intro-preview.jpg',
+                'imgUrlLazy': '/images/intro-preview-lazy.jpg',
                 'words_arr': ['sustainable', 'open', 'diverse', 'inclusive', 'digital']
             }
         },
@@ -934,10 +943,11 @@ export const content = {
             },
             coworking: {
                 title: 'Co-working Fellowship in the CityLAB',
-                description: 'Would you like to apply for a Co-WOrking place with us? Here is place for more text.',
+                description: 'CityLAB offers free co-working places for projects that are oriented towards the common good. Become part of our community and apply for a Co-Working Fellowship.',
                 btn: 'Apply now',
                 'style': 'bright',
                 imgUrl: '/images/coworking-preview.jpg',
+                imgUrlLazy: '/images/coworking-preview-lazy.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
                 faq: [
                     {
@@ -971,6 +981,7 @@ export const content = {
                 description: 'You have an idea for the sustainable, digital city of the future and would like to develop it further with us? Sign up and become part of the CityLAB network!',
                 btn: 'Apply now',
                 imgUrl: '/images/project-preview.jpg',
+                imgUrlLazy: '/images/project-preview-lazy.jpg',
                 style: 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             },
@@ -980,6 +991,7 @@ export const content = {
                 btn: 'Request now',
                 style: 'bright',
                 imgUrl: '/images/event-preview.jpg',
+                imgUrlLazy: '/images/event-preview-lazy.jpg',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
             }
         },
