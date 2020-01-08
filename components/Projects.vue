@@ -5,19 +5,23 @@
                 <h2 v-html="this.content[this.lang].projects.description" class="subtitle"></h2>
 
                 <div class="tile wrap team-wrapper">
-                        <div class="tile third" v-for="(project,i) in data" v-if="project.featured === 'TRUE'">
-                            <a :href="`./${directProject}/${project.dirname}`">
-                                <article>
-                                    <figure class="image is 1by1">
-                                        <img class="project-img" :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">
-                                    </figure>
-                                    <div class="wrapper-details">
-                                        <p class="name">{{ project.name }}</p>
-                                        <p class="title">{{ project.subline }}</p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
+                    <div class="tile third" v-for="(project,i) in data" v-if="project.featured === 'TRUE'">
+                        <a :href="`./${directProject}/${project.dirname}`">
+                            <article>
+                                <figure class="image is 1by1">
+                                    <v-lazy-image
+                                        class="lazy-img"
+                                        :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`"
+                                        :src-placeholder="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_lazy_tile.jpg`"
+                                    />
+                                </figure>
+                                <div class="wrapper-details">
+                                    <p class="name">{{ project.name }}</p>
+                                    <p class="title">{{ project.subline }}</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
                 </div>
 
                 <Button style="margin-bottom: 10px;" :label="lang ==  'de' ? 'Alle Projekte' : 'All projects'" :direct="lang ==  'de' ? '/all_projects' : '/all_projects_en'"/>
@@ -101,6 +105,11 @@
 <style lang="scss" scoped>
 
     @import "../assets/style/style.scss";
+
+    .lazy-img {
+        width: 100% !important;
+        height: auto;
+    }
 
     .wrap {
         flex-wrap: wrap;
