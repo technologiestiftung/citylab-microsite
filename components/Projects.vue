@@ -33,12 +33,14 @@
 <script>
     import axios from 'axios';
     import Button from './Button';
+    import VLazyImage from "v-lazy-image";
 
     export default {
         name: 'Projects',
         props: ['content', 'lang', 'direct'],
         components: {
-            Button
+            Button,
+            VLazyImage
         },
         computed: {
             teamArr() {
