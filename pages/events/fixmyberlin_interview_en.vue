@@ -93,7 +93,7 @@
   }
 
   .event-content p{
-    color: $color-tertiary;
+    color: $color-primary;
     font-size: $size-5;
     margin-bottom: 20px;
   }

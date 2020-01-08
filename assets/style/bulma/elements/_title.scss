@@ -7,7 +7,7 @@ $title-strong-weight: inherit !default;
 $title-sub-size: 0.75em !default;
 $title-sup-size: 0.75em !default;
 
-$subtitle-color: $grey-dark !default;
+$subtitle-color: $color-primary !default;
 $subtitle-size: $size-5 !default;
 $subtitle-weight: $weight-normal !default;
 $subtitle-line-height: 1.25 !default;
@@ -45,6 +45,10 @@ $subtitle-negative-margin: -1.25rem !default;
   font-weight: $title-weight;
   line-height: $title-line-height;
 
+  @media screen and (max-width: 768px) {
+    margin-bottom: .5rem;
+  }
+
   @include tablet {
     font-size: $size-2;
   }
@@ -74,9 +78,10 @@ $subtitle-negative-margin: -1.25rem !default;
 
 .subtitle {
   color: $subtitle-color;
-  font-size: $subtitle-size;
+
+  font-size: 20px;
   font-weight: $subtitle-weight;
-  line-height: $subtitle-line-height;
+  line-height: 140%;
 
   strong {
     color: $subtitle-strong-color;

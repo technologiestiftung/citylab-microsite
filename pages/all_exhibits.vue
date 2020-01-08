@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
 
         <section class="section is-medium schedule">
             <div class="container">
@@ -200,7 +200,7 @@
 
     .subtitle {
         font-size: 24px;
-        color: #393A60;
+        color: $color-primary;
     }
 
     figure {
@@ -478,7 +478,7 @@
             flex: 0 0 100% !important;
 
             @include mobile {
-                flex: 0 0 50% !important;
+                flex: 0 0 100% !important;
             }
 
             @include tablet {

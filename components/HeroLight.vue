@@ -62,7 +62,7 @@
             }
 
             h1.title{
-              font-weight:bold;
+              font-family: 'National ExtraBold';
             }
 
             h2.title {

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false"/>
+        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
 
         <section class="section is-medium schedule">
             <div class="container">
@@ -95,7 +95,7 @@
                         name: entry.gsx$projectname.$t,
                         publisher: entry.gsx$publisher.$t,
                         subline: entry.gsx$projectsubline.$t,
-                        dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
+                        dirname: entry.gsx$dirname.$t,
                         imgname: entry.gsx$dirname.$t,
                         defaultImg: entry.gsx$defaultimg.$t
                     }
@@ -169,6 +169,7 @@
     .name {
         line-height: 120%;
         color: $color-primary;
+        font-size: 1.5rem;
     }
 
     .title {
@@ -182,7 +183,7 @@
         flex-shrink: 1;
 
         .wrapper-details {
-            margin: 15px;
+            margin: 15px 20px 20px 15px;
             min-height: 60px;
 
             p.title {
@@ -200,7 +201,7 @@
             flex: 0 0 100% !important;
 
             @include mobile {
-                flex: 0 0 50% !important;
+                flex: 0 0 100% !important;
             }
 
             @include tablet {
@@ -208,7 +209,7 @@
             }
 
             @include desktop {
-                flex: 0 0 33% !important;
+                flex: 0 0 50% !important;
             }
         }
     }

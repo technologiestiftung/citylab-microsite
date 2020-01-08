@@ -191,6 +191,11 @@
   }
 }
 
+
+@mixin transition {
+  transition: all .125s ease-in-out;
+}
+
 // Placeholders
 
 @mixin unselectable {

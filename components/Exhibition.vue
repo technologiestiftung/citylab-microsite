@@ -48,7 +48,7 @@
                 const height = (elm.offsetWidth / 100) * 56.9;
                 elm.style.height = `${height}px`;
             },
-            
+
         },
         data() {
             return {
@@ -74,10 +74,6 @@
 <style lang="scss" scoped>
     .section.exhibition {
         padding: 3.5rem 0rem;
-
-        .wrapper {
-            
-        }
     }
 
     .container {
@@ -138,7 +134,7 @@
         }
     }
 
-    .cross-link {
+    .cross-link--small {
         padding-bottom: 10px;
         font-size: 24px;
         border-bottom: 1px solid;

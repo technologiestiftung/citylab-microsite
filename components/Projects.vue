@@ -1,27 +1,30 @@
 <template>
-        <section id="team" class="section team is-medium">
+        <section id="team" class="section projects is-medium">
             <div class="container">
                 <h2 class="title">{{this.content[this.lang].projects.title}}</h2>
+                <h2 v-html="this.content[this.lang].projects.description" class="subtitle"></h2>
 
                 <div class="tile wrap team-wrapper">
-                        <div v-if="i < 3" class="tile third" v-for="(project,i) in data">
-                            <a :href="`./${directProject}/${project.dirname}`">
-                                <article>
-                                    <figure class="image is 1by1">
-                                        <img class="project-img" :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">
-                                    </figure>
-                                    <div class="wrapper-details">
-                                        <p class="name">{{ project.name }}</p>
-                                        <p class="title">{{ project.subline }}</p>
-                                    </div>
-                                </article>
-                            </a>    
-                        </div>
+                    <div class="tile third" v-for="(project,i) in data" v-if="project.featured === 'TRUE'">
+                        <a :href="`./${directProject}/${project.dirname}`">
+                            <article>
+                                <figure class="image is 1by1">
+                                    <v-lazy-image
+                                        class="lazy-img"
+                                        :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`"
+                                        :src-placeholder="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_lazy_tile.jpg`"
+                                    />
+                                </figure>
+                                <div class="wrapper-details">
+                                    <p class="name">{{ project.name }}</p>
+                                    <p class="title">{{ project.subline }}</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
                 </div>
 
-                <nuxt-link style="margin-top: 30px;" class="button is-color-secondary  is-normal" :to="directAllProjects">
-                    {{ lang ==  'de' ? 'Alle Projekte' : 'All projects' }}
-                </nuxt-link>
+                <Button style="margin-bottom: 10px;" :label="lang ==  'de' ? 'Alle Projekte' : 'All projects'" :direct="lang ==  'de' ? '/all_projects' : '/all_projects_en'"/>
 
             </div>
         </section>
@@ -29,10 +32,16 @@
 
 <script>
     import axios from 'axios';
+    import Button from './Button';
+    import VLazyImage from "v-lazy-image";
 
     export default {
         name: 'Projects',
         props: ['content', 'lang', 'direct'],
+        components: {
+            Button,
+            VLazyImage
+        },
         computed: {
             teamArr() {
                 return this.content[this.lang]['team']['member']
@@ -76,16 +85,19 @@
                 this.entries = entries;
 
                 entries.forEach(entry => {
-                    let obj = {
-                        visible: entry.gsx$visible.$t,
-                        name: entry.gsx$projectname.$t,
-                        publisher: entry.gsx$publisher.$t,
-                        subline: entry.gsx$projectsubline.$t,
-                        dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
-                        imgname: entry.gsx$dirname.$t,
-                        defaultImg: entry.gsx$defaultimg.$t
+                    if (entry.gsx$visible.$t === 'TRUE') {
+                        let obj = {
+                            visible: entry.gsx$visible.$t,
+                            featured: entry.gsx$featured.$t,
+                            name: entry.gsx$projectname.$t,
+                            publisher: entry.gsx$publisher.$t,
+                            subline: entry.gsx$projectsubline.$t,
+                            dirname: entry.gsx$dirname.$t,
+                            imgname: entry.gsx$dirname.$t,
+                            defaultImg: entry.gsx$defaultimg.$t
+                        }
+                        this.data.push(obj);
                     }
-                    this.data.push(obj);
                 })
             })
         }
@@ -96,6 +108,11 @@
 
     @import "../assets/style/style.scss";
 
+    .lazy-img {
+        width: 100% !important;
+        height: auto;
+    }
+
     .wrap {
         flex-wrap: wrap;
     }
@@ -105,14 +122,26 @@
     }
 
     a > article {
-        background: $color-primary--lightest;
+        background: white;
         overflow: auto;
         transition: all .25s ease-in-out;
 
         &:hover {
-            background: $color-primary--light;
+            background: $color-primary--hover;
             transition: all .25s ease-in-out;
         }
+    }
+
+    .projects {
+        background: $color-primary;
+    }
+
+    h2.title {
+        color: white !important;
+    }
+
+    h2.subtitle {
+        color: white;
     }
 
     .team-wrapper {
@@ -126,7 +155,7 @@
         margin-top: 20px;
 
         a {
-            color: white;
+            color: $color-primary;
             opacity: .5;
         }
 
@@ -143,14 +172,20 @@
         }
 
         span.summary-text {
-            color: white;
+            color: $color-primary;
             opacity: .5;
             font-size: 16px;
         }
     }
 
-    .name {
-        line-height: 120%;
+    p.name {
+        font-size: 1.5rem;
+        color: $color-primary;
+    }
+
+    p.title {
+        color: $color-primary--medium;
+        font-size: 1rem;
     }
 
     .tile {
@@ -160,25 +195,27 @@
         flex-shrink: 1;
 
         .wrapper-details {
-            margin: 15px;
+            margin: 15px 20px 20px 15px;
             min-height: 60px;
 
-            p.title {
+            h2.title {
                 margin-bottom: 0px;
-                color: rgba(47, 47, 162, 0.5);
+                color: white !important;
                 font-weight: normal;
-                font-size: 1rem;
                 margin-bottom: 0px !important;
+            }
+
+            h2.subtitle {
+                color: white;
             }
         }
 
         &.third {
-
             padding: 10px;
             flex: 0 0 100% !important;
 
             @include mobile {
-                flex: 0 0 50% !important;
+                flex: 0 0 100% !important;
             }
 
             @include tablet {
@@ -186,7 +223,7 @@
             }
 
             @include desktop {
-                flex: 0 0 33% !important;
+                flex: 0 0 50% !important;
             }
         }
     }
