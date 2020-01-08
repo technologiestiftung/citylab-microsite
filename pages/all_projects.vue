@@ -9,9 +9,13 @@
                 <div class="tile wrap team-wrapper">
                         <div class="tile third" v-for="project in data" v-if="project.visible == 'TRUE'">
                             <a :href="`/${directProject}/${project.dirname}`">
-                                <article>
+                                <article class="project-wrapper">
                                     <figure class="image is 1by1">
-                                        <img class="project-img" :src="`https://www.citylab-berlin.org/images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`">
+                                        <v-lazy-image
+                                            class="lazy-img"
+                                            :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`"
+                                            :src-placeholder="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_lazy_tile.jpg`"
+                                        />
                                     </figure>
                                     <div class="wrapper-details">
                                         <p class="name">{{ project.name }}</p>
@@ -38,12 +42,14 @@
     import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 	import Matomo from '../components/Matomo.vue';
+    import VLazyImage from "v-lazy-image";
 
     export default {
         components: {
 			Navigation,
 			Footer,
-			Matomo
+			Matomo,
+            VLazyImage
         },
         computed: {
             teamArr() {
@@ -84,7 +90,7 @@
 			}
         },
         created() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json`)
+            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json`)
             .then((res) => {
                 let entries = res.data.feed.entry;
                 this.entries = entries;
@@ -117,6 +123,11 @@
         flex-wrap: wrap;
     }
 
+    .lazy-img {
+        width: 100% !important;
+        height: auto;
+    }
+
     figure {
         position: relative;
     }
@@ -135,6 +146,10 @@
     .team-wrapper {
         display: flex !important;
         transform: translateX(-10px);
+    }
+
+    .project-wrapper {
+        width: 100%;
     }
 
     .content-block {
@@ -185,6 +200,7 @@
         .wrapper-details {
             margin: 15px 20px 20px 15px;
             min-height: 60px;
+            overflow: auto;
 
             p.title {
                 margin-bottom: 0px;
@@ -199,6 +215,7 @@
 
             padding: 10px;
             flex: 0 0 100% !important;
+            flex-wrap: wrap;
 
             @include mobile {
                 flex: 0 0 100% !important;

@@ -147,6 +147,7 @@
     .team-wrapper {
         display: flex !important;
         transform: translateX(-10px);
+        align-items: stretch;
     }
 
     .content-block {

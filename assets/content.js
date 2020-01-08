@@ -115,6 +115,10 @@ export const content = {
                 'ref': '/all_events'
             },
             {
+                'name': 'Projekte',
+                'ref': '/all_projects'
+            },
+            {
                 'name': 'Newsletter',
                 'ref': '/newsletter_register_de'
             },
@@ -519,7 +523,7 @@ export const content = {
                 {
                     'name': 'Joshua Pacheco',
                     'mail': 'pacheco@technologiestiftung-berlin.de',
-                    'twitter': '',
+                    'twitter': 'joshuapachecos',
                     'img_url': '/images/joshua_portrait.jpg',
                     'title': 'Service Design'
                 },
@@ -861,6 +865,10 @@ export const content = {
             {
                 'name': 'Events',
                 'ref': '/all_events_en'
+            },
+            {
+                'name': 'Projects',
+                'ref': '/all_projects_en'
             },
             {
                 'name': 'Newsletter',
@@ -1242,7 +1250,7 @@ export const content = {
                 {
                     'name': 'Joshua Pacheco',
                     'mail': 'pacheco@technologiestiftung-berlin.de',
-                    'twitter': '',
+                    'twitter': 'joshuapachecos',
                     'img_url': '/images/joshua_portrait.jpg',
                     'title': 'Service Design'
                 },

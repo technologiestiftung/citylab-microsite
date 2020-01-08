@@ -35,10 +35,7 @@
                 </div>
 
                 <div class="logo-wrapper">
-                    <a :href="logo[1]" v-for="logo in logos">
-                        <img class="logo" v-if="logo[0] != 'FALSE'" :src="logo[0]"/>
-                        <span v-if="logo[0] == 'FALSE'" target="_blank" class="button is-color-secondary is-normal">Link</span>
-                    </a>
+                    <a :href="link" v-if="link.length > 0" target="_blank" class="button is-color-secondary is-normal">{{lang == 'en' ? 'To the project' : 'Zum Projekt'}}</a>
                 </div>
 
             </div>
@@ -107,6 +104,9 @@
                     return path;
                 }
             },
+            link() {
+                if (this.data != null) { return this.data.gsx$link.$t } else { return '' }
+            },
             title() {
                 if (this.data != null) { return this.data.gsx$projectname.$t } else { return }
             },
@@ -146,30 +146,6 @@
             contentBlockFour() {
                 if (this.data != null) { return this.data.gsx$contentblockfour.$t } else { return }
             },
-            logos() {
-                if (this.data != null) {
-                    let arr = []; 
-                    const urls = this.data.gsx$link.$t.split(',');
-
-                    for (let index = 0; index < urls.length; index++) {
-                        let filename
-                        if (this.data.gsx$logo.$t == 'TRUE') {
-                            filename = `https://www.citylab-berlin.org/images/projects/${this.data.gsx$dirname.$t}_logo_${index + 1}.jpg`;
-                        } else {
-                            filename = 'FALSE'
-                        }
-                        const url = urls[index];
-                        arr.push([filename, url]);
-                    }
-
-                    if (urls.length > 0) {
-                        return arr;
-                    } else {
-                        return 
-                    }
-
-                } else { return }
-            }
         },
         methods: {
             getLength(data) {
