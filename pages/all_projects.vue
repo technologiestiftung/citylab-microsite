@@ -13,8 +13,8 @@
                                     <figure class="image is 1by1">
                                         <v-lazy-image
                                             class="lazy-img"
-                                            :src="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`"
-                                            :src-placeholder="`images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_lazy_tile.jpg`"
+                                            :src="`https://citylab-berlin.org/images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_tile.jpg`"
+                                            :src-placeholder="`https://citylab-berlin.org/images/projects/${project.defaultImg == 'TRUE' ? `default` : project.imgname}_lazy_tile.jpg`"
                                         />
                                     </figure>
                                     <div class="wrapper-details">
