@@ -81,7 +81,7 @@ export const content = {
         },
         'funding_details': {
           'title': 'Projektförderung im CityLAB',
-          'subtitle': 'Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
+          'subtitle': '<b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben</b> <br /> Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
           'who_q': 'Welche Projekte sind förderfähig?',
           'who_a': 'Grundlage für unser Förderprogramm ist eine Förderlinie der Berliner Senatskanzlei. Sie sieht eine Fördermöglichkeit von Projekten vor, die "einen Beitrag zu den Themenfeldern digitale Verwaltung, soziale Innovation und/oder Smart Cities sowie technischen Lösungen zur Verbesserung des Bürgerengagements und -beteiligung leisten.“ Projekte sollten ein klares Ziel verfolgen, das im vorgesehenen Zeitraum realistisch umsetzbar ist. <a href="/docs/foerderrichtlinie_citylab.pdf">Die gesamte Förderlinie mit allen Kriterien findest Du hier</a>.',
           'how_much_q': 'Wie hoch ist die maximale Fördersumme pro Projekt?',
@@ -280,7 +280,7 @@ export const content = {
         },
         'topics': [
             {
-                'title': 'Mobilität <br/> von morgen',
+                'title': 'Mobilität <br/> der Zukunft',
                 'text': 'Von Fahrrad bis Flugtaxi, von Hyperloop bis Home Office – Städte sind Experimentierfelder für mobiles Leben. Wie gestalten wir den Verkehr der Zukunft?',
                 'img_url': '/images/topic_01_blue.jpg'
             },
@@ -385,7 +385,7 @@ export const content = {
             },
             funding: {
                 title: 'Projektförderung im CityLAB',
-                description: 'Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
+                description: '<b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben.</b> <br /> <br /> Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
                 btn: 'Jetzt bewerben',
                 'style': 'bright',
                 direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
