@@ -35,8 +35,15 @@ export const content = {
                 title: 'schule*OUT-SIDE-IN',
                 link: 'https://citylab-berlin.org/events/schule-outsidein',
                 visible: true,
+            },
+            {
+                date: '2020-02-12',
+                format: 'Vernissage',
+                time: '18.00 - 21.00',
+                title: 'Entity:City',
+                link: 'https://citylab-berlin.org/events/entitycity',
+                visible: true,
             }
-
         ],
         'exhibition': {
             teaser: {
@@ -755,6 +762,14 @@ export const content = {
                 time: '10.00 - 17.00',
                 title: 'schule*OUT-SIDE-IN',
                 link: 'https://citylab-berlin.org/events/schule-outsidein_en',
+                visible: true,
+            },
+            {
+                date: '2020-02-12',
+                format: 'Vernissage',
+                time: '18.00 - 21.00',
+                title: 'Entity:City',
+                link: 'https://citylab-berlin.org/events/entitycity_en',
                 visible: true,
             }
         ],
