@@ -87,7 +87,7 @@
         },
     head () {
       return {
-        title: 'school*OUT-SIDE-IN - ',
+        title: 'Entity:City - ',
         meta: [
           { hid: 'description', name: 'description', content: 'Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
