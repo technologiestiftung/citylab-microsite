@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/entitycity_hero.jpg'" :title="'Entity City'" :subTitle="'Ausstellungseröffnung: Studienprojekt'" :subSubTitle="'12-15.02.2020 CityLAB Berlin Ausstellungsraum'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/entitycity_hero.jpg'" :title="'Entity:City'" :subTitle="'Ausstellungseröffnung: Studienprojekt'" :subSubTitle="'12.02.2020, 18.00 Uhr, CityLAB Berlin Ausstellungsraum'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -18,7 +18,7 @@
         (<a href="https://interaktion-produktdesign-khb.de">Embodied Interactions</a>, khb) und der Lehrbeauftragten <a href="https://kh-berlin.de/personen/show/judith-glaser-2091.html">Judith Glaser</a> (MA Design) statt
         und ist Teil des Excellenzclusters <a href="https://www.matters-of-activity.de/en/">"Matters of Activity. Image Space Material"</a> der Humboldt-Universität zu Berlin.</p>
         
-        <p>Die Ausstellung ist bis zum 15.2. im CityLAB zu besuchen.</p><br />
+        <p>Die Ausstellung ist bis zum 15.2. im CityLAB Berlin zu besuchen.</p><br />
 
 
         <img src="https://citylab-berlin.org/images/events/entitycity_logo.jpg" alt="Organisatoren" />
@@ -35,7 +35,7 @@
               <span class="summary-text">Weißensee Kunsthochschule Berlin</span>
             </div>
             <div class="content-block">
-              <h5>Datum</h5>
+              <h5>Dauer</h5>
               <span class="summary-text">12-15.02.2020</span>
             </div>
            <div class="content-block">

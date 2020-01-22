@@ -1,52 +1,48 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/schule-outsidein_hero.jpg'" :title="'school*OUT-SIDE-IN'" :subTitle="'Student design proposals for the new berlin school'" :subSubTitle="'18-29.11.2019 CityLAB Berlin Foyer'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/entitycity_hero.jpg'" :title="'Entity:City'" :subTitle="'Exhibition opening: Student projects'" :subSubTitle="'12.02.2020, 6 pm,  CityLAB Berlin Exhibition space'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
-        <p class="event-intro">Berlin is in urgent need for new schools, the sooner the better. 
-          The available spaces can no longer meet the demand. 
-          The Berlin "Schulbauoffensive" (School Building Offensive) is planning to build more than 60 schools by 2026. 
-          This situation offers the chance to develop and test new pedagogical concepts and the all-day use of the classrooms spatially. 
-          How will the typology of the school change in this process?</p>
-
+        <p class="event-intro">During the winter term 2019/20, the interdisciplinary teams of design (<a href="https://kh-berlin.de">Weissensee School of Art and Design</a>) 
+        and <a href="https://www.mi.fu-berlin.de/en/inf/index.html">computer science</a> (<a href="https://www.fu-berlin.de/en/index.html">Freie Universität Berlin</a>) students researched current challenges in Berlin's urban space like mobility, 
+        culture identity or to road safety and everyday stressors. Data from residents and urban systems served as the basis for the development of neo-analog products. 
+        These products return actions into the tangible and physical urban space, to improve or create new forms of participation and interaction.</p>
 
         <h3 class="title"></h3>
-        <p>
-          Big building lots for new schools in Berlin are hard to find, so that new ideas on how to cope with the increasing scarcity of available space are required. 
-          How can new concepts for school buildings contribute to urban density and a social and functional diversity in the city?</p>
+        <p>The semester project was supervised under the direction of <a href="https://www.mi.fu-berlin.de/en/inf/groups/hcc/members/professor/mueller-birn.html">Prof. Dr. Claudia Müller-Birn</a> 
+        (<a href="https://www.mi.fu-berlin.de/en/inf/groups/hcc/">Human-Centered Computing</a>, FU Berlin), <a href="https://kh-berlin.de/personen/show/thomas-ness-4374.html">Prof. Thomas Ness</a> 
+        (<a href="https://interaktion-produktdesign-khb.de">Embodied Interactions</a>, khb) and lecturer  <a href="https://kh-berlin.de/personen/show/judith-glaser-2091.html">Judith Glaser</a> (MA Design)
+        and is part of <a href="https://www.matters-of-activity.de/en/">"Matters of Activity. Image Space Material"</a> Cluster of Excellence Humboldt-Universität zu Berlin.</p>
 
         <h3 class="title"></h3>
-        <p>Using this initiative and the occurring questions as a starting point, architecture students of BTU Cottbus-Senftenberg developed a concept 
-          and presented a design proposal for a school building on a building lot in the inner city of Berlin. 
-          The school, intended as part of a city block, is combined with other uses and opens "OUT-SIDE-IN" to the neighborhood and city. 
-          The CityLAB Berlin presents the results of the design seminar.</p><br />
+        <p>The exhibition will be on display until February 15th.</p><br />
 
-        <img src="https://citylab-berlin.org/images/events/schule-outsidein-organiser-logo.jpg" alt="Organisatoren" />
+        <img src="https://citylab-berlin.org/images/events/entitycity_organiser_logo.jpg" alt="Organisatoren" />
 
         <div class="summary-wrapper is-medium">
           <h4>More information</h4>
           <div class="flex-container">
             <div class="content-block">
               <h5>Opening</h5>
-              <span class="summary-text">18.11.2019, 6 pm</span>
+              <span class="summary-text">12.02.2020, 6 pm</span>
             </div>
             <div class="content-block">
               <h5>Organizer</h5>
-              <span class="summary-text">BTU Cottbus - Senftenberg</span>
+              <span class="summary-text">Weissensee School of Art and Design</span>
             </div>
             <div class="content-block">
               <h5>Date</h5>
-              <span class="summary-text">18-30.11.2019</span>
+              <span class="summary-text">12-15.02.2020</span>
             </div>
            <div class="content-block">
               <h5>Opening times</h5>
-              <span class="summary-text">Wed-Sat 10am-5pm</span>
+              <span class="summary-text">Th-Sat 10am-5pm</span>
             </div>
             <div class="content-block">
               <h5>E-Mail</h5>
-              <a href="mailto:wulfa@b-tu.de" class="summary-text">wulfa@b-tu.de</a>
+              <a href="mailto:wiesener@kh-berlin.de" class="summary-text">wiesener@kh-berlin.de</a>
             </div>
             <div class="content-block">
               <h5>Adress</h5>
@@ -93,22 +89,22 @@
       return {
         title: 'school*OUT-SIDE-IN - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
-          { hid: 'og:title', property: 'og:title',  content: "school*OUT-SIDE-IN"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/schule_outsidein_social_media.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)"},
+          { hid: 'og:title', property: 'og:title',  content: "Entity:City"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/entitycity_social_media.jpg"},
+          { hid: 'og:description', property: 'og:description',  content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
-          { hid: 'article:author', property: 'article:author',  content: "BTU Cottbus-Senftenberg"},
+          { hid: 'article:author', property: 'article:author',  content: "Weißensee Kunsthochschule Berlin"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
-          { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/schule-outsidein_en"},
-          { hid: 'twitter:title', name: 'twitter:title', content: "school*OUT-SIDE-IN"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/schule_outsidein_social_media.jpg"},
-          { hid: 'name', itemprop: 'name', content:"Summer School 2019 - Data-driven Urban Innovation"},
-          { hid: 'description', itemprop: 'description', content: "school*OUT-SIDE-IN (2019-11-18 to 2019-11-29 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/schule_outsidein_social_media.jpg"},
+          { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/entitycity_en"},
+          { hid: 'twitter:title', name: 'twitter:title', content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)"},
+          { hid: 'twitter:description', name: 'twitter:description', content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin))"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/entitycity_social_media.jpg"},
+          { hid: 'name', itemprop: 'name', content:"Entity:City"},
+          { hid: 'description', itemprop: 'description', content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/entitycity_social_media.jpg"},
         ]
       }
     },
