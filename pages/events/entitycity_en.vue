@@ -80,7 +80,7 @@
       return {
         lang: 'en',
         content: content,
-        direct: '/events/schule-outsidein'
+        direct: '/events/entitycity'
       }
     },
     computed: {
