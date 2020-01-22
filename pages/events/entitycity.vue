@@ -83,7 +83,7 @@
       return {
         lang: 'de',
         content: content,
-        direct: '/events/schule-outsidein_en'
+        direct: '/events/entitycity_en'
       }
     },
     computed: {
