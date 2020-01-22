@@ -19,7 +19,7 @@
         <h3 class="title"></h3>
         <p>The exhibition will be on display until February 15th.</p><br />
 
-        <img src="https://citylab-berlin.org/images/events/entitycity_organiser_logo.jpg" alt="Organisatoren" />
+        <img src="https://citylab-berlin.org/images/events/entitycity_logo.jpg" alt="Organisatoren" />
 
         <div class="summary-wrapper is-medium">
           <h4>More information</h4>
