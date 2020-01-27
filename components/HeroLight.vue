@@ -66,6 +66,7 @@
             }
 
             h2.title {
+              font-size: 2rem !important;
               padding-bottom:40px;
             }
             
