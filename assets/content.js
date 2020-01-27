@@ -43,7 +43,16 @@ export const content = {
                 title: 'Entity:City',
                 link: 'https://citylab-berlin.org/events/entitycity',
                 visible: true,
+            },
+            {
+                date: '2020-03-03',
+                format: 'Workshop',
+                time: '17.00 - 21.00',
+                title: 'AI for Berlin Vol. II',
+                link: 'https://citylab-berlin.org/events/AIforberlin2',
+                visible: true,
             }
+
         ],
         'exhibition': {
             teaser: {
@@ -770,6 +779,14 @@ export const content = {
                 time: '18.00 - 21.00',
                 title: 'Entity:City',
                 link: 'https://citylab-berlin.org/events/entitycity_en',
+                visible: true,
+            },
+            {
+                date: '2020-03-03',
+                format: 'Workshop',
+                time: '17.00 - 21.00',
+                title: 'AI for Berlin Vol. II',
+                link: 'https://citylab-berlin.org/events/AIforberlin2_en',
                 visible: true,
             }
         ],
