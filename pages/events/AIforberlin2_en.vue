@@ -116,7 +116,8 @@
           { hid: 'name', itemprop: 'name', content:"AI for Berlin"},
           { hid: 'description', itemprop: 'description', content: "AI for Berlin (2020-03-03 - CityLAB Berlin)"},
           { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
-      ]
+        ]
+      }
     },
     }
 </script>
