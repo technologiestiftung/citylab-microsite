@@ -43,7 +43,16 @@ export const content = {
                 title: 'Entity:City',
                 link: 'https://citylab-berlin.org/events/entitycity',
                 visible: true,
+            },
+            {
+                date: '2020-03-03',
+                format: 'Workshop',
+                time: '17.00 - 21.00',
+                title: 'AI for Berlin Vol. II',
+                link: 'https://citylab-berlin.org/events/AIforberlin2',
+                visible: true,
             }
+
         ],
         'exhibition': {
             teaser: {
@@ -366,7 +375,7 @@ export const content = {
         'call': {
             'title': 'Open Call',
             'opencall': 'Du hast Ideen für eine bessere Stadt? Mach mit im CityLAB!',
-            'form_url': 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+            'form_url': 'https://www.citylab-berlin.org/collaborate/',
             'cta': 'Jetzt bewerben',
             'projects': [
                 {
@@ -430,7 +439,7 @@ export const content = {
                 'style': 'bright',
                 imgUrl: '/images/coworking-preview.jpg',
                 'imgUrlLazy': '/images/coworking-preview-lazy.jpg',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                direct: 'https://citylabberlin.typeform.com/to/KFmKPv',
                 faq: [
                     {
                         title: 'Wofür kann ich den Co-Working-Space nutzen?',
@@ -465,7 +474,7 @@ export const content = {
                 'style': 'bright',
                 imgUrl: '/images/project-preview.jpg',
                 imgUrlLazy: '/images/project-preview-lazy.jpg',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+                direct: 'https://citylabberlin.typeform.com/to/HXfIRU'
             },
             event: {
                 title: 'Nutze unsere Räume für deine Veranstaltung',
@@ -474,7 +483,7 @@ export const content = {
                 'style': 'bright',
                 imgUrl: '/images/event-preview.jpg',
                 imgUrlLazy: '/images/event-preview-lazy.jpg',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+                direct: 'https://citylabberlin.typeform.com/to/tWzR7a'
             }
         },
         projects: {
@@ -771,6 +780,14 @@ export const content = {
                 title: 'Entity:City',
                 link: 'https://citylab-berlin.org/events/entitycity_en',
                 visible: true,
+            },
+            {
+                date: '2020-03-03',
+                format: 'Workshop',
+                time: '17.00 - 21.00',
+                title: 'AI for Berlin Vol. II',
+                link: 'https://citylab-berlin.org/events/AIforberlin2_en',
+                visible: true,
             }
         ],
         'exhibition': {
@@ -971,7 +988,7 @@ export const content = {
                 'style': 'bright',
                 imgUrl: '/images/coworking-preview.jpg',
                 imgUrlLazy: '/images/coworking-preview-lazy.jpg',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                direct: 'https://citylabberlin.typeform.com/to/AIB71L',
                 faq: [
                     {
                         title: 'What kinds of projects do we support?',
@@ -1006,7 +1023,7 @@ export const content = {
                 imgUrl: '/images/project-preview.jpg',
                 imgUrlLazy: '/images/project-preview-lazy.jpg',
                 style: 'bright',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+                direct: 'https://citylabberlin.typeform.com/to/Rf5qpB'
             },
             event: {
                 title: 'Use our rooms for your event',
@@ -1015,7 +1032,7 @@ export const content = {
                 style: 'bright',
                 imgUrl: '/images/event-preview.jpg',
                 imgUrlLazy: '/images/event-preview-lazy.jpg',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform'
+                direct: 'https://citylabberlin.typeform.com/to/OdvSTI'
             }
         },
         'topics': [
