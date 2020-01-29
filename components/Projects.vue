@@ -6,7 +6,7 @@
 
                 <div class="tile wrap team-wrapper">
                     <div class="tile third" v-for="(project,i) in data" v-if="project.featured === 'TRUE'">
-                        <a :href="`./${directProject}/${project.dirname}`">
+                        <a :href="`/${directProject}/${project.dirname}`">
                             <article>
                                 <figure class="image is 1by1">
                                     <v-lazy-image
