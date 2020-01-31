@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
+        <Navigation :lang="lang" :languageVisible="false" :content="content" :direct="direct" :anchorTags="true"/>
         <HeroLight 
             :image="heroImageUrl" 
             :title="title" 
