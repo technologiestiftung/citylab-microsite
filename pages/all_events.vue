@@ -2,19 +2,23 @@
     <div>
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>   
         <section class="section is-medium schedule">
-            <div class="container">
-                <h1 style="margin-top: 100px" class="title">{{content[this.lang]['events']['upcomingEventsTitle']}}</h1>
+            <div class="container" style="margin-top: 100px" >
+                <span id="btn-2019" class="year-btn" @click="setYear(2019)">2019</span>
+                <span id="btn-2020" class="year-btn active" @click="setYear(2020)">2020</span>
+            </div>
+            <div v-if="dataUpcoming.length > 0" class="container" style="margin-bottom: 100px" >
+                <h1 class="title">{{content[this.lang]['events']['upcomingEventsTitle']}}</h1>
 
                 <div class="schedule-wrapper">
-                    <a class="event-tile" v-if="entry.visible != 'FALSE' && dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in dataUpcoming">
+                    <a class="event-tile" :href="entry['link']" v-for="entry in dataUpcoming">
                         <article class="dates-item" style="width: 100%;">
                             <div class="date-wrapper">
                                 <span class="date-month"> {{ entry.month }} </span>
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                      
-                                <span class="date-time"> {{ entry.time }} </span>                        
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
+                                <span class="date-time"> {{ entry.time }} </span>
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
@@ -28,19 +32,19 @@
 
             </div>
 
-            <div class="container">
-                <h1 style="margin-top: 100px" class="title">{{content[this.lang]['events']['pastEventsTitle']}}</h1>
+            <div v-if="dataPast" class="container">
+                <h1 class="title">{{content[this.lang]['events']['pastEventsTitle']}}</h1>
 
                 <div class="schedule-wrapper">
-                    <a class="event-tile" v-if="entry.visible != 'FALSE' && !dateIsUpcoming(entry.date)" :href="entry['link']" v-for="entry in dataPast">
+                    <a class="event-tile" :href="entry['link']" v-for="entry in dataPast">
                         <article class="dates-item" style="width: 100%;">
                             <div class="date-wrapper">
                                 <span class="date-month"> {{ entry.month }} </span>
                                 <span class="date-day"> {{ entry.day }} </span>
                             </div>
 
-                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">                        
-                                <span class="date-time"> {{ entry.time }} </span>                        
+                            <div style="margin-right: 0px; width: 240px;" class="date-wrapper">
+                                <span class="date-time"> {{ entry.time }} </span>
                             </div>
 
                             <h2 class="subtitle">{{ entry.title }}</h2>
@@ -51,8 +55,9 @@
                         </article>
                     </a>
                 </div>
-
             </div>
+
+
         </section>
 		<Footer :lang="lang" :content="content"/>
 		<Matomo/>
@@ -68,7 +73,7 @@
     import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 	import Matomo from '../components/Matomo.vue';
-    
+
     export default {
         components: {
 			Navigation,
@@ -81,8 +86,9 @@
 				content: content,
                 direct: '/all_events_en',
                 data: [],
-                dataUpcoming: null,
-                dataPast: null,
+                dataUpcoming: [],
+                dataPast: [],
+                year: 2020,
                 otherEvents: content['de'].otherevents,
                 entries: null
 			}
@@ -91,6 +97,12 @@
             buttonText() {
                 return this.lang == 'en' ? 'More info' : 'Mehr Infos'
             },
+        },
+        watch: {
+            year() {
+                this.dataUpcoming = this.filterData(this.data, true);
+                this.dataPast = this.filterData(this.data, false);
+            }
         },
         mounted() {
             axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
@@ -127,14 +139,33 @@
                     this.data.push(obj);
                 })
 
-                this.dataUpcoming = this.data;
-                this.dataUpcoming.sort((a,b) => { return new Date(a.date) - new Date(b.date) });
-                
-                this.dataPast = JSON.parse(JSON.stringify(this.data));
-                this.dataPast.sort((a,b) => { return new Date(b.date) - new Date(a.date) });
-            })      
-        }, 
+                this.data = this.data.sort((a,b) => { return new Date(b.date) - new Date(a.date) });
+
+                this.dataUpcoming = this.filterData(this.data, true);
+                this.dataPast = this.filterData(this.data, false);
+            })
+        },
         methods: {
+            filterData(d, isUpcoming) {
+                return d.filter(entry => (
+                    entry.visible !== 'FALSE' &&
+                    (isUpcoming ? this.dateIsUpcoming(entry.date) : !this.dateIsUpcoming(entry.date)) &&
+                    this.getYear(entry.date, this.year)
+                ))
+            },
+            setYear(y) {
+                this.year = y;
+                const btns = document.querySelectorAll(`.year-btn`);
+                btns.forEach(btn => {
+                    btn.classList.remove('active');
+                })
+                document.getElementById(`btn-${y}`).classList.add('active');
+            },
+            getYear(date, year) {
+                const eventDate = new Date(date);
+                const eventYear = eventDate.getYear();
+                return (eventYear + 1900) == year;
+            },
             dateIsUpcoming(date) {
                 const today = new Date();
                 const eventDate = new Date(date);
@@ -185,6 +216,19 @@
                 .dates-item {
                     background: $color-primary--lightest;
                 }
+            }
+        }
+
+        .year-btn {
+            color: $color-primary;
+            margin-right: 10px;
+            transition: $time-s ease transform;
+            opacity: .5;
+            cursor: pointer;
+
+            &.active {
+                opacity: 1;
+                transition: $time-s ease transform;
             }
         }
 

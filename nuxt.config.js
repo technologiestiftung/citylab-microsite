@@ -127,6 +127,7 @@ export default {
   build: {
     analyze: false,
     extractCSS: true,
+    ignoreOrder: true,
     html: {
       minify: {
         collapseBooleanAttributes: true,
