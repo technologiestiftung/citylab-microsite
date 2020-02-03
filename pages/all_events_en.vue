@@ -141,7 +141,7 @@
 
                 this.data = this.data.sort((a,b) => { return new Date(b.date) - new Date(a.date) });
 
-                this.dataUpcoming = this.filterData(this.data, true);
+                this.dataUpcoming = this.filterData(this.data.sort((a,b) => (new Date(a.date) - new Date(b.date))), true);
                 this.dataPast = this.filterData(this.data, false);
             })      
         }, 
