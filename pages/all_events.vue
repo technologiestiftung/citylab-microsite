@@ -102,8 +102,6 @@
             year() {
                 this.dataUpcoming = this.filterData(this.data, true);
                 this.dataPast = this.filterData(this.data, false);
-
-                console.log(this.dataUpcoming, 'waaaatch')
             }
         },
         mounted() {
