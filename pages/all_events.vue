@@ -168,6 +168,7 @@
             },
             dateIsUpcoming(date) {
                 const today = new Date();
+                today.setDate(today.getDate() - 1);
                 const eventDate = new Date(date);
 
                 const upcoming = today.getTime() <= eventDate.getTime();
