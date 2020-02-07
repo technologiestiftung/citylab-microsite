@@ -120,7 +120,7 @@
       TZID:Europe/Berlin\n
       DTSTART:${this.(12.02.2020, 18.00)}\n
       DTEND:${this.(12.02.2020, 21.00)}\n
-      SUMMARY:${this.(Entity:City Ausstellungseröffnung)}\n
+      SUMMARY:${this.(Entity-City Ausstellungseröffnung)}\n
       URL;VALUE=URI:https://www.citylab-berlin.org/\n
       TRANSP:OPAQUE\n
       BEGIN:VALARM\n
