@@ -1,50 +1,49 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/entitycity_hero.jpg'" :title="'Entity:City'" :subTitle="'Ausstellungseröffnung: Studienprojekt'" :subSubTitle="'12.02.2020, 18.00 Uhr, CityLAB Berlin Ausstellungsraum'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'AI for Berlin Vol. II'" :subTitle="'Workshopreihe zu KI & Stadt'" :subSubTitle="'03.03.2020, 17-21 Uhr, CityLAB Berlin Veranstaltungsraum'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
-        <p class="event-intro">Am 12.2. findet im Rahmen einer Zusammenarbeit von CityLAB mit Produktdesign- und Informatikstudierenden der <a href="https://kh-berlin.de">Weißensee Kunsthochschule Berlin</a> 
-          und der <a href="https://www.fu-berlin.de">Freien Universität Berlin</a> die Präsentation der Arbeiten unter dem Thema „Entity:City“ statt.</p>
+        <p class="event-intro">Alle reden von KI. Zu Recht. Denn das Potenzial ist enorm. 
+          In der Wirtschaft gibt es hierfür immer mehr Beispiele - KI fährt Autos autonom, spricht wie ein Mensch, 
+          gewinnt gegen die weltbesten Poker-, Schach- und Go-Spieler und findet Krebszellen schneller als Ärzte.</p>
 
-        <p>Während des Wintersemesters 2019/20 haben die interdisziplinären Teams aktuelle Herausforderungen des Berliner Stadtraums und seiner Bewohner*innen erforscht und dazu neoanaloge Produkte entwickelt und erprobt. 
-          Ausgehend von Daten, die die Akteur*innen und Systeme in Berlin erzeugen und hinterlassen, werden diese wieder in den physischen Raum zurückgeführt, 
-          wodurch sich neue Formen der Partizipation und Interaktion ergeben.</p>
+        <p>Aber wo ist die KI für unsere Stadt? Wo ist Berlins KI, die uns im Alltag hilft, für mehr Nachhaltigkeit sorgt, das Stadtklima verbessert, 
+          unsere Bäume bewässert, Verkehr optimiert, Feinstaub reduziert… Lasst sie uns suchen und gemeinsam entwickeln!</p>
 
         <h3 class="title"></h3>
-        <p>Das Studienprojekt fand unter der Leitung von <a href="https://www.mi.fu-berlin.de/en/inf/groups/hcc/members/professor/mueller-birn.html">Prof. Dr. Claudia Müller-Birn</a> 
-        (<a href="https://www.mi.fu-berlin.de/en/inf/groups/hcc/">Human-Centered Computing</a>, FU Berlin), <a href="https://kh-berlin.de/personen/show/thomas-ness-4374.html">Prof. Thomas Ness</a> 
-        (<a href="https://interaktion-produktdesign-khb.de">Embodied Interactions</a>, khb) und der Lehrbeauftragten <a href="https://kh-berlin.de/personen/show/judith-glaser-2091.html">Judith Glaser</a> (MA Design) statt
-        und ist Teil des Excellenzclusters <a href="https://www.matters-of-activity.de/en/">"Matters of Activity. Image Space Material"</a> der Humboldt-Universität zu Berlin.</p>
-        
-        <p>Die Ausstellung ist bis zum 15.2. im CityLAB Berlin zu besuchen.</p><br />
+        <p>Mit der <b>zweiten Veranstaltung</b> unserer Workshopreihe „AI for Berlin” machen wir zusammen mit unserem Partner 
+          <a href= https://www.birdsonmars.com>Birds on Mars</a> 
+        und Euch am <b>3. März 2020</b> einen weiteren Schritt. 
+          Nach einer ersten Sammlung von großartigen Ideen in 2019, werden wir uns um weitere Schritte zur konkreten Umsetzung kümmern. 
+          Ziel ist es, die prototypische Umsetzung einzelner Ideen in interdisziplinären Teams vorzubereiten und damit umfangreichere und nachhaltige Implementierungsprojekte in der Stadt anzustoßen.</p>
+          
+        <p>Egal ob Du Python-begeistert bist, viel mit Daten arbeitest oder einfach als Enthusiast*in die Chance nutzen willst, 
+          deine menschliche Perspektive einzubringen - für diese Session brauchst Du vor allem Deine menschliche Intelligenz. 
+          Komm vorbei und mach mit bei der gemeinsamen Suche und Entwicklung von KI für Berlin!</p>
 
+        <p>Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
 
-        <img src="https://citylab-berlin.org/images/events/entitycity_logo.jpg" alt="Organisatoren" />
 
         <div class="summary-wrapper is-medium">
           <h4>Zusammenfassung</h4>
           <div class="flex-container">
             <div class="content-block">
-              <h5>Eröffnung</h5>
-              <span class="summary-text">12.02.2020, 18 Uhr</span>
+              <h5>Website</h5>
+              <span class="summary-text"><a href= https://www.birdsonmars.com>https://www.birdsonmars.com</a> </span>
             </div>
             <div class="content-block">
               <h5>Veranstalter</h5>
-              <span class="summary-text">Weißensee Kunsthochschule Berlin</span>
+              <span class="summary-text">CityLAB & Birds on Mars</span>
             </div>
             <div class="content-block">
-              <h5>Dauer</h5>
-              <span class="summary-text">12-15.02.2020</span>
+              <h5>Datum</h5>
+              <span class="summary-text">03.03.2020, 17-21 Uhr</span>
             </div>
-           <div class="content-block">
-              <h5>Besuchszeiten</h5>
-              <span class="summary-text">Do-Sa 10-17 Uhr</span>
-            </div>
-            <div class="content-block">
+        <div class="content-block">
               <h5>E-Mail</h5>
-              <a href="mailto:wiesener@kh-berlin.de" class="summary-text">wiesener@kh-berlin.de</a>
+              <a href="mailto:florian@birdsonmars.com" class="summary-text">Florian Dohmann</a>
             </div>
             <div class="content-block">
               <h5>Adresse</h5>
@@ -53,7 +52,11 @@
           </div>
         </div>
 
-      <p> Eintritt ohne Anmeldung </p>
+      <p> Eintritt frei mit Anmeldung </p>
+
+      <div class="flex-container btn" style="margin-top:30px!important;display:inline">
+<a href="https://www.eventbrite.de/e/ai-for-berlin-vol-ii-registration-91609324957" target="_blank" class="button is-color-secondary is-normal">Jetzt registrieren</a>
+</div>
 
         <Matomo/>
             </div>
@@ -83,45 +86,31 @@
       return {
         lang: 'de',
         content: content,
-        direct: '/events/entitycity_en'
+        direct: '/events/AIforberlin2_en'
       }
     },
-    methods: {
-      save(filename, data) {
-          var blob = new Blob([data], {type: 'text/csv'});
-          if (window.navigator.msSaveOrOpenBlob) {
-                  window.navigator.msSaveBlob(blob, filename);
-          } else{
-              var elem = window.document.createElement('a');
-              elem.href = window.URL.createObjectURL(blob);
-              elem.download = filename;
-              document.body.appendChild(elem);
-              elem.click();
-              document.body.removeChild(elem);
-          }
-      }
-    },
-
+    computed: {
+        },
     head () {
       return {
-        title: 'Entity:City ',
+        title: 'AI for Berlin - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'AI for Berlin (2020-03-03 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
-          { hid: 'og:title', property: 'og:title',  content: "Entity:City"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/entitycity_social_media.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)"},
+          { hid: 'og:title', property: 'og:title',  content: "AI for Berlin"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'og:description', property: 'og:description',  content: "AI for Berlin (2020-03-03 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
-          { hid: 'article:author', property: 'article:author',  content: "Weißensee Kunsthochschule Berlin"},
+          { hid: 'article:author', property: 'article:author',  content: "CityLAB Berlin"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
-          { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/entitycity_en"},
-          { hid: 'twitter:title', name: 'twitter:title', content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin))"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/entitycity_social_media.jpg"},
-          { hid: 'name', itemprop: 'name', content:"Entity:City"},
-          { hid: 'description', itemprop: 'description', content: "Entity:City (2020-02-12 bis 2020-02-15 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/entitycity_social_media.jpg"},
+          { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/AIforberlin2_en"},
+          { hid: 'twitter:title', name: 'twitter:title', content: "AI for Berlin"},
+          { hid: 'twitter:description', name: 'twitter:description', content: "AI for Berlin (2020-03-03 - CityLAB Berlin)"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'name', itemprop: 'name', content:"AI for Berlin"},
+          { hid: 'description', itemprop: 'description', content: "AI for Berlin (2020-03-03 - CityLAB Berlin)"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
         ]
       }
     },
@@ -284,7 +273,6 @@
         margin-top: 30px;
         min-width: 180px;
         margin-right: 3em;
-        background: $color-secondary;
     }
 
 </style>
