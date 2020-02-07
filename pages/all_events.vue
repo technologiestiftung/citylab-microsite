@@ -168,6 +168,7 @@
             },
             dateIsUpcoming(date) {
                 const today = new Date();
+                today.setDate(today.getDate() - 1);
                 const eventDate = new Date(date);
 
                 const upcoming = today.getTime() <= eventDate.getTime();
@@ -232,7 +233,6 @@
             }
         }
 
-
         .arrow-right {
             font-size: 2rem;
             margin-right: 15px;
@@ -240,7 +240,6 @@
             font-weight: normal;
             transition: $time-s ease transform;
         }
-
 
         &-wrapper {
             display: flex;

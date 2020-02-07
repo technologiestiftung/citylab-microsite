@@ -140,7 +140,7 @@ export const content = {
             },
         ],
         'hero': {
-            intro: {
+            'intro': {
                 'subtitle': "CityLAB Berlin",
                 'claim_01': "Die",
                 'claim_02': "Zukunft Berlins",
@@ -149,8 +149,8 @@ export const content = {
                 'btn': 'Jetzt mitmachen',
                 'btnSecond': 'Mehr erfahren',
                 'description': 'Im CityLAB wird Innovation und Partizipation zusammen&shy;gedacht: Verwaltung und Stadtgesellschaft arbeiten hier gemeinsam an Lösungen für das digitale Berlin von Morgen.',
-                direct: '/collaborate',
-                directSecond: '/about_us',
+                'direct': '/collaborate',
+                'directSecond': '/about_us',
                 'imgUrl': '/images/intro-preview.jpg',
                 'imgUrlLazy': '/images/intro-preview-lazy.jpg',
                 'words_arr': ['nachhaltige', 'offene', 'vielfältige', 'inklusive', 'digitale']
@@ -172,6 +172,10 @@ export const content = {
             'board_url': '/board',
             'board_url_button': 'Übersicht Beirat',
         },
+        'newsletter_archive': {
+            'title': 'Newsletter Archiv',
+            'p1': 'Hier findest du alle bereits veröffentlichten Newsletter des CityLAB Berlin.',
+        },
         'missionStatement': {
             'title': 'Unsere Mission',
             'subtitle': 'Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.',
@@ -192,16 +196,16 @@ export const content = {
             'pastEventsTitle': 'Vergangen',
         },
         'register': {
-            intro: {
-                title: 'Newsletter',
-                subtitle: ' Du möchtest über aktuelle Veranstaltungen und Projekte des CityLABs informiert werden? Melde dich für unseren monatlichen Newsletter an und bleib immer auf dem neusten Stand.',
-                button: 'Anmelden',
-                url: '/newsletter_register_de'
+            'intro': {
+                'title': 'Newsletter',
+                'subtitle': ' Du möchtest über aktuelle Veranstaltungen und Projekte des CityLABs informiert werden? Melde dich für unseren monatlichen Newsletter an und bleib immer auf dem neusten Stand.',
+                'button': 'Anmelden',
+                'url': '/newsletter_register_de'
             },
-            title: 'Anmeldung Newsletter',
-            urlunsubscribe: '/newsletter_unsubscribe_de',
-            mandatory: '* Pflichtfeld',
-            form: {
+            'title': 'Anmeldung Newsletter',
+            'urlunsubscribe': '/newsletter_unsubscribe_de',
+            'mandatory': '* Pflichtfeld',
+            'form': {
                 name: 'Ihr Name',
                 language: 'Sprache des Newsletters',
                 mail: 'Ihre E-Mail-Adresse',
@@ -579,7 +583,8 @@ export const content = {
                 'imprint': 'Impressum',
                 'dataprivacy': 'Datenschutz',
                 'resources': 'Ressourcen',
-                'board': 'Beirat'
+                'board': 'Beirat',
+                'newsletter': 'Newsletter Archiv',
             },
             'funding': {
                 'title': '.',
@@ -880,6 +885,10 @@ export const content = {
             'board_p': 'Find a detailed list of the members of the advisory board here:',
             'board_url': '/board_en',
             'board_url_button': 'Advisory Board',
+        },
+        'newsletter_archive': {
+            'title': 'Newsletter Archive',
+            'p1': 'At this section you find all published Newsletters',
         },
         'nav': [
             {
@@ -1322,7 +1331,8 @@ export const content = {
                 'imprint': 'Legal note',
                 'dataprivacy': 'Data privacy',
                 'resources': 'Resources',
-                'board': 'Advisory Board'
+                'board': 'Advisory Board',
+                'newsletter': 'Newsletter archive',
             },
             'funding': {
                 'title': '.',

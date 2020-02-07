@@ -53,25 +53,6 @@
                             {{ content[lang]['footer']['more']['title'] }}
                         </h6>
 
-                        <!-- <nuxt-link class="flex flex-row m-b-sm" :to="directDownloads">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(2px); margin-right: 5px;" far icon="file-download"/>
-                            </div>
-                            <p class="content">
-                                {{ content[lang]['footer']['more']['downloads'] }}
-                            </p>
-                        </nuxt-link>
-
-
-                        <nuxt-link class="flex flex-row m-b-sm" :to="directPress">
-                            <div class="icon-wrapper">
-                                <font-awesome-icon style="transform: translateY(1px); margin-right: 5px;" far icon="newspaper"/>
-                            </div>
-                            <p class="content">
-                                {{ content[lang]['footer']['more']['press'] }}
-                            </p>
-                        </nuxt-link> -->
-
                         <nuxt-link class="flex flex-row m-b-sm" :to="directImprint">
                             <p class="content">
                                 {{ content[lang]['footer']['more']['imprint'] }}
@@ -87,6 +68,12 @@
                         <nuxt-link class="flex flex-row m-b-sm" :to="directCodeofconduct">
                             <p class="content">
                                 {{ content[lang]['footer']['more']['codeofconduct'] }}
+                            </p>
+                        </nuxt-link>
+
+                        <nuxt-link class="flex flex-row m-b-sm" :to="directNewsletter">
+                            <p class="content">
+                                {{ content[lang]['footer']['more']['newsletter'] }}
                             </p>
                         </nuxt-link>
 
@@ -152,6 +139,7 @@
                         imprint: '/legalnote',
                         resources: '/resources',
                         board: '/board',
+                        newsletter: '/newsletter_archive',
                     },
                     en: {
                         downloads: '/downloads_en',
@@ -161,6 +149,7 @@
                         code: '/codeofconduct_en',
                         resources: '/resources_en',
                         board: '/board_en',
+                        newsletter: '/newsletter_archive_en',
                     }
                 }
             }
@@ -168,6 +157,9 @@
         computed: {
             directBoard() {
                 return this.directs[this.lang].board
+            },
+            directNewsletter() {
+                return this.directs[this.lang].newsletter
             },
             directResources() {
                 return this.directs[this.lang].resources
