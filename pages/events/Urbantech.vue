@@ -2,7 +2,7 @@
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
     <HeroLight :image="'https://citylab-berlin.org/images/events/urbantech_hero.jpg'" :title="'Urban Tech Startup and City Lunch'" 
-    :subTitle="'Presentation of the urban tech landscape, which features 100+ Start-ups in Berlin operating in various fields of urban tech.'" 
+    :subTitle="'Presentation of the urban tech landscape'" 
     :subSubTitle="'04.03.2020, 12-13.30 Uhr, CityLAB Berlin Veranstaltungsraum'">
     </HeroLight>
         <section class="section is-medium event-content">
@@ -22,16 +22,16 @@
             - <b>Enabling Urban Tech IoT</b><br>
             - <b>Gov / Civic Tech</b><br>
             - <b>Livability</b></p>
-          
+           
         <p>Während unseres Events im CityLAB Berlin werden wir uns genauer auf die Urban Tech Landscape beziehen, unsere Erkenntnisse teilen, 
           sowie Vertreter der Stadt und Startups der Landscape zusammenbringen. <br>
           Kommt vorbei und diskutiert bei einer gemeinsamen Lunch-Break die Urban Tech Welt von Berlin!</p>
 
 
-        <p>Agenda:<br>
+        <p><b>Agenda:</b><br>
             12:00 - Presentation of the Urban Tech Landscape by Urban Impact & Inputs from partners<br>
             12:30 - Open Q&A and Discussion, Lunch and Networking along thematic tables<br>
-            13:30- End of Event</p>  
+            13:30 - End of Event</p>  
 
         <p>Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
 
