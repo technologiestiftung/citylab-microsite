@@ -2,7 +2,7 @@
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
     <HeroLight :image="'https://citylab-berlin.org/images/events/urbantech_hero.jpg'" :title="'Urban Tech Startup and City Lunch'" 
-    :subTitle="'Presentation of the urban tech landscape'" 
+    :subTitle="'Präsentation zu unserer Urban Tech Landscape'" 
     :subSubTitle="'04.03.2020, 12-13.30 Uhr, CityLAB Berlin Veranstaltungsraum'">
     </HeroLight>
         <section class="section is-medium event-content">
