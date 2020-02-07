@@ -233,7 +233,6 @@
             }
         }
 
-
         .arrow-right {
             font-size: 2rem;
             margin-right: 15px;
@@ -241,7 +240,6 @@
             font-weight: normal;
             transition: $time-s ease transform;
         }
-
 
         &-wrapper {
             display: flex;

@@ -75,7 +75,7 @@
 	import Matomo from '../components/Matomo.vue';
 
     export default {
-        components: {
+      components: {
 			Navigation,
 			Footer,
 			Matomo
