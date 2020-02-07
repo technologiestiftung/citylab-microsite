@@ -109,28 +109,28 @@
     computed: {
       calData() {
           return `BEGIN:VCALENDAR\n
-VERSION:2.0\n
-CALSCALE:GREGORIAN\n
-TZID:Europe/Berlin\n
-TZNAME:MESZ\n
-BEGIN:VEVENT\n
-LOCATION:CityLAB Berlin\\nPlatz der Luftbrücke 4\\n12101 Berlin\n
-GEO:52.483814;13.388565\n
-METHOD:PUBLISH\n
-TZID:Europe/Berlin\n
-DTSTART:${this.12.02.2020, 18.00}\n
-DTEND:${this.12.02.2020, 21.00}\n
-SUMMARY:${this.Entity:City Ausstellungseröffnung}\n
-URL;VALUE=URI:https://www.citylab-berlin.org/\n
-TRANSP:OPAQUE\n
-BEGIN:VALARM\n
-TRIGGER:-PT1H\n
-ATTACH;VALUE=URI:Chord\n
-ACTION:AUDIO\n
-END:VALARM\n
-END:VEVENT\n
-END:VCALENDAR`
-    },
+      VERSION:2.0\n
+      CALSCALE:GREGORIAN\n
+      TZID:Europe/Berlin\n
+      TZNAME:MESZ\n
+      BEGIN:VEVENT\n
+      LOCATION:CityLAB Berlin\\nPlatz der Luftbrücke 4\\n12101 Berlin\n
+      GEO:52.483814;13.388565\n
+      METHOD:PUBLISH\n
+      TZID:Europe/Berlin\n
+      DTSTART:${this.(12.02.2020, 18.00)}\n
+      DTEND:${this.(12.02.2020, 21.00)}\n
+      SUMMARY:${this.(Entity:City Ausstellungseröffnung)}\n
+      URL;VALUE=URI:https://www.citylab-berlin.org/\n
+      TRANSP:OPAQUE\n
+      BEGIN:VALARM\n
+      TRIGGER:-PT1H\n
+      ATTACH;VALUE=URI:Chord\n
+      ACTION:AUDIO\n
+      END:VALARM\n
+      END:VEVENT\n
+      END:VCALENDAR`
+          },
     },
     head () {
       return {
