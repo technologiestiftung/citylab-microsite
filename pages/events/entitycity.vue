@@ -55,6 +55,11 @@
 
       <p> Eintritt ohne Anmeldung </p>
 
+      <div style="margin-top: 30px !important; display: inline" class="flex-container btn">
+          <!-- Download for calendar button -->
+          <a class="button is-color-secondary is-normal" style="display" @click="save('CLB_Event.ics', calData)">Download für iCal</a>         
+      </div>
+
         <Matomo/>
             </div>
         </section>
@@ -86,8 +91,47 @@
         direct: '/events/entitycity_en'
       }
     },
+    methods: {
+      save(filename, data) {
+          var blob = new Blob([data], {type: 'text/csv'});
+          if (window.navigator.msSaveOrOpenBlob) {
+                  window.navigator.msSaveBlob(blob, filename);
+          } else{
+              var elem = window.document.createElement('a');
+              elem.href = window.URL.createObjectURL(blob);
+              elem.download = filename;
+              document.body.appendChild(elem);
+              elem.click();
+              document.body.removeChild(elem);
+          }
+      }
+    },
     computed: {
-        },
+      calData() {
+          return `BEGIN:VCALENDAR\n
+VERSION:2.0\n
+CALSCALE:GREGORIAN\n
+TZID:Europe/Berlin\n
+TZNAME:MESZ\n
+BEGIN:VEVENT\n
+LOCATION:CityLAB Berlin\\nPlatz der Luftbrücke 4\\n12101 Berlin\n
+GEO:52.483814;13.388565\n
+METHOD:PUBLISH\n
+TZID:Europe/Berlin\n
+DTSTART:${this.12.02.2020, 18.00}\n
+DTEND:${this.12.02.2020, 21.00}\n
+SUMMARY:${this.Entity:City Ausstellungseröffnung}\n
+URL;VALUE=URI:https://www.citylab-berlin.org/\n
+TRANSP:OPAQUE\n
+BEGIN:VALARM\n
+TRIGGER:-PT1H\n
+ATTACH;VALUE=URI:Chord\n
+ACTION:AUDIO\n
+END:VALARM\n
+END:VEVENT\n
+END:VCALENDAR`
+    },
+    },
     head () {
       return {
         title: 'Entity:City ',
