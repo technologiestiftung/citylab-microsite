@@ -3,70 +3,70 @@
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
     <HeroLight :image="'https://citylab-berlin.org/images/events/urbantech_hero.jpg'" :title="'Urban Tech Startup and City Lunch'" 
     :subTitle="'Presentation of the urban tech landscape, which features 100+ Start-ups in Berlin operating in various fields of urban tech.'" 
-    :subSubTitle="'04.03.2020, 12-13.30 Uhr, CityLAB Berlin Veranstaltungsraum'">
+    :subSubTitle="'04.03.2020, 12-1.30 pm, CityLAB Berlin Event space'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
-        <p class="event-intro">Wie viele Startups im urban-tech Bereich kommen aus Berlin? Was sind die möglichen Einflüsse, die diese Firmen auf Berlin haben können, 
-          im Hinblick auf die Berlin Strategie 2030?</p>
+        <p class="event-intro">How many Start-ups in the field of urban tech come from Berlin? 
+          What are the possible impacts these companies could have on the city in terms of the Berlin strategy for 2030?</p>
 
-        <p>Das sind die Fragen, die wir uns als Urban Impact gestellt haben, als wir das Projekt „<a href="https://www.citylab-berlin.org/projects/startupmapping/">Berlin Urban Tech-Datenbank</a>“ im CityLAB Berlin starteten. 
-        Um aussagekräftige Daten generieren zu können, arbeiteten wir zusammen mit <a href="https://dealroom.co">Dealroom</a> und der <a href="https://www.berlin.de/sen/web/">Senatsverwaltung für Wirtschaft, Energie und Betriebe</a>, 
-        die die Berliner Startup Map verwalten und auf deren vorhandenen Daten basiert. Wir freuen uns zudem besonders, dieses Projekt in Kooperation mit dem Smart City Netzwerk von <a href="https://www.berlin-partner.de">Berlin Partner</a> 
-        durchzuführen.</p>
+        <p>These are the questions that we at Urban Impact asked ourselves as part of our project "Berlin Urban Tech Map" at CityLAB Berlin. 
+          In order to collect meaningful data, we set up a cooperation with <a href="https://dealroom.co">Dealroom</a> and 
+          <a href="https://www.berlin.de/sen/wirtschaft/">Berlin Senate Department for Economics</a> who are already operating the Startup Map Berlin and built upon their data. 
+          We are also happy to receive support by <a href="https://www.berlin-partner.de">Berlin Partner</a>'s Smart City Network.</p>
+
+        <p>To cluster and maintain the 100+ companies we identified - of which some even support aspects of the Berlin 2030 strategy (StEK) - we set up 5 main categories:
+          <br>
+           <b> - Mobility</b> (Shared Mobility, City Logistics, AV/EV, Public Transport)<br>
+            <b> - Infrastructure and Utilities</b> (Energy, Waste, Urban Farming, Buildings) <br>
+            <b> - Enabling Urban Tech IoT <br>
+                - Gov / Civic Tech <br>
+                - Livability </b><br><br>
+                During the event at CityLAB Berlin we will be sharing more detailed insights from our market study and invite many of the mapped movers and shakers. 
+                So we hope to see you there to discuss with us over lunch the world of urban tech in Berlin!</p>
 
         <h3 class="title"></h3>
-        <p>Um die über <b>100 identifizierten Startups</b> besser zu analysieren - von denen einige sogar die Aspekte der Berlin 2030 Strategy (StEK) adressieren - ordneten wir diese in die 5 folgenden Haupt(und Unter-)kategorien ein:<br>
-            - <b>Mobility</b> (Shared Mobility, City Logistics, AV/EV, Public Transport)<br>
-            - <b>Infrastructure and Utilities</b> (Energy, Waste, Urban Farming, Buildings)<br>
-            - <b>Enabling Urban Tech IoT</b><br>
-            - <b>Gov / Civic Tech</b><br>
-            - <b>Livability</b></p>
+        <p><b>Agenda:</b><br>
+            12:00 - Presentation of the Urban Tech Landscape by Urban Impact <br>
+            12:30 - Open Q&A and Discussion, Lunch and Networking along thematic tables <br>
+            13:30 - End of Event"</p>
           
-        <p>Während unseres Events im CityLAB Berlin werden wir uns genauer auf die Urban Tech Landscape beziehen, unsere Erkenntnisse teilen, 
-          sowie Vertreter der Stadt und Startups der Landscape zusammenbringen. <br>
-          Kommt vorbei und diskutiert bei einer gemeinsamen Lunch-Break die Urban Tech Welt von Berlin!</p>
 
-
-        <p>Agenda:<br>
-            12:00 - Presentation of the Urban Tech Landscape by Urban Impact & Inputs from partners<br>
-            12:30 - Open Q&A and Discussion, Lunch and Networking along thematic tables<br>
-            13:30- End of Event</p>  
-
-        <p>Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
+        <p>The Event will be held in English and German.</p><br />
 
 
         <div class="summary-wrapper is-medium">
-          <h4>Zusammenfassung</h4>
+          <h4>More information</h4>
           <div class="flex-container">
             <div class="content-block">
               <h5>Website</h5>
               <span class="summary-text"><a href=https://www.urbanimpact.eu>https://www.urbanimpact.eu</a> </span>
             </div>
             <div class="content-block">
-              <h5>Veranstalter</h5>
+              <h5>Organizer</h5>
               <span class="summary-text">CityLAB & Urban Impact</span>
             </div>
             <div class="content-block">
-              <h5>Datum</h5>
-              <span class="summary-text">04.03.2020, 12-13.30 Uhr</span>
+              <h5>Date</h5>
+              <span class="summary-text">04.03.2020, 12-1.30 pm</span>
             </div>
-        <div class="content-block">
+            <div class="content-block">
               <h5>E-Mail</h5>
               <a href="mailto:hello@urbanimpact.eu" class="summary-text">Urban Impact</a>
             </div>
             <div class="content-block">
-              <h5>Adresse</h5>
+              <h5>Adress</h5>
               <span class="summary-text">Platz der Luftbrücke 4, Gebäude H2rund, 12101 Berlin</span>
             </div>
           </div>
         </div>
 
-      <p> Eintritt frei mit Anmeldung </p>
+      <p>Free entry with a registration</p>
 
       <div class="flex-container btn" style="margin-top:30px!important;display:inline">
-<a href="https://www.eventbrite.co.uk/e/urban-tech-startup-city-lunch-tickets-91134027329?aff=SocialMedia" target="_blank" class="button is-color-secondary is-normal">Jetzt registrieren</a>
+<a href="https://www.eventbrite.co.uk/e/urban-tech-startup-city-lunch-tickets-91134027329?aff=SocialMedia" target="_blank" class="button is-color-secondary is-normal">Register now</a>
 </div>
+
 
         <Matomo/>
             </div>
@@ -94,9 +94,9 @@
     },
     data() {
       return {
-        lang: 'de',
+        lang: 'en',
         content: content,
-        direct: '/events/urbantech_en'
+        direct: '/events/urbantech'
       }
     },
     computed: {
