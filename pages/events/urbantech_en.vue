@@ -13,7 +13,8 @@
         <p>These are the questions that we at Urban Impact asked ourselves as part of our project "Berlin Urban Tech Map" at CityLAB Berlin. 
           In order to collect meaningful data, we set up a cooperation with <a href="https://dealroom.co">Dealroom</a> and 
           <a href="https://www.berlin.de/sen/wirtschaft/">Berlin Senate Department for Economics</a> who are already operating the Startup Map Berlin and built upon their data. 
-          We are also happy to receive support by <a href="https://www.berlin-partner.de">Berlin Partner</a>'s Smart City Network.</p>
+          We are also happy to do this in partnership with <a href="https://www.berlin-partner.de">Berlin Partner</a>'s official 
+          <a href="https://www.smart-city-berlin.de/akteure/netzwerk-smart-city-berlin/">Smart City Network</a>.
 
         <p>To cluster and maintain the 100+ companies we identified - of which some even support aspects of the Berlin 2030 strategy (StEK) - we set up 5 main categories:
           <br>

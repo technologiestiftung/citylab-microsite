@@ -12,7 +12,8 @@
 
         <p>Das sind die Fragen, die wir uns als Urban Impact gestellt haben, als wir das Projekt „<a href="https://www.citylab-berlin.org/projects/startupmapping/">Berlin Urban Tech-Datenbank</a>“ im CityLAB Berlin starteten. 
         Um aussagekräftige Daten generieren zu können, arbeiteten wir zusammen mit <a href="https://dealroom.co">Dealroom</a> und der <a href="https://www.berlin.de/sen/web/">Senatsverwaltung für Wirtschaft, Energie und Betriebe</a>, 
-        die die Berliner Startup Map verwalten und auf deren vorhandenen Daten basiert. Wir freuen uns zudem besonders, dieses Projekt in Kooperation mit dem Smart City Netzwerk von <a href="https://www.berlin-partner.de">Berlin Partner</a> 
+        die die Berliner Startup Map verwalten und auf deren vorhandenen Daten basiert. Wir freuen uns zudem besonders, dieses Projekt in Kooperation mit <a href="https://www.berlin-partner.de">Berlin Partner für Wirtschaft und Technologie</a> 
+        und dem Smart City Netzwerk von <a href="https://www.smart-city-berlin.de/akteure/netzwerk-smart-city-berlin/">Netzwerk Smart City Berlin</a> 
         durchzuführen.</p>
 
         <h3 class="title"></h3>
