@@ -51,6 +51,14 @@ export const content = {
                 title: 'AI for Berlin Vol. II',
                 link: 'https://citylab-berlin.org/events/AIforberlin2',
                 visible: true,
+            },
+            {
+                date: '2020-03-04',
+                format: 'Meetup',
+                time: '12.00 - 13.30',
+                title: 'Urban Tech Startup and City Lunch',
+                link: 'https://citylab-berlin.org/events/urbantech',
+                visible: true,
             }
 
         ],
@@ -792,6 +800,14 @@ export const content = {
                 time: '17.00 - 21.00',
                 title: 'AI for Berlin Vol. II',
                 link: 'https://citylab-berlin.org/events/AIforberlin2_en',
+                visible: true,
+            },
+            {
+                date: '2020-03-04',
+                format: 'Meetup',
+                time: '12.00 - 13.30',
+                title: 'Urban Tech Startup and City Lunch',
+                link: 'https://citylab-berlin.org/events/urbantech_en',
                 visible: true,
             }
         ],
