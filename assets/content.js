@@ -405,10 +405,10 @@ export const content = {
             },
             funding: {
                 title: 'Projektförderung im CityLAB',
-                description: '<b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben.</b> <br /> <br /> Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
-                btn: 'Jetzt bewerben',
+                description: 'Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? <br/> <br/> Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/> <b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben.</b> <br /> <br /> ',
+                btn: '',
                 'style': 'bright',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                direct: '',
                 faq: [
                     {
                         title: 'Welche Projekte sind förderfähig?',
