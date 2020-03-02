@@ -975,10 +975,10 @@ export const content = {
             },
             funding: {
                 title: 'Project Funding',
-                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
-                btn: 'Apply now',
+                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities. Deadline passed! The next application deadline will be announced soon.',
+                btn: '',
                 'style': 'bright',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                direct: '',
                 faq: [
                     {
                         title: 'What kinds of projects do we support?',
