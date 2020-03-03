@@ -413,10 +413,10 @@ export const content = {
             },
             funding: {
                 title: 'Projektförderung im CityLAB',
-                description: '<b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben.</b> <br /> <br /> Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/>Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? Bewirb Dich jetzt um Projektförderung!',
-                btn: 'Jetzt bewerben',
+                description: 'Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? <br/> <br/> Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/> <b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben.</b> <br /> <br /> ',
+                btn: '',
                 'style': 'bright',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                direct: '',
                 faq: [
                     {
                         title: 'Welche Projekte sind förderfähig?',
@@ -975,10 +975,10 @@ export const content = {
             },
             funding: {
                 title: 'Project Funding',
-                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities.',
-                btn: 'Apply now',
+                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities. Deadline passed! The next application deadline will be announced soon.',
+                btn: '',
                 'style': 'bright',
-                direct: 'https://docs.google.com/forms/d/e/1FAIpQLSdN2FmW5igfek4xTstJX-LFIgmcjx-4AEoFAAAKEM0yifsdzw/viewform',
+                direct: '',
                 faq: [
                     {
                         title: 'What kinds of projects do we support?',

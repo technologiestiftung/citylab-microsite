@@ -5,7 +5,7 @@
           <div class="container">
               <h1 class="title">{{ contentParagraph['title'] }}</h1>
               <h2 v-html="contentParagraph['description']" class="subtitle"></h2>
-              <Button :label="contentParagraph['btn']" :direct="contentParagraph['direct']"/>
+              <Button v-if="isBtn" :label="contentParagraph['btn']" :direct="contentParagraph['direct']"/>
           </div>
       </div>
     </div>
@@ -28,6 +28,7 @@
         },
         computed: {
           contentParagraph: function() { return this.content[this.lang][this.topic][this.subtopic] },
+          isBtn: function() { return this.content[this.lang][this.topic][this.subtopic]['btn'].length > 0 },
         },
     }
 </script>
@@ -73,6 +74,10 @@
       }
       h2.subtitle {
         margin-top: 1.5rem !important;
+
+        b {
+          font-family: 'National ExtraBold' !important;
+        }
       }
       animation: sweep .5s ease-in-out;
     }
