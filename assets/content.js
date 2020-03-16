@@ -294,7 +294,7 @@ export const content = {
         },
         'schedule': {
             title: 'Termine und Ankündigungen',
-            subtitle: 'Bis auf weiteres wurden bevorstehenden Veranstaltungen abgesagt.',
+            subtitle: 'Bis auf weiteres wurden alle bevorstehenden Veranstaltungen abgesagt.',
             items: [
                 {
                     title: 'Urban Mobility Symposium',
