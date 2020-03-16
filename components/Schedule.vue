@@ -2,7 +2,7 @@
     <section class="section schedule is-medium dark" id="schedule">
         <div class="container">
             <h2 class="title"> {{ content[lang]['schedule']['title'] }} </h2>
-            <!-- <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2> -->
+            <h2 class="subtitle"> {{ content[lang]['schedule']['subtitle'] }} </h2>
         
             <div class="schedule-wrapper">
                 <a class="event-tile" v-if="entry.visible != 'FALSE' && dateIsUpcoming(entry.date) && index < 5" :href="entry['link']" v-for="(entry, index) in data">
@@ -151,6 +151,10 @@
     .schedule {
         background: $color-primary--lightest;
 
+        h2.subtitle {
+            color: white !important;
+        }
+
         &.dark {
             background: $color-primary;
 
@@ -182,10 +186,6 @@
                 .dates-item {
                     background: #4142af;
                 }
-            }
-
-            h2.subtitle {
-                color: white;
             }
 
             .date-wrapper {

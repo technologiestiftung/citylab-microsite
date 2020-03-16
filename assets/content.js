@@ -65,7 +65,7 @@ export const content = {
         'exhibition': {
             teaser: {
                 'title': 'Unsere Ausstellung',
-                'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
+                'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten. <b>Die Ausstellung ist bis auf weiteres geschlossen.</b>',
                 'imgUrl': '/images/exhibition-preview.jpg',
                 'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
                 'btn': 'Alle Exponate',
@@ -294,7 +294,7 @@ export const content = {
         },
         'schedule': {
             title: 'Termine und Ankündigungen',
-            subtitle: 'Hier steht ein kurzer optionaler Einleitungstext.',
+            subtitle: 'Bis auf weiteres wurden bevorstehenden Veranstaltungen abgesagt.',
             items: [
                 {
                     title: 'Urban Mobility Symposium',
@@ -413,7 +413,7 @@ export const content = {
             },
             funding: {
                 title: 'Projektförderung im CityLAB',
-                description: 'Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? <br/> <br/> Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<br/><br/> <b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben.</b> <br /> <br /> ',
+                description: 'Du willst bei uns ein Projekt entwickeln, benötigst dafür aber eine Finanzierung? <br/> <br/> Wir bieten Förderung von bis zu 50.000€ für ausgewählte Projekte rund um Civic Tech, digitale Verwaltung, soziale Innovation und Smart Cities.<b>Deadline abgelaufen! Die nächste Bewerbungsfrist wird demnächst bekannt gegeben.</b>',
                 btn: '',
                 'style': 'bright',
                 direct: '',
@@ -814,7 +814,7 @@ export const content = {
         'exhibition': {
             teaser: {
                 'title': 'Our exhibition',
-                'description': 'Experience the city of the future in interactive exhibits.',
+                'description': 'Experience the city of the future in interactive exhibits. <b>The exhibition is closed until further notice.</b>',
                 'imgUrl': '/images/exhibition-preview.jpg',
                 'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
                 'btn': 'All exhibits',
@@ -953,7 +953,7 @@ export const content = {
         },
         'schedule': {
             title: 'Dates and announcements',
-            subtitle: 'Here is a short optional introductory text.',
+            subtitle: 'All upcoming events have been canceled until further notice.',
             items: [
                 {
                     title: 'Urban Mobility Symposium',
@@ -975,7 +975,7 @@ export const content = {
             },
             funding: {
                 title: 'Project Funding',
-                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities. Deadline passed! The next application deadline will be announced soon.',
+                description: 'We are excited to be able to offer funding of up to 50.000€ to selected projects which are focused on the topics of civic tech, digitization of government, social innovation, and smart cities. <b>Deadline passed! The next application deadline will be announced soon.</b>',
                 btn: '',
                 'style': 'bright',
                 direct: '',

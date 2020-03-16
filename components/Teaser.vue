@@ -7,9 +7,8 @@
         <div class="preview container" :id="`preview-${id}`" >
             <div class="wrapper">
                 <h2 class="title" v-html="contentTeaser['title']"></h2>
-                <h2 class="subtitle">
-                    {{ contentTeaser['description'] }}
-                </h2>
+                <h2 class="subtitle" v-html="contentTeaser['description']"></h2>
+
 
                 <Button :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
             </div>
@@ -21,9 +20,7 @@
         </div>
 
         <div class="wrapper-mobile is-medium">
-            <h2 class="subtitle">
-                {{ contentTeaser['description'] }}
-            </h2>
+            <h2 class="subtitle" v-html="contentTeaser['description']"></h2>
 
             <Button :label="contentTeaser['btn']" :direct="contentTeaser['direct']"/>
         </div>
