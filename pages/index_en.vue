@@ -3,6 +3,7 @@
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
 		<TeaserIntro :content='content' :lang='lang' topic="hero" subtopic="intro"/>
 		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
+		<Ticker :lang="lang" :content="content" />
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
 		<Projects :lang="lang" :content="content"/>
@@ -28,6 +29,7 @@
 	import Topics from '../components/Topics.vue';
 	import TeaserIntro from '../components/TeaserIntro.vue';
 	import Partners from '../components/Partners.vue';
+	import Ticker from '../components/Ticker.vue';
 	import Projects from '../components/Projects.vue';
 	import Schedule from '../components/Schedule.vue';
 	import Newsletter from '../components/Newsletter.vue';
@@ -45,6 +47,7 @@
 			Cta,
 			Schedule,
 			Paragraph,
+			Ticker,
 			Footer,
 			Topics,
 			Partners,

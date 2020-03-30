@@ -32,7 +32,7 @@
               <span class="logo-transparent"><b>Berlin</b></span>
             </div>
 
-            <div class="ticker__description">Unsere Stadt braucht eure Unterstützung im Kampf gegen die Ausbreitung von Covid-19!</div>
+            <div class="ticker__description">{{ticker['description']}}</div>
           </div>
         </div>
       </div>
@@ -46,7 +46,12 @@
     props: {
       lang: String,
       content: Object,
-    }
+    },
+    computed: {
+      ticker() {
+          return this.content[this.lang]['ticker'];
+      }
+    },
   }
 </script>
 
