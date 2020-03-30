@@ -5,15 +5,13 @@
 		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
 		<Ticker />
 		<Topics :lang="lang" :content="content" :direct="direct" />
-		<!-- Temp -->
 		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
 		<Projects :lang="lang" :content="content"/>
 		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
-		<Newsletter :lang="lang" :content="content" :direct="direct"/> -->
-		<!-- Temp -->
+		<Newsletter :lang="lang" :content="content" :direct="direct"/>
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
-		<!-- <Cta :lang="lang" :content="content"/>
+		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
 
 		<button @click="topFunction()" id="myBtn" class="arrow-up top">↑</button>
