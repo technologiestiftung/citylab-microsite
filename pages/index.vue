@@ -3,12 +3,15 @@
 		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
 		<TeaserIntro :content='content' :lang='lang' topic="hero" subtopic="intro"/>
 		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
+		<Ticker />
 		<Topics :lang="lang" :content="content" :direct="direct" />
-		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
+		<!-- Temp -->
+		<!-- <Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
 		<Projects :lang="lang" :content="content"/>
 		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
-		<Newsletter :lang="lang" :content="content" :direct="direct"/>
+		<Newsletter :lang="lang" :content="content" :direct="direct"/> -->
+		<!-- Temp -->
 		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
 		<!-- <Cta :lang="lang" :content="content"/> -->
 		<Footer :lang="lang" :content="content"/>
@@ -24,6 +27,7 @@
 	import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 	import Cta from '../components/Cta.vue';
+	import Ticker from '../components/Ticker.vue';
 	import Teaser from '../components/Teaser.vue';
 	import Topics from '../components/Topics.vue';
 	import TeaserIntro from '../components/TeaserIntro.vue';
@@ -45,6 +49,7 @@
 			Cta,
 			Schedule,
 			Paragraph,
+			Ticker,
 			Footer,
 			Topics,
 			Partners,
@@ -143,6 +148,77 @@
 <style lang="scss">
 
 	@import "../assets/style/style.scss";
+
+  @keyframes ticker {
+    0% {
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+
+    100% {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  .ticker-wrap {
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    background-color: $color-primary;
+    padding-left: 100%;
+		box-sizing: content-box;
+		cursor: pointer;
+		transition: .125s background-color ease-in-out;
+
+		&:hover {
+			background-color: lighten($color-primary, 10%);
+			transition: .125s background-color ease-in-out;
+		}
+
+		.logo-transparent {
+			opacity: .5;
+			margin-right: 20px;
+		}
+
+    .ticker {
+      display: inline-block;
+      height: 4rem;
+			line-height: 4rem;
+			font-size: 20px;
+      white-space: nowrap;
+      padding-right: 100%;
+      box-sizing: content-box;
+
+      animation-iteration-count: infinite;
+      animation-name: ticker;
+      animation-duration: 30s;
+			animation-timing-function: linear;
+
+			.flex {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+			
+			&__description {
+				color: white;
+			}
+
+      &__item {
+        display: inline-block;
+        width: fit-content;
+				color: white;
+				transform: translateY(-1px);
+
+        &-flex {
+          display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+        }
+      }
+		}
+  }
 
 
 	button.top {
