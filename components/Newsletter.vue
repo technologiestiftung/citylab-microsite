@@ -101,7 +101,7 @@
 
         .register-wrapper {
             box-shadow: 0 2px 60px 0 rgba(47,47,162,0.10);
-            min-width: 320px;
+            min-width: 270px;
             max-width: 370px;
             padding: 30px;
             background: white;

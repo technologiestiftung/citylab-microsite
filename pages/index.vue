@@ -160,7 +160,7 @@
 
   .ticker-wrap {
     bottom: 0;
-    width: 100%;
+    width: auto;
     overflow: hidden;
     height: 4rem;
     background-color: $color-primary;
