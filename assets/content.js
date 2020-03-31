@@ -59,7 +59,15 @@ export const content = {
                 title: 'Urban Tech Startup and City Lunch',
                 link: 'https://citylab-berlin.org/events/urbantech',
                 visible: true,
-            }
+            },
+            {
+                date: '2020-04-08',
+                format: 'Workshop',
+                time: '13.30 - 15.30',
+                title: 'KI Sprechstunde',
+                link: 'https://citylab-berlin.org/events/kisprechstunde',
+                visible: true,
+            },
 
         ],
         'exhibition': {
@@ -812,7 +820,15 @@ export const content = {
                 title: 'Urban Tech Startup and City Lunch',
                 link: 'https://citylab-berlin.org/events/urbantech_en',
                 visible: true,
-            }
+            },
+            {
+                date: '2020-04-08',
+                format: 'Workshop',
+                time: '13.30 - 15.30',
+                title: 'AI-consultation hours',
+                link: 'https://citylab-berlin.org/events/kisprechstunde_en',
+                visible: true,
+            },
         ],
         ticker: {
             description: "Our city needs your help to fight the spread of COVID-19!"
