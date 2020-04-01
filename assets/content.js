@@ -62,7 +62,7 @@ export const content = {
             },
             {
                 date: '2020-04-08',
-                format: 'Workshop',
+                format: 'Sprechstunde',
                 time: '13.30 - 15.30',
                 title: 'KI Sprechstunde',
                 link: 'https://citylab-berlin.org/events/kisprechstunde',
@@ -823,7 +823,7 @@ export const content = {
             },
             {
                 date: '2020-04-08',
-                format: 'Workshop',
+                format: 'Consultation',
                 time: '13.30 - 15.30',
                 title: 'AI-consultation hours',
                 link: 'https://citylab-berlin.org/events/kisprechstunde_en',
