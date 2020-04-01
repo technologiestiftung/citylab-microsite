@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'KI-Sprechstunde'" :subTitle="'Workshopreihe zu KI & Stadt'" :subSubTitle="'08.04.2020, 13:30 - 15:30: KI-Sprechstunde'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'KI-Sprechstunde'" :subTitle="'Hack The Crisis Berlin'" :subSubTitle="'08.04.2020, 13.30-15.30 Uhr'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -11,7 +11,7 @@
 
         <p>Schickt eure Fragen mit einer kurzen Projektbeschreibung gerne auch schon im Vorfeld an <a href="mailto:sebastian@birdsonmars.com">Sebastian von Birds on Mars</a></p>
 
-        <p>Die Sprechstunde findet per Videokonferenz statt, Details werdet ihr im hackthecrisis <a href="https://join.slack.com/t/hackthecrisis-berlin/shared_invite/zt-cuwrelh0-~zlO_TY67TvmKVrORdsu2w">Slack-Channel</a> unter ‚0_ankündigen‘ finden.</p>
+        <p>Die Sprechstunde findet per Videokonferenz statt, Details werdet ihr im hackthecrisis <a href="https://join.slack.com/t/hackthecrisis-berlin/shared_invite/zt-cuwrelh0-~zlO_TY67TvmKVrORdsu2w">Slack-Channel</a> unter '#0_Ankündigen' finden.</p>
 
 
         <div class="summary-wrapper is-medium">
