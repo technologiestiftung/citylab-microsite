@@ -302,7 +302,7 @@ export const content = {
         },
         'schedule': {
             title: 'Termine und Ankündigungen',
-            subtitle: 'Bis auf weiteres wurden alle bevorstehenden Veranstaltungen abgesagt.',
+            subtitle: 'Bis auf weiteres finden alle bevorstehenden Veranstaltungen online statt.',
             items: [
                 {
                     title: 'Urban Mobility Symposium',
@@ -975,7 +975,7 @@ export const content = {
         },
         'schedule': {
             title: 'Dates and announcements',
-            subtitle: 'All upcoming events have been canceled until further notice.',
+            subtitle: 'Until further notice, all upcoming events will take place online.',
             items: [
                 {
                     title: 'Urban Mobility Symposium',
