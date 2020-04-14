@@ -83,7 +83,7 @@
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
           { hid: 'og:title', property: 'og:title',  content: "KI Sprechstunde vol. II"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
           { hid: 'og:description', property: 'og:description',  content: "KI Sprechstunde vol. II (2020-04-15 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
           { hid: 'article:author', property: 'article:author',  content: "CityLAB Berlin"},
@@ -91,10 +91,10 @@
           { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/AIforberlin2_en"},
           { hid: 'twitter:title', name: 'twitter:title', content: "KI Sprechstunde vol. II"},
           { hid: 'twitter:description', name: 'twitter:description', content: "KI Sprechstunde vol. II (2020-04-15 - CityLAB Berlin)"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
           { hid: 'name', itemprop: 'name', content:"KI Sprechstunde"},
           { hid: 'description', itemprop: 'description', content: "KI Sprechstunde vol. II (2020-04-15 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
         ]
       }
     },
