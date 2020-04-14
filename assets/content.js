@@ -68,6 +68,14 @@ export const content = {
                 link: 'https://citylab-berlin.org/events/kisprechstunde',
                 visible: true,
             },
+            {
+                date: '2020-04-15',
+                format: 'Sprechstunde',
+                time: '13.30 - 15.30',
+                title: 'KI Sprechstunde vol. II',
+                link: 'https://citylab-berlin.org/events/kisprechstunde2',
+                visible: true,
+            },
 
         ],
         'exhibition': {
@@ -827,6 +835,14 @@ export const content = {
                 time: '13.30 - 15.30',
                 title: 'AI-consultation hours',
                 link: 'https://citylab-berlin.org/events/kisprechstunde_en',
+                visible: true,
+            },
+            {
+                date: '2020-04-15',
+                format: 'Consultation',
+                time: '13.30 - 15.30',
+                title: 'AI-consultation hours vol. II',
+                link: 'https://citylab-berlin.org/events/kisprechstunde2_en',
                 visible: true,
             },
         ],
