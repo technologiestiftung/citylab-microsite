@@ -63,7 +63,7 @@
       return {
         lang: 'en',
         content: content,
-        direct: '/events/kisprechstunde'
+        direct: '/events/kisprechstunde2'
       }
     },
     computed: {

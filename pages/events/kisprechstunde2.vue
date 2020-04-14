@@ -70,7 +70,7 @@
       return {
         lang: 'de',
         content: content,
-        direct: '/events/kisprechstunde_en'
+        direct: '/events/kisprechstunde2_en'
       }
     },
     computed: {
