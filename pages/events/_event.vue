@@ -1,11 +1,11 @@
 <template>
     <div>
         <Navigation :lang="lang" :languageVisible="false" :content="content" :direct="direct" :anchorTags="true"/>
-        <HeroLight 
-            :image="heroImageUrl" 
-            :title="title" 
-            :subTitle="subtitle" 
-            :subSubTitle="subsubtitle" 
+        <HeroLight
+            :image="heroImageUrl"
+            :title="title"
+            :subTitle="subtitle"
+            :subSubTitle="subsubtitle"
         />
 
         <section class="section is-medium event-content">
