@@ -2,8 +2,6 @@
 
 The site is build upon [Nuxt.js](https://nuxtjs.org/) (a static site generator based on Vue.js) and [Bulma](https://bulma.io/) (CSS framework) and is deployed on Netlify.
 
-Table of contents:
-
 ## Project structure
 
 ### Pages
@@ -116,38 +114,42 @@ All imagery, logos etc. are located at `static/images/...`. If you want to add i
 
 > The `directoryName` has to match with the name you provided for your item at the google spreadsheet.
 
-Events:
+Beyond find the naming conventions to supply your page with `hero` or `social_media` images:
+
+### Events:
+```
 directoryName_hero.jpg
 directoryName_social_media.jpg
 directoryName_logo.jpg (optional)
+```
 
-Projects:
+
+### Projects:
+```
 directoryName_hero.jpg
 directoryName_social_media.jpg
 directoryName_tile.jpg
 directoryName_lazy_tile.jpg (1% sized image of tile that is rendered until the large tile is downloaded)
 directoryName_logo.jpg (optional)
+```
+
+### Hero images
+
+Hero images should have a resolution of **1880px x 940px** and are required to create a new event. If you don't have any software to crop your images you can use this [Online Photo Editor](https://www.befunky.com/create/crop-photo/).
+
+Please use the following naming convention: ```dirname_hero.jpg```.
+
+### Images for Social media
+
+Social media images should have a resolution of **1086px x 573px** and are required to create a new event.
+Please use the following naming convention: ```dirname_social_media.jpg```.
+
 
 ## Update site
 
 This site is deployed by Netlify (Net-liff-eye). A push to ```master``` will automatically update the site and set live. If you have bigger updates, please create a new branch and merge them later.
 
-## Add events
-
-- All images are located inside the folder of the website at ```static/images/events/```.
-
-### Hero images
-
-- Hero images should have a resolution of **1880px x 940px** and are required to create a new event. If you don't have any software to crop your images you can use this [Online Photo Editor](https://www.befunky.com/create/crop-photo/).
-
-- Please use the following naming convention: ```dirname_hero.jpg```.
-
-### Images for Social media
-
-- Social media images should have a resolution of **1086px x 573px** and are required to create a new event.
-- Please use the following naming convention: ```dirname_social_media.jpg```.
-
-
+## Get started:
 
 ``` bash
 # install dependencies
@@ -163,5 +165,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
