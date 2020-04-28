@@ -2,24 +2,6 @@
 
 The site is build upon Nuxt.js (which is based on Vue.js) – a static site generator.
 
-
-Table of contents:
-
-- structure of the project
-  - logic of two languages
-  - content js
-  - how to setup a new site
-  - where does the content come from? google sheets
-  - assets; where to put them
-
-  all content tables
-  https://docs.google.com/spreadsheets/d/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc
-  
-  1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc
-
-  JSON API
-  https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc//public/values?alt=json
-
 ## Update site
 
 This site is deployed by Netlify (Net-liff-eye). A push to ```master``` will automatically update the site and set live. If you have bigger updates, please create a new branch and merge them later.
