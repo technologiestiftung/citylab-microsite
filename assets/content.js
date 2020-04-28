@@ -62,10 +62,18 @@ export const content = {
             },
             {
                 date: '2020-04-08',
-                format: 'Workshop',
+                format: 'Sprechstunde',
                 time: '13.30 - 15.30',
                 title: 'KI Sprechstunde',
                 link: 'https://citylab-berlin.org/events/kisprechstunde',
+                visible: true,
+            },
+            {
+                date: '2020-04-15',
+                format: 'Sprechstunde',
+                time: '13.30 - 15.30',
+                title: 'KI Sprechstunde vol. II',
+                link: 'https://citylab-berlin.org/events/kisprechstunde2',
                 visible: true,
             },
 
@@ -302,7 +310,7 @@ export const content = {
         },
         'schedule': {
             title: 'Termine und Ankündigungen',
-            subtitle: 'Bis auf weiteres wurden alle bevorstehenden Veranstaltungen abgesagt.',
+            subtitle: 'Bis auf weiteres finden alle bevorstehenden Veranstaltungen online statt.',
             items: [
                 {
                     title: 'Urban Mobility Symposium',
@@ -823,10 +831,18 @@ export const content = {
             },
             {
                 date: '2020-04-08',
-                format: 'Workshop',
+                format: 'Consultation',
                 time: '13.30 - 15.30',
                 title: 'AI-consultation hours',
                 link: 'https://citylab-berlin.org/events/kisprechstunde_en',
+                visible: true,
+            },
+            {
+                date: '2020-04-15',
+                format: 'Consultation',
+                time: '13.30 - 15.30',
+                title: 'AI-consultation hours vol. II',
+                link: 'https://citylab-berlin.org/events/kisprechstunde2_en',
                 visible: true,
             },
         ],
@@ -975,7 +991,7 @@ export const content = {
         },
         'schedule': {
             title: 'Dates and announcements',
-            subtitle: 'All upcoming events have been canceled until further notice.',
+            subtitle: 'Until further notice, all upcoming events will take place online.',
             items: [
                 {
                     title: 'Urban Mobility Symposium',

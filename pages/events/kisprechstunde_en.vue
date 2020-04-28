@@ -1,13 +1,13 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'AI-consultation hours'" :subTitle="'AI & City Workshops'" :subSubTitle="'08.04.2020, 13:30 - 15:30: AI-consultation hours'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'AI-consultation hours'" :subTitle="'Hack The Crisis Berlin'" :subSubTitle="'08.04.2020, 13.30-15.30'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
         <p class="event-intro">CityLab and Birds on Mars are offering weekly consultations for your <a target="_blank" href="https://hackthecrisis.citylab-berlin.org">Hack the Crisis Berlin</a> projects, starting from April 8th. Get in-detail feedback on your ideas by experts of the Berlin AI agency and benefit from their expertise and experience in practical application. Regardless of how mature your project is, we will have a look at it from a data science and ai perspective, talk about required data and where to get it, as well as about the means to get a prototype up and running fast.</p>
 
-        <p>Feel free to send any questions with a short description of your project to <a href="mailto:sebastian@birdsonmars.com">Sebastian von Birds on Mars</a>. The consultation will happen via web conference, details will be announced in the hackthecrisis slack channel.</p>
+        <p>Feel free to send any questions with a short description of your project to <a href="mailto:sebastian@birdsonmars.com">Sebastian von Birds on Mars</a>. The consultation will happen via web conference, details will be announced in the hackthecrisis <a href="https://join.slack.com/t/hackthecrisis-berlin/shared_invite/zt-cuwrelh0-~zlO_TY67TvmKVrORdsu2w">Slack-Channel</a> below '#0_Ankündigen'.</p>
 
         <div class="summary-wrapper is-medium">
           <h4>Summary</h4>

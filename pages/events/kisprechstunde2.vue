@@ -1,7 +1,7 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'KI-Sprechstunde'" :subTitle="'Hack The Crisis Berlin'" :subSubTitle="'08.04.2020, 13.30-15.30 Uhr'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'KI-Sprechstunde vol. II'" :subTitle="'Hack The Crisis Berlin'" :subSubTitle="'15.04.2020, 13.30-15.30 Uhr'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
@@ -27,7 +27,7 @@
             </div>
             <div class="content-block">
               <h5>Datum</h5>
-              <span class="summary-text">08.04.2020, 13:30 - 15:30 Uhr</span>
+              <span class="summary-text">15.04.2020, 13:30 - 15:30 Uhr</span>
             </div>
         <div class="content-block">
               <h5>E-Mail</h5>
@@ -70,7 +70,7 @@
       return {
         lang: 'de',
         content: content,
-        direct: '/events/kisprechstunde_en'
+        direct: '/events/kisprechstunde2_en'
       }
     },
     computed: {
@@ -79,22 +79,22 @@
       return {
         title: 'KI Sprechstunde - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'KI Sprechstunde (2020-04-08 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'KI Sprechstunde vol. II (2020-04-15 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
-          { hid: 'og:title', property: 'og:title',  content: "KI Sprechstunde"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "KI Sprechstunde (2020-03-03 - CityLAB Berlin)"},
+          { hid: 'og:title', property: 'og:title',  content: "KI Sprechstunde vol. II"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
+          { hid: 'og:description', property: 'og:description',  content: "KI Sprechstunde vol. II (2020-04-15 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
           { hid: 'article:author', property: 'article:author',  content: "CityLAB Berlin"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
           { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/AIforberlin2_en"},
-          { hid: 'twitter:title', name: 'twitter:title', content: "KI Sprechstunde"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "KI Sprechstunde (2020-04-08 - CityLAB Berlin)"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'twitter:title', name: 'twitter:title', content: "KI Sprechstunde vol. II"},
+          { hid: 'twitter:description', name: 'twitter:description', content: "KI Sprechstunde vol. II (2020-04-15 - CityLAB Berlin)"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
           { hid: 'name', itemprop: 'name', content:"KI Sprechstunde"},
-          { hid: 'description', itemprop: 'description', content: "KI Sprechstunde (2020-04-08 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'description', itemprop: 'description', content: "KI Sprechstunde vol. II (2020-04-15 - CityLAB Berlin)"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
         ]
       }
     },

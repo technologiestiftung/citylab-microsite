@@ -1,46 +1,39 @@
 <template>
     <div>
     <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'KI-Sprechstunde'" :subTitle="'Hack The Crisis Berlin'" :subSubTitle="'08.04.2020, 13.30-15.30 Uhr'">
+    <HeroLight :image="'https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg'" :title="'AI-consultation hours vol. II'" :subTitle="'Hack The Crisis Berlin'" :subSubTitle="'15.04.2020, 13.30-15.30'">
     </HeroLight>
         <section class="section is-medium event-content">
             <div class="container">
-        <p class="event-intro">Für eure Projekte im Rahmen von <a target="_blank" href="https://hackthecrisis.citylab-berlin.org">Hack the Crisis Berlin</a> bietet das CityLab in Zusammenarbeit mit Birds on Mars ab 8. April eine wöchentliche KI-Sprechstunde an. Dabei habt ihr die Möglichkeit, eure Ideen von der Konzeption bis zur Umsetzung detailliert mit den Experten der Berliner KI-Agentur zu besprechen und von deren Fachwissen und ihrer praktischen Erfahrung zu profitieren.</p>
+        <p class="event-intro">CityLab and Birds on Mars are offering weekly consultations for your <a target="_blank" href="https://hackthecrisis.citylab-berlin.org">Hack the Crisis Berlin</a> projects, starting from April 8th. Get in-detail feedback on your ideas by experts of the Berlin AI agency and benefit from their expertise and experience in practical application. Regardless of how mature your project is, we will have a look at it from a data science and ai perspective, talk about required data and where to get it, as well as about the means to get a prototype up and running fast.</p>
 
-        <p>Egal, ob es sich um eine grobe Skizze, erste Code-Schnipsel oder einen fortgeschrittenen Prototypen handelt, wir beleuchten euer Projekt unter Data Science- und KI-Gesichtspunkten, überlegen mit euch, welche Daten für eine Umsetzung benötigt werden, wo man sie findet, und mit welchen Mitteln man die Implementierung schnell auf die Beine bringt.</p>
-
-        <p>Schickt eure Fragen mit einer kurzen Projektbeschreibung gerne auch schon im Vorfeld an <a href="mailto:sebastian@birdsonmars.com">Sebastian von Birds on Mars</a></p>
-
-        <p>Die Sprechstunde findet per Videokonferenz statt, Details werdet ihr im hackthecrisis <a href="https://join.slack.com/t/hackthecrisis-berlin/shared_invite/zt-cuwrelh0-~zlO_TY67TvmKVrORdsu2w">Slack-Channel</a> unter '#0_Ankündigen' finden.</p>
-
+        <p>Feel free to send any questions with a short description of your project to <a href="mailto:sebastian@birdsonmars.com">Sebastian von Birds on Mars</a>. The consultation will happen via web conference, details will be announced in the hackthecrisis <a href="https://join.slack.com/t/hackthecrisis-berlin/shared_invite/zt-cuwrelh0-~zlO_TY67TvmKVrORdsu2w">Slack-Channel</a> below '#0_Ankündigen'.</p>
 
         <div class="summary-wrapper is-medium">
-          <h4>Zusammenfassung</h4>
+          <h4>Summary</h4>
           <div class="flex-container">
             <div class="content-block">
               <h5>Website</h5>
               <span class="summary-text"><a href= https://www.birdsonmars.com>https://www.birdsonmars.com</a> </span>
             </div>
             <div class="content-block">
-              <h5>Veranstalter</h5>
+              <h5>Organizer</h5>
               <span class="summary-text">CityLAB & Birds on Mars</span>
             </div>
             <div class="content-block">
-              <h5>Datum</h5>
-              <span class="summary-text">08.04.2020, 13:30 - 15:30 Uhr</span>
+              <h5>Date</h5>
+              <span class="summary-text">15.04.2020, 13:30 - 15:30 Uhr</span>
             </div>
         <div class="content-block">
               <h5>E-Mail</h5>
               <a href="mailto:sebastian@birdsonmars.com" class="summary-text">Sebastian</a>
             </div>
             <div class="content-block">
-              <h5>Adresse</h5>
-              <span class="summary-text">Videokonferenz</span>
+              <h5>Address</h5>
+              <span class="summary-text">Videoconference</span>
             </div>
           </div>
         </div>
-
-      <p> Eintritt frei mit Anmeldung </p>
 
       <Matomo/>
           </div>
@@ -68,33 +61,33 @@
     },
     data() {
       return {
-        lang: 'de',
+        lang: 'en',
         content: content,
-        direct: '/events/kisprechstunde_en'
+        direct: '/events/kisprechstunde2'
       }
     },
     computed: {
         },
     head () {
       return {
-        title: 'KI Sprechstunde - ',
+        title: 'AI-consultation hours - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'KI Sprechstunde (2020-04-08 - CityLAB Berlin)' },
+          { hid: 'description', name: 'description', content: 'AI-consultation hours vol.II (2020-04-15 - CityLAB Berlin)' },
           { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
           { hid: 'og:type', property: 'og:type',  content: "website"},
-          { hid: 'og:title', property: 'og:title',  content: "KI Sprechstunde"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "KI Sprechstunde (2020-03-03 - CityLAB Berlin)"},
+          { hid: 'og:title', property: 'og:title',  content: "AI-consultation hours vol. II"},
+          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
+          { hid: 'og:description', property: 'og:description',  content: "AI-consultation hours vol. II (2020-04-15 - CityLAB Berlin)"},
           { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
           { hid: 'article:author', property: 'article:author',  content: "CityLAB Berlin"},
           { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
           { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/AIforberlin2_en"},
-          { hid: 'twitter:title', name: 'twitter:title', content: "KI Sprechstunde"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "KI Sprechstunde (2020-04-08 - CityLAB Berlin)"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
-          { hid: 'name', itemprop: 'name', content:"KI Sprechstunde"},
-          { hid: 'description', itemprop: 'description', content: "KI Sprechstunde (2020-04-08 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_hero.jpg"},
+          { hid: 'twitter:title', name: 'twitter:title', content: "AI-consultation hours vol. II"},
+          { hid: 'twitter:description', name: 'twitter:description', content: "AI-consultation hours vol. II (2020-04-15 - CityLAB Berlin)"},
+          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
+          { hid: 'name', itemprop: 'name', content:"AI-consultation hours"},
+          { hid: 'description', itemprop: 'description', content: "AI-consultation hours vol. II (2020-04-15 - CityLAB Berlin)"},
+          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/AIforberlin2_social_media.jpg"},
         ]
       }
     },
