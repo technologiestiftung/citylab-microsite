@@ -1,11 +1,11 @@
 <template>
     <div>
         <Navigation :lang="lang" :languageVisible="false" :content="content" :direct="direct" :anchorTags="true"/>
-        <HeroLight 
-            :image="heroImageUrl" 
-            :title="title" 
-            :subTitle="subtitle" 
-            :subSubTitle="subsubtitle" 
+        <HeroLight
+            :image="heroImageUrl"
+            :title="title"
+            :subTitle="subtitle"
+            :subSubTitle="subsubtitle"
         />
 
         <section class="section is-medium event-content">
@@ -347,7 +347,7 @@ END:VCALENDAR`
                 }
             },
             beforeCreate() {
-                axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
+                axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json`)
                     .then((res) => {
                         // set event entry to data which matches with dirname
                         this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
@@ -399,8 +399,8 @@ END:VCALENDAR`
     .flex-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;    
-        
+        flex-wrap: wrap;
+
         span {
             font-size: $size-5;
         }
