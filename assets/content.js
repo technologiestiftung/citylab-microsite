@@ -1393,7 +1393,7 @@ export const content = {
                 'text_tsb': 'A project from the',
                 'href_tsb': 'https://www.technologiestiftung-berlin.de',
                 'svg_tsb': '/tsb.svg',
-                'text_sen': 'Founded by',
+                'text_sen': 'Funded by',
                 'href_sen': 'https://www.technologiestiftung-berlin.de',
                 'svg_sen': '/be-berlin-logo.svg',
             },
