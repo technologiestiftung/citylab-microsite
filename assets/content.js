@@ -1382,7 +1382,7 @@ export const content = {
                 'press': 'Press',
                 'downloads': 'Downloads',
                 'codeofconduct': 'Code of Conduct',
-                'imprint': 'Legal note',
+                'imprint': 'Imprint',
                 'dataprivacy': 'Data privacy',
                 'resources': 'Resources',
                 'board': 'Advisory Board',
@@ -1393,7 +1393,7 @@ export const content = {
                 'text_tsb': 'A project from the',
                 'href_tsb': 'https://www.technologiestiftung-berlin.de',
                 'svg_tsb': '/tsb.svg',
-                'text_sen': 'Sponsored by',
+                'text_sen': 'Funded by',
                 'href_sen': 'https://www.technologiestiftung-berlin.de',
                 'svg_sen': '/be-berlin-logo.svg',
             },
@@ -1410,7 +1410,7 @@ export const content = {
             'title': 'Downloads EN'
         },
         'imprint': {
-            'title': 'Legal note',
+            'title': 'Imprint',
             'info': {
                 'title': 'Information about Technologiestiftung Berlin',
                 'p1': 'Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin<br />Tel.: +49 30 209 69 99 0<br/>',
