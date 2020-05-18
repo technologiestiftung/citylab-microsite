@@ -197,8 +197,8 @@ export const content = {
             'board_url_button': 'Übersicht Beirat',
         },
         'newsletter_archive': {
-            'title': 'Newsletter Archiv',
-            'p1': 'Hier findest du alle bereits veröffentlichten Newsletter des CityLAB Berlin.',
+            'title': 'News',
+            'p1': 'Hier findest du alle bereits veröffentlichten Newsletter und Pressemitteilungen des CityLAB Berlin.',
         },
         'missionStatement': {
             'title': 'Unsere Mission',
