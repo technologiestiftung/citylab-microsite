@@ -611,7 +611,7 @@ export const content = {
                 'dataprivacy': 'Datenschutz',
                 'resources': 'Ressourcen',
                 'board': 'Beirat',
-                'newsletter': 'Newsletter Archiv',
+                'newsletter': 'News',
             },
             'funding': {
                 'title': '.',
@@ -941,8 +941,8 @@ export const content = {
             'board_url_button': 'Advisory Board',
         },
         'newsletter_archive': {
-            'title': 'Newsletter Archive',
-            'p1': 'At this section you find all published Newsletters',
+            'title': 'News',
+            'p1': 'At this section you find all published newsletters and press realeases',
         },
         'nav': [
             {
@@ -1386,7 +1386,7 @@ export const content = {
                 'dataprivacy': 'Data privacy',
                 'resources': 'Resources',
                 'board': 'Advisory Board',
-                'newsletter': 'Newsletter archive',
+                'newsletter': 'News',
             },
             'funding': {
                 'title': '.',
