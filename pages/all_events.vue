@@ -72,9 +72,12 @@
 
     import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
-	import Matomo from '../components/Matomo.vue';
+    import Matomo from '../components/Matomo.vue';
+    
+    import sortDates from '../mixins/sortDates.js';
 
     export default {
+        mixins: [ sortDates ],
         components: {
 			Navigation,
 			Footer,
@@ -139,8 +142,11 @@
                     this.data.push(obj);
                 })
 
-                this.dataUpcoming = this.filterData(this.data, true).sort((a, b) => new Date(a.date) - new Date(b.date));
-                this.dataPast = this.filterData(this.data, false).sort((a, b) => new Date(b.date) - new Date(a.date));
+                this.dataUpcoming = this.filterData(this.data, true);
+                this.dataPast = this.filterData(this.data, false);
+
+                this.dataUpcoming = this.sortDatesChronologically(this.dataUpcoming);
+                this.dataPast = this.sortDatesReverseChronologically(this.dataPast);
             })
         },
         methods: {
