@@ -139,10 +139,8 @@
                     this.data.push(obj);
                 })
 
-                this.data = this.data.sort((a,b) => { return new Date(b.date) - new Date(a.date) });
-
-                this.dataUpcoming = this.filterData(this.data, true);
-                this.dataPast = this.filterData(this.data, false);
+                this.dataUpcoming = this.filterData(this.data, true).sort((a, b) => new Date(a.date) - new Date(b.date));
+                this.dataPast = this.filterData(this.data, false).sort((a, b) => new Date(b.date) - new Date(a.date));
             })
         },
         methods: {
