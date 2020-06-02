@@ -122,6 +122,7 @@
     }
 
     a > article {
+        height: 100%;
         background: white;
         overflow: auto;
         transition: all .25s ease-in-out;
