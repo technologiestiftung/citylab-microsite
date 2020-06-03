@@ -14,7 +14,7 @@ module.exports = {
     ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
   },
   snapshotSerializers: ["<rootDir>/node_modules/jest-serializer-vue"],
-  collectCoverage: true,
+  collectCoverage: false,
   collectCoverageFrom: [
     "<rootDir>/components/**/*.vue",
     "<rootDir>/pages/*.vue"
