@@ -150,6 +150,7 @@
 
     .project-wrapper {
         width: 100%;
+        height: 100%;
     }
 
     .content-block {
@@ -200,7 +201,6 @@
         .wrapper-details {
             margin: 15px 20px 20px 15px;
             min-height: 60px;
-            overflow: auto;
 
             p.title {
                 margin-bottom: 0px;
