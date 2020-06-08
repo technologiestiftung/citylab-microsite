@@ -594,6 +594,91 @@ export const content = {
             'title': 'Meldet euch bei uns!',
             'subtitle': 'Wenn Du mit uns zusammenarbeiten oder uns erreichen möchtest, besuche uns in unserem Büro oder schreib uns eine Nachricht.'
         },
+        'innovationshandbuch': {
+            'hero': {
+                'title': 'Öffentliches Gestalten',
+                'subtitle': 'Handbuch für innovatives Arbeiten in der Verwaltung',
+                'img_url': '/images/handbuch/hero.svg',
+                'cta': 'Zum Download'
+            },
+            'summary': {
+                'title': 'Was steckt in dem Handbuch?',
+                'list': [
+                    {
+                        'title': 'Direkter Start ins innovative Arbeiten',
+                        'description': 'Das Buches ermöglicht einen einfachen Start in neue, wirkungsvolle Arbeitsweisen. Dazu werden strukturiert die notwendigen Grundlagen vermittelt, um öffentliche Innovationen – sichtbare Produkte und Dienstleistungen, oder auch unsichtbare Abläufe und Prozesse – ergebnisorientiert und bedarfsgerecht entwickeln zu können.',
+                        'img_url': '/images/handbuch/summary_1.png'
+                    },
+                    {
+                        'title': 'Ein Wegbegleiter ',
+                        'description': 'Das Buch leitet schrittweise durch die verschiedenen Phasen eines Innovationsprozesses, der speziell für öffentliche Verwaltungen ausgearbeitet wurde. Von der Vorbereitung und Teamzusammenstellung, über Recherche und Ideenfindung, bis zur Entwicklung und Erprobung geeigneter Lösungsansätze werden die verschiedenen Schritte eines wirkungs- und evidenzbasierten Arbeitens vorgestellt.',
+                        'img_url': '/images/handbuch/summary_2.png'
+                    },
+                    {
+                        'title': 'Umfangreiche Methodensammlung',
+                        'description': 'Bestandteil des Buches ist eine vielfältige Sammlung von Vorlagen und Arbeitsdokumenten, die auf die öffentliche Verwaltung zugeschnitten sind. Sie erklären Innovationsmethoden und beschreiben, was für die Anwendung benötigt wird, wie vorgegangen werden soll und mit welchem Ergebnis zu rechnen ist.',
+                        'img_url': '/images/handbuch/summary_3.png'
+                    },
+                    {
+                        'title': 'Anleitung zum Selbermachen',
+                        'description': 'Das Buch richtet sich an Menschen, die in oder mit öffentlichen Verwaltungen und Organisationen arbeiten. Es enthält das Handwerkszeug, um Innovationsprozesse auch eigenständig und ohne externe Hilfe durchführen zu können. Wir haben darauf geachtet, dass dieses Buch selbsterklärend funktioniert und dazu befähigt, eigeninitiativ zu handeln.',
+                        'img_url': '/images/handbuch/summary_4.png'
+                    }
+                ]
+            },
+            'methods': {
+                'title': 'So arbeiten wir im Buch',
+                'list': [
+                    {
+                        'title': 'Wirkungsorientiert',
+                        'description': 'Status Quo verstehen, Blinde Flecken aufdecken, Zielwissen generieren, Gemeinwohlorientiert entwickeln.',
+                        'img_url': '/images/handbuch/methods_wirkungsorientiert.svg'
+                    },
+                    {
+                        'title': 'Menschzentriert',
+                        'description': 'Qualitativ und quantitativ recherchieren, empathisch vorgehen, Betroene zu Beteiligten werden lassen.',
+                        'img_url': '/images/handbuch/methods_menschzentriert.svg'
+                    },
+                    {
+                        'title': 'Evidenzbasiert',
+                        'description': 'Entscheidungsﬁndung basierend auf Daten und Erkenntnissen aus Theorie und Praxis, kritisches Denken & Handeln.',
+                        'img_url': '/images/handbuch/methods_evidenzbasiert.svg'
+                    },
+                    {
+                        'title': 'Designgeleitet',
+                        'description': 'Visualisierung, Prototyping, Testen, Fehlerfreundlichkeit, iterative Prozesse, legitimierter Experimentierraum',
+                        'img_url': '/images/handbuch/methods_designgeleitet.svg'
+                    },
+                    {
+                        'title': 'Multiperspektivisch',
+                        'description': 'Disziplin- oder abteilungsübergreifende Zusammenarbeit, Verständigung zwischen verschiedenen Fachsprachen, Diversität durch Zugänglichkeit.',
+                        'img_url': '/images/handbuch/methods_multiperspektivisch.svg'
+                    },
+                    {
+                        'title': 'Ko-kreativ',
+                        'description': 'Gemeinsame Wissensgenerierung, strukturierte Einbindung verschiedenster Akteursgruppen im Entwicklungsprozess.',
+                        'img_url': '/images/handbuch/methods_ko-kreativ.svg'
+                    }
+                ]
+            },
+            'contributors': {
+                'title': 'Öffentliche Gestalter:innen',
+                'description': 'Das Handbuch ist entstanden durch eine Zusammenarbeit von CityLAB Berlin und <a href="https://www.politicsfortomorrow.eu/" target="blank">Politics for Tomorrow</a>.'
+            },
+            'download': {
+                'title': 'Download',
+                'description': 'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter. <br><br>Für das gedruckte Buch, schick uns eine E-Mail an <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
+                'cta': {
+                    'title': 'Herunterladen',
+                    'direct': ''
+                }
+            },
+            'form': {
+                'title': 'Mehr Verwaltungsinnovation',
+                'description': 'Bleib informiert über neue Inhalte, zukünftigen Angebote, Veranstaltungen oder Möglichkeiten zur Weiterbildung.',
+                'cta': 'Anmelden'
+            }
+        },
         'footer': {
             'contact': {
                 'title': 'Kontakt',
