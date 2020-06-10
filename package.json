@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "analyze": "nuxt build --analyze --no-lock",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch ----coverage=false"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
