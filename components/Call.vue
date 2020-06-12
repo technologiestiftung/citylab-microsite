@@ -10,7 +10,7 @@
             <p class="intro content">{{ content[lang]['call']['bullets_intro'] }}</p>
 
             <ul class="content bullet-list">
-                <li class="intro bullet" v-for="partner in bulletsArr">
+                <li class="intro bullet" v-for="partner in bulletsArr" v-bind:key="partner" data-testid="call-list-items">
                     {{ partner }}
                 </li>
             </ul>
