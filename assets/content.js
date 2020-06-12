@@ -81,7 +81,7 @@ export const content = {
         'exhibition': {
             teaser: {
                 'title': 'Unsere Ausstellung',
-                'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten. <b>Die Ausstellung ist bis auf weiteres geschlossen.</b>',
+                'description': 'Erlebe die Stadt der Zukunft in interaktiven Exponaten.',
                 'imgUrl': '/images/exhibition-preview.jpg',
                 'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
                 'btn': 'Alle Exponate',
@@ -852,7 +852,7 @@ export const content = {
         'exhibition': {
             teaser: {
                 'title': 'Our exhibition',
-                'description': 'Experience the city of the future in interactive exhibits. <b>The exhibition is closed until further notice.</b>',
+                'description': 'Experience the city of the future in interactive exhibits.',
                 'imgUrl': '/images/exhibition-preview.jpg',
                 'imgUrlLazy': '/images/exhibition-preview-lazy.jpg',
                 'btn': 'All exhibits',
