@@ -92,7 +92,7 @@
     <section id="download" class="section is-medium">
       <div class="container">
         <div class="columns">
-          <div class="column">
+          <div class="column is-7">
             <h2 class="title">
               {{ this.download['title'] }}
             </h2>
@@ -105,8 +105,8 @@
               {{ this.download['cta']['title'] }}
             </a>
           </div>
-          <div class="column">
-            <Signup />
+          <div class="column is-5">
+            <!-- <Signup /> -->
           </div>
         </div>
       </div>
