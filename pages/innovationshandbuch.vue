@@ -121,7 +121,7 @@
   } from '../assets/content.js';
   
   import Button from '../components/Button.vue';
-  import Signup from '../components/handbuch/Signup.vue';
+  /* import Signup from '../components/handbuch/Signup.vue'; */
   import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 
@@ -130,7 +130,7 @@
       Navigation,
       Footer,
       Button,
-      Signup
+      //Signup
     },
 		data() {
 			return {
