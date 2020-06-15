@@ -599,6 +599,16 @@ export const content = {
                 'title': 'Öffentliches Gestalten',
                 'subtitle': 'Handbuch für innovatives Arbeiten in der Verwaltung',
                 'img_url': '/images/handbuch/hero.svg',
+                'logos': {
+                    'citylab': {
+                        'img_url': '/images/citylab_logo.svg',
+                        'alt': 'CityLAB Berlin Logo'
+                    },
+                    'p4t': {
+                        'img_url': '/images/handbuch/politics_for_tomorrow_logo.svg',
+                        'alt': 'Politics for tomorrow Logo'
+                    }
+                },
                 'cta': 'Zum Download'
             },
             'summary': {
@@ -663,14 +673,15 @@ export const content = {
             },
             'contributors': {
                 'title': 'Öffentliche Gestalter:innen',
-                'description': 'Das Handbuch ist entstanden durch eine Zusammenarbeit von CityLAB Berlin und <a href="https://www.politicsfortomorrow.eu/" target="blank">Politics for Tomorrow</a>.'
+                'description': 'Das Handbuch ist entstanden durch eine Zusammenarbeit von CityLAB Berlin und <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.'
             },
             'download': {
                 'title': 'Download',
                 'description': 'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter. <br><br>Für das gedruckte Buch, schick uns eine E-Mail an <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
+                'resourceName': 'ÖffentlichesGestalten',
                 'cta': {
                     'title': 'Herunterladen',
-                    'direct': ''
+                    'direct': '/downloads/citylab-handbook-PREPRINT.pdf'
                 }
             },
             'form': {
