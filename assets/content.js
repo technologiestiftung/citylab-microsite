@@ -595,6 +595,10 @@ export const content = {
             'subtitle': 'Wenn Du mit uns zusammenarbeiten oder uns erreichen möchtest, besuche uns in unserem Büro oder schreib uns eine Nachricht.'
         },
         'innovationshandbuch': {
+            'teaser': {
+                'link': '/innovationshandbuch',
+                'cta': 'Zum Handbuch'
+            },
             'hero': {
                 'title': 'Öffentliches Gestalten',
                 'subtitle': 'Handbuch für innovatives Arbeiten in der Verwaltung',
