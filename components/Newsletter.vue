@@ -19,10 +19,10 @@
 
                             <div class="editable_content" style="text-align:left;">
                                 <div id="4405745" rel="text" class="cr_ipe_item ui-sortable">
-                                <input class="input" id="text4405745" name="1090337" style="margin-bottom:15px;" type="text" value="Name"/>
+                                <input class="input" id="text4405745" name="1090337" style="margin-bottom:15px;" type="text" :placeholder="content[lang]['register']['form']['name']"/>
                             </div>
                             <div id="4405746" rel="email" class="cr_ipe_item ui-sortable musthave" style="margin-bottom:15px;">
-                                <input class="input" id="text4405746" name="email" value="E-mail Adresse *" type="text"/>
+                                <input class="input" id="text4405746" name="email" :placeholder="content[lang]['register']['form']['mail']" type="text"/>
                             </div>
 
                             <div id="4405750" rel="checkbox" class="cr_ipe_item ui-sortable musthave" style=" margin-bottom:0px;">

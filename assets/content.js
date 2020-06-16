@@ -230,9 +230,9 @@ export const content = {
             'urlunsubscribe': '/newsletter_unsubscribe_de',
             'mandatory': '* Pflichtfeld',
             'form': {
-                name: 'Ihr Name',
+                name: 'Dein Name',
                 language: 'Sprache des Newsletters',
-                mail: 'Ihre E-Mail-Adresse',
+                mail: 'Deine E-Mail-Adresse',
                 button: 'Anmelden',
                 agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir regelmäßig Informationen zu den Tätigkeiten, Themen und Veranstaltungen per E-Mail in Form eines Newsletters zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
                 unsubscribe: 'Meine Einwilligung kann ich jederzeit hier gegenüber dem CityLAB Berlin <a href="/newsletter_unsubscribe_de">widerrufen</a>.'
@@ -1138,7 +1138,7 @@ export const content = {
             mandatory: '* Mandatory field',
             form: {
                 name: 'Your name',
-                mail: 'Your E-Mail',
+                mail: 'Your e-mail',
                 language: 'Language of the newsletter',
                 button: 'Subscribe',
                 agb: 'By entering my e-mail address and clicking the "Subscribe" button, I agree that the City Berlin may send me regular information on the activities of the CityLAB Berlin, related topics and events by e-mail. Comprehensive information on the registration and unsubscription procedure, the service provider and the statistical evaluation of your data can be found in our Privacy Policy.',
