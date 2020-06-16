@@ -1612,7 +1612,7 @@ export const content = {
                     token: '6gzzn71j-nydptvmb-6fk'
                 },
                 'unsubscribe': {
-                    title: 'Unsubscribe from the Handbuch newsletter',
+                    title: 'Unsubscribe from the handbook newsletter',
                     subtitle: 'Please enter your email to unsubscribe from the newsletter.',
                     email: 'E-Mail',
                     button: 'Unsubscribe',
