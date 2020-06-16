@@ -55,6 +55,8 @@ export default {
   },
   methods: {
     handleSubmit: function(e) {
+      const vm = this;
+
       //Formular initialisieren
       !(function(e, t, n, c, r, a, i) {
         (e.Newsletter2GoTrackingObject = r),
@@ -87,25 +89,25 @@ export default {
             email: this.email
           }
         },
-        function(data) {
-          if (data.status == 201) {
-            //Ausgabe der Statusmeldung anstelle des Formulars
-            console.log('Anmeldung erfolgreich!');
-            
-          } else if (data.status == 200) {
-            //Ausgabe der Statusmeldung anstelle des Formulars
-            console.log('Du bist bereits angemeldet!');
-            
+        function(response, messages) {
+          if (response.status == 201) {
+            // successful signup
+            //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
+            //window.open(routeData.href, '_blank');
+          } else if (response.status == 200) {
+            // duplicate subscription
+            //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
+            //window.open(routeData.href, '_blank');
           } else {
-            //Ausgabe der Statusmeldung anstelle des Formulars
-            console.log('Fehler');
-            
+            // error while subscribing
+            //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
+            //window.open(routeData.href, '_blank');
           }
         },
-        function(data) {
-          //Ausgabe der Statusmeldung anstelle des Formulars
-          console.log('Fehler');
-          
+        function(response, messages) {
+          // error while subscribing
+          //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
+          //window.open(routeData.href, '_blank');
         }
       );
     }

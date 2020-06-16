@@ -66,23 +66,19 @@ export default {
             email: this.email
           }
         },
-        function(data) {
-          if (data.status == 201) {
-            //Ausgabe der Statusmeldung anstelle des Formulars
-            console.log('Anmeldung erfolgreich!');
-            
-          } else if (data.status == 200) {
-            //Ausgabe der Statusmeldung anstelle des Formulars
-            console.log('Du bist bereits angemeldet!');
+        function(response, message) {
+          if (response.status == 201) {
+            // unsubscribe successful
+            console.log('Abmeldung erfolgreich!');
             
           } else {
-            //Ausgabe der Statusmeldung anstelle des Formulars
+            // error while unsubscribing
             console.log('Fehler');
             
           }
         },
         function(data) {
-          //Ausgabe der Statusmeldung anstelle des Formulars
+          // error while unsubscribing
           console.log('Fehler');
           
         }
