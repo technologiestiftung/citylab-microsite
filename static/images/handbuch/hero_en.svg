@@ -62,21 +62,21 @@
       <polygon fill="#DDDCDF" points="53.044 80.74 130.03 80.74 130.03 3.765 53.044 3.765"/>
       <polygon stroke="#2F395A" stroke-width=".899" points="128.426 77.534 51.44 77.534 51.44 .559 128.426 .559 128.426 65.493"/>
     </g>
-    <g fill="#2F395A" font-family="National-Regular, National" font-size="10.79" transform="translate(13 115)">
+    <g fill="#2F395A" font-family="National-Regular, National" font-size="10.79" transform="translate(9 116)">
       <text letter-spacing=".086">
-        <tspan x="44.777" y="9.031">D</tspan> <tspan x="51.359" y="9.031">eine </tspan>
+        <tspan x="48.777" y="9.031">Your</tspan>
       </text>
       <text>
-        <tspan x="44.777" y="24.986">pe</tspan> <tspan x="55.697" y="24.986" letter-spacing="-.162">r</tspan> <tspan x="59.214" y="24.986">sönliche </tspan>
+        <tspan x="48.777" y="24.986">personal</tspan>
       </text>
       <text letter-spacing="-.054">
-        <tspan x="44.777" y="40.94">R</tspan> <tspan x="50.604" y="40.94">eise</tspan>
+        <tspan x="48.777" y="40.94">journey</tspan>
       </text>
       <text>
-        <tspan x="9.558" y="190">Überblic</tspan> <tspan x="46.645" y="190" letter-spacing="-.053">k</tspan> <tspan x="51.588" y="190">swissen</tspan>
+        <tspan x=".844" y="189">Background knowledge</tspan>
       </text>
       <text>
-        <tspan x="259.285" y="206">G</tspan> <tspan x="265.868" y="206" letter-spacing="-.131">r</tspan> <tspan x="269.449" y="206">aﬁ</tspan> <tspan x="279.97" y="206" letter-spacing="-.238">k</tspan> <tspan x="284.544" y="206">en</tspan>
+        <tspan x="261.887" y="207">Graphics</tspan>
       </text>
     </g>
     <g transform="translate(9)">
@@ -114,7 +114,7 @@
       <polygon fill="#DF4874" points="227.617 177.004 221.869 180.329 227.617 183.653"/>
     </g>
     <text fill="#2F395A" font-family="National-Regular, National" font-size="10.79">
-      <tspan x="239.047" y="224">Methoden</tspan>
+      <tspan x="242.111" y="223">Methods</tspan>
     </text>
     <polygon fill="#FFFFFE" points="341 386 341 436.149 303.34 436.149 281.021 454 281.021 436.149 247 436.149 247 386"/>
     <polygon fill="#DDDCDF" points="343 389 343 439.148 305.339 439.148 283.021 457 283.021 439.148 249 439.148 249 389"/>
@@ -123,7 +123,7 @@
     <polyline stroke="#2F395A" stroke-width="2.698" points="51 242.5 103.414 242.5 159 242.5"/>
     <polyline stroke="#2F395A" stroke-width="2.698" points="52 259.5 111.693 259.5 175 259.5"/>
     <text fill="#2F395A" font-family="National-Regular, National" font-size="10.79" letter-spacing="-.228">
-      <tspan x="274.539" y="416">K</tspan> <tspan x="279.879" y="416">on</tspan> <tspan x="290.82" y="416" letter-spacing="-.109">z</tspan> <tspan x="294.855" y="416">ep</tspan> <tspan x="305.775" y="416" letter-spacing="-.054">t</tspan> <tspan x="309.303" y="416">e</tspan>
+      <tspan x="274.893" y="415">Concepts</tspan>
     </text>
     <polygon fill="#DDDCDF" points="156.398 276 156.398 278.943 171.979 278.943 119 331.919 121.081 334 174.059 281.021 174.059 296.601 177 296.601 177 276"/>
     <polygon fill="#FFFFFE" points="155.398 274 155.398 276.943 170.979 276.943 118 329.919 120.08 332 173.057 279.021 173.057 294.602 176 294.602 176 274"/>
