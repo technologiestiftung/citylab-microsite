@@ -697,7 +697,7 @@ export const content = {
                 },
                 'form': {
                     name: 'Name',
-                    email: 'E-Mail-Adresse',
+                    email: 'E-Mail-Adresse*',
                     mandatory: '* Pflichtfeld',
                     button: 'Anmelden',
                     agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir Informationen zu neuen Inhalten, zukünftigen Angeboten, Veranstaltungen oder Möglichkeiten zur Weiterbildung per E-Mail zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
