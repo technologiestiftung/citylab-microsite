@@ -596,7 +596,7 @@ export const content = {
         },
         'innovationshandbuch': {
             'teaser': {
-                'link': '/innovationshandbuch',
+                'link': '/handbuch',
                 'cta': 'Zum Handbuch'
             },
             'hero': {
@@ -650,7 +650,7 @@ export const content = {
                     },
                     {
                         'title': 'Menschzentriert',
-                        'description': 'Qualitativ und quantitativ recherchieren, empathisch vorgehen, Betroene zu Beteiligten werden lassen.',
+                        'description': 'Qualitativ und quantitativ recherchieren, empathisch vorgehen, Betroffene zu Beteiligten werden lassen.',
                         'img_url': '/images/handbuch/methods_menschzentriert.svg'
                     },
                     {
@@ -688,11 +688,21 @@ export const content = {
                     'direct': '/downloads/citylab-handbook-PREPRINT.pdf'
                 }
             },
-            'form': {
-                'title': 'Mehr Verwaltungsinnovation',
-                'description': 'Bleib informiert über neue Inhalte, zukünftigen Angebote, Veranstaltungen oder Möglichkeiten zur Weiterbildung.',
-                'cta': 'Anmelden'
-            }
+            'register': {
+                'intro': {
+                    'title': 'Mehr Verwaltungsinnovation',
+                    'subtitle': 'Bleib informiert über neue Inhalte, zukünftigen Angebote, Veranstaltungen oder Möglichkeiten zur Weiterbildung.'
+                },
+                'form': {
+                    name: 'Name',
+                    email: 'E-Mail-Adresse',
+                    mandatory: '* Pflichtfeld',
+                    button: 'Anmelden',
+                    agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir Informationen zu neuen Inhalten, zukünftigen Angeboten, Veranstaltungen oder Möglichkeiten zur Weiterbildung per E-Mail zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
+                    unsubscribe: 'Meine Einwilligung kann ich jederzeit gegenüber dem CityLAB Berlin <a href="/handbuch_unsubscribe_de">widerrufen</a>.',
+                    token: '6gzzn71j-5kev2hxf-16oh'
+                },
+            },
         },
         'footer': {
             'contact': {
