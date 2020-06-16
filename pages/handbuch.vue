@@ -152,6 +152,13 @@
 <style lang="scss" scoped>
   @import "../assets/style/style.scss";
 
+  .section:not(.hero) {
+    @media screen and (min-width: $tablet) {
+      padding-top: 6rem !important;
+      padding-bottom: 6rem !important;
+    }
+  }
+
   .wrap {
     flex-wrap: wrap;
   }
