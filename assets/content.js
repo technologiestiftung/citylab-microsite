@@ -707,7 +707,7 @@ export const content = {
                 },
                 'unsubscribe': {
                     title: 'Abmeldung vom Handbuch-Newsletter',
-                    subtitle: 'Bitte geben Sie Ihre E-Mail-Adresse ein, um sich vom Newsletter abzumelden.',
+                    subtitle: 'Bitte gib Deine E-Mail-Adresse ein, um Dich vom Newsletter abzumelden.',
                     email: 'E-Mail',
                     button: 'Abmelden',
                     token: '6gzzn71j-5kev2hxf-16oh'
