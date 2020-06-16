@@ -106,7 +106,7 @@
             </a>
           </div>
           <div class="column is-5">
-            <Signup :lang="lang" :content="content" />
+            <HandbuchSubscribe :lang="lang" :content="content" />
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@
   } from '../assets/content.js';
   
   import Button from '../components/Button.vue';
-  import Signup from '../components/handbuch/Signup.vue';
+  import HandbuchSubscribe from '../components/handbuch/HandbuchSubscribe.vue';
   import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 
@@ -130,7 +130,7 @@
       Navigation,
       Footer,
       Button,
-      Signup
+      HandbuchSubscribe
     },
 		data() {
 			return {
