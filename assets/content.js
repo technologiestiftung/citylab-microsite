@@ -1492,6 +1492,118 @@ export const content = {
             'title': 'Get in touch!',
             'subtitle': 'If you want to collaborate with us or reach out, visit us in our office or drop us a line.'
         },
+        'innovationshandbuch': {
+            'teaser': {
+                'link': '/handbuch_en',
+                'title': 'Public Design',
+                'subtitle': 'Our handbook for working innovatively in public administration.',
+                'cta': 'Show more'
+            },
+            'hero': {
+                'title': 'Public Design',
+                'subtitle': 'Handbook for working innovatively in public administration.',
+                'img_url': '/images/handbuch/hero_en.svg',
+                'logos': {
+                    'citylab': {
+                        'img_url': '/images/citylab_logo.svg',
+                        'alt': 'CityLAB Berlin Logo'
+                    },
+                    'p4t': {
+                        'img_url': '/images/handbuch/politics_for_tomorrow_logo.svg',
+                        'alt': 'Politics for tomorrow Logo'
+                    }
+                },
+                'cta': 'Go to download'
+            },
+            'summary': {
+                'title': 'What’s in the book?',
+                'list': [
+                    {
+                        'title': 'An introduction into innovative work',
+                        'description': 'The book enables you to quickly and easily put new, effective working methods into practice. It provides the necessary basics for developing results-oriented, needs-based public innovations, regardless of whether these innovations are visible products and services or invisible structures and processes.',
+                        'img_url': '/images/handbuch/summary_1.png'
+                    },
+                    {
+                        'title': 'A step-by-step overview',
+                        'description': 'The book guides you through the different phases of an innovation process that has been specifically designed with public administrations in mind. From preparation and team building, to research and brainstorming, to the development and testing of suitable solutions, the book offers a step-by-step guide on how to work in a way that is both impact- and evidence-based.',
+                        'img_url': '/images/handbuch/summary_2.png'
+                    },
+                    {
+                        'title': 'Comprehensive collection of methods',
+                        'description': 'One major component of the book is its extensive collection of templates and working documents tailored to the needs of public administrations. They explain various innovation methods, describe what is needed to apply these methods, detail how to actually implement these methods, and highlight what results can be expected.',
+                        'img_url': '/images/handbuch/summary_3.png'
+                    },
+                    {
+                        'title': 'Do-it-yourself instructions',
+                        'description': 'The book is aimed at people who work in or with public administrations and organisations. It contains the necessary tools to be able to carry out innovation processes independently and without external help. We have made sure that this book is self-explanatory and enables people to act based on their own initiative.',
+                        'img_url': '/images/handbuch/summary_4.png'
+                    }
+                ]
+            },
+            'methods': {
+                'title': 'The book’s approach',
+                'list': [
+                    {
+                        'title': 'Impact-oriented',
+                        'description': 'Understanding the status quo, revealing blind spots, generating target knowledge, developing for the common good',
+                        'img_url': '/images/handbuch/methods_wirkungsorientiert.svg'
+                    },
+                    {
+                        'title': 'Human-centered',
+                        'description': 'Qualitative and quantitative research, proceeding empathically, transforming affected groups into active participants',
+                        'img_url': '/images/handbuch/methods_menschzentriert.svg'
+                    },
+                    {
+                        'title': 'Evidence-based',
+                        'description': 'Decision making based on data and findings from theory and practice, thinking and acting critically',
+                        'img_url': '/images/handbuch/methods_evidenzbasiert.svg'
+                    },
+                    {
+                        'title': 'Design-led',
+                        'description': 'Visualization, prototyping, testing, error tolerance, iterative processes, experimental space',
+                        'img_url': '/images/handbuch/methods_designgeleitet.svg'
+                    },
+                    {
+                        'title': 'Multi-perspective',
+                        'description': 'Interdisciplinary or interdepartmental cooperation, generating understanding between different fields of expertise, diversity through accessibility',
+                        'img_url': '/images/handbuch/methods_multiperspektivisch.svg'
+                    },
+                    {
+                        'title': 'Co-creative',
+                        'description': 'Joint knowledge generation, structured involvement of various groups of stakeholders in the development process',
+                        'img_url': '/images/handbuch/methods_ko-kreativ.svg'
+                    }
+                ]
+            },
+            'contributors': {
+                'title': 'Public designers',
+                'description': 'The handbook is the result of a collaboration between CityLAB Berlin and <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.'
+            },
+            'download': {
+                'title': 'Download',
+                'description': 'You want to shape change in public administration? Unfortunately, this book does not yet exist in English. However, you can download the manual and the collection of methods here as a German PDF.  <br><br>To request a copy of the printed book or to request more information in English, send us an email via <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
+                'resourceName': 'ÖffentlichesGestalten',
+                'cta': {
+                    'title': 'Download',
+                    'direct': '/downloads/citylab-handbook-PREPRINT.pdf'
+                }
+            },
+            'register': {
+                'intro': {
+                    'title': 'More about innovation in public administration.',
+                    'subtitle': 'Stay informed about new content, future offers, events or opportunities for further education.'
+                },
+                'form': {
+                    name: 'Name',
+                    email: 'Email-Adress*',
+                    mandatory: '* required',
+                    button: 'Register',
+                    agb: 'By providing my e-mail address and clicking the "Register" button, I agree that CityLAB Berlin may send me information on new content, future offers, events or opportunities for further education via e-mail. Comprehensive information about the registration and deregistration process, the service provider and the statistical evaluation of your data can be found in our privacy policy.',
+                    unsubscribe: 'I can <a href="/handbuch_unsubscribe_en">revoke</a> my consent at any time by contacting CityLAB Berlin.',
+                    token: '6gzzn71j-nydptvmb-6fk'
+                },
+            },
+        },
         'footer': {
             'contact': {
                 'title': 'Get in touch',
