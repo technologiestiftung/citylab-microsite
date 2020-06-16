@@ -106,7 +106,7 @@
             </a>
           </div>
           <div class="column is-5">
-            <!-- <Signup /> -->
+            <Signup :lang="lang" :content="content" />
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@
   } from '../assets/content.js';
   
   import Button from '../components/Button.vue';
-  /* import Signup from '../components/handbuch/Signup.vue'; */
+  import Signup from '../components/handbuch/Signup.vue';
   import Navigation from '../components/Navigation.vue';
 	import Footer from '../components/Footer.vue';
 
@@ -130,13 +130,13 @@
       Navigation,
       Footer,
       Button,
-      //Signup
+      Signup
     },
 		data() {
 			return {
 				lang: 'de',
 				content: content,
-				direct: '/innovationshandbuch'
+				direct: '/handbuch_en'
 			}
     },
     computed: {
@@ -207,6 +207,9 @@
       font-weight: $weight-bold;
     }
     article {
+      >* {
+        margin-top: $spacing-m;
+      }
       img {
         width: auto;
         max-height: 60px;
@@ -216,6 +219,9 @@
 
   section.methods {
     article {
+      >* {
+        margin-top: $spacing-m;
+      }
       h3 {
         font-size: $size-medium;
         font-weight: $weight-bold;
