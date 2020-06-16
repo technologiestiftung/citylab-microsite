@@ -702,16 +702,17 @@ export const content = {
                     mandatory: '* Pflichtfeld',
                     button: 'Anmelden',
                     agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir Informationen zu neuen Inhalten, zukünftigen Angeboten, Veranstaltungen oder Möglichkeiten zur Weiterbildung per E-Mail zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
-                    unsubscribe: 'Meine Einwilligung kann ich jederzeit gegenüber dem CityLAB Berlin <a href="/handbuch_unsubscribe">widerrufen</a>.',
+                    unsubscribe: 'Meine Einwilligung kann ich jederzeit gegenüber dem CityLAB Berlin <a href="/handbuch_newsletter/handbuch_unsubscribe_de">widerrufen</a>.',
                     token: '6gzzn71j-5kev2hxf-16oh'
                 },
+                'unsubscribe': {
+                    title: 'Abmeldung vom Handbuch-Newsletter',
+                    subtitle: 'Bitte geben Sie Ihre E-Mail-Adresse ein, um sich vom Newsletter abzumelden.',
+                    email: 'E-Mail',
+                    button: 'Abmelden',
+                    token: '6gzzn71j-5kev2hxf-16oh'
+                }
             },
-            'unsubscribe': {
-                title: 'Handbuch-Newsletter abmelden',
-                subtitle: 'Bitte geben Sie Ihre E-Mail-Adresse ein, um sich abzumelden.',
-                email: 'E-Mail',
-                button: 'Abmelden'
-            }
         },
         'footer': {
             'contact': {
@@ -1508,7 +1509,7 @@ export const content = {
             },
             'hero': {
                 'title': 'Public Design',
-                'subtitle': 'Handbook for working innovatively in public administration.',
+                'subtitle': 'Handbook for working innovatively in public administration',
                 'img_url': '/images/handbuch/hero_en.svg',
                 'logos': {
                     'citylab': {
@@ -1607,9 +1608,16 @@ export const content = {
                     mandatory: '* required',
                     button: 'Register',
                     agb: 'By providing my e-mail address and clicking the "Register" button, I agree that CityLAB Berlin may send me information on new content, future offers, events or opportunities for further education via e-mail. Comprehensive information about the registration and deregistration process, the service provider and the statistical evaluation of your data can be found in our privacy policy.',
-                    unsubscribe: 'I can <a href="/handbuch_unsubscribe_en">revoke</a> my consent at any time by contacting CityLAB Berlin.',
+                    unsubscribe: 'I can <a href="/handbuch_newsletter/handbuch_unsubscribe_en">revoke</a> my consent at any time by contacting CityLAB Berlin.',
                     token: '6gzzn71j-nydptvmb-6fk'
                 },
+                'unsubscribe': {
+                    title: 'Unsubscribe from the Handbuch newsletter',
+                    subtitle: 'Please enter your email to unsubscribe from the newsletter.',
+                    email: 'E-Mail',
+                    button: 'Unsubscribe',
+                    token: '6gzzn71j-nydptvmb-6fk'
+                }
             },
         },
         'footer': {
