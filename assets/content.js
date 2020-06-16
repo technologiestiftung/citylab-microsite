@@ -597,6 +597,8 @@ export const content = {
         'innovationshandbuch': {
             'teaser': {
                 'link': '/handbuch',
+                'title': 'Öffentliches Gestalten',
+                'subtitle': 'Unser Handbuch für innovatives Arbeiten in der Verwaltung.',
                 'cta': 'Zum Handbuch'
             },
             'hero': {

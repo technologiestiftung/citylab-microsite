@@ -3,13 +3,13 @@
         <div class="container columns">
           <div class="column">
             <figure>
-              <img :src="this.handbuch['hero']['img_url']" :alt="this.handbuch['hero']['title']">
+              <img :src="this.handbuch['hero']['img_url']" :alt="this.handbuch['teaser']['title']">
             </figure>
           </div>
           <div class="column text">
             <div>
-              <h2 class="title">{{this.handbuch['hero']['title']}}</h2>
-              <p class="subtitle">{{this.handbuch['hero']['subtitle']}}</p>
+              <h2 class="title">{{this.handbuch['teaser']['title']}}</h2>
+              <p class="subtitle">{{this.handbuch['teaser']['subtitle']}}</p>
               <Button type="external" :label="this.handbuch['teaser']['cta']" :direct="this.handbuch['teaser']['link']"/>
             </div>
           </div>
