@@ -7,11 +7,17 @@
       method="POST"
       v-on:submit.prevent="handleSubmit()"
     >
-      <label>{{ this.register['form']['name'] }}</label>
+      <label>{{ this.register['form']['first_name'] }}</label>
       <input
-        type="text" name="name"
-        :placeholder="this.register['form']['name']"
-        v-model="name"
+        type="text" name="first_name"
+        :placeholder="this.register['form']['first_name']"
+        v-model="first_name"
+      />
+      <label>{{ this.register['form']['last_name'] }}</label>
+      <input
+        type="text" name="last_name"
+        :placeholder="this.register['form']['last_name']"
+        v-model="last_name"
       />
       <label>{{ this.register['form']['email'] }}</label>
       <input
@@ -38,7 +44,8 @@ export default {
   name: "HandbuchSubscribe",
   data() {
     return {
-      name: null,
+      first_name: null,
+      last_name: null,
       email: null
     }
   },
@@ -75,7 +82,8 @@ export default {
         "subscribe:send",
         {
           recipient: {
-            name: this.name,
+            first_name: this.first_name,
+            last_name: this.last_name,
             email: this.email
           }
         },

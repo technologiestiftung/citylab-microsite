@@ -696,15 +696,22 @@ export const content = {
                     'subtitle': 'Bleib informiert über neue Inhalte, zukünftigen Angebote, Veranstaltungen oder Möglichkeiten zur Weiterbildung.'
                 },
                 'form': {
-                    name: 'Name',
+                    first_name: 'Vorname',
+                    last_name: 'Nachname',
                     email: 'E-Mail-Adresse*',
                     mandatory: '* Pflichtfeld',
                     button: 'Anmelden',
                     agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir Informationen zu neuen Inhalten, zukünftigen Angeboten, Veranstaltungen oder Möglichkeiten zur Weiterbildung per E-Mail zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
-                    unsubscribe: 'Meine Einwilligung kann ich jederzeit gegenüber dem CityLAB Berlin <a href="/handbuch_unsubscribe_de">widerrufen</a>.',
+                    unsubscribe: 'Meine Einwilligung kann ich jederzeit gegenüber dem CityLAB Berlin <a href="/handbuch_unsubscribe">widerrufen</a>.',
                     token: '6gzzn71j-5kev2hxf-16oh'
                 },
             },
+            'unsubscribe': {
+                title: 'Handbuch-Newsletter abmelden',
+                subtitle: 'Bitte geben Sie Ihre E-Mail-Adresse ein, um sich abzumelden.',
+                email: 'E-Mail',
+                button: 'Abmelden'
+            }
         },
         'footer': {
             'contact': {
@@ -1594,8 +1601,9 @@ export const content = {
                     'subtitle': 'Stay informed about new content, future offers, events or opportunities for further education.'
                 },
                 'form': {
-                    name: 'Name',
-                    email: 'Email-Adress*',
+                    first_name: 'First name',
+                    last_name: 'Last name',
+                    email: 'Email-Address*',
                     mandatory: '* required',
                     button: 'Register',
                     agb: 'By providing my e-mail address and clicking the "Register" button, I agree that CityLAB Berlin may send me information on new content, future offers, events or opportunities for further education via e-mail. Comprehensive information about the registration and deregistration process, the service provider and the statistical evaluation of your data can be found in our privacy policy.',
