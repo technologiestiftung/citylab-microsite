@@ -24,13 +24,12 @@
                     >
                   </figure>
                 </div>
-                <a
+                <button
                   class="button is-color-secondary is-medium"
-                  href="#"
                   @click="scrollToDownload"
                 >
                   {{ this.hero['cta'] }}
-                </a>
+                </button>
               </div>
             </div>
             <div class="column is-7 hero-image">
