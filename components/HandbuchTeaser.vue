@@ -1,16 +1,18 @@
 <template>
     <section id="handbuch-teaser" class="section is-medium">
-        <div class="container columns">
-          <div class="column">
-            <figure>
-              <img :src="this.handbuch['hero']['img_url']" :alt="this.handbuch['teaser']['title']">
-            </figure>
-          </div>
-          <div class="column text">
-            <div>
-              <h2 class="title">{{this.handbuch['teaser']['title']}}</h2>
-              <p class="subtitle">{{this.handbuch['teaser']['subtitle']}}</p>
-              <Button type="external" :label="this.handbuch['teaser']['cta']" :direct="this.handbuch['teaser']['link']"/>
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <figure>
+                <img :src="this.handbuch['hero']['img_url']" :alt="this.handbuch['teaser']['title']">
+              </figure>
+            </div>
+            <div class="column text">
+              <div>
+                <h2 class="title">{{this.handbuch['teaser']['title']}}</h2>
+                <p class="subtitle">{{this.handbuch['teaser']['subtitle']}}</p>
+                <Button type="external" :label="this.handbuch['teaser']['cta']" :direct="this.handbuch['teaser']['link']"/>
+              </div>
             </div>
           </div>
         </div>
@@ -56,8 +58,13 @@
         line-height: $size-3;
     }
 
+    figure {
+      display: flex;
+      justify-content: center;
+    }
+
     img {
-      width: 300px;
+      width: 80%;
     }
 
 </style>
