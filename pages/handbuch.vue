@@ -24,7 +24,13 @@
                     >
                   </figure>
                 </div>
-                <Button :label="this.hero['cta']" :direct="'#download'"/>
+                <a
+                  class="button is-color-secondary is-medium"
+                  href="#"
+                  @click="scrollToDownload"
+                >
+                  {{ this.hero['cta'] }}
+                </a>
               </div>
             </div>
             <div class="column is-7 hero-image">
@@ -89,7 +95,7 @@
           </div>
         </div>
     </section>
-    <section id="download" class="section is-medium">
+    <section ref="download" id="download" class="section is-medium">
       <div class="container">
         <div class="columns">
           <div class="column is-7">
@@ -146,6 +152,17 @@
       contributors() { return this.content[this.lang]['innovationshandbuch']['contributors']; },
       download() { return this.content[this.lang]['innovationshandbuch']['download']; }
     },
+    methods: {
+      scrollToDownload: function() {
+        const yCoord = this.$refs.download.getBoundingClientRect().top;
+        
+        window.scrollTo({
+          top: yCoord,
+          behavior: "smooth"
+        });
+        return false;
+      }
+    }
 	}
 </script>
 
