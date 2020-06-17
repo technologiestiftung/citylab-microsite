@@ -36,7 +36,8 @@ export default {
   },
   methods: {
     handleSubmit: function(e) {
-      //Formular initialisieren
+      const vm = this;
+
       !(function(e, t, n, c, r, a, i) {
         (e.Newsletter2GoTrackingObject = r),
           (e[r] =
@@ -69,18 +70,18 @@ export default {
         function(response, message) {
           if (response.status == 201) {
             // unsubscribe successful
-            console.log('Abmeldung erfolgreich!');
-            
+            const routeData = vm.$router.resolve({ path: `/newsletter_status/unsubscribed_${vm.lang}` });
+            window.open(routeData.href, '_blank');
           } else {
             // error while unsubscribing
-            console.log('Fehler');
-            
+            const routeData = vm.$router.resolve({ path: `/newsletter_status/error_${vm.lang}` });
+            window.open(routeData.href, '_blank');
           }
         },
         function(data) {
           // error while unsubscribing
-          console.log('Fehler');
-          
+          const routeData = vm.$router.resolve({ path: `/newsletter_status/error_${vm.lang}` });
+          window.open(routeData.href, '_blank');
         }
       );
     }

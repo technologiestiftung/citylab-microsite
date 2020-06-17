@@ -92,22 +92,22 @@ export default {
         function(response, messages) {
           if (response.status == 201) {
             // successful signup
-            //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
-            //window.open(routeData.href, '_blank');
+            const routeData = vm.$router.resolve({ path: `/newsletter_status/confirm_${vm.lang}` });
+            window.open(routeData.href, '_blank');
           } else if (response.status == 200) {
             // duplicate subscription
-            //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
-            //window.open(routeData.href, '_blank');
+            const routeData = vm.$router.resolve({ path: `/newsletter_status/duplicatemail_${vm.lang}` });
+            window.open(routeData.href, '_blank');
           } else {
             // error while subscribing
-            //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
-            //window.open(routeData.href, '_blank');
+            const routeData = vm.$router.resolve({ path: `/newsletter_status/error_${vm.lang}` });
+            window.open(routeData.href, '_blank');
           }
         },
         function(response, messages) {
           // error while subscribing
-          //const routeData = vm.$router.resolve({ path: `/handbuch_newsletter/handbuch_unsubscribe_${vm.lang}` });
-          //window.open(routeData.href, '_blank');
+          const routeData = vm.$router.resolve({ path: `/newsletter_status/error_${vm.lang}` });
+          window.open(routeData.href, '_blank');
         }
       );
     }
