@@ -599,6 +599,7 @@ export const content = {
             'subtitle': 'Wenn Du mit uns zusammenarbeiten oder uns erreichen möchtest, besuche uns in unserem Büro oder schreib uns eine Nachricht.'
         },
         'innovationshandbuch': {
+            'isbn': 'ISBN 978-3-00-065930-0',
             'teaser': {
                 'link': '/handbuch',
                 'title': 'Öffentliches Gestalten',
@@ -1509,6 +1510,7 @@ export const content = {
             'subtitle': 'If you want to collaborate with us or reach out, visit us in our office or drop us a line.'
         },
         'innovationshandbuch': {
+            'isbn': 'ISBN 978-3-00-065930-0',
             'teaser': {
                 'link': '/handbuch_en',
                 'title': 'Public Design',

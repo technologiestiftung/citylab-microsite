@@ -144,7 +144,16 @@
 				direct: '/handbuch'
 			}
     },
+    head() {
+      return {
+        title: `${this.hero['title']} | `,
+        meta: [
+          { hid: 'description', name: 'description', content: `${this.hero['subtitle']} | ${this.isbn}` }
+        ]
+      }
+    },
     computed: {
+      isbn() { return this.content[this.lang]['innovationshandbuch']['isbn']; },
       hero() { return this.content[this.lang]['innovationshandbuch']['hero']; },
       summary() { return this.content[this.lang]['innovationshandbuch']['summary']; },
       methods() { return this.content[this.lang]['innovationshandbuch']['methods']; },
