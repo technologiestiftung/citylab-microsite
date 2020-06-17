@@ -245,8 +245,8 @@ export const content = {
             },
             'success': {
                 title: 'Bleiben Sie auf dem Laufenden.',
-                subtitle: 'Vielen Dank für Ihre Bestellung des Newsletters des CityLAB Berlin.',
-                p1: 'Ihre E-Mail-Adresse wurde in unseren Newsletter Verteiler aufgenommen.',
+                subtitle: 'Vielen Dank für Ihre Bestellung des Newsletters.',
+                p1: 'Ihre E-Mail-Adresse wurde in unseren Newsletter-Verteiler aufgenommen.',
                 p2: 'Bei Problemen oder Anfragen wenden Sie sich bitte an <a href="mailto:info@citylab-berlin.org">info(at)citylab-berlin.org</a>.'
             },
             'confirm': {
@@ -266,6 +266,10 @@ export const content = {
                 subtitle: 'Sie wurden erfolgreich aus dem Verteiler von CityLAB Berlin entfernt.'
             },
             errors: {
+                'unspecified': {
+                    title: 'Fehler',
+                    subtitle: 'Leider ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Daten.'
+                },
                 'mailalreadyexists': {
                     title: 'Fehler',
                     subtitle: 'Die von Ihnen eingegebene E-Mail-Adresse ist bereits angemeldet.'
@@ -1304,6 +1308,10 @@ export const content = {
                 subtitle: 'You have been successfully removed from the CityLAB Berlin distribution list.'
             },
             errors: {
+                'unspecified': {
+                    title: 'Error',
+                    subtitle: 'Unfortunately an error occurred. Please check your entry.'
+                },
                 'mailalreadyexists': {
                     title: 'Error',
                     subtitle: 'The email address you entered is already registered.'
