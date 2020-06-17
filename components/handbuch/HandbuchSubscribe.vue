@@ -165,7 +165,7 @@ export default {
     .agb {
       display: inline-block;
       color: $color-primary;
-      font-size: 10px;
+      font-size: $size-7;
       line-height: 140%;
     }
   }
