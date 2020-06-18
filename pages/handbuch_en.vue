@@ -139,9 +139,9 @@
     },
 		data() {
 			return {
-				lang: 'de',
+				lang: 'en',
 				content: content,
-				direct: '/handbuch_en'
+				direct: '/handbuch'
 			}
     },
     head() {

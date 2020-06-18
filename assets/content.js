@@ -245,8 +245,8 @@ export const content = {
             },
             'success': {
                 title: 'Bleiben Sie auf dem Laufenden.',
-                subtitle: 'Vielen Dank für Ihre Bestellung des Newsletters des CityLAB Berlin.',
-                p1: 'Ihre E-Mail-Adresse wurde in unseren Newsletter Verteiler aufgenommen.',
+                subtitle: 'Vielen Dank für Ihre Bestellung des Newsletters.',
+                p1: 'Ihre E-Mail-Adresse wurde in unseren Newsletter-Verteiler aufgenommen.',
                 p2: 'Bei Problemen oder Anfragen wenden Sie sich bitte an <a href="mailto:info@citylab-berlin.org">info(at)citylab-berlin.org</a>.'
             },
             'confirm': {
@@ -266,6 +266,10 @@ export const content = {
                 subtitle: 'Sie wurden erfolgreich aus dem Verteiler von CityLAB Berlin entfernt.'
             },
             errors: {
+                'unspecified': {
+                    title: 'Fehler',
+                    subtitle: 'Leider ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Daten.'
+                },
                 'mailalreadyexists': {
                     title: 'Fehler',
                     subtitle: 'Die von Ihnen eingegebene E-Mail-Adresse ist bereits angemeldet.'
@@ -594,6 +598,127 @@ export const content = {
             'title': 'Meldet euch bei uns!',
             'subtitle': 'Wenn Du mit uns zusammenarbeiten oder uns erreichen möchtest, besuche uns in unserem Büro oder schreib uns eine Nachricht.'
         },
+        'innovationshandbuch': {
+            'isbn': 'ISBN 978-3-00-065930-0',
+            'teaser': {
+                'link': '/handbuch',
+                'title': 'Öffentliches Gestalten',
+                'subtitle': 'Unser Handbuch für innovatives Arbeiten in der Verwaltung.',
+                'cta': 'Zum Handbuch'
+            },
+            'hero': {
+                'title': 'Öffentliches Gestalten',
+                'subtitle': 'Handbuch für innovatives Arbeiten in der Verwaltung',
+                'img_url': '/images/handbuch/hero.svg',
+                'logos': {
+                    'citylab': {
+                        'img_url': '/images/citylab_logo.svg',
+                        'alt': 'CityLAB Berlin Logo'
+                    },
+                    'p4t': {
+                        'img_url': '/images/handbuch/politics_for_tomorrow_logo.svg',
+                        'alt': 'Politics for tomorrow Logo'
+                    }
+                },
+                'cta': 'Zum Download'
+            },
+            'summary': {
+                'title': 'Was steckt in dem Handbuch?',
+                'list': [
+                    {
+                        'title': 'Direkter Start ins innovative Arbeiten',
+                        'description': 'Das Buches ermöglicht einen einfachen Start in neue, wirkungsvolle Arbeitsweisen. Dazu werden strukturiert die notwendigen Grundlagen vermittelt, um öffentliche Innovationen – sichtbare Produkte und Dienstleistungen, oder auch unsichtbare Abläufe und Prozesse – ergebnisorientiert und bedarfsgerecht entwickeln zu können.',
+                        'img_url': '/images/handbuch/summary_1.png'
+                    },
+                    {
+                        'title': 'Ein Wegbegleiter ',
+                        'description': 'Das Buch leitet schrittweise durch die verschiedenen Phasen eines Innovationsprozesses, der speziell für öffentliche Verwaltungen ausgearbeitet wurde. Von der Vorbereitung und Teamzusammenstellung, über Recherche und Ideenfindung, bis zur Entwicklung und Erprobung geeigneter Lösungsansätze werden die verschiedenen Schritte eines wirkungs- und evidenzbasierten Arbeitens vorgestellt.',
+                        'img_url': '/images/handbuch/summary_2.png'
+                    },
+                    {
+                        'title': 'Umfangreiche Methodensammlung',
+                        'description': 'Bestandteil des Buches ist eine vielfältige Sammlung von Vorlagen und Arbeitsdokumenten, die auf die öffentliche Verwaltung zugeschnitten sind. Sie erklären Innovationsmethoden und beschreiben, was für die Anwendung benötigt wird, wie vorgegangen werden soll und mit welchem Ergebnis zu rechnen ist.',
+                        'img_url': '/images/handbuch/summary_3.png'
+                    },
+                    {
+                        'title': 'Anleitung zum Selbermachen',
+                        'description': 'Das Buch richtet sich an Menschen, die in oder mit öffentlichen Verwaltungen und Organisationen arbeiten. Es enthält das Handwerkszeug, um Innovationsprozesse auch eigenständig und ohne externe Hilfe durchführen zu können. Wir haben darauf geachtet, dass dieses Buch selbsterklärend funktioniert und dazu befähigt, eigeninitiativ zu handeln.',
+                        'img_url': '/images/handbuch/summary_4.png'
+                    }
+                ]
+            },
+            'methods': {
+                'title': 'So arbeiten wir im Buch',
+                'list': [
+                    {
+                        'title': 'Wirkungsorientiert',
+                        'description': 'Status Quo verstehen, Blinde Flecken aufdecken, Zielwissen generieren, Gemeinwohlorientiert entwickeln.',
+                        'img_url': '/images/handbuch/methods_wirkungsorientiert.svg'
+                    },
+                    {
+                        'title': 'Menschzentriert',
+                        'description': 'Qualitativ und quantitativ recherchieren, empathisch vorgehen, Betroffene zu Beteiligten werden lassen.',
+                        'img_url': '/images/handbuch/methods_menschzentriert.svg'
+                    },
+                    {
+                        'title': 'Evidenzbasiert',
+                        'description': 'Entscheidungsﬁndung basierend auf Daten und Erkenntnissen aus Theorie und Praxis, kritisches Denken & Handeln.',
+                        'img_url': '/images/handbuch/methods_evidenzbasiert.svg'
+                    },
+                    {
+                        'title': 'Designgeleitet',
+                        'description': 'Visualisierung, Prototyping, Testen, Fehlerfreundlichkeit, iterative Prozesse, legitimierter Experimentierraum',
+                        'img_url': '/images/handbuch/methods_designgeleitet.svg'
+                    },
+                    {
+                        'title': 'Multiperspektivisch',
+                        'description': 'Disziplin- oder abteilungsübergreifende Zusammenarbeit, Verständigung zwischen verschiedenen Fachsprachen, Diversität durch Zugänglichkeit.',
+                        'img_url': '/images/handbuch/methods_multiperspektivisch.svg'
+                    },
+                    {
+                        'title': 'Ko-kreativ',
+                        'description': 'Gemeinsame Wissensgenerierung, strukturierte Einbindung verschiedenster Akteursgruppen im Entwicklungsprozess.',
+                        'img_url': '/images/handbuch/methods_ko-kreativ.svg'
+                    }
+                ]
+            },
+            'contributors': {
+                'title': 'Öffentliche Gestalter:innen',
+                'description': 'Das Handbuch ist entstanden durch eine Zusammenarbeit von CityLAB Berlin und <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.'
+            },
+            'download': {
+                'title': 'Download',
+                'description': 'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter. <br><br>Für das gedruckte Buch, schick uns eine E-Mail an <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
+                'resourceName': 'OeffentlichesGestalten',
+                'cta': {
+                    'title': 'Herunterladen',
+                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch.pdf'
+                }
+            },
+            'register': {
+                'intro': {
+                    'title': 'Mehr Verwaltungsinnovation',
+                    'subtitle': 'Bleib informiert über neue Inhalte, zukünftigen Angebote, Veranstaltungen oder Möglichkeiten zur Weiterbildung.'
+                },
+                'form': {
+                    first_name: 'Vorname',
+                    last_name: 'Nachname',
+                    email: 'E-Mail-Adresse*',
+                    mandatory: '* Pflichtfeld',
+                    button: 'Anmelden',
+                    agb: 'Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Anmelden“ erkläre ich mich damit einverstanden, dass das CityLAB Berlin mir Informationen zu neuen Inhalten, zukünftigen Angeboten, Veranstaltungen oder Möglichkeiten zur Weiterbildung per E-Mail zuschickt. Umfangreiche Informationen zum Anmelde- und Abmeldeverfahren, dem Versandanbieter und der statistischen Auswertung Ihrer Daten sind in unserer Datenschutzerklärung einsehbar.',
+                    unsubscribe: 'Meine Einwilligung kann ich jederzeit gegenüber dem CityLAB Berlin <a href="/handbuch_newsletter/handbuch_unsubscribe_de">widerrufen</a>.',
+                    token: '6gzzn71j-5kev2hxf-16oh'
+                },
+                'unsubscribe': {
+                    title: 'Abmeldung vom Handbuch-Newsletter',
+                    subtitle: 'Bitte gib Deine E-Mail-Adresse ein, um Dich vom Newsletter abzumelden.',
+                    email: 'E-Mail',
+                    button: 'Abmelden',
+                    token: '6gzzn71j-5kev2hxf-16oh'
+                }
+            },
+        },
         'footer': {
             'contact': {
                 'title': 'Kontakt',
@@ -747,15 +872,26 @@ export const content = {
                 'p7': 'Sollten Sie von uns keinen Newsletter mehr erhalten wollen, können Sie jederzeit Ihre Einwilligung <a href="https://www.technologiestiftung-berlin.de/index.php?id=148" title="Opens internal link in current window" target="_blank" class="external-link-new-window">widerrufen</a>.',
                 'p8': 'Bei Fragen und Problemen richten Sie eine E-Mail an <a href="mailto:info@technologiestiftung-berlin.de" title="Opens internal link in current window" class="mail">info(at)technologiestiftung-berlin.de</a> oder kontaktieren Sie den unter 1.2 genannten Datenschutzbeauftragten.'
             },
+            'newsletter_sendinblue': {
+                'title': '2.5 Newsletterdienst Sendinblue',
+                'p1': 'Die Technologiestiftung Berlin informiert monatlich in Form eines E-Mails-Newsletters. Für den Empfang ist eine Anmeldung mit einer gültigen E-Mail-Adresse notwendig. Vor- und Nachname sind lediglich optionale Angaben. Die personenbezogenen Daten werden ausschließlich für die im Anmeldeformular genannten Zwecke eingesetzt.',
+                'p2': 'Die Anmeldung wird mit in einem sogenannten „Double-Opt-In“-Verfahren gewährleistet. Dies erfolgt über ein Zwei-Faktor-Authentifizierungsverfahren. Nach Eingabe der Daten und der Bestätigung der Einwilligung erhalten Sie eine Mail mit einem Link, mit dem Sie erneut bestätigen müssen, dass Sie den Newsletter erhalten möchten. So ist sichergestellt, dass Sie unseren Newsletter nur dann erhalten, wenn Sie es wirklich wünschen.',
+                'p3': 'Für den Versand des Newsletters setzen wir den Newsletter-Dienst Sendinblue (Sendinblue GmbH, Köpenickerstraße 126, 10179 Berlin, Deutschland) ein.',
+                'p4': 'Sendinblue ist zertifizierter Partner der Certified Senders Alliance (CSA) und verpflichtet sich in den allgemeinen Geschäftsbedingungen ausdrücklich dem Datenschutz. Die hinterlegten Daten werden nur zweckgebunden verwendet und sind so gespeichert, dass Dritte keinen Zugriff auf diese Daten haben. Mit der Nutzung des Anmeldeformulars erklären Sie sich mit der Datenverarbeitung durch Sendinblue einverstanden.',
+                'p5': 'Bei der Anmeldung zum Newsletter speichern wir ferner die vom Internet-Service-Provider (ISP) vergebene IP-Adresse des von der betroffenen Person zum Zeitpunkt der Anmeldung verwendeten Computersystems sowie das Datum und die Uhrzeit der Anmeldung. Die Erhebung dieser Daten ist erforderlich, um den möglichen Missbrauch der E-Mail-Adresse einer betroffenen Person zu einem späteren Zeitpunkt nachvollziehen zu können und dient deshalb der rechtlichen Absicherung.',
+                'p6': 'Um den Newsletter für Sie attraktiv zu gestalten, erfassen wir Öffnungs- und Klickzahlen des Newsletters in anonymisierter Form. Die Zahlen können von uns nicht einem bestimmten Empfänger oder einer bestimmten Empfängerin zugeordnet werden.',
+                'p7': 'Sollten Sie von uns keinen Newsletter mehr erhalten wollen, können Sie jederzeit Ihre Einwilligung widerrufen.',
+                'p8': 'Bei Fragen und Problemen richten Sie eine E-Mail an <a href="mailto:info@technologiestiftung-berlin.de" title="Opens internal link in current window" class="mail">info(at)technologiestiftung-berlin.de</a> oder kontaktieren Sie den unter 1.2 genannten Datenschutzbeauftragten.'
+            },
             'events': {
-                'title': '2.5 Veranstaltungseinladungen und Anmeldungen',
+                'title': '2.6 Veranstaltungseinladungen und Anmeldungen',
                 'p1': 'Für den Versand von Einladungen und die Verwaltung der Verteilerliste nutzen wir das Customer Relation Managementsystem cobra, das lokal auf unserem Server gespeichert ist. Anmeldungen und Abmeldungen zum Verteiler sind wie bereits im ersten Absatz ausgeführt über eine Mail an <a href="mailto:event@technologiestiftung-berlin.de" title="Opens internal link in current window" class="mail">event(at)technologiestiftung-berlin.de</a> möglich oder durch persönlichen Kontakt bei Veranstaltung, per Telefon oder Post. Eine Weitergabe an Dritte erfolgt nicht.',
                 'p2': 'Für den Versand von Einladungen und die Verwaltung der Verteilerliste nutzen wir das Customer Relation Managementsystem cobra, das lokal auf unserem Server gespeichert ist. Anmeldungen und Abmeldungen zum Verteiler sind wie bereits im ersten Absatz ausgeführt über eine Mail an <a href="mailto:event@technologiestiftung-berlin.de" title="Opens internal link in current window" class="mail">event(at)technologiestiftung-berlin.de</a> möglich oder durch persönlichen Kontakt bei Veranstaltung, per Telefon oder Post. Eine Weitergabe an Dritte erfolgt nicht.',
                 'p3': 'Einige Veranstaltungsformate erlauben die Anmeldung über unsere Website. In den meisten Fällen können Sie sich mit einer gültigen Mail und Ihrem Namen in einem Double-Opt-in Verfahren direkt anmelden. Ausnahmen bilden themenspezifischen Fachveranstaltungen, bei denen Sie zusätzlich gebeten werden, Ihre Firma oder Institution verpflichtend anzugeben. Da wir in der Regel eine Einlasskontrolle durchführen, ist die Angabe von Vor- und Nachname notwendig.',
                 'p4': 'Durch die Anmeldung über die Website geben Sie uns die Einwilligung nach Art.6 Abs. 1 Lit.A DSGVO, Ihre Daten für den Zweck der Veranstaltungsorganisation zu verarbeiten. Das betrifft die interne Gästeliste für die Einlasskontrolle und gegebenenfalls einen E-Mail Versand bei Änderungen zur Veranstaltung wie Ortswechsel oder Absagen. Ihre Anmeldedaten werden nach Ende ihres Verwendungszweckes, dem Ende der Veranstaltung, gelöscht.'
             },
             'thirds': {
-                'title': '2.6 Einbindung von Diensten und Inhalten Dritter',
+                'title': '2.7 Einbindung von Diensten und Inhalten Dritter',
                 'p1': 'Die Icons zu Facebook und Twitter auf unserer Hauptseite sind Verlinkungen zu unseren Kanälen auf den jeweiligen Plattformen. Welche Daten dabei übermittelt werden, ist von Ihren Browsereinstellungen abhängig. Eine weitere Datenübermittlung von uns an die beiden Drittanbieter findet nicht statt. Sobald Sie unsere Seite über diese Links verlassen, treten die dortigen Datenschutzbestimmungen in Kraft.',
                 'p2': 'Zum aktuellen Zeitpunkt (Stand 23. Mai 2018) setzen wir folgende Plugins für bestimmte Zwecke ein:',
                 'ul1': '<li>Kontaktformular Power Mail für die Bestellung der Hacking Box und beim Projekt Digitale Entwicklung des Kulturbereichs</li><li>Open-Street-Map-Karte zur Information über die Anfahrt sowie zur geografischen Verortung von Projekten</li><li>Juicer für einen Social-Media-Feed auf www.codingklassenfahrt.de (siehe 3.2)</li><li>YouTube-Video-Einbindung auf www.codingklassenfahrt.de&nbsp;(siehe 3.2) und www.kultur-b-digtal.de (siehe 3.4)</li>',
@@ -763,7 +899,7 @@ export const content = {
                 'p4': 'Um Ihnen die Anfahrt zu unseren Geschäftsräumen zu erleichtern und um Ihnen an anderen Stellen eine Ortung unserer Projekte zu bieten, haben wir <b>Open-Street-Map-Karten</b> in unseren Auftritt eingebunden. Hierfür nutzen wir das Application Programming Interface Open Layers. Die Verbindung läuft direkt über unserer Content Managementsystem und übermittelt keine persönlichen Daten an Dritte.&nbsp;'
             },
             'eventbrite': {
-                'title': '2.7 Eventbrite',
+                'title': '2.8 Eventbrite',
                 'p1': 'Für die Registrierung von Teilnehmer*innen nutzen wir den Anbieter Eventbrite Inc., Delaware, 155 5th Street, Floor 7, San Francisco, CA 94103, USA. Mit der Registrierung für eine unserer Veranstaltungen übermitteln Sie Ihren Vor- und Nachnamen, Telefonnummer, E-Mail-Adresse und Postanschrift an den Anbieter. Der Anbieter sendet Ihnen im Anschluss eine E-Mail zur Bestätigung Ihrer Buchung.',
                 'p2': 'Mit der Anmeldung speichert Eventbrite neben den oben genannten Daten die Veranstaltung für die Sie sich registriert haben, inkl. der geplanten Ausführungszeit (Datum, Uhrzeit) sowie den Zeitpunkt der Registrierung (Datum, Uhrzeit).',
                 'p3': 'Es besteht kein Vertrag zur Auftragsdatenverarbeitung mit Eventbrite, da aktuell lediglich ein Datenverarbeitungsnachtrag (DVN) für Auftragsverarbeiter und Unterauftragsverarbeiter angeboten wird (einzusehen unter: https://www.eventbrite.de/support/articles/de/Troubleshooting/datenverarbeitungsnachtrag-fuer-auftragsverarbeiter-und-unterauftragsverarbeiter?lg=de).',
@@ -1173,6 +1309,10 @@ export const content = {
                 subtitle: 'You have been successfully removed from the CityLAB Berlin distribution list.'
             },
             errors: {
+                'unspecified': {
+                    title: 'Error',
+                    subtitle: 'Unfortunately an error occurred. Please check your entry.'
+                },
                 'mailalreadyexists': {
                     title: 'Error',
                     subtitle: 'The email address you entered is already registered.'
@@ -1368,6 +1508,127 @@ export const content = {
         'cta': {
             'title': 'Get in touch!',
             'subtitle': 'If you want to collaborate with us or reach out, visit us in our office or drop us a line.'
+        },
+        'innovationshandbuch': {
+            'isbn': 'ISBN 978-3-00-065930-0',
+            'teaser': {
+                'link': '/handbuch_en',
+                'title': 'Public Design',
+                'subtitle': 'Our handbook for working innovatively in public administration.',
+                'cta': 'Show more'
+            },
+            'hero': {
+                'title': 'Public Design',
+                'subtitle': 'Handbook for working innovatively in public administration',
+                'img_url': '/images/handbuch/hero_en.svg',
+                'logos': {
+                    'citylab': {
+                        'img_url': '/images/citylab_logo.svg',
+                        'alt': 'CityLAB Berlin Logo'
+                    },
+                    'p4t': {
+                        'img_url': '/images/handbuch/politics_for_tomorrow_logo.svg',
+                        'alt': 'Politics for tomorrow Logo'
+                    }
+                },
+                'cta': 'Go to download'
+            },
+            'summary': {
+                'title': 'What’s in the book?',
+                'list': [
+                    {
+                        'title': 'An introduction into innovative work',
+                        'description': 'The book enables you to quickly and easily put new, effective working methods into practice. It provides the necessary basics for developing results-oriented, needs-based public innovations, regardless of whether these innovations are visible products and services or invisible structures and processes.',
+                        'img_url': '/images/handbuch/summary_1.png'
+                    },
+                    {
+                        'title': 'A step-by-step overview',
+                        'description': 'The book guides you through the different phases of an innovation process that has been specifically designed with public administrations in mind. From preparation and team building, to research and brainstorming, to the development and testing of suitable solutions, the book offers a step-by-step guide on how to work in a way that is both impact- and evidence-based.',
+                        'img_url': '/images/handbuch/summary_2.png'
+                    },
+                    {
+                        'title': 'Comprehensive collection of methods',
+                        'description': 'One major component of the book is its extensive collection of templates and working documents tailored to the needs of public administrations. They explain various innovation methods, describe what is needed to apply these methods, detail how to actually implement these methods, and highlight what results can be expected.',
+                        'img_url': '/images/handbuch/summary_3.png'
+                    },
+                    {
+                        'title': 'Do-it-yourself instructions',
+                        'description': 'The book is aimed at people who work in or with public administrations and organisations. It contains the necessary tools to be able to carry out innovation processes independently and without external help. We have made sure that this book is self-explanatory and enables people to act based on their own initiative.',
+                        'img_url': '/images/handbuch/summary_4.png'
+                    }
+                ]
+            },
+            'methods': {
+                'title': 'The book’s approach',
+                'list': [
+                    {
+                        'title': 'Impact-oriented',
+                        'description': 'Understanding the status quo, revealing blind spots, generating target knowledge, developing for the common good',
+                        'img_url': '/images/handbuch/methods_wirkungsorientiert.svg'
+                    },
+                    {
+                        'title': 'Human-centered',
+                        'description': 'Qualitative and quantitative research, proceeding empathically, transforming affected groups into active participants',
+                        'img_url': '/images/handbuch/methods_menschzentriert.svg'
+                    },
+                    {
+                        'title': 'Evidence-based',
+                        'description': 'Decision making based on data and findings from theory and practice, thinking and acting critically',
+                        'img_url': '/images/handbuch/methods_evidenzbasiert.svg'
+                    },
+                    {
+                        'title': 'Design-led',
+                        'description': 'Visualization, prototyping, testing, error tolerance, iterative processes, experimental space',
+                        'img_url': '/images/handbuch/methods_designgeleitet.svg'
+                    },
+                    {
+                        'title': 'Multi-perspective',
+                        'description': 'Interdisciplinary or interdepartmental cooperation, generating understanding between different fields of expertise, diversity through accessibility',
+                        'img_url': '/images/handbuch/methods_multiperspektivisch.svg'
+                    },
+                    {
+                        'title': 'Co-creative',
+                        'description': 'Joint knowledge generation, structured involvement of various groups of stakeholders in the development process',
+                        'img_url': '/images/handbuch/methods_ko-kreativ.svg'
+                    }
+                ]
+            },
+            'contributors': {
+                'title': 'Public designers',
+                'description': 'The handbook is the result of a collaboration between CityLAB Berlin and <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.'
+            },
+            'download': {
+                'title': 'Download',
+                'description': 'You want to shape change in public administration? Unfortunately, this book does not yet exist in English. However, you can download the manual and the collection of methods here as a German PDF.  <br><br>To request a copy of the printed book or to request more information in English, send us an email via <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
+                'resourceName': 'OeffentlichesGestalten',
+                'cta': {
+                    'title': 'Download',
+                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch.pdf'
+                }
+            },
+            'register': {
+                'intro': {
+                    'title': 'More about innovation in public administration.',
+                    'subtitle': 'Stay informed about new content, future offers, events or opportunities for further education.'
+                },
+                'form': {
+                    first_name: 'First name',
+                    last_name: 'Last name',
+                    email: 'Email-Address*',
+                    mandatory: '* required',
+                    button: 'Register',
+                    agb: 'By providing my e-mail address and clicking the "Register" button, I agree that CityLAB Berlin may send me information on new content, future offers, events or opportunities for further education via e-mail. Comprehensive information about the registration and deregistration process, the service provider and the statistical evaluation of your data can be found in our privacy policy.',
+                    unsubscribe: 'I can <a href="/handbuch_newsletter/handbuch_unsubscribe_en">revoke</a> my consent at any time by contacting CityLAB Berlin.',
+                    token: '6gzzn71j-nydptvmb-6fk'
+                },
+                'unsubscribe': {
+                    title: 'Unsubscribe from the handbook newsletter',
+                    subtitle: 'Please enter your email to unsubscribe from the newsletter.',
+                    email: 'E-Mail',
+                    button: 'Unsubscribe',
+                    token: '6gzzn71j-nydptvmb-6fk'
+                }
+            },
         },
         'footer': {
             'contact': {
