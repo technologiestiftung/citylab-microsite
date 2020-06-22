@@ -29,7 +29,6 @@ import SubscribeForm from "../components/forms/SubscribeForm";
 import subscriptionHandling from '../mixins/subscriptionHandling.js';
 
 export default {
-  name: "NewsletterRegisterDe",
   mixins: [ subscriptionHandling ],
   components: {
     Navigation,
