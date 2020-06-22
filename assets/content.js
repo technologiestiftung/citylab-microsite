@@ -266,7 +266,7 @@ export const content = {
             },
             'unsubscribeSuccess': {
                 title: 'Abmeldung erfolgreich',
-                subtitle: 'Sie wurden erfolgreich aus dem Verteiler von CityLAB Berlin entfernt.'
+                subtitle: 'Sie wurden erfolgreich aus dem Newsletter-Verteiler entfernt.'
             },
             errors: {
                 'unspecified': {
@@ -1312,7 +1312,7 @@ export const content = {
             },
             'unsubscribeSuccess': {
                 title: 'Unsubscription successful',
-                subtitle: 'You have been successfully removed from the CityLAB Berlin distribution list.'
+                subtitle: 'You have been successfully removed from the newsletter distribution list.'
             },
             errors: {
                 'unspecified': {
