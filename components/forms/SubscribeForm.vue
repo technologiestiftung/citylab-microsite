@@ -32,7 +32,7 @@
       <div class="mandatory">{{ this.content['mandatory'] }}</div>
       <div class="agb">
         <input type="checkbox" name="agb" required />
-        <span>{{ this.content['form']['agb'] }}</span>
+        <span v-html="this.content['form']['agb']"></span>
         <span v-html="this.content['form']['unsubscribe']"></span>
       </div>
       <input class="button is-color-secondary is-normal" type="submit" :value="this.content['form']['button']" />
