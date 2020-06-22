@@ -164,26 +164,6 @@
 				<p class="content" v-html="content[lang]['dataprivacy']['newsletter']['p8']"></p>
 
 				<h3 class="title is-5" style="margin-bottom: 5px">
-					{{ content[lang]['dataprivacy']['newsletter_sendinblue']['title'] }}
-				</h3>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p1']"></p>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p2']"></p>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p3']"></p>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p4']"></p>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p5']"></p>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p6']"></p>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p7']"></p>
-
-				<p class="content" v-html="content[lang]['dataprivacy']['newsletter_sendinblue']['p8']"></p>
-
-				<h3 class="title is-5" style="margin-bottom: 5px">
 					{{ content[lang]['dataprivacy']['events']['title'] }}
 				</h3>
 
