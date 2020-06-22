@@ -692,7 +692,7 @@ export const content = {
                 'resourceName': 'OeffentlichesGestalten',
                 'cta': {
                     'title': 'Herunterladen',
-                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch-0618.pdf'
+                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch.pdf'
                 }
             },
             'register': {
@@ -1603,7 +1603,7 @@ export const content = {
                 'resourceName': 'OeffentlichesGestalten',
                 'cta': {
                     'title': 'Download',
-                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch-0618.pdf'
+                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch.pdf'
                 }
             },
             'register': {
