@@ -117,6 +117,7 @@
       </div>
     </section>
     <Footer :lang="lang" :content="content"/>
+    <Matomo />
 	</div>
 </template>
 
@@ -128,14 +129,16 @@
   import Button from '../components/Button.vue';
   import HandbuchSubscribe from '../components/handbuch/HandbuchSubscribe.vue';
   import Navigation from '../components/Navigation.vue';
-	import Footer from '../components/Footer.vue';
+  import Footer from '../components/Footer.vue';
+  import Matomo from '../components/Matomo.vue';
 
 	export default {
 		components: {
       Navigation,
       Footer,
       Button,
-      HandbuchSubscribe
+      HandbuchSubscribe,
+      Matomo
     },
 		data() {
 			return {
