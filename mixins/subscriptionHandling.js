@@ -1,6 +1,7 @@
 export default {
   methods: {
     subscribe(data, token) {
+      // 'this' here refers to the Vue instance in which the mixin is inserted
       const vm = this;
 
       !(function(e, t, n, c, r, a, i) {
@@ -61,6 +62,7 @@ export default {
       );
     },
     unsubscribe(data, token) {
+      // 'this' here refers to the Vue instance in which the mixin is inserted
       const vm = this;
 
       !(function(e, t, n, c, r, a, i) {
