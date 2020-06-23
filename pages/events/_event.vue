@@ -165,7 +165,7 @@
                 return {
                     title: `${this.title} - ${this.subtitle} (${this.dateSummary}) - `,
                     meta: [
-                        { hid: 'description', name: 'description', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)` },
+                        { hid: 'description', name: 'description', content: this.socialDescription },
                         { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
                         { hid: 'og:url', property: 'og:url',  content:  `https://www.citylab-berlin.org/events/${this.dirname}`},
                         { hid: 'og:type', property: 'og:type',  content: "website"},
