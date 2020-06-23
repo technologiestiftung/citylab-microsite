@@ -119,7 +119,7 @@
 
                 return { 
                     dirname: params.event,
-                    data: null,
+                    data: eventData,
                     lang: eventData.gsx$eventlanguage.$t,
                     content: content,
                     direct: `/events/${params.event}`,
@@ -158,19 +158,24 @@
                     logoUrl: `https://citylab-berlin.org/images/events/${params.event}_logo.png`,
                     // summaryAvailable
                     summaryAvailable: {
-                        website: 0,
-                        phone: 0,
-                        organiser: 0,
-                        address: 0,
-                        date: 0,
-                        mail: 0,
-                        introHeadline: 0,
-                        introContent: 0,
-                        blockOneHeadline: 0,
-                        blockOneContent: 0,
-                        blockTwoHeadline: 0,
-                        blockTwoContent: 0,
-                        registerLink: 0,
+                        website: eventData.gsx$websitesummary.$t.length,
+                        phone: eventData.gsx$phonesummary.$t.length,
+                        organiser: eventData.gsx$organisersummary.$t.length,
+                        address: eventData.gsx$addresssummary.$t.length,
+                        date: eventData.gsx$datesummary.$t.length,
+                        mail: eventData.gsx$mailsummary.$t.length,
+                        introHeadline: eventData.gsx$headlineintro.$t.length,
+                        introContent: eventData.gsx$contentintro.$t.length,
+                        blockOneHeadline: eventData.gsx$headlineblockone.$t.length,
+                        blockOneContent: eventData.gsx$contentblockone.$t.length,
+                        blockTwoHeadline: eventData.gsx$headlineblocktwo.$t.length,
+                        blockTwoContent: eventData.gsx$contentblocktwo.$t.length,
+                        blockThreeHeadline: eventData.gsx$headlineblockthree.$t.length,
+                        blockThreeContent: eventData.gsx$contentblockthree.$t.length,
+                        blockFourHeadline: eventData.gsx$headlineblockfour.$t.length,
+                        blockFourContent: eventData.gsx$contentblockfour.$t.length,
+                        registerLink: eventData.gsx$registerlink.$t.length,
+                        calendarImp: eventData.gsx$calendarimp.$t
                     },
                     dict: {
                         "de": {
@@ -283,10 +288,6 @@ END:VCALENDAR`
 
             },
             methods: {
-                getLength(data) {
-                    return data.length;
-                },
-
                 save(filename, data) {
                     var blob = new Blob([data], {type: 'text/csv'});
                     if (window.navigator.msSaveOrOpenBlob) {
@@ -300,45 +301,7 @@ END:VCALENDAR`
                         document.body.removeChild(elem);
                     }
                 }
-            },
-            beforeCreate() {
-                axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json`)
-                    .then((res) => {
-                        // set event entry to data which matches with dirname
-                        this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
-                        this.data = this.data[0];
-
-                        this.summaryAvailable.address = this.getLength(this.data.gsx$addresssummary.$t);
-                        this.summaryAvailable.phone = this.getLength(this.data.gsx$phonesummary.$t);
-                        this.summaryAvailable.mail = this.getLength(this.data.gsx$mailsummary.$t);
-                        this.summaryAvailable.website = this.getLength(this.data.gsx$websitesummary.$t);
-                        this.summaryAvailable.date = this.getLength(this.data.gsx$datesummary.$t);
-                        this.summaryAvailable.organiser = this.getLength(this.data.gsx$organisersummary.$t);
-
-                        this.summaryAvailable.introHeadline = this.getLength(this.data.gsx$headlineintro.$t);
-                        this.summaryAvailable.introContent = this.getLength(this.data.gsx$contentintro.$t);
-
-                        this.summaryAvailable.blockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
-                        this.summaryAvailable.blockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
-
-                        this.summaryAvailable.blockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
-                        this.summaryAvailable.blockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
-
-                        this.summaryAvailable.blockThreeHeadline = this.getLength(this.data.gsx$headlineblockthree.$t);
-                        this.summaryAvailable.blockThreeContent = this.getLength(this.data.gsx$contentblockthree.$t);
-
-                        this.summaryAvailable.blockFourHeadline = this.getLength(this.data.gsx$headlineblockfour.$t);
-                        this.summaryAvailable.blockFourContent = this.getLength(this.data.gsx$contentblockfour.$t);
-
-                        this.summaryAvailable.registerLink = this.getLength(this.data.gsx$registerlink.$t);
-
-                        //ab hier: calendar import 
-                        this.summaryAvailable.calendarImp = this.data.gsx$calendarimp.$t;                        
-                    })
-
-            }, //close beforeCreate()
-            beforeMount() {
-            } //close beforeMount
+            }
     } //close export default
 </script>
 
