@@ -113,9 +113,14 @@
                 return false // will stop Nuxt.js to render the route and display the error page
             },
             async asyncData ({ params, error, payload }) {
+                const { data } = await axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json`)
+
+                const eventData = data.feed.entry.filter(entry => entry.gsx$dirname.$t == params.event)[0]
+
                 return { 
                     dirname: params.event,
                     data: null,
+                    testtitle: eventData.gsx$eventname.$t,
                     lang: 'en',
                     content: content,
                     direct: `/events/${params.event}`,
@@ -384,9 +389,9 @@ END:VCALENDAR`
                     })
 
             }, //close beforeCreate()
-            mounted() {
-
-            } //close mounted
+            beforeMount() {
+                console.log('testtitle:', this.testtitle);
+            } //close beforeMount
     } //close export default
 </script>
 
