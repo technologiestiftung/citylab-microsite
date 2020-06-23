@@ -120,10 +120,43 @@
                 return { 
                     dirname: params.event,
                     data: null,
-                    testtitle: eventData.gsx$eventname.$t,
-                    lang: 'en',
+                    lang: eventData.gsx$eventlanguage.$t,
                     content: content,
                     direct: `/events/${params.event}`,
+                    // Intro
+                    heroImageUrl: `https://citylab-berlin.org/images/events/${params.event}_hero.jpg`,
+                    title: eventData.gsx$eventname.$t,
+                    subtitle: eventData.gsx$subline.$t,
+                    subsubtitle: eventData.gsx$subsubline.$t,
+                    headlineIntro: eventData.gsx$headlineintro.$t,
+                    contentIntro: eventData.gsx$contentintro.$t,
+                    // Block 1
+                    headlineBlockOne: eventData.gsx$headlineblockone.$t,
+                    contentBlockOne: eventData.gsx$contentblockone.$t,
+                    // Block 2
+                    headlineBlockTwo: eventData.gsx$headlineblocktwo.$t,
+                    contentBlockTwo: eventData.gsx$contentblocktwo.$t,
+                    // Block 3
+                    headlineBlockThree: eventData.gsx$headlineblockthree.$t,
+                    contentBlockThree: eventData.gsx$contentblockthree.$t,
+                    // Block 4
+                    headlineBlockFour: eventData.gsx$headlineblockfour.$t,
+                    contentBlockFour: eventData.gsx$contentblockfour.$t,
+                    // Register
+                    registerLink: eventData.gsx$registerlink.$t,
+                    registerInfo: eventData.gsx$registerinfo.$t,
+                    // Summaries
+                    websiteSummary: eventData.gsx$websitesummary.$t,
+                    phoneSummary: eventData.gsx$phonesummary.$t,
+                    dateSummary: eventData.gsx$datesummary.$t,
+                    organiserSummary: eventData.gsx$organisersummary.$t,
+                    mailSummary: eventData.gsx$mailsummary.$t,
+                    addressSummary: eventData.gsx$addresssummary.$t,
+                    // Social
+                    socialDescription: eventData.gsx$socialdescription.$t,
+                    logo: eventData.gsx$logo.$t,
+                    logoUrl: `https://citylab-berlin.org/images/events/${params.event}_logo.png`,
+                    // summaryAvailable
                     summaryAvailable: {
                         website: 0,
                         phone: 0,
@@ -197,20 +230,9 @@
                 Footer
             },
             computed: {
-                heroImageUrl() {
-
-                    return `https://citylab-berlin.org/images/events/${this.dirname}_hero.jpg`
-                },
                 getContent() {
                     return this.content;
                 },
-                getLanguage() {
-                    if (this.data != null) { return this.data.gsx$eventlanguage.$t } else { return }
-                },
-                title() {
-                    if (this.data != null) { return this.data.gsx$eventname.$t } else { return }
-                },
-
                 startDate() {
                     if (this.data != null) { 
                         const date = this.data.gsx$date.$t;
@@ -228,78 +250,6 @@
                         return newDate;
                         } else { return }
                 },
-
-                subtitle() {
-                    if (this.data != null) { return this.data.gsx$subline.$t } else { return }
-                },
-                subsubtitle() {
-                    if (this.data != null) { return this.data.gsx$subsubline.$t } else { return }
-                },
-                headlineIntro() {
-                    if (this.data != null) { return this.data.gsx$headlineintro.$t } else { return }
-                },
-                contentIntro() {
-                    if (this.data != null) { return this.data.gsx$contentintro.$t } else { return }
-                },
-                headlineBlockOne() {
-                    if (this.data != null) { return this.data.gsx$headlineblockone.$t } else { return }
-                },
-                contentBlockOne() {
-                    if (this.data != null) { return this.data.gsx$contentblockone.$t } else { return }
-                },
-                headlineBlockTwo() {
-                    if (this.data != null) { return this.data.gsx$headlineblocktwo.$t } else { return }
-                },
-                contentBlockTwo() {
-                    if (this.data != null) { return this.data.gsx$contentblocktwo.$t } else { return }
-                },
-                headlineBlockThree() {
-                    if (this.data != null) { return this.data.gsx$headlineblockthree.$t } else { return }
-                },
-                contentBlockThree() {
-                    if (this.data != null) { return this.data.gsx$contentblockthree.$t } else { return }
-                },
-                headlineBlockFour() {
-                    if (this.data != null) { return this.data.gsx$headlineblockfour.$t } else { return }
-                },
-                contentBlockFour() {
-                    if (this.data != null) { return this.data.gsx$contentblockfour.$t } else { return }
-                },
-                registerLink() {
-                    if (this.data != null) { return this.data.gsx$registerlink.$t } else { return }
-                },
-                registerInfo() {
-                    if (this.data != null) { return this.data.gsx$registerinfo.$t } else { return }
-                },
-                websiteSummary() {
-                    if (this.data != null) { return this.data.gsx$websitesummary.$t } else { return }
-                },
-                phoneSummary() {
-                    if (this.data != null) { return this.data.gsx$phonesummary.$t } else { return }
-                },
-                dateSummary() {
-                    if (this.data != null) { return this.data.gsx$datesummary.$t } else { return }
-                },
-                organiserSummary() {
-                    if (this.data != null) { return this.data.gsx$organisersummary.$t } else { return }
-                },
-                mailSummary() {
-                    if (this.data != null) { return this.data.gsx$mailsummary.$t } else { return }
-                },
-                addressSummary() {
-                    if (this.data != null) { return this.data.gsx$addresssummary.$t } else { return }
-                },
-                socialDescription() {
-                    if (this.data != null) { return this.data.gsx$socialdescription.$t } else { return }
-                },
-                logo() {
-                    if (this.data != null) { return this.data.gsx$logo.$t } else { return }
-                },
-                logoUrl() {
-                    return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
-                },
-                
-
                 // Schreibweise Concat mit Hilfe von Stringliterals
                 calData() {
                     return `BEGIN:VCALENDAR\n
@@ -357,8 +307,6 @@ END:VCALENDAR`
                         // set event entry to data which matches with dirname
                         this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
                         this.data = this.data[0];
-                        this.lang = this.data.gsx$eventlanguage.$t;
-
 
                         this.summaryAvailable.address = this.getLength(this.data.gsx$addresssummary.$t);
                         this.summaryAvailable.phone = this.getLength(this.data.gsx$phonesummary.$t);
@@ -390,7 +338,6 @@ END:VCALENDAR`
 
             }, //close beforeCreate()
             beforeMount() {
-                console.log('testtitle:', this.testtitle);
             } //close beforeMount
     } //close export default
 </script>
