@@ -463,10 +463,6 @@ END:VCALENDAR`
         margin-right: 3em;
     }
 
-    form * {
-
-    }
-
 </style>
 
 
