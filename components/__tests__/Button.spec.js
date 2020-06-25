@@ -1,12 +1,12 @@
-import { render } from "@testing-library/vue";
-import Button from "../Button";
+import { render } from '@testing-library/vue';
+import Button from '../Button';
 
-describe("Button", () => {
-  test("mounts properly", () => {
+describe('Button', () => {
+  test('mounts properly', () => {
     const { getByText } = render(Button, {
       props: {
-        label: "hello"
-      }
+        label: 'hello',
+      },
     });
     const button = getByText(/hello/i);
     // const wrapper = shallowMount(Button);

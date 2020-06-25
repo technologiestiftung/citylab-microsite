@@ -1,6 +1,11 @@
 <template>
   <div class="button--wrapper">
-    <a style="margin-top: 30px;" class="button is-color-secondary is-normal" :href="direct">{{ label }}</a>
+    <a
+      style="margin-top: 30px;"
+      class="button is-color-secondary is-normal"
+      :href="direct"
+      >{{ label }}</a
+    >
   </div>
 </template>
 
@@ -10,13 +15,13 @@
     props: {
       label: String,
       direct: String,
-      type: String
-    }
-  }
+      type: String,
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/style/style.scss";
+  @import '../assets/style/style.scss';
   .button {
     &--wrapper {
       width: 100%;
@@ -25,11 +30,11 @@
       }
     }
 
-    background: #F64C72 !important;
+    background: #f64c72 !important;
     @include transition;
 
     &:hover {
-      background: #F97996 !important;
+      background: #f97996 !important;
       @include transition;
     }
   }

@@ -2,17 +2,25 @@
   <section class="section is-medium expansion-panel">
     <div class="container">
       <div class="panel">
-
-        <div :id="`panel-${i}-${subtopic}`" v-for="(question,i) in contentPanel" @click="() => { togglePanel(i) } " :key="`panel-${i}`" class="exp-panel">
+        <div
+          v-for="(question, i) in contentPanel"
+          :id="`panel-${i}-${subtopic}`"
+          :key="`panel-${i}`"
+          class="exp-panel"
+          @click="
+            () => {
+              togglePanel(i);
+            }
+          "
+        >
           <div class="exp-panel--header">
-            <span v-html="question.title"></span>
+            <span v-html="question.title" />
             <span :id="`indicator-${i}-${subtopic}`" class="indicator">↓</span>
           </div>
           <div class="exp-panel--body">
-            <p v-html="question.description"></p>
+            <p v-html="question.description" />
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -27,32 +35,40 @@
       direct: String,
       topic: String,
       subtopic: String,
-      id: String
+      id: String,
     },
     computed: {
-        contentPanel: function() { return this.content[this.lang][this.topic][this.subtopic].faq},
+      contentPanel: function () {
+        return this.content[this.lang][this.topic][this.subtopic].faq;
+      },
     },
     methods: {
       togglePanel(id) {
         const idLabel = `panel-${id}-${this.subtopic}`;
-        const indicator = document.getElementById(idLabel).classList.contains('active') ? '↓' : '↑';
+        const indicator = document
+          .getElementById(idLabel)
+          .classList.contains('active')
+          ? '↓'
+          : '↑';
         document.getElementById(idLabel).classList.toggle('active');
 
-        document.getElementById(`indicator-${id}-${this.subtopic}`).innerHTML = indicator;
-      }
-    }
-  }
+        document.getElementById(
+          `indicator-${id}-${this.subtopic}`
+        ).innerHTML = indicator;
+      },
+    },
+  };
 </script>
 
 <style lang="scss">
-  @import "../assets/style/style.scss";
+  @import '../assets/style/style.scss';
 
   summary::-webkit-marker-type {
     display: none !important;
   }
 
   .expansion-panel {
-    animation: sweep .5s ease-in-out;
+    animation: sweep 0.5s ease-in-out;
   }
 
   .exp-panel {
@@ -60,7 +76,7 @@
     color: $color-primary;
     padding: 20px;
     font-size: 24px;
-    animation: sweep .125s ease-in-out;
+    animation: sweep 0.125s ease-in-out;
     margin: 10px 0 10px 0;
     cursor: pointer;
 
@@ -75,12 +91,12 @@
 
     &--body {
       display: none;
-      animation: sweep .125s ease-in-out;
+      animation: sweep 0.125s ease-in-out;
 
       a {
-        color: #C7C4EB;
+        color: #c7c4eb;
         padding-bottom: 3px;
-        border-bottom: 1px solid #C7C4EB;
+        border-bottom: 1px solid #c7c4eb;
 
         &:hover {
           color: white !important;
@@ -92,12 +108,12 @@
     &.active {
       background: $color-primary;
       color: white;
-      animation: sweep .125s ease-in-out;
+      animation: sweep 0.125s ease-in-out;
 
       .exp-panel--body {
         display: block;
-        animation: sweep .125s ease-in-out;
-        color: #C7C4EB
+        animation: sweep 0.125s ease-in-out;
+        color: #c7c4eb;
       }
 
       .exp-panel--header {
@@ -111,10 +127,10 @@
     color: $color-primary;
     padding: 15px;
     font-size: 24px;
-    animation: sweep .125s ease-in-out;
+    animation: sweep 0.125s ease-in-out;
 
     summary:before {
-      content: "+"; /* Verwendung des "plus"-Symbols anstelle des Dreiecks */
+      content: '+'; /* Verwendung des "plus"-Symbols anstelle des Dreiecks */
       color: green;
       margin-right: 5px;
     }
@@ -133,7 +149,7 @@
       }
 
       summary ~ * {
-        animation: sweep .125s ease-in-out;
+        animation: sweep 0.125s ease-in-out;
       }
     }
 
@@ -146,9 +162,7 @@
   .content {
     p {
       background: $color-primary;
-      color: rgba(255,255,255,.5);
+      color: rgba(255, 255, 255, 0.5);
     }
   }
-
-
 </style>

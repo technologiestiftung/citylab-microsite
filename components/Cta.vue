@@ -1,24 +1,20 @@
 <template>
-    <section class="section is-medium cta">
-        <div class="container">
-            <h2 class="title">
-                {{ content[lang]['cta']['title'] }}
-            </h2>
-            <h2 class="subtitle">
-                {{ content[lang]['cta']['subtitle'] }}
-            </h2>
-        </div>
-    </section>
+  <section class="section is-medium cta">
+    <div class="container">
+      <h2 class="title">
+        {{ content[lang]['cta']['title'] }}
+      </h2>
+      <h2 class="subtitle">
+        {{ content[lang]['cta']['subtitle'] }}
+      </h2>
+    </div>
+  </section>
 </template>
 
 <script>
-    export default {
-        props: ['lang', 'content', 'direct'],
-    }
+  export default {
+    props: ['lang', 'content', 'direct'],
+  };
 </script>
 
-<style lang="scss">
-
-</style>
-
-
+<style lang="scss"></style>

@@ -1,107 +1,116 @@
 <template>
-	<div>
-    <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
+  <div>
+    <Navigation
+      :lang="lang"
+      :content="content"
+      :direct="direct"
+      :anchor-tags="true"
+    />
     <section class="section hero is-medium">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-5 text">
-              <div>
-                <h1 class="title">
-                  {{ this.hero['title'] }}
-                </h1>
-                <p>{{ this.hero['subtitle'] }}</p>
-                <div class="logos tile is-ancestor">
-                  <figure class="tile is-parent">
-                    <img
-                      :src="this.hero['logos']['citylab']['img_url']"
-                      :alt="this.hero['logos']['citylab']['alt']"
-                    >
-                  </figure>
-                  <figure class="tile is-parent">
-                    <img
-                      :src="this.hero['logos']['p4t']['img_url']"
-                      :alt="this.hero['logos']['p4t']['alt']"
-                    >
-                  </figure>
-                </div>
-                <button
-                  class="button is-color-secondary is-medium"
-                  @click="scrollToDownload"
-                >
-                  {{ this.hero['cta'] }}
-                </button>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-5 text">
+            <div>
+              <h1 class="title">
+                {{ this.hero['title'] }}
+              </h1>
+              <p>{{ this.hero['subtitle'] }}</p>
+              <div class="logos tile is-ancestor">
+                <figure class="tile is-parent">
+                  <img
+                    :src="this.hero['logos']['citylab']['img_url']"
+                    :alt="this.hero['logos']['citylab']['alt']"
+                  />
+                </figure>
+                <figure class="tile is-parent">
+                  <img
+                    :src="this.hero['logos']['p4t']['img_url']"
+                    :alt="this.hero['logos']['p4t']['alt']"
+                  />
+                </figure>
               </div>
-            </div>
-            <div class="column is-7 hero-image">
-              <figure>
-                <img :src="this.hero['img_url']" :alt="this.hero['title']">
-              </figure>
+              <button
+                class="button is-color-secondary is-medium"
+                @click="scrollToDownload"
+              >
+                {{ this.hero['cta'] }}
+              </button>
             </div>
           </div>
+          <div class="column is-7 hero-image">
+            <figure>
+              <img :src="this.hero['img_url']" :alt="this.hero['title']">
+            </figure>
+          </div>
         </div>
+      </div>
     </section>
     <section class="section summary is-medium">
-        <div class="container">
-            <h2 class="title">
-              {{ this.summary['title'] }}
-            </h2>
-            <div class="tile wrap is-ancestor">
-              <article
-                v-for="item in this.summary['list']"
-                :key="item.title"
-                class="tile is-6 is-child columns is-mobile"
-              >
-                <figure class="column is-2"><img :src="item['img_url']" :alt="item['title']"></figure>
-                <div class="column">
-                  <h3 class="subtitle">{{item.title}}</h3>
-                  <p>{{item.description}}</p>
-                </div>
-              </article>
+      <div class="container">
+        <h2 class="title">
+          {{ this.summary['title'] }}
+        </h2>
+        <div class="tile wrap is-ancestor">
+          <article
+            v-for="item in this.summary['list']"
+            :key="item.title"
+            class="tile is-6 is-child columns is-mobile"
+          >
+            <figure class="column is-2">
+              <img :src="item['img_url']" :alt="item['title']" >
+            </figure>
+            <div class="column">
+              <h3 class="subtitle">
+                {{ item.title }}
+              </h3>
+              <p>{{ item.description }}</p>
             </div>
+          </article>
         </div>
+      </div>
     </section>
     <section class="section methods is-medium">
-        <div class="container">
-            <h2 class="title">
-              {{ this.methods['title'] }}
-            </h2>
-            <div class="tile wrap is-ancestor">
-              <article
-                v-for="item in this.methods['list']"
-                :key="item.title"
-                class="tile is-6 is-child columns is-mobile"
-              >
-                <figure class="column is-3">
-                  <img :src="item['img_url']" :alt="item['title']">
-                </figure>
-                <div class="column">
-                  <h3>{{item.title}}</h3>
-                  <p>{{item.description}}</p>
-                </div>
-              </article>
+      <div class="container">
+        <h2 class="title">
+          {{ this.methods['title'] }}
+        </h2>
+        <div class="tile wrap is-ancestor">
+          <article
+            v-for="item in this.methods['list']"
+            :key="item.title"
+            class="tile is-6 is-child columns is-mobile"
+          >
+            <figure class="column is-3">
+              <img :src="item['img_url']" :alt="item['title']">
+            </figure>
+            <div class="column">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
             </div>
+          </article>
         </div>
+      </div>
     </section>
     <section class="section contributors is-medium">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-half">
-              <h2 class="title">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half">
+            <h2 class="title">
               {{ this.contributors['title'] }}
-              </h2>
-              <p v-html="this.contributors['description']"></p>
-            </div>
+            </h2>
+            <p v-html="this.contributors['description']" />
           </div>
         </div>
+      </div>
     </section>
-    <section ref="download" id="download" class="section is-medium">
+    <section id="download" ref="download" class="section is-medium">
       <div class="container">
         <div class="columns">
           <div class="column is-7">
             <h2 class="title">
               {{ this.download['title'] }}
             </h2>
-            <p v-html="this.download['description']"></p>
+            <p v-html="this.download['description']" />
             <a
               class="button is-color-secondary is-normal"
               :href="this.download['cta']['direct']"
@@ -116,76 +125,120 @@
         </div>
       </div>
     </section>
-    <Footer :lang="lang" :content="content"/>
+    <Footer :lang="lang" :content="content" />
     <Matomo />
-	</div>
+  </div>
 </template>
 
 <script>
-	import {
-  		content as content
-  } from '../assets/content.js';
-  
+  import { content } from '../assets/content.js';
+
   import Button from '../components/Button.vue';
   import HandbuchSubscribe from '../components/handbuch/HandbuchSubscribe.vue';
   import Navigation from '../components/Navigation.vue';
   import Footer from '../components/Footer.vue';
   import Matomo from '../components/Matomo.vue';
 
-	export default {
-		components: {
+  export default {
+    components: {
       Navigation,
       Footer,
       Button,
       HandbuchSubscribe,
-      Matomo
+      Matomo,
     },
-		data() {
-			return {
-				lang: 'en',
-				content: content,
-				direct: '/handbuch'
-			}
+    data() {
+      return {
+        lang: 'en',
+        content: content,
+        direct: '/handbuch',
+      };
+    },
+    computed: {
+      isbn() {
+        return this.content[this.lang]['innovationshandbuch']['isbn'];
+      },
+      hero() {
+        return this.content[this.lang]['innovationshandbuch']['hero'];
+      },
+      summary() {
+        return this.content[this.lang]['innovationshandbuch']['summary'];
+      },
+      methods() {
+        return this.content[this.lang]['innovationshandbuch']['methods'];
+      },
+      contributors() {
+        return this.content[this.lang]['innovationshandbuch']['contributors'];
+      },
+      download() {
+        return this.content[this.lang]['innovationshandbuch']['download'];
+      },
+    },
+    methods: {
+      scrollToDownload: function () {
+        const yCoord = this.$refs.download.getBoundingClientRect().top;
+
+        window.scrollTo({
+          top: yCoord,
+          behavior: 'smooth',
+        });
+        return false;
+      },
     },
     head() {
       return {
         title: `${this.hero['title']} | `,
         meta: [
-          { hid: 'description', name: 'description', content: `${this.hero['subtitle']} (${this.isbn})` },
-          { hid: 'og:title', property: 'og:title', content: `${this.hero['title']} | CityLAB Berlin` },
-          { hid: 'og:description', property: 'og:description', content: `${this.hero['subtitle']}` },
-          { hid: 'og:image', property: 'og:image', content: "https://citylab-berlin.org/images/handbuch/handbuch_social_media.jpg" },
-          { hid: 'twitter:card', property: 'twitter:card', content: "summary_large_image" },
-          { hid: 'og:site_name', property: 'og:site_name', content: `${this.hero['title']} | CityLAB Berlin` },
-          { hid: 'twitter:image:alt', property: 'twitter:image:alt', content: `${this.hero['title']} | CityLAB Berlin` },
-          { hid: 'twitter:image', property: 'twitter:image', content: "https://citylab-berlin.org/images/handbuch/handbuch_social_media.jpg" },
-        ]
-      }
+          {
+            hid: 'description',
+            name: 'description',
+            content: `${this.hero['subtitle']} (${this.isbn})`,
+          },
+          {
+            hid: 'og:title',
+            property: 'og:title',
+            content: `${this.hero['title']} | CityLAB Berlin`,
+          },
+          {
+            hid: 'og:description',
+            property: 'og:description',
+            content: `${this.hero['subtitle']}`,
+          },
+          {
+            hid: 'og:image',
+            property: 'og:image',
+            content:
+              'https://citylab-berlin.org/images/handbuch/handbuch_social_media.jpg',
+          },
+          {
+            hid: 'twitter:card',
+            property: 'twitter:card',
+            content: 'summary_large_image',
+          },
+          {
+            hid: 'og:site_name',
+            property: 'og:site_name',
+            content: `${this.hero['title']} | CityLAB Berlin`,
+          },
+          {
+            hid: 'twitter:image:alt',
+            property: 'twitter:image:alt',
+            content: `${this.hero['title']} | CityLAB Berlin`,
+          },
+          {
+            hid: 'twitter:image',
+            property: 'twitter:image',
+            content:
+              'https://citylab-berlin.org/images/handbuch/handbuch_social_media.jpg',
+          },
+        ],
+      };
     },
-    computed: {
-      isbn() { return this.content[this.lang]['innovationshandbuch']['isbn']; },
-      hero() { return this.content[this.lang]['innovationshandbuch']['hero']; },
-      summary() { return this.content[this.lang]['innovationshandbuch']['summary']; },
-      methods() { return this.content[this.lang]['innovationshandbuch']['methods']; },
-      contributors() { return this.content[this.lang]['innovationshandbuch']['contributors']; },
-      download() { return this.content[this.lang]['innovationshandbuch']['download']; }
-    },
-    methods: {
-      scrollToDownload: function() {
-        const yCoord = this.$refs.download.getBoundingClientRect().top;
-        
-        window.scrollTo({
-          top: yCoord,
-          behavior: "smooth"
-        });
-        return false;
-      }
-    }
-	}
+  };
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/style/style.scss";
+  @import '../assets/style/style.scss';
 
   .section:not(.hero) {
     @media screen and (min-width: $tablet) {
@@ -197,7 +250,7 @@
   .wrap {
     flex-wrap: wrap;
   }
-  
+
   .title {
     font-size: $size-3;
     color: $color-secondary;
@@ -242,14 +295,15 @@
 
   section.summary {
     background: $color-primary--lightest;
-    .title, .subtitle {
+    .title,
+    .subtitle {
       color: $text;
     }
     .subtitle {
       font-weight: $weight-bold;
     }
     article {
-      >* {
+      > * {
         margin-top: $spacing-m;
       }
       img {
@@ -261,7 +315,7 @@
 
   section.methods {
     article {
-      >* {
+      > * {
         margin-top: $spacing-m;
       }
       h3 {
@@ -277,7 +331,8 @@
 
   section.contributors {
     background-color: $color-primary;
-    .title, p {
+    .title,
+    p {
       color: $white;
     }
     h3 {
@@ -291,7 +346,7 @@
     }
     a {
       font-size: $size-medium;
-      margin-top: 30px; 
+      margin-top: 30px;
     }
   }
 </style>

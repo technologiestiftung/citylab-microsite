@@ -1,47 +1,94 @@
 <template>
-    <div>
-    <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
-    <HeroLight :image="'https://citylab-berlin.org/images/events/urbantech_hero.jpg'" :title="'Urban Tech Startup and City Lunch'" 
-    :subTitle="'Präsentation zu unserer Urban Tech Landscape'" 
-    :subSubTitle="'04.03.2020, 12-13.30 Uhr, CityLAB Berlin Veranstaltungsraum'">
-    </HeroLight>
-        <section class="section is-medium event-content">
-            <div class="container">
-        <p class="event-intro">Wie viele Startups im urban-tech Bereich kommen aus Berlin? Was sind die möglichen Einflüsse, die diese Firmen auf Berlin haben können, 
-          im Hinblick auf die Berlin Strategie 2030?</p>
+  <div>
+    <Navigation
+      :scrolled="true"
+      :lang="lang"
+      :content="content"
+      :direct="direct"
+      :anchor-tags="false"
+    />
+    <HeroLight
+      :image="'https://citylab-berlin.org/images/events/urbantech_hero.jpg'"
+      :title="'Urban Tech Startup and City Lunch'"
+      :sub-title="'Präsentation zu unserer Urban Tech Landscape'"
+      :sub-sub-title="'04.03.2020, 12-13.30 Uhr, CityLAB Berlin Veranstaltungsraum'"
+    />
+    <section class="section is-medium event-content">
+      <div class="container">
+        <p class="event-intro">
+          Wie viele Startups im urban-tech Bereich kommen aus Berlin? Was sind
+          die möglichen Einflüsse, die diese Firmen auf Berlin haben können,
+          Hinblick auf die Berlin Strategie 2030?
+        </p>
 
-        <p>Das sind die Fragen, die wir uns als Urban Impact gestellt haben, als wir das Projekt „<a href="https://www.citylab-berlin.org/projects/startupmapping/">Berlin Urban Tech-Datenbank</a>“ im CityLAB Berlin starteten. 
-        Um aussagekräftige Daten generieren zu können, arbeiteten wir zusammen mit <a href="https://dealroom.co">Dealroom</a> und der <a href="https://www.berlin.de/sen/web/">Senatsverwaltung für Wirtschaft, Energie und Betriebe</a>, 
-        die die Berliner Startup Map verwalten und auf deren vorhandenen Daten basiert. Wir freuen uns zudem besonders, dieses Projekt in Kooperation mit <a href="https://www.berlin-partner.de">Berlin Partner für Wirtschaft und Technologie</a> 
-        und dem <a href="https://www.smart-city-berlin.de/akteure/netzwerk-smart-city-berlin/">Netzwerk Smart City Berlin</a> durchzuführen.</p>
+        <p>
+          Das sind die Fragen, die wir uns als Urban Impact gestellt haben, als
+          wir das Projekt „<a
+            href="https://www.citylab-berlin.org/projects/startupmapping/"
+          >Berlin Urban Tech-Datenbank</a>“ im CityLAB Berlin starteten. Um aussagekräftige Daten generieren zu
+          können, arbeiteten wir zusammen mit
+          <a href="https://dealroom.co">Dealroom</a> und der
+          <a href="https://www.berlin.de/sen/web/">Senatsverwaltung für Wirtschaft, Energie und Betriebe</a>, >, die die Berliner Startup Map verwalten und auf deren vorhandenen
+          Daten basiert. Wir freuen uns zudem besonders, dieses Projekt in
+          Kooperation mit
+          <a href="https://www.berlin-partner.de"
+            >Berlin Partner für Wirtschaft und Technologie</a
+          >
+          und dem
+          <a
+            href="https://www.smart-city-berlin.de/akteure/netzwerk-smart-city-berlin/"
+            >Netzwerk Smart City Berlin</a
+          >
+          durchzuführen.
+        </p>
 
-        <h3 class="title"></h3>
-        <p>Um die über <b>100 identifizierten Startups</b> besser zu analysieren - von denen einige sogar die Aspekte der Berlin 2030 Strategy (StEK) adressieren - ordneten wir diese in die 5 folgenden Haupt(und Unter-)kategorien ein:<br>
-            - <b>Mobility</b> (Shared Mobility, City Logistics, AV/EV, Public Transport)<br>
-            - <b>Infrastructure and Utilities</b> (Energy, Waste, Urban Farming, Buildings)<br>
-            - <b>Enabling Urban Tech IoT</b><br>
-            - <b>Gov / Civic Tech</b><br>
-            - <b>Livability</b></p>
-           
-        <p>Während unseres Events im CityLAB Berlin werden wir uns genauer auf die Urban Tech Landscape beziehen, unsere Erkenntnisse teilen, 
-          sowie Vertreter der Stadt und Startups der Landscape zusammenbringen. <br>
-          Kommt vorbei und diskutiert bei einer gemeinsamen Lunch-Break die Urban Tech Welt von Berlin!</p>
+        <h3 class="title" />
+        <p>
+          Um die über <b>100 identifizierten Startups</b> besser zu analysieren
+          - von denen einige sogar die Aspekte der Berlin 2030 Strategy (StEK)
+          adressieren - ordneten wir diese in die 5 folgenden Haupt(und
+          Unter-)kategorien ein:<br >
+          - <b>Mobility</b> (Shared Mobility, City Logistics, AV/EV, Public
+          Transport)<br>
+          - <b>Infrastructure and Utilities</b> (Energy, Waste, Urban Farming,
+          Buildings)<br>
+          - <b>Enabling Urban Tech IoT</b><br>
+          - <b>Gov / Civic Tech</b><br>
+          - <b>Livability</b>
+        </p>
 
+        <p>
+          Während unseres Events im CityLAB Berlin werden wir uns genauer auf
+          die Urban Tech Landscape beziehen, unsere Erkenntnisse teilen,
+          Vertreter der Stadt und Startups der Landscape zusammenbringen. <br>
+          Kommt vorbei und diskutiert bei einer gemeinsamen Lunch-Break die
+          Urban Tech Welt von Berlin!
+        </p>
 
-        <p><b>Agenda:</b><br>
-            12:00 - Presentation of the Urban Tech Landscape by Urban Impact & Inputs from partners<br>
-            12:30 - Open Q&A and Discussion, Lunch and Networking along thematic tables<br>
-            13:30 - End of Event</p>  
+        <p>
+          <b>Agenda:</b><br >
+          12:00 - Presentation of the Urban Tech Landscape by Urban Impact &
+          Inputs from partners<br>
+          12:30 - Open Q&A and Discussion, Lunch and Networking along thematic
+          tables<br>
+          13:30 - End of Event
+        </p>
 
-        <p>Die Veranstaltung findet in englischer und deutscher Sprache statt.</p><br />
-
+        <p>
+          Die Veranstaltung findet in englischer und deutscher Sprache statt.
+        </p>
+        <br>
 
         <div class="summary-wrapper is-medium">
           <h4>Zusammenfassung</h4>
           <div class="flex-container">
             <div class="content-block">
               <h5>Website</h5>
-              <span class="summary-text"><a href=https://www.urbanimpact.eu>https://www.urbanimpact.eu</a> </span>
+              <span class="summary-text"
+                ><a href="https://www.urbanimpact.eu"
+                  >https://www.urbanimpact.eu</a
+                >
+              </span>
             </div>
             <div class="content-block">
               <h5>Veranstalter</h5>
@@ -51,240 +98,313 @@
               <h5>Datum</h5>
               <span class="summary-text">04.03.2020, 12-13.30 Uhr</span>
             </div>
-        <div class="content-block">
+            <div class="content-block">
               <h5>E-Mail</h5>
-              <a href="mailto:hello@urbanimpact.eu" class="summary-text">Urban Impact</a>
+              <a href="mailto:hello@urbanimpact.eu" class="summary-text"
+                >Urban Impact</a
+              >
             </div>
             <div class="content-block">
               <h5>Adresse</h5>
-              <span class="summary-text">Platz der Luftbrücke 4, Gebäude H2rund, 12101 Berlin</span>
+              <span class="summary-text"
+                >Platz der Luftbrücke 4, Gebäude H2rund, 12101 Berlin</span
+              >
             </div>
           </div>
         </div>
 
-      <p> Eintritt frei mit Anmeldung </p>
+        <p>Eintritt frei mit Anmeldung</p>
 
-      <div class="flex-container btn" style="margin-top:30px!important;display:inline">
-<a href="https://www.eventbrite.co.uk/e/urban-tech-startup-city-lunch-tickets-91134027329?aff=SocialMedia" target="_blank" class="button is-color-secondary is-normal">Jetzt registrieren</a>
-</div>
+        <div
+          class="flex-container btn"
+          style="margin-top: 30px !important; display: inline;"
+        >
+          <a
+            href="https://www.eventbrite.co.uk/e/urban-tech-startup-city-lunch-tickets-91134027329?aff=SocialMedia"
+            target="_blank"
+            class="button is-color-secondary is-normal"
+            >Jetzt registrieren</a
+          >
+        </div>
 
-        <Matomo/>
-            </div>
-        </section>
-    <Footer :lang="lang" :content="content"/>
+        <Matomo />
+      </div>
+    </section>
+    <Footer :lang="lang" :content="content" />
   </div>
 </template>
 
 <script>
-  import { 
-      content as content
-  } from '../../assets/content.js';
+  import { content } from '../../assets/content.js';
 
   import Navigation from '../../components/Navigation.vue';
   import HeroLight from '../../components/HeroLight.vue';
   import Footer from '../../components/Footer.vue';
   import Matomo from '../../components/Matomo.vue';
-    
-    export default {
-        components: {
+
+  export default {
+    components: {
       Navigation,
       HeroLight,
       Footer,
-      Matomo
+      Matomo,
     },
     data() {
       return {
         lang: 'de',
         content: content,
-        direct: '/events/urbantech_en'
-      }
+        direct: '/events/urbantech_en',
+      };
     },
-    computed: {
-        },
-    head () {
+    computed: {},
+    head() {
       return {
         title: 'Urban Tech Startup & City Lunch - ',
         meta: [
-          { hid: 'description', name: 'description', content: 'Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)' },
-          { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
-          { hid: 'og:type', property: 'og:type',  content: "website"},
-          { hid: 'og:title', property: 'og:title',  content: "Urban Tech Startup & City Lunch"},
-          { hid: 'og:image', property: 'og:image',  content: "https://citylab-berlin.org/images/events/urbantech_hero.jpg"},
-          { hid: 'og:description', property: 'og:description',  content: "Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)"},
-          { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
-          { hid: 'article:author', property: 'article:author',  content: "CityLAB Berlin"},
-          { hid: 'twitter:card', name: 'twitter:card', content:"summary_large_image"},
-          { hid: 'twitter:url', name: 'twitter:url', content: "https://www.citylab-berlin.org/events/urbantech_en"},
-          { hid: 'twitter:title', name: 'twitter:title', content: "Urban Tech Startup & City Lunch"},
-          { hid: 'twitter:description', name: 'twitter:description', content: "Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)"},
-          { hid: 'twitter:image', name: 'twitter:image', content: "https://citylab-berlin.org/images/events/urbantech_hero.jpg"},
-          { hid: 'name', itemprop: 'name', content:"Urban Tech Startup & City Lunch"},
-          { hid: 'description', itemprop: 'description', content: "Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)"},
-          { hid: 'image', itemprop: 'image', content: "https://citylab-berlin.org/images/events/urbantech_hero.jpg"},
-        ]
-      }
+          {
+            hid: 'description',
+            name: 'description',
+            content:
+              'Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)',
+          },
+          {
+            hid: 'fb:app_id',
+            property: 'fb:app_id',
+            content: '487094758334595',
+          },
+          { hid: 'og:type', property: 'og:type', content: 'website' },
+          {
+            hid: 'og:title',
+            property: 'og:title',
+            content: 'Urban Tech Startup & City Lunch',
+          },
+          {
+            hid: 'og:image',
+            property: 'og:image',
+            content:
+              'https://citylab-berlin.org/images/events/urbantech_hero.jpg',
+          },
+          {
+            hid: 'og:description',
+            property: 'og:description',
+            content:
+              'Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)',
+          },
+          {
+            hid: 'og:site_name',
+            property: 'og:site_name',
+            content: 'CityLAB Berlin',
+          },
+          {
+            hid: 'article:author',
+            property: 'article:author',
+            content: 'CityLAB Berlin',
+          },
+          {
+            hid: 'twitter:card',
+            name: 'twitter:card',
+            content: 'summary_large_image',
+          },
+          {
+            hid: 'twitter:url',
+            name: 'twitter:url',
+            content: 'https://www.citylab-berlin.org/events/urbantech_en',
+          },
+          {
+            hid: 'twitter:title',
+            name: 'twitter:title',
+            content: 'Urban Tech Startup & City Lunch',
+          },
+          {
+            hid: 'twitter:description',
+            name: 'twitter:description',
+            content:
+              'Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)',
+          },
+          {
+            hid: 'twitter:image',
+            name: 'twitter:image',
+            content:
+              'https://citylab-berlin.org/images/events/urbantech_hero.jpg',
+          },
+          {
+            hid: 'name',
+            itemprop: 'name',
+            content: 'Urban Tech Startup & City Lunch',
+          },
+          {
+            hid: 'description',
+            itemprop: 'description',
+            content:
+              'Urban Tech Startup & City Lunch (2020-03-04 - CityLAB Berlin)',
+          },
+          {
+            hid: 'image',
+            itemprop: 'image',
+            content:
+              'https://citylab-berlin.org/images/events/urbantech_hero.jpg',
+          },
+        ],
+      };
     },
-    }
+  };
 </script>
 
 <style lang="scss">
-  @import "../../assets/style/style.scss";
-  h1.title, h3.title {
-		color: $color-secondary;
+  @import '../../assets/style/style.scss';
+  h1.title,
+  h3.title {
+    color: $color-secondary;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    span {
+      font-size: $size-5;
+    }
+  }
+
+  .col {
+    flex-direction: column;
+
+    a {
+      width: 130px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .summary-text {
+    line-height: 20px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+
+  p {
+    a {
+      color: #393a60 !important;
+      text-decoration: underline;
+      transition: opacity 0.25s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+        transition: opacity 0.25s ease-in-out;
+      }
+    }
+  }
+
+  .summary-wrapper {
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    background: $color-primary;
+    padding: $spacing-m;
+
+    h4 {
+      font-size: $size-3;
+      line-height: 0.75;
+      width: 100%;
     }
 
-    .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;    
-        
-        span {
-            font-size: $size-5;
-        }
-    }
+    .content-block {
+      font-size: $size-6;
+      width: 33%;
+      margin-top: 20px;
 
-    .col {
-        flex-direction: column;
-
-        a {
-            width: 130px;
-            margin-bottom: 30px;
-        }
-    }
-
-    .summary-text {
-        line-height: 20px;
-        margin-top: 5px;
-        display: inline-block;
-    }
-
-    p {
-        a {
-            color: #393A60 !important;
-            text-decoration: underline;
-            transition: opacity .25s ease-in-out;
-
-            &:hover {
-                opacity: .5;
-                transition: opacity .25s ease-in-out;
-            }
-        }
-    }
-    
-    .summary-wrapper {
+      a {
         color: white;
-        margin-bottom: 50px;
-        margin-top: 60px;
-        background: $color-primary;
-        padding: $spacing-m;
+        opacity: 0.5;
+      }
 
-        h4 {
-            font-size: $size-3;
-            line-height: .75;
-            width: 100%;
-        }
+      h5 {
+        margin-bottom: -3px;
+      }
 
-        .content-block {
-            font-size: $size-6;
-            width: 33%;
-            margin-top: 20px;
+      @include tablet-only {
+        width: 50%;
+      }
 
-            a {
-                color: white;
-                opacity: .5;
-            }
+      @include mobile {
+        width: 100%;
+      }
 
-            h5 {
-                margin-bottom: -3px;
-            }
+      span.summary-text {
+        color: white;
+        opacity: 0.5;
+        font-size: 16px;
+      }
+    }
+  }
 
-            @include tablet-only {
-                width: 50%;
-            }
-
-            @include mobile {
-                width: 100%;
-            }
-
-            span.summary-text {
-                color: white;
-                opacity: .5;
-                font-size: 16px;
-            }
-        }
+  .event-content {
+    p {
+      color: $color-primary;
+      font-size: $size-5;
+      margin-bottom: 20px;
     }
 
-	.event-content {
-        p {
-            color: $color-primary;
-            font-size: $size-5;
-            margin-bottom: 20px;
-        }
-
-        span {
-            color: $color-primary;
-            margin-bottom: $spacing-s;
-        }
-
-        h4.title{
-            color: $color-secondary !important;
-            font-size: $size-3;
-            margin-bottom: 0 !important;
-            padding-bottom: 20px !important;
-            padding-top: 50px;
-        }
+    span {
+      color: $color-primary;
+      margin-bottom: $spacing-s;
     }
 
-    .content-wrapper {
-        padding-bottom: 0;
+    h4.title {
+      color: $color-secondary !important;
+      font-size: $size-3;
+      margin-bottom: 0 !important;
+      padding-bottom: 20px !important;
+      padding-top: 50px;
     }
-    
+  }
 
-	h5.title{
-		color: $color-secondary !important;
-		font-size: $size-4;
-		padding-bottom:0px;
-		margin-bottom:10px !important;
-	}
+  .content-wrapper {
+    padding-bottom: 0;
+  }
 
-	.name-list li,
-	.time-list li{
-		color: $color-primary;
-        font-size: $size-5;
-		padding-bottom:5px;
-	}
+  h5.title {
+    color: $color-secondary !important;
+    font-size: $size-4;
+    padding-bottom: 0px;
+    margin-bottom: 10px !important;
+  }
 
-	.name-list, .time-list{
-		margin-bottom:20px;
-	}
+  .name-list li,
+  .time-list li {
+    color: $color-primary;
+    font-size: $size-5;
+    padding-bottom: 5px;
+  }
 
-	.event-content p.copyright{
-		font-size: 14px;
-	}
+  .name-list,
+  .time-list {
+    margin-bottom: 20px;
+  }
 
-	.journal-logos{
-		height:60px;
-		margin-right:50px;
-	}
+  .event-content p.copyright {
+    font-size: 14px;
+  }
 
-	#organiser-logos{
-		max-width:80%;
-		width:600px;
-	}
+  .journal-logos {
+    height: 60px;
+    margin-right: 50px;
+  }
 
-    .col a{
+  #organiser-logos {
+    max-width: 80%;
+    width: 600px;
+  }
+
+  .col a {
     width: 180px;
     margin-right: 2em;
     float: left;
+  }
 
-    }
-
-    .button.is-color-secondary{
-        margin-top: 30px;
-        min-width: 180px;
-        margin-right: 3em;
-    }
-
+  .button.is-color-secondary {
+    margin-top: 30px;
+    min-width: 180px;
+    margin-right: 3em;
+  }
 </style>
-
-

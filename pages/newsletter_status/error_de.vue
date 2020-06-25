@@ -1,42 +1,49 @@
 <template>
-	<div>
-    <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
+  <div>
+    <Navigation
+      :lang="lang"
+      :content="content"
+      :direct="direct"
+      :anchor-tags="true"
+    />
     <section class="section is-medium">
       <div class="container">
         <h1 class="title">
           {{ this.errorMessage['title'] }}
         </h1>
-        <h2 class="subtitle">{{ this.errorMessage['subtitle'] }}</h2>
+        <h2 class="subtitle">
+          {{ this.errorMessage['subtitle'] }}
+        </h2>
       </div>
     </section>
-    <Footer :lang="lang" :content="content"/>
-	</div>
+    <Footer :lang="lang" :content="content" />
+  </div>
 </template>
 
 <script>
-	import {
-  		content as content
-  } from '../../assets/content.js';
-  
-  import Navigation from '../../components/Navigation.vue';
-	import Footer from '../../components/Footer.vue';
+  import { content } from '../../assets/content.js';
 
-	export default {
-		components: {
+  import Navigation from '../../components/Navigation.vue';
+  import Footer from '../../components/Footer.vue';
+
+  export default {
+    components: {
       Navigation,
-      Footer
+      Footer,
     },
-		data() {
-			return {
-				lang: 'de',
-				content: content,
-				direct: '/newsletter_status/error_en'
-			}
+    data() {
+      return {
+        lang: 'de',
+        content: content,
+        direct: '/newsletter_status/error_en',
+      };
     },
     computed: {
-      errorMessage() { return this.content[this.lang]['register']['errors']['unspecified'] }
-    }
-	}
+      errorMessage() {
+        return this.content[this.lang]['register']['errors']['unspecified'];
+      },
+    },
+  };
 </script>
 
 <style lang="scss" scoped>

@@ -1,18 +1,14 @@
 export const links = {
-    'de': {
-        'events': {
-            'mobilitysymposium': '/events/mobilitysymposium.html'
-        },
-        'projects': {
-
-        }
+  de: {
+    events: {
+      mobilitysymposium: '/events/mobilitysymposium.html',
     },
-    'en': {
-        'events': {
-            'mobilitysymposium': '/events/mobilitysymposium_en.html'
-        },
-        'projects': {
-
-        }
+    projects: {},
+  },
+  en: {
+    events: {
+      mobilitysymposium: '/events/mobilitysymposium_en.html',
     },
-}
+    projects: {},
+  },
+};

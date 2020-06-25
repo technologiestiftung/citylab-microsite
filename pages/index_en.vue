@@ -1,190 +1,223 @@
 <template>
-	<div>
-		<Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-		<TeaserIntro :content='content' :lang='lang' topic="hero" subtopic="intro"/>
-		<!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
-		<Ticker :lang="lang" :content="content" />
-		<Topics :lang="lang" :content="content" :direct="direct" />
-		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
-		<Projects :lang="lang" :content="content"/>
-		<HandbuchTeaser :lang="lang" :content="content" />
-		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
-		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
-		<Newsletter :lang="lang" :content="content" :direct="direct"/>
-		<!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
-		<!-- <Cta :lang="lang" :content="content"/> -->
-		<Footer :lang="lang" :content="content"/>
+  <div>
+    <Navigation
+      :lang="lang"
+      :content="content"
+      :direct="direct"
+      :anchor-tags="true"
+    />
+    <TeaserIntro
+      :content="content"
+      :lang="lang"
+      topic="hero"
+      subtopic="intro"
+    />
+    <!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
+    <Ticker :lang="lang" :content="content" />
+    <Topics :lang="lang" :content="content" :direct="direct" />
+    <Paragraph
+      :content="content"
+      :lang="lang"
+      topic="collaborate"
+      subtopic="paragraph"
+    />
+    <Projects :lang="lang" :content="content" />
+    <HandbuchTeaser :lang="lang" :content="content" />
+    <Teaser
+      id="exhibition"
+      :content="content"
+      :lang="lang"
+      topic="exhibition"
+      subtopic="teaser"
+    />
+    <Schedule
+      v-if="eventsVisible"
+      :lang="lang"
+      :content="content"
+      :direct="direct"
+      :links="links"
+    />
+    <Newsletter :lang="lang" :content="content" :direct="direct" />
+    <!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
+    <!-- <Cta :lang="lang" :content="content"/> -->
+    <Footer :lang="lang" :content="content" />
 
-		<button @click="topFunction()" id="myBtn" class="arrow-up top">↑</button>
-	</div>
+    <button id="myBtn" class="arrow-up top" @click="topFunction()">
+      ↑
+    </button>
+  </div>
 </template>
 
 <script>
-	import { content as content } from '../assets/content.js';
-	import { links as links } from '../assets/links.js';
+  import { content } from '../assets/content.js';
+  import { links } from '../assets/links.js';
 
-	import Navigation from '../components/Navigation.vue';
-	import Footer from '../components/Footer.vue';
-	import Cta from '../components/Cta.vue';
-	import Teaser from '../components/Teaser.vue';
-	import Topics from '../components/Topics.vue';
-	import TeaserIntro from '../components/TeaserIntro.vue';
-	import Partners from '../components/Partners.vue';
-	import Ticker from '../components/Ticker.vue';
-	import Projects from '../components/Projects.vue';
-	import Schedule from '../components/Schedule.vue';
-	import Newsletter from '../components/Newsletter.vue';
-	import Paragraph from '../components/Paragraph.vue';
-	import HandbuchTeaser from '../components/HandbuchTeaser.vue';
+  import Navigation from '../components/Navigation.vue';
+  import Footer from '../components/Footer.vue';
+  import Cta from '../components/Cta.vue';
+  import Teaser from '../components/Teaser.vue';
+  import Topics from '../components/Topics.vue';
+  import TeaserIntro from '../components/TeaserIntro.vue';
+  import Partners from '../components/Partners.vue';
+  import Ticker from '../components/Ticker.vue';
+  import Projects from '../components/Projects.vue';
+  import Schedule from '../components/Schedule.vue';
+  import Newsletter from '../components/Newsletter.vue';
+  import Paragraph from '../components/Paragraph.vue';
+  import HandbuchTeaser from '../components/HandbuchTeaser.vue';
 
-	import axios from 'axios';
-	import { mapState } from 'vuex';
+  import axios from 'axios';
+  import { mapState } from 'vuex';
 
-	import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
+  import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
-	export default {
+  export default {
+    components: {
+      Navigation,
+      Cta,
+      Schedule,
+      Paragraph,
+      Ticker,
+      Footer,
+      Topics,
+      Partners,
+      TeaserIntro,
+      Teaser,
+      Projects,
+      Newsletter,
+      HandbuchTeaser,
+    },
+    data() {
+      return {
+        lang: 'en',
+        content: content,
+        links: links,
+        direct: '/',
+        entries: null,
+        obj: [],
+      };
+    },
+    beforeCreate() {
+      axios
+        .get(
+          `https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`
+        )
+        .then((res) => {
+          let entries = res.data.feed.entry;
 
-		components: {
-			Navigation,
-			Cta,
-			Schedule,
-			Paragraph,
-			Ticker,
-			Footer,
-			Topics,
-			Partners,
-			TeaserIntro,
-			Teaser,
-			Projects,
-			Newsletter,
-			HandbuchTeaser
-		},
-		data() {
-			return {
-				lang: 'en',
-				content: content,
-				links: links,
-				direct: '/',
-				entries: null,
-				obj: []
-			}
-		},
-		beforeCreate() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
-            .then((res) => {
-                let entries = res.data.feed.entry;
+          this.entries = entries;
 
-                this.entries = entries;
+          entries.forEach((entry) => {
+            let obj = {
+              time: entry.gsx$datetime.$t,
+              title: entry.gsx$eventname.$t,
+              visible: entry.gsx$visible.$t,
+            };
+            this.obj.push(obj);
+          });
+        })
+        .catch((err) => {
+          console.error(err, 'index_en.vue');
+        });
+    },
+    computed: {
+      arrowUp() {
+        return faArrowAltCircleUp;
+      },
+      eventsVisible() {
+        let val = false;
+        this.obj.forEach((entry) => {
+          if (entry.visible == 'TRUE') {
+            val = true;
+          }
+        });
 
-                entries.forEach(entry => {
-                    let obj = {
-                        time: entry.gsx$datetime.$t,
-                        title: entry.gsx$eventname.$t,
-                        visible: entry.gsx$visible.$t
-                    }
-					this.obj.push(obj);
-                })
-            })
-        },
-		computed: {
-			arrowUp() {
-				return faArrowAltCircleUp;
-			},
-			eventsVisible() {
-				let val = false;
-				this.obj.forEach(entry => {
-					if (entry.visible == 'TRUE') {
-						val = true;
-					}
-				})
+        return val;
+      },
+      ...mapState(['offset']),
+    },
+    mounted() {
+      if (process.browser) {
+        window.addEventListener('hashchange', () => {
+          if (!this.offset) {
+            window.scrollTo(window.scrollX, window.scrollY - 75);
+            this.setOffset(true);
+          } else if (this.offset) {
+            window.scrollTo(window.scrollX, window.scrollY);
+          }
+        });
 
-				return val;
-			},
-			...mapState(['offset'])
-		},
-		methods: {
-			handleScroll () {
-				this.scrollFunction();
-			},
-			scrollFunction() {
-  				if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    				document.getElementById("myBtn").style.display = "block";
-				} else {
-					document.getElementById("myBtn").style.display = "none";
-				}
-			},
-			topFunction() {
-				document.body.scrollTop = 0; // For Safari
-				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			},
-			setOffset(boolean) {
-                this.$store.dispatch("SET_OFFSET", boolean);
-            },
-		},
-		mounted() {
-			if (process.browser) {
-
-				window.addEventListener("hashchange", () => {
-
-					if (!this.offset) {
-						window.scrollTo(window.scrollX, window.scrollY - 75);
-						this.setOffset(true);
-					} else if (this.offset) {
-						window.scrollTo(window.scrollX, window.scrollY);
-					}
-				});
-
-				window.addEventListener('scroll', this.handleScroll);
-			}
-		},
-		destroyed () {
-			if (process.browser) {
-				window.removeEventListener('scroll', this.handleScroll);
-			}
-		}
-	}
+        window.addEventListener('scroll', this.handleScroll);
+      }
+    },
+    destroyed() {
+      if (process.browser) {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+    },
+    methods: {
+      handleScroll() {
+        this.scrollFunction();
+      },
+      scrollFunction() {
+        if (
+          document.body.scrollTop > 600 ||
+          document.documentElement.scrollTop > 600
+        ) {
+          document.getElementById('myBtn').style.display = 'block';
+        } else {
+          document.getElementById('myBtn').style.display = 'none';
+        }
+      },
+      topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      },
+      setOffset(boolean) {
+        this.$store.dispatch('SET_OFFSET', boolean);
+      },
+    },
+  };
 </script>
 
 <style lang="scss">
+  @import '../assets/style/style.scss';
 
-	@import "../assets/style/style.scss";
+  button.top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 3px !important;
+    cursor: pointer;
 
+    &:focus {
+      outline: 0;
+    }
 
-	button.top {
-		width: 40px;
-		height: 40px;
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		padding-top: 3px !important;
-		cursor: pointer;
+    &:hover {
+      color: $color-tertiary--medium;
+    }
+  }
 
-		&:focus {
-			outline: 0;
-		}
+  .arrow-up {
+    font-size: 40px !important;
+    color: $color-primary;
+    padding: 0px 44px 57px 16px;
+    border-radius: 100px;
+    margin-right: 30px;
+    line-height: 120%;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 60px 0 rgba(47, 47, 162, 0.2);
+    background: white;
+    border: none;
+    transition: all 0.125s ease-in-out;
 
-		&:hover {
-			color: $color-tertiary--medium;
-		}
-	}
-
-	.arrow-up {
-		font-size: 40px !important;
-		color: $color-primary;
-		padding: 0px 44px 57px 16px;
-		border-radius: 100px;
-		margin-right: 30px;
-		line-height: 120%;
-		margin-bottom: 30px;
-		box-shadow: 0 2px 60px 0 rgba(47, 47, 162, 0.2);
-		background: white;
-		border: none;
-		transition: all .125s ease-in-out;
-
-		&:hover {
-			background: $color-primary;
-			color: white !important;
-			transition: all .125s ease-in-out;
-		}
-	}
+    &:hover {
+      background: $color-primary;
+      color: white !important;
+      transition: all 0.125s ease-in-out;
+    }
+  }
 </style>
