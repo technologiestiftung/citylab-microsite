@@ -113,69 +113,26 @@
                 return false // will stop Nuxt.js to render the route and display the error page
             },
             async asyncData ({ params, error, payload }) {
-                const { data } = await axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json`)
-
-                const eventData = data.feed.entry.filter(entry => entry.gsx$dirname.$t == params.event)[0]
-
                 return { 
                     dirname: params.event,
-                    data: eventData,
-                    lang: eventData.gsx$eventlanguage.$t,
+                    data: null,
+                    lang: 'en',
                     content: content,
                     direct: `/events/${params.event}`,
-                    // Intro
-                    heroImageUrl: `https://citylab-berlin.org/images/events/${params.event}_hero.jpg`,
-                    title: eventData.gsx$eventname.$t,
-                    subtitle: eventData.gsx$subline.$t,
-                    subsubtitle: eventData.gsx$subsubline.$t,
-                    headlineIntro: eventData.gsx$headlineintro.$t,
-                    contentIntro: eventData.gsx$contentintro.$t,
-                    // Block 1
-                    headlineBlockOne: eventData.gsx$headlineblockone.$t,
-                    contentBlockOne: eventData.gsx$contentblockone.$t,
-                    // Block 2
-                    headlineBlockTwo: eventData.gsx$headlineblocktwo.$t,
-                    contentBlockTwo: eventData.gsx$contentblocktwo.$t,
-                    // Block 3
-                    headlineBlockThree: eventData.gsx$headlineblockthree.$t,
-                    contentBlockThree: eventData.gsx$contentblockthree.$t,
-                    // Block 4
-                    headlineBlockFour: eventData.gsx$headlineblockfour.$t,
-                    contentBlockFour: eventData.gsx$contentblockfour.$t,
-                    // Register
-                    registerLink: eventData.gsx$registerlink.$t,
-                    registerInfo: eventData.gsx$registerinfo.$t,
-                    // Summaries
-                    websiteSummary: eventData.gsx$websitesummary.$t,
-                    phoneSummary: eventData.gsx$phonesummary.$t,
-                    dateSummary: eventData.gsx$datesummary.$t,
-                    organiserSummary: eventData.gsx$organisersummary.$t,
-                    mailSummary: eventData.gsx$mailsummary.$t,
-                    addressSummary: eventData.gsx$addresssummary.$t,
-                    // Social
-                    socialDescription: eventData.gsx$socialdescription.$t,
-                    logo: eventData.gsx$logo.$t,
-                    logoUrl: `https://citylab-berlin.org/images/events/${params.event}_logo.png`,
-                    // summaryAvailable
                     summaryAvailable: {
-                        website: eventData.gsx$websitesummary.$t.length,
-                        phone: eventData.gsx$phonesummary.$t.length,
-                        organiser: eventData.gsx$organisersummary.$t.length,
-                        address: eventData.gsx$addresssummary.$t.length,
-                        date: eventData.gsx$datesummary.$t.length,
-                        mail: eventData.gsx$mailsummary.$t.length,
-                        introHeadline: eventData.gsx$headlineintro.$t.length,
-                        introContent: eventData.gsx$contentintro.$t.length,
-                        blockOneHeadline: eventData.gsx$headlineblockone.$t.length,
-                        blockOneContent: eventData.gsx$contentblockone.$t.length,
-                        blockTwoHeadline: eventData.gsx$headlineblocktwo.$t.length,
-                        blockTwoContent: eventData.gsx$contentblocktwo.$t.length,
-                        blockThreeHeadline: eventData.gsx$headlineblockthree.$t.length,
-                        blockThreeContent: eventData.gsx$contentblockthree.$t.length,
-                        blockFourHeadline: eventData.gsx$headlineblockfour.$t.length,
-                        blockFourContent: eventData.gsx$contentblockfour.$t.length,
-                        registerLink: eventData.gsx$registerlink.$t.length,
-                        calendarImp: eventData.gsx$calendarimp.$t
+                        website: 0,
+                        phone: 0,
+                        organiser: 0,
+                        address: 0,
+                        date: 0,
+                        mail: 0,
+                        introHeadline: 0,
+                        introContent: 0,
+                        blockOneHeadline: 0,
+                        blockOneContent: 0,
+                        blockTwoHeadline: 0,
+                        blockTwoContent: 0,
+                        registerLink: 0,
                     },
                     dict: {
                         "de": {
@@ -208,11 +165,11 @@
                 return {
                     title: `${this.title} - ${this.subtitle} (${this.dateSummary}) - `,
                     meta: [
-                        { hid: 'description', name: 'description', content: this.socialDescription },
+                        { hid: 'description', name: 'description', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)` },
                         { hid: 'fb:app_id', property: 'fb:app_id', content: '487094758334595'},
                         { hid: 'og:url', property: 'og:url',  content:  `https://www.citylab-berlin.org/events/${this.dirname}`},
                         { hid: 'og:type', property: 'og:type',  content: "website"},
-                        { hid: 'og:title', property: 'og:title',  content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin`},
+                        { hid: 'og:title', property: 'og:title',  content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)`},
                         { hid: 'og:image', property: 'og:image',  content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
                         { hid: 'og:description', property: 'og:description',  content: this.socialDescription},
                         { hid: 'og:site_name', property: 'og:site_name',  content: "CityLAB Berlin"},
@@ -221,7 +178,7 @@
                         { hid: 'twitter:site', name: 'twitter:site',  content: "@citylabberlin"},
                         { hid: 'twitter:creator', name: 'twitter:creator',  content: "@citylabberlin"},
                         { hid: 'twitter:url', name: 'twitter:url', content: `https://www.citylab-berlin.org/events/${this.dirname}`},
-                        { hid: 'twitter:title', name: 'twitter:title', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin`},
+                        { hid: 'twitter:title', name: 'twitter:title', content: `${this.title} - ${this.subtitle} (${this.dateSummary}) -  CityLAB Berlin)`},
                         { hid: 'twitter:description', name: 'twitter:description', content: this.socialDescription},
                         { hid: 'twitter:image', name: 'twitter:image', content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`},
                         { hid: 'name', itemprop: 'name', content:this.socialDescription},
@@ -235,9 +192,20 @@
                 Footer
             },
             computed: {
+                heroImageUrl() {
+
+                    return `https://citylab-berlin.org/images/events/${this.dirname}_hero.jpg`
+                },
                 getContent() {
                     return this.content;
                 },
+                getLanguage() {
+                    if (this.data != null) { return this.data.gsx$eventlanguage.$t } else { return }
+                },
+                title() {
+                    if (this.data != null) { return this.data.gsx$eventname.$t } else { return }
+                },
+
                 startDate() {
                     if (this.data != null) { 
                         const date = this.data.gsx$date.$t;
@@ -255,6 +223,78 @@
                         return newDate;
                         } else { return }
                 },
+
+                subtitle() {
+                    if (this.data != null) { return this.data.gsx$subline.$t } else { return }
+                },
+                subsubtitle() {
+                    if (this.data != null) { return this.data.gsx$subsubline.$t } else { return }
+                },
+                headlineIntro() {
+                    if (this.data != null) { return this.data.gsx$headlineintro.$t } else { return }
+                },
+                contentIntro() {
+                    if (this.data != null) { return this.data.gsx$contentintro.$t } else { return }
+                },
+                headlineBlockOne() {
+                    if (this.data != null) { return this.data.gsx$headlineblockone.$t } else { return }
+                },
+                contentBlockOne() {
+                    if (this.data != null) { return this.data.gsx$contentblockone.$t } else { return }
+                },
+                headlineBlockTwo() {
+                    if (this.data != null) { return this.data.gsx$headlineblocktwo.$t } else { return }
+                },
+                contentBlockTwo() {
+                    if (this.data != null) { return this.data.gsx$contentblocktwo.$t } else { return }
+                },
+                headlineBlockThree() {
+                    if (this.data != null) { return this.data.gsx$headlineblockthree.$t } else { return }
+                },
+                contentBlockThree() {
+                    if (this.data != null) { return this.data.gsx$contentblockthree.$t } else { return }
+                },
+                headlineBlockFour() {
+                    if (this.data != null) { return this.data.gsx$headlineblockfour.$t } else { return }
+                },
+                contentBlockFour() {
+                    if (this.data != null) { return this.data.gsx$contentblockfour.$t } else { return }
+                },
+                registerLink() {
+                    if (this.data != null) { return this.data.gsx$registerlink.$t } else { return }
+                },
+                registerInfo() {
+                    if (this.data != null) { return this.data.gsx$registerinfo.$t } else { return }
+                },
+                websiteSummary() {
+                    if (this.data != null) { return this.data.gsx$websitesummary.$t } else { return }
+                },
+                phoneSummary() {
+                    if (this.data != null) { return this.data.gsx$phonesummary.$t } else { return }
+                },
+                dateSummary() {
+                    if (this.data != null) { return this.data.gsx$datesummary.$t } else { return }
+                },
+                organiserSummary() {
+                    if (this.data != null) { return this.data.gsx$organisersummary.$t } else { return }
+                },
+                mailSummary() {
+                    if (this.data != null) { return this.data.gsx$mailsummary.$t } else { return }
+                },
+                addressSummary() {
+                    if (this.data != null) { return this.data.gsx$addresssummary.$t } else { return }
+                },
+                socialDescription() {
+                    if (this.data != null) { return this.data.gsx$socialdescription.$t } else { return }
+                },
+                logo() {
+                    if (this.data != null) { return this.data.gsx$logo.$t } else { return }
+                },
+                logoUrl() {
+                    return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`
+                },
+                
+
                 // Schreibweise Concat mit Hilfe von Stringliterals
                 calData() {
                     return `BEGIN:VCALENDAR\n
@@ -288,6 +328,10 @@ END:VCALENDAR`
 
             },
             methods: {
+                getLength(data) {
+                    return data.length;
+                },
+
                 save(filename, data) {
                     var blob = new Blob([data], {type: 'text/csv'});
                     if (window.navigator.msSaveOrOpenBlob) {
@@ -301,7 +345,48 @@ END:VCALENDAR`
                         document.body.removeChild(elem);
                     }
                 }
-            }
+            },
+            beforeCreate() {
+                axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json`)
+                    .then((res) => {
+                        // set event entry to data which matches with dirname
+                        this.data = res.data.feed.entry.filter((entry) => {return entry.gsx$dirname.$t == this.dirname}) ;
+                        this.data = this.data[0];
+                        this.lang = this.data.gsx$eventlanguage.$t;
+
+
+                        this.summaryAvailable.address = this.getLength(this.data.gsx$addresssummary.$t);
+                        this.summaryAvailable.phone = this.getLength(this.data.gsx$phonesummary.$t);
+                        this.summaryAvailable.mail = this.getLength(this.data.gsx$mailsummary.$t);
+                        this.summaryAvailable.website = this.getLength(this.data.gsx$websitesummary.$t);
+                        this.summaryAvailable.date = this.getLength(this.data.gsx$datesummary.$t);
+                        this.summaryAvailable.organiser = this.getLength(this.data.gsx$organisersummary.$t);
+
+                        this.summaryAvailable.introHeadline = this.getLength(this.data.gsx$headlineintro.$t);
+                        this.summaryAvailable.introContent = this.getLength(this.data.gsx$contentintro.$t);
+
+                        this.summaryAvailable.blockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
+                        this.summaryAvailable.blockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
+
+                        this.summaryAvailable.blockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
+                        this.summaryAvailable.blockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
+
+                        this.summaryAvailable.blockThreeHeadline = this.getLength(this.data.gsx$headlineblockthree.$t);
+                        this.summaryAvailable.blockThreeContent = this.getLength(this.data.gsx$contentblockthree.$t);
+
+                        this.summaryAvailable.blockFourHeadline = this.getLength(this.data.gsx$headlineblockfour.$t);
+                        this.summaryAvailable.blockFourContent = this.getLength(this.data.gsx$contentblockfour.$t);
+
+                        this.summaryAvailable.registerLink = this.getLength(this.data.gsx$registerlink.$t);
+
+                        //ab hier: calendar import 
+                        this.summaryAvailable.calendarImp = this.data.gsx$calendarimp.$t;                        
+                    })
+
+            }, //close beforeCreate()
+            mounted() {
+
+            } //close mounted
     } //close export default
 </script>
 
@@ -461,6 +546,10 @@ END:VCALENDAR`
         margin-top: 30px;
         min-width: 180px;
         margin-right: 3em;
+    }
+
+    form * {
+
     }
 
 </style>
