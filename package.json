@@ -9,6 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "preexport":"nuxt build --target static",
+    "export": "nuxt export",
     "analyze": "nuxt build --analyze --no-lock",
     "test": "jest",
     "test:watch": "jest --watch ----coverage=false"
