@@ -2,4 +2,4 @@
 [build]
   publish = "dist/"
   # Default build command.
-  command = "npm run generate || { sleep 120; false; }"
+  command = "npm run export"

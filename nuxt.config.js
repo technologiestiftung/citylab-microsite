@@ -5,6 +5,7 @@ import path from 'path'
 import axios from 'axios';
 
 export default {
+  target: 'static', // default: 'server'
   generate: {
 	routes: function () {
 
@@ -15,6 +16,7 @@ export default {
     ])
     .then(axios.spread((events, projects, projects_en) => {
 
+      console.log(events);
       // do something with both responses
       let entriesEvents = events.data.feed.entry;
       let entriesProjects = projects.data.feed.entry;
@@ -52,7 +54,14 @@ export default {
 
       return all;
     })).catch(err => {
-      console.log(err);
+      console.error(err, "error");
+      console.error(err.message, "message");
+      console.error(err.stack, "stack");
+      if (error.response) {
+        console.error(error.response.data, "data");
+        console.error(error.response.status, "status");
+        console.error(error.response.headers, "headers");
+      }
     });
 
     // return axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)

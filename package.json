@@ -11,6 +11,7 @@
     "generate": "nuxt generate",
     "preexport":"nuxt build --target static",
     "export": "nuxt export",
+    "serve:prod": "nuxt serve",
     "analyze": "nuxt build --analyze --no-lock",
     "test": "jest",
     "test:watch": "jest --watch ----coverage=false"
