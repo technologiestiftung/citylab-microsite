@@ -3,6 +3,7 @@
     <fieldset>
       <div>
         <label for="first_name">{{ this.content['form']['last_name'] }}</label>
+
         <input
           v-model="first_name"
           type="text"

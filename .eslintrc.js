@@ -17,7 +17,6 @@ module.exports = {
   ],
   // required to lint *.vue files
   plugins: ['vue', 'jest'],
-  // add your custom rules here
   rules: {
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off',
