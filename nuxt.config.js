@@ -21,23 +21,39 @@ export default {
       let entriesProjectsEn = projects_en.data.feed.entry;
 
       const eventRoutes = entriesEvents.map((entry) => {
-        return '/events/' + entry.gsx$dirname.$t
+        if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+          return '/events/' + entry.gsx$dirname.$t
+        }
+        return;
       })
 
       const projectRoutes = entriesProjects.map((entry) => {
-        return '/projects/' + entry.gsx$dirname.$t
+        if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+          return '/projects/' + entry.gsx$dirname.$t
+        }
+        return;
       })
 
       const projectEnRoutes = entriesProjectsEn.map((entry) => {
-        return '/projects_en/' + entry.gsx$dirname.$t
+        if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+          return '/projects_en/' + entry.gsx$dirname.$t
+        }
+        return;
       })
 
-      let routesAll = [];
+      // let routesAll = [];
 
-      const all = routesAll.concat(eventRoutes).concat(projectRoutes).concat(projectEnRoutes)
+      let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
+      // routesAll.concat(eventRoutes).concat(projectRoutes).concat(projectEnRoutes)
+      // console.log(all);
+      all = all.filter(elem => {
+        return elem !== undefined;
+      })
 
       return all;
-    }));
+    })).catch(err => {
+      console.log(err);
+    });
 
     // return axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
     //   .then((res) => {
@@ -45,10 +61,10 @@ export default {
     //     const eventRoutes = entries.map((entry) => {
     //       return '/events/' + entry.gsx$dirname.$t
     //     })
-        
+
     //     return eventRoutes;
     //   }).then((eventRoutes) => {
-        
+
     //   })
 
     }
@@ -108,10 +124,10 @@ export default {
 	// Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
 	[
 	  'nuxt-fontawesome', {
-	  component: 'font-awesome-icon', 
+	  component: 'font-awesome-icon',
 	  imports: [
-		//import 2 icons from set 
-		// please note this is PRO set in this example, 
+		//import 2 icons from set
+		// please note this is PRO set in this example,
 		// you must have it in your node_modules to actually import
 		{
 		  set: '@fortawesome/free-solid-svg-icons',
