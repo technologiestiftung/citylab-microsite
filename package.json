@@ -19,7 +19,7 @@
     "@fortawesome/vue-fontawesome": "0.1.10",
     "@nuxtjs/bulma": "1.2.7",
     "axios": "0.19.2",
-    "cross-env": "5.2.1",
+    "cross-env": "7.0.2",
     "fs": "0.0.2",
     "ics": "2.22.1",
     "net": "1.0.2",
