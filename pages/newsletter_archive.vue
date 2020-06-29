@@ -70,27 +70,16 @@
 							const date = entry.gsx$date.$t;
 							const year = date.match(/(\d+)/)[0];
 							const month = date.match(/[^\s]+/)[0];
-							if (this.lang == 'de') {
-								let obj = {
-									date: entry.gsx$date.$t,
-									year: year,
-									month: month,
-									title: entry.gsx$titlede.$t,
-									subtitle: entry.gsx$subtitlede.$t,
-									url: entry.gsx$urlde.$t,
-								}
-								this.data.push(obj);
-							} else if (this.lang == 'en') {
-								let obj = {
-									date: entry.gsx$date.$t,
-									year: year,
-									month: month,
-									title: entry.gsx$titleen.$t,
-									subtitle: entry.gsx$subtitleen.$t,
-									url: entry.gsx$urlen.$t,
-								}
-								this.data.push(obj);
-							}
+
+              let obj = {
+                date: entry.gsx$date.$t,
+                year: year,
+                month: month,
+                title: entry['gsx$title' + this.lang].$t,
+                subtitle: entry['gsx$subtitle' + this.lang].$t,
+                url: entry['gsx$url' + this.lang].$t,
+              }
+              this.data.push(obj);
 						})
 					})
 		}
