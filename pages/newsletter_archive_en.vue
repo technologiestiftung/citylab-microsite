@@ -4,6 +4,31 @@
         <section class="section is-medium">
             <div class="container">
                 <h1 class="title" style="margin-top: 100px">
+                  {{ content[lang]['news']['title'] }}
+                </h1>
+
+								<h2 class="subtitle">
+									{{ content[lang]['news']['p1'] }}
+								</h2>
+
+                <div class="schedule-wrapper">
+                    <a class="nl-tile" target="_blank" v-if="entry.url.length > 0" :href="entry['url']" v-for="entry in newsData">
+                        <article class="dates-item" style="width: 100%;">
+                            <div class="date-wrapper">
+															<span class="date-month"> {{ entry.month }} </span>
+															<span class="date-day"> {{ entry.year }} </span>
+                            </div>
+
+                            <h2 class="subtitle">{{ entry.title }}</h2>
+
+                            <h2 class="subtitle format">{{ entry.subtitle }}</h2>
+
+                            <a :href="entry['url']"  target="_blank" class="arrow-right">→</a>
+                        </article>
+                    </a>
+                </div>
+
+                <h1 class="title" style="margin-top: 100px">
                     {{ content[lang]['newsletter_archive']['title'] }}
                 </h1>
 
@@ -12,7 +37,7 @@
 								</h2>
 
                 <div class="schedule-wrapper">
-                    <a class="nl-tile" target="_blank" v-if="entry.url.length > 0" :href="entry['url']" v-for="entry in data">
+                    <a class="nl-tile" target="_blank" v-if="entry.url.length > 0" :href="entry['url']" v-for="entry in newsletterArchiveData">
                         <article class="dates-item" style="width: 100%;">
                             <div class="date-wrapper">
 															<span class="date-month"> {{ entry.month }} </span>
@@ -56,58 +81,57 @@
 				lang: 'en',
 				content: content,
 				entries: null,
-				data: [],
+				newsData: [],
+        newsletterArchiveData: [],
 				direct: '/newsletter_archive'
 			}
 		},
-		created() {
-				axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/6/public/values?alt=json`)
+    methods : {
+      getData (dataArray, sheetPageNumber) {
+        let url = `https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/` + sheetPageNumber + `/public/values?alt=json`
+        axios.get(url)
 					.then((res) => {
 						let entries = res.data.feed.entry;
 						this.entries = entries;
 
-						let dict = {
-							Januar: 'January',
-							Februar: 'February',
-							März: 'March',
-							April: 'April',
-							Mai: 'May',
-							Juni: 'June',
-							Juli: 'July',
-							August: 'August',
-							September: 'September',
-							Oktober: 'October',
-							November: 'November',
-							Dezember: 'December',
-						}
-
 						entries.forEach(entry => {
 							const date = entry.gsx$date.$t;
 							const year = date.match(/(\d+)/)[0];
-							const month = date.match(/[^\s]+/)[0];
-							if (this.lang == 'de') {
-								let obj = {
-									date: entry.gsx$date.$t,
-									year: year,
-									month: month,
-									title: entry.gsx$titlede.$t,
-									subtitle: entry.gsx$subtitlede.$t,
-									url: entry.gsx$urlde.$t,
-								}
-								this.data.push(obj);
-							} else if (this.lang == 'en') {
-								let obj = {
-									date: entry.gsx$date.$t,
-									year: year,
-									month: dict[month],
-									title: entry.gsx$titleen.$t,
-									subtitle: entry.gsx$subtitleen.$t,
-									url: entry.gsx$urlen.$t,
-								}
-								this.data.push(obj);
-							}
+							let month = date.match(/[^\s]+/)[0];
+
+              let dict = {
+                Januar: 'January',
+                Februar: 'February',
+                März: 'March',
+                April: 'April',
+                Mai: 'May',
+                Juni: 'June',
+                Juli: 'July',
+                August: 'August',
+                September: 'September',
+                Oktober: 'October',
+                November: 'November',
+                Dezember: 'December',
+              }
+
+              if (this.lang == "en") month = dict[month];
+
+              let obj = {
+                date: entry.gsx$date.$t,
+                year: year,
+                month: month,
+                title: entry['gsx$title' + this.lang].$t,
+                subtitle: entry['gsx$subtitle' + this.lang].$t,
+                url: entry['gsx$url' + this.lang].$t,
+              }
+              dataArray.push(obj);
 						})
 					})
+      }
+    },
+		created() {
+        this.getData(this.newsData, 7);
+				this.getData(this.newsletterArchiveData, 6);
 		}
 	}
 </script>
