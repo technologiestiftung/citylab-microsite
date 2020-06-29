@@ -143,6 +143,10 @@ export const content = {
                 'ref': '/'
             },
             {
+                'name': 'News',
+                'ref': '/newsletter_archive'
+            },
+            {
                 'name': 'Über Uns',
                 'ref': '/about_us'
             },
@@ -1076,6 +1080,10 @@ export const content = {
             {
                 'name': 'Start',
                 'ref': '/index_en'
+            },
+            {
+                'name': 'News',
+                'ref': '/newsletter_archive_en'
             },
             {
                 'name': 'About us',
