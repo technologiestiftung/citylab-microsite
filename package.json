@@ -24,7 +24,7 @@
     "ics": "2.22.1",
     "net": "1.0.2",
     "nuxt": "2.13.0",
-    "nuxt-compress": "1.1.0",
+    "nuxt-compress": "2.0.0",
     "nuxt-fontawesome": "0.4.0",
     "three": "0.117.1",
     "v-lazy-image": "1.4.0",
