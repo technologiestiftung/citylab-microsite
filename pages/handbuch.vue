@@ -117,6 +117,7 @@
       </div>
     </section>
     <Footer :lang="lang" :content="content"/>
+    <Matomo />
 	</div>
 </template>
 
@@ -128,14 +129,16 @@
   import Button from '../components/Button.vue';
   import HandbuchSubscribe from '../components/handbuch/HandbuchSubscribe.vue';
   import Navigation from '../components/Navigation.vue';
-	import Footer from '../components/Footer.vue';
+  import Footer from '../components/Footer.vue';
+  import Matomo from '../components/Matomo.vue';
 
 	export default {
 		components: {
       Navigation,
       Footer,
       Button,
-      HandbuchSubscribe
+      HandbuchSubscribe,
+      Matomo
     },
 		data() {
 			return {
@@ -148,7 +151,14 @@
       return {
         title: `${this.hero['title']} | `,
         meta: [
-          { hid: 'description', name: 'description', content: `${this.hero['subtitle']} | ${this.isbn}` }
+          { hid: 'description', name: 'description', content: `${this.hero['subtitle']} (${this.isbn})` },
+          { hid: 'og:title', property: 'og:title', content: `${this.hero['title']} | CityLAB Berlin` },
+          { hid: 'og:description', property: 'og:description', content: `${this.hero['subtitle']}` },
+          { hid: 'og:image', property: 'og:image', content: "https://citylab-berlin.org/images/handbuch/handbuch_social_media.jpg" },
+          { hid: 'twitter:card', property: 'twitter:card', content: "summary_large_image" },
+          { hid: 'og:site_name', property: 'og:site_name', content: `${this.hero['title']} | CityLAB Berlin` },
+          { hid: 'twitter:image:alt', property: 'twitter:image:alt', content: `${this.hero['title']} | CityLAB Berlin` },
+          { hid: 'twitter:image', property: 'twitter:image', content: "https://citylab-berlin.org/images/handbuch/handbuch_social_media.jpg" },
         ]
       }
     },
