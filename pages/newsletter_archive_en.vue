@@ -71,7 +71,7 @@
 							Februar: 'February',
 							März: 'March',
 							April: 'April',
-							Mai: 'Mayy',
+							Mai: 'May',
 							Juni: 'June',
 							Juli: 'July',
 							August: 'August',
@@ -259,5 +259,3 @@
 		margin-top: 0 !important;
 	}
 </style>
-
-
