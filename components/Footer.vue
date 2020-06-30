@@ -71,12 +71,6 @@
                             </p>
                         </nuxt-link>
 
-                        <nuxt-link class="flex flex-row m-b-sm" :to="directNewsletter">
-                            <p class="content">
-                                {{ content[lang]['footer']['more']['newsletter'] }}
-                            </p>
-                        </nuxt-link>
-
                         <nuxt-link class="flex flex-row m-b-sm" :to="directResources">
                             <p class="content">
                                 {{ content[lang]['footer']['more']['resources'] }}
@@ -138,8 +132,7 @@
                         code: '/codeofconduct',
                         imprint: '/legalnote',
                         resources: '/resources',
-                        board: '/board',
-                        newsletter: '/newsletter_archive',
+                        board: '/board'
                     },
                     en: {
                         downloads: '/downloads_en',
@@ -148,8 +141,7 @@
                         dataprivacy: '/dataprivacy_en',
                         code: '/codeofconduct_en',
                         resources: '/resources_en',
-                        board: '/board_en',
-                        newsletter: '/newsletter_archive_en',
+                        board: '/board_en'
                     }
                 }
             }
@@ -157,9 +149,6 @@
         computed: {
             directBoard() {
                 return this.directs[this.lang].board
-            },
-            directNewsletter() {
-                return this.directs[this.lang].newsletter
             },
             directResources() {
                 return this.directs[this.lang].resources
@@ -261,5 +250,3 @@
         color: $grey-light;
     }
 </style>
-
-

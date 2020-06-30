@@ -143,6 +143,10 @@ export const content = {
                 'ref': '/'
             },
             {
+                'name': 'News',
+                'ref': '/newsletter_archive'
+            },
+            {
                 'name': 'Über Uns',
                 'ref': '/about_us'
             },
@@ -196,9 +200,13 @@ export const content = {
             'board_url': '/board',
             'board_url_button': 'Übersicht Beirat',
         },
-        'newsletter_archive': {
+        'news': {
             'title': 'News',
-            'p1': 'Hier findest du alle bereits veröffentlichten Newsletter und Pressemitteilungen des CityLAB Berlin.',
+            'p1': 'Hier findest du alle Neuigkeiten aus dem CityLAB Berlin.',
+        },
+        'newsletter_archive': {
+            'title': 'Newsletter Archiv',
+            'p1': 'Hier findest du alle bereits veröffentlichten Newsletter des CityLAB Berlin.',
         },
         'missionStatement': {
             'title': 'Unsere Mission',
@@ -1068,14 +1076,22 @@ export const content = {
             'board_url': '/board_en',
             'board_url_button': 'Advisory Board',
         },
-        'newsletter_archive': {
+        'news': {
             'title': 'News',
-            'p1': 'At this section you find all published newsletters and press realeases',
+            'p1': 'Here you can find our trending topics from CityLAB Berlin.',
+        },
+        'newsletter_archive': {
+            'title': 'Newsletter Archive',
+            'p1': 'Here you can find all published newsletters of CityLAB Berlin.',
         },
         'nav': [
             {
                 'name': 'Start',
                 'ref': '/index_en'
+            },
+            {
+                'name': 'News',
+                'ref': '/newsletter_archive_en'
             },
             {
                 'name': 'About us',
