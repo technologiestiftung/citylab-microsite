@@ -76,14 +76,7 @@ export const content = {
                 link: 'https://citylab-berlin.org/events/kisprechstunde2',
                 visible: true,
             },
-            {
-                date: '2020-04-15',
-                format: 'Sprechstunde',
-                time: '13.30 - 15.30',
-                title: 'KI Sprechstunde vol. II',
-                link: 'https://citylab-berlin.org/events/kisprechstunde2',
-                visible: true,
-            }
+ 
 
         ],
         'exhibition': {
