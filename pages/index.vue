@@ -7,6 +7,7 @@
 		<Topics :lang="lang" :content="content" :direct="direct" />
 		<Paragraph :content='content' :lang='lang' topic="collaborate" subtopic="paragraph"/>
 		<Projects :lang="lang" :content="content"/>
+		<HandbuchTeaser :lang="lang" :content="content" />
 		<Teaser :content='content' :lang='lang' id="exhibition" topic="exhibition" subtopic="teaser"/>
 		<Schedule v-if="eventsVisible" :lang="lang" :content="content" :direct="direct" :links="links"/>
 		<Newsletter :lang="lang" :content="content" :direct="direct"/>
@@ -34,6 +35,7 @@
 	import Schedule from '../components/Schedule.vue';
 	import Newsletter from '../components/Newsletter.vue';
 	import Paragraph from '../components/Paragraph.vue';
+	import HandbuchTeaser from '../components/HandbuchTeaser.vue';
 
 	import axios from 'axios';
 	import { mapState } from 'vuex';
@@ -55,6 +57,7 @@
 			Teaser,
 			Projects,
 			Newsletter,
+			HandbuchTeaser
 		},
 		data() {
 			return {
