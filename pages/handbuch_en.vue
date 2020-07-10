@@ -90,6 +90,28 @@
               {{ this.contributors['title'] }}
               </h2>
               <p v-html="this.contributors['description']"></p>
+              <div class="container editors">
+                <h3>{{ this.contributors['editors']['title'] }}</h3>
+                <p>
+                  <span
+                    v-for="editor in this.contributors['editors']['list']"
+                    :key="editor"
+                  >
+                  {{ editor }}
+                  </span>
+                </p>
+              </div>
+              <div class="container authors">
+                <h3>{{ this.contributors['authors']['title'] }}</h3>
+                <p>
+                  <span
+                    v-for="author in this.contributors['authors']['list']"
+                    :key="author"
+                  >
+                  {{ author }}
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -282,6 +304,16 @@
     }
     h3 {
       font-size: $size-medium;
+    }
+    .editors, .authors {
+      margin-top: $spacing-m;
+      color: $white;
+      h3 {
+        font-weight: $weight-bold;
+      }
+      span {
+        display: block;
+      }
     }
   }
 
