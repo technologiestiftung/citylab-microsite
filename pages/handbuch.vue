@@ -124,6 +124,9 @@
               {{ this.download['title'] }}
             </h2>
             <p v-html="this.download['description']"></p>
+            <a
+              class="button is-color-secondary is-medium"
+              :href="this.download['fullResource']" download>{{ this.download['cta'] }}</a>
             <ul>
               <li
                 v-for="resource in this.download['resources']"
@@ -327,6 +330,9 @@
   section#download {
     p {
       color: $text;
+    }
+    a {
+      margin-top: $spacing-m;
     }
     ul li {
       display: flex;
