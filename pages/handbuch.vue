@@ -138,6 +138,7 @@
                 >
                   {{ resource['title'] }}
                 </a>
+                <br>
                 <span>{{ resource['description'] }}</span>
               </li>
             </ul>
@@ -335,8 +336,6 @@
       margin-top: $spacing-m;
     }
     ul li {
-      display: flex;
-      flex-direction: column;
       font-size: $size-medium;
       margin-top: $spacing-m;
 
