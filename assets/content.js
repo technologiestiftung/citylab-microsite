@@ -720,7 +720,27 @@ export const content = {
                 'cta': {
                     'title': 'Herunterladen',
                     'direct': '/downloads/Oeffentliches-Gestalten.zip'
-                }
+                },
+                'resources': [
+                    {
+                        'title': '»Öffentliches Gestalten« (Doppelseiten)',
+                        'description': 'Zur Desktopansicht und zum Ausdrucken.',
+                        'url': '/downloads/handbuch/Doppelseiten-Oeffentliches-Gestalten.pdf',
+                        'resourceTitle': 'Doppelseiten-Oeffentliches-Gestalten.pdf'
+                    },
+                    {
+                        'title': '»Öffentliches Gestalten« (Einzelseiten)',
+                        'description': 'Zur besseren Ansicht auf Tablet-Computern.',
+                        'url': '/downloads/handbuch/Einzelseiten-Oeffentliches-Gestalten.pdf',
+                        'resourceTitle': 'Einzelseiten-Oeffentliches-Gestalten.pdf'
+                    },
+                    {
+                        'title': '»Öffentliches Gestalten« (nur Methoden)',
+                        'description': 'Zum Ausdrucken als Methodenkasten.',
+                        'url': '/downloads/handbuch/Methoden-Oeffentliches-Gestalten.pdf',
+                        'resourceTitle': 'Methoden-Oeffentliches-Gestalten.pdf'
+                    }
+                ]
             },
             'register': {
                 'intro': {
@@ -1646,7 +1666,27 @@ export const content = {
                 'cta': {
                     'title': 'Download',
                     'direct': '/downloads/Oeffentliches-Gestalten.zip'
-                }
+                },
+                'resources': [
+                    {
+                        'title': '»Öffentliches Gestalten« (spreads)',
+                        'description': 'For printing and desktop viewing.',
+                        'url': '/downloads/handbuch/Doppelseiten-Oeffentliches-Gestalten.pdf',
+                        'resourceTitle': 'Doppelseiten-Oeffentliches-Gestalten.pdf'
+                    },
+                    {
+                        'title': '»Öffentliches Gestalten« (individual pages)',
+                        'description': 'For better viewing on tablet computers.',
+                        'url': '/downloads/handbuch/Einzelseiten-Oeffentliches-Gestalten.pdf',
+                        'resourceTitle': 'Einzelseiten-Oeffentliches-Gestalten.pdf'
+                    },
+                    {
+                        'title': '»Öffentliches Gestalten« (methods only)',
+                        'description': 'To print as toolkit.',
+                        'url': '/downloads/handbuch/Methoden-Oeffentliches-Gestalten.pdf',
+                        'resourceTitle': 'Methoden-Oeffentliches-Gestalten.pdf'
+                    }
+                ]
             },
             'register': {
                 'intro': {

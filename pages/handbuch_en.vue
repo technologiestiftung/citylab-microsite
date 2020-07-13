@@ -124,13 +124,20 @@
               {{ this.download['title'] }}
             </h2>
             <p v-html="this.download['description']"></p>
-            <a
-              class="button is-color-secondary is-normal"
-              :href="this.download['cta']['direct']"
-              :download="this.download['resourceName']"
-            >
-              {{ this.download['cta']['title'] }}
-            </a>
+            <ul>
+              <li
+                v-for="resource in this.download['resources']"
+                :key="resource['resourceTitle']"
+              >
+                <a
+                  :href="resource['url']"
+                  :download="resource['resourceTitle']"
+                >
+                  {{ resource['title'] }}
+                </a>
+                <span>{{ resource['description'] }}</span>
+              </li>
+            </ul>
           </div>
           <div class="column is-5">
             <HandbuchSubscribe :lang="lang" :content="content" />
@@ -321,9 +328,23 @@
     p {
       color: $text;
     }
-    a {
+    ul li {
+      display: flex;
+      flex-direction: column;
       font-size: $size-medium;
-      margin-top: 30px; 
+      margin-top: $spacing-m;
+
+      a {
+        color: $color-secondary;
+        text-decoration: underline;
+
+        &:hover {
+          color: $color-secondary--medium;
+        }
+      }
+      span {
+        color: $text;
+      }
     }
   }
 </style>
