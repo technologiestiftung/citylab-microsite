@@ -126,22 +126,7 @@
             <p v-html="this.download['description']"></p>
             <a
               class="button is-color-secondary is-medium"
-              :href="this.download['fullResource']" download>{{ this.download['cta'] }}</a>
-            <ul>
-              <li
-                v-for="resource in this.download['resources']"
-                :key="resource['resourceTitle']"
-              >
-                <a
-                  :href="resource['url']"
-                  :download="resource['resourceTitle']"
-                >
-                  {{ resource['title'] }}
-                </a>
-                <br>
-                <span>{{ resource['description'] }}</span>
-              </li>
-            </ul>
+              :href="this.download['resource']" download>{{ this.download['cta'] }}</a>
           </div>
           <div class="column is-5">
             <HandbuchSubscribe :lang="lang" :content="content" />
@@ -334,22 +319,6 @@
     }
     a {
       margin-top: $spacing-m;
-    }
-    ul li {
-      font-size: $size-medium;
-      margin-top: $spacing-m;
-
-      a {
-        color: $color-secondary;
-        text-decoration: underline;
-
-        &:hover {
-          color: $color-secondary--medium;
-        }
-      }
-      span {
-        color: $text;
-      }
     }
   }
 </style>

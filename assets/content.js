@@ -717,27 +717,7 @@ export const content = {
                 'title': 'Download',
                 'description': 'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter. <br><br>Du arbeitest in oder mit der öffentlichen Verwaltung? Für das gedruckte Buch, schick uns eine E-Mail an <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
                 'cta': 'Download',
-                'fullResource': '/downloads/handbuch/Oeffentliches-Gestalten.zip',
-                'resources': [
-                    {
-                        'title': '»Öffentliches Gestalten« (Doppelseiten)',
-                        'description': 'Zur Desktopansicht und zum Ausdrucken.',
-                        'url': '/downloads/handbuch/Doppelseiten-Oeffentliches-Gestalten.pdf',
-                        'resourceTitle': 'Doppelseiten-Oeffentliches-Gestalten.pdf'
-                    },
-                    {
-                        'title': '»Öffentliches Gestalten« (Einzelseiten)',
-                        'description': 'Zur besseren Ansicht auf Tablet-Computern.',
-                        'url': '/downloads/handbuch/Einzelseiten-Oeffentliches-Gestalten.pdf',
-                        'resourceTitle': 'Einzelseiten-Oeffentliches-Gestalten.pdf'
-                    },
-                    {
-                        'title': '»Öffentliches Gestalten« (nur Methoden)',
-                        'description': 'Zum Ausdrucken als Methodenkasten.',
-                        'url': '/downloads/handbuch/Methoden-Oeffentliches-Gestalten.pdf',
-                        'resourceTitle': 'Methoden-Oeffentliches-Gestalten.pdf'
-                    }
-                ]
+                'resource': '/downloads/handbuch/Oeffentliches-Gestalten.zip'
             },
             'register': {
                 'intro': {
@@ -1660,27 +1640,7 @@ export const content = {
                 'title': 'Download',
                 'description': 'You want to shape change in public administration? Unfortunately, this book does not yet exist in English. However, you can download the manual and the collection of methods here as a German PDF.  <br><br>You work in or with the public administration? To request a copy of the printed book or to request more information in English, send us an email via <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
                 'cta': 'Download',
-                'fullResource': '/downloads/handbuch/Oeffentliches-Gestalten.zip',
-                'resources': [
-                    {
-                        'title': '»Öffentliches Gestalten« (spreads)',
-                        'description': 'For printing and desktop viewing.',
-                        'url': '/downloads/handbuch/Doppelseiten-Oeffentliches-Gestalten.pdf',
-                        'resourceTitle': 'Doppelseiten-Oeffentliches-Gestalten.pdf'
-                    },
-                    {
-                        'title': '»Öffentliches Gestalten« (individual pages)',
-                        'description': 'For better viewing on tablet computers.',
-                        'url': '/downloads/handbuch/Einzelseiten-Oeffentliches-Gestalten.pdf',
-                        'resourceTitle': 'Einzelseiten-Oeffentliches-Gestalten.pdf'
-                    },
-                    {
-                        'title': '»Öffentliches Gestalten« (methods only)',
-                        'description': 'To print as toolkit.',
-                        'url': '/downloads/handbuch/Methoden-Oeffentliches-Gestalten.pdf',
-                        'resourceTitle': 'Methoden-Oeffentliches-Gestalten.pdf'
-                    }
-                ]
+                'resource': '/downloads/handbuch/Oeffentliches-Gestalten.zip'
             },
             'register': {
                 'intro': {
