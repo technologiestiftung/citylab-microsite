@@ -76,6 +76,7 @@ export const content = {
                 link: 'https://citylab-berlin.org/events/kisprechstunde2',
                 visible: true,
             },
+ 
 
         ],
         'exhibition': {
@@ -143,6 +144,10 @@ export const content = {
                 'ref': '/'
             },
             {
+                'name': 'News',
+                'ref': '/newsletter_archive'
+            },
+            {
                 'name': 'Über Uns',
                 'ref': '/about_us'
             },
@@ -196,9 +201,13 @@ export const content = {
             'board_url': '/board',
             'board_url_button': 'Übersicht Beirat',
         },
-        'newsletter_archive': {
+        'news': {
             'title': 'News',
-            'p1': 'Hier findest du alle bereits veröffentlichten Newsletter und Pressemitteilungen des CityLAB Berlin.',
+            'p1': 'Hier findest du alle Neuigkeiten aus dem CityLAB Berlin.',
+        },
+        'newsletter_archive': {
+            'title': 'Newsletter Archiv',
+            'p1': 'Hier findest du alle bereits veröffentlichten Newsletter des CityLAB Berlin.',
         },
         'missionStatement': {
             'title': 'Unsere Mission',
@@ -687,15 +696,30 @@ export const content = {
             },
             'contributors': {
                 'title': 'Öffentliche Gestalter:innen',
-                'description': 'Das Handbuch ist entstanden durch eine Zusammenarbeit von CityLAB Berlin und <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.'
+                'description': 'Das Handbuch ist entstanden durch eine Zusammenarbeit von CityLAB Berlin und <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.',
+                'editors': {
+                    'title': 'Redaktion',
+                    'list': [
+                        'Joshua Pacheco',
+                        'Benjamin Seibel'
+                    ]
+                },
+                'authors': {
+                    'title': 'Autorinnen',
+                    'list': [
+                        'Caroline Paulick-Thiel und',
+                        'Henrike Arlt mit',
+                        'Bettina Köbler'
+                    ]
+                }
             },
             'download': {
                 'title': 'Download',
-                'description': 'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter. <br><br>Für das gedruckte Buch, schick uns eine E-Mail an <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
-                'resourceName': 'OeffentlichesGestalten',
+                'description': 'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter. <br><br>Du arbeitest in oder mit der öffentlichen Verwaltung? Für das gedruckte Buch, schick uns eine E-Mail an <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
+                'resourceName': 'Oeffentliches-Gestalten',
                 'cta': {
                     'title': 'Herunterladen',
-                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch.pdf'
+                    'direct': '/downloads/Oeffentliches-Gestalten.zip'
                 }
             },
             'register': {
@@ -1068,14 +1092,22 @@ export const content = {
             'board_url': '/board_en',
             'board_url_button': 'Advisory Board',
         },
-        'newsletter_archive': {
+        'news': {
             'title': 'News',
-            'p1': 'At this section you find all published newsletters and press realeases',
+            'p1': 'Here you can find our trending topics from CityLAB Berlin.',
+        },
+        'newsletter_archive': {
+            'title': 'Newsletter Archive',
+            'p1': 'Here you can find all published newsletters of CityLAB Berlin.',
         },
         'nav': [
             {
                 'name': 'Start',
                 'ref': '/index_en'
+            },
+            {
+                'name': 'News',
+                'ref': '/newsletter_archive_en'
             },
             {
                 'name': 'About us',
@@ -1590,15 +1622,30 @@ export const content = {
             },
             'contributors': {
                 'title': 'Public designers',
-                'description': 'The handbook is the result of a collaboration between CityLAB Berlin and <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.'
+                'description': 'The handbook is the result of a collaboration between CityLAB Berlin and <a href="https://www.politicsfortomorrow.eu/" target="blank" style="color: white; text-decoration: underline;">Politics for Tomorrow</a>.',
+                'editors': {
+                    'title': 'Editors',
+                    'list': [
+                        'Joshua Pacheco',
+                        'Benjamin Seibel'
+                    ]
+                },
+                'authors': {
+                    'title': 'Authors',
+                    'list': [
+                        'Caroline Paulick-Thiel and',
+                        'Henrike Arlt with',
+                        'Bettina Köbler'
+                    ]
+                }
             },
             'download': {
                 'title': 'Download',
-                'description': 'You want to shape change in public administration? Unfortunately, this book does not yet exist in English. However, you can download the manual and the collection of methods here as a German PDF.  <br><br>To request a copy of the printed book or to request more information in English, send us an email via <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
-                'resourceName': 'OeffentlichesGestalten',
+                'description': 'You want to shape change in public administration? Unfortunately, this book does not yet exist in English. However, you can download the manual and the collection of methods here as a German PDF.  <br><br>You work in or with the public administration? To request a copy of the printed book or to request more information in English, send us an email via <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
+                'resourceName': 'Oeffentliches-Gestalten',
                 'cta': {
                     'title': 'Download',
-                    'direct': '/downloads/CityLAB-Oeffentliches-Gestalten-Handbuch.pdf'
+                    'direct': '/downloads/Oeffentliches-Gestalten.zip'
                 }
             },
             'register': {

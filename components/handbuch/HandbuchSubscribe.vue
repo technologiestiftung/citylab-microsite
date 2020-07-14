@@ -127,7 +127,7 @@ export default {
     box-shadow: 0 2px 60px 0 rgba(47,47,162,.1);
 
     @media screen and (min-width: $tablet) {
-      transform: translateY(-200px);
+      transform: translateY(-300px);
     }
 
     form > * {

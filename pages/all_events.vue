@@ -102,9 +102,13 @@
             },
         },
         watch: {
-            year() {
-                this.dataUpcoming = this.filterData(this.data, true);
-                this.dataPast = this.filterData(this.data, false);
+            year(newValue, previousValue) {                
+                this.dataUpcoming = this.sortDatesChronologically(this.filterData(this.data, true));
+                if (newValue < previousValue) {
+                    this.dataPast = this.sortDatesChronologically(this.filterData(this.data, false));
+                } else {
+                    this.dataPast = this.sortDatesReverseChronologically(this.filterData(this.data, false));
+                }
             }
         },
         mounted() {
