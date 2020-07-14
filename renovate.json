@@ -3,6 +3,6 @@
     "@inpyjamas"
   ],
     "baseBranches": [
-    "staging"
+    "staging" 
   ]
 }
