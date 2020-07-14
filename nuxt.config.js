@@ -74,6 +74,7 @@ export default {
   },
 
   mode: "universal",
+  target: "static",
 
   /*
    ** Headers of the page
@@ -144,6 +145,7 @@ export default {
   plugins: [
     // '~/plugins/fontawesome.js'
   ],
+  buildModules: ["~/modules/scraper"],
 
   /*
    ** Nuxt.js modules
@@ -181,6 +183,9 @@ export default {
    ** Build configuration
    */
   build: {
+    // parallel: true,
+    cache: true,
+    hardSource: true,
     analyze: false,
     extractCSS: true,
     ignoreOrder: true,
