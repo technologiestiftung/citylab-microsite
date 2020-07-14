@@ -530,9 +530,6 @@ export const content = {
                 direct: 'https://citylabberlin.typeform.com/to/tWzR7a'
             }
         },
-        ticker: {
-            description: "Unsere Stadt braucht eure Unterstützung im Kampf gegen die Ausbreitung von Covid-19!"
-        },
         projects: {
             title: 'Projekte ',
             description: 'Ein Auszug unserer aktuellen Projekte im Überblick.',
@@ -995,9 +992,6 @@ export const content = {
                 visible: true,
             },
         ],
-        ticker: {
-            description: "Our city needs your help to fight the spread of COVID-19!"
-        },
         'exhibition': {
             teaser: {
                 'title': 'Our exhibition',
