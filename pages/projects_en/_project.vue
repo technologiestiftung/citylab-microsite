@@ -1,11 +1,11 @@
 <template>
     <div>
         <Navigation :lang="lang" :content="content" :direct="direct" :anchorTags="true"/>
-        <HeroLight 
-            :image="heroImageUrl" 
-            :title="title" 
-            :subTitle="subtitle" 
-            :subSubTitle="subsubtitle" 
+        <HeroLight
+            :image="heroImageUrl"
+            :title="title"
+            :subTitle="subtitle"
+            :subSubTitle="subsubtitle"
         />
         <section class="section is-medium event-content">
             <div class="container">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </section>
-        <Footer :lang="lang" :content="getContent"/> 
+        <Footer :lang="lang" :content="getContent"/>
     </div>
 </template>
 
@@ -52,7 +52,7 @@
     import Footer from '../../components/Footer.vue';
     import axios from 'axios';
 
-	import { 
+	import {
   		content as content
     } from '../../assets/content.js'
 
@@ -100,7 +100,7 @@
             heroImageUrl() {
                 // return `../images/projects/${this.dirname}_hero.jpg`
 
-                if (this.data != null) { 
+                if (this.data != null) {
                     const file = this.data.gsx$defaultimg.$t == 'TRUE' ? 'default' : `${this.data.gsx$dirname.$t}`;
                     const path = `https://www.citylab-berlin.org/images/projects/${file}_hero.jpg`
                     return path;
@@ -147,7 +147,7 @@
             },
             logos() {
                 if (this.data != null) {
-                    let arr = []; 
+                    let arr = [];
                     const urls = this.data.gsx$link.$t.split(',');
 
                     for (let index = 0; index < urls.length; index++) {
@@ -164,7 +164,7 @@
                     if (urls.length > 0) {
                         return arr;
                     } else {
-                        return 
+                        return
                     }
 
                 } else { return }
@@ -187,15 +187,17 @@
 
                     this.summaryAvailable.blockOneHeadline = this.getLength(this.data.gsx$headlineblockone.$t);
                     this.summaryAvailable.blockOneContent = this.getLength(this.data.gsx$contentblockone.$t);
-                    
+
                     this.summaryAvailable.blockTwoHeadline = this.getLength(this.data.gsx$headlineblocktwo.$t);
                     this.summaryAvailable.blockTwoContent = this.getLength(this.data.gsx$contentblocktwo.$t);
-                    
+
                     this.summaryAvailable.blockThreeHeadline = this.getLength(this.data.gsx$headlineblockthree.$t);
                     this.summaryAvailable.blockThreeContent = this.getLength(this.data.gsx$contentblockthree.$t);
-                    
+
                     this.summaryAvailable.blockFourHeadline = this.getLength(this.data.gsx$headlineblockfour.$t);
                     this.summaryAvailable.blockFourContent = this.getLength(this.data.gsx$contentblockfour.$t);
+                }).catch(err =>{
+                  console.error(err);
                 })
 
         },
