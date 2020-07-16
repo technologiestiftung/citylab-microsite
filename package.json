@@ -62,6 +62,7 @@
     "prettier": "2.0.5",
     "purgecss-webpack-plugin": "1.6.0",
     "sass-loader": "7.3.1",
-    "vue-jest": "3.0.5"
+    "vue-jest": "3.0.5",
+    "whatwg-fetch": "3.2.0"
   }
 }
