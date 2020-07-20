@@ -716,11 +716,8 @@ export const content = {
             'download': {
                 'title': 'Download',
                 'description': 'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter. <br><br>Du arbeitest in oder mit der öffentlichen Verwaltung? Für das gedruckte Buch, schick uns eine E-Mail an <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
-                'resourceName': 'Oeffentliches-Gestalten',
-                'cta': {
-                    'title': 'Herunterladen',
-                    'direct': '/downloads/Oeffentliches-Gestalten.zip'
-                }
+                'cta': 'Download',
+                'resource': '/downloads/handbuch/Oeffentliches-Gestalten.zip'
             },
             'register': {
                 'intro': {
@@ -1642,11 +1639,8 @@ export const content = {
             'download': {
                 'title': 'Download',
                 'description': 'You want to shape change in public administration? Unfortunately, this book does not yet exist in English. However, you can download the manual and the collection of methods here as a German PDF.  <br><br>You work in or with the public administration? To request a copy of the printed book or to request more information in English, send us an email via <a href="mailto:info@citylab-berlin.org">info@citylab-berlin.org</a>.',
-                'resourceName': 'Oeffentliches-Gestalten',
-                'cta': {
-                    'title': 'Download',
-                    'direct': '/downloads/Oeffentliches-Gestalten.zip'
-                }
+                'cta': 'Download',
+                'resource': '/downloads/handbuch/Oeffentliches-Gestalten.zip'
             },
             'register': {
                 'intro': {
