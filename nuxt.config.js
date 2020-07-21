@@ -4,73 +4,137 @@ import glob from "glob-all";
 import path from "path";
 import axios from "axios";
 
+async function dynamicRoutes() {
+  try {
+    const result = axios
+      .all([
+        axios.get(
+          "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json"
+        ), // events
+        axios.get(
+          "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json"
+        ), // projects
+        axios.get(
+          "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json"
+        ), // projects_en
+      ])
+      .then(
+        axios.spread((events, projects, projects_en) => {
+          // do something with both responses
+          let entriesEvents = events.data.feed.entry;
+          let entriesProjects = projects.data.feed.entry;
+          let entriesProjectsEn = projects_en.data.feed.entry;
+
+          const eventRoutes = entriesEvents.map((entry) => {
+            if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+              return "/events/" + entry.gsx$dirname.$t;
+            }
+            return;
+          });
+
+          const projectRoutes = entriesProjects.map((entry) => {
+            if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+              return "/projects/" + entry.gsx$dirname.$t;
+            }
+            return;
+          });
+
+          const projectEnRoutes = entriesProjectsEn.map((entry) => {
+            if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+              return "/projects_en/" + entry.gsx$dirname.$t;
+            }
+            return;
+          });
+
+          let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
+          all = all.filter((elem) => {
+            return elem !== undefined;
+          });
+
+          return all;
+        })
+      )
+      .catch((err) => {
+        console.error(err);
+      });
+
+    return result;
+  } catch (error) {
+    console.error(error);
+    // throw error;
+  }
+}
 export default {
   generate: {
-    routes: function () {
-      return axios
-        .all([
-          axios.get(
-            "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json"
-          ), // events
-          axios.get(
-            "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json"
-          ), // projects
-          axios.get(
-            "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json"
-          ), // projects_en
-        ])
-        .then(
-          axios.spread((events, projects, projects_en) => {
-            // do something with both responses
-            let entriesEvents = events.data.feed.entry;
-            let entriesProjects = projects.data.feed.entry;
-            let entriesProjectsEn = projects_en.data.feed.entry;
+    routes: dynamicRoutes,
 
-            const eventRoutes = entriesEvents.map((entry) => {
-              if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
-                return "/events/" + entry.gsx$dirname.$t;
-              }
-              return;
-            });
+    // function () {
+    // TODO: wrap that
+    //
+    //   return axios
+    //     .all([
+    //       axios.get(
+    //         "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json"
+    //       ), // events
+    //       axios.get(
+    //         "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json"
+    //       ), // projects
+    //       axios.get(
+    //         "https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/2/public/values?alt=json"
+    //       ), // projects_en
+    //     ])
+    //     .then(
+    //       axios.spread((events, projects, projects_en) => {
+    //         // do something with both responses
+    //         let entriesEvents = events.data.feed.entry;
+    //         let entriesProjects = projects.data.feed.entry;
+    //         let entriesProjectsEn = projects_en.data.feed.entry;
 
-            const projectRoutes = entriesProjects.map((entry) => {
-              if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
-                return "/projects/" + entry.gsx$dirname.$t;
-              }
-              return;
-            });
+    //         const eventRoutes = entriesEvents.map((entry) => {
+    //           if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+    //             return "/events/" + entry.gsx$dirname.$t;
+    //           }
+    //           return;
+    //         });
 
-            const projectEnRoutes = entriesProjectsEn.map((entry) => {
-              if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
-                return "/projects_en/" + entry.gsx$dirname.$t;
-              }
-              return;
-            });
+    //         const projectRoutes = entriesProjects.map((entry) => {
+    //           if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+    //             return "/projects/" + entry.gsx$dirname.$t;
+    //           }
+    //           return;
+    //         });
 
-            let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
-            all = all.filter((elem) => {
-              return elem !== undefined;
-            });
+    //         const projectEnRoutes = entriesProjectsEn.map((entry) => {
+    //           if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
+    //             return "/projects_en/" + entry.gsx$dirname.$t;
+    //           }
+    //           return;
+    //         });
 
-            return all;
-          })
-        )
-        .catch((err) => {
-          console.error(err);
-        });
+    //         let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
+    //         all = all.filter((elem) => {
+    //           return elem !== undefined;
+    //         });
 
-      // return axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
-      //   .then((res) => {
-      //     let entries = res.data.feed.entry;
-      //     const eventRoutes = entries.map((entry) => {
-      //       return '/events/' + entry.gsx$dirname.$t
-      //     })
+    //         return all;
+    //       })
+    //     )
+    //     .catch((err) => {
+    //       console.error(err);
+    //     });
 
-      //     return eventRoutes;
-      //   }).then((eventRoutes) => {
+    //   // return axios.get(`https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`)
+    //   //   .then((res) => {
+    //   //     let entries = res.data.feed.entry;
+    //   //     const eventRoutes = entries.map((entry) => {
+    //   //       return '/events/' + entry.gsx$dirname.$t
+    //   //     })
 
-      //   })
-    },
+    //   //     return eventRoutes;
+    //   //   }).then((eventRoutes) => {
+
+    //   //   })
+    // },
   },
 
   mode: "universal",
