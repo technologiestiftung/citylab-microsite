@@ -1,6 +1,7 @@
 import { rest } from "msw";
 import { setupServer } from "msw/node";
-import scraper, { sheetUrls, urlRefactor } from "./scraper";
+import scraper, { urlRefactor } from "./scraper";
+import { sheetUrls } from "./sheet-urls";
 const fs = require("fs");
 const server = setupServer(
   rest.get(

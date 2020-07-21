@@ -1,4 +1,4 @@
-import { urlRefactor } from "./scraper";
+import { urlRefactor } from "./url-refactor";
 /**
  * Should make a request to /static/data/spreadsheets.json
  * @param {String} url Url to load the data from currently "/static/data/spreadsheets.json"
@@ -6,7 +6,7 @@ import { urlRefactor } from "./scraper";
  */
 export async function getSpreadsheetData(
   sheetUrl,
-  url = "/static/data/spreadsheets.json"
+  url = "/data/spreadsheets.json"
 ) {
   try {
     let data = undefined;
@@ -16,9 +16,9 @@ export async function getSpreadsheetData(
     }
     const json = await response.json();
     data = json[urlRefactor(sheetUrl)];
-    return data;
+    return { data };
   } catch (error) {
-    console.error(error);
+    console.error("in getSpreadsheetData", error);
     throw error;
   }
 }
