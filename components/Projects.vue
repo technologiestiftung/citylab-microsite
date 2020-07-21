@@ -70,38 +70,37 @@
                         sheetId: 1
                     },
                     en: {
-                        all: '/all_projects_en',
-                        projects: 'projects_en',
-                        sheetId: 2
-                    }
-                }
-            }
-        },
-        created() {
-            axios.get(`https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/${this.sheetId}/public/values?alt=json`)
-            .then((res) => {
-                let entries = res.data.feed.entry;
-
-                this.entries = entries;
-
-                entries.forEach(entry => {
-                    if (entry.gsx$visible.$t === 'TRUE') {
-                        let obj = {
-                            visible: entry.gsx$visible.$t,
-                            featured: entry.gsx$featured.$t,
-                            name: entry.gsx$projectname.$t,
-                            publisher: entry.gsx$publisher.$t,
-                            subline: entry.gsx$projectsubline.$t,
-                            dirname: entry.gsx$dirname.$t,
-                            imgname: entry.gsx$dirname.$t,
-                            defaultImg: entry.gsx$defaultimg.$t
-                        }
-                        this.data.push(obj);
-                    }
-                })
-            })
+  created() {
+    // TODO: example for wrapping it
+    const sheetUrl = `https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/${this.sheetId}/public/values?alt=json`;
+    const responseHandler = (res) => {
+      let entries = res.data.feed.entry;
+      this.entries = entries;
+      entries.forEach((entry) => {
+        if (entry.gsx$visible.$t === "TRUE") {
+          let obj = {
+            visible: entry.gsx$visible.$t,
+            featured: entry.gsx$featured.$t,
+            name: entry.gsx$projectname.$t,
+            publisher: entry.gsx$publisher.$t,
+            subline: entry.gsx$projectsubline.$t,
+            dirname: entry.gsx$dirname.$t,
+            imgname: entry.gsx$dirname.$t,
+            defaultImg: entry.gsx$defaultimg.$t,
+          };
+          this.data.push(obj);
         }
+      });
+    };
+    if (sheetUrls.includes(sheetUrl)) {
+      getSpreadsheetData(sheetUrl, "/data/spreadsheets.json")
+        .then(responseHandler)
+        .catch((err) => console.error(err));
+    } else {
+      axios.get(sheetUrl).then(responseHandler);
     }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
