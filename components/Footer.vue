@@ -30,6 +30,22 @@
                             </p>
                         </a>
 
+                        <span class="flex flex-row m-b-sm">
+                            {{ content[lang]['footer']['contact']['press_inquiries']['title'] }}
+                        </span>
+                        <span class="flex flex-row m-b-sm">
+                            {{ content[lang]['footer']['contact']['press_inquiries']['person'] }}
+                        </span>
+                        <a
+                            class="flex flex-row m-b-sm"
+                            :href="'mailto:' + content[lang]['footer']['contact']['press_inquiries']['mail']"
+                        >
+                            {{ content[lang]['footer']['contact']['press_inquiries']['mail'] }}
+                        </a>
+                        <span class="flex flex-row m-b-sm">
+                            {{ content[lang]['footer']['contact']['press_inquiries']['phone'] }}
+                        </span>
+
                     </div>
 
                     <div class="column is-3">
@@ -219,7 +235,7 @@
     .column {
         span {
             color: $color-primary;
-            opacity: 1;
+            opacity: 0.8;
         }
 
         a {
