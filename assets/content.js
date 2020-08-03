@@ -747,6 +747,12 @@ export const content = {
                 'phone': '030 95 99 96 410',
                 'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
+                'press_inquiries': {
+                    'title': 'Presseanfragen:',
+                    'person': 'Frauke Nippel',
+                    'mail': 'nippel@technologiestiftung-berlin.de',
+                    'phone': '0175 72 36 451',
+                }
             },
             'more': {
                 'title': 'Mehr',
@@ -1667,6 +1673,12 @@ export const content = {
                 'phone': '030 95 99 96 410',
                 'address_street': 'Platz der Luftbrücke 4',
                 'address_code': '12101 Berlin',
+                'press_inquiries': {
+                    'title': 'Press inquiries:',
+                    'person': 'Frauke Nippel',
+                    'mail': 'nippel@technologiestiftung-berlin.de',
+                    'phone': '0175 72 36 451',
+                }
             },
             'more': {
                 'title': 'More',
