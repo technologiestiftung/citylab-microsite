@@ -32,6 +32,6 @@ export default async function scraper(_moduleOptions) {
     );
   } catch (error) {
     console.error(error);
-    throw error;
+    // throw error;
   }
 }

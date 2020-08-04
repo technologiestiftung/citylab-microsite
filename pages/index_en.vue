@@ -57,7 +57,7 @@ import Teaser from "../components/Teaser.vue";
 import Topics from "../components/Topics.vue";
 import TeaserIntro from "../components/TeaserIntro.vue";
 import Partners from "../components/Partners.vue";
-import Ticker from "../components/Ticker.vue";
+// import Ticker from "../components/Ticker.vue";
 import Projects from "../components/Projects.vue";
 import Schedule from "../components/Schedule.vue";
 import Newsletter from "../components/Newsletter.vue";
@@ -75,7 +75,7 @@ export default {
     Cta,
     Schedule,
     Paragraph,
-    Ticker,
+    // Ticker,
     Footer,
     Topics,
     Partners,

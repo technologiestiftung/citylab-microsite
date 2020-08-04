@@ -53,7 +53,7 @@ import { links } from "../assets/links.js";
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
 import Cta from "../components/Cta.vue";
-import Ticker from "../components/Ticker.vue";
+// import Ticker from "../components/Ticker.vue";
 import Teaser from "../components/Teaser.vue";
 import Topics from "../components/Topics.vue";
 import TeaserIntro from "../components/TeaserIntro.vue";
@@ -75,7 +75,7 @@ export default {
     Cta,
     Schedule,
     Paragraph,
-    Ticker,
+    // Ticker,
     Footer,
     Topics,
     Partners,
@@ -181,22 +181,6 @@ export default {
 <style lang="scss">
 @import "../assets/style/style.scss";
 
-<<<<<<< HEAD
-	@import "../assets/style/style.scss";
-
-	button.top {
-		width: 40px;
-		height: 40px;
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		padding-top: 3px !important;
-		cursor: pointer;
-
-		&:focus {
-			outline: 0;
-		}
-=======
 @keyframes ticker {
   0% {
     transform: translate3d(0, 0, 0);
@@ -280,7 +264,6 @@ button.top {
   &:focus {
     outline: 0;
   }
->>>>>>> ci/optimize-build-3
 
   &:hover {
     color: $color-tertiary--medium;

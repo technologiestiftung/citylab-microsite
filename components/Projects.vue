@@ -50,7 +50,7 @@ import axios from "axios";
 import Button from "./Button";
 import VLazyImage from "v-lazy-image";
 import { sheetUrls } from "../modules/sheet-urls";
-import { getSpreadsheetData } from "../modules/get-spreadsheet-data";
+// import { getSpreadsheetData } from "../modules/get-spreadsheet-data";
 
 export default {
   name: "Projects",
@@ -116,13 +116,13 @@ export default {
         }
       });
     };
-    if (sheetUrls.includes(sheetUrl)) {
-      getSpreadsheetData(sheetUrl, "/data/spreadsheets.json")
-        .then(responseHandler)
-        .catch((err) => console.error(err));
-    } else {
+    // if (sheetUrls.includes(sheetUrl)) {
+    //   getSpreadsheetData(sheetUrl, "/data/spreadsheets.json")
+    //     .then(responseHandler)
+    //     .catch((err) => console.error(err));
+    // } else {
       axios.get(sheetUrl).then(responseHandler);
-    }
+    // }
   },
 };
 </script>
