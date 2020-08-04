@@ -3,3 +3,7 @@
   publish = "dist/"
   # Default build command.
   command = "npm run export"
+  # the command below checks if there are changes on the listed files to do a rebuild.
+  # See https://docs.netlify.com/configure-builds/file-based-configuration/#ignore-builds
+  # this feels hackish but reduces the builds if we only do changes to things like jest.config.js or babel.config.js
+  ignore = "git diff --quiet HEAD^ HEAD assets/ components/ layouts/ middleware/ mixins/ modules/ pages/ plugins/ static/ store/ nuxt.config.js package*.json"

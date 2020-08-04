@@ -17,7 +17,7 @@
         <div
           v-if="
             summaryAvailable.introHeadline > 0 ||
-              summaryAvailable.introContent > 0
+            summaryAvailable.introContent > 0
           "
           class="content-wrapper"
         >
@@ -34,7 +34,7 @@
         <div
           v-if="
             summaryAvailable.blockOneContent > 0 ||
-              summaryAvailable.BlockOneHeadline > 0
+            summaryAvailable.BlockOneHeadline > 0
           "
           class="content-wrapper"
         >
@@ -51,7 +51,7 @@
         <div
           v-if="
             summaryAvailable.blockTwoContent > 0 ||
-              summaryAvailable.BlockTwoHeadline > 0
+            summaryAvailable.BlockTwoHeadline > 0
           "
           class="content-wrapper"
         >
@@ -68,7 +68,7 @@
         <div
           v-if="
             summaryAvailable.blockThreeContent > 0 ||
-              summaryAvailable.BlockThreeHeadline > 0
+            summaryAvailable.BlockThreeHeadline > 0
           "
           class="content-wrapper"
         >
@@ -85,7 +85,7 @@
         <div
           v-if="
             summaryAvailable.blockFourContent > 0 ||
-              summaryAvailable.BlockFourHeadline > 0
+            summaryAvailable.BlockFourHeadline > 0
           "
           class="content-wrapper"
         >
@@ -93,10 +93,10 @@
             {{ headlineBlockFour }}
           </h4>
           <p
-            v-html="contentBlockFour"
             v-if="summaryAvailable.blockFourContent > 0"
             class="event-intro"
-          ></p>
+            v-html="contentBlockFour"
+          />
         </div>
 
         <div class="logo-wrapper">
@@ -123,11 +123,13 @@ import axios from "axios";
 import { content } from "../../assets/content.js";
 
 export default {
-  validate({ params, query, store }) {
+  validate({ _params, _query, _store }) {
     return true; // if the params are valid
-    return false; // will stop Nuxt.js to render the route and display the error page
+    // that is a wired thing to do @fdnklg
+    // a return after a return?
+    // return false; // will stop Nuxt.js to render the route and display the error page
   },
-  async asyncData({ params, error, payload }) {
+  async asyncData({ params, _error, _payload }) {
     return {
       dirname: params.project,
       lang: "de",
@@ -150,14 +152,14 @@ export default {
         blockThreeHeadline: 0,
         blockThreeContent: 0,
         blockFourHeadline: 0,
-        blockFourContent: 0
-      }
+        blockFourContent: 0,
+      },
     };
   },
   components: {
     Navigation,
     HeroLight,
-    Footer
+    Footer,
   },
   computed: {
     getContent() {
@@ -166,13 +168,15 @@ export default {
     heroImageUrl() {
       // return `../images/projects/${this.dirname}_hero.jpg`
 
-      if (this.data != null) {
+      if (this.data !== null) {
         const file =
           this.data.gsx$defaultimg.$t == "TRUE"
             ? "default"
             : `${this.data.gsx$dirname.$t}`;
         const path = `https://www.citylab-berlin.org/images/projects/${file}_hero.jpg`;
         return path;
+      } else {
+        return undefined;
       }
     },
     link() {
@@ -183,110 +187,112 @@ export default {
       }
     },
     title() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$projectname.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     subtitle() {
       if (this.data != null) {
         return this.data.gsx$projectsubline.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     subsubtitle() {
       if (this.data != null) {
         return this.data.gsx$projectsubsubline.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     headlineIntro() {
       if (this.data != null && this.data) {
         return this.data.gsx$headlineintro.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     contentIntro() {
       if (this.data != null) {
         return this.data.gsx$contentintro.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     headlineBlockOne() {
       if (this.data != null) {
         return this.data.gsx$headlineblockone.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     contentBlockOne() {
       if (this.data != null) {
         return this.data.gsx$contentblockone.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     headlineBlockTwo() {
       if (this.data != null) {
         return this.data.gsx$headlineblocktwo.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     contentBlockTwo() {
       if (this.data != null) {
         return this.data.gsx$contentblocktwo.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     headlineBlockThree() {
       if (this.data != null) {
         return this.data.gsx$headlineblockthree.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     contentBlockThree() {
       if (this.data != null) {
         return this.data.gsx$contentblockthree.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     headlineBlockFour() {
       if (this.data != null) {
         return this.data.gsx$headlineblockfour.$t;
       } else {
-        return;
+        return undefined;
       }
     },
     contentBlockFour() {
       if (this.data != null) {
         return this.data.gsx$contentblockfour.$t;
       } else {
-        return;
+        return undefined;
       }
-    }
+    },
   },
   methods: {
     getLength(data) {
       return data.length;
-    }
+    },
   },
   beforeCreate() {
+    // TODO: wrap that
+
     axios
       .get(
         `https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/1/public/values?alt=json`
       )
-      .then(res => {
+      .then((res) => {
         // set event entry to data which matches with dirname
-        this.data = res.data.feed.entry.filter(entry => {
+        this.data = res.data.feed.entry.filter((entry) => {
           return entry.gsx$dirname.$t == this.dirname;
         });
         this.data = this.data[0];
@@ -326,10 +332,10 @@ export default {
           this.data.gsx$contentblockfour.$t
         );
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
-  }
+  },
 };
 </script>
 

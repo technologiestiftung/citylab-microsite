@@ -1,5 +1,5 @@
 import { getSpreadsheetData } from "./get-spreadsheet-data";
-import { sheetUrls } from "./scraper";
+import { sheetUrls } from "./sheet-urls";
 import { rest } from "msw";
 import { setupServer } from "msw/node";
 import fs from "fs";
@@ -31,7 +31,11 @@ describe("spreadsheets data module", () => {
     const url = "/static/data/spreadsheets.json";
     const response = await getSpreadsheetData(sheetUrls[0], url);
     expect(response).toBeDefined();
+<<<<<<< HEAD
     expect(response.feed.entry).toBeDefined();
+=======
+    expect(response.data).toBeDefined();
+>>>>>>> ci/optimize-build-3
   });
   test("should try to fetch object and return undefined because it does not exist in the spreadsheet.json", async () => {
     const response = await getSpreadsheetData("http://missing.foo");
