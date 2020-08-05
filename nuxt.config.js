@@ -209,7 +209,7 @@ export default {
   plugins: [
     // '~/plugins/fontawesome.js'
   ],
-  buildModules: ["~/modules/scraper"],
+  // buildModules: ["~/modules/scraper"],
 
   /*
    ** Nuxt.js modules

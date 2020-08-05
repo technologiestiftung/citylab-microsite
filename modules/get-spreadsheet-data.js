@@ -1,4 +1,4 @@
-import { urlRefactor } from "./scraper";
+import { urlRefactor } from "./url-refactor";
 /**
  * Should make a request to /static/data/spreadsheets.json
  * @param {String} url Url to load the data from currently "/static/data/spreadsheets.json"
