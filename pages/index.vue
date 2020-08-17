@@ -24,9 +24,9 @@
     <Projects :lang="lang" :content="content" />
     <HandbuchTeaser :lang="lang" :content="content" />
     <Teaser
+      id="exhibition"
       :content="content"
       :lang="lang"
-      id="exhibition"
       topic="exhibition"
       subtopic="teaser"
     />

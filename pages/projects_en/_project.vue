@@ -101,7 +101,7 @@
 
         <div class="logo-wrapper">
           <a :href="logo[1]" v-for="logo in logos">
-            <img class="logo" v-if="logo[0] != 'FALSE'" :src="logo[0]" />
+            <img class="logo" v-if="logo[0] !== 'FALSE'" :src="logo[0]" />
             <span
               v-if="logo[0] == 'FALSE'"
               target="_blank"
@@ -168,108 +168,110 @@ export default {
     heroImageUrl() {
       // return `../images/projects/${this.dirname}_hero.jpg`
 
-      if (this.data != null) {
+      if (this.data !== null) {
         const file =
           this.data.gsx$defaultimg.$t == "TRUE"
             ? "default"
             : `${this.data.gsx$dirname.$t}`;
         const path = `https://www.citylab-berlin.org/images/projects/${file}_hero.jpg`;
         return path;
+      } else {
+        return "";
       }
     },
     title() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$projectname.$t;
       } else {
-        return;
+        return "";
       }
     },
     subtitle() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$projectsubline.$t;
       } else {
-        return;
+        return "";
       }
     },
     subsubtitle() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$projectsubsubline.$t;
       } else {
-        return;
+        return "";
       }
     },
     headlineIntro() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$headlineintro.$t;
       } else {
-        return;
+        return "";
       }
     },
     contentIntro() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$contentintro.$t;
       } else {
-        return;
+        return "";
       }
     },
     headlineBlockOne() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$headlineblockone.$t;
       } else {
-        return;
+        return "";
       }
     },
     contentBlockOne() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$contentblockone.$t;
       } else {
-        return;
+        return "";
       }
     },
     headlineBlockTwo() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$headlineblocktwo.$t;
       } else {
-        return;
+        return "";
       }
     },
     contentBlockTwo() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$contentblocktwo.$t;
       } else {
-        return;
+        return "";
       }
     },
     headlineBlockThree() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$headlineblockthree.$t;
       } else {
-        return;
+        return "";
       }
     },
     contentBlockThree() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$contentblockthree.$t;
       } else {
-        return;
+        return "";
       }
     },
     headlineBlockFour() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$headlineblockfour.$t;
       } else {
-        return;
+        return "";
       }
     },
     contentBlockFour() {
-      if (this.data != null) {
+      if (this.data !== null) {
         return this.data.gsx$contentblockfour.$t;
       } else {
-        return;
+        return "";
       }
     },
     logos() {
-      if (this.data != null) {
+      if (this.data !== null) {
         let arr = [];
         const urls = this.data.gsx$link.$t.split(",");
 
@@ -292,13 +294,8 @@ export default {
           return;
         }
       } else {
-        return;
+        return "";
       }
-    },
-  },
-  methods: {
-    getLength(data) {
-      return data.length;
     },
   },
   beforeCreate() {
@@ -353,6 +350,11 @@ export default {
       .catch((err) => {
         console.error(err);
       });
+  },
+  methods: {
+    getLength(data) {
+      return data.length;
+    },
   },
 };
 </script>

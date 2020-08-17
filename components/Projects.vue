@@ -121,7 +121,7 @@ export default {
     //     .then(responseHandler)
     //     .catch((err) => console.error(err));
     // } else {
-      axios.get(sheetUrl).then(responseHandler);
+    axios.get(sheetUrl).then(responseHandler);
     // }
   },
 };

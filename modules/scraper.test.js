@@ -28,7 +28,7 @@ afterAll(() => {
 });
 
 describe("Testing the scraper dev module", () => {
-  test("should make requests to google spreadsheet", async () => {
+  test.skip("should make requests to google spreadsheet", async () => {
     let sheetsData = undefined;
     const fsSpy = jest
       .spyOn(fs, "writeFileSync")
