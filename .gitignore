@@ -3,6 +3,3 @@
 /node_modules
 /.nuxt/
 coverage
-
-# Local Netlify folder
-.netlify
