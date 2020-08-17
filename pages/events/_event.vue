@@ -307,13 +307,13 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`,
+          content: `/images/events/${this.dirname}_social_media.jpg`,
         },
         { hid: "name", itemprop: "name", content: this.socialDescription },
         {
           hid: "image",
           itemprop: "image",
-          content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`,
+          content: `/images/events/${this.dirname}_social_media.jpg`,
         },
       ],
     };
@@ -325,7 +325,7 @@ export default {
   },
   computed: {
     heroImageUrl() {
-      return `https://citylab-berlin.org/images/events/${this.dirname}_hero.jpg`;
+      return `/images/events/${this.dirname}_hero.jpg`;
     },
     getContent() {
       return this.content;
