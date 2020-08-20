@@ -173,7 +173,7 @@ export default {
           this.data.gsx$defaultimg.$t == "TRUE"
             ? "default"
             : `${this.data.gsx$dirname.$t}`;
-        const path = `https://www.citylab-berlin.org/images/projects/${file}_hero.jpg`;
+        const path = `/images/projects/${file}_hero.jpg`;
         return path;
       } else {
         return "";
@@ -278,9 +278,9 @@ export default {
         for (let index = 0; index < urls.length; index++) {
           let filename;
           if (this.data.gsx$logo.$t == "TRUE") {
-            filename = `https://www.citylab-berlin.org/images/projects/${
-              this.data.gsx$dirname.$t
-            }_logo_${index + 1}.jpg`;
+            filename = `/images/projects/${this.data.gsx$dirname.$t}_logo_${
+              index + 1
+            }.jpg`;
           } else {
             filename = "FALSE";
           }
