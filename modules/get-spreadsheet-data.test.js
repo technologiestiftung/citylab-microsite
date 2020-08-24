@@ -27,13 +27,13 @@ afterAll(() => {
   jest.restoreAllMocks();
 });
 describe("spreadsheets data module", () => {
-  test("should fetch object from the cached spreadsheet", async () => {
+  test.skip("should fetch object from the cached spreadsheet", async () => {
     const url = "/static/data/spreadsheets.json";
     const response = await getSpreadsheetData(sheetUrls[0], url);
     expect(response).toBeDefined();
     expect(response.data).toBeDefined();
   });
-  test("should try to fetch object and return undefined because it does not exist in the spreadsheet.json", async () => {
+  test.skip("should try to fetch object and return undefined because it does not exist in the spreadsheet.json", async () => {
     const response = await getSpreadsheetData("http://missing.foo");
     expect(response).not.toBeDefined();
   });
