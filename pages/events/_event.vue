@@ -250,7 +250,7 @@ export default {
         {
           hid: "og:url",
           property: "og:url",
-          content: `https://www.citylab-berlin.org/events/${this.dirname}`,
+          content: `/events/${this.dirname}`,
         },
         { hid: "og:type", property: "og:type", content: "website" },
         {
@@ -261,7 +261,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: `https://citylab-berlin.org/images/events/${this.dirname}_social_media.jpg`,
+          content: `/images/events/${this.dirname}_social_media.jpg`,
         },
         {
           hid: "og:description",
@@ -292,7 +292,7 @@ export default {
         {
           hid: "twitter:url",
           name: "twitter:url",
-          content: `https://www.citylab-berlin.org/events/${this.dirname}`,
+          content: `/events/${this.dirname}`,
         },
         {
           hid: "twitter:title",
@@ -534,7 +534,7 @@ export default {
       }
     },
     logoUrl() {
-      return `https://citylab-berlin.org/images/events/${this.dirname}_logo.png`;
+      return `/images/events/${this.dirname}_logo.png`;
     },
 
     // Schreibweise Concat mit Hilfe von Stringliterals
