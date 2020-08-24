@@ -24,10 +24,10 @@
                 <figure class="image is 1by1">
                   <v-lazy-image
                     class="lazy-img"
-                    :src="`https://citylab-berlin.org/images/projects/${
+                    :src="`/images/projects/${
                       project.defaultImg == 'TRUE' ? `default` : project.imgname
                     }_tile.jpg`"
-                    :src-placeholder="`https://citylab-berlin.org/images/projects/${
+                    :src-placeholder="`/images/projects/${
                       project.defaultImg == 'TRUE' ? `default` : project.imgname
                     }_lazy_tile.jpg`"
                   />

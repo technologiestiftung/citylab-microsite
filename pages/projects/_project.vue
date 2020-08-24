@@ -173,7 +173,7 @@ export default {
           this.data.gsx$defaultimg.$t == "TRUE"
             ? "default"
             : `${this.data.gsx$dirname.$t}`;
-        const path = `https://www.citylab-berlin.org/images/projects/${file}_hero.jpg`;
+        const path = `/images/projects/${file}_hero.jpg`;
         return path;
       } else {
         return undefined;
