@@ -36,7 +36,7 @@
   "devDependencies": {
     "@babel/core": "7.10.2",
     "@babel/preset-env": "7.10.2",
-    "@nuxtjs/style-resources": "0.1.2",
+    "@nuxtjs/style-resources": "1.0.0",
     "@testing-library/jest-dom": "5.9.0",
     "@testing-library/vue": "5.0.4",
     "@vue/test-utils": "1.0.3",
@@ -44,7 +44,7 @@
     "babel-eslint": "10.1.0",
     "babel-jest": "26.0.1",
     "brotli-webpack-plugin": "1.1.0",
-    "compression-webpack-plugin": "2.0.0",
+    "compression-webpack-plugin": "5.0.1",
     "eslint": "7.2.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-loader": "4.0.2",
@@ -59,10 +59,10 @@
     "msw": "0.19.5",
     "node-fetch": "2.6.0",
     "node-sass": "4.14.1",
-    "nodemon": "1.19.4",
+    "nodemon": "2.0.4",
     "prettier": "2.0.5",
-    "purgecss-webpack-plugin": "1.6.0",
-    "sass-loader": "7.3.1",
+    "purgecss-webpack-plugin": "2.3.0",
+    "sass-loader": "10.0.1",
     "vue-jest": "3.0.5",
     "whatwg-fetch": "3.2.0"
   }
