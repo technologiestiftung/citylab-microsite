@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Berlins Zukunft gemeinsam gestalten.",
   "author": "fdnklg",
+  "contributors": [
+    "@dnsos",
+    "@fabianmoronzirfas"
+  ],
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -60,8 +64,8 @@
     "node-fetch": "2.6.0",
     "node-sass": "4.14.1",
     "nodemon": "2.0.4",
+    "nuxt-purgecss": "1.0.0",
     "prettier": "2.0.5",
-    "purgecss-webpack-plugin": "2.3.0",
     "sass-loader": "10.0.1",
     "vue-jest": "3.0.5",
     "whatwg-fetch": "3.2.0"
