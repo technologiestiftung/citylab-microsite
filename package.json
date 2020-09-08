@@ -30,10 +30,10 @@
     "axios": "0.20.0",
     "cross-env": "5.2.1",
     "ics": "2.24.0",
-    "nuxt": "2.14.3",
+    "nuxt": "2.14.4",
     "nuxt-compress": "3.0.0",
     "nuxt-fontawesome": "0.4.0",
-    "three": "0.119.1",
+    "three": "0.120.1",
     "v-lazy-image": "1.4.0",
     "vue-typed-js": "0.1.2"
   },
