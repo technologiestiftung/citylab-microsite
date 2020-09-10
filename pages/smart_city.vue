@@ -102,9 +102,11 @@ smartcity {
                     :key="itemIndex"
                     class="list-item__downloads"
                   >
-                    <a class="button button__downloads" :href="item.url">{{
-                      item.text[lang]
-                    }}</a>
+                    <a
+                      class="button is-color-secondary is-normal button__downloads"
+                      :href="item.url"
+                      >{{ item.text[lang] }}</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -255,6 +257,9 @@ section.hero {
   background-color: $color-primary;
   color: $white;
 }
+.section.downloads > * p {
+  color: $white;
+}
 h3.title__downloads {
   color: $white !important;
 }
@@ -266,14 +271,33 @@ li.list-item__downloads {
 }
 a.button__downloads {
   width: 250px;
+      font-size: 20px !important;
+
+  background-color: #f64c72;
 }
 svg.document {
   transition: all 0.2s ease-in-out;
 }
-svg.document * path {
+svg.document > * path {
   fill: $white;
 }
 svg.document:hover {
   transform: scale(1.1);
+}
+.button {
+  &--wrapper {
+    width: 100%;
+    a {
+      font-size: 20px !important;
+    }
+  }
+
+  background: #f64c72 !important;
+  @include transition;
+
+  &:hover {
+    background: #f97996 !important;
+    @include transition;
+  }
 }
 </style>
