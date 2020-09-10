@@ -134,9 +134,9 @@ export default {
   },
   data() {
     return {
-      lang: "de",
+      lang: "en",
       content: content,
-      direct: "/smart_city_en",
+      direct: "/smart_city",
     };
   },
   computed: {
