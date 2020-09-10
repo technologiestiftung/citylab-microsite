@@ -13,7 +13,9 @@
       subtopic="intro"
     />
     <!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
-    <Ticker :lang="lang" :content="content" />
+    <SmartcityParagraph :lang="lang" />
+
+    <!-- <Ticker :lang="lang" :content="content" /> -->
     <Topics :lang="lang" :content="content" :direct="direct" />
     <Paragraph
       :content="content"
@@ -62,6 +64,8 @@ import Projects from "../components/Projects.vue";
 import Schedule from "../components/Schedule.vue";
 import Newsletter from "../components/Newsletter.vue";
 import Paragraph from "../components/Paragraph.vue";
+import SmartcityParagraph from "../components/SmartcityParagraph.vue";
+
 import HandbuchTeaser from "../components/HandbuchTeaser.vue";
 
 import axios from "axios";
@@ -75,6 +79,7 @@ export default {
     Cta,
     Schedule,
     Paragraph,
+    SmartcityParagraph,
     // Ticker,
     Footer,
     Topics,
