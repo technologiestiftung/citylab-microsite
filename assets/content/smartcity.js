@@ -1,4 +1,20 @@
 export const smartcity = {
+  landing: {
+    title: {
+      en: "Smart City",
+      de: "Smart City",
+    },
+    subTitle: {
+      en: "foo bah of the future",
+      de: "Foo Bah der Zukunft",
+    },
+    button: {
+      label: {
+        de: "Zum Download",
+        en: "to the batmobil!",
+      },
+    },
+  },
   hero: {
     title: {
       en: "Smart City",
