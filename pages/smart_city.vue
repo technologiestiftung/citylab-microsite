@@ -26,20 +26,14 @@ smartcity {
     <HeroLight
       :image="content.smartcity.hero.img.url"
       :title="content.smartcity.hero.title[lang]"
-      :subTitle="content.smartcity.hero.subTitle[lang]"
-      :subSubTitle="content.smartcity.hero.subSubTitle[lang]"
+      :sub-title="content.smartcity.hero.subTitle[lang]"
+      :sub-sub-title="content.smartcity.hero.subSubTitle[lang]"
     />
     <section class="section is-medium">
       <div class="container">
-        <h1 class="title">
-          {{ content["smartcity"]["title"][lang] }}
-        </h1>
-        <h2 class="subtitle">
-          {{ content["smartcity"]["subtitle"][lang] }}
-        </h2>
-        <p>
-          {{ content["smartcity"]["description"][lang] }}
-        </p>
+        <h1 class="title" v-html="content.smartcity.title[lang]" />
+        <h2 class="subtitle" v-html="content.smartcity.subtitle[lang]" />
+        <p v-html="content.smartcity.description[lang]" />
         <Matomo />
       </div>
     </section>
@@ -50,7 +44,11 @@ smartcity {
             <div class="tile column is-ancestor">
               <div class="tile is-6 is-parent">
                 <div class="tile">
-                  <a :href="content.smartcity.downloads.main.url">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    :href="content.smartcity.downloads.main.url"
+                  >
                     <figure class="image is-128x128">
                       <svg
                         class="document"
@@ -85,13 +83,18 @@ smartcity {
                   </a>
                 </div>
                 <div class="tile is-vertical is-parent is-8">
-                  <h3 class="title title__downloads">
-                    {{ content.smartcity.downloads.title[lang] }}
-                  </h3>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    :href="content.smartcity.downloads.main.url"
+                  >
+                    <h3
+                      class="title title__downloads"
+                      v-html="content.smartcity.downloads.title[lang]"
+                    />
+                  </a>
                   <div class="content">
-                    <p>
-                      {{ content.smartcity.downloads.description[lang] }}
-                    </p>
+                    <p v-html="content.smartcity.downloads.description[lang]" />
                   </div>
                 </div>
               </div>
@@ -105,8 +108,10 @@ smartcity {
                     <a
                       class="button is-color-secondary is-normal button__downloads"
                       :href="item.url"
-                      >{{ item.text[lang] }}</a
-                    >
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      v-html="item.text[lang]"
+                    />
                   </li>
                 </ul>
               </div>
@@ -147,7 +152,6 @@ export default {
       return this.content.smartcity.hero.subTitle[this.lang];
     },
     additionalDownloads() {
-      console.log(this.content.smartcity.downloads);
       return this.content.smartcity.downloads.additional;
     },
   },
@@ -271,8 +275,7 @@ li.list-item__downloads {
 }
 a.button__downloads {
   width: 250px;
-      font-size: 20px !important;
-
+  font-size: 20px !important;
   background-color: #f64c72;
 }
 svg.document {
