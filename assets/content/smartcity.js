@@ -1,32 +1,32 @@
 export const smartcity = {
   landing: {
     title: {
-      en: "Smart City",
-      de: "Smart City",
+      en: "Berlin wird Modellprojekt Smart City!",
+      de: "Berlin wird Modellprojekt Smart City!",
     },
     subTitle: {
-      en: "foo bah of the future",
-      de: "Foo Bah der Zukunft",
+      en: "Auf dem Weg zu einer neuen Smart City-Strategie",
+      de: "Auf dem Weg zu einer neuen Smart City-Strategie",
     },
     button: {
       label: {
-        de: "Zum Download",
-        en: "to the batmobil!",
+        de: "Zum Antrag",
+        en: "Learn more",
       },
     },
   },
   hero: {
     title: {
-      en: "Smart City",
-      de: "Smart City",
+      en: "Berlin wird Modellprojekt Smart City!",
+      de: "Berlin wird Modellprojekt Smart City!",
     },
     subTitle: {
-      en: "foo bah of the future",
-      de: "Foo Bah der Zukunft",
+      en: "Auf dem Weg zu einer neuen Smart City-Strategie",
+      de: "Auf dem Weg zu einer neuen Smart City-Strategie",
     },
     subSubTitle: {
-      en: "even more text coming here even more and more and more",
-      de: "noch mehr text hier und mehr und mehr und mehr",
+      en: "",
+      de: "",
     },
     img: {
       url: "/images/smartcity/smart-city_hero1.jpg",
@@ -37,35 +37,35 @@ export const smartcity = {
     },
   },
   title: {
-    en: "smart city not here",
-    de: "Smart City nicht hero",
+    en: "",
+    de: "",
   },
   subtitle: {
-    en: "Smart city subtitle not here",
-    de: "Smart City Sub-title nicht hero",
+    en: "",
+    de: "",
   },
   description: {
     en:
-      "en Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Das Land Berlin hat sich erfolgreich in der 2. Förderstaffel als „Modellprojekt Smart City“ beim Bundesministerium des Innern, für Bau und Heimat (BMI) beworben. Das Motto der Förderstaffel lautet „Gemeinwohl und Netzwerkstadt/Stadtnetzwerk“. Unter dieser Leitschnur wird Berlin nun eine neue Smart-City-Strategie erarbeiten und fünf Umsetzungsprojekte generieren. <br /> Wir freuen uns, als CityLAB diesen Prozess aktiv zu begleiten. Gemeinsam mit unserer Community haben wir im letzten Jahr zahlreiche spannende Projekte realisiert und dabei vielfältige Erfahrungen gesammelt, die natürlich in die neue Smart City-Strategie einfließen sollen. Um den ganzen Prozess möglichst transparent und partizipativ zu gestalten, werden wir in den nächsten Monaten verschiedene Beteiligungsformate anbieten. Als ersten Schritt veröffentlichen wir hier die Antragsunterlagen.",
     de:
-      "de Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Das Land Berlin hat sich erfolgreich in der 2. Förderstaffel als „Modellprojekt Smart City“ beim Bundesministerium des Innern, für Bau und Heimat (BMI) beworben. Das Motto der Förderstaffel lautet „Gemeinwohl und Netzwerkstadt/Stadtnetzwerk“. Unter dieser Leitschnur wird Berlin nun eine neue Smart-City-Strategie erarbeiten und fünf Umsetzungsprojekte generieren. <br /> Wir freuen uns, als CityLAB diesen Prozess aktiv zu begleiten. Gemeinsam mit unserer Community haben wir im letzten Jahr zahlreiche spannende Projekte realisiert und dabei vielfältige Erfahrungen gesammelt, die natürlich in die neue Smart City-Strategie einfließen sollen. Um den ganzen Prozess möglichst transparent und partizipativ zu gestalten, werden wir in den nächsten Monaten verschiedene Beteiligungsformate anbieten. Als ersten Schritt veröffentlichen wir hier die Antragsunterlagen.",
   },
   downloads: {
     title: {
-      de: "Hier das PDF",
-      en: "Go grab it",
+      de: "<- Antrag",
+      en: "<- Download",
     },
     description: {
       en:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       de:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Der Antrag wurde von einem Konsortium aus Zivilgesellschaft, Wirtschaft, Wissenschaft und Verwaltung unter Federführung der Berliner Senatskanzlei verfasst.",
     },
     main: {
       text: {
         en: "The PDF",
-        de: "Das PDF",
-        url: "#",
+        de: "Antragsdokument",
+        url: "../../docs/Antrag_Modellprojekte_SC_Berlin.pdf",
       },
       img: {
         url: "/images/smartcity/document.svg",
@@ -76,10 +76,10 @@ export const smartcity = {
       },
     },
     additional: [
-      { text: { en: "additional 1", de: "zusätzlich 1" }, url: "#" },
-      { text: { en: "additional 2", de: "zusätzlich 2" }, url: "#" },
-      { text: { en: "additional 3", de: "zusätzlich 3" }, url: "#" },
-      { text: { en: "additional 4", de: "zusätzlich 4" }, url: "#" },
+      { text: { en: "additional 1", de: "Anhang 1: Kommunikation" }, url: "../../docs/SC_Kommunikationsstruktur.pdf" },
+      { text: { en: "additional 2", de: "Anhang 2: Raumbezüge " }, url: "../../docs/SC_Raumbezüge.pdf" },
+      { text: { en: "additional 3", de: "Anhang 3: Steuerung" }, url: "../../docs/SC_Steuerung.pdf" },
+      { text: { en: "additional 4", de: "Anhang 4: Vorhaben" }, url: "../../docs/SC_Vorhaben.pdf" },
     ],
   },
 };
