@@ -86,6 +86,7 @@ smartcity {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
+                    class="link-title__downloads"
                     :href="content.smartcity.downloads.main.url"
                   >
                     <h3
@@ -266,6 +267,10 @@ section.hero {
 }
 h3.title__downloads {
   color: $white !important;
+  transition: text-decoration 0.2s ease-in;
+}
+h3.title__downloads:hover {
+  text-decoration: underline;
 }
 ul.list__downloads {
   margin: auto;
