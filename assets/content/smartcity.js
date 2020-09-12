@@ -77,7 +77,17 @@ Wir freuen uns, als CityLAB diesen Prozess aktiv zu begleiten. Gemeinsam mit uns
     },
     additional: [
       {
-        text: { en: "Attachment 1: Communication", de: "Anhang 1: Kommunikation" },
+        text: {
+          en: "PDF Submission",
+          de: "Antragsdokument",
+        },
+        url: "/docs/Antrag_Modellprojekte_SC_Berlin.pdf",
+      },
+      {
+        text: {
+          en: "Attachment 1: Communication",
+          de: "Anhang 1: Kommunikation",
+        },
         url: "/docs/SC_Kommunikationsstruktur.pdf",
       },
       {
