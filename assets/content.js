@@ -1,6 +1,8 @@
 import { smartcity } from "./content/smartcity";
+import { announcements } from "./content/announcements";
 export const content = {
   smartcity,
+  announcements,
   config: {
     sheetUrlEvents:
       "https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json",

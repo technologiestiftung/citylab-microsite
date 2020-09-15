@@ -12,6 +12,7 @@
       topic="hero"
       subtopic="intro"
     />
+    <Announcements :lang="lang" />
     <!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
     <!-- <Ticker :lang="lang" :content="content" /> -->
     <SmartcityParagraph :lang="lang" />
@@ -64,6 +65,7 @@ import Schedule from "../components/Schedule.vue";
 import Newsletter from "../components/Newsletter.vue";
 import Paragraph from "../components/Paragraph.vue";
 import SmartcityParagraph from "../components/SmartcityParagraph.vue";
+import Announcements from "../components/Announcements.vue";
 import HandbuchTeaser from "../components/HandbuchTeaser.vue";
 import Button from "../components/Button.vue";
 
@@ -79,6 +81,7 @@ export default {
     Schedule,
     Paragraph,
     SmartcityParagraph,
+    Announcements,
     // Ticker,
     Button,
     Footer,
