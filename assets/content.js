@@ -152,10 +152,6 @@ export const content = {
     },
     nav: [
       {
-        name: "Start",
-        ref: "/",
-      },
-      {
         name: "News",
         ref: "/newsletter_archive",
       },
@@ -176,9 +172,10 @@ export const content = {
         ref: "/all_projects",
       },
       {
-        name: "Newsletter",
-        ref: "/newsletter_register_de",
+        name: "Ausstellung",
+        ref: "/all_exhibits",
       },
+
     ],
     hero: {
       intro: {
@@ -844,7 +841,7 @@ export const content = {
         dataprivacy: "Datenschutz",
         resources: "Ressourcen",
         board: "Beirat",
-        newsletter: "News",
+        newsletter: "Newsletter",
       },
       funding: {
         title: ".",
@@ -1259,10 +1256,6 @@ export const content = {
     },
     nav: [
       {
-        name: "Start",
-        ref: "/index_en",
-      },
-      {
         name: "News",
         ref: "/newsletter_archive_en",
       },
@@ -1283,9 +1276,10 @@ export const content = {
         ref: "/all_projects_en",
       },
       {
-        name: "Newsletter",
-        ref: "/newsletter_register_en",
+        name: "Exhibition",
+        ref: "/all_exhibits_en",
       },
+
     ],
     missionStatement: {
       title: "Our Mission",
@@ -1906,7 +1900,7 @@ export const content = {
         dataprivacy: "Data privacy",
         resources: "Resources",
         board: "Advisory Board",
-        newsletter: "News",
+        newsletter: "Newsletter",
       },
       funding: {
         title: ".",
