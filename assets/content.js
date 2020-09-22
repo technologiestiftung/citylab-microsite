@@ -829,7 +829,7 @@ export const content = {
         address_street: "Platz der Luftbrücke 4",
         address_code: "12101 Berlin",
         press_inquiries: {
-          title: "Presseanfragen:",
+          title: "Presseanfragen",
           person: "Frauke Nippel",
           mail: "nippel@technologiestiftung-berlin.de",
           phone: "0175 72 36 451",
@@ -1891,7 +1891,7 @@ export const content = {
         address_street: "Platz der Luftbrücke 4",
         address_code: "12101 Berlin",
         press_inquiries: {
-          title: "Press inquiries:",
+          title: "Press inquiries",
           person: "Frauke Nippel",
           mail: "nippel@technologiestiftung-berlin.de",
           phone: "0175 72 36 451",

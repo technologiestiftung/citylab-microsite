@@ -28,11 +28,13 @@
               </p>
             </a>
 
-            <span class="flex flex-row m-b-sm">
+            <br />
+
+            <h6 class="flex flex-row m-b-sm title is-4">
               {{
                 content[lang]["footer"]["contact"]["press_inquiries"]["title"]
               }}
-            </span>
+            </h6>
             <span class="flex flex-row m-b-sm">
               {{
                 content[lang]["footer"]["contact"]["press_inquiries"]["person"]
