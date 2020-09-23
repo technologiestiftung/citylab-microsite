@@ -12,8 +12,10 @@
       topic="hero"
       subtopic="intro"
     />
+    <Announcements :lang="lang" />
     <!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
-    <Ticker :lang="lang" :content="content" />
+    <!-- <Ticker :lang="lang" :content="content" /> -->
+    <SmartcityParagraph :lang="lang" />
     <Topics :lang="lang" :content="content" :direct="direct" />
     <Paragraph
       :content="content"
@@ -62,7 +64,10 @@ import Projects from "../components/Projects.vue";
 import Schedule from "../components/Schedule.vue";
 import Newsletter from "../components/Newsletter.vue";
 import Paragraph from "../components/Paragraph.vue";
+import SmartcityParagraph from "../components/SmartcityParagraph.vue";
+import Announcements from "../components/Announcements.vue";
 import HandbuchTeaser from "../components/HandbuchTeaser.vue";
+import Button from "../components/Button.vue";
 
 import axios from "axios";
 import { mapState } from "vuex";
@@ -75,7 +80,10 @@ export default {
     Cta,
     Schedule,
     Paragraph,
+    SmartcityParagraph,
+    Announcements,
     // Ticker,
+    Button,
     Footer,
     Topics,
     Partners,
@@ -287,6 +295,12 @@ button.top {
     background: $color-primary;
     color: white !important;
     transition: all 0.125s ease-in-out;
+  }
+}
+
+.section#smart-city {
+  > * h2 {
+    font-size: 20px !important;
   }
 }
 </style>
