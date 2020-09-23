@@ -28,11 +28,13 @@
               </p>
             </a>
 
-            <span class="flex flex-row m-b-sm">
+            <br />
+
+            <h6 class="flex flex-row m-b-sm title is-4">
               {{
                 content[lang]["footer"]["contact"]["press_inquiries"]["title"]
               }}
-            </span>
+            </h6>
             <span class="flex flex-row m-b-sm">
               {{
                 content[lang]["footer"]["contact"]["press_inquiries"]["person"]
@@ -78,15 +80,15 @@
               {{ content[lang]["footer"]["more"]["title"] }}
             </h6>
 
-            <nuxt-link class="flex flex-row m-b-sm" :to="directImprint">
+            <nuxt-link class="flex flex-row m-b-sm" :to="directNewsletter">
               <p class="content">
-                {{ content[lang]["footer"]["more"]["imprint"] }}
+                {{ content[lang]["footer"]["more"]["newsletter"] }}
               </p>
             </nuxt-link>
 
-            <nuxt-link class="flex flex-row m-b-sm" :to="directDataprivacy">
+            <nuxt-link class="flex flex-row m-b-sm" :to="directBoard">
               <p class="content">
-                {{ content[lang]["footer"]["more"]["dataprivacy"] }}
+                {{ content[lang]["footer"]["more"]["board"] }}
               </p>
             </nuxt-link>
 
@@ -102,11 +104,18 @@
               </p>
             </nuxt-link>
 
-            <nuxt-link class="flex flex-row m-b-sm" :to="directBoard">
+            <nuxt-link class="flex flex-row m-b-sm" :to="directImprint">
               <p class="content">
-                {{ content[lang]["footer"]["more"]["board"] }}
+                {{ content[lang]["footer"]["more"]["imprint"] }}
               </p>
             </nuxt-link>
+
+            <nuxt-link class="flex flex-row m-b-sm" :to="directDataprivacy">
+              <p class="content">
+                {{ content[lang]["footer"]["more"]["dataprivacy"] }}
+              </p>
+            </nuxt-link>
+
           </div>
 
           <div class="column is-3">
@@ -159,6 +168,7 @@ export default {
     return {
       directs: {
         de: {
+          newsletter: "/newsletter_register_de",
           downloads: "/downloads",
           press: "/press",
           dataprivacy: "/dataprivacy",
@@ -168,6 +178,7 @@ export default {
           board: "/board",
         },
         en: {
+          newsletter: "/newsletter_register_en",
           downloads: "/downloads_en",
           press: "/press_en",
           imprint: "/legalnote_en",
@@ -180,6 +191,9 @@ export default {
     };
   },
   computed: {
+    directNewsletter() {
+      return this.directs[this.lang].newsletter;
+    },
     directBoard() {
       return this.directs[this.lang].board;
     },
