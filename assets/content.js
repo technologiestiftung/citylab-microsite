@@ -1,6 +1,8 @@
 import { smartcity } from "./content/smartcity";
+import { announcements } from "./content/announcements";
 export const content = {
   smartcity,
+  announcements,
   config: {
     sheetUrlEvents:
       "https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json",
@@ -150,10 +152,6 @@ export const content = {
     },
     nav: [
       {
-        name: "Start",
-        ref: "/",
-      },
-      {
         name: "News",
         ref: "/newsletter_archive",
       },
@@ -174,9 +172,10 @@ export const content = {
         ref: "/all_projects",
       },
       {
-        name: "Newsletter",
-        ref: "/newsletter_register_de",
+        name: "Ausstellung",
+        ref: "/all_exhibits",
       },
+
     ],
     hero: {
       intro: {
@@ -827,7 +826,7 @@ export const content = {
         address_street: "Platz der Luftbrücke 4",
         address_code: "12101 Berlin",
         press_inquiries: {
-          title: "Presseanfragen:",
+          title: "Presseanfragen",
           person: "Frauke Nippel",
           mail: "nippel@technologiestiftung-berlin.de",
           phone: "0175 72 36 451",
@@ -842,7 +841,7 @@ export const content = {
         dataprivacy: "Datenschutz",
         resources: "Ressourcen",
         board: "Beirat",
-        newsletter: "News",
+        newsletter: "Newsletter",
       },
       funding: {
         title: ".",
@@ -1257,10 +1256,6 @@ export const content = {
     },
     nav: [
       {
-        name: "Start",
-        ref: "/index_en",
-      },
-      {
         name: "News",
         ref: "/newsletter_archive_en",
       },
@@ -1281,9 +1276,10 @@ export const content = {
         ref: "/all_projects_en",
       },
       {
-        name: "Newsletter",
-        ref: "/newsletter_register_en",
+        name: "Exhibition",
+        ref: "/all_exhibits_en",
       },
+
     ],
     missionStatement: {
       title: "Our Mission",
@@ -1889,7 +1885,7 @@ export const content = {
         address_street: "Platz der Luftbrücke 4",
         address_code: "12101 Berlin",
         press_inquiries: {
-          title: "Press inquiries:",
+          title: "Press inquiries",
           person: "Frauke Nippel",
           mail: "nippel@technologiestiftung-berlin.de",
           phone: "0175 72 36 451",
@@ -1904,7 +1900,7 @@ export const content = {
         dataprivacy: "Data privacy",
         resources: "Resources",
         board: "Advisory Board",
-        newsletter: "News",
+        newsletter: "Newsletter",
       },
       funding: {
         title: ".",
