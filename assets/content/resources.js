@@ -41,9 +41,9 @@ export const resources = {
   hygiene_title: { de: "Hygienekonzept", en: "Hygiene concept" },
   hygiene_p: {
     de:
-      "Wir können zurzeit leider nur wenige analoge Veranstaltungen anbieten: Für diese Veranstaltungen gilt während der Corona-Pandemie ein Hygienekonzept.",
+      "Wir können zurzeit leider nur wenige analoge Veranstaltungen anbieten. Für diese Veranstaltungen gilt während der Corona-Pandemie ein Hygienekonzept.",
     en:
-      "Unfortunately, we can only offer a few analog events at the moment: For these events, a hygiene concept is in place during the Corona Pandemic.",
+      "Unfortunately, we can only offer a few analog events at the moment. For these events, a hygiene concept is in place during the Corona Pandemic.",
   },
   hygiene_url: {
     de:
