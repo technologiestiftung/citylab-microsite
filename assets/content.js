@@ -655,7 +655,7 @@ export const content = {
           name: "Dennis Ostendorf",
           mail: "ostendorf@technologiestiftung-berlin.de",
           twitter: "",
-          img_url: "/images/dennis_portrait.jpeg",
+          img_url: "/images/dennis_portrait.jpg",
           title: "Webentwicklung & Gestaltung",
         },
         {
