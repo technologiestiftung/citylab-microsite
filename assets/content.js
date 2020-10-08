@@ -1,8 +1,10 @@
 import { smartcity } from "./content/smartcity";
 import { announcements } from "./content/announcements";
+import { resources } from "./content/resources";
 export const content = {
   smartcity,
   announcements,
+  resources,
   config: {
     sheetUrlEvents:
       "https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json",
@@ -200,24 +202,24 @@ export const content = {
         ],
       },
     },
-    resources: {
-      title: "Ressourcen",
-      p1:
-        "In diesem Abschnitt findest Du praktische Informationen zum CityLAB.",
-      specs_title: "Spezifikationen",
-      specs_p: `Wenn Du dich insbesondere für einen unserer Räume interessierst, findest Du weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
-      specs_url: "/docs/citylab-specs-de.pdf",
-      specs_url_button: "CityLAB Spezifikationen PDF",
-      coworking_title: "Co-Working-Fellowships",
-      coworking_p:
-        "Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:",
-      coworking_url: "/coworking",
-      coworking_url_button: "Co-working",
-      board_title: "Beirat",
-      board_p: "Hier findest du eine Übersicht zu allen Beiratsmitgliedern:",
-      board_url: "/board",
-      board_url_button: "Übersicht Beirat",
-    },
+    // resources: {
+    //   title: "Ressourcen",
+    //   p1:
+    //     "In diesem Abschnitt findest Du praktische Informationen zum CityLAB.",
+    //   specs_title: "Spezifikationen",
+    //   specs_p: `Wenn Du dich insbesondere für einen unserer Räume interessierst, findest Du weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
+    //   specs_url: "/docs/citylab-specs-de.pdf",
+    //   specs_url_button: "CityLAB Spezifikationen PDF",
+    //   coworking_title: "Co-Working-Fellowships",
+    //   coworking_p:
+    //     "Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:",
+    //   coworking_url: "/coworking",
+    //   coworking_url_button: "Co-working",
+    //   board_title: "Beirat",
+    //   board_p: "Hier findest du eine Übersicht zu allen Beiratsmitgliedern:",
+    //   board_url: "/board",
+    //   board_url_button: "Übersicht Beirat",
+    // },
     news: {
       title: "News",
       p1: "Hier findest du alle Neuigkeiten aus dem CityLAB Berlin.",
@@ -1240,25 +1242,26 @@ export const content = {
         words_arr: ["sustainable", "open", "diverse", "inclusive", "digital"],
       },
     },
-    resources: {
-      title: "Resources",
-      p1:
-        "At this section you find practical information regarding the CityLAB Berlin.",
-      specs_title: "Specifications",
-      specs_p: `If you're interested in one of our spaces in particular, find more details about room sizes and available equipment in the data sheet below:`,
-      specs_url: "/docs/citylab-specs-en.pdf",
-      specs_url_button: "CityLAB specifications PDF",
-      coworking_title: "Co-Working-Fellowships",
-      coworking_p:
-        "You want to use a co-working place in CityLAB? Here you will find the most important information:",
-      coworking_url: "/coworking_en",
-      coworking_url_button: "Co-working",
-      board_title: "Advisory Board",
-      board_p:
-        "Find a detailed list of the members of the advisory board here:",
-      board_url: "/board_en",
-      board_url_button: "Advisory Board",
-    },
+
+    // resources: {
+    //   title: "Resources",
+    //   p1:
+    //     "At this section you find practical information regarding the CityLAB Berlin.",
+    //   specs_title: "Specifications",
+    //   specs_p: `If you're interested in one of our spaces in particular, find more details about room sizes and available equipment in the data sheet below:`,
+    //   specs_url: "/docs/citylab-specs-en.pdf",
+    //   specs_url_button: "CityLAB specifications PDF",
+    //   coworking_title: "Co-Working-Fellowships",
+    //   coworking_p:
+    //     "You want to use a co-working place in CityLAB? Here you will find the most important information:",
+    //   coworking_url: "/coworking_en",
+    //   coworking_url_button: "Co-working",
+    //   board_title: "Advisory Board",
+    //   board_p:
+    //     "Find a detailed list of the members of the advisory board here:",
+    //   board_url: "/board_en",
+    //   board_url_button: "Advisory Board",
+    // },
     news: {
       title: "News",
       p1: "Here you can find our trending topics from CityLAB Berlin.",
