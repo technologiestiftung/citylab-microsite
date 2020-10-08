@@ -676,7 +676,7 @@ export const content = {
           name: "Yannick Mueller",
           mail: "mueller2@technologiestiftung-berlin.de",
           twitter: "YannickAntonioM",
-          img_url: "/images/yannick_portrait.jpg",
+          img_url: "/images/yannick_portrait_c.jpg",
           title: "Werkstudent",
         },
       ],
