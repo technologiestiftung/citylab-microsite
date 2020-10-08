@@ -672,6 +672,13 @@ export const content = {
           img_url: "/images/julia_portrait.jpg",
           title: "Wissenschaftliche Mitarbeiterin",
         },
+        {
+          name: "Yannick Mueller",
+          mail: "mueller2@technologiestiftung-berlin.de",
+          twitter: "YannickAntonioM",
+          img_url: "/images/yannick_portrait.jpg",
+          title: "Werkstudent",
+        },
       ],
     },
     cta: {
