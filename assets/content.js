@@ -175,7 +175,6 @@ export const content = {
         name: "Ausstellung",
         ref: "/all_exhibits",
       },
-
     ],
     hero: {
       intro: {
@@ -634,7 +633,7 @@ export const content = {
           name: "Niklas Kossow",
           mail: "kossow@technologiestiftung-berlin.de",
           twitter: "",
-          img_url: "/images/niklas_portrait.jpeg",
+          img_url: "/images/niklas_portrait.jpg",
           title: "Projektmanager",
         },
         {
@@ -676,7 +675,7 @@ export const content = {
           name: "Yannick Mueller",
           mail: "mueller2@technologiestiftung-berlin.de",
           twitter: "YannickAntonioM",
-          img_url: "/images/yannick_portrait_c.jpg",
+          img_url: "/images/yannick_portrait.jpg",
           title: "Werkstudent",
         },
       ],
@@ -1293,7 +1292,6 @@ export const content = {
         name: "Exhibition",
         ref: "/all_exhibits_en",
       },
-
     ],
     missionStatement: {
       title: "Our Mission",
