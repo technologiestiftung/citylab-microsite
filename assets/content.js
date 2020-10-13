@@ -1743,7 +1743,7 @@ export const content = {
           mail: "zimmermann@technologiestiftung-berlin.de",
           twitter: "juliazet0",
           img_url: "/images/julia_portrait.jpg",
-          title: "Wissenschaftliche Mitarbeiterin",
+          title: "Research Associate",
         },
         {
           name: "Yannick Mueller",
