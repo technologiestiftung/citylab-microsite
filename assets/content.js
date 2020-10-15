@@ -1,10 +1,12 @@
 import { smartcity } from "./content/smartcity";
 import { jobs } from "./content/jobs";
 import { announcements } from "./content/announcements";
+import { resources } from "./content/resources";
 export const content = {
   smartcity,
   jobs,
   announcements,
+  resources,
   config: {
     sheetUrlEvents:
       "https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json",
@@ -177,11 +179,6 @@ export const content = {
         name: "Ausstellung",
         ref: "/all_exhibits",
       },
-      {
-        name: "Stellenangebote",
-        ref: "/jobs",
-      },
-
     ],
     hero: {
       intro: {
@@ -207,24 +204,24 @@ export const content = {
         ],
       },
     },
-    resources: {
-      title: "Ressourcen",
-      p1:
-        "In diesem Abschnitt findest Du praktische Informationen zum CityLAB.",
-      specs_title: "Spezifikationen",
-      specs_p: `Wenn Du dich insbesondere für einen unserer Räume interessierst, findest Du weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
-      specs_url: "/docs/citylab-specs-de.pdf",
-      specs_url_button: "CityLAB Spezifikationen PDF",
-      coworking_title: "Co-Working-Fellowships",
-      coworking_p:
-        "Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:",
-      coworking_url: "/coworking",
-      coworking_url_button: "Co-working",
-      board_title: "Beirat",
-      board_p: "Hier findest du eine Übersicht zu allen Beiratsmitgliedern:",
-      board_url: "/board",
-      board_url_button: "Übersicht Beirat",
-    },
+    // resources: {
+    //   title: "Ressourcen",
+    //   p1:
+    //     "In diesem Abschnitt findest Du praktische Informationen zum CityLAB.",
+    //   specs_title: "Spezifikationen",
+    //   specs_p: `Wenn Du dich insbesondere für einen unserer Räume interessierst, findest Du weitere Informationen über Raumgrößen und verfügbare Ausstattung im untenstehenden Datenblatt:`,
+    //   specs_url: "/docs/citylab-specs-de.pdf",
+    //   specs_url_button: "CityLAB Spezifikationen PDF",
+    //   coworking_title: "Co-Working-Fellowships",
+    //   coworking_p:
+    //     "Du willst einen Co-Working-Platz im CityLAB nutzen? Hier findest du die wichtigsten Informationen:",
+    //   coworking_url: "/coworking",
+    //   coworking_url_button: "Co-working",
+    //   board_title: "Beirat",
+    //   board_p: "Hier findest du eine Übersicht zu allen Beiratsmitgliedern:",
+    //   board_url: "/board",
+    //   board_url_button: "Übersicht Beirat",
+    // },
     news: {
       title: "News",
       p1: "Hier findest du alle Neuigkeiten aus dem CityLAB Berlin.",
@@ -623,13 +620,6 @@ export const content = {
           title: "Head of Content & Events",
         },
         {
-          name: "Sebastian Meier",
-          mail: "meier@technologiestiftung-berlin.de",
-          twitter: "seb_meier",
-          img_url: "/images/sebastian_portrait.jpg",
-          title: "Wissenschaftliche Leitung",
-        },
-        {
           name: "Sara Reichert",
           mail: "reichert@technologiestiftung-berlin.de",
           twitter: "",
@@ -637,11 +627,18 @@ export const content = {
           title: "Werkstattleitung",
         },
         {
-          name: "Fabian Dinklage",
-          mail: "dinklage@technologiestiftung-berlin.de",
-          twitter: "fdnklg",
-          img_url: "/images/fabian_portrait.jpg",
-          title: "UX & Design",
+          name: "Ingo Hinterding",
+          mail: "hinterding@technologiestiftung-berlin.de",
+          twitter: "hinterding",
+          img_url: "/images/ingo_portrait.jpg",
+          title: "Public Tech Lead",
+        },
+        {
+          name: "Niklas Kossow",
+          mail: "kossow@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/niklas_portrait.jpg",
+          title: "Projektmanager",
         },
         {
           name: "Sina Beckstein",
@@ -658,11 +655,11 @@ export const content = {
           title: "Service Design",
         },
         {
-          name: "Mirko Hohmann",
-          mail: "hohmann@technologiestiftung-berlin.de",
-          twitter: "mirkohohmann",
-          img_url: "/images/mirko_portrait.jpg",
-          title: "Projektmanager",
+          name: "Dennis Ostendorf",
+          mail: "ostendorf@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/dennis_portrait.jpg",
+          title: "Webentwicklung & Gestaltung",
         },
         {
           name: "Malgorzata Magdon",
@@ -670,6 +667,20 @@ export const content = {
           twitter: "",
           img_url: "/images/gosia_portrait.jpg",
           title: "Administration",
+        },
+        {
+          name: "Julia Zimmermann",
+          mail: "zimmermann@technologiestiftung-berlin.de",
+          twitter: "juliazet0",
+          img_url: "/images/julia_portrait.jpg",
+          title: "Wissenschaftliche Mitarbeiterin",
+        },
+        {
+          name: "Yannick Mueller",
+          mail: "mueller2@technologiestiftung-berlin.de",
+          twitter: "YannickAntonioM",
+          img_url: "/images/yannick_portrait.jpg",
+          title: "Werkstudent",
         },
       ],
     },
@@ -1233,25 +1244,26 @@ export const content = {
         words_arr: ["sustainable", "open", "diverse", "inclusive", "digital"],
       },
     },
-    resources: {
-      title: "Resources",
-      p1:
-        "At this section you find practical information regarding the CityLAB Berlin.",
-      specs_title: "Specifications",
-      specs_p: `If you're interested in one of our spaces in particular, find more details about room sizes and available equipment in the data sheet below:`,
-      specs_url: "/docs/citylab-specs-en.pdf",
-      specs_url_button: "CityLAB specifications PDF",
-      coworking_title: "Co-Working-Fellowships",
-      coworking_p:
-        "You want to use a co-working place in CityLAB? Here you will find the most important information:",
-      coworking_url: "/coworking_en",
-      coworking_url_button: "Co-working",
-      board_title: "Advisory Board",
-      board_p:
-        "Find a detailed list of the members of the advisory board here:",
-      board_url: "/board_en",
-      board_url_button: "Advisory Board",
-    },
+
+    // resources: {
+    //   title: "Resources",
+    //   p1:
+    //     "At this section you find practical information regarding the CityLAB Berlin.",
+    //   specs_title: "Specifications",
+    //   specs_p: `If you're interested in one of our spaces in particular, find more details about room sizes and available equipment in the data sheet below:`,
+    //   specs_url: "/docs/citylab-specs-en.pdf",
+    //   specs_url_button: "CityLAB specifications PDF",
+    //   coworking_title: "Co-Working-Fellowships",
+    //   coworking_p:
+    //     "You want to use a co-working place in CityLAB? Here you will find the most important information:",
+    //   coworking_url: "/coworking_en",
+    //   coworking_url_button: "Co-working",
+    //   board_title: "Advisory Board",
+    //   board_p:
+    //     "Find a detailed list of the members of the advisory board here:",
+    //   board_url: "/board_en",
+    //   board_url_button: "Advisory Board",
+    // },
     news: {
       title: "News",
       p1: "Here you can find our trending topics from CityLAB Berlin.",
@@ -1285,11 +1297,6 @@ export const content = {
         name: "Exhibition",
         ref: "/all_exhibits_en",
       },
-      {
-        name: "Jobs",
-        ref: "/jobs_en",
-      },
-
     ],
     missionStatement: {
       title: "Our Mission",
@@ -1685,13 +1692,6 @@ export const content = {
           title: "Head of Content & Events",
         },
         {
-          name: "Sebastian Meier",
-          mail: "meier@technologiestiftung-berlin.de",
-          twitter: "seb_meier",
-          img_url: "/images/sebastian_portrait.jpg",
-          title: "Head of Science",
-        },
-        {
           name: "Sara Reichert",
           mail: "reichert@technologiestiftung-berlin.de",
           twitter: "",
@@ -1699,11 +1699,18 @@ export const content = {
           title: "Workshop Lead",
         },
         {
-          name: "Fabian Dinklage",
-          mail: "dinklage@technologiestiftung-berlin.de",
-          twitter: "fdnklg",
-          img_url: "/images/fabian_portrait.jpg",
-          title: "UX & Design",
+          name: "Ingo Hinterding",
+          mail: "hinterding@technologiestiftung-berlin.de",
+          twitter: "hinterding",
+          img_url: "/images/ingo_portrait.jpg",
+          title: "Public Tech Lead",
+        },
+        {
+          name: "Niklas Kossow",
+          mail: "kossow@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/niklas_portrait.jpg",
+          title: "Projectmanagement",
         },
         {
           name: "Sina Beckstein",
@@ -1720,11 +1727,11 @@ export const content = {
           title: "Service Design",
         },
         {
-          name: "Mirko Hohmann",
-          mail: "hohmann@technologiestiftung-berlin.de",
-          twitter: "mirkohohmann",
-          img_url: "/images/mirko_portrait.jpg",
-          title: "Projectmanagement",
+          name: "Dennis Ostendorf",
+          mail: "ostendorf@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/dennis_portrait.jpg",
+          title: "Web Development & Design",
         },
         {
           name: "Malgorzata Magdon",
@@ -1732,6 +1739,20 @@ export const content = {
           twitter: "",
           img_url: "/images/gosia_portrait.jpg",
           title: "Administration",
+        },
+        {
+          name: "Julia Zimmermann",
+          mail: "zimmermann@technologiestiftung-berlin.de",
+          twitter: "juliazet0",
+          img_url: "/images/julia_portrait.jpg",
+          title: "Research Associate",
+        },
+        {
+          name: "Yannick Mueller",
+          mail: "mueller2@technologiestiftung-berlin.de",
+          twitter: "YannickAntonioM",
+          img_url: "/images/yannick_portrait.jpg",
+          title: "Working Student",
         },
       ],
     },
