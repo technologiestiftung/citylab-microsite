@@ -8,8 +8,8 @@ export const jobs = {
     de: `Das CityLAB ist ein öffentliches Innovationslabor und wird betrieben durch die <a href="https://www.technologiestiftung-berlin.de/" target="_blank">Technologiestiftung Berlin</a>. Die Technologiestiftung veröffentlicht regelmäßig Stellenanzeigen mit Bezug zum CityLAB, die wir hier vorstellen. Auch Initiativbewerbungen sind willkommen! <br><br>Für die Verstärkung unseres Teams suchen wir engagierte Personen aus folgenden Bereichen:`,
   },
   contact_info: {
-    en: `Please send your application – including a cover letter – to <a href="mailto:jobs@citylab-berlin.org">jobs@citylab-berlin.org.</a>`,
-    de: `Wir freuen uns auf deine Bewerbung mit aussagekräftigem Anschreiben an <a href="mailto:jobs@citylab-berlin.org">jobs@citylab-berlin.org</a>.`,
+    en: `Please send your application to <a href="mailto:jobs@citylab-berlin.org">jobs@citylab-berlin.org.</a>`,
+    de: `Wir freuen uns auf deine Bewerbung an <a href="mailto:jobs@citylab-berlin.org">jobs@citylab-berlin.org</a>.`,
   },
   buttontext: {
     en: "Download PDF",
@@ -19,7 +19,7 @@ export const jobs = {
     {
       headline: {
         en: "Community Management (x/f/m)",
-        de: "Community Management (x/m/m)",
+        de: "Community Management (x/w/m)",
       },
       worktype: {
         en: "24-32h per week",
@@ -37,7 +37,7 @@ export const jobs = {
     {
       headline: {
         en: "Working Student (x/f/m)",
-        de: "Werkstudent*in (x/m/m)",
+        de: "Werkstudent*in (x/w/m)",
       },
       worktype: {
         en: "16-20h per week",
