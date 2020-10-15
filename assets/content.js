@@ -1,7 +1,9 @@
 import { smartcity } from "./content/smartcity";
+import { jobs } from "./content/jobs";
 import { announcements } from "./content/announcements";
 export const content = {
   smartcity,
+  jobs,
   announcements,
   config: {
     sheetUrlEvents:
@@ -174,6 +176,10 @@ export const content = {
       {
         name: "Ausstellung",
         ref: "/all_exhibits",
+      },
+      {
+        name: "Stellenangebote",
+        ref: "/jobs",
       },
 
     ],
@@ -1278,6 +1284,10 @@ export const content = {
       {
         name: "Exhibition",
         ref: "/all_exhibits_en",
+      },
+      {
+        name: "Jobs",
+        ref: "/jobs_en",
       },
 
     ],
