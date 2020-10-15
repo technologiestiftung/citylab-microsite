@@ -18,33 +18,39 @@ export const jobs = {
   jobs: [
     {
       headline: {
-        en: "Full Stack Developer (x/f/m)",
-        de: "Full Stack Entwickler (x/w/m)",
+        en: "Community Management (x/f/m)",
+        de: "Community Management (x/m/m)",
       },
       worktype: {
-        en: "Fulltime",
-        de: "Vollzeit, ab 01. Oktober 2020 in Berlin",
+        en: "24-32h per week",
+        de: "24-32 Stunden/ Woche",
       },
       description: {
-        en: "City-Strategie einfließen sollen. Um den ganzen Prozess möglichst transparent und partizipativ zu gestalten, werden wir in den nächsten Monaten",
-        de: "Wir entwickeln digitale Tools und moderne Infrastruktur, um unsere Zielgruppen und Kooperationspartner mit smarten Lösungen zu unterstützen, die ihnen dabei helfen, ihre täglichen Aufgaben zu lösen. In Deiner Zusammenarbeit mit der Technologiestiftung setzt Du komplexe Anforderungen in nutzerfreundliche Anwendungen um und trägst mit Deiner Kreativität und Deiner Umsetzungskompetenz maßgeblich zum Erfolg unserer Projekte bei.",
+        en:
+          "Zum Januar 2021 suchen wir Verstärkung im Bereich Community Management. Deine Aufgaben: Du stehst im ständigen Austausch mit unseren Co-Worker*innen und Partnerorganisationen und unterstützt diese bei der Umsetzung ihrer Vorhaben. Du entwickelst Partizipationsangebote zur breiten Beteiligung der Berliner Stadtgesellschaft am CityLAB und setzt diese eigenständig um. Du vertrittst das CityLAB nach außen, bearbeitest Kooperations- und Presseanfragen und fütterst unsere Social Media-Kanäle (Twitter, Instagram).",
+        de:
+          "Zum Januar 2021 suchen wir Verstärkung im Bereich Community Management. Deine Aufgaben: Du stehst im ständigen Austausch mit unseren Co-Worker*innen und Partnerorganisationen und unterstützt diese bei der Umsetzung ihrer Vorhaben. Du entwickelst Partizipationsangebote zur breiten Beteiligung der Berliner Stadtgesellschaft am CityLAB und setzt diese eigenständig um. Du vertrittst das CityLAB nach außen, bearbeitest Kooperations- und Presseanfragen und fütterst unsere Social Media-Kanäle (Twitter, Instagram).",
       },
-      url: "/docs/Antrag_Modellprojekte_SC_Berlin.pdf",
+      url:
+        "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201010_Community_Stellenanzeige.pdf",
     },
     {
       headline: {
-        en: "Dev Ops (x/f/m)",
-        de: "Dev Ops (x/w/m)",
+        en: "Working Student (x/f/m)",
+        de: "Werkstudent*in (x/m/m)",
       },
       worktype: {
-        en: "20h/ week",
-        de: "20 Stunden/ Woche",
+        en: "16-20h per week",
+        de: "16-20 Stunden/ Woche",
       },
       description: {
-        en: "Wir freuen uns, als CityLAB diesen Prozess aktiv zu begleiten. Gemeinsam mit unserer Community haben wir im letzten Jahr zahlreiche spannende Projekte realisiert und dabei vielfältige Erfahrungen gesammelt, die natürlich in die neue Smart",
-        de: "Muss alles können",
+        en:
+          "Zur Unterstützung unseres Teams suchen wir ab Januar 2021 eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+        de:
+          "Zur Unterstützung unseres Teams suchen wir ab Januar 2021 eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
       },
-      url: "/docs/Antrag_Modellprojekte_SC_Berlin.pdf",
+      url:
+        "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201010_Web-Entwickung_Studi_Stellenanzeige.pdf",
     },
   ],
 };
