@@ -1,8 +1,10 @@
 import { smartcity } from "./content/smartcity";
+import { jobs } from "./content/jobs";
 import { announcements } from "./content/announcements";
 import { resources } from "./content/resources";
 export const content = {
   smartcity,
+  jobs,
   announcements,
   resources,
   config: {
@@ -176,6 +178,10 @@ export const content = {
       {
         name: "Ausstellung",
         ref: "/all_exhibits",
+      },
+      {
+        name: "Stellenangebote",
+        ref: "/jobs",
       },
     ],
     hero: {
@@ -1295,6 +1301,10 @@ export const content = {
         name: "Exhibition",
         ref: "/all_exhibits_en",
       },
+      {
+        name: "Jobs",
+        ref: "/jobs_en",
+      },
     ],
     missionStatement: {
       title: "Our Mission",
@@ -1690,13 +1700,6 @@ export const content = {
           title: "Head of Content & Events",
         },
         {
-          name: "Sebastian Meier",
-          mail: "meier@technologiestiftung-berlin.de",
-          twitter: "seb_meier",
-          img_url: "/images/sebastian_portrait.jpg",
-          title: "Head of Science",
-        },
-        {
           name: "Sara Reichert",
           mail: "reichert@technologiestiftung-berlin.de",
           twitter: "",
@@ -1704,11 +1707,18 @@ export const content = {
           title: "Workshop Lead",
         },
         {
-          name: "Fabian Dinklage",
-          mail: "dinklage@technologiestiftung-berlin.de",
-          twitter: "fdnklg",
-          img_url: "/images/fabian_portrait.jpg",
-          title: "UX & Design",
+          name: "Ingo Hinterding",
+          mail: "hinterding@technologiestiftung-berlin.de",
+          twitter: "hinterding",
+          img_url: "/images/ingo_portrait.jpg",
+          title: "Public Tech Lead",
+        },
+        {
+          name: "Niklas Kossow",
+          mail: "kossow@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/niklas_portrait.jpg",
+          title: "Projectmanagement",
         },
         {
           name: "Sina Beckstein",
@@ -1725,11 +1735,11 @@ export const content = {
           title: "Service Design",
         },
         {
-          name: "Mirko Hohmann",
-          mail: "hohmann@technologiestiftung-berlin.de",
-          twitter: "mirkohohmann",
-          img_url: "/images/mirko_portrait.jpg",
-          title: "Projectmanagement",
+          name: "Dennis Ostendorf",
+          mail: "ostendorf@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/dennis_portrait.jpg",
+          title: "Web Development & Design",
         },
         {
           name: "Malgorzata Magdon",
@@ -1737,6 +1747,20 @@ export const content = {
           twitter: "",
           img_url: "/images/gosia_portrait.jpg",
           title: "Administration",
+        },
+        {
+          name: "Julia Zimmermann",
+          mail: "zimmermann@technologiestiftung-berlin.de",
+          twitter: "juliazet0",
+          img_url: "/images/julia_portrait.jpg",
+          title: "Research Associate",
+        },
+        {
+          name: "Yannick Mueller",
+          mail: "mueller2@technologiestiftung-berlin.de",
+          twitter: "YannickAntonioM",
+          img_url: "/images/yannick_portrait.jpg",
+          title: "Working Student",
         },
       ],
     },
