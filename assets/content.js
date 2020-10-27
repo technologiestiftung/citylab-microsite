@@ -1,8 +1,10 @@
 import { smartcity } from "./content/smartcity";
+import { jobs } from "./content/jobs";
 import { announcements } from "./content/announcements";
 import { resources } from "./content/resources";
 export const content = {
   smartcity,
+  jobs,
   announcements,
   resources,
   config: {
@@ -176,6 +178,10 @@ export const content = {
       {
         name: "Ausstellung",
         ref: "/all_exhibits",
+      },
+      {
+        name: "Stellenangebote",
+        ref: "/jobs",
       },
     ],
     hero: {
@@ -1301,6 +1307,10 @@ export const content = {
       {
         name: "Exhibition",
         ref: "/all_exhibits_en",
+      },
+      {
+        name: "Jobs",
+        ref: "/jobs_en",
       },
     ],
     missionStatement: {
