@@ -680,6 +680,13 @@ export const content = {
           img_url: "/images/yannick_portrait.jpg",
           title: "Werkstudent",
         },
+        {
+          name: "Rikko Tuitjer",
+          mail: "tuitjer@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/rikko_portrait.jpg",
+          title: "Werkstudent",
+        },
       ],
     },
     cta: {
@@ -1750,6 +1757,13 @@ export const content = {
           mail: "mueller2@technologiestiftung-berlin.de",
           twitter: "YannickAntonioM",
           img_url: "/images/yannick_portrait.jpg",
+          title: "Working Student",
+        },
+        {
+          name: "Rikko Tuitjer",
+          mail: "tuitjer@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/rikko_portrait.jpg",
           title: "Working Student",
         },
       ],
