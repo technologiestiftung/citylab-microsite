@@ -89,7 +89,7 @@ export const content = {
     exhibition: {
       teaser: {
         title: "Unsere Ausstellung",
-        description: "Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
+        description: "Die Ausstellung bleibt im November 2020 geschlossen. Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
         imgUrl: "/images/exhibition-preview.jpg",
         imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
         btn: "Alle Exponate",
@@ -98,7 +98,7 @@ export const content = {
       title: "Unsere Ausstellung",
       subtitle: "Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
       subtitleAbout:
-        "Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.",
+        "Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.<br /><b>Im November 2020 bleibt die Ausstellung geschlossen.</b>",
       imgUrl: "/images/exhibition-preview.jpg",
       imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
       link: "Aktuelle Exponate",
@@ -884,6 +884,7 @@ export const content = {
         columntitle: "Besuchszeiten",
         title: "Ausstellung",
         hours: "Mi-Sa 10-17 Uhr",
+        text: "Zurzeit geschlossen"
       },
     },
     press: {
