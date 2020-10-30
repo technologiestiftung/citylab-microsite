@@ -884,7 +884,7 @@ export const content = {
         columntitle: "Besuchszeiten",
         title: "Ausstellung",
         hours: "Mi-Sa 10-17 Uhr",
-        text: "Zurzeit geschlossen"
+        text: "Zurzeit geschlossen",
       },
     },
     press: {
