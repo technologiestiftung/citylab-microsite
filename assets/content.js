@@ -666,6 +666,13 @@ export const content = {
           title: "Webentwicklung & Gestaltung",
         },
         {
+          name: "Jeremias Volker",
+          mail: "volker@technologiestiftung-berlin.de",
+          twitter: "jeremiasvolker",
+          img_url: "/images/jerry_portrait.jpg",
+          title: "Creative Technologist & Interaction Designer",
+        },
+        {
           name: "Malgorzata Magdon",
           mail: "Magdon@technologiestiftung-berlin.de",
           twitter: "",
@@ -1748,6 +1755,13 @@ export const content = {
           twitter: "",
           img_url: "/images/dennis_portrait.jpg",
           title: "Web Development & Design",
+        },
+        {
+          name: "Jeremias Volker",
+          mail: "volker@technologiestiftung-berlin.de",
+          twitter: "jeremiasvolker",
+          img_url: "/images/jerry_portrait.jpg",
+          title: "Creative Technologist & Interaction Designer",
         },
         {
           name: "Malgorzata Magdon",
