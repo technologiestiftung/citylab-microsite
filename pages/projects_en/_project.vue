@@ -87,8 +87,7 @@
             summaryAvailable.blockFourContent > 0 ||
             summaryAvailable.BlockFourHeadline > 0
           "
-          class="content-wrapper"
-        >
+          class="content-wrapper">
           <h4 v-if="summaryAvailable.blockFourHeadline > 0" class="title">
             {{ headlineBlockFour }}
           </h4>
@@ -100,15 +99,13 @@
         </div>
 
         <div class="logo-wrapper">
-          <a :href="logo[1]" v-for="logo in logos">
-            <img class="logo" v-if="logo[0] !== 'FALSE'" :src="logo[0]" />
-            <span
-              v-if="logo[0] == 'FALSE'"
-              target="_blank"
-              class="button is-color-secondary is-normal"
-              >Link</span
-            >
-          </a>
+          <a
+            :href="link"
+            v-if="link.length > 0"
+            target="_blank"
+            class="button is-color-secondary is-normal"
+            >{{ lang == "en" ? "To the project" : "Zum Projekt" }}</a
+          >
         </div>
       </div>
     </section>
@@ -175,6 +172,13 @@ export default {
             : `${this.data.gsx$dirname.$t}`;
         const path = `/images/projects/${file}_hero.jpg`;
         return path;
+      } else {
+        return "";
+      }
+    },
+    link() {
+      if (this.data != null) {
+        return this.data.gsx$link.$t;
       } else {
         return "";
       }
