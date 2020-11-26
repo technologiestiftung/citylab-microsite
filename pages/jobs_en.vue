@@ -27,7 +27,8 @@
                   <a
                   style="width:100%;"
                   class="button is-color-secondary is-normal"
-                  :href="item.url"
+                  :href="item.url_en ? item.url_en : item.url"
+                  
                   target="_blank"
                   rel="noopener noreferrer"
                 >
