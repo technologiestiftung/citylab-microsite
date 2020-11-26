@@ -18,6 +18,26 @@ export const jobs = {
   jobs: [
     {
       headline: {
+        en: "Full Stack Developer (x/f/m)",
+        de: "Full Stack Developer (x/w/m)",
+      },
+      worktype: {
+        en: "32-40h per week",
+        de: "32-40 Stunden/ Woche",
+      },
+      description: {
+        en:
+          "Starting January 2021 we have an open position for a Full Stack Developer. You will be developing modern applications and interactives prototypes based on state-of-the-art web technologies and you feel at home with HTML, CSS, JavaScript, TypeScript, React, Node.js, Docker and the JAMSTACK. We offer you a very creative position in an open-minded working environment with an agile team.",
+        de:
+          "Zum Januar 2021 suchen wir eine/n Full Stack Developer:in. Du entwickeltst mit uns moderne Applikationen und interaktive Prototypen auf Basis von state-of-the-art Webtechnologien und fühlst wohl mit HTML, CSS, JavaScript, TypeScript, React, Node.js, Docker und JAMSTACK. Wir bieten Dir eine kreative Position mit viel Gestaltungsfreiraum und einem agilen Team.",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201125_Full-Stack-Developer-CityLAB.pdf",
+      url_en:
+        "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201125_Developer_Stellenanzeige_CityLAB.EN.pdf",
+    },
+    {
+      headline: {
         en: "Community Management (x/f/m)",
         de: "Community Management (x/w/m)",
       },
