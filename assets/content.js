@@ -1650,8 +1650,12 @@ export const content = {
     },
     projects: {
       title: "Projects",
-      description: "An overview of our current projects.",
-      titleAll: "All projects",
+      description: "An extract of our projects at a glance.",
+      titleOngoing: "Ongoing Projects",
+      subline1: "These are the projects we are currently working on.",
+      titleFinished: "Finished Projects",
+      subline2:
+        "These projects have already been completed or are waiting for further support.",
     },
     board: {
       title: "Advisory board",
