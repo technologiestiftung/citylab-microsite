@@ -56,7 +56,7 @@
               <article class="project-wrapper">
                 <figure class="image is 1by1">
                   <v-lazy-image
-                    class="lazy-img"
+                    class="lazy-img-finished"
                     :src="`/images/projects/${
                       project.defaultImg == 'TRUE' ? `default` : project.imgname
                     }_tile.jpg`"
@@ -176,6 +176,17 @@ export default {
 .lazy-img {
   width: 100% !important;
   height: auto;
+}
+
+.lazy-img-finished {
+  width: 100% !important;
+  height: auto;
+  filter: grayscale(100%); /* Current draft standard */
+  -webkit-filter: grayscale(100%); /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%); 
+  -o-filter: grayscale(100%);
+  filter: gray; /* IE6+ */
 }
 
 figure {
