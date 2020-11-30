@@ -89,7 +89,8 @@ export const content = {
     exhibition: {
       teaser: {
         title: "Unsere Ausstellung",
-        description: "Die Ausstellung bleibt im November 2020 geschlossen. Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
+        description:
+          "Die Ausstellung bleibt im November 2020 geschlossen. Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
         imgUrl: "/images/exhibition-preview.jpg",
         imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
         btn: "Alle Exponate",
@@ -604,7 +605,12 @@ export const content = {
     projects: {
       title: "Projekte ",
       description: "Ein Auszug unserer aktuellen Projekte im Überblick.",
-      titleAll: "Alle Projekte",
+      titleOngoing: "Laufende Projekte",
+      subline1:
+        "Hier findet ihr die Projekte, mit denen wir uns aktuell beschäftigen.",
+      titleFinished: "Abgeschlossene Projekte",
+      subline2:
+        "Diese Projekte wurden bereits abgeschlossen oder warten auf weitere Unterstützung.",
     },
     team: {
       title: "Team",
