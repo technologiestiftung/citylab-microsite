@@ -165,7 +165,7 @@
           <a
             class="button is-color-secondary is-normal"
             style="display"
-            @click="save('CLB_Event.ics', calData)"
+            @click="save('CityLAB_Event.ics', calData)"
             >Download für iCal</a
           >
         </div>

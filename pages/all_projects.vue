@@ -10,20 +10,53 @@
     <section class="section is-medium schedule">
       <div class="container">
         <h1 style="margin-top: 100px;" class="title">
-          {{ this.content[this.lang].projects.titleAll }}
+          {{ this.content[this.lang].projects.titleOngoing }}
         </h1>
-
+        <h2 class="subtitle">{{ this.content[this.lang].projects.subline1}}</h2>
         <div class="tile wrap team-wrapper">
           <div
             class="tile third"
             v-for="project in data"
-            v-if="project.visible == 'TRUE'"
+            v-if="project.visible == 'TRUE' && project.finished =='FALSE'"
           >
             <a :href="`/${directProject}/${project.dirname}`">
               <article class="project-wrapper">
                 <figure class="image is 1by1">
                   <v-lazy-image
                     class="lazy-img"
+                    :src="`/images/projects/${
+                      project.defaultImg == 'TRUE' ? `default` : project.imgname
+                    }_tile.jpg`"
+                    :src-placeholder="`/images/projects/${
+                      project.defaultImg == 'TRUE' ? `default` : project.imgname
+                    }_lazy_tile.jpg`"
+                  />
+                </figure>
+                <div class="wrapper-details">
+                  <p class="name">{{ project.name }}</p>
+                  <p class="title">{{ project.subline }}</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+        <!-- Abgeschlossene Projekte -->
+        <h1 style="margin-top: 100px;" class="title">
+          {{ this.content[this.lang].projects.titleFinished }}
+        </h1>
+        <h2 class="subtitle">{{ this.content[this.lang].projects.subline2}}</h2>
+
+        <div class="tile wrap team-wrapper">
+          <div
+            class="tile third"
+            v-for="project in data"
+            v-if="project.visible == 'TRUE' && project.finished =='TRUE'"
+          >
+            <a :href="`/${directProject}/${project.dirname}`">
+              <article class="project-wrapper">
+                <figure class="image is 1by1">
+                  <v-lazy-image
+                    class="lazy-img-finished"
                     :src="`/images/projects/${
                       project.defaultImg == 'TRUE' ? `default` : project.imgname
                     }_tile.jpg`"
@@ -116,6 +149,7 @@ export default {
         entries.forEach((entry) => {
           let obj = {
             visible: entry.gsx$visible.$t,
+            finished: entry.gsx$finished.$t,
             name: entry.gsx$projectname.$t,
             publisher: entry.gsx$publisher.$t,
             subline: entry.gsx$projectsubline.$t,
@@ -123,8 +157,7 @@ export default {
             imgname: entry.gsx$dirname.$t,
             defaultImg: entry.gsx$defaultimg.$t,
           };
-
-          if (entry.gsx$projectname.$t.length > 0) {
+        if (entry.gsx$projectname.$t.length > 0 ) {
             this.data.push(obj);
           }
         });
@@ -143,6 +176,17 @@ export default {
 .lazy-img {
   width: 100% !important;
   height: auto;
+}
+
+.lazy-img-finished {
+  width: 100% !important;
+  height: auto;
+  filter: grayscale(100%); /* Current draft standard */
+  -webkit-filter: grayscale(100%); /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%); 
+  -o-filter: grayscale(100%);
+  filter: gray; /* IE6+ */
 }
 
 figure {
