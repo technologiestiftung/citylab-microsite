@@ -90,7 +90,7 @@ export const content = {
       teaser: {
         title: "Unsere Ausstellung",
         description:
-          "Die Ausstellung bleibt im bis Ende des Jahres geschlossen. Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
+          "Die Ausstellung bleibt bis Ende des Jahres geschlossen. Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
         imgUrl: "/images/exhibition-preview.jpg",
         imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
         btn: "Alle Exponate",
