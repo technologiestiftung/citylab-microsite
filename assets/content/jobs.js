@@ -18,6 +18,26 @@ export const jobs = {
   jobs: [
     {
       headline: {
+        en: "Service Designer (x/f/m)",
+        de: "Service Designer*in (x/w/m)",
+      },
+      worktype: {
+        en: "32-40h per week",
+        de: "32-40 Stunden/ Woche",
+      },
+      description: {
+        en:
+          "We are looking for a Service Designer to join our team starting next year. In this role, you’ll moderate and oversee innovation and transformation processes within the Berlin City Administration as well as with city stakeholders. You’ll create, execute and evaluate formats for communicating and advancing the principles of agile, human-centered and co-creative methodologies, and you’ll help support our projects through research, development of new concepts, and testing of concepts. Strong German skills necessary.",
+        de:
+          "Zum Jahresanfang suchen wir eine/n Service Designer:in. Du moderierst und betreust Innovations- und Transformationsprozesse innerhalb der Berliner Verwaltung sowie mit Stakeholdern aus der Stadtgesellschaft. Du entwickelst, realisierst und evaluierst Formate zur Vermittlung agiler, menschenzentrierter und co-kreativer Methoden und Kompetenzen, und unterstützt CityLAB Projekte mit Research, Konzeptentwicklung und -testing.",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201216_Service_Design_Stellenanzeige.pdf",
+      url_en:
+        "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201216_Service_Design_Stellenanzeige.pdf",
+    },
+    {
+      headline: {
         en: "Full Stack Developer (x/f/m)",
         de: "Full Stack Developer (x/w/m)",
       },
