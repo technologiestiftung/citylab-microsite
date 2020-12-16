@@ -829,7 +829,7 @@ export const content = {
         description:
           'Du möchtest selber Veränderung in der öffentlichen Verwaltung gestalten? Lade hier das Handbuch und die Methodensammlung als PDF herunter.<br><br>Du arbeitest in oder mit der öffentlichen Verwaltung? Um das gedruckte Buch zu bestellen, fülle bitte <a href="https://citylabberlin.typeform.com/to/N27zPldj" target="_blank" noopener noreferrer>dieses Formular</a> aus.',
         cta: "Download",
-        resource: "/downloads/handbuch/Oeffentliches-Gestalten.zip",
+        resource: "/downloads/handbuch/Oeffentliches-Gestalten_Auflage-2.zip",
       },
       register: {
         intro: {
@@ -1925,7 +1925,7 @@ export const content = {
         description:
           'You want to shape change in public administration? Unfortunately, this book does not yet exist in English. However, you can download the manual and the collection of methods here as a German PDF.<br><br>You work in or with public administration? To order the printed book, please fill out <a href="https://citylabberlin.typeform.com/to/N27zPldj" target="_blank" noopener noreferrer>this form</a>.',
         cta: "Download",
-        resource: "/downloads/handbuch/Oeffentliches-Gestalten.zip",
+        resource: "/downloads/handbuch/Oeffentliches-Gestalten_Auflage-2.zip",
       },
       register: {
         intro: {
