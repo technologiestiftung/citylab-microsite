@@ -29,7 +29,7 @@ export const jobs = {
         en:
           "We are looking for a Service Designer to join our team starting next year. In this role, you’ll moderate and oversee innovation and transformation processes within the Berlin City Administration as well as with city stakeholders. You’ll create, execute and evaluate formats for communicating and advancing the principles of agile, human-centered and co-creative methodologies, and you’ll help support our projects through research, development of new concepts, and testing of concepts. Strong German skills necessary.",
         de:
-          "Zum Jahresanfang suchen wir eine/n Service Designer:in. Du moderierst und betreust Innovations- und Transformationsprozesse innerhalb der Berliner Verwaltung sowie mit Stakeholdern aus der Stadtgesellschaft. Du entwickelst, realisierst und evaluierst Formate zur Vermittlung agiler, menschenzentrierter und co-kreativer Methoden und Kompetenzen, und unterstützt CityLAB Projekte mit Research, Konzeptentwicklung und -testing.",
+          "Zum Jahresanfang suchen wir eine/n Service Designer*in. Du moderierst und betreust Innovations- und Transformationsprozesse innerhalb der Berliner Verwaltung sowie mit Stakeholdern aus der Stadtgesellschaft. Du entwickelst, realisierst und evaluierst Formate zur Vermittlung agiler, menschenzentrierter und co-kreativer Methoden und Kompetenzen, und unterstützt CityLAB Projekte mit Research, Konzeptentwicklung und -testing.",
       },
       url:
         "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201216_Service_Design_Stellenanzeige.pdf",
@@ -49,7 +49,7 @@ export const jobs = {
         en:
           "Starting January 2021 we have an open position for a Full Stack Developer. You will be developing modern applications and interactives prototypes based on state-of-the-art web technologies and you feel at home with HTML, CSS, JavaScript, TypeScript, React, Node.js, Docker and the JAMSTACK. We offer you a very creative position in an open-minded working environment with an agile team.",
         de:
-          "Zum Januar 2021 suchen wir eine/n Full Stack Developer:in. Du entwickeltst mit uns moderne Applikationen und interaktive Prototypen auf Basis von state-of-the-art Webtechnologien und fühlst wohl mit HTML, CSS, JavaScript, TypeScript, React, Node.js, Docker und JAMSTACK. Wir bieten Dir eine kreative Position mit viel Gestaltungsfreiraum und einem agilen Team.",
+          "Zum Januar 2021 suchen wir eine/n Full Stack Developer*in. Du entwickeltst mit uns moderne Applikationen und interaktive Prototypen auf Basis von state-of-the-art Webtechnologien und fühlst wohl mit HTML, CSS, JavaScript, TypeScript, React, Node.js, Docker und JAMSTACK. Wir bieten Dir eine kreative Position mit viel Gestaltungsfreiraum und einem agilen Team.",
       },
       url:
         "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201125_Full-Stack-Developer-CityLAB.pdf",
