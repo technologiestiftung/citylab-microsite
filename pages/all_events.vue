@@ -12,9 +12,6 @@
         <span id="btn-2020" class="year-btn active" @click="setYear(2020)"
           >2020</span
         >
-        <span id="btn-2021" class="year-btn" @click="setYear(2021)"
-          >2021</span
-        >
       </div>
       <div
         v-if="dataUpcoming.length > 0"
