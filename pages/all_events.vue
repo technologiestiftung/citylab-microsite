@@ -9,10 +9,10 @@
     <section class="section is-medium schedule">
       <div class="container" style="margin-top: 100px;">
         <span id="btn-2019" class="year-btn" @click="setYear(2019)">2019</span>
-        <span id="btn-2020" class="year-btn active" @click="setYear(2020)"
+        <span id="btn-2020" class="year-btn" @click="setYear(2020)"
           >2020</span
         >
-        <span id="btn-2021" class="year-btn" @click="setYear(2021)"
+        <span id="btn-2021" class="year-btn active" @click="setYear(2021)"
           >2021</span
         >
       </div>
@@ -114,7 +114,7 @@ export default {
       data: [],
       dataUpcoming: [],
       dataPast: [],
-      year: 2020,
+      year: 2021,
       otherEvents: content["de"].otherevents,
       entries: null,
     };

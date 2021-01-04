@@ -9,8 +9,8 @@
     <section class="section is-medium schedule">
       <div class="container" style="margin-top: 100px;">
         <span id="btn-2019" class="year-btn" @click="setYear(2019)">2019</span>
-        <span id="btn-2020" class="year-btn active" @click="setYear(2020)">2020</span>
-        <span id="btn-2021" class="year-btn" @click="setYear(2021)">2021</span>
+        <span id="btn-2020" class="year-btn" @click="setYear(2020)">2020</span>
+        <span id="btn-2021" class="year-btn active" @click="setYear(2021)">2021</span>
       </div>
       <div
         v-if="dataUpcoming.length > 0"
@@ -106,7 +106,7 @@ export default {
     return {
       lang: "en",
       content: content,
-      year: 2020,
+      year: 2021,
       direct: "/all_events",
       data: [],
       dataUpcoming: [],
