@@ -63,16 +63,17 @@
               {{ content[lang]["footer"]["open"]["columntitle"] }}
             </h6>
 
-            <a class="flex flex-row m-b-sm" style="cursor: auto;">
-              <div class="flex flex-column">
-                <p>
-                  {{ content[lang]["footer"]["open"]["title"] }}
-                </p>
-                <p class="content">
-                  {{ content[lang]["footer"]["open"]["hours"] }}
-                </p>
-              </div>
-            </a>
+            <div class="flex flex-column">
+              <span>
+                {{ content[lang]["footer"]["open"]["title"] }}
+              </span>
+              <span>
+                {{ content[lang]["footer"]["open"]["hours"] }}
+              </span>
+              <span>
+                {{ content[lang]["footer"]["open"]["text"] }}
+              </span>
+            </div>
           </div>
 
           <div class="column is-3">
@@ -115,7 +116,6 @@
                 {{ content[lang]["footer"]["more"]["dataprivacy"] }}
               </p>
             </nuxt-link>
-
           </div>
 
           <div class="column is-3">
