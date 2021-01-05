@@ -644,6 +644,13 @@ export const content = {
           title: "Public Tech Lead",
         },
         {
+          name: "Victoria Boeck",
+          mail: "boeck@technologiestiftung-berlin.de",
+          twitter: "toridykes",
+          img_url: "/images/tori_portrait.jpg",
+          title: "Open Data Researcher",
+        },
+        {
           name: "Niklas Kossow",
           mail: "kossow@technologiestiftung-berlin.de",
           twitter: "",
@@ -1717,6 +1724,13 @@ export const content = {
           twitter: "hinterding",
           img_url: "/images/ingo_portrait.jpg",
           title: "Public Tech Lead",
+        },
+        {
+          name: "Victoria Boeck",
+          mail: "boeck@technologiestiftung-berlin.de",
+          twitter: "toridykes",
+          img_url: "/images/tori_portrait.jpg",
+          title: "Open Data Researcher",
         },
         {
           name: "Niklas Kossow",
