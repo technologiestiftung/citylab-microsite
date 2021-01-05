@@ -90,7 +90,7 @@ export const content = {
       teaser: {
         title: "Unsere Ausstellung",
         description:
-          "Die Ausstellung bleibt bis Ende des Jahres geschlossen. Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
+          "Erlebe die Stadt der Zukunft in interaktiven Exponaten. Auf Grund der geltenden Corona-Bestimmungen bleibt die Ausstellung bis auf Weiteres geschlossen.",
         imgUrl: "/images/exhibition-preview.jpg",
         imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
         btn: "Alle Exponate",
@@ -99,7 +99,7 @@ export const content = {
       title: "Unsere Ausstellung",
       subtitle: "Erlebe die Stadt der Zukunft in interaktiven Exponaten.",
       subtitleAbout:
-        "Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an.<br /><b>Im Jahr 2020 bleibt die Ausstellung geschlossen.</b>",
+        "Die Stadt von Morgen heute schon erleben: In unserer Ausstellung zeigen wir Einblicke in unsere laufenden Projekte und weitere spannende Exponate aus dem CityLAB-Partnerkreis. <br /> <br /> Die Ausstellung ist von Mittwoch bis Samstag, 10:00-17:00 kostenlos zu besichtigen. Auf Anfrage bieten wir gerne Führungen an. <b>Auf Grund der geltenden Corona-Bestimmungen bleibt die Ausstellung bis auf Weiteres geschlossen.</>",
       imgUrl: "/images/exhibition-preview.jpg",
       imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
       link: "Aktuelle Exponate",
@@ -644,6 +644,13 @@ export const content = {
           title: "Public Tech Lead",
         },
         {
+          name: "Victoria Boeck",
+          mail: "boeck@technologiestiftung-berlin.de",
+          twitter: "toridykes",
+          img_url: "/images/tori_portrait.jpg",
+          title: "Open Data Researcher",
+        },
+        {
           name: "Niklas Kossow",
           mail: "kossow@technologiestiftung-berlin.de",
           twitter: "",
@@ -1168,16 +1175,17 @@ export const content = {
       teaser: {
         title: "Our exhibition",
         description:
-          "Experience the city of the future in interactive exhibits.",
+          "Experience the city of the future in interactive exhibits. Due to current Corona regulations, the exhibition will remain closed until further notice.",
         imgUrl: "/images/exhibition-preview.jpg",
         imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
         btn: "All exhibits",
         direct: "/all_exhibits_en",
       },
       title: "Our exhibition",
-      subtitle: "Experience the city of the future in interactive exhibits.",
+      subtitle:
+        "Experience the city of the future in interactive exhibits. Due to current Corona regulations, the exhibition will remain closed until further notice.",
       subtitleAbout:
-        "Experience the city of tomorrow today: In our exhibition we show insights into our current projects and other exciting exhibits from the CityLAB partner circle.</br></br>The exhibition can be visited free of charge from Wednesday to Saturday, 10am to 5pm. We are happy to offer guided tours on request.",
+        "Experience the city of tomorrow today: In our exhibition we show insights into our current projects and other exciting exhibits from the CityLAB partner circle.</br></br>The exhibition can be visited free of charge from Wednesday to Saturday, 10am to 5pm. We are happy to offer guided tours on request. <b>Due to current Corona regulations, the exhibition will remain closed until further notice.</b>",
       imgUrl: "/images/exhibition-preview.jpg",
       imgUrlLazy: "/images/exhibition-preview-lazy.jpg",
       link: "Current exhibits",
@@ -1718,6 +1726,13 @@ export const content = {
           title: "Public Tech Lead",
         },
         {
+          name: "Victoria Boeck",
+          mail: "boeck@technologiestiftung-berlin.de",
+          twitter: "toridykes",
+          img_url: "/images/tori_portrait.jpg",
+          title: "Open Data Researcher",
+        },
+        {
           name: "Niklas Kossow",
           mail: "kossow@technologiestiftung-berlin.de",
           twitter: "",
@@ -1951,6 +1966,7 @@ export const content = {
         columntitle: "Visiting hours",
         title: "Exhibition",
         hours: "Wed-Sat 10am-5pm",
+        text: "Currently closed",
       },
     },
     press: {
