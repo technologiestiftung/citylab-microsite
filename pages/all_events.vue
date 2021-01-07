@@ -145,7 +145,7 @@ export default {
 
     axios
       .get(
-        `https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/3/public/values?alt=json`
+        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/3/public/values?alt=json`
       )
       .then((res) => {
         let entries = res.data.feed.entry;
