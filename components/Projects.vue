@@ -96,7 +96,7 @@ export default {
   },
   created() {
     // TODO: example for wrapping it
-    const sheetUrl = `https://spreadsheets.google.com/feeds/list/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc/${this.sheetId}/public/values?alt=json`;
+    const sheetUrl = `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/${this.sheetId}/public/values?alt=json`;
     const responseHandler = (res) => {
       let entries = res.data.feed.entry;
       this.entries = entries;

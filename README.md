@@ -10,7 +10,7 @@ Along with using [Nuxt.js](https://nuxtjs.org/) the project is structured in `pa
 
 ### Components
 
-The modular blocks that get rendered inside your pages can be found inside `components/`. If you want to add a new component keep in mind to pass the `content` and `lang` as a prop to  Here an example of the basic structure of a component:
+The modular blocks that get rendered inside your pages can be found inside `components/`. If you want to add a new component keep in mind to pass the `content` and `lang` as a prop to Here an example of the basic structure of a component:
 
 ```vue
 <template>
@@ -18,25 +18,26 @@ The modular blocks that get rendered inside your pages can be found inside `comp
 </template>
 
 <script>
-  export default {
-    name: 'name of component',
-    props: ['content', 'lang'],
-    ...
-  }
+export default {
+  name: 'name of component',
+  props: ['content', 'lang'],
+  ...
+}
 </script>
 <style>
-  .wrapper {
-    width: 100%;
-    ...
-  }
+.wrapper {
+  width: 100%;
+  ...;
+}
 </style>
 ```
 
 ## Content
 
-The content of the site is sourced from a `content.js` file located at `assets/` and a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc) (that contains multiple tables) which is accessible to the Team of the CityLAB. If you plan to create new subpages for the site that:
+The content of the site is sourced from a `content.js` file located at `assets/` and a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8) (that contains multiple tables) which is accessible to the Team of the CityLAB. If you plan to create new subpages for the site that:
 
 ### Are created once ...
+
 then add these to the `content.js`. This file is contains both english and german content. If you want to add new content for a created page – we call `paragraph` – add the content fields as an `object` nested inside the objects `en` and `de` like this:
 
 ```
@@ -68,27 +69,27 @@ We pass the content `object` as a prop to your component and link the provided k
 </template>
 
 <script>
-  export default {
-    name: 'Paragraph',
-    props: ['content', 'lang'],
-  }
+export default {
+  name: "Paragraph",
+  props: ["content", "lang"],
+};
 </script>
 <style>
-  .wrapper {
-    width: 100%;
-    ...
-  }
+.wrapper {
+  width: 100%;
+  ...;
+}
 </style>
 ```
 
-If you want to provide content that is updated regulary (e.g. Newsletter, Projects, Events, Exhibits) you use the table inside the [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1rTyfInS6NjTifbru61mWEqICyv9uuMVSSk7NZTABLQc) for content that exists in two languages you find a `_en` and `_de` at the name of the table. In the following you find a description of exisiting columns for the existing tables:
+If you want to provide content that is updated regulary (e.g. Newsletter, Projects, Events, Exhibits) you use the table inside the [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8) for content that exists in two languages you find a `_en` and `_de` at the name of the table. In the following you find a description of exisiting columns for the existing tables:
 
 ### projects_de and projects_en table
 
-Pls note: select `TRUE` for column *visible* to either enable or disable a project completely
+Pls note: select `TRUE` for column _visible_ to either enable or disable a project completely
 
-| finished  | defaultImg | featured | publisher | dirName | projectName | projectSubline  | projectSubSubline | headlineIntro | contentIntro   | headlineBlockOne | contentBlockOne | headlineBlockTwo | contentBlockTwo | headlineBlockThree | contentBlockThree | headlineBlockFour | contentBlockFour | socialDescription | link | logo |
-| ---------------------------------- | ----------------------------------------------- | ----------------------------------------------- | ----------------- | -------- | --------------- | --------------- | ---------------------- | ------------------------ | ----------------------- | ------------------------- | -------------------------------- | ------------------------ | ------------------------------ | ------------------------- | -------------------------------- | ----------------------- | ------------------------------ | ------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------- |
+| finished                             | defaultImg                                      | featured                                        | publisher         | dirName  | projectName     | projectSubline  | projectSubSubline      | headlineIntro            | contentIntro            | headlineBlockOne          | contentBlockOne                  | headlineBlockTwo         | contentBlockTwo                | headlineBlockThree        | contentBlockThree                | headlineBlockFour       | contentBlockFour               | socialDescription                                             | link                                              | logo                                               |
+| ------------------------------------ | ----------------------------------------------- | ----------------------------------------------- | ----------------- | -------- | --------------- | --------------- | ---------------------- | ------------------------ | ----------------------- | ------------------------- | -------------------------------- | ------------------------ | ------------------------------ | ------------------------- | -------------------------------- | ----------------------- | ------------------------------ | ------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------- |
 | Defines which status the project has | Sets defaultImg if no other images are provided | Adds project to featured section at start pages | Name of publisher | url path | name of project | project subline | second project subline | title of first paragraph | text of first paragraph | title of second paragraph | description of seconds paragraph | title of third paragraph | description of third paragraph | title of fourth paragraph | descpription of fourth paragraph | title of fifth pargraph | description of fifth paragraph | text that is visible at social tiles, when the page is shared | url where the link – if provided – is pointing to | set to TRUE or FALSE is a logo should be displayed |
 
 ### events table
@@ -98,6 +99,7 @@ Pls note: select `TRUE` for column *visible* to either enable or disable a proje
 | Defines, if the event is visible | Set the format of event, e.g. workshop, meetup | TRUE or FALSE defines if calendar import is available | set language of event: de, end | url path | set date in following format: YYYY-MM-DD | set start time | set end time | creates automatic date format | set the name of the event | set subline of event | set second subline of event | title of first paragraph | text of first paragraph | title of second paragraph | description of seconds paragraph | title of third paragraph | description of third paragraph | title of fourth paragraph | descpription of fourth paragraph | title of fifth pargraph | description of fifth paragraph | website url in summary box | phone number in summary box | date of event in summary box | organiser in summary box | e-mail in summary box | address in summary box | registration link if existing | text that is visible at social tiles, when the page is shared | set to TRUE or FALSE is a logo should be displayed |
 
 ### exhibits_de and exhibits_en
+
 | visible                            | exhibitName          | exhibitPublisher                            | publisherLink                             | exhibitDescription                    | exhibitDescriptionLong                | imgName                  | date                                  |
 | ---------------------------------- | -------------------- | ------------------------------------------- | ----------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------ | ------------------------------------- |
 | Defines, if the project is visible | title of the exhibit | author name of exhibit, separated by comma! | links of the authors, separated by comma! | short description text of the exhibit | long description texts of the exhibit | image name e.g: name.jpg | Date in the followin format: Mai 2020 |
@@ -119,14 +121,15 @@ All imagery, logos etc. are located at `static/images/...`. If you want to add i
 Beyond find the naming conventions to supply your page with `hero` or `social_media` images:
 
 ### Events:
+
 ```
 directoryName_hero.jpg
 directoryName_social_media.jpg
 directoryName_logo.jpg (optional)
 ```
 
-
 ### Projects:
+
 ```
 directoryName_hero.jpg
 directoryName_social_media.jpg
@@ -139,21 +142,20 @@ directoryName_logo.jpg (optional)
 
 Hero images should have a resolution of **1880px x 940px** and are required to create a new event. If you don't have any software to crop your images you can use this [Online Photo Editor](https://www.befunky.com/create/crop-photo/).
 
-Please use the following naming convention: ```dirname_hero.jpg```.
+Please use the following naming convention: `dirname_hero.jpg`.
 
 ### Images for Social media
 
 Social media images should have a resolution of **1086px x 573px** and are required to create a new event.
-Please use the following naming convention: ```dirname_social_media.jpg```.
-
+Please use the following naming convention: `dirname_social_media.jpg`.
 
 ## Update site
 
-This site is deployed by Netlify (Net-liff-eye). A push to ```master``` will automatically update the site and set live. If you have bigger updates, please create a new branch and merge them later.
+This site is deployed by Netlify (Net-liff-eye). A push to `master` will automatically update the site and set live. If you have bigger updates, please create a new branch and merge them later.
 
 ## Get started:
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
