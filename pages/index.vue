@@ -4,7 +4,7 @@
       :lang="lang"
       :content="content"
       :direct="direct"
-      :anchorTags="true"
+      :anchor-tags="true"
     />
     <TeaserIntro
       :content="content"
@@ -12,9 +12,6 @@
       topic="hero"
       subtopic="intro"
     />
-    <!-- <Announcements :lang="lang" /> -->
-    <!-- <Hero :lang="lang" :content="content" :direct="direct"/> -->
-    <!-- <Ticker :lang="lang" :content="content" /> -->
     <SmartcityParagraph :lang="lang" />
     <Topics :lang="lang" :content="content" :direct="direct" />
     <Paragraph
@@ -34,11 +31,11 @@
     />
     <Schedule :lang="lang" :content="content" :direct="direct" :links="links" />
     <Newsletter :lang="lang" :content="content" :direct="direct" />
-    <!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
-    <!-- <Cta :lang="lang" :content="content"/> -->
     <Footer :lang="lang" :content="content" />
 
-    <button @click="topFunction()" id="myBtn" class="arrow-up top">↑</button>
+    <button id="myBtn" class="arrow-up top" @click="topFunction()">
+      ↑
+    </button>
   </div>
 </template>
 
@@ -48,22 +45,16 @@ import { links } from "../assets/links.js";
 
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
-import Cta from "../components/Cta.vue";
-// import Ticker from "../components/Ticker.vue";
 import Teaser from "../components/Teaser.vue";
 import Topics from "../components/Topics.vue";
 import TeaserIntro from "../components/TeaserIntro.vue";
-import Partners from "../components/Partners.vue";
 import Projects from "../components/Projects.vue";
 import Schedule from "../components/Schedule.vue";
 import Newsletter from "../components/Newsletter.vue";
 import Paragraph from "../components/Paragraph.vue";
 import SmartcityParagraph from "../components/SmartcityParagraph.vue";
-// import Announcements from "../components/Announcements.vue";
 import HandbuchTeaser from "../components/HandbuchTeaser.vue";
-import Button from "../components/Button.vue";
 
-import axios from "axios";
 import { mapState } from "vuex";
 
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
@@ -71,16 +62,11 @@ import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
 export default {
   components: {
     Navigation,
-    Cta,
     Schedule,
     Paragraph,
     SmartcityParagraph,
-    // Announcements,
-    // Ticker,
-    Button,
     Footer,
     Topics,
-    Partners,
     TeaserIntro,
     Teaser,
     Projects,
@@ -103,6 +89,25 @@ export default {
     },
     ...mapState(["offset"]),
   },
+  mounted() {
+    if (process.browser) {
+      window.addEventListener("hashchange", () => {
+        if (!this.offset) {
+          window.scrollTo(window.scrollX, window.scrollY - 75);
+          this.setOffset(true);
+        } else if (this.offset) {
+          window.scrollTo(window.scrollX, window.scrollY);
+        }
+      });
+
+      window.addEventListener("scroll", this.handleScroll);
+    }
+  },
+  destroyed() {
+    if (process.browser) {
+      window.removeEventListener("scroll", this.handleScroll);
+    }
+  },
   methods: {
     handleScroll() {
       this.scrollFunction();
@@ -124,26 +129,6 @@ export default {
     setOffset(boolean) {
       this.$store.dispatch("SET_OFFSET", boolean);
     },
-  },
-  mounted() {
-    if (process.browser) {
-      window.addEventListener("hashchange", () => {
-        if (!this.offset) {
-          window.scrollTo(window.scrollX, window.scrollY - 75);
-          this.setOffset(true);
-        } else if (this.offset) {
-          window.scrollTo(window.scrollX, window.scrollY);
-        }
-      });
-
-      window.addEventListener("scroll", this.handleScroll);
-    }
-    const test = this;
-  },
-  destroyed() {
-    if (process.browser) {
-      window.removeEventListener("scroll", this.handleScroll);
-    }
   },
 };
 </script>
