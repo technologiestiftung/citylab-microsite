@@ -7,10 +7,6 @@ export const content = {
   jobs,
   announcements,
   resources,
-  config: {
-    sheetUrlEvents:
-      "https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json",
-  },
   de: {
     otherevents: [
       {

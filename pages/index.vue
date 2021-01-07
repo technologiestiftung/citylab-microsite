@@ -32,13 +32,7 @@
       topic="exhibition"
       subtopic="teaser"
     />
-    <Schedule
-      v-if="eventsVisible"
-      :lang="lang"
-      :content="content"
-      :direct="direct"
-      :links="links"
-    />
+    <Schedule :lang="lang" :content="content" :direct="direct" :links="links" />
     <Newsletter :lang="lang" :content="content" :direct="direct" />
     <!-- <Partners :lang="lang" :content="content" :direct="direct"/> -->
     <!-- <Cta :lang="lang" :content="content"/> -->
@@ -103,41 +97,9 @@ export default {
       obj: [],
     };
   },
-  beforeCreate() {
-    // TODO: wrap that
-
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1OB2kDr4rAyGZ_LuntV1ao7FeA4_vZgP95arR5RGk7M4/od6/public/values?alt=json`
-      )
-      .then((res) => {
-        let entries = res.data.feed.entry;
-
-        this.entries = entries;
-
-        entries.forEach((entry) => {
-          let obj = {
-            time: entry.gsx$datetime.$t,
-            title: entry.gsx$eventname.$t,
-            visible: entry.gsx$visible.$t,
-          };
-          this.obj.push(obj);
-        });
-      });
-  },
   computed: {
     arrowUp() {
       return faArrowAltCircleUp;
-    },
-    eventsVisible() {
-      let val = false;
-      this.obj.forEach((entry) => {
-        if (entry.visible == "TRUE") {
-          val = true;
-        }
-      });
-
-      return val;
     },
     ...mapState(["offset"]),
   },
