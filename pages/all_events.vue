@@ -4,17 +4,15 @@
       :lang="lang"
       :content="content"
       :direct="direct"
-      :anchorTags="true"
+      :anchor-tags="true"
     />
     <section class="section is-medium schedule">
       <div class="container" style="margin-top: 100px;">
         <span id="btn-2019" class="year-btn" @click="setYear(2019)">2019</span>
-        <span id="btn-2020" class="year-btn" @click="setYear(2020)"
-          >2020</span
-        >
-        <span id="btn-2021" class="year-btn active" @click="setYear(2021)"
-          >2021</span
-        >
+        <span id="btn-2020" class="year-btn" @click="setYear(2020)">2020</span>
+        <span id="btn-2021" class="year-btn active" @click="setYear(2021)">
+          2021
+        </span>
       </div>
       <div
         v-if="dataUpcoming.length > 0"
@@ -27,9 +25,10 @@
 
         <div class="schedule-wrapper">
           <a
+            v-for="entry in dataUpcoming"
+            :key="entry['title'] + entry['date']"
             class="event-tile"
             :href="entry['link']"
-            v-for="entry in dataUpcoming"
           >
             <article class="dates-item" style="width: 100%;">
               <div class="date-wrapper">
@@ -60,7 +59,12 @@
         </h1>
 
         <div class="schedule-wrapper">
-          <a class="event-tile" :href="entry['link']" v-for="entry in dataPast">
+          <a
+            v-for="entry in dataPast"
+            :key="entry['title'] + entry['date']"
+            class="event-tile"
+            :href="entry['link']"
+          >
             <article class="dates-item" style="width: 100%;">
               <div class="date-wrapper">
                 <span class="date-month"> {{ entry.month }} </span>
@@ -100,12 +104,12 @@ import Matomo from "../components/Matomo.vue";
 import sortDates from "../mixins/sortDates.js";
 
 export default {
-  mixins: [sortDates],
   components: {
     Navigation,
     Footer,
     Matomo,
   },
+  mixins: [sortDates],
   data() {
     return {
       lang: "de",
@@ -129,7 +133,7 @@ export default {
       this.dataUpcoming = this.sortDatesChronologically(
         this.filterData(this.data, true)
       );
-      if (newValue === this.year) {
+      if (newValue != new Date().getFullYear()) {
         this.dataPast = this.sortDatesChronologically(
           this.filterData(this.data, false)
         );
@@ -177,6 +181,26 @@ export default {
             link: entry.link,
           };
           this.data.push(obj);
+        });
+
+        this.data.push({
+          day: 3,
+          month: "Jan",
+          format: "yo",
+          date: "2021-01-03",
+          time: "09:00 - 10:00",
+          title: "Test title",
+          link: "link",
+        });
+
+        this.data.push({
+          day: 6,
+          month: "Jan",
+          format: "yo",
+          date: "2021-01-06",
+          time: "09:00 - 10:00",
+          title: "Test title",
+          link: "link",
         });
 
         this.dataUpcoming = this.filterData(this.data, true);
@@ -345,10 +369,6 @@ export default {
       @include mobile {
         display: none;
       }
-    }
-
-    &:last-of-type {
-      // border-bottom: 1px solid $color-primary--medium;
     }
   }
 
