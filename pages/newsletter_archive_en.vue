@@ -43,12 +43,12 @@
           <div class="column">
             <div>
               <h1 class="title">
-                Anmeldung Newsletter
+                Newsletter Signup
               </h1>
               <h2 class="subtitle">
-                Du möchtest über aktuelle Veranstaltungen und Projekte des
-                CityLABs informiert werden? Melde dich für unseren monatlichen
-                Newsletter an und bleib immer auf dem neusten Stand.
+                Would you like to be informed about current CityLAB events and
+                projects? Subscribe to our monthly newsletter and stay up to
+                date.
               </h2>
             </div>
           </div>
