@@ -1,36 +1,34 @@
 <template>
-  <section class="section is-medium newsletter" id="newsletter">
+  <section id="newsletter" class="section is-medium newsletter">
     <div class="container">
       <div>
         <h1 class="title">
           {{ content[lang]["register"]["intro"]["title"] }}
         </h1>
 
-        <h2 class="subtitle" style="margin-top: 100px">
+        <h2 class="subtitle" style="margin-top: 100px;">
           {{ content[lang]["register"]["intro"]["subtitle"] }}
         </h2>
       </div>
 
       <div class="register-wrapper">
-        <SubscribeForm :content="formContent" @submit-data="handleSubscribe"  />
+        <SubscribeForm :content="formContent" @submit-data="handleSubscribe" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Button from "./Button";
 import SubscribeForm from "./forms/SubscribeForm";
 
-import subscriptionHandling from '../mixins/subscriptionHandling.js';
+import subscriptionHandling from "../mixins/subscriptionHandling.js";
 
 export default {
   name: "Newsletter",
-  mixins: [ subscriptionHandling ],
   components: {
-    Button,
-    SubscribeForm
+    SubscribeForm,
   },
+  mixins: [subscriptionHandling],
   props: ["content", "lang", "direct"],
   computed: {
     formContent() {
