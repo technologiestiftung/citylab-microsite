@@ -183,26 +183,6 @@ export default {
           this.data.push(obj);
         });
 
-        this.data.push({
-          day: 3,
-          month: "Jan",
-          format: "yo",
-          date: "2021-01-03",
-          time: "09:00 - 10:00",
-          title: "Test title",
-          link: "link",
-        });
-
-        this.data.push({
-          day: 6,
-          month: "Jan",
-          format: "yo",
-          date: "2021-01-06",
-          time: "09:00 - 10:00",
-          title: "Test title",
-          link: "link",
-        });
-
         this.dataUpcoming = this.filterData(this.data, true);
         this.dataPast = this.filterData(this.data, false);
 
