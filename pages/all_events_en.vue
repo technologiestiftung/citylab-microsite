@@ -116,11 +116,11 @@ export default {
     };
   },
   watch: {
-    year(newValue, previousValue) {
+    year(newValue, _previousValue) {
       this.dataUpcoming = this.sortDatesChronologically(
         this.filterData(this.data, true)
       );
-      if (newValue < previousValue) {
+      if (newValue === this.year) {
         this.dataPast = this.sortDatesChronologically(
           this.filterData(this.data, false)
         );
