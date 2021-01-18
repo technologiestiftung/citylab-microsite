@@ -1969,7 +1969,7 @@ export const content = {
         href_tsb: "https://www.technologiestiftung-berlin.de",
         svg_tsb: "/tsb.svg",
         text_sen: "Funded by",
-        href_sen: "https://www.technologiestiftung-berlin.de",
+        href_sen: "https://www.berlin.de/rbmskzl/en/",
         svg_sen: "/be-berlin-logo.svg",
       },
       open: {
