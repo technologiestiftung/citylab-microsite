@@ -39,6 +39,29 @@
           </a>
         </div>
 
+        <section class="columns newsletter">
+          <div class="column">
+            <div>
+              <h1 class="title">
+                Newsletter Signup
+              </h1>
+              <h2 class="subtitle">
+                Would you like to be informed about current CityLAB events and
+                projects? Subscribe to our monthly newsletter and stay up to
+                date.
+              </h2>
+            </div>
+          </div>
+          <div class="column">
+            <div class="register-wrapper">
+              <SubscribeForm
+                :content="formContent"
+                @submit-data="handleSubscribe"
+              />
+            </div>
+          </div>
+        </section>
+
         <h1 class="title" style="margin-top: 100px;">
           {{ content[lang]["newsletter_archive"]["title"] }}
         </h1>
@@ -83,6 +106,9 @@ import { content } from "../assets/content.js";
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
 import Matomo from "../components/Matomo.vue";
+import SubscribeForm from "../components/forms/SubscribeForm";
+
+import subscriptionHandling from "../mixins/subscriptionHandling.js";
 
 export default {
   name: "NewsletterArchive",
@@ -90,7 +116,9 @@ export default {
     Navigation,
     Footer,
     Matomo,
+    SubscribeForm
   },
+  mixins: [subscriptionHandling],
   data() {
     return {
       lang: "en",
@@ -100,6 +128,11 @@ export default {
       newsletterArchiveData: [],
       direct: "/newsletter_archive",
     };
+  },
+  computed: {
+    formContent() {
+      return this.content[this.lang]["register"];
+    },
   },
   methods: {
     getData(dataArray, sheetPageNumber) {
@@ -146,6 +179,9 @@ export default {
           dataArray.push(obj);
         });
       });
+    },
+    handleSubscribe(data) {
+      this.subscribe(data, this.content[this.lang]["register"]["token"]);
     },
   },
   created() {
@@ -301,5 +337,24 @@ h3.title.is-5 {
 h6.title {
   // color: $color-secondary;
   margin-top: 0 !important;
+}
+
+section.newsletter {
+  margin-top: 100px;
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.register-wrapper {
+  box-shadow: 0 2px 60px 0 rgba(47, 47, 162, 0.1);
+  padding: 30px;
+  background: white;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 </style>
