@@ -654,6 +654,13 @@ export const content = {
           title: "Projektmanager",
         },
         {
+          name: "Anne Möller",
+          mail: "moeller@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/anne_portrait.jpg",
+          title: "Kaufmännisches Projektmanagement",
+        },
+        {
           name: "Dennis Ostendorf",
           mail: "ostendorf@technologiestiftung-berlin.de",
           twitter: "",
@@ -1733,7 +1740,14 @@ export const content = {
           mail: "kossow@technologiestiftung-berlin.de",
           twitter: "",
           img_url: "/images/niklas_portrait.jpg",
-          title: "Projectmanagement",
+          title: "Project Manager",
+        },
+        {
+          name: "Anne Möller",
+          mail: "moeller@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/anne_portrait.jpg",
+          title: "Finance Project Manager",
         },
         {
           name: "Dennis Ostendorf",
