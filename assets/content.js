@@ -85,7 +85,7 @@ export const content = {
         date: "2021-01-26",
         format: "Präsentation",
         time: "14:00 - 16:00",
-        title: "Verwaltungspreis Review",
+        title: "Wie innovativ ist die Berliner Verwaltung?",
         link: "https://citylab-berlin.org/events/verwaltungspreis",
         visible: true,
       },
