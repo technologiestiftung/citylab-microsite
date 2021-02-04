@@ -136,7 +136,7 @@ export default {
   },
   head() {
     return {
-      title: "Wie innovativ ist die Berliner Verwaltung?",
+      title: "Wie innovativ ist die Berliner Verwaltung? | ",
       meta: [
         {
           hid: "description",
