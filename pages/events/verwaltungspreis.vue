@@ -66,40 +66,52 @@
         <div class="content-wrapper">
           <div class="presentations">
             <a href="/docs/verwaltungspreis2020/projekt2.pdf"
-              ><figure class="">
+              ><figure>
                 <img
                   src="/images/events/verwaltungspreis2020/projekt2.jpg"
-                  alt=""
-                /></figure
-            ></a>
+                  alt="Projekt 2"
+                />
+              </figure>
+              <figcaption>Projekt 2</figcaption></a
+            >
             <a href="/docs/verwaltungspreis2020/projekt3.pdf"
-              ><figure class="">
+              ><figure>
                 <img
                   src="/images/events/verwaltungspreis2020/projekt3.jpg"
-                  alt=""
-                /></figure
-            ></a>
+                  alt="Projekt 3"
+                />
+              </figure>
+              <figcaption>Projekt 3</figcaption></a
+            >
+          </div>
+          <div class="presentations" style="margin-top: 30px;">
             <a href="/docs/verwaltungspreis2020/projekt4.pdf"
-              ><figure class="">
+              ><figure>
                 <img
                   src="/images/events/verwaltungspreis2020/projekt4.jpg"
-                  alt=""
-                /></figure
-            ></a>
+                  alt="Projekt 4"
+                />
+              </figure>
+              <figcaption>Projekt 4</figcaption></a
+            >
             <a href="/docs/verwaltungspreis2020/projekt5.pdf"
-              ><figure class="">
+              ><figure>
                 <img
                   src="/images/events/verwaltungspreis2020/projekt5.jpg"
-                  alt=""
-                /></figure
-            ></a>
+                  alt="Projekt 5"
+                />
+              </figure>
+              <figcaption>Projekt 5</figcaption></a
+            >
             <a href="/docs/verwaltungspreis2020/projekt6.pdf"
-              ><figure class="">
+              ><figure>
                 <img
                   src="/images/events/verwaltungspreis2020/projekt6.jpg"
-                  alt=""
-                /></figure
-            ></a>
+                  alt="Projekt 6"
+                />
+              </figure>
+              <figcaption>Projekt 6</figcaption></a
+            >
           </div>
         </div>
         <Matomo />
@@ -262,7 +274,7 @@ h5.title {
 .presentations {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .presentations {
