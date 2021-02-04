@@ -141,7 +141,8 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Berliner Verwaltungspreis 2020",
+          content:
+            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
         },
         { hid: "fb:app_id", property: "fb:app_id", content: "487094758334595" },
         { hid: "og:type", property: "og:type", content: "website" },
@@ -159,7 +160,8 @@ export default {
         {
           hid: "og:description",
           property: "og:description",
-          content: "Berliner Verwaltungspreis 2020",
+          content:
+            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
         },
         {
           hid: "og:site_name",
@@ -199,7 +201,8 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "Berliner Verwaltungspreis 2020",
+          content:
+            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
         },
         {
           hid: "twitter:image",
@@ -215,7 +218,8 @@ export default {
         {
           hid: "description",
           itemprop: "description",
-          content: "Berliner Verwaltungspreis 2020",
+          content:
+            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
         },
         {
           hid: "image",
