@@ -81,6 +81,14 @@ export const content = {
         link: "https://citylab-berlin.org/events/kisprechstunde2",
         visible: true,
       },
+      {
+        date: "2021-01-26",
+        format: "Präsentation",
+        time: "14:00 - 16:00",
+        title: "Wie innovativ ist die Berliner Verwaltung?",
+        link: "https://citylab-berlin.org/events/verwaltungspreis",
+        visible: true,
+      },
     ],
     exhibition: {
       teaser: {
