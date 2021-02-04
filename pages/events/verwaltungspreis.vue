@@ -9,59 +9,19 @@
     />
     <HeroLight
       :image="'https://citylab-berlin.org/images/events/verwaltungspreis_hero.jpg'"
-      :title="'Wie innovativ ist die Berliner Verwaltung?'"
-      :sub-title="'Berliner Verwaltungspreis 2020'"
-      :sub-sub-title="'26.01.2021, 14-16 Uhr, online'"
+      :title="eventContent[lang].title"
+      :sub-title="eventContent[lang].subTitle"
+      :sub-sub-title="eventContent[lang].subSubTitle"
     />
     <section class="section is-medium event-content">
       <div class="container">
         <h4 class="title">
-          Einige Highlights des Berliner Verwaltungspreises 2020 stellen sich
-          vor.
+          {{ eventContent[lang].headline }}
         </h4>
-        <p class="event-intro">
-          2020 wurde erstmalig der Berliner Verwaltungspreis vergeben. In einer
-          gemeinsam mit dem CityLAB Berlin geplanten Online-Veranstaltung am 26.
-          Januar 2021 stellen sich nun ausgewählte Projekte vor. Hierbei
-          erfahren die Veranstaltungsteilnehmenden wie die Projekte bei ihrer
-          Arbeit vorgegangen sind und was die Beweggründe für die jeweiligen
-          Entwicklungen waren.
-        </p>
-        <p class="event-intro">
-          Die Teilnehmenden bekommen die Möglichkeit, Fragen an die
-          Referentinnen und Referenten zu stellen und in einen direkten
-          Austausch zu treten. <br /><br /><b>Eröffnung</b><br />Staatssekretär
-          Dr. Frank Nägele<br /><b>Moderation</b><br />Carla Wansing,
-          <i>Senatskanzlei </i>
-        </p>
+        <p v-html="eventContent[lang].paragraphOne" class="event-intro"></p>
+        <p v-html="eventContent[lang].paragraphTwo" class="event-intro"></p>
         <div class="content-wrapper">
-          <!---->
-          <p class="event-intro">
-            <b>Folgende Projekte stellen sich vor:</b><br />
-            - Onlinetools als bedarfsgerechtes Ergänzungsinstrument in der Krise
-            <i>(Landesamt für Einwanderung)</i><br />
-            - Steuerung der Platzkapazitäten
-            <i>(Senatsverwaltung für Integration, Arbeit und Soziales)</i><br />
-            - Verdienstausfall digital geltend machen – Onlineanträge ergänzen
-            das Corona-Soforthilfepaket des Senats
-            <i
-              >(Senatsverwaltung für Finanzen gemeinsam mit Senatsverwaltung für
-              Inneres)</i
-            ><br />
-            - Vom Antrag zur Genehmigung – Erteilung einer
-            Ausnahmezulassung/Genehmigung nach der Lärmschutzverordnung
-            <i>(Bezirksamt Tempelhof-Schöneberg)</i><br />
-            - Arbeit 4.0 in der Berliner Verwaltung „Arbeit mal anders –
-            zukunftsfähige Arbeitskultur in der Senatsverwaltung für Finanzen
-            und Innolab beim Bezirksamt Neukölln“
-            <i
-              >(Senatsverwaltung für Finanzen gem. mit dem Bezirksamt
-              Neukölln)</i
-            ><br />
-            - Einrichtung eines Ausbildungsbürgeramtes (ABüA) im Bezirksamt
-            Friedrichshain-Kreuzberg von Berlin
-            <i>(Bezirksamt Friedrichshain-Kreuzberg)</i><br />
-          </p>
+          <p v-html="eventContent[lang].paragraphThree" class="event-intro"></p>
         </div>
         <div class="content-wrapper">
           <div class="presentations">
@@ -124,7 +84,7 @@
 <script>
 import { content } from "../../assets/content.js";
 
-import { content as eventContent } from "../../assets/events/summerschool.js";
+import { content as eventContent } from "../../assets/events/verwaltungspreis.js";
 
 import Navigation from "../../components/Navigation.vue";
 import HeroLight from "../../components/HeroLight.vue";
@@ -148,20 +108,21 @@ export default {
   },
   head() {
     return {
-      title: "Wie innovativ ist die Berliner Verwaltung? | ",
+      title: eventContent[this.lang].title,
       meta: [
         {
           hid: "description",
           name: "description",
-          content:
-            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
+          content: `${eventContent[this.lang].subTitle} (${
+            eventContent[this.lang].subSubTitle
+          })`,
         },
         { hid: "fb:app_id", property: "fb:app_id", content: "487094758334595" },
         { hid: "og:type", property: "og:type", content: "website" },
         {
           hid: "og:title",
           property: "og:title",
-          content: "Wie innovativ ist die Berliner Verwaltung?",
+          content: eventContent[this.lang].title,
         },
         {
           hid: "og:image",
@@ -172,8 +133,9 @@ export default {
         {
           hid: "og:description",
           property: "og:description",
-          content:
-            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
+          content: `${eventContent[this.lang].subTitle} (${
+            eventContent[this.lang].subSubTitle
+          })`,
         },
         {
           hid: "og:site_name",
@@ -208,13 +170,14 @@ export default {
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: "Wie innovativ ist die Berliner Verwaltung?",
+          content: eventContent[this.lang].title,
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content:
-            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
+          content: `${eventContent[this.lang].subTitle} (${
+            eventContent[this.lang].subSubTitle
+          })`,
         },
         {
           hid: "twitter:image",
@@ -225,13 +188,14 @@ export default {
         {
           hid: "name",
           itemprop: "name",
-          content: "Wie innovativ ist die Berliner Verwaltung?",
+          content: eventContent[this.lang].title,
         },
         {
           hid: "description",
           itemprop: "description",
-          content:
-            "Berliner Verwaltungspreis 2020 (26.01.2021, 14-16 Uhr, online)",
+          content: `${eventContent[this.lang].subTitle} (${
+            eventContent[this.lang].subSubTitle
+          })`,
         },
         {
           hid: "image",
