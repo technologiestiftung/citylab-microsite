@@ -24,13 +24,14 @@
           href="https://www.youtube.com/watch?v=2MP1i8LJtpE&feature=youtu.be"
           target="_blank"
           rel="noopener noreferrer"
+          class="youtube-thumbnail"
         >
-          <figure class="image youtube-thumbnail">
+          <figure class="image">
             <img
               src="/images/events/verwaltungspreis2020/aufzeichnung.jpg"
               alt="Vorschau der Aufzeichnung der Präsentation"
             /></figure
-        ></a>
+        ><figcaption>Aufzeichnung</figcaption></a>
         <div class="content-wrapper">
           <p class="event-intro" v-html="eventContent[lang].paragraphThree" />
         </div>
@@ -231,12 +232,13 @@ h3.title {
   margin-top: 30px;
 }
 
-.image.youtube-thumbnail {
+.youtube-thumbnail {
+  display: block;
   width: 75%;
 }
 
 @media screen and (min-width: 768px) {
-  .image.youtube-thumbnail {
+  .youtube-thumbnail {
     width: 50%;
   }
 }
