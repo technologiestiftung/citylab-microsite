@@ -25,7 +25,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <figure class="image is-full">
+          <figure class="image youtube-thumbnail">
             <img
               src="/images/events/verwaltungspreis2020/aufzeichnung.jpg"
               alt="Vorschau der Aufzeichnung der Präsentation"
@@ -231,18 +231,13 @@ h3.title {
   margin-top: 30px;
 }
 
-.iframe-wrapper {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
+.image.youtube-thumbnail {
+  width: 75%;
+}
 
-  & > iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+@media screen and (min-width: 768px) {
+  .image.youtube-thumbnail {
+    width: 50%;
   }
 }
 
