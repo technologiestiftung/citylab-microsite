@@ -18,10 +18,22 @@
         <h4 class="title">
           {{ eventContent[lang].headline }}
         </h4>
-        <p v-html="eventContent[lang].paragraphOne" class="event-intro"></p>
-        <p v-html="eventContent[lang].paragraphTwo" class="event-intro"></p>
+        <p class="event-intro" v-html="eventContent[lang].paragraphOne" />
+        <p class="event-intro" v-html="eventContent[lang].paragraphTwo" />
+        <a
+          href="https://www.youtube.com/watch?v=2MP1i8LJtpE&feature=youtu.be"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="youtube-thumbnail"
+        >
+          <figure class="image">
+            <img
+              src="/images/events/verwaltungspreis2020/aufzeichnung.jpg"
+              alt="Vorschau der Aufzeichnung der Präsentation"
+            /></figure
+        ><figcaption>Aufzeichnung</figcaption></a>
         <div class="content-wrapper">
-          <p v-html="eventContent[lang].paragraphThree" class="event-intro"></p>
+          <p class="event-intro" v-html="eventContent[lang].paragraphThree" />
         </div>
         <div class="content-wrapper">
           <div class="presentations">
@@ -214,6 +226,21 @@ export default {
 h1.title,
 h3.title {
   color: $color-secondary;
+}
+
+.content-wrapper {
+  margin-top: 30px;
+}
+
+.youtube-thumbnail {
+  display: block;
+  width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .youtube-thumbnail {
+    width: 50%;
+  }
 }
 
 .event-content p {
