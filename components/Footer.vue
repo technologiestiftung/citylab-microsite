@@ -142,7 +142,7 @@
             >
 
             <a
-              class="flex flex-row m-b-sm logo"
+              class="flex flex-row m-b-sm logo logo__skzl"
               :href="`${content[lang]['footer']['funding']['href_sen']}`"
             >
               <img
@@ -284,6 +284,9 @@ h6.title {
 
     &:first-of-type {
       margin-bottom: 25px;
+    }
+    &.logo__skzl {
+      width: 120px;
     }
   }
 }
