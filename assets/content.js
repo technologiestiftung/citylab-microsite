@@ -888,7 +888,7 @@ export const content = {
         svg_tsb: "/tsb.svg",
         text_sen: "Gefördert durch",
         href_sen: "https://www.berlin.de/rbmskzl/",
-        svg_sen: "/be-berlin-logo.svg",
+        svg_sen: "/B_RBm_Skzl_Logo_DE_V_PT_RGB.svg",
       },
       open: {
         columntitle: "Besuchszeiten",
@@ -1973,12 +1973,12 @@ export const content = {
       },
       funding: {
         title: ".",
-        text_tsb: "A project from the",
+        text_tsb: "A project of",
         href_tsb: "https://www.technologiestiftung-berlin.de",
         svg_tsb: "/tsb.svg",
         text_sen: "Funded by",
         href_sen: "https://www.berlin.de/rbmskzl/en/",
-        svg_sen: "/be-berlin-logo.svg",
+        svg_sen: "/B_RBm_Skzl_Logo_DE_V_PT_RGB.svg",
       },
       open: {
         columntitle: "Visiting hours",
