@@ -55,7 +55,7 @@ export const smartcity = {
     Wir freuen uns, als CityLAB diesen Prozess aktiv zu begleiten. Gemeinsam mit unserer Community haben wir im letzten Jahr zahlreiche spannende Projekte realisiert und dabei vielfältige Erfahrungen gesammelt, die natürlich in die neue Smart City-Strategie einfließen sollen.
     <br/><br/>
     Um den Prozess möglichst transparent und partizipativ zu gestalten, werden wir in den nächsten Monaten verschiedene Beteiligungsformate anbieten. In einem ersten Schritt haben wir daher die untenstehenden Antragsunterlagen veröffentlicht.<br/><br/>
-Im nächsten Schritt geht es nun um die aktive Einbindung verschiedenster Akteur:innen in den Prozess. In diesem Kontext gibt es jetzt einen Call for Civil Society Engagement mit dem wir Euch einladen, selbst Online Workshops zu organisieren, um gemeinsam mit Vertreter:innen der Zivilgesellschaft eure Sicht und Vision für die Smart City Berlin einzubringen und zu beschreiben.<br/><br/>
+Im nächsten Schritt geht es nun um die aktive Einbindung verschiedenster Akteur:innen in den Prozess. In diesem Kontext gibt es jetzt einen Call for Civil Society Engagement mit dem wir Euch einladen, selbst Online Workshops zu organisieren, um gemeinsam mit Vertreter:innen der Zivilgesellschaft Eure Sicht und Vision für die Smart City Berlin einzubringen und zu beschreiben.<br/><br/>
 Ihr möchtet mit dabei sein? <a rel="noopener noreferrer" target="_blank" href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2020/pressemitteilung.988471.php">Hier gibt es nähere Informationen und das Bewerbungsformular!</a>
     `,
   },
