@@ -126,12 +126,14 @@
             <span> {{ content[lang]["footer"]["funding"]["text_tsb"] }}</span>
 
             <a
-              class="flex flex-row m-b-sm logo"
+              class="m-b-sm logo"
+              style="display: block;"
               :href="`${content[lang]['footer']['funding']['href_tsb']}`"
             >
               <img
                 :src="`${content[lang]['footer']['funding']['svg_tsb']}`"
-                alt=""
+                alt="Logo der Technologiestiftung Berlin"
+                style="display: inline-block; width: 120px;"
               />
             </a>
 
@@ -142,12 +144,14 @@
             >
 
             <a
-              class="flex flex-row m-b-sm logo logo__skzl"
+              class="m-b-sm logo"
+              style="display: block;"
               :href="`${content[lang]['footer']['funding']['href_sen']}`"
             >
               <img
                 :src="`${content[lang]['footer']['funding']['svg_sen']}`"
-                alt=""
+                alt="Logo der Senatskanzlei"
+                style="display: inline-block; width: 120px;"
               />
             </a>
           </div>
@@ -215,9 +219,6 @@ export default {
     directPress() {
       return this.directs[this.lang].press;
     },
-    directDownloads() {
-      return this.directs[this.lang].downloads;
-    },
     directGoogleMaps() {
       return "https://www.google.de/maps/@52.4843705,13.3836835,16.65z";
     },
@@ -284,9 +285,6 @@ h6.title {
 
     &:first-of-type {
       margin-bottom: 25px;
-    }
-    &.logo__skzl {
-      width: 120px;
     }
   }
 }
