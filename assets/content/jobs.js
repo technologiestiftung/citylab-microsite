@@ -18,24 +18,6 @@ export const jobs = {
   jobs: [
     {
       headline: {
-        en: "Community Management (x/f/m)",
-        de: "Community Management (x/w/m)",
-      },
-      worktype: {
-        en: "24-32h per week",
-        de: "24-32 Stunden/ Woche",
-      },
-      description: {
-        en:
-          "Zum Januar 2021 suchen wir Verstärkung im Bereich Community Management. Deine Aufgaben: Du stehst im ständigen Austausch mit unseren Co-Worker*innen und Partnerorganisationen und unterstützt diese bei der Umsetzung ihrer Vorhaben. Du entwickelst Partizipationsangebote zur breiten Beteiligung der Berliner Stadtgesellschaft am CityLAB und setzt diese eigenständig um. Du vertrittst das CityLAB nach außen, bearbeitest Kooperations- und Presseanfragen und fütterst unsere Social Media-Kanäle (Twitter, Instagram).",
-        de:
-          "Zum Januar 2021 suchen wir Verstärkung im Bereich Community Management. Deine Aufgaben: Du stehst im ständigen Austausch mit unseren Co-Worker*innen und Partnerorganisationen und unterstützt diese bei der Umsetzung ihrer Vorhaben. Du entwickelst Partizipationsangebote zur breiten Beteiligung der Berliner Stadtgesellschaft am CityLAB und setzt diese eigenständig um. Du vertrittst das CityLAB nach außen, bearbeitest Kooperations- und Presseanfragen und fütterst unsere Social Media-Kanäle (Twitter, Instagram).",
-      },
-      url:
-        "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201010_Community_Stellenanzeige.pdf",
-    },
-    {
-      headline: {
         en: "Working Student (x/f/m)",
         de: "Werkstudent*in (x/w/m)",
       },
