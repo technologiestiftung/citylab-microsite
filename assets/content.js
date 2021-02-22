@@ -669,6 +669,20 @@ export const content = {
           title: "Kaufmännisches Projektmanagement",
         },
         {
+          name: "Ines Weigand",
+          mail: "weigand@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/ines_portrait.jpg",
+          title: "Community Management",
+        },
+        {
+          name: "Lucas Vogel",
+          mail: "vogel@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/lucas_portrait.jpg",
+          title: "Technology & Prototyping",
+        },
+        {
           name: "Dennis Ostendorf",
           mail: "ostendorf@technologiestiftung-berlin.de",
           twitter: "",
@@ -1756,6 +1770,20 @@ export const content = {
           twitter: "",
           img_url: "/images/anne_portrait.jpg",
           title: "Finance Project Manager",
+        },
+        {
+          name: "Ines Weigand",
+          mail: "weigand@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/ines_portrait.jpg",
+          title: "Community Management",
+        },
+        {
+          name: "Lucas Vogel",
+          mail: "vogel@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/lucas_portrait.jpg",
+          title: "Technology & Prototyping",
         },
         {
           name: "Dennis Ostendorf",
