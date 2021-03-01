@@ -99,6 +99,10 @@
           />
         </div>
 
+        <div v-if="logo === 'TRUE'" class="content-wrapper">
+          <img :src="logoUrl" :alt="'Logo zum Projekt ' + title">
+        </div>
+
         <div class="logo-wrapper">
           <a
             :href="link"
@@ -276,6 +280,16 @@ export default {
       } else {
         return undefined;
       }
+    },
+    logo() {
+      if (this.data != null) {
+        return this.data.gsx$logo.$t;
+      } else {
+        return null;
+      }
+    },
+    logoUrl() {
+      return `/images/projects/${this.dirname}_logo.png`;
     },
   },
   methods: {
