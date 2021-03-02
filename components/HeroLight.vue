@@ -20,9 +20,6 @@
 <script>
 export default {
   name: "Hero",
-  components: {
-    // Three
-  },
   props: ["image", "title", "subTitle", "subSubTitle"],
   computed: {},
 };
