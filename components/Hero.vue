@@ -22,7 +22,6 @@
                 </div>
             </div> -->
         </section>
-        <!-- <Three :config="config" /> -->
     </section>
 </template>
 
@@ -33,9 +32,6 @@
     Vue.use(VueTypedJs);
 
     export default {
-        components: {
-            // Three
-        },
         name: 'Hero',
         computed: {
         },
