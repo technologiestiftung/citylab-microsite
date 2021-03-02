@@ -242,18 +242,25 @@
         top: 0px;
         width: 100vw;
         left: 0;
-        height: 100vh;
+        height: 100%;
+        min-height: 100vh;
         background: white;
         color: $color-primary;
+        z-index: 0;
+        overflow: scroll;
 
         section.section {
             height: 100%;
             display: flex;
-            align-items: center;
+            padding-bottom: 0;
         }
 
         .container {
             width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            padding-bottom: 50px;
             @include desktop {
                 // Sizes
                 &.is-medium {
@@ -285,8 +292,9 @@
     }
 
     .anchor-tags {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
         font-size: 36px;
         font-size: $size-3;
         color: $color-primary;
@@ -320,11 +328,10 @@
     }
 
     .social-wrapper {
-        display: flex;
-        width: 95px;
-        margin-top: 90px;
+        display: block;
+        width: 100%;
         padding: 0.5rem 0.75rem;
-        justify-content: space-between;
+        margin-top: 50px;
     }
 
     .navbar-end {
@@ -410,9 +417,20 @@
     }
   
     .navbar {
-        padding: .5rem 1.5rem;
+        padding: 0 1.5rem;
         background: none;
         // margin: 0;
+        & > .container {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            background-color: white;
+            z-index: 1;
+
+            @include desktop {
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+            }
+        }
 
         &-menu {
             color: $color-tertiary;
@@ -423,7 +441,7 @@
         @include desktop {
             // Sizes
             &.is-medium {
-            padding: .75rem 14rem;
+            padding: 0 14rem;
             }
         }
 
