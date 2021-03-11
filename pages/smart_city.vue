@@ -43,7 +43,7 @@ smartcity {
             :key="step.title[lang]"
           >
             <span>{{ step.date }}</span>
-            <h4>{{ step.title[lang] }}</h4>
+            <h4 v-html="step.title[lang]"></h4>
             <p v-html="step.description[lang]" />
           </li>
         </ul>
@@ -57,7 +57,7 @@ smartcity {
               :key="step.title[lang]"
             >
               <span>{{ step.date }}</span>
-              <h4>{{ step.title[lang] }}</h4>
+              <h4 v-html="step.title[lang]"></h4>
               <p v-html="step.description[lang]" />
             </li>
           </ul>
@@ -122,7 +122,8 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: "/images/smartcity/smart_city_social_ media.jpg",
+          content:
+            "https://citylab-berlin.org/images/smartcity/smart_city_social_ media.jpg",
         },
         {
           hid: "twitter:card",
@@ -143,7 +144,7 @@ export default {
           hid: "twitter:image",
           property: "twitter:image",
           content:
-            "https://citylab-berlin.org/images/handbuch/handbuch_social_media.jpg",
+            "https://citylab-berlin.org/images/smartcity/smart_city_social_ media.jpg",
         },
       ],
     };
@@ -167,9 +168,6 @@ h2.subtitle {
   color: $color-secondary;
 }
 
-p {
-  font-size: $size-medium;
-}
 section.hero {
   margin-top: 100px;
   .title {
@@ -236,7 +234,7 @@ ul.timeline {
     color: $color-primary;
   }
 
-  span:before {
+  span::before {
     content: url(/images/smartcity/icon_step.svg);
     width: 24px;
     position: absolute;
@@ -251,13 +249,6 @@ ul.timeline {
   p {
     margin-top: $spacing-s;
     color: $text;
-  }
-
-  a.doc:before {
-    content: url(/images/smartcity/document.svg);
-    width: 32px;
-    margin-right: 4px;
-    transform: translateY(4px);
   }
 }
 </style>
