@@ -46,7 +46,7 @@ export const smartcity = {
   },
   description: {
     en: ``,
-    de: `Im Programm „Modellprojekte Smart Cities“ entwickelt Berlin eine neue, ambitionierte Smart City-Strategie. Dabei stehen Partizipation, Menschen und Werte im Vordergrund. Die Strategie entsteht deshalb im Dialog mit Berlins diverser Stadtgesellschaft entstehen - weg von einem rein technologischen Fokus, hin zu Mitgestaltung und Einbeziehung.
+    de: `Im Programm „Modellprojekte Smart Cities“ entwickelt Berlin eine neue, ambitionierte Smart City-Strategie. Dabei stehen Partizipation, Menschen und Werte im Vordergrund. Die Strategie entsteht deshalb im Dialog mit Berlins diverser Stadtgesellschaft - weg von einem rein technologischen Fokus, hin zu Mitgestaltung und Einbeziehung.
     <br><br>
     Mit dieser Idee hatte sich Berlin erfolgreich beim BMI als Modellprojekt Smart City beworben und hat nun die Chance, dieses Vorhaben in den kommenden Jahren umzusetzen.
     <br><br>
@@ -75,16 +75,13 @@ export const smartcity = {
       },
       steps: [
         {
-          date: "15.03.2021",
+          date: "15.03.2021  - 31.03.2021",
           title: {
-            de: "Online-Beteiligung für alle Berliner:innen auf mein.berlin.",
+            de: "Online-Beteiligung für alle Berliner:innen auf mein.berlin.de",
             en: "",
           },
           description: {
-            de: `Die Online-Ideensammlung richtet sich an alle Berliner:innen und wird in vier verschiedenen Sprachen angeboten. Hierfür werden Umfragetools, sowie mein.berlin.de genutzt.
-            <br><br>
-            Durch Workshops mit verschiedenen Gruppen (Wirtschaft, Verwaltung, Zivilgesellschaft, Studierende) werden die jeweiligen Perspektiven eingebunden. Dabei sind die Workshops immer nach der gleichen Struktur aufgebaut und erarbeiten Zukunftsbilder, identifizieren Hindernisse und entwickeln Ideen zur Herangehensweise.
-            `,
+            de: `Die Online-Ideensammlung richtet sich an alle Berliner:innen und wird in vier verschiedenen Sprachen angeboten. Hierfür werden Umfragetools, sowie mein.berlin.de genutzt.`,
             en: ``,
           },
         },
@@ -124,11 +121,11 @@ export const smartcity = {
         {
           date: "23. & 24.3.2021",
           title: {
-            de: `@International Smart City Symposium "Redefining the Smart City" - Online Veranstaltung auf Hopin.to in englischer Sprache`,
+            de: `@International Smart City Symposium "Redefining the Smart City" - Online Veranstaltung auf <a href="https://hopin.com/events/international-smart-city-symposium">Hopin.to</a> in englischer Sprache`,
             en: "",
           },
           description: {
-            de: `Das Symposium, das gemeinsam mit der Berliner Senatskanzlei, und dem Centre for Digital Governance der Hertie School veranstaltet wird, gibt einen Überblick über den aktuellen Stand der Forschung zu Smart Cities. 
+            de: `Das <aHopin.to href="https://www.citylab-berlin.org/events/smart-city-symposium/">Symposium</aHopin.to>, das gemeinsam mit der Berliner Senatskanzlei, und dem Centre for Digital Governance der Hertie School veranstaltet wird, gibt einen Überblick über den aktuellen Stand der Forschung zu Smart Cities. 
             <br><br>
             Die Veranstaltung bietet allen, die sich für Smart Cities interessieren, ein Forum zum Zuhören, Lernen, Präsentieren und Diskutieren von aktueller Forschung, Strategien und Erfolgsgeschichten.
             <br><br>
@@ -143,7 +140,7 @@ export const smartcity = {
             en: "",
           },
           description: {
-            de: `Das CityLAB Berlin lädt studierende ein Ideen und Gedanken im Rahmen eines Workshops einzubringen. Denn die Zukunft unserer Stadt geht uns alle an. Dieser Workshop am 25. März richtet sich gezielt an Studierende Berliner Hochschulen, um ihre Perspektiven auf die Smart City zu hören. 
+            de: `Das CityLAB Berlin lädt Studierende ein Ideen und Gedanken im Rahmen eines Workshops einzubringen. Denn die Zukunft unserer Stadt geht uns alle an. Dieser Workshop am 25. März richtet sich gezielt an Studierende aller Berliner Hochschulen. 
             <br><br>
             <a class="button is-color-secondary is-normal" href="https://www.citylab-berlin.org/events/smart-city-studierende/">Zur Veranstaltung</a>
             `,
