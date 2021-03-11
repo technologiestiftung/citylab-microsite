@@ -34,118 +34,35 @@ smartcity {
         <h1 class="title" v-html="content.smartcity.title[lang]" />
         <h2 class="subtitle" v-html="content.smartcity.subtitle[lang]" />
         <p v-html="content.smartcity.description[lang]" />
+        <h3 class="title" style="margin-top: 40px;">
+          {{ content.smartcity.timeline.upcoming.title[lang] }}
+        </h3>
+        <ul class="timeline">
+          <li
+            v-for="step in content.smartcity.timeline.upcoming.steps"
+            :key="step.title[lang]"
+          >
+            <span>{{ step.date }}</span>
+            <h4>{{ step.title[lang] }}</h4>
+            <p v-html="step.description[lang]" />
+          </li>
+        </ul>
+        <details style="margin-top: 40px;">
+          <summary class="title">
+            {{ content.smartcity.timeline.past.title[lang] }}
+          </summary>
+          <ul class="timeline">
+            <li
+              v-for="step in content.smartcity.timeline.past.steps"
+              :key="step.title[lang]"
+            >
+              <span>{{ step.date }}</span>
+              <h4>{{ step.title[lang] }}</h4>
+              <p v-html="step.description[lang]" />
+            </li>
+          </ul>
+        </details>
         <Matomo />
-      </div>
-    </section>
-    <section class="section is-medium downloads">
-      <div class="container">
-        <div class="columns">
-          <div class="column">
-            <div class="tile column is-ancestor">
-              <div class="tile is-6 is-parent">
-                <div class="tile">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    :href="content.smartcity.downloads.main.url"
-                  >
-                    <figure class="image is-128x128">
-                      <svg
-                        class="document"
-                        height="128"
-                        viewBox="0 0 21 21"
-                        width="128"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g
-                          fill="none"
-                          fill-rule="evenodd"
-                          stroke="#2a2e3b"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          transform="translate(4 3)"
-                        >
-                          <path
-                            d="m12.5 12.5v-7l-5-5h-5c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h8c1.1045695 0 2-.8954305 2-2z"
-                          />
-                          <path d="m2.5 7.5h5" />
-                          <path d="m2.5 9.5h7" />
-                          <path d="m2.5 11.5h3" />
-                          <path d="m7.5.5v3c0 1.1045695.8954305 2 2 2h3" />
-                        </g>
-                      </svg>
-
-                      <!-- <img
-                        :src="content.smartcity.downloads.main.img.url"
-                        :alt="content.smartcity.downloads.main.img.alt[lang]"
-                      /> -->
-                    </figure>
-                  </a>
-                </div>
-                <div class="tile is-vertical is-parent is-8">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link-title__downloads"
-                    :href="content.smartcity.downloads.main.url"
-                  >
-                    <h3
-                      class="title title__downloads"
-                      v-html="content.smartcity.downloads.title[lang]"
-                    />
-                  </a>
-                  <div class="content">
-                    <p v-html="content.smartcity.downloads.description[lang]" />
-                  </div>
-                </div>
-              </div>
-              <div class="tile is-5 is-parent">
-                <ul class="list__downloads">
-                  <li
-                    v-for="(item, itemIndex) in additionalDownloads"
-                    :key="itemIndex"
-                    class="list-item__downloads"
-                  >
-
-                    <a
-                      class="button is-color-secondary is-normal button__downloads"
-                      :href="item.url"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <figure class="image is-32x32">
-                      <svg
-                        class="document"
-                        height="32"
-                        viewBox="0 0 21 21"
-                        width="32"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g
-                          fill="none"
-                          fill-rule="evenodd"
-                          stroke="#2a2e3b"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          transform="translate(4 3)"
-                        >
-                          <path
-                            d="m12.5 12.5v-7l-5-5h-5c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h8c1.1045695 0 2-.8954305 2-2z"
-                          />
-                          <path d="m2.5 7.5h5" />
-                          <path d="m2.5 9.5h7" />
-                          <path d="m2.5 11.5h3" />
-                          <path d="m7.5.5v3c0 1.1045695.8954305 2 2 2h3" />
-                        </g>
-                      </svg>
-                    </figure>
-                    {{item.text[lang]}}</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <Footer :lang="lang" :content="content" />
@@ -285,42 +202,6 @@ section.hero {
     align-items: center;
   }
 }
-.section.downloads {
-  background-color: $color-primary;
-  color: $white;
-}
-.section.downloads > * p {
-  color: $white;
-}
-h3.title__downloads {
-  color: $white !important;
-  transition: text-decoration 0.2s ease-in;
-}
-h3.title__downloads:hover {
-  text-decoration: underline;
-}
-ul.list__downloads {
-  margin: auto;
-}
-li.list-item__downloads {
-  padding-bottom: 1rem !important;
-}
-a.button__downloads {
-  width: 100%;
-  font-size: 20px !important;
-  background-color: #f64c72;
-  justify-content: left;
-}
-
-svg.document {
-  transition: all 0.2s ease-in-out;
-}
-svg.document > * path {
-  fill: $white;
-}
-svg.document:hover {
-  transform: scale(1.1);
-}
 .button {
   &--wrapper {
     width: 100%;
@@ -335,6 +216,48 @@ svg.document:hover {
   &:hover {
     background: #f97996 !important;
     @include transition;
+  }
+}
+
+summary.title {
+  font-size: $size-3;
+  color: $color-secondary;
+}
+
+ul.timeline {
+  padding-left: $spacing-m;
+  border-left: 1px solid $color-primary;
+
+  li {
+    margin-top: $spacing-l;
+  }
+
+  span {
+    color: $color-primary;
+  }
+
+  span:before {
+    content: url(/images/smartcity/icon_step.svg);
+    width: 24px;
+    position: absolute;
+    left: calc(8px - #{$spacing-m});
+  }
+
+  h4 {
+    font-size: $size-4;
+    color: $color-primary;
+  }
+
+  p {
+    margin-top: $spacing-s;
+    color: $text;
+  }
+
+  a.doc:before {
+    content: url(/images/smartcity/document.svg);
+    width: 32px;
+    margin-right: 4px;
+    transform: translateY(4px);
   }
 }
 </style>
