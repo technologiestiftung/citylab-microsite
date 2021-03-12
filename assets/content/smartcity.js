@@ -121,7 +121,7 @@ export const smartcity = {
         {
           date: "23. & 24.3.2021",
           title: {
-            de: `@International Smart City Symposium "Redefining the Smart City" - Online Veranstaltung auf <a href="https://hopin.com/events/international-smart-city-symposium">Hopin.to</a> in englischer Sprache`,
+            de: `International Smart City Symposium "Redefining the Smart City" - Online Veranstaltung auf <a href="https://hopin.com/events/international-smart-city-symposium">Hopin.to</a> in englischer Sprache`,
             en: "",
           },
           description: {
