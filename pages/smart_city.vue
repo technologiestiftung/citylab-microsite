@@ -96,9 +96,6 @@ export default {
     headSubtitle() {
       return this.content.smartcity.hero.subTitle[this.lang];
     },
-    additionalDownloads() {
-      return this.content.smartcity.downloads.additional;
-    },
   },
   head() {
     return {
