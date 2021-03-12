@@ -17,12 +17,12 @@ export const smartcity = {
   },
   hero: {
     title: {
-      en: "The start of a new smart city strategy",
-      de: "Auf dem Weg zu einer neuen Smart-City-Strategie",
+      en: "Berlin named a smart city model project!",
+      de: "Berlin wird Modellprojekt Smart City!",
     },
     subTitle: {
-      en: "",
-      de: "",
+      en: "The start of a new smart city strategy",
+      de: "Auf dem Weg zu einer neuen Smart-City-Strategie",
     },
     subSubTitle: {
       en: "",
