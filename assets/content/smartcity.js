@@ -98,8 +98,14 @@ export const smartcity = {
             en: "Online participation for all Berliners on mein.berlin.de",
           },
           description: {
-            de: `Die Online-Ideensammlung richtet sich an alle Berliner:innen und wird in fünf verschiedenen Sprachen angeboten. Hierfür werden Umfragetools, sowie mein.berlin.de genutzt.`,
-            en: `Berliners from all walks of life will have the chance to share their opinions on the smart city process through online surveys and the mein.berlin.de platform. The survey will be available  in five different languages.`,
+            de: `Die Umfrage wird in Deutsch, Englisch, Türkisch, Polnisch, Russisch und Arabisch angeboten. Hierfür werden Umfragetools, sowie mein.berlin.de genutzt.
+                <br><br>
+                <a class="button is-color-secondary is-normal" href="https://mein.berlin.de/projekte/smart-city-strategie-berlin/">Zur Umfrage</a>
+                `,
+            en: `Berliners from all walks of life will have the chance to share their opinions on the smart city process through online surveys and the mein.berlin.de platform. The survey will be available in German, English, Turkish, Polish, Russian, and Arabic.
+                 <br><br>
+                 <a class="button is-color-secondary is-normal" href="https://mein.berlin.de/projekte/smart-city-strategie-berlin/">Go to survey</a>
+                 `,
           },
         },
         {
