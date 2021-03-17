@@ -676,6 +676,13 @@ export const content = {
           title: "Community Management",
         },
         {
+          name: "Tobias Witt",
+          mail: "witt@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/tobias_portrait.jpg",
+          title: "Service Designer",
+        },
+        {
           name: "Lucas Vogel",
           mail: "vogel@technologiestiftung-berlin.de",
           twitter: "",
@@ -702,6 +709,13 @@ export const content = {
           twitter: "juliazet0",
           img_url: "/images/julia_portrait.jpg",
           title: "Wissenschaftliche Mitarbeiterin",
+        },
+        {
+          name: "Christian Jamal Larsen",
+          mail: "larsen@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/christian_portrait.jpg",
+          title: "Werkstudent",
         },
         {
           name: "Yannick Mueller",
@@ -1779,6 +1793,13 @@ export const content = {
           title: "Community Management",
         },
         {
+          name: "Tobias Witt",
+          mail: "witt@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/tobias_portrait.jpg",
+          title: "Service Designer",
+        },
+        {
           name: "Lucas Vogel",
           mail: "vogel@technologiestiftung-berlin.de",
           twitter: "",
@@ -1805,6 +1826,13 @@ export const content = {
           twitter: "juliazet0",
           img_url: "/images/julia_portrait.jpg",
           title: "Research Associate",
+        },
+        {
+          name: "Christian Jamal Larsen",
+          mail: "larsen@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/christian_portrait.jpg",
+          title: "Working Student",
         },
         {
           name: "Yannick Mueller",
