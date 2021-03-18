@@ -90,7 +90,7 @@ export const content = {
         visible: true,
       },
       {
-        date: "2021-03-23-24",
+        date: "2021-03-23",
         format: "Symposium",
         time: "13:00 - 18:00",
         title: "International Smart City Symposium",
@@ -1218,7 +1218,7 @@ export const content = {
         visible: true,
       },
       {
-        date: "2021-03-23-24",
+        date: "2021-03-23",
         format: "Symposium",
         time: "13:00 - 18:00",
         title: "International Smart City Symposium",
