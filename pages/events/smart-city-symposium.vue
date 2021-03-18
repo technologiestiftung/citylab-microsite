@@ -31,7 +31,13 @@
           <div class="flex-container">
             <div class="content-block">
               <h5>Website</h5>
-              <span class="summary-text"><a href=https://www.hertie-school.org/en/events/23-03-2021-international-smart-city-symposium>https://www.hertie-school.org/en/events</a> </span>
+              <span class="summary-text"
+                ><a
+                  href="https://www.hertie-school.org/en/events/23-03-2021-international-smart-city-symposium"
+                  style="opacity: 1;"
+                  >https://www.hertie-school.org/en/events</a
+                >
+              </span>
             </div>
             <div class="content-block">
               <h5>Veranstalter</h5>
