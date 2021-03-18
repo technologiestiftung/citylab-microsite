@@ -1,6 +1,6 @@
 <template>
     <div>
-    <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="false" />
+    <Navigation :scrolled="true" :lang="lang" :content="content" :direct="direct" :anchorTags="true" />
     <HeroLight :image="'https://citylab-berlin.org/images/events/smart-city-symposium_hero.jpg'" :title="'International Smart City Symposium'" :subTitle="'Redefining the Smart City'" :subSubTitle="'23.-24.03.2021, 13-18 Uhr, Hopin'">
     </HeroLight>
         <section class="section is-medium event-content">
