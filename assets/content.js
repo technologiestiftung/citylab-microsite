@@ -89,6 +89,14 @@ export const content = {
         link: "https://citylab-berlin.org/events/verwaltungspreis",
         visible: true,
       },
+      {
+        date: "2021-03-23",
+        format: "Symposium",
+        time: "13:00 - 18:00",
+        title: "International Smart City Symposium",
+        link: "https://citylab-berlin.org/events/smart-city-symposium",
+        visible: true,
+      },
     ],
     exhibition: {
       teaser: {
@@ -1207,6 +1215,14 @@ export const content = {
         time: "13.30 - 15.30",
         title: "AI-consultation hours vol. II",
         link: "https://citylab-berlin.org/events/kisprechstunde2_en",
+        visible: true,
+      },
+      {
+        date: "2021-03-23",
+        format: "Symposium",
+        time: "13:00 - 18:00",
+        title: "International Smart City Symposium",
+        link: "https://citylab-berlin.org/events/smart-city-symposium-en",
         visible: true,
       },
     ],
