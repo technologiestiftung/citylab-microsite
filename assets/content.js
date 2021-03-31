@@ -251,7 +251,7 @@ export const content = {
     missionStatement: {
       title: "Unsere Mission",
       subtitle:
-        "Das CityLAB ist ein Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.",
+        "Das CityLAB ist ein öffentliches Experimentierlabor für die Stadt der Zukunft. Ein ständig wachsendes Netzwerk aus Verwaltung, Zivilgesellschaft, Wissenschaft und Start-ups arbeitet hier gemeinsam an neuen Ideen für ein lebens&shy;werteres Berlin. Das CityLAB vereint Elemente aus Digitalwerkstatt, Co-Working und Veranstaltungs&shy;raum zu einem Ort, an dem Partizipation und Innovation zusammengedacht werden. Wir sehen Digitalisierung als Chance, Prozesse neu zu denken, Barrieren abzubauen und neue Formen gesellschaftlicher Teilhabe zu schaffen. <br/><br/> Das CityLAB ist kein fertiges Konzept, sondern selbst ein Experiment, das kontinuierlich weiterentwickelt wird.",
       "statement-head": "Unsere Themen:",
       "statement1-title": "Inklusiv",
       "statement1-text":
@@ -1373,7 +1373,7 @@ export const content = {
       title: "Our Mission",
       "statement-head": "Our topics:",
       subtitle:
-        "The CityLAB is an experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it's a dynamic experiment intended to be continuously developed and re-imagined.",
+        "The CityLAB is a public experimental laboratory for the city of the future. Here, representatives from government, civil society, academia and start-ups collaboratively develop new ideas for how to both ensure and enhance the livability of Berlin as a city. The CityLAB combines elements of a digital workshop, a co-working space and event space into a single location where participation and innovation are jointly pursued. We see digitalization as an opportunity to re-think existing processes, dismantle social barriers and create new forms of civic participation. <br/><br/> The CityLAB is not a single, finalized concept. Rather, it's a dynamic experiment intended to be continuously developed and re-imagined.",
       "statement1-title": "Agile",
       "statement1-text":
         "We use agile methods and rapid prototyping to shorten the time from the initial idea to implementation and find solutions that meet users' needs.",
