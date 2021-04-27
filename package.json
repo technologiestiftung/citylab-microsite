@@ -31,7 +31,7 @@
     "cross-env": "5.2.1",
     "ics": "2.27.0",
     "nuxt": "2.15.4",
-    "nuxt-compress": "4.1.1",
+    "nuxt-compress": "5.0.0",
     "nuxt-fontawesome": "0.4.0",
     "v-lazy-image": "1.4.0",
     "vue-typed-js": "0.1.2"
