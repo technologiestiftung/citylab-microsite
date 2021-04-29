@@ -101,7 +101,9 @@ export const smartcity = {
             de: `Basierend auf euren Ideen und Meinungen haben wir einen strategischen Rahmen für die Smart City Berlin formuliert. Wir laden alle herzlich ein, diesen auf <a href="https://mein.berlin.de/projekte/smart-city-strategie-berlin/">mein.berlin.de</a> zu kommentieren und freuen uns über euer Feedback!
                 <br><br>
                 <a class="button is-color-secondary is-normal" href="https://mein.berlin.de/projekte/smart-city-strategie-berlin/">Zur Kommentierung</a>`,
-            en: "",
+            en: `Based on your ideas and opinions, we have formulated a strategic framework for a Smart City Berlin. All are invited to comment on the framework at <a href="https://mein.berlin.de/projekte/smart-city-strategie-berlin/">mein.berlin.de</a> (the city government’s participation platform). We’re looking forward to your feedback!
+            <br><br>
+            <a class="button is-color-secondary is-normal" href="https://mein.berlin.de/projekte/smart-city-strategie-berlin/">Go to mein.berlin.de</a>`,
           },
         },
       ],
@@ -126,7 +128,13 @@ export const smartcity = {
             Die Offenheit dieser Formate machte es möglich viele verschiedene Perspektiven in den Prozess einzubinden. Dabei sind diese jedoch nicht repräsentativ angelegt.
             <br><br>
             In einem nächsten Schritt werden die Ergebnisse nun gesichtet, sortiert und schriftlich aufbereitet. Auf der Basis dieser Ergebnisse entsteht die Erstfassung des Strategischen Rahmens, die ab dem 28.04. zur Kommentierung auf mein.berlin.de veröffentlicht wird.`,
-            en: "",
+            en: `Through workshops, interviews and surveys with a wide range of groups, we were able to gather insights into a broad spectrum of perspectives on the future of Berlin. During this process, we placed a particular emphasis on identifying and reaching out to the relevant city actors and target groups whose voices were particularly important to hear in this process and tailoring our outreach to their specific needs and circumstances. Our goal here was to ensure that all target groups and city actors – “silent” groups that are seldom heard from in participation processes, city administration, business, science and civil society – were not only heard, but also addressed in a way fitting for their needs and interests. This was a priority for us, because our intent is for the entire Smart City process to be as open as possible and to integrate as many diverse perspectives as possible.
+            <br><br>
+            The numbers: More than 1600 people participated in online surveys on the Smart City Berlin Strategic Framework,  and more than 250 stakeholders from civil society, Berlin's business community and administration participated in various workshops. In total, we conducted 35 interviews with both administrative leaders (10) and so-called silent groups (25). We also organized a scientific symposium that drew more than 360 experts and participants.
+            <br><br>
+            The openness of these formats allowed us to include many different perspectives in the process. However, these responses are not intended to be representative.
+            <br><br>
+            In the next step, the results will be assessed, sorted and documented in writing. Based on these results, we’ll draft a first version of the strategic framework, which will be available for comment on mein.berlin.de starting on 28 April.`,
           },
         },
         {
