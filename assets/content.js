@@ -739,6 +739,13 @@ export const content = {
           img_url: "/images/rikko_portrait.jpg",
           title: "Werkstudent",
         },
+        {
+          name: "Edouard Barthen",
+          mail: "barthen@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/edouard_portrait.jpg",
+          title: "Praktikant Urban Design",
+        },
       ],
     },
     cta: {
@@ -1863,6 +1870,13 @@ export const content = {
           twitter: "",
           img_url: "/images/rikko_portrait.jpg",
           title: "Working Student",
+        },
+        {
+          name: "Edouard Barthen",
+          mail: "barthen@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/edouard_portrait.jpg",
+          title: "Intern Urban Design",
         },
       ],
     },
