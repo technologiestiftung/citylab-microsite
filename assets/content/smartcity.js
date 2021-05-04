@@ -92,7 +92,7 @@ export const smartcity = {
       },
       steps: [
         {
-          date: "28.04. - 05.05.2021",
+          date: "28.04. - 08.05.2021",
           title: {
             de: "Online-Kommentierung",
             en: "Online commenting",
