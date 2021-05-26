@@ -92,6 +92,24 @@ export const smartcity = {
       },
       steps: [
         {
+          title: {
+            de: "Einbindung der Rückmeldungen",
+            en: "Integration of the feedback",
+          },
+          description: {
+            de: `Das von der Stadtgesellschaft gegebene Feedback der Online-Kommentierung wird zur Zeit in den strategischen Rahmen eingearbeitet, der anschließend an den Senat und das Abgeordnetenhaus geht und die Grundlage zur Ausarbeitung der Smart City-Strategie darstellt.`,
+            en: `The feedback provided by the urban community in the online commentary is currently being incorporated into the strategic framework, which will then go to the Senate and the House of Representatives and form the basis for the development of the Smart City Strategy.`,
+          },
+        },
+      ],
+    },
+    past: {
+      title: {
+        de: "Was bisher geschah:",
+        en: "What has happened so far:",
+      },
+      steps: [
+        {
           date: "28.04. - 08.05.2021",
           title: {
             de: "Online-Kommentierung",
@@ -106,14 +124,6 @@ export const smartcity = {
             <a class="button is-color-secondary is-normal" href="https://mein.berlin.de/projekte/smart-city-strategie-berlin/">Go to mein.berlin.de</a>`,
           },
         },
-      ],
-    },
-    past: {
-      title: {
-        de: "Was bisher geschah:",
-        en: "What has happened so far:",
-      },
-      steps: [
         {
           date: "31.03. - 28.04.2021",
           title: {
