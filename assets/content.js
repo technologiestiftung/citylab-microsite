@@ -670,6 +670,13 @@ export const content = {
           title: "Projektmanager",
         },
         {
+          name: "Anne Kruse",
+          mail: "kruse@technologiestiftung-berlin.de",
+          twitter: "Anne_K_Kruse",
+          img_url: "/images/anne-k_portrait.jpg",
+          title: "Wissenschaftliche Mitarbeiterin",
+        },
+        {
           name: "Anne Möller",
           mail: "moeller@technologiestiftung-berlin.de",
           twitter: "",
@@ -1800,6 +1807,13 @@ export const content = {
           twitter: "",
           img_url: "/images/niklas_portrait.jpg",
           title: "Project Manager",
+        },
+        {
+          name: "Anne Kruse",
+          mail: "kruse@technologiestiftung-berlin.de",
+          twitter: "Anne_K_Kruse",
+          img_url: "/images/anne-k_portrait.jpg",
+          title: "Research Associate",
         },
         {
           name: "Anne Möller",
