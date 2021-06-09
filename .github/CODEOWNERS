@@ -1,9 +1,1 @@
-* @dnsos
-
-static/images/docs/ @lucasoeth
-static/images/downloads/ @lucasoeth
-static/images/events/ @lucasoeth
-static/images/projects/ @lucasoeth
-
-assets/content.js @lucasoeth
-assets/content/* @lucasoeth
+* @dnsos @lucasoeth
