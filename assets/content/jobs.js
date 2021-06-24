@@ -12,14 +12,14 @@ export const jobs = {
     de: `Wir freuen uns auf deine Bewerbung an <a href="mailto:jobs@citylab-berlin.org">jobs@citylab-berlin.org</a>.`,
   },
   buttontext: {
-    en: "Download PDF",
-    de: "PDF herunterladen",
+    en: "Zum Stellenangebot",
+    de: "Zum Stellenangebot",
   },
   jobs: [
     {
       headline: {
         en: "Working Student (x/f/m)",
-        de: "Werkstudent*in (x/w/m)",
+        de: "Werkstudent*in (d/w/m)",
       },
       worktype: {
         en: "16-20h per week",
@@ -27,12 +27,84 @@ export const jobs = {
       },
       description: {
         en:
-          "Zur Unterstützung unseres Teams suchen wir ab Januar 2021 eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
         de:
-          "Zur Unterstützung unseres Teams suchen wir ab Januar 2021 eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
       },
       url:
         "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201010_Web-Entwickung_Studi_Stellenanzeige.pdf",
+    },
+    {
+      headline: {
+        en: "Public Service Coach (x/f/m)",
+        de: "Public Service Coach (d/w/m)",
+      },
+      worktype: {
+        en: "Voll- oder Teilzeit",
+        de: "Voll- oder Teilzeit",
+      },
+      description: {
+        en:
+          "Als Verstärkung für unser Smart City-Team suchen wir zum frühestmöglichen Zeitpunkt eine:n Public Service Coach (d/w/m), in Voll- oder Teilzeit.",
+        de:
+          "Als Verstärkung für unser Smart City-Team suchen wir zum frühestmöglichen Zeitpunkt eine:n Public Service Coach (d/w/m), in Voll- oder Teilzeit.",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/public-service-coach/",
+    },
+    {
+      headline: {
+        en: "Persönliche:r Referent:in (x/f/m)",
+        de: "Persönliche:r Referent:in (d/w/m)",
+      },
+      worktype: {
+        en: "32 - 40h",
+        de: "32 - 40h",
+      },
+      description: {
+        en:
+          "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
+        de:
+          "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/persoenlicher-referentin-citylab-berlin/",
+    },
+    {
+      headline: {
+        en: "Persönliche:r Referent:in (x/f/m)",
+        de: "Persönliche:r Referent:in (d/w/m)",
+      },
+      worktype: {
+        en: "32 - 40h",
+        de: "32 - 40h",
+      },
+      description: {
+        en:
+          "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
+        de:
+          "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/persoenlicher-referentin-citylab-berlin/",
+    },
+    {
+      headline: {
+        en: "Projektmanager:in (x/f/m)",
+        de: "Projektmanager:in(d/w/m)",
+      },
+      worktype: {
+        en: "Voll- oder Teilzeit",
+        de: "Voll- oder Teilzeit",
+      },
+      description: {
+        en:
+          "Als Verstärkung für das CityLAB Berlin suchen wir zum nächstmöglichen Zeitpunkt eine:n Projektmanager:in an der Schnittstelle von Nachhaltigkeit und Digitalisierung (Voll- oder Teilzeit).",
+        de:
+          "Als Verstärkung für das CityLAB Berlin suchen wir zum nächstmöglichen Zeitpunkt eine:n Projektmanager:in an der Schnittstelle von Nachhaltigkeit und Digitalisierung (Voll- oder Teilzeit).",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/projektmanagerin-citylab-berlin/",
     },
   ],
 };
