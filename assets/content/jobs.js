@@ -68,7 +68,7 @@ export const jobs = {
           "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
       },
       url:
-        "hhttps://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/persoenlicher-referentin-citylab-berlin/",
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/persoenlicher-referentin-citylab-berlin/",
     },
     {
       headline: {
@@ -86,7 +86,7 @@ export const jobs = {
           "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
       },
       url:
-        "hhttps://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/persoenlicher-referentin-citylab-berlin/",
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/persoenlicher-referentin-citylab-berlin/",
     },
     {
       headline: {
