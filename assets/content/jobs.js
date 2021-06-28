@@ -72,26 +72,8 @@ export const jobs = {
     },
     {
       headline: {
-        en: "Persönliche:r Referent:in (x/f/m)",
-        de: "Persönliche:r Referent:in (d/w/m)",
-      },
-      worktype: {
-        en: "32 - 40h",
-        de: "32 - 40h",
-      },
-      description: {
-        en:
-          "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
-        de:
-          "Zur Unterstützung der CityLAB-Leitung suchen wir zum nächstmöglichen Zeitpunkt eine:n persönliche:n Referent:in (80-100%).",
-      },
-      url:
-        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/persoenlicher-referentin-citylab-berlin/",
-    },
-    {
-      headline: {
         en: "Projektmanager:in (x/f/m)",
-        de: "Projektmanager:in(d/w/m)",
+        de: "Projektmanager:in (d/w/m)",
       },
       worktype: {
         en: "Voll- oder Teilzeit",
