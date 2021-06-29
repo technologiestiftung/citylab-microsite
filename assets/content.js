@@ -698,6 +698,13 @@ export const content = {
           title: "Service Designer",
         },
         {
+          name: "Edmundo Galindo",
+          mail: "galindo@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/edmundo_portrait.jpg",
+          title: "UX/UI Gestaltung",
+        },
+        {
           name: "Lucas Vogel",
           mail: "vogel@technologiestiftung-berlin.de",
           twitter: "",
@@ -752,6 +759,13 @@ export const content = {
           twitter: "",
           img_url: "/images/edouard_portrait.jpg",
           title: "Praktikant Urban Design",
+        },
+        {
+          name: "Nora Eilers",
+          mail: "eilers@technologiestiftung-berlin.de",
+          twitter: "",
+          img_url: "/images/nora_portrait.jpg",
+          title: "Werkstudent",
         },
       ],
     },
