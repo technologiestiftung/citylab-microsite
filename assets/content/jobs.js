@@ -19,17 +19,17 @@ export const jobs = {
     {
       headline: {
         en: "Working Student (x/f/m)",
-        de: "Werkstudent*in (d/w/m)",
+        de: "Werkstudent:in (d/w/m)",
       },
       worktype: {
         en: "16-20h per week",
-        de: "16-20 Stunden/ Woche",
+        de: "16-20 Stunden / Woche",
       },
       description: {
         en:
-          "Zur Unterstützung unseres Teams suchen wir eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
         de:
-          "Zur Unterstützung unseres Teams suchen wir eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
       },
       url:
         "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201010_Web-Entwickung_Studi_Stellenanzeige.pdf",
@@ -87,6 +87,24 @@ export const jobs = {
       },
       url:
         "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/projektmanagerin-citylab-berlin/",
+    },
+    {
+      headline: {
+        en: "Kaufmännische:r Projektmanager:in (x/f/m)",
+        de: "Kaufmännische:r Projektmanager:in (d/w/m)",
+      },
+      worktype: {
+        en: "Vollzeit (Elternzeitvertretung)",
+        de: "Vollzeit (Elternzeitvertretung)",
+      },
+      description: {
+        en:
+          "Als Verstärkung für das CityLAB suchen wir ab 1. September eine:n kaufmännische:n Projektmanager:in, in Vollzeit (Elternzeitvertretung).",
+        de:
+          "Als Verstärkung für das CityLAB suchen wir ab 1. September eine:n kaufmännische:n Projektmanager:in, in Vollzeit (Elternzeitvertretung).",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/kaufmaennischer-projektmanagerin-citylab-berlin/",
     },
   ],
 };
