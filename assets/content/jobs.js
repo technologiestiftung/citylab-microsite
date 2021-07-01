@@ -88,5 +88,23 @@ export const jobs = {
       url:
         "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/projektmanagerin-citylab-berlin/",
     },
+    {
+      headline: {
+        en: "Kaufmännische:r Projektmanager:in (x/f/m)",
+        de: "Kaufmännische:r Projektmanager:in (d/w/m)",
+      },
+      worktype: {
+        en: "Vollzeit (Elternzeitvertretung)",
+        de: "Vollzeit (Elternzeitvertretung)",
+      },
+      description: {
+        en:
+          "Als Verstärkung für das CityLAB suchen wir ab 1. September eine:n kaufmännische:n Projektmanager:in, in Vollzeit (Elternzeitvertretung).",
+        de:
+          "Als Verstärkung für das CityLAB suchen wir ab 1. September eine:n kaufmännische:n Projektmanager:in, in Vollzeit (Elternzeitvertretung).",
+      },
+      url:
+        "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/kaufmaennischer-projektmanagerin-citylab-berlin/",
+    },
   ],
 };
