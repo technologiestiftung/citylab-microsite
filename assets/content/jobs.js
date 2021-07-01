@@ -19,17 +19,17 @@ export const jobs = {
     {
       headline: {
         en: "Working Student (x/f/m)",
-        de: "Werkstudent*in (d/w/m)",
+        de: "Werkstudent:in (d/w/m)",
       },
       worktype: {
         en: "16-20h per week",
-        de: "16-20 Stunden/ Woche",
+        de: "16-20 Stunden / Woche",
       },
       description: {
         en:
-          "Zur Unterstützung unseres Teams suchen wir eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
         de:
-          "Zur Unterstützung unseres Teams suchen wir eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
       },
       url:
         "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201010_Web-Entwickung_Studi_Stellenanzeige.pdf",
