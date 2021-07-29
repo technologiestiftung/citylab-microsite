@@ -18,12 +18,12 @@ export const jobs = {
   jobs: [
     {
       headline: {
-        en: "Working Student (x/f/m)",
-        de: "Werkstudent:in (d/w/m)",
+        en: "Working Student Web Development (x/f/m)",
+        de: "Werkstudent:in Web-Entwicklung (d/w/m)",
       },
       worktype: {
-        en: "16-20h per week",
-        de: "16-20 Stunden / Woche",
+        en: "16 - 20h per week",
+        de: "16 - 20 Stunden / Woche",
       },
       description: {
         en:
@@ -105,6 +105,23 @@ export const jobs = {
       },
       url:
         "https://www.technologiestiftung-berlin.de/de/stiftung/stellenangebote/kaufmaennischer-projektmanagerin-citylab-berlin/",
+    },
+    {
+      headline: {
+        en: "Working Student Design (x/f/m)",
+        de: "Werkstudent:in Design (d/w/m)",
+      },
+      worktype: {
+        en: "16 - 20h per week",
+        de: "16 - 20 Stunden / Woche",
+      },
+      description: {
+        en:
+          "To support our team we are looking for a Working Student Design (16 - 20h per week)",
+        de:
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Design (16 - 20 Stunden / Woche).",
+      },
+      url: "https://www.citylab-berlin.org/docs/Werkstudent_Smart_City.pdf",
     },
   ],
 };
