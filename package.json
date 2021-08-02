@@ -29,7 +29,7 @@
     "@nuxtjs/bulma": "1.3.0",
     "axios": "0.21.1",
     "cross-env": "5.2.1",
-    "ics": "2.29.0",
+    "ics": "2.31.0",
     "nuxt": "2.15.7",
     "nuxt-compress": "5.0.0",
     "nuxt-fontawesome": "0.4.0",
