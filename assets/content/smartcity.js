@@ -102,12 +102,12 @@ export const smartcity = {
           description: {
             de: `Der Senat hat den Strategischen Rahmen, der als Grundlage für die neue Smart City-Strategie Berlins dienen soll, beschlossen. Mit dem Beschluss hat der Senat gleichzeitig Anmerkungen und Ergänzungen übermittelt – verbunden mit der Empfehlung, diese in der weiteren Erarbeitung der neuen Smart City-Strategie Berlins zu berücksichtigen. Die Erarbeitung der Smart City-Strategie wird ab Herbst starten und sich wieder mit verschiedenen Partizipationsmöglichkeiten an die gesamte Stadtgesellschaft wenden.
             <br><br>
-            <a class="button is-color-secondary is-normal" href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1103451.php">Zur Pressemitteilung</a>
+            <a class="button is-color-secondary is-normal" href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1112244.php">Zur Pressemitteilung</a>
             <br><br>
             <a class="button is-color-secondary is-normal" href="https://www.notion.so/politicsfortomorrow/Strategischer-Rahmen-f-r-die-Entwicklung-einer-neuen-Berliner-Smart-City-Strategie-2c78e625e846457bac1fc7f76e4b22ad#9ae7e252610b40bfb407b3a44a63d3a4">Zum Strategischen Rahmen</a>`,
             en: `The Senate has passed the strategic framework that will serve as the basis for Berlin's new smart city strategy. With the decision, the Senate has at the same time sent comments and additions - combined with the recommendation to take these into account in the further development of Berlin's new Smart City Strategy. The development of the Smart City Strategy will start in this fall and will again address the entire urban society with various participation opportunities.
             <br><br>
-            <a class="button is-color-secondary is-normal" href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1103451.php">To the press release (in german)</a>
+            <a class="button is-color-secondary is-normal" href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1112244.php">To the press release (in german)</a>
             <br><br>
             <a class="button is-color-secondary is-normal" href="https://www.notion.so/politicsfortomorrow/Strategischer-Rahmen-f-r-die-Entwicklung-einer-neuen-Berliner-Smart-City-Strategie-2c78e625e846457bac1fc7f76e4b22ad#9ae7e252610b40bfb407b3a44a63d3a4">To the strategic framework (in german)</a>`,
           },
