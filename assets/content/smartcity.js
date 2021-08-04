@@ -92,7 +92,7 @@ export const smartcity = {
       },
       steps: [
         {
-          date: "06.06.2021",
+          date: "03.08.2021",
           title: {
             de:
               "Senat beschließt Strategischen Rahmen für neue Smart City-Strategie",
