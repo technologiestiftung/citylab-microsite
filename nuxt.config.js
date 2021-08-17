@@ -2,58 +2,42 @@ import pkg from "./package";
 // import PurgecssPlugin from "purgecss-webpack-plugin";
 // import glob from "glob-all";
 // import path from "path";
-import { getSpreadsheet } from "./modules/getSpreadsheet";
+import projectsDeJson from "./static/data/spreadsheet-data/projects_de.json";
+import projectsEnJson from "./static/data/spreadsheet-data/projects_en.json";
+import eventsJson from "./static/data/spreadsheet-data/events.json";
 
 async function dynamicRoutes() {
-  try {
-    const result = Promise.all([
-      getSpreadsheet(`data/spreadsheet-data/events.json`), // events
-      getSpreadsheet(`data/spreadsheet-data/projects_de.json`), // projects
-      getSpreadsheet(`data/spreadsheet-data/projects_en.json`), // projects_en
-    ])
-      .then(([events, projects, projects_en]) => {
-        // do something with both responses
-        let entriesEvents = events;
-        let entriesProjects = projects;
-        let entriesProjectsEn = projects_en;
+  let entriesEvents = eventsJson;
+  let entriesProjects = projectsDeJson;
+  let entriesProjectsEn = projectsEnJson;
 
-        const eventRoutes = entriesEvents.map((entry) => {
-          if (entry && entry.dirName) {
-            return "/events/" + entry.dirName;
-          }
-          return;
-        });
+  const eventRoutes = entriesEvents.map((entry) => {
+    if (entry && entry.dirName) {
+      return "/events/" + entry.dirName;
+    }
+    return;
+  });
 
-        const projectRoutes = entriesProjects.map((entry) => {
-          if (entry && entry.dirName) {
-            return "/projects/" + entry.dirName;
-          }
-          return;
-        });
+  const projectRoutes = entriesProjects.map((entry) => {
+    if (entry && entry.dirName) {
+      return "/projects/" + entry.dirName;
+    }
+    return;
+  });
 
-        const projectEnRoutes = entriesProjectsEn.map((entry) => {
-          if (entry && entry.dirName) {
-            return "/projects_en/" + entry.dirName;
-          }
-          return;
-        });
+  const projectEnRoutes = entriesProjectsEn.map((entry) => {
+    if (entry && entry.dirName) {
+      return "/projects_en/" + entry.dirName;
+    }
+    return;
+  });
 
-        let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
-        all = all.filter((elem) => {
-          return elem !== undefined;
-        });
+  let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
+  all = all.filter((elem) => {
+    return elem !== undefined;
+  });
 
-        return all;
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-
-    return result;
-  } catch (error) {
-    console.error(error);
-    // throw error;
-  }
+  return all;
 }
 export default {
   generate: {
