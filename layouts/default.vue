@@ -1,24 +1,6 @@
 <template>
   <div>
     <nuxt />
-    <div class="technical-issues-note">
-      Aufgrund von Wartungsarbeiten werden einige Seiten momentan nicht korrekt
-      dargestellt. Wir arbeiten an einer Lösung. Aktuelle Veranstaltungshinweise
-      findet ihr auf unseren
-      <a
-        href="https://twitter.com/citylabberlin"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Twitter</a
-      >
-      - und
-      <a
-        href="https://www.instagram.com/citylabbln/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Instagram</a
-      >-Profilen.
-    </div>
   </div>
 </template>
 
@@ -82,14 +64,5 @@ html {
   z-index: 9999;
   font-size: 0.9rem;
   border-top: 2px solid white;
-}
-
-.technical-issues-note a {
-  color: white;
-  text-decoration: underline;
-}
-
-.technical-issues-note a:hover {
-  color: white;
 }
 </style>

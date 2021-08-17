@@ -102,7 +102,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import { getSpreadsheet } from "../modules/getSpreadsheet";
 import { content } from "../assets/content.js";
 
 import Navigation from "../components/Navigation.vue";
@@ -136,20 +136,20 @@ export default {
       return this.content[this.lang]["register"];
     },
   },
+  created() {
+    this.getData(this.newsData, `data/spreadsheet-data/news.json`);
+    this.getData(
+      this.newsletterArchiveData,
+      `data/spreadsheet-data/newsletter.json`
+    );
+  },
   methods: {
-    getData(dataArray, sheetPageNumber) {
-      // TODO: wrap that
-
-      let url =
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/` +
-        sheetPageNumber +
-        `/public/values?alt=json`;
-      axios.get(url).then((res) => {
-        let entries = res.data.feed.entry;
+    getData(dataArray, path) {
+      getSpreadsheet(path).then((entries) => {
         this.entries = entries;
 
         entries.forEach((entry) => {
-          const date = entry.gsx$date.$t;
+          const date = entry.date;
           const year = date.match(/(\d+)/)[0];
           let month = date.match(/[^\s]+/)[0];
 
@@ -171,12 +171,12 @@ export default {
           if (this.lang == "en") month = dict[month];
 
           let obj = {
-            date: entry.gsx$date.$t,
+            date: entry.date,
             year: year,
             month: month,
-            title: entry["gsx$title" + this.lang].$t,
-            subtitle: entry["gsx$subtitle" + this.lang].$t,
-            url: entry["gsx$url" + this.lang].$t,
+            title: entry["title_" + this.lang],
+            subtitle: entry["subtitle_" + this.lang],
+            url: entry["url_" + this.lang],
           };
           dataArray.push(obj);
         });
@@ -185,10 +185,6 @@ export default {
     handleSubscribe(data) {
       this.subscribe(data, this.content[this.lang]["register"]["token"]);
     },
-  },
-  created() {
-    this.getData(this.newsData, 7);
-    this.getData(this.newsletterArchiveData, 6);
   },
 };
 </script>
