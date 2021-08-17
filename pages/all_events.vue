@@ -94,7 +94,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import { content } from "../assets/content.js";
 
 import Navigation from "../components/Navigation.vue";
@@ -102,6 +101,7 @@ import Footer from "../components/Footer.vue";
 import Matomo from "../components/Matomo.vue";
 
 import sortDates from "../mixins/sortDates.js";
+import { getSpreadsheet } from "../modules/getSpreadsheet";
 
 export default {
   components: {
@@ -145,50 +145,42 @@ export default {
     },
   },
   mounted() {
-    // TODO: wrap that
+    getSpreadsheet(`data/spreadsheet-data/events.json`).then((events) => {
+      this.entries = events;
 
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/3/public/values?alt=json`
-      )
-      .then((res) => {
-        let entries = res.data.feed.entry;
-
-        this.entries = entries;
-
-        entries.forEach((entry) => {
-          let obj = {
-            date: entry.gsx$date.$t,
-            day: this.getDay(entry.gsx$date.$t),
-            month: this.getMonth(entry.gsx$date.$t),
-            format: entry.gsx$format.$t,
-            time: entry.gsx$datetime.$t,
-            title: entry.gsx$eventname.$t,
-            visible: entry.gsx$visible.$t,
-            link: this.createEventLink(entry.gsx$dirname.$t),
-          };
-          this.data.push(obj);
-        });
-
-        this.otherEvents.forEach((entry) => {
-          let obj = {
-            day: this.getDay(entry.date),
-            month: this.getMonth(entry.date),
-            format: entry.format,
-            date: entry.date,
-            time: entry.time,
-            title: entry.title,
-            link: entry.link,
-          };
-          this.data.push(obj);
-        });
-
-        this.dataUpcoming = this.filterData(this.data, true);
-        this.dataPast = this.filterData(this.data, false);
-
-        this.dataUpcoming = this.sortDatesChronologically(this.dataUpcoming);
-        this.dataPast = this.sortDatesReverseChronologically(this.dataPast);
+      events.forEach((entry) => {
+        let obj = {
+          date: entry.date,
+          day: this.getDay(entry.date),
+          month: this.getMonth(entry.date),
+          format: entry.format,
+          time: entry.dateTime,
+          title: entry.eventName,
+          visible: entry.visible,
+          link: this.createEventLink(entry.dirName),
+        };
+        this.data.push(obj);
       });
+
+      this.otherEvents.forEach((entry) => {
+        let obj = {
+          day: this.getDay(entry.date),
+          month: this.getMonth(entry.date),
+          format: entry.format,
+          date: entry.date,
+          time: entry.time,
+          title: entry.title,
+          link: entry.link,
+        };
+        this.data.push(obj);
+      });
+
+      this.dataUpcoming = this.filterData(this.data, true);
+      this.dataPast = this.filterData(this.data, false);
+
+      this.dataUpcoming = this.sortDatesChronologically(this.dataUpcoming);
+      this.dataPast = this.sortDatesReverseChronologically(this.dataPast);
+    });
   },
   methods: {
     filterData(d, isUpcoming) {
