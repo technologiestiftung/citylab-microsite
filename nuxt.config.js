@@ -2,67 +2,42 @@ import pkg from "./package";
 // import PurgecssPlugin from "purgecss-webpack-plugin";
 // import glob from "glob-all";
 // import path from "path";
-import axios from "axios";
+import projectsDeJson from "./static/data/spreadsheet-data/projects_de.json";
+import projectsEnJson from "./static/data/spreadsheet-data/projects_en.json";
+import eventsJson from "./static/data/spreadsheet-data/events.json";
 
 async function dynamicRoutes() {
-  try {
-    const result = axios
-      .all([
-        axios.get(
-          "https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/3/public/values?alt=json"
-        ), // events
-        axios.get(
-          "https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/1/public/values?alt=json"
-        ), // projects
-        axios.get(
-          "https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/2/public/values?alt=json"
-        ), // projects_en
-      ])
-      .then(
-        axios.spread((events, projects, projects_en) => {
-          // do something with both responses
-          let entriesEvents = events.data.feed.entry;
-          let entriesProjects = projects.data.feed.entry;
-          let entriesProjectsEn = projects_en.data.feed.entry;
+  let entriesEvents = eventsJson;
+  let entriesProjects = projectsDeJson;
+  let entriesProjectsEn = projectsEnJson;
 
-          const eventRoutes = entriesEvents.map((entry) => {
-            if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
-              return "/events/" + entry.gsx$dirname.$t;
-            }
-            return;
-          });
+  const eventRoutes = entriesEvents.map((entry) => {
+    if (entry && entry.dirName) {
+      return "/events/" + entry.dirName;
+    }
+    return;
+  });
 
-          const projectRoutes = entriesProjects.map((entry) => {
-            if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
-              return "/projects/" + entry.gsx$dirname.$t;
-            }
-            return;
-          });
+  const projectRoutes = entriesProjects.map((entry) => {
+    if (entry && entry.dirName) {
+      return "/projects/" + entry.dirName;
+    }
+    return;
+  });
 
-          const projectEnRoutes = entriesProjectsEn.map((entry) => {
-            if (entry && entry.gsx$dirname && entry.gsx$dirname.$t) {
-              return "/projects_en/" + entry.gsx$dirname.$t;
-            }
-            return;
-          });
+  const projectEnRoutes = entriesProjectsEn.map((entry) => {
+    if (entry && entry.dirName) {
+      return "/projects_en/" + entry.dirName;
+    }
+    return;
+  });
 
-          let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
-          all = all.filter((elem) => {
-            return elem !== undefined;
-          });
+  let all = [...eventRoutes, ...projectRoutes, ...projectEnRoutes];
+  all = all.filter((elem) => {
+    return elem !== undefined;
+  });
 
-          return all;
-        })
-      )
-      .catch((err) => {
-        console.error(err);
-      });
-
-    return result;
-  } catch (error) {
-    console.error(error);
-    // throw error;
-  }
+  return all;
 }
 export default {
   generate: {

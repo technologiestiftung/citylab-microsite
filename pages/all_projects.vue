@@ -12,12 +12,14 @@
         <h1 style="margin-top: 100px;" class="title">
           {{ this.content[this.lang].projects.titleOngoing }}
         </h1>
-        <h2 class="subtitle">{{ this.content[this.lang].projects.subline1}}</h2>
+        <h2 class="subtitle">
+          {{ this.content[this.lang].projects.subline1 }}
+        </h2>
         <div class="tile wrap team-wrapper">
           <div
             class="tile third"
             v-for="project in data"
-            v-if="project.visible == 'TRUE' && project.finished =='FALSE'"
+            v-if="project.visible == 'TRUE' && project.finished == 'FALSE'"
           >
             <a :href="`/${directProject}/${project.dirname}`">
               <article class="project-wrapper">
@@ -44,13 +46,15 @@
         <h1 style="margin-top: 100px;" class="title">
           {{ this.content[this.lang].projects.titleFinished }}
         </h1>
-        <h2 class="subtitle">{{ this.content[this.lang].projects.subline2}}</h2>
+        <h2 class="subtitle">
+          {{ this.content[this.lang].projects.subline2 }}
+        </h2>
 
         <div class="tile wrap team-wrapper">
           <div
             class="tile third"
             v-for="project in data"
-            v-if="project.visible == 'TRUE' && project.finished =='TRUE'"
+            v-if="project.visible == 'TRUE' && project.finished == 'TRUE'"
           >
             <a :href="`/${directProject}/${project.dirname}`">
               <article class="project-wrapper">
@@ -82,13 +86,13 @@
 </template>
 
 <script>
-import axios from "axios";
 import { content } from "../assets/content.js";
 
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
 import Matomo from "../components/Matomo.vue";
 import VLazyImage from "v-lazy-image";
+import { getSpreadsheet } from "../modules/getSpreadsheet";
 
 export default {
   components: {
@@ -136,32 +140,38 @@ export default {
     };
   },
   created() {
-    // TODO: wrap that
+    getSpreadsheet(`data/spreadsheet-data/projects_de.json`).then(
+      (projects) => {
+        this.entries = projects;
 
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/1/public/values?alt=json`
-      )
-      .then((res) => {
-        let entries = res.data.feed.entry;
-        this.entries = entries;
-
-        entries.forEach((entry) => {
-          let obj = {
-            visible: entry.gsx$visible.$t,
-            finished: entry.gsx$finished.$t,
-            name: entry.gsx$projectname.$t,
-            publisher: entry.gsx$publisher.$t,
-            subline: entry.gsx$projectsubline.$t,
-            dirname: entry.gsx$dirname.$t,
-            imgname: entry.gsx$dirname.$t,
-            defaultImg: entry.gsx$defaultimg.$t,
-          };
-        if (entry.gsx$projectname.$t.length > 0 ) {
-            this.data.push(obj);
+        projects.forEach(
+          ({
+            visible,
+            finished,
+            projectName,
+            publisher,
+            projectSubline,
+            dirName,
+            defaultImg,
+          }) => {
+            let obj = {
+              visible: visible,
+              finished: finished,
+              name: projectName,
+              publisher: publisher,
+              subline: projectSubline,
+              dirname: dirName,
+              imgname: dirName,
+              defaultImg: defaultImg,
+            };
+            console.log(projectName);
+            if (projectName.length > 0) {
+              this.data.push(obj);
+            }
           }
-        });
-      });
+        );
+      }
+    );
   },
 };
 </script>
@@ -184,7 +194,7 @@ export default {
   filter: grayscale(100%); /* Current draft standard */
   -webkit-filter: grayscale(100%); /* New WebKit */
   -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%); 
+  -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: gray; /* IE6+ */
 }

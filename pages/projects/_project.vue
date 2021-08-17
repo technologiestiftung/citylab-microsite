@@ -100,7 +100,7 @@
         </div>
 
         <div v-if="logo === 'TRUE'" class="content-wrapper">
-          <img :src="logoUrl" :alt="'Logo zum Projekt ' + title">
+          <img :src="logoUrl" :alt="'Logo zum Projekt ' + title" />
         </div>
 
         <div class="logo-wrapper">
@@ -122,7 +122,7 @@
 import Navigation from "../../components/Navigation.vue";
 import HeroLight from "../../components/HeroLight.vue";
 import Footer from "../../components/Footer.vue";
-import axios from "axios";
+import { getSpreadsheet } from "../../modules/getSpreadsheet";
 
 import { content } from "../../assets/content.js";
 
@@ -174,9 +174,7 @@ export default {
 
       if (this.data !== null) {
         const file =
-          this.data.gsx$defaultimg.$t == "TRUE"
-            ? "default"
-            : `${this.data.gsx$dirname.$t}`;
+          this.data.defaultImg == "TRUE" ? "default" : `${this.data.dirName}`;
         const path = `/images/projects/${file}_hero.jpg`;
         return path;
       } else {
@@ -185,105 +183,105 @@ export default {
     },
     link() {
       if (this.data != null) {
-        return this.data.gsx$link.$t;
+        return this.data.link;
       } else {
         return "";
       }
     },
     title() {
       if (this.data !== null) {
-        return this.data.gsx$projectname.$t;
+        return this.data.projectName;
       } else {
         return undefined;
       }
     },
     subtitle() {
       if (this.data != null) {
-        return this.data.gsx$projectsubline.$t;
+        return this.data.projectSubline;
       } else {
         return undefined;
       }
     },
     subsubtitle() {
       if (this.data != null) {
-        return this.data.gsx$projectsubsubline.$t;
+        return this.data.projectSubSubine;
       } else {
         return undefined;
       }
     },
     headlineIntro() {
       if (this.data != null && this.data) {
-        return this.data.gsx$headlineintro.$t;
+        return this.data.headlineIntro;
       } else {
         return undefined;
       }
     },
     contentIntro() {
       if (this.data != null) {
-        return this.data.gsx$contentintro.$t;
+        return this.data.contentIntro;
       } else {
         return undefined;
       }
     },
     headlineBlockOne() {
       if (this.data != null) {
-        return this.data.gsx$headlineblockone.$t;
+        return this.data.headlineBlockOne;
       } else {
         return undefined;
       }
     },
     contentBlockOne() {
       if (this.data != null) {
-        return this.data.gsx$contentblockone.$t;
+        return this.data.contentBlockOne;
       } else {
         return undefined;
       }
     },
     headlineBlockTwo() {
       if (this.data != null) {
-        return this.data.gsx$headlineblocktwo.$t;
+        return this.data.headlineBlockTwo;
       } else {
         return undefined;
       }
     },
     contentBlockTwo() {
       if (this.data != null) {
-        return this.data.gsx$contentblocktwo.$t;
+        return this.data.contentBlockTwo;
       } else {
         return undefined;
       }
     },
     headlineBlockThree() {
       if (this.data != null) {
-        return this.data.gsx$headlineblockthree.$t;
+        return this.data.headlineBlockThree;
       } else {
         return undefined;
       }
     },
     contentBlockThree() {
       if (this.data != null) {
-        return this.data.gsx$contentblockthree.$t;
+        return this.data.contentBlockThree;
       } else {
         return undefined;
       }
     },
     headlineBlockFour() {
       if (this.data != null) {
-        return this.data.gsx$headlineblockfour.$t;
+        return this.data.headlineBlockFour;
       } else {
         return undefined;
       }
     },
     contentBlockFour() {
       if (this.data != null) {
-        return this.data.gsx$contentblockfour.$t;
+        return this.data.contentBlockFour;
       } else {
         return undefined;
       }
     },
     logo() {
       if (this.data != null) {
-        return this.data.gsx$logo.$t;
+        return this.data.logo;
       } else {
         return null;
       }
@@ -292,63 +290,58 @@ export default {
       return `/images/projects/${this.dirname}_logo.png`;
     },
   },
-  methods: {
-    getLength(data) {
-      return data.length;
-    },
-  },
   beforeCreate() {
-    // TODO: wrap that
-
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/1/public/values?alt=json`
-      )
-      .then((res) => {
+    getSpreadsheet(`/data/spreadsheet-data/projects_de.json`)
+      .then((projects) => {
         // set event entry to data which matches with dirname
-        this.data = res.data.feed.entry.filter((entry) => {
-          return entry.gsx$dirname.$t == this.dirname;
+        this.data = projects.filter((project) => {
+          return project.dirName == this.dirname;
         });
         this.data = this.data[0];
 
         this.summaryAvailable.introHeadline = this.getLength(
-          this.data.gsx$headlineintro.$t
+          this.data.headlineIntro
         );
         this.summaryAvailable.introContent = this.getLength(
-          this.data.gsx$contentintro.$t
+          this.data.contentIntro
         );
 
         this.summaryAvailable.blockOneHeadline = this.getLength(
-          this.data.gsx$headlineblockone.$t
+          this.data.headlineBlockOne
         );
         this.summaryAvailable.blockOneContent = this.getLength(
-          this.data.gsx$contentblockone.$t
+          this.data.contentBlockOne
         );
 
         this.summaryAvailable.blockTwoHeadline = this.getLength(
-          this.data.gsx$headlineblocktwo.$t
+          this.data.headlineBlockTwo
         );
         this.summaryAvailable.blockTwoContent = this.getLength(
-          this.data.gsx$contentblocktwo.$t
+          this.data.contentBlockTwo
         );
 
         this.summaryAvailable.blockThreeHeadline = this.getLength(
-          this.data.gsx$headlineblockthree.$t
+          this.data.headlineBlockThree
         );
         this.summaryAvailable.blockThreeContent = this.getLength(
-          this.data.gsx$contentblockthree.$t
+          this.data.contentBlockThree
         );
 
         this.summaryAvailable.blockFourHeadline = this.getLength(
-          this.data.gsx$headlineblockfour.$t
+          this.data.headlineBlockFour
         );
         this.summaryAvailable.blockFourContent = this.getLength(
-          this.data.gsx$contentblockfour.$t
+          this.data.contentBlockFour
         );
       })
       .catch((err) => {
         console.error(err);
       });
+  },
+  methods: {
+    getLength(data) {
+      return data.length;
+    },
   },
 };
 </script>

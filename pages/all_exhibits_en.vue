@@ -205,7 +205,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import { getSpreadsheet } from "../modules/getSpreadsheet";
 import { content } from "../assets/content.js";
 
 import Navigation from "../components/Navigation.vue";
@@ -258,42 +258,37 @@ export default {
       },
     };
   },
-  methods: {
-    toggleExpandClass(id) {
-      const elm = document.getElementById(`tile-${id}`);
-      elm.classList.toggle("expanded");
-    },
-  },
   created() {
-    // TODO: wrap that
+    getSpreadsheet(`data/spreadsheet-data/exhibits_en.json`).then(
+      (exhibits) => {
+        this.entries = exhibits;
 
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/5/public/values?alt=json`
-      )
-      .then((res) => {
-        let entries = res.data.feed.entry;
-        this.entries = entries;
-
-        entries.forEach((entry) => {
+        exhibits.forEach((entry) => {
           let obj = {
-            visible: entry.gsx$visible.$t,
-            name: entry.gsx$exhibitname.$t,
-            description: entry.gsx$exhibitdescription.$t,
-            imgName: entry.gsx$imgname.$t,
-            publisher: entry.gsx$exhibitpublisher.$t.split(","),
-            link: entry.gsx$publisherlink.$t.split(","),
-            date: entry.gsx$date.$t.split(","),
+            visible: entry.visible,
+            name: entry.exhibitName,
+            description: entry.exhibitDescription,
+            imgName: entry.imgName,
+            publisher: entry.exhibitPublisher.split(","),
+            link: entry.publisherLink.split(","),
+            date: entry.date.split(","),
             // dirname: this.lang == 'de' ? entry.gsx$dirname.$t : `${entry.gsx$dirname.$t}_en`,
             // imgname: entry.gsx$dirname.$t,
             // defaultImg: entry.gsx$defaultimg.$t
           };
 
-          if (entry.gsx$exhibitname.$t.length > 0) {
+          if (entry.exhibitName.length > 0) {
             this.data.push(obj);
           }
         });
-      });
+      }
+    );
+  },
+  methods: {
+    toggleExpandClass(id) {
+      const elm = document.getElementById(`tile-${id}`);
+      elm.classList.toggle("expanded");
+    },
   },
 };
 </script>
