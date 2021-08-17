@@ -82,13 +82,13 @@
 </template>
 
 <script>
-import axios from "axios";
 import { content } from "../assets/content.js";
 
 import Navigation from "../components/Navigation.vue";
 import Footer from "../components/Footer.vue";
 import Matomo from "../components/Matomo.vue";
 import VLazyImage from "v-lazy-image";
+import { getSpreadsheet } from "../modules/getSpreadsheet";
 
 export default {
   components: {
@@ -136,33 +136,37 @@ export default {
     };
   },
   created() {
-    // TODO: wrap that
+    getSpreadsheet(`data/spreadsheet-data/projects_en.json`).then(
+      (projects) => {
+        this.entries = projects;
 
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/2/public/values?alt=json`
-      )
-      .then((res) => {
-        let entries = res.data.feed.entry;
-        this.entries = entries;
-
-        entries.forEach((entry) => {
-          let obj = {
-            visible: entry.gsx$visible.$t,
-            finished: entry.gsx$finished.$t,
-            name: entry.gsx$projectname.$t,
-            publisher: entry.gsx$publisher.$t,
-            subline: entry.gsx$projectsubline.$t,
-            dirname: entry.gsx$dirname.$t,
-            imgname: entry.gsx$dirname.$t,
-            defaultImg: entry.gsx$defaultimg.$t,
-          };
-
-          if (entry.gsx$projectname.$t.length > 0) {
-            this.data.push(obj);
+        projects.forEach(
+          ({
+            visible,
+            finished,
+            projectName,
+            publisher,
+            projectSubline,
+            dirName,
+            defaultImg,
+          }) => {
+            let obj = {
+              visible: visible,
+              finished: finished,
+              name: projectName,
+              publisher: publisher,
+              subline: projectSubline,
+              dirname: dirName,
+              imgname: dirName,
+              defaultImg: defaultImg,
+            };
+            if (projectName.length > 0) {
+              this.data.push(obj);
+            }
           }
-        });
-      });
+        );
+      }
+    );
   },
 };
 </script>
