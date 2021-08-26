@@ -12,27 +12,44 @@ export const jobs = {
     de: `Wir freuen uns auf deine Bewerbung an <a href="mailto:jobs@citylab-berlin.org">jobs@citylab-berlin.org</a>.`,
   },
   buttontext: {
-    en: "Download PDF",
-    de: "PDF herunterladen",
+    en: "Zum Stellenangebot",
+    de: "Zum Stellenangebot",
   },
   jobs: [
     {
       headline: {
-        en: "Working Student (x/f/m)",
-        de: "Werkstudent*in (x/w/m)",
+        en: "Working Student Web Development (x/f/m)",
+        de: "Werkstudent:in Web-Entwicklung (d/w/m)",
       },
       worktype: {
-        en: "16-20h per week",
-        de: "16-20 Stunden/ Woche",
+        en: "16 - 20h per week",
+        de: "16 - 20 Stunden / Woche",
       },
       description: {
         en:
-          "Zur Unterstützung unseres Teams suchen wir ab Januar 2021 eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
         de:
-          "Zur Unterstützung unseres Teams suchen wir ab Januar 2021 eine/n Werkstudent*in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Web-Entwicklung. Deine Aufgaben: Unterstützung unseres Dev-Teams bei der Weiterentwicklung und Wartung laufender Open Source-Projekte. Entwicklung prototypischer Web-Anwendungen und Datenvisualisierungen.",
       },
       url:
         "https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/Archiv/201010_Web-Entwickung_Studi_Stellenanzeige.pdf",
+    },
+    {
+      headline: {
+        en: "Working Student Design (x/f/m)",
+        de: "Werkstudent:in Design (d/w/m)",
+      },
+      worktype: {
+        en: "16 - 20h per week",
+        de: "16 - 20 Stunden / Woche",
+      },
+      description: {
+        en:
+          "To support our team we are looking for a Working Student Design (16 - 20h per week)",
+        de:
+          "Zur Unterstützung unseres Teams suchen wir eine:n Werkstudent:in Design (16 - 20 Stunden / Woche).",
+      },
+      url: "https://www.citylab-berlin.org/docs/Werkstudent_Smart_City.pdf",
     },
   ],
 };

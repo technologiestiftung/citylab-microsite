@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import axios from "axios";
 import Button from "./Button";
+import { getSpreadsheet } from "../modules/getSpreadsheet";
 
 export default {
   name: "Schedule",
@@ -81,6 +81,46 @@ export default {
     directAllEvents() {
       return this.directs[this.lang]["all"];
     },
+  },
+  mounted() {
+    getSpreadsheet(`data/spreadsheet-data/events.json`).then((events) => {
+      this.entries = events;
+
+      this.otherEvents.forEach((entry) => {
+        let obj = {
+          day: this.getDay(entry.date),
+          month: this.getMonth(entry.date),
+          format: entry.format,
+          date: entry.date,
+          time: entry.time,
+          title: entry.title,
+          link: entry.link,
+        };
+        this.data.push(obj);
+      });
+
+      events.forEach((entry) => {
+        let obj = {
+          format: entry.format,
+          dirname: entry.dirName,
+          date: entry.date,
+          day: this.getDay(entry.date),
+          month: this.getMonth(entry.date),
+          time: entry.dateTime,
+          title: entry.eventName,
+          link: this.createEventLink(entry.dirName),
+          visible: entry.visible,
+        };
+        this.data.push(obj);
+      });
+
+      this.data = this.data.filter((event) => {
+        return this.dateIsUpcoming(event.date);
+      });
+      this.data = this.data.sort((a, b) => {
+        return new Date(a.date).getTime() - new Date(b.date).getTime();
+      });
+    });
   },
   methods: {
     dateIsUpcoming(date) {
@@ -134,52 +174,6 @@ export default {
     createEventLink(dirname) {
       return `/events/${dirname}`;
     },
-  },
-  mounted() {
-    // TODO: wrap that
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/3/public/values?alt=json`
-      )
-      .then((res) => {
-        let entries = res.data.feed.entry;
-        this.entries = entries;
-
-        this.otherEvents.forEach((entry) => {
-          let obj = {
-            day: this.getDay(entry.date),
-            month: this.getMonth(entry.date),
-            format: entry.format,
-            date: entry.date,
-            time: entry.time,
-            title: entry.title,
-            link: entry.link,
-          };
-          this.data.push(obj);
-        });
-
-        entries.forEach((entry) => {
-          let obj = {
-            format: entry.gsx$format.$t,
-            dirname: entry.gsx$dirname.$t,
-            date: entry.gsx$date.$t,
-            day: this.getDay(entry.gsx$date.$t),
-            month: this.getMonth(entry.gsx$date.$t),
-            time: entry.gsx$datetime.$t,
-            title: entry.gsx$eventname.$t,
-            link: this.createEventLink(entry.gsx$dirname.$t),
-            visible: entry.gsx$visible.$t,
-          };
-          this.data.push(obj);
-        });
-
-        this.data = this.data.filter((event) => {
-          return this.dateIsUpcoming(event.date);
-        });
-        this.data = this.data.sort((a, b) => {
-          return new Date(a.date).getTime() - new Date(b.date).getTime();
-        });
-      });
   },
 };
 </script>

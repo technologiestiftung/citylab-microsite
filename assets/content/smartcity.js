@@ -87,18 +87,29 @@ export const smartcity = {
   timeline: {
     upcoming: {
       title: {
-        de: "Was in der kommenden Zeit passieren wird:",
-        en: "What's happening in the coming period:",
+        de: "Update",
+        en: "Update",
       },
       steps: [
         {
+          date: "03.08.2021",
           title: {
-            de: "Einbindung der Rückmeldungen",
-            en: "Integration of the feedback",
+            de:
+              "Senat beschließt Strategischen Rahmen für neue Smart City-Strategie",
+            en:
+              "Senate approves strategic framework for new smart city strategy",
           },
           description: {
-            de: `Das von der Stadtgesellschaft gegebene Feedback der Online-Kommentierung wird zur Zeit in den strategischen Rahmen eingearbeitet, der anschließend an den Senat und das Abgeordnetenhaus geht und die Grundlage zur Ausarbeitung der Smart City-Strategie darstellt.`,
-            en: `The feedback provided by the urban community in the online commentary is currently being incorporated into the strategic framework, which will then go to the Senate and the House of Representatives and form the basis for the development of the Smart City Strategy.`,
+            de: `Der Senat hat den Strategischen Rahmen, der als Grundlage für die neue Smart City-Strategie Berlins dienen soll, beschlossen. Mit dem Beschluss hat der Senat gleichzeitig Anmerkungen und Ergänzungen übermittelt – verbunden mit der Empfehlung, diese in der weiteren Erarbeitung der neuen Smart City-Strategie Berlins zu berücksichtigen. Die Erarbeitung der Smart City-Strategie wird ab Herbst starten und sich wieder mit verschiedenen Partizipationsmöglichkeiten an die gesamte Stadtgesellschaft wenden.
+            <br><br>
+            <a class="button is-color-secondary is-normal" href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1112244.php">Zur Pressemitteilung</a>
+            <br><br>
+            <a class="button is-color-secondary is-normal" href="https://www.notion.so/politicsfortomorrow/Strategischer-Rahmen-f-r-die-Entwicklung-einer-neuen-Berliner-Smart-City-Strategie-2c78e625e846457bac1fc7f76e4b22ad#9ae7e252610b40bfb407b3a44a63d3a4">Zum Strategischen Rahmen</a>`,
+            en: `The Senate has passed the strategic framework that will serve as the basis for Berlin's new smart city strategy. With the decision, the Senate has at the same time sent comments and additions - combined with the recommendation to take these into account in the further development of Berlin's new Smart City Strategy. The development of the Smart City Strategy will start in this fall and will again address the entire urban society with various participation opportunities.
+            <br><br>
+            <a class="button is-color-secondary is-normal" href="https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1112244.php">To the press release (in german)</a>
+            <br><br>
+            <a class="button is-color-secondary is-normal" href="https://www.notion.so/politicsfortomorrow/Strategischer-Rahmen-f-r-die-Entwicklung-einer-neuen-Berliner-Smart-City-Strategie-2c78e625e846457bac1fc7f76e4b22ad#9ae7e252610b40bfb407b3a44a63d3a4">To the strategic framework (in german)</a>`,
           },
         },
       ],
@@ -109,6 +120,17 @@ export const smartcity = {
         en: "What has happened so far:",
       },
       steps: [
+        {
+          date: "05.05. - 01.06.2021",
+          title: {
+            de: "Einbindung der Rückmeldungen",
+            en: "Integration of the feedback",
+          },
+          description: {
+            de: `Das von der Stadtgesellschaft gegebene Feedback der Online-Kommentierung wird zur Zeit in den strategischen Rahmen eingearbeitet, der anschließend an den Senat und das Abgeordnetenhaus geht und die Grundlage zur Ausarbeitung der Smart City-Strategie darstellt.`,
+            en: `The feedback provided by the urban community in the online commentary is currently being incorporated into the strategic framework, which will then go to the Senate and the House of Representatives and form the basis for the development of the Smart City Strategy.`,
+          },
+        },
         {
           date: "28.04. - 08.05.2021",
           title: {

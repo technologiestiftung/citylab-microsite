@@ -179,14 +179,14 @@
 import Navigation from "../../components/Navigation.vue";
 import HeroLight from "../../components/HeroLight.vue";
 import Footer from "../../components/Footer.vue";
-import axios from "axios";
+import { getSpreadsheet } from "../../modules/getSpreadsheet";
 
 import { content } from "../../assets/content.js";
 
 export default {
   validate({ params, query, store }) {
     return true; // if the params are valid
-    return false; // will stop Nuxt.js to render the route and display the error page
+    //return false; // will stop Nuxt.js to render the route and display the error page
   },
   async asyncData({ params, error, payload }) {
     return {
@@ -332,14 +332,14 @@ export default {
     },
     getLanguage() {
       if (this.data != null) {
-        return this.data.gsx$eventlanguage.$t;
+        return this.data.eventLanguage;
       } else {
         return;
       }
     },
     title() {
       if (this.data != null) {
-        return this.data.gsx$eventname.$t;
+        return this.data.eventName;
       } else {
         return;
       }
@@ -347,8 +347,8 @@ export default {
 
     startDate() {
       if (this.data != null) {
-        const date = this.data.gsx$date.$t;
-        const startTime = this.data.gsx$starttime.$t;
+        const date = this.data.date;
+        const startTime = this.data.startTime;
         const newDate = `${date.substring(0, 4)}${date.substring(
           5,
           7
@@ -364,8 +364,8 @@ export default {
 
     endDate() {
       if (this.data != null) {
-        const date = this.data.gsx$date.$t;
-        const endTime = this.data.gsx$endtime.$t;
+        const date = this.data.date;
+        const endTime = this.data.endTime;
         const newDate = `${date.substring(0, 4)}${date.substring(
           5,
           7
@@ -381,154 +381,154 @@ export default {
 
     subtitle() {
       if (this.data != null) {
-        return this.data.gsx$subline.$t;
+        return this.data.subline;
       } else {
         return;
       }
     },
     subsubtitle() {
       if (this.data != null) {
-        return this.data.gsx$subsubline.$t;
+        return this.data.subsubline;
       } else {
         return;
       }
     },
     headlineIntro() {
       if (this.data != null) {
-        return this.data.gsx$headlineintro.$t;
+        return this.data.headlineIntro
       } else {
         return;
       }
     },
     contentIntro() {
       if (this.data != null) {
-        return this.data.gsx$contentintro.$t;
+        return this.data.contentIntro;
       } else {
         return;
       }
     },
     headlineBlockOne() {
       if (this.data != null) {
-        return this.data.gsx$headlineblockone.$t;
+        return this.data.headlineBlockOne;
       } else {
         return;
       }
     },
     contentBlockOne() {
       if (this.data != null) {
-        return this.data.gsx$contentblockone.$t;
+        return this.data.contentBlockOne;
       } else {
         return;
       }
     },
     headlineBlockTwo() {
       if (this.data != null) {
-        return this.data.gsx$headlineblocktwo.$t;
+        return this.data.headlineBlockTwo;
       } else {
         return;
       }
     },
     contentBlockTwo() {
       if (this.data != null) {
-        return this.data.gsx$contentblocktwo.$t;
+        return this.data.contentBlockTwo;
       } else {
         return;
       }
     },
     headlineBlockThree() {
       if (this.data != null) {
-        return this.data.gsx$headlineblockthree.$t;
+        return this.data.headlineBlockThree;
       } else {
         return;
       }
     },
     contentBlockThree() {
       if (this.data != null) {
-        return this.data.gsx$contentblockthree.$t;
+        return this.data.contentBlockThree;
       } else {
         return;
       }
     },
     headlineBlockFour() {
       if (this.data != null) {
-        return this.data.gsx$headlineblockfour.$t;
+        return this.data.headlineBlockFour;
       } else {
         return;
       }
     },
     contentBlockFour() {
       if (this.data != null) {
-        return this.data.gsx$contentblockfour.$t;
+        return this.data.contentBlockFour;
       } else {
         return;
       }
     },
     registerLink() {
       if (this.data != null) {
-        return this.data.gsx$registerlink.$t;
+        return this.data.registerLink;
       } else {
         return;
       }
     },
     registerInfo() {
       if (this.data != null) {
-        return this.data.gsx$registerinfo.$t;
+        return this.data.registerInfo;
       } else {
         return;
       }
     },
     websiteSummary() {
       if (this.data != null) {
-        return this.data.gsx$websitesummary.$t;
+        return this.data.websiteSummary;
       } else {
         return;
       }
     },
     phoneSummary() {
       if (this.data != null) {
-        return this.data.gsx$phonesummary.$t;
+        return this.data.phoneSummary;
       } else {
         return;
       }
     },
     dateSummary() {
       if (this.data != null) {
-        return this.data.gsx$datesummary.$t;
+        return this.data.dateSummary;
       } else {
         return;
       }
     },
     organiserSummary() {
       if (this.data != null) {
-        return this.data.gsx$organisersummary.$t;
+        return this.data.organiserSummary;
       } else {
         return;
       }
     },
     mailSummary() {
       if (this.data != null) {
-        return this.data.gsx$mailsummary.$t;
+        return this.data.mailSummary;
       } else {
         return;
       }
     },
     addressSummary() {
       if (this.data != null) {
-        return this.data.gsx$addresssummary.$t;
+        return this.data.addressSummary;
       } else {
         return;
       }
     },
     socialDescription() {
       if (this.data != null) {
-        return this.data.gsx$socialdescription.$t;
+        return this.data.socialDescription;
       } else {
         return;
       }
     },
     logo() {
       if (this.data != null) {
-        return this.data.gsx$logo.$t;
+        return this.data.logo;
       } else {
         return;
       }
@@ -572,6 +572,67 @@ END:VCALENDAR`;
       }
     },
   },
+  beforeCreate() {
+    getSpreadsheet(`/data/spreadsheet-data/events.json`).then((events) => {
+      // set event entry to data which matches with dirname
+      this.data = events.filter((entry) => {
+        return entry.dirName == this.dirname;
+      });
+      this.data = this.data[0];
+      this.lang = this.data.eventLanguage;
+
+      this.summaryAvailable.address = this.getLength(this.data.addressSummary);
+      this.summaryAvailable.phone = this.getLength(this.data.phoneSummary);
+      this.summaryAvailable.mail = this.getLength(this.data.mailSummary);
+      this.summaryAvailable.website = this.getLength(this.data.websiteSummary);
+      this.summaryAvailable.date = this.getLength(this.data.dateSummary);
+      this.summaryAvailable.organiser = this.getLength(
+        this.data.organiserSummary
+      );
+
+      this.summaryAvailable.introHeadline = this.getLength(
+        this.data.headlineIntro
+      );
+      this.summaryAvailable.introContent = this.getLength(
+        this.data.contentIntro
+      );
+
+      this.summaryAvailable.blockOneHeadline = this.getLength(
+        this.data.headlineBlockOne
+      );
+      this.summaryAvailable.blockOneContent = this.getLength(
+        this.data.contentBlockOne
+      );
+
+      this.summaryAvailable.blockTwoHeadline = this.getLength(
+        this.data.headlineBlockTwo
+      );
+      this.summaryAvailable.blockTwoContent = this.getLength(
+        this.data.contentBlockTwo
+      );
+
+      this.summaryAvailable.blockThreeHeadline = this.getLength(
+        this.data.headlineBlockThree
+      );
+      this.summaryAvailable.blockThreeContent = this.getLength(
+        this.data.contentBlockThree
+      );
+
+      this.summaryAvailable.blockFourHeadline = this.getLength(
+        this.data.headlineBlockFour
+      );
+      this.summaryAvailable.blockFourContent = this.getLength(
+        this.data.contentBlockFour
+      );
+
+      this.summaryAvailable.registerLink = this.getLength(
+        this.data.registerLink
+      );
+
+      //ab hier: calendar import
+      this.summaryAvailable.calendarImp = this.data.calendarImp;
+    });
+  }, //close beforeCreate()
   methods: {
     getLength(data) {
       return data.length;
@@ -591,83 +652,6 @@ END:VCALENDAR`;
       }
     },
   },
-  beforeCreate() {
-    // TODO: wrap that
-
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/3/public/values?alt=json`
-      )
-      .then((res) => {
-        // set event entry to data which matches with dirname
-        this.data = res.data.feed.entry.filter((entry) => {
-          return entry.gsx$dirname.$t == this.dirname;
-        });
-        this.data = this.data[0];
-        this.lang = this.data.gsx$eventlanguage.$t;
-
-        this.summaryAvailable.address = this.getLength(
-          this.data.gsx$addresssummary.$t
-        );
-        this.summaryAvailable.phone = this.getLength(
-          this.data.gsx$phonesummary.$t
-        );
-        this.summaryAvailable.mail = this.getLength(
-          this.data.gsx$mailsummary.$t
-        );
-        this.summaryAvailable.website = this.getLength(
-          this.data.gsx$websitesummary.$t
-        );
-        this.summaryAvailable.date = this.getLength(
-          this.data.gsx$datesummary.$t
-        );
-        this.summaryAvailable.organiser = this.getLength(
-          this.data.gsx$organisersummary.$t
-        );
-
-        this.summaryAvailable.introHeadline = this.getLength(
-          this.data.gsx$headlineintro.$t
-        );
-        this.summaryAvailable.introContent = this.getLength(
-          this.data.gsx$contentintro.$t
-        );
-
-        this.summaryAvailable.blockOneHeadline = this.getLength(
-          this.data.gsx$headlineblockone.$t
-        );
-        this.summaryAvailable.blockOneContent = this.getLength(
-          this.data.gsx$contentblockone.$t
-        );
-
-        this.summaryAvailable.blockTwoHeadline = this.getLength(
-          this.data.gsx$headlineblocktwo.$t
-        );
-        this.summaryAvailable.blockTwoContent = this.getLength(
-          this.data.gsx$contentblocktwo.$t
-        );
-
-        this.summaryAvailable.blockThreeHeadline = this.getLength(
-          this.data.gsx$headlineblockthree.$t
-        );
-        this.summaryAvailable.blockThreeContent = this.getLength(
-          this.data.gsx$contentblockthree.$t
-        );
-
-        this.summaryAvailable.blockFourHeadline = this.getLength(
-          this.data.gsx$headlineblockfour.$t
-        );
-        this.summaryAvailable.blockFourContent = this.getLength(
-          this.data.gsx$contentblockfour.$t
-        );
-
-        this.summaryAvailable.registerLink = this.getLength(
-          this.data.gsx$registerlink.$t
-        );
-
-        //ab hier: calendar import
-        this.summaryAvailable.calendarImp = this.data.gsx$calendarimp.$t;
-      });
-  }, //close beforeCreate()
   mounted() {}, //close mounted
 }; //close export default
 </script>

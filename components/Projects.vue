@@ -46,18 +46,35 @@
 </template>
 
 <script>
-import axios from "axios";
 import Button from "./Button";
 import VLazyImage from "v-lazy-image";
-import { sheetUrls } from "../modules/sheet-urls";
-// import { getSpreadsheetData } from "../modules/get-spreadsheet-data";
+//import { sheetUrls } from "../modules/sheet-urls";
+import { getSpreadsheet } from "../modules/getSpreadsheet";
 
 export default {
   name: "Projects",
-  props: ["content", "lang", "direct"],
   components: {
     Button,
     VLazyImage,
+  },
+  props: ["content", "lang", "direct"],
+  data() {
+    return {
+      entries: null,
+      data: [],
+      directs: {
+        de: {
+          all: "/all_projects",
+          projects: "projects",
+          sheetPath: "data/spreadsheet-data/projects_de.json",
+        },
+        en: {
+          all: "/all_projects_en",
+          projects: "projects_en",
+          sheetPath: "data/spreadsheet-data/projects_en.json",
+        },
+      },
+    };
   },
   computed: {
     teamArr() {
@@ -72,29 +89,40 @@ export default {
     directProject() {
       return this.directs[this.lang]["projects"];
     },
-    sheetId() {
-      return this.directs[this.lang]["sheetId"];
+    sheetPath() {
+      return this.directs[this.lang]["sheetPath"];
     },
   },
-  data() {
-    return {
-      entries: null,
-      data: [],
-      directs: {
-        de: {
-          all: "/all_projects",
-          projects: "projects",
-          sheetId: 1,
-        },
-        en: {
-          all: "/all_projects_en",
-          projects: "projects_en",
-          sheetId: 2,
-        },
-      },
-    };
-  },
   created() {
+    getSpreadsheet(this.sheetPath).then((projects) => {
+      projects.forEach(
+        ({
+          visible,
+          featured,
+          projectName,
+          publisher,
+          projectSubline,
+          dirName,
+          defaultImg,
+        }) => {
+          if (visible === "TRUE") {
+            let obj = {
+              visible: visible,
+              featured: featured,
+              name: projectName,
+              publisher: publisher,
+              subline: projectSubline,
+              dirname: dirName,
+              imgname: dirName,
+              defaultImg: defaultImg,
+            };
+            this.data.push(obj);
+          }
+        }
+      );
+    });
+  },
+  /* created() {
     // TODO: example for wrapping it
     const sheetUrl = `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/${this.sheetId}/public/values?alt=json`;
     const responseHandler = (res) => {
@@ -123,7 +151,7 @@ export default {
     // } else {
     axios.get(sheetUrl).then(responseHandler);
     // }
-  },
+  }, */
 };
 </script>
 

@@ -34,7 +34,7 @@ export default {
 
 ## Content
 
-The content of the site is sourced from a `content.js` file located at `assets/` and a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8) (that contains multiple tables) which is accessible to the Team of the CityLAB. If you plan to create new subpages for the site that:
+The content of the site is sourced from a `content.js` file located at `assets/` and ~~a [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8) (that contains multiple tables) which is accessible to the Team of the CityLAB~~ some JSON files generated from our previously used Spreadsheet solution. If you plan to create new subpages for the site that:
 
 ### Are created once ...
 
@@ -82,9 +82,9 @@ export default {
 </style>
 ```
 
-If you want to provide content that is updated regulary (e.g. Newsletter, Projects, Events, Exhibits) you use the table inside the [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8) for content that exists in two languages you find a `_en` and `_de` at the name of the table. In the following you find a description of exisiting columns for the existing tables:
+If you want to provide content that is updated regulary (e.g. Newsletter, Projects, Events, Exhibits) you ~~use the table inside the [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8) for content that exists in two languages you find a `_en` and `_de` at the name of the table~~ create/update the respective JSON file in `static/data/spreadsheet-data/`. In the following you find a description of exisiting keys for the existing JSON files:
 
-### projects_de and projects_en table
+### `projects_de.json` and `projects_en.json`
 
 Pls note: select `TRUE` for column _visible_ to either enable or disable a project completely
 
@@ -92,25 +92,23 @@ Pls note: select `TRUE` for column _visible_ to either enable or disable a proje
 | ------------------------------------ | ----------------------------------------------- | ----------------------------------------------- | ----------------- | -------- | --------------- | --------------- | ---------------------- | ------------------------ | ----------------------- | ------------------------- | -------------------------------- | ------------------------ | ------------------------------ | ------------------------- | -------------------------------- | ----------------------- | ------------------------------ | ------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------- |
 | Defines which status the project has | Sets defaultImg if no other images are provided | Adds project to featured section at start pages | Name of publisher | url path | name of project | project subline | second project subline | title of first paragraph | text of first paragraph | title of second paragraph | description of seconds paragraph | title of third paragraph | description of third paragraph | title of fourth paragraph | descpription of fourth paragraph | title of fifth pargraph | description of fifth paragraph | text that is visible at social tiles, when the page is shared | url where the link – if provided – is pointing to | set to TRUE or FALSE is a logo should be displayed |
 
-### events table
+### `events.json`
 
 | visible                          | format                                         | calendarImp                                           | eventLanguage                  | dirName  | date                                     | startTime      | endTime      | dateTime                      | eventName                 | subline              | subsubline                  | headlineIntro            | contentIntro            | headlineBlockOne          | contentBlockOne                  | headlineBlockTwo         | contentBlockTwo                | headlineBlockThree        | contentBlockThree                | headlineBlockFour       | contentBlockFour               | websiteSummary             | phoneSummary                | dateSummary                  | organiserSummary         | mailSummary           | addressSummary         | registerInfo                  | registerLink                                                  | socialDescription                                  | logo |
 | -------------------------------- | ---------------------------------------------- | ----------------------------------------------------- | ------------------------------ | -------- | ---------------------------------------- | -------------- | ------------ | ----------------------------- | ------------------------- | -------------------- | --------------------------- | ------------------------ | ----------------------- | ------------------------- | -------------------------------- | ------------------------ | ------------------------------ | ------------------------- | -------------------------------- | ----------------------- | ------------------------------ | -------------------------- | --------------------------- | ---------------------------- | ------------------------ | --------------------- | ---------------------- | ----------------------------- | ------------------------------------------------------------- | -------------------------------------------------- | ---- |
 | Defines, if the event is visible | Set the format of event, e.g. workshop, meetup | TRUE or FALSE defines if calendar import is available | set language of event: de, end | url path | set date in following format: YYYY-MM-DD | set start time | set end time | creates automatic date format | set the name of the event | set subline of event | set second subline of event | title of first paragraph | text of first paragraph | title of second paragraph | description of seconds paragraph | title of third paragraph | description of third paragraph | title of fourth paragraph | descpription of fourth paragraph | title of fifth pargraph | description of fifth paragraph | website url in summary box | phone number in summary box | date of event in summary box | organiser in summary box | e-mail in summary box | address in summary box | registration link if existing | text that is visible at social tiles, when the page is shared | set to TRUE or FALSE is a logo should be displayed |
 
-### exhibits_de and exhibits_en
+### `exhibits_de.json` and `exhibits_en.json`
 
 | visible                            | exhibitName          | exhibitPublisher                            | publisherLink                             | exhibitDescription                    | exhibitDescriptionLong                | imgName                  | date                                  |
 | ---------------------------------- | -------------------- | ------------------------------------------- | ----------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------ | ------------------------------------- |
 | Defines, if the project is visible | title of the exhibit | author name of exhibit, separated by comma! | links of the authors, separated by comma! | short description text of the exhibit | long description texts of the exhibit | image name e.g: name.jpg | Date in the followin format: Mai 2020 |
 
-### newsletter
+### `newsletter.json`
 
 | date                           | title_de           | title_en            | subtitle_de           | subtitle_en            | url_de                           | url_en                       |
 | ------------------------------ | ------------------ | ------------------- | --------------------- | ---------------------- | -------------------------------- | ---------------------------- |
 | date in format like: Juni 2020 | german title of NL | english title of NL | german subtitle of NL | english subtitle of NL | url to german html version of NL | url to english version of NL |
-
-> You may add new tables to the spreadsheet as the site grows further.
 
 ## Assets
 

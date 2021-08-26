@@ -87,7 +87,8 @@
             summaryAvailable.blockFourContent > 0 ||
             summaryAvailable.BlockFourHeadline > 0
           "
-          class="content-wrapper">
+          class="content-wrapper"
+        >
           <h4 v-if="summaryAvailable.blockFourHeadline > 0" class="title">
             {{ headlineBlockFour }}
           </h4>
@@ -117,14 +118,14 @@
 import Navigation from "../../components/Navigation.vue";
 import HeroLight from "../../components/HeroLight.vue";
 import Footer from "../../components/Footer.vue";
-import axios from "axios";
+import { getSpreadsheet } from "../../modules/getSpreadsheet";
 
 import { content } from "../../assets/content.js";
 
 export default {
   validate({ params, query, store }) {
     return true; // if the params are valid
-    return false; // will stop Nuxt.js to render the route and display the error page
+    //return false; // will stop Nuxt.js to render the route and display the error page
   },
   async asyncData({ params, error, payload }) {
     return {
@@ -167,9 +168,7 @@ export default {
 
       if (this.data !== null) {
         const file =
-          this.data.gsx$defaultimg.$t == "TRUE"
-            ? "default"
-            : `${this.data.gsx$dirname.$t}`;
+          this.data.defaultImg == "TRUE" ? "default" : `${this.data.dirName}`;
         const path = `/images/projects/${file}_hero.jpg`;
         return path;
       } else {
@@ -178,111 +177,111 @@ export default {
     },
     link() {
       if (this.data != null) {
-        return this.data.gsx$link.$t;
+        return this.data.link;
       } else {
         return "";
       }
     },
     title() {
       if (this.data !== null) {
-        return this.data.gsx$projectname.$t;
+        return this.data.projectName;
       } else {
-        return "";
+        return undefined;
       }
     },
     subtitle() {
-      if (this.data !== null) {
-        return this.data.gsx$projectsubline.$t;
+      if (this.data != null) {
+        return this.data.projectSubline;
       } else {
-        return "";
+        return undefined;
       }
     },
     subsubtitle() {
-      if (this.data !== null) {
-        return this.data.gsx$projectsubsubline.$t;
+      if (this.data != null) {
+        return this.data.projectSubSubine;
       } else {
-        return "";
+        return undefined;
       }
     },
     headlineIntro() {
-      if (this.data !== null) {
-        return this.data.gsx$headlineintro.$t;
+      if (this.data != null && this.data) {
+        return this.data.headlineIntro;
       } else {
-        return "";
+        return undefined;
       }
     },
     contentIntro() {
-      if (this.data !== null) {
-        return this.data.gsx$contentintro.$t;
+      if (this.data != null) {
+        return this.data.contentIntro;
       } else {
-        return "";
+        return undefined;
       }
     },
     headlineBlockOne() {
-      if (this.data !== null) {
-        return this.data.gsx$headlineblockone.$t;
+      if (this.data != null) {
+        return this.data.headlineBlockOne;
       } else {
-        return "";
+        return undefined;
       }
     },
     contentBlockOne() {
-      if (this.data !== null) {
-        return this.data.gsx$contentblockone.$t;
+      if (this.data != null) {
+        return this.data.contentBlockOne;
       } else {
-        return "";
+        return undefined;
       }
     },
     headlineBlockTwo() {
-      if (this.data !== null) {
-        return this.data.gsx$headlineblocktwo.$t;
+      if (this.data != null) {
+        return this.data.headlineBlockTwo;
       } else {
-        return "";
+        return undefined;
       }
     },
     contentBlockTwo() {
-      if (this.data !== null) {
-        return this.data.gsx$contentblocktwo.$t;
+      if (this.data != null) {
+        return this.data.contentBlockTwo;
       } else {
-        return "";
+        return undefined;
       }
     },
     headlineBlockThree() {
-      if (this.data !== null) {
-        return this.data.gsx$headlineblockthree.$t;
+      if (this.data != null) {
+        return this.data.headlineBlockThree;
       } else {
-        return "";
+        return undefined;
       }
     },
     contentBlockThree() {
-      if (this.data !== null) {
-        return this.data.gsx$contentblockthree.$t;
+      if (this.data != null) {
+        return this.data.contentBlockThree;
       } else {
-        return "";
+        return undefined;
       }
     },
     headlineBlockFour() {
-      if (this.data !== null) {
-        return this.data.gsx$headlineblockfour.$t;
+      if (this.data != null) {
+        return this.data.headlineBlockFour;
       } else {
-        return "";
+        return undefined;
       }
     },
     contentBlockFour() {
-      if (this.data !== null) {
-        return this.data.gsx$contentblockfour.$t;
+      if (this.data != null) {
+        return this.data.contentBlockFour;
       } else {
-        return "";
+        return undefined;
       }
     },
     logos() {
       if (this.data !== null) {
         let arr = [];
-        const urls = this.data.gsx$link.$t.split(",");
+        const urls = this.data.link.split(",");
 
         for (let index = 0; index < urls.length; index++) {
           let filename;
-          if (this.data.gsx$logo.$t == "TRUE") {
-            filename = `/images/projects/${this.data.gsx$dirname.$t}_logo_${
+          if (this.data.logo == "TRUE") {
+            filename = `/images/projects/${this.data.dirName}_logo_${
               index + 1
             }.jpg`;
           } else {
@@ -303,52 +302,47 @@ export default {
     },
   },
   beforeCreate() {
-    // TODO: wrap that
-
-    axios
-      .get(
-        `https://spreadsheets.google.com/feeds/list/1xldCara-dp26yWVU8rL7Acig4IHKqtPRtTZX3HYoaA8/2/public/values?alt=json`
-      )
-      .then((res) => {
+    getSpreadsheet(`/data/spreadsheet-data/projects_en.json`)
+      .then((projects) => {
         // set event entry to data which matches with dirname
-        this.data = res.data.feed.entry.filter((entry) => {
-          return entry.gsx$dirname.$t == this.dirname;
+        this.data = projects.filter((project) => {
+          return project.dirName == this.dirname;
         });
         this.data = this.data[0];
 
         this.summaryAvailable.introHeadline = this.getLength(
-          this.data.gsx$headlineintro.$t
+          this.data.headlineIntro
         );
         this.summaryAvailable.introContent = this.getLength(
-          this.data.gsx$contentintro.$t
+          this.data.contentIntro
         );
 
         this.summaryAvailable.blockOneHeadline = this.getLength(
-          this.data.gsx$headlineblockone.$t
+          this.data.headlineBlockOne
         );
         this.summaryAvailable.blockOneContent = this.getLength(
-          this.data.gsx$contentblockone.$t
+          this.data.contentBlockOne
         );
 
         this.summaryAvailable.blockTwoHeadline = this.getLength(
-          this.data.gsx$headlineblocktwo.$t
+          this.data.headlineBlockTwo
         );
         this.summaryAvailable.blockTwoContent = this.getLength(
-          this.data.gsx$contentblocktwo.$t
+          this.data.contentBlockTwo
         );
 
         this.summaryAvailable.blockThreeHeadline = this.getLength(
-          this.data.gsx$headlineblockthree.$t
+          this.data.headlineBlockThree
         );
         this.summaryAvailable.blockThreeContent = this.getLength(
-          this.data.gsx$contentblockthree.$t
+          this.data.contentBlockThree
         );
 
         this.summaryAvailable.blockFourHeadline = this.getLength(
-          this.data.gsx$headlineblockfour.$t
+          this.data.headlineBlockFour
         );
         this.summaryAvailable.blockFourContent = this.getLength(
-          this.data.gsx$contentblockfour.$t
+          this.data.contentBlockFour
         );
       })
       .catch((err) => {
