@@ -15,7 +15,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "preexport": "nuxt build --target static",
-    "export": "nuxt export",
+    "export": "nuxt generate",
     "analyze": "nuxt build --analyze --no-lock",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",

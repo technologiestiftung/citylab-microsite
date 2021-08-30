@@ -2,6 +2,6 @@
 [build]
   publish = "dist/"
   # Default build command.
-  command = "npm run export"
+  command = "npm run generate"
   # this feels hackish but reduces the builds if we only do changes to things like jest.config.js or babel.config.js
   ignore = "git diff --quiet HEAD^ HEAD assets/ components/ layouts/ middleware/ mixins/ modules/ pages/ plugins/ static/ store/ nuxt.config.js package*.json"
