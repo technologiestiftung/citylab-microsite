@@ -2393,9 +2393,9 @@
     "subline": "",
     "subsubline": "26.02.2020, 12-14 Uhr, CityLAB Konferenzraum",
     "headlineIntro": "",
-    "contentIntro": "Im Rahmen der Open Data Strategie des Landes Berlin gehört der Open Data Lunch zu den wichtigen Veranstaltungen zur Förderung des Austausches zwischen den Open Data Interessierten der Berliner Verwaltung.  Jedes Jahr treffen sich die Open Data Beauftragten, Datenkoordinatoren, Geschäftsprozess- und E-Government-Manager, um sich über die aktuellen Projekte im Bereich Open Data zu informieren. <br><br>Das Jahr 2019 war ein sehr spannendes Jahr für Open Data. Wir haben unsere Rechtsverordnung Open Data erarbeitet, ein Konzept für ein Data Hub Berlin entwickeln lassen und auch ein Open Data Handbuch veröffentlicht. Auf dem Open Data Portal <a href=\"https://daten.berlin.de\">daten.berlin.de</a> befinden sich aktuell 2.161 veröffentlichte Datensätze. Auch die Anzahl der Visualisierungen und Anwendungen der Verwaltungsmitarbeiter nimmt von Tag zu Tag zu. Wir, das Open Data Berlin Team der Senatsverwaltung für Wirtschaft, Energie und Betriebe, möchten Ihnen beim Open Data Lunch Rede und Antwort auf Ihre offenen Fragen stehen.",
+    "contentIntro": "Im Rahmen der Open Data Strategie des Landes Berlin gehört der Open Data Lunch zu den wichtigen Veranstaltungen zur Förderung des Austausches zwischen den Open Data Interessierten der Berliner Verwaltung. Jedes Jahr treffen sich die Open Data Beauftragten, Datenkoordinatoren, Geschäftsprozess- und E-Government-Manager, um sich über die aktuellen Projekte im Bereich Open Data zu informieren.<br><br>Das Jahr 2019 war ein sehr spannendes Jahr für Open Data. Wir haben unsere Rechtsverordnung Open Data erarbeitet, ein Konzept für ein Data Hub Berlin entwickeln lassen und auch ein Open Data Handbuch veröffentlicht.Auf dem Open Data Portal <a href=\"https://daten.berlin.de\">daten.berlin.de</a> befinden sich aktuell 2.161 veröffentlichte Datensätze. Auch die Anzahl der Visualisierungen und Anwendungen der Verwaltungsmitarbeiter nimmt von Tag zu Tag zu.Wir, das Open Data Berlin Team der Senatsverwaltung für Wirtschaft, Energie und Betriebe, möchten Ihnen beim Open Data Lunch Rede und Antwort auf Ihre offenen Fragen stehen.",
     "headlineBlockOne": "",
-    "contentBlockOne": "Anhand von zwei Open Data Best Practice Beispielen möchten wir Ihnen präsentieren, wie man von einer Excel oder CSV Datei z.B. Schul- und Förderdaten zu einer Anwendung (Dashboard, Digitale Karte, GeoApp etc.) kommen kann.\nWir zeigen Ihnen, wie Sie mit dem Datawrapper Excel-Tabellen mit wenig Aufwand in interaktive Diagramme verwandeln können. Unsere Open Data Informationsstelle wird mit Ihnen ebenfalls in einem interaktiven Workshop-Format die Datensätze besprechen, über die Sie verfügen und die Sie auf dem Open Data Portal veröffentlichen können. Seien Sie dabei und profitieren Sie von dem Open Data Netzwerk und dem Wissen der Verwaltungsmitarbeiter für Ihre zukünftigen Open Data Projekte.",
+    "contentBlockOne": "Anhand von zwei Open Data Best Practice Beispielen möchten wir Ihnen präsentieren, wie man von einer Excel oder CSV Datei z.B. Schul- und Förderdaten zu einer Anwendung (Dashboard, Digitale Karte, GeoApp etc.) kommen kann.\nWir zeigen Ihnen, wie Sie mit dem Datawrapper Excel-Tabellen mit wenig Aufwand in interaktive Diagramme verwandeln können.Unsere Open Data Informationsstelle wird mit Ihnen ebenfalls in einem interaktiven Workshop-Format die Datensätze besprechen, über die Sie verfügen und die Sie auf dem Open Data Portal veröffentlichen können.Seien Sie dabei und profitieren Sie von dem Open Data Netzwerk und dem Wissen der Verwaltungsmitarbeiter für Ihre zukünftigen Open Data Projekte.",
     "headlineBlockTwo": "",
     "contentBlockTwo": "",
     "headlineBlockThree": "",
@@ -5356,7 +5356,7 @@
   },
   {
     "visible": "TRUE",
-    "format": "Workshop",
+    "format": "Festival",
     "calendarImp": "TRUE",
     "eventLanguage": "de",
     "dirName": "creativebureaucracy",
