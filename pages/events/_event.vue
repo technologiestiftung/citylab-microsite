@@ -133,7 +133,7 @@
 
             <div v-if="summaryAvailable.mail > 0" class="content-block">
               <h5>{{ dict[lang]["summary"]["mail"] }}</h5>
-              <a class="summary-text" :href="`mailto: ${mailSummary}`">{{
+              <a class="summary-text" :href="`mailto:${mailSummary}`">{{
                 mailSummary
               }}</a>
             </div>
@@ -395,7 +395,7 @@ export default {
     },
     headlineIntro() {
       if (this.data != null) {
-        return this.data.headlineIntro
+        return this.data.headlineIntro;
       } else {
         return;
       }
