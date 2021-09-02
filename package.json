@@ -34,7 +34,7 @@
     "nuxt-compress": "5.0.0",
     "nuxt-fontawesome": "0.4.0",
     "sass": "1.38.2",
-    "v-lazy-image": "1.4.0",
+    "v-lazy-image": "2.0.1",
     "vue-typed-js": "0.1.2"
   },
   "devDependencies": {
