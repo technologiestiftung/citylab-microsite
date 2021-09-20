@@ -1,3 +1,9 @@
+# Attention!
+
+This is the first version of the CityLAB Berlin website, in use until September 2021. The repository is now **archived and no longer maintained**.
+
+_Original README follows:_
+
 # CityLAB Site
 
 The site is build upon [Nuxt.js](https://nuxtjs.org/) (a static site generator based on Vue.js) and [Bulma](https://bulma.io/) (CSS framework) and is deployed on Netlify.
